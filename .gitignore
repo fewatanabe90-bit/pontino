@@ -9,3 +9,4 @@ playwright-report/
 coverage/
 pontino-backup*.json
 .DS_Store
+SPEC.md

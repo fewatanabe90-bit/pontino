@@ -2,7 +2,7 @@
 
 A personal, free, ad-free web app for learning Japanese and Italian. "Pontino" is Italian for "little bridge".
 
-Status: **Phase 1 in progress.** See [docs/PHASE0_PLAN.md](docs/PHASE0_PLAN.md) for the plan and decisions log, and [SPEC.md](SPEC.md) for the full brief.
+Status: **Phase 1 in progress.** See [docs/PHASE0_PLAN.md](docs/PHASE0_PLAN.md) for the plan and decisions log, and `SPEC.md` (kept locally, not published) for the original brief.
 
 ## Run it on your computer
 
