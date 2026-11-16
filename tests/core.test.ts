@@ -3,7 +3,7 @@ import { canBuild, checkAnswer } from '../src/lib/check';
 import { parseBackup } from '../src/lib/db';
 import { grade } from '../src/lib/grade';
 import { normaliseIt, normaliseJa } from '../src/lib/normalise';
-import { parseRuby, rubyReading, stripRuby } from '../src/lib/ruby';
+import { parseRuby, readingChunks, rubyReading, stripRuby } from '../src/lib/ruby';
 import type { Exercise } from '../src/lib/schema';
 import { isDue, newCard, rate, Rating } from '../src/lib/srs';
 import { emptyStreak, recordPractice, streakStatus, type Streak } from '../src/lib/streak';
@@ -16,6 +16,33 @@ describe('ruby markup', () => {
     expect(rubyReading(s)).toBe('ふくろはごりようですか');
   });
   it('leaves plain text alone', () => expect(parseRuby('ciao')).toEqual([{ t: 'ciao' }]));
+});
+
+describe('romaji reading aid', () => {
+  const ro = (s: string) => readingChunks(s).map((c) => c.ro ?? '·').join(' ');
+  it('gives each kana syllable its romaji and leaves other text alone', () => {
+    expect(readingChunks('です。')).toEqual([{ t: 'で', ro: 'de' }, { t: 'す', ro: 'su' }, { t: '。' }]);
+    expect(readingChunks('A is B')).toEqual([{ t: 'A is B' }]);
+  });
+  it('keeps small kana, long marks and doubled consonants with their syllable', () => {
+    expect(ro('きょう')).toBe('kyo u');
+    expect(ro('チケット')).toBe('chi ke tto');
+    expect(ro('サッカー')).toBe('sa kkaa');
+    expect(ro('チーム')).toBe('chii mu');
+  });
+  it('reads kanji through their furigana', () => {
+    expect(readingChunks('{学生|がくせい}')).toEqual([{ t: '学生', furi: 'がくせい', ro: 'gakusei' }]);
+  });
+  it('uses the override for the particle は and reads を as o', () => {
+    expect(readingChunks('これ{は|wa}')).toEqual([{ t: 'こ', ro: 'ko' }, { t: 'れ', ro: 're' }, { t: 'は', ro: 'wa' }]);
+    expect(ro('はい')).toBe('ha i');
+    expect(ro('を')).toBe('o');
+  });
+  it('a romaji override never changes how answers are checked', () => {
+    expect(rubyReading('これ{は|wa}{日本|にほん}です')).toBe('これはにほんです');
+    expect(checkAnswer('これは日本です', ['これ{は|wa}{日本|にほん}です'], 'ja').ok).toBe(true);
+    expect(checkAnswer('これわにほんです', ['これ{は|wa}{日本|にほん}です'], 'ja').ok).toBe(false);
+  });
 });
 
 describe('Japanese normalisation', () => {

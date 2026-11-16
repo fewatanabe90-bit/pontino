@@ -10,19 +10,86 @@
     "I can ask and answer simple yes/no questions about people and things.",
     "I can say what something is and who or what it belongs to."
   ],
-  "grammar": ["AはBです", "AはBじゃありません", "〜か", "AのB", "Aも", "これ・それ・あれ"],
+  "grammar": [
+    "AはBです",
+    "AはBじゃありません",
+    "〜か",
+    "AのB",
+    "Aも",
+    "これ・それ・あれ"
+  ],
   "items": [
-    { "id": "ja-a1-01.g-wa-desu", "kind": "grammar", "front": "AはBです", "back": "A is B. は (said \"wa\") marks the topic; です makes the sentence polite.", "note": "レオさんは{学生|がくせい}です。 Leo is a student." },
-    { "id": "ja-a1-01.g-janai", "kind": "grammar", "front": "AはBじゃありません", "back": "A is not B (polite, spoken). More formal: ではありません.", "note": "{学生|がくせい}じゃありません。 I'm not a student." },
-    { "id": "ja-a1-01.g-ka", "kind": "grammar", "front": "〜ですか", "back": "Add か to make a question. Word order does not change.", "note": "ブラジル{人|じん}ですか。 Are you Brazilian?" },
-    { "id": "ja-a1-01.p-hajimemashite", "kind": "phrase", "front": "はじめまして", "back": "Nice to meet you (only at a first meeting)." },
-    { "id": "ja-a1-01.p-yoroshiku", "kind": "phrase", "front": "よろしくお{願|ねが}いします", "back": "Closing line of an introduction: \"pleased to meet you / I look forward to getting on with you\"." },
-    { "id": "ja-a1-01.p-soudesuka", "kind": "phrase", "front": "そうですか", "back": "\"I see\" / \"Is that so?\" With falling intonation it simply shows you are listening." },
-    { "id": "ja-a1-01.v-kaishain", "kind": "vocab", "front": "{会社員|かいしゃいん}", "back": "office worker, company employee" },
-    { "id": "ja-a1-01.g-no", "kind": "grammar", "front": "AのB", "back": "B of A / A's B. The word that describes or owns comes first.", "note": "{東京|とうきょう}のチーム a Tokyo team" },
-    { "id": "ja-a1-01.g-mo", "kind": "grammar", "front": "Aも", "back": "A too. も takes the place of は.", "note": "わたしもサッカーファンです。 I'm a football fan too." },
-    { "id": "ja-a1-01.g-kosoa", "kind": "grammar", "front": "これ・それ・あれ", "back": "this (near me) · that (near you) · that over there (far from both of us)" },
-    { "id": "ja-a1-01.p-nandesuka", "kind": "phrase", "front": "{何|なん}ですか", "back": "What is it?" }
+    {
+      "id": "ja-a1-01.g-wa-desu",
+      "kind": "grammar",
+      "front": "A{は|wa}Bです",
+      "back": "A is B. は (said \"wa\") marks the topic; です makes the sentence polite.",
+      "note": "レオさん{は|wa}{学生|がくせい}です。 Leo is a student."
+    },
+    {
+      "id": "ja-a1-01.g-janai",
+      "kind": "grammar",
+      "front": "A{は|wa}Bじゃありません",
+      "back": "A is not B (polite, spoken). More formal: ではありません.",
+      "note": "{学生|がくせい}じゃありません。 I'm not a student."
+    },
+    {
+      "id": "ja-a1-01.g-ka",
+      "kind": "grammar",
+      "front": "〜ですか",
+      "back": "Add か to make a question. Word order does not change.",
+      "note": "ブラジル{人|じん}ですか。 Are you Brazilian?"
+    },
+    {
+      "id": "ja-a1-01.p-hajimemashite",
+      "kind": "phrase",
+      "front": "はじめまして",
+      "back": "Nice to meet you (only at a first meeting)."
+    },
+    {
+      "id": "ja-a1-01.p-yoroshiku",
+      "kind": "phrase",
+      "front": "よろしくお{願|ねが}いします",
+      "back": "Closing line of an introduction: \"pleased to meet you / I look forward to getting on with you\"."
+    },
+    {
+      "id": "ja-a1-01.p-soudesuka",
+      "kind": "phrase",
+      "front": "そうですか",
+      "back": "\"I see\" / \"Is that so?\" With falling intonation it simply shows you are listening."
+    },
+    {
+      "id": "ja-a1-01.v-kaishain",
+      "kind": "vocab",
+      "front": "{会社員|かいしゃいん}",
+      "back": "office worker, company employee"
+    },
+    {
+      "id": "ja-a1-01.g-no",
+      "kind": "grammar",
+      "front": "AのB",
+      "back": "B of A / A's B. The word that describes or owns comes first.",
+      "note": "{東京|とうきょう}のチーム a Tokyo team"
+    },
+    {
+      "id": "ja-a1-01.g-mo",
+      "kind": "grammar",
+      "front": "Aも",
+      "back": "A too. も takes the place of は.",
+      "note": "わたしもサッカーファンです。 I'm a football fan too."
+    },
+    {
+      "id": "ja-a1-01.g-kosoa",
+      "kind": "grammar",
+      "front": "これ・それ・あれ",
+      "back": "this (near me) · that (near you) · that over there (far from both of us)"
+    },
+    {
+      "id": "ja-a1-01.p-nandesuka",
+      "kind": "phrase",
+      "front": "{何|なん}ですか",
+      "back": "What is it?"
+    }
   ],
   "lessons": [
     {
@@ -32,29 +99,189 @@
       "intro": {
         "scene": "A hostel lounge. Leo, a traveller from Brazil, meets Nakamura-san.",
         "lines": [
-          { "who": "中村", "text": "はじめまして。{中村|なかむら}です。", "meaning": "Nice to meet you. I'm Nakamura.", "politeness": "polite" },
-          { "who": "レオ", "text": "はじめまして。レオです。ブラジル{人|じん}です。", "meaning": "Nice to meet you. I'm Leo. I'm Brazilian.", "politeness": "polite" },
-          { "who": "中村", "text": "レオさんは{学生|がくせい}ですか。", "meaning": "Are you a student, Leo?", "politeness": "polite" },
-          { "who": "レオ", "text": "いいえ、{学生|がくせい}じゃありません。{会社員|かいしゃいん}です。", "meaning": "No, I'm not a student. I'm an office worker.", "politeness": "polite" },
-          { "who": "中村", "text": "そうですか。よろしくお{願|ねが}いします。", "meaning": "I see. Pleased to meet you.", "politeness": "polite" }
+          {
+            "who": "中村",
+            "text": "はじめまして。{中村|なかむら}です。",
+            "meaning": "Nice to meet you. I'm Nakamura.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はじめまして。レオです。ブラジル{人|じん}です。",
+            "meaning": "Nice to meet you. I'm Leo. I'm Brazilian.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "レオさん{は|wa}{学生|がくせい}ですか。",
+            "meaning": "Are you a student, Leo?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいえ、{学生|がくせい}じゃありません。{会社員|かいしゃいん}です。",
+            "meaning": "No, I'm not a student. I'm an office worker.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "そうですか。よろしくお{願|ねが}いします。",
+            "meaning": "I see. Pleased to meet you.",
+            "politeness": "polite"
+          }
         ],
         "notes": [
-          { "title": "AはBです", "body": "は marks what you are talking about (the topic) and is pronounced \"wa\" here. です closes the sentence politely. Japanese has no \"a/the\" and no verb changes for I/you/he." },
-          { "title": "Drop what is obvious", "body": "Leo says レオです, not わたしはレオです. When the topic is clear, Japanese leaves it out. Repeating わたしは in every sentence sounds unnatural." },
-          { "title": "Not B, and questions", "body": "じゃありません = \"is not\". Add か to です for a question: ですか. Use the other person's name + さん where English says \"you\"." }
+          {
+            "title": "A{は|wa}Bです",
+            "body": "{は|wa} marks what you are talking about (the topic) and is pronounced \"wa\" here. です closes the sentence politely. Japanese has no \"a/the\" and no verb changes for I/you/he."
+          },
+          {
+            "title": "Drop what is obvious",
+            "body": "Leo says レオです, not わたし{は|wa}レオです. When the topic is clear, Japanese leaves it out. Repeating わたし{は|wa} in every sentence sounds unnatural."
+          },
+          {
+            "title": "Not B, and questions",
+            "body": "じゃありません = \"is not\". Add か to です for a question: ですか. Use the other person's name + さん where English says \"you\"."
+          }
         ]
       },
       "exercises": [
-        { "id": "ja-a1-01.l1.e1", "type": "mcq", "prompt": "What is は doing in this sentence?", "text": "レオさんは{学生|がくせい}です。", "options": ["It marks the topic: \"as for Leo…\"", "It turns the sentence into a question", "It means \"is\""], "answer": 0, "explain": "は marks the topic. \"Is\" is the job of です." },
-        { "id": "ja-a1-01.l1.e2", "type": "gap", "prompt": "Fill the gap.", "text": "わたし___ブラジル{人|じん}です。", "meaning": "I am Brazilian.", "options": ["は", "か", "です"], "answer": 0 },
-        { "id": "ja-a1-01.l1.e3", "type": "tiles", "prompt": "Build: \"I'm an office worker.\"", "meaning": "I'm an office worker.", "tiles": ["{会社員|かいしゃいん}", "です", "か", "じゃ", "は"], "answer": "{会社員|かいしゃいん}です", "alt": ["わたしは{会社員|かいしゃいん}です", "{私|わたし}は{会社員|かいしゃいん}です"], "explain": "No わたしは needed: it's obvious you are talking about yourself." },
-        { "id": "ja-a1-01.l1.e4", "type": "mcq", "prompt": "Turn it into a question.", "text": "{中村|なかむら}さんは{学生|がくせい}です。", "options": ["{中村|なかむら}さんは{学生|がくせい}ですか。", "{中村|なかむら}さんは{学生|がくせい}じゃありません。", "{中村|なかむら}さんか{学生|がくせい}です。"], "answer": 0, "explain": "Just add か at the end. Nothing else moves." },
-        { "id": "ja-a1-01.l1.e5", "type": "tiles", "prompt": "Answer: \"No, I'm not a student.\"", "context": "レオさんは{学生|がくせい}ですか。", "meaning": "No, I'm not a student.", "tiles": ["いいえ、", "{学生|がくせい}", "じゃありません", "です", "はい、", "か"], "answer": "いいえ、{学生|がくせい}じゃありません", "alt": ["いいえ、{学生|がくせい}ではありません", "いいえ、わたしは{学生|がくせい}じゃありません"] },
-        { "id": "ja-a1-01.l1.e6", "type": "mcq", "listen": true, "prompt": "Listen. What are you being asked?", "text": "ブラジル{人|じん}ですか。", "options": ["Are you Brazilian?", "I am Brazilian.", "You are not Brazilian."], "answer": 0 },
-        { "id": "ja-a1-01.l1.e7", "type": "type", "prompt": "Type in Japanese: \"Nice to meet you. I'm Leo.\"", "answer": "はじめまして。レオです。", "alt": ["はじめまして。わたしはレオです。", "{初|はじ}めまして。レオです。", "{初|はじ}めまして。{私|わたし}はレオです。", "はじめまして。{私|わたし}はレオです。"] },
-        { "id": "ja-a1-01.l1.e8", "type": "match", "prompt": "Match each piece with its job.", "pairs": [["は", "topic marker"], ["です", "is / am / are (polite)"], ["じゃありません", "is not"], ["か", "question marker"]] }
+        {
+          "id": "ja-a1-01.l1.e1",
+          "type": "mcq",
+          "prompt": "What is {は|wa} doing in this sentence?",
+          "text": "レオさん{は|wa}{学生|がくせい}です。",
+          "options": [
+            "It marks the topic: \"as for Leo…\"",
+            "It turns the sentence into a question",
+            "It means \"is\""
+          ],
+          "answer": 0,
+          "explain": "{は|wa} marks the topic. \"Is\" is the job of です."
+        },
+        {
+          "id": "ja-a1-01.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "わたし___ブラジル{人|じん}です。",
+          "meaning": "I am Brazilian.",
+          "options": [
+            "{は|wa}",
+            "か",
+            "です"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l1.e3",
+          "type": "tiles",
+          "prompt": "Build: \"I'm an office worker.\"",
+          "meaning": "I'm an office worker.",
+          "tiles": [
+            "{会社員|かいしゃいん}",
+            "です",
+            "か",
+            "じゃ",
+            "{は|wa}"
+          ],
+          "answer": "{会社員|かいしゃいん}です",
+          "alt": [
+            "わたし{は|wa}{会社員|かいしゃいん}です",
+            "{私|わたし}{は|wa}{会社員|かいしゃいん}です"
+          ],
+          "explain": "No わたし{は|wa} needed: it's obvious you are talking about yourself."
+        },
+        {
+          "id": "ja-a1-01.l1.e4",
+          "type": "mcq",
+          "prompt": "Turn it into a question.",
+          "text": "{中村|なかむら}さん{は|wa}{学生|がくせい}です。",
+          "options": [
+            "{中村|なかむら}さん{は|wa}{学生|がくせい}ですか。",
+            "{中村|なかむら}さん{は|wa}{学生|がくせい}じゃありません。",
+            "{中村|なかむら}さんか{学生|がくせい}です。"
+          ],
+          "answer": 0,
+          "explain": "Just add か at the end. Nothing else moves."
+        },
+        {
+          "id": "ja-a1-01.l1.e5",
+          "type": "tiles",
+          "prompt": "Answer: \"No, I'm not a student.\"",
+          "context": "レオさん{は|wa}{学生|がくせい}ですか。",
+          "meaning": "No, I'm not a student.",
+          "tiles": [
+            "いいえ、",
+            "{学生|がくせい}",
+            "じゃありません",
+            "です",
+            "はい、",
+            "か"
+          ],
+          "answer": "いいえ、{学生|がくせい}じゃありません",
+          "alt": [
+            "いいえ、{学生|がくせい}で{は|wa}ありません",
+            "いいえ、わたし{は|wa}{学生|がくせい}じゃありません"
+          ]
+        },
+        {
+          "id": "ja-a1-01.l1.e6",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What are you being asked?",
+          "text": "ブラジル{人|じん}ですか。",
+          "options": [
+            "Are you Brazilian?",
+            "I am Brazilian.",
+            "You are not Brazilian."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l1.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"Nice to meet you. I'm Leo.\"",
+          "answer": "はじめまして。レオです。",
+          "alt": [
+            "はじめまして。わたし{は|wa}レオです。",
+            "{初|はじ}めまして。レオです。",
+            "{初|はじ}めまして。{私|わたし}{は|wa}レオです。",
+            "はじめまして。{私|わたし}{は|wa}レオです。"
+          ]
+        },
+        {
+          "id": "ja-a1-01.l1.e8",
+          "type": "match",
+          "prompt": "Match each piece with its job.",
+          "pairs": [
+            [
+              "{は|wa}",
+              "topic marker"
+            ],
+            [
+              "です",
+              "is / am / are (polite)"
+            ],
+            [
+              "じゃありません",
+              "is not"
+            ],
+            [
+              "か",
+              "question marker"
+            ]
+          ]
+        }
       ],
-      "newItems": ["ja-a1-01.g-wa-desu", "ja-a1-01.g-janai", "ja-a1-01.g-ka", "ja-a1-01.p-hajimemashite", "ja-a1-01.p-yoroshiku", "ja-a1-01.p-soudesuka", "ja-a1-01.v-kaishain"]
+      "newItems": [
+        "ja-a1-01.g-wa-desu",
+        "ja-a1-01.g-janai",
+        "ja-a1-01.g-ka",
+        "ja-a1-01.p-hajimemashite",
+        "ja-a1-01.p-yoroshiku",
+        "ja-a1-01.p-soudesuka",
+        "ja-a1-01.v-kaishain"
+      ]
     },
     {
       "id": "ja-a1-01.l2",
@@ -63,30 +290,194 @@
       "intro": {
         "scene": "Same lounge. Leo has something in his hand.",
         "lines": [
-          { "who": "中村", "text": "それは{何|なん}ですか。", "meaning": "What's that?", "politeness": "polite" },
-          { "who": "レオ", "text": "これですか。サッカーのチケットです。", "meaning": "This? It's a football ticket.", "politeness": "polite" },
-          { "who": "中村", "text": "{日本|にほん}のチームですか。", "meaning": "A Japanese team?", "politeness": "polite" },
-          { "who": "レオ", "text": "はい、{東京|とうきょう}のチームです。", "meaning": "Yes, a Tokyo team.", "politeness": "polite" },
-          { "who": "中村", "text": "わたしもサッカーファンです。", "meaning": "I'm a football fan too.", "politeness": "polite" }
+          {
+            "who": "中村",
+            "text": "それ{は|wa}{何|なん}ですか。",
+            "meaning": "What's that?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "これですか。サッカーのチケットです。",
+            "meaning": "This? It's a football ticket.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "{日本|にほん}のチームですか。",
+            "meaning": "A Japanese team?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、{東京|とうきょう}のチームです。",
+            "meaning": "Yes, a Tokyo team.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "わたしもサッカーファンです。",
+            "meaning": "I'm a football fan too.",
+            "politeness": "polite"
+          }
         ],
         "notes": [
-          { "title": "AのB", "body": "の links two nouns. The describing or owning word comes first: サッカーのチケット (football ticket), レオさんのチケット (Leo's ticket). The order is the reverse of Portuguese \"ingresso de futebol\"." },
-          { "title": "も = too", "body": "も replaces は: わたしは → わたしも. Never はも." },
-          { "title": "これ・それ・あれ", "body": "これ is near the speaker, それ is near the listener, あれ is far from both. That is why Nakamura says それ and Leo answers これ about the same ticket." }
+          {
+            "title": "AのB",
+            "body": "の links two nouns. The describing or owning word comes first: サッカーのチケット (football ticket), レオさんのチケット (Leo's ticket). The order is the reverse of Portuguese \"ingresso de futebol\"."
+          },
+          {
+            "title": "も = too",
+            "body": "も replaces {は|wa}: わたし{は|wa} → わたしも. Never {は|wa}も."
+          },
+          {
+            "title": "これ・それ・あれ",
+            "body": "これ is near the speaker, それ is near the listener, あれ is far from both. That is why Nakamura says それ and Leo answers これ about the same ticket."
+          }
         ]
       },
       "exercises": [
-        { "id": "ja-a1-01.l2.e1", "type": "mcq", "prompt": "The ticket is in Leo's hand. Nakamura, across the table, asks:", "options": ["それは{何|なん}ですか。", "これは{何|なん}ですか。", "あれは{何|なん}ですか。"], "answer": 0, "explain": "それ: the thing is near the listener (Leo)." },
-        { "id": "ja-a1-01.l2.e2", "type": "gap", "prompt": "Fill the gap.", "text": "サッカー___チケットです。", "meaning": "It's a football ticket.", "options": ["の", "は", "も"], "answer": 0 },
-        { "id": "ja-a1-01.l2.e3", "type": "tiles", "prompt": "Build: \"It's a Tokyo team.\"", "meaning": "It's a Tokyo team.", "tiles": ["チーム", "{東京|とうきょう}", "の", "です", "は", "も"], "answer": "{東京|とうきょう}のチームです", "alt": [] },
-        { "id": "ja-a1-01.l2.e4", "type": "gap", "prompt": "Fill the gap.", "text": "わたし___サッカーファンです。", "meaning": "I'm a football fan too.", "options": ["も", "の", "か"], "answer": 0 },
-        { "id": "ja-a1-01.l2.e5", "type": "mcq", "prompt": "Which one means \"my friend's ticket\"?", "options": ["{友|とも}だちのチケット", "チケットの{友|とも}だち", "{友|とも}だちはチケット"], "answer": 0, "explain": "Owner first, then の, then the thing." },
-        { "id": "ja-a1-01.l2.e6", "type": "mcq", "listen": true, "prompt": "Listen. Where is the thing being asked about?", "text": "あれは{何|なん}ですか。", "options": ["Far from both people", "Close to the person speaking", "Close to the person listening"], "answer": 0 },
-        { "id": "ja-a1-01.l2.e7", "type": "type", "prompt": "Type in Japanese: \"This is a Japanese ticket.\"", "answer": "これは{日本|にほん}のチケットです。", "alt": ["これは{日本|にっぽん}のチケットです。"] },
-        { "id": "ja-a1-01.l2.e8", "type": "tiles", "prompt": "Reply: \"I'm Brazilian too.\"", "context": "わたしはブラジル{人|じん}です。", "meaning": "I'm Brazilian too.", "tiles": ["わたし", "も", "は", "ブラジル{人|じん}", "です", "の"], "answer": "わたしもブラジル{人|じん}です", "alt": ["{私|わたし}もブラジル{人|じん}です"] },
-        { "id": "ja-a1-01.l2.e9", "type": "match", "prompt": "Match.", "pairs": [["これ", "this (near me)"], ["それ", "that (near you)"], ["あれ", "that over there"], ["の", "links two nouns"], ["も", "too / also"]] }
+        {
+          "id": "ja-a1-01.l2.e1",
+          "type": "mcq",
+          "prompt": "The ticket is in Leo's hand. Nakamura, across the table, asks:",
+          "options": [
+            "それ{は|wa}{何|なん}ですか。",
+            "これ{は|wa}{何|なん}ですか。",
+            "あれ{は|wa}{何|なん}ですか。"
+          ],
+          "answer": 0,
+          "explain": "それ: the thing is near the listener (Leo)."
+        },
+        {
+          "id": "ja-a1-01.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "サッカー___チケットです。",
+          "meaning": "It's a football ticket.",
+          "options": [
+            "の",
+            "{は|wa}",
+            "も"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l2.e3",
+          "type": "tiles",
+          "prompt": "Build: \"It's a Tokyo team.\"",
+          "meaning": "It's a Tokyo team.",
+          "tiles": [
+            "チーム",
+            "{東京|とうきょう}",
+            "の",
+            "です",
+            "{は|wa}",
+            "も"
+          ],
+          "answer": "{東京|とうきょう}のチームです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l2.e4",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "わたし___サッカーファンです。",
+          "meaning": "I'm a football fan too.",
+          "options": [
+            "も",
+            "の",
+            "か"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l2.e5",
+          "type": "mcq",
+          "prompt": "Which one means \"my friend's ticket\"?",
+          "options": [
+            "{友|とも}だちのチケット",
+            "チケットの{友|とも}だち",
+            "{友|とも}だち{は|wa}チケット"
+          ],
+          "answer": 0,
+          "explain": "Owner first, then の, then the thing."
+        },
+        {
+          "id": "ja-a1-01.l2.e6",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. Where is the thing being asked about?",
+          "text": "あれ{は|wa}{何|なん}ですか。",
+          "options": [
+            "Far from both people",
+            "Close to the person speaking",
+            "Close to the person listening"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l2.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"This is a Japanese ticket.\"",
+          "answer": "これ{は|wa}{日本|にほん}のチケットです。",
+          "alt": [
+            "これ{は|wa}{日本|にっぽん}のチケットです。"
+          ]
+        },
+        {
+          "id": "ja-a1-01.l2.e8",
+          "type": "tiles",
+          "prompt": "Reply: \"I'm Brazilian too.\"",
+          "context": "わたし{は|wa}ブラジル{人|じん}です。",
+          "meaning": "I'm Brazilian too.",
+          "tiles": [
+            "わたし",
+            "も",
+            "{は|wa}",
+            "ブラジル{人|じん}",
+            "です",
+            "の"
+          ],
+          "answer": "わたしもブラジル{人|じん}です",
+          "alt": [
+            "{私|わたし}もブラジル{人|じん}です"
+          ]
+        },
+        {
+          "id": "ja-a1-01.l2.e9",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "これ",
+              "this (near me)"
+            ],
+            [
+              "それ",
+              "that (near you)"
+            ],
+            [
+              "あれ",
+              "that over there"
+            ],
+            [
+              "の",
+              "links two nouns"
+            ],
+            [
+              "も",
+              "too / also"
+            ]
+          ]
+        }
       ],
-      "newItems": ["ja-a1-01.g-no", "ja-a1-01.g-mo", "ja-a1-01.g-kosoa", "ja-a1-01.p-nandesuka"]
+      "newItems": [
+        "ja-a1-01.g-no",
+        "ja-a1-01.g-mo",
+        "ja-a1-01.g-kosoa",
+        "ja-a1-01.p-nandesuka"
+      ]
     }
   ]
 }

@@ -23,6 +23,7 @@ Then open the address it prints (usually http://localhost:5173).
 | `npm test` | Unit tests (answer checking, streak, spaced repetition, backup) and content validation |
 | `npm run validate:content` | Content validation only |
 | `npm run check` | Type-check |
+| `npm run e2e` | End-to-end tests on the production build (install, offline, romaji). Set `PW_CHANNEL=msedge` to use the Edge already installed |
 | `npm run build` | Validate content, then build the static site into `dist/` |
 
 ## Where things are
@@ -43,7 +44,10 @@ Progress lives only in the browser you use (IndexedDB). Profile → Export saves
 - Lesson player with multiple choice, listen-and-choose, fill the gap, sentence tiles, typed answers and match pairs. Missed exercises come back at the end. A lesson resumes where you left it.
 - Review queue scheduled by FSRS, XP, streak with freezes, backup export/restore.
 - Japanese unit A1-01, lessons 1–2, as a sample for review.
+- Installable and offline: web app manifest, icons, service worker that caches code, lessons and fonts, an update prompt, and an Add to Home Screen guide on iPhone.
+- Romaji under kana as a reading aid (Profile → Romaji under kana), with furigana over kanji.
+- A GitHub Pages deploy workflow, ready but not yet used.
 
 ## Not built yet
 
-Offline/installable PWA, speaking exercises, diagnostic and placement tests, the remaining lessons of A1-01 and all other units, Italian content, collections, trip countdown, daily-lesson import, deployment.
+Speaking exercises, diagnostic and placement tests, the remaining lessons of A1-01 and all other units, Italian content, collections, trip countdown, daily-lesson import, deployment.

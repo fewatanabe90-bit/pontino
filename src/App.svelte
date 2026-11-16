@@ -5,6 +5,7 @@
   import Lesson from './features/Lesson.svelte';
   import Profile from './features/Profile.svelte';
   import Review from './features/Review.svelte';
+  import { applyUpdate, pwa } from './lib/pwa.svelte';
   import { app } from './lib/state.svelte';
   import { voices } from './lib/voices.svelte';
 
@@ -33,6 +34,12 @@
   <div class="toast" role="status">
     <span>{voices.toast}</span>
     <button type="button" aria-label="Dismiss" onclick={() => (voices.toast = '')}>✕</button>
+  </div>
+{/if}
+{#if pwa.updateReady && page !== 'lesson'}
+  <div class="toast" role="status">
+    <span>A new version of Pontino is ready.</span>
+    <button class="upd" type="button" onclick={applyUpdate}>Update</button>
   </div>
 {/if}
 {#if !app.ready}
@@ -93,5 +100,13 @@
     border: 0;
     color: inherit;
     font-weight: 900;
+  }
+  .toast .upd {
+    width: auto;
+    padding: 0 14px;
+    margin: -4px -4px -4px 0;
+    background: var(--brand);
+    color: #fff;
+    border-radius: 12px;
   }
 </style>

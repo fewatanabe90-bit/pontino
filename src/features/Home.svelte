@@ -4,6 +4,7 @@
   import type { Unit } from '../lib/schema';
   import { app, DAILY_XP_GOAL } from '../lib/state.svelte';
   import { localDay, streakStatus } from '../lib/streak';
+  import InstallGuide from './InstallGuide.svelte';
   import TopBar from './TopBar.svelte';
 
   let units = $state<Unit[] | null>(null);
@@ -36,6 +37,8 @@
     <Pontino bob mood={status.atRisk ? 'sleepy' : 'happy'} />
     <div class="bubble">{line}</div>
   </div>
+
+  <InstallGuide />
 
   {#if next}
     <div class="card">

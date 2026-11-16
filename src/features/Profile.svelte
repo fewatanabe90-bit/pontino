@@ -1,5 +1,6 @@
 <script lang="ts">
   import { db, exportAll, importAll } from '../lib/db';
+  import { isStandalone, pwa } from '../lib/pwa.svelte';
   import { app, reloadAfterImport, setSetting, type Furigana, type Mode } from '../lib/state.svelte';
   import { localDay } from '../lib/streak';
 
@@ -58,7 +59,10 @@
   <div class="card">
     <div class="eyebrow">Learning</div>
     {@render seg('Course', app.lang, [['ja', '日本語'], ['it', 'Italiano']], (v) => setSetting('lang', v))}
-    {@render seg<Furigana>('Furigana', app.furigana, [['always', 'Show'], ['never', 'Hide']], (v) => setSetting('furigana', v))}
+    {#if app.lang === 'ja'}
+      {@render seg('Romaji under kana', app.romaji ? 'on' : 'off', [['on', 'Show'], ['off', 'Hide']], (v) => setSetting('romaji', v === 'on'))}
+      {@render seg<Furigana>('Furigana over kanji', app.furigana, [['always', 'Show'], ['never', 'Hide']], (v) => setSetting('furigana', v))}
+    {/if}
     {@render seg('Voice speed', app.rate, [[0.7, '0.7×'], [1, '1.0×']], (v) => setSetting('rate', v))}
   </div>
 
@@ -78,9 +82,17 @@
   </div>
 
   <div class="card">
+    <div class="eyebrow">Offline</div>
+    <p class="sub" style="margin-top:8px">
+      {pwa.offlineReady || isStandalone() ? 'Ready: lessons and reviews work without a connection.' : 'After the first full load, lessons and reviews work without a connection.'}
+      Audio uses the voices on your device.
+    </p>
+  </div>
+
+  <div class="card">
     <div class="eyebrow">Credits</div>
     <p class="sub" style="margin-top:8px">
-      Spaced repetition by ts-fsrs (MIT). Font: Nunito (SIL Open Font License). Built with Svelte, Vite, Dexie and Zod (MIT / Apache-2.0).
+      Spaced repetition by ts-fsrs (MIT). Font: Nunito (SIL Open Font License). Built with Svelte, Vite, Dexie, Zod and Workbox (MIT / Apache-2.0).
       Lesson content is original to Pontino. No ads, no trackers, no accounts.
     </p>
   </div>

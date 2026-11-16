@@ -10,11 +10,13 @@ export type Mode = 'light' | 'dark' | 'auto';
 interface Settings {
   lang: Lang;
   furigana: Furigana;
+  /** Latin letters under kana, as a reading aid for the early units. */
+  romaji: boolean;
   mode: Mode;
   rate: number;
 }
 
-const DEFAULTS: Settings = { lang: 'ja', furigana: 'always', mode: 'auto', rate: 1 };
+const DEFAULTS: Settings = { lang: 'ja', furigana: 'always', romaji: true, mode: 'auto', rate: 1 };
 
 export const app = $state({
   ready: false,
@@ -66,7 +68,7 @@ export async function boot() {
 export function setSetting<K extends keyof Settings>(key: K, value: Settings[K]) {
   app[key] = value as never;
   applyTheme();
-  void put('settings', { lang: app.lang, furigana: app.furigana, mode: app.mode, rate: app.rate });
+  void put('settings', { lang: app.lang, furigana: app.furigana, romaji: app.romaji, mode: app.mode, rate: app.rate });
 }
 
 export function addXp(n: number) {

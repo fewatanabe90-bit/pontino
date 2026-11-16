@@ -126,7 +126,7 @@
     <span class="c-xp" style="font-weight:900">⚡ {xp}</span>
   </div>
   <div class="screen" style="padding-top:8px">
-    <h1 class="h">{ex.prompt}</h1>
+    <h1 class="h"><Ruby text={ex.prompt} /></h1>
     {#key `${ex.id}:${attempt}`}
       {#if ex.type === 'mcq' || ex.type === 'gap'}
         <Choice {ex} bind:answer locked={!!result} />

@@ -107,6 +107,8 @@ Not mocked yet: onboarding, placement/diagnostic, phrasebook, Atlas entry, impor
 | 2026-11-16 | **D4 approved:** palette A, Bridge Teal. |
 | 2026-11-16 | **D5 approved:** GitHub Pages from a public repo. A personal-data check and your explicit go-ahead come before the first push. |
 | 2026-11-16 | **Fonts:** Nunito bundled locally (SIL OFL). Japanese text uses the phone's own rounded Japanese font for now; bundling M PLUS Rounded 1c is deferred because of its size. |
+| 2026-11-16 | **Romaji:** shown under kana as a reading aid, on by default, switchable off in Profile. This replaces the spec's "romaji only in the kana bootcamp". The particle は is marked in content as `{は|wa}` so its romaji matches how it is said. |
+| 2026-11-16 | **Dev tools added:** vite-plugin-pwa (MIT), sharp (Apache-2.0, icon rendering only), @playwright/test (Apache-2.0), @types/node (MIT). TypeScript pinned to 6 for svelte-check. |
 
 ## 6. Next step once you answer
 
