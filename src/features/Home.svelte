@@ -22,7 +22,7 @@
   const due = $derived(app.due[app.lang]);
 
   const line = $derived.by(() => {
-    if (units && !units.length) return app.lang === 'it' ? 'Ciao! The Italian course is being written. Japanese is ready to try.' : 'Lessons are on their way.';
+    if (units && !units.length) return 'Lessons are on their way.';
     if (units && !next) return 'You finished everything written so far. More bridges are being built!';
     if (status.atRisk) return 'One short lesson keeps the streak alive. No pressure.';
     if (status.doneToday) return app.lang === 'ja' ? 'おつかれさま！ Done for today. Extra practice is always welcome.' : 'Bravo! Done for today.';

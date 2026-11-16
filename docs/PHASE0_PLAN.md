@@ -109,6 +109,9 @@ Not mocked yet: onboarding, placement/diagnostic, phrasebook, Atlas entry, impor
 | 2026-11-16 | **Fonts:** Nunito bundled locally (SIL OFL). Japanese text uses the phone's own rounded Japanese font for now; bundling M PLUS Rounded 1c is deferred because of its size. |
 | 2026-11-16 | **Romaji:** shown under kana as a reading aid, on by default, switchable off in Profile. This replaces the spec's "romaji only in the kana bootcamp". The particle は is marked in content as `{は|wa}` so its romaji matches how it is said. |
 | 2026-11-16 | **Dev tools added:** vite-plugin-pwa (MIT), sharp (Apache-2.0, icon rendering only), @playwright/test (Apache-2.0), @types/node (MIT). TypeScript pinned to 6 for svelte-check. |
+| 2026-11-16 | **Imagery and humour:** only original art drawn in code (Pontino, character portraits, confetti, two-caption "Pontino memes" with our own captions) and emoji rendered by the device. No third-party images, so nothing to license. Real internet memes are not used because their images are copyrighted. |
+| 2026-11-16 | **Sound:** effects are synthesised in the browser (no audio files). Speech plays automatically; iOS allows this only after the first tap in a session. |
+| 2026-11-16 | **Published:** public repo fewatanabe90-bit/pontino, GitHub Pages via Actions. SPEC.md kept local only. |
 
 ## 6. Next step once you answer
 

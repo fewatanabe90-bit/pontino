@@ -61,7 +61,7 @@
       {#if shown}
         <hr />
         <p class="back">{card.back}</p>
-        {#if card.note}<p class="sub tl small"><Ruby text={card.note} /></p>{/if}
+        {#if card.note}{#each card.note.split('\n') as n}<p class="sub tl small"><Ruby text={n} /></p>{/each}{/if}
       {/if}
     </div>
   </div>

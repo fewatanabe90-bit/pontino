@@ -2,6 +2,7 @@
   /** Match pairs: tap one on the left, then its partner on the right. */
   import Ruby from '../components/Ruby.svelte';
   import type { Exercise } from '../lib/schema';
+  import { sfx } from '../lib/sfx';
   import { shuffle } from '../lib/shuffle';
 
   type Ex = Extract<Exercise, { type: 'match' }>;
@@ -19,6 +20,7 @@
     if (selL === null || selR === null) return;
     if (selL === selR) {
       matched.push(selL);
+      sfx.tick();
       selL = selR = null;
       if (matched.length === ex.pairs.length) ondone(mistakes);
     } else {

@@ -21,7 +21,7 @@ describe('ruby markup', () => {
 describe('romaji reading aid', () => {
   const ro = (s: string) => readingChunks(s).map((c) => c.ro ?? '·').join(' ');
   it('gives each kana syllable its romaji and leaves other text alone', () => {
-    expect(readingChunks('です。')).toEqual([{ t: 'で', ro: 'de' }, { t: 'す', ro: 'su' }, { t: '。' }]);
+    expect(readingChunks('です。はい')).toEqual([{ t: 'で', ro: 'de' }, { t: 'す。', ro: 'su' }, { t: 'は', ro: 'ha' }, { t: 'い', ro: 'i' }]);
     expect(readingChunks('A is B')).toEqual([{ t: 'A is B' }]);
   });
   it('keeps small kana, long marks and doubled consonants with their syllable', () => {

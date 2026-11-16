@@ -75,11 +75,24 @@ function splitKana(text: string): Chunk[] {
   return out;
 }
 
+const CLOSING = /^[。、！？!?」』）)…]+/;
+
 /** Break marked-up text into display chunks with furigana and romaji. */
 export function readingChunks(text: string): Chunk[] {
-  return parseRuby(text).flatMap((seg): Chunk[] => {
+  const chunks = parseRuby(text).flatMap((seg): Chunk[] => {
     if (!seg.rt) return splitKana(seg.t);
     if (isLatin(seg.rt)) return [{ t: seg.t, ro: seg.rt }];
     return [{ t: seg.t, furi: seg.rt, ro: toRomaji(seg.rt) }];
   });
+  // Keep closing punctuation glued to the syllable before it, so a line never starts with 。
+  const out: Chunk[] = [];
+  for (const c of chunks) {
+    const prev = out[out.length - 1];
+    const lead = !c.ro && !c.furi ? c.t.match(CLOSING)?.[0] : undefined;
+    if (lead && prev?.ro && !prev.furi) {
+      prev.t += lead;
+      if (c.t.length > lead.length) out.push({ t: c.t.slice(lead.length) });
+    } else out.push({ ...c });
+  }
+  return out;
 }

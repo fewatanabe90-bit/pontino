@@ -14,6 +14,13 @@ export function startPwa() {
   apply = registerSW({
     onNeedRefresh: () => (pwa.updateReady = true),
     onOfflineReady: () => (pwa.offlineReady = true),
+    // A Home Screen app is resumed, not reloaded, so look for a new version whenever it comes back to the front.
+    onRegisteredSW: (_url, registration) => {
+      if (!registration) return;
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') void registration.update();
+      });
+    },
   });
 }
 

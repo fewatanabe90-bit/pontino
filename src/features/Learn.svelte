@@ -56,9 +56,6 @@
       </li>
     {/each}
   </ol>
-  {#if !units.length && app.lang === 'it'}
-    <p class="sub" style="text-align:center">The Italian placement test and first units come right after the Japanese sample is approved.</p>
-  {/if}
 </div>
 
 <style>

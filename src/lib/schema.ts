@@ -72,6 +72,8 @@ export const LessonSchema = z.object({
   title: z.string().min(1),
   canDo: z.string().min(1),
   intro: z.object({
+    /** A few emoji that set the scene; shown as a banner. */
+    art: z.string().optional(),
     scene: z.string(),
     lines: z.array(
       z.object({ who: z.string(), text: z.string(), meaning: z.string(), politeness: PolitenessSchema.optional() }),
@@ -79,6 +81,8 @@ export const LessonSchema = z.object({
     notes: z.array(z.object({ title: z.string(), body: z.string() })),
   }),
   exercises: z.array(ExerciseSchema).min(6),
+  /** An original two-caption joke shown when the lesson is finished. */
+  meme: z.object({ top: z.string(), bottom: z.string() }).optional(),
   /** Items that become SRS cards when the lesson is finished. */
   newItems: z.array(z.string()),
 });

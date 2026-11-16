@@ -2,6 +2,8 @@
 
 A personal, free, ad-free web app for learning Japanese and Italian. "Pontino" is Italian for "little bridge".
 
+Live at https://fewatanabe90-bit.github.io/pontino/
+
 Status: **Phase 1 in progress.** See [docs/PHASE0_PLAN.md](docs/PHASE0_PLAN.md) for the plan and decisions log, and `SPEC.md` (kept locally, not published) for the original brief.
 
 ## Run it on your computer
@@ -43,11 +45,13 @@ Progress lives only in the browser you use (IndexedDB). Profile → Export saves
 - App shell with Home, Learn, Review, Profile; light and dark themes; Japanese and Italian looks.
 - Lesson player with multiple choice, listen-and-choose, fill the gap, sentence tiles, typed answers and match pairs. Missed exercises come back at the end. A lesson resumes where you left it.
 - Review queue scheduled by FSRS, XP, streak with freezes, backup export/restore.
-- Japanese unit A1-01, lessons 1–2, as a sample for review.
+- Japanese unit A1-01 (5 lessons) and Italian unit R1 (3 lessons on the passato prossimo, with Portuguese tips).
+- Audio that plays by itself (dialogue at lesson start, each exercise, the model answer), plus synthesised sounds for right, wrong and lesson complete. Both can be switched off in Profile.
+- Original artwork only: character portraits, scene banners built from device emoji, confetti, Pontino one-liners and Pontino "memes". No third-party images.
 - Installable and offline: web app manifest, icons, service worker that caches code, lessons and fonts, an update prompt, and an Add to Home Screen guide on iPhone.
 - Romaji under kana as a reading aid (Profile → Romaji under kana), with furigana over kanji.
 - A GitHub Pages deploy workflow, ready but not yet used.
 
 ## Not built yet
 
-Speaking exercises, diagnostic and placement tests, the remaining lessons of A1-01 and all other units, Italian content, collections, trip countdown, daily-lesson import, deployment.
+Speaking exercises, diagnostic and placement tests, unit reviews, all other units, collections, trip countdown, daily-lesson import, deployment.

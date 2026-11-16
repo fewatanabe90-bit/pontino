@@ -4,6 +4,7 @@
   import Speak from '../components/Speak.svelte';
   import type { Answer } from '../lib/grade';
   import type { Exercise } from '../lib/schema';
+  import { sfx } from '../lib/sfx';
   import { shuffle } from '../lib/shuffle';
 
   type Ex = Extract<Exercise, { type: 'tiles' }>;
@@ -17,6 +18,7 @@
   }
   function add(i: number) {
     picked.push(i);
+    sfx.tick();
     sync();
   }
   function remove(at: number) {
@@ -34,7 +36,7 @@
 
 <div class="slot" aria-label="Your answer" aria-live="polite">
   {#each picked as i, at (i)}
-    <button type="button" class="tile tl" disabled={locked} onclick={() => remove(at)} aria-label={`Remove ${ex.tiles[i]}`}>
+    <button type="button" class="tile tl" disabled={locked} onclick={() => remove(at)} aria-label="Remove this tile">
       <Ruby text={ex.tiles[i] ?? ''} />
     </button>
   {/each}

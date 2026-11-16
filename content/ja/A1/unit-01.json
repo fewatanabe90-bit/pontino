@@ -16,7 +16,11 @@
     "〜か",
     "AのB",
     "Aも",
-    "これ・それ・あれ"
+    "これ・それ・あれ",
+    "この・その・あの",
+    "だれの",
+    "どこ・だれ・何",
+    "はい、そうです・いいえ、ちがいます"
   ],
   "items": [
     {
@@ -89,6 +93,95 @@
       "kind": "phrase",
       "front": "{何|なん}ですか",
       "back": "What is it?"
+    },
+    {
+      "id": "ja-a1-01.g-kono",
+      "kind": "grammar",
+      "front": "この・その・あの + noun",
+      "back": "this ~ (near me) · that ~ (near you) · that ~ over there. They must be followed by a noun; これ・それ・あれ stand alone.",
+      "note": "この{傘|かさ} this umbrella"
+    },
+    {
+      "id": "ja-a1-01.g-no-mine",
+      "kind": "grammar",
+      "front": "わたしのです",
+      "back": "\"It's mine.\" After の the noun can be dropped when it is obvious.",
+      "note": "あの{人|ひと}のです。 It's that person's."
+    },
+    {
+      "id": "ja-a1-01.g-dareno",
+      "kind": "grammar",
+      "front": "だれの",
+      "back": "whose",
+      "note": "だれの{傘|かさ}ですか。 Whose umbrella is it?"
+    },
+    {
+      "id": "ja-a1-01.p-jaa",
+      "kind": "phrase",
+      "front": "じゃあ",
+      "back": "\"Well then\" / \"in that case\". Casual; the neutral form is では."
+    },
+    {
+      "id": "ja-a1-01.g-qword",
+      "kind": "grammar",
+      "front": "どこ・だれ・{何|なん} + ですか",
+      "back": "where · who · what. The question word sits exactly where the answer will go; nothing moves to the front.",
+      "note": "お{国|くに}{は|wa}どこですか。 → ブラジルです。"
+    },
+    {
+      "id": "ja-a1-01.p-okuni",
+      "kind": "phrase",
+      "front": "お{国|くに}{は|wa}どこですか",
+      "back": "Where are you from? (literally: your country is where?) Politer: どちらですか."
+    },
+    {
+      "id": "ja-a1-01.p-oshigoto",
+      "kind": "phrase",
+      "front": "お{仕事|しごと}{は|wa}{何|なん}ですか",
+      "back": "What do you do for work?"
+    },
+    {
+      "id": "ja-a1-01.p-kara-kimashita",
+      "kind": "phrase",
+      "front": "〜から{来|き}ました",
+      "back": "I came from ~ / I'm from ~. Learn it as a set phrase for now; verbs come in the next unit.",
+      "note": "ブラジルから{来|き}ました。"
+    },
+    {
+      "id": "ja-a1-01.g-wa-bounce",
+      "kind": "grammar",
+      "front": "〜さん{は|wa}？",
+      "back": "\"And you, ~?\" Name + は with rising intonation sends the same question back."
+    },
+    {
+      "id": "ja-a1-01.g-o-prefix",
+      "kind": "grammar",
+      "front": "お〜",
+      "back": "Polite prefix for things that belong to the other person: お{国|くに}, お{仕事|しごと}, お{名前|なまえ}. Don't use it for your own."
+    },
+    {
+      "id": "ja-a1-01.p-soudesu",
+      "kind": "phrase",
+      "front": "はい、そうです",
+      "back": "Yes, that's right. The standard short \"yes\" to a noun question."
+    },
+    {
+      "id": "ja-a1-01.p-chigaimasu",
+      "kind": "phrase",
+      "front": "いいえ、ちがいます",
+      "back": "No, that's not right. Softer than repeating じゃありません."
+    },
+    {
+      "id": "ja-a1-01.p-sumimasen",
+      "kind": "phrase",
+      "front": "すみません",
+      "back": "Excuse me / sorry. The normal way to get someone's attention."
+    },
+    {
+      "id": "ja-a1-01.p-jikoshoukai",
+      "kind": "phrase",
+      "front": "{自己紹介|じこしょうかい}",
+      "back": "Self-introduction. The usual order: はじめまして → name → where from → job → よろしくお{願|ねが}いします."
     }
   ],
   "lessons": [
@@ -97,6 +190,7 @@
       "title": "A is B: は and です",
       "canDo": "I can say who I am, say what I'm not, and ask a yes/no question.",
       "intro": {
+        "art": "🏨🛋️🍵",
         "scene": "A hostel lounge. Leo, a traveller from Brazil, meets Nakamura-san.",
         "lines": [
           {
@@ -273,6 +367,10 @@
           ]
         }
       ],
+      "meme": {
+        "top": "Me: わたしは… わたしは… わたしは…",
+        "bottom": "Japanese: we get it, it is you"
+      },
       "newItems": [
         "ja-a1-01.g-wa-desu",
         "ja-a1-01.g-janai",
@@ -288,6 +386,7 @@
       "title": "Whose, which, and \"too\": の, も, これ・それ・あれ",
       "canDo": "I can ask what something is, link two nouns with の, and say \"me too\".",
       "intro": {
+        "art": "🎫⚽🗼",
         "scene": "Same lounge. Leo has something in his hand.",
         "lines": [
           {
@@ -472,12 +571,611 @@
           ]
         }
       ],
+      "meme": {
+        "top": "Portuguese: o ingresso do time de Tóquio",
+        "bottom": "Japanese: same thing, backwards. の."
+      },
       "newItems": [
         "ja-a1-01.g-no",
         "ja-a1-01.g-mo",
         "ja-a1-01.g-kosoa",
         "ja-a1-01.p-nandesuka"
       ]
+    },
+    {
+      "id": "ja-a1-01.l3",
+      "title": "This one, that one, whose?",
+      "canDo": "I can point at things, say what is mine, and ask whose something is.",
+      "intro": {
+        "art": "☂️🚪🤷",
+        "scene": "By the lounge door there is an umbrella nobody has claimed.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "この{傘|かさ}{は|wa}レオさんのですか。",
+            "meaning": "Is this umbrella yours, Leo?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいえ、わたしのじゃありません。",
+            "meaning": "No, it's not mine.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "じゃあ、だれの{傘|かさ}ですか。",
+            "meaning": "Then whose umbrella is it?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "あの{人|ひと}のです。",
+            "meaning": "It's that person's, over there.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "そうですか。ありがとうございます。",
+            "meaning": "I see. Thank you.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "この vs これ",
+            "body": "これ・それ・あれ stand alone: これ{は|wa}{傘|かさ}です. この・その・あの need a noun right after them: この{傘|かさ}. Portuguese uses one word for both (\"este\" / \"este guarda-chuva\"); Japanese does not."
+          },
+          {
+            "title": "〜のです = mine, yours, theirs",
+            "body": "After の you can drop a noun that is obvious: わたしの{傘|かさ}です → わたしのです (it's mine). あの{人|ひと}のです = it's that person's."
+          },
+          {
+            "title": "だれの",
+            "body": "だれ = who, so だれの = whose. Like every question word, it stays where the answer goes: だれの{傘|かさ}ですか → あの{人|ひと}の{傘|かさ}です."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-01.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "___かばん{は|wa}わたしのです。",
+          "meaning": "This bag is mine.",
+          "options": [
+            "この",
+            "これ",
+            "それ"
+          ],
+          "answer": 0,
+          "explain": "A noun follows, so it must be この. これ stands alone."
+        },
+        {
+          "id": "ja-a1-01.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "___{は|wa}わたしのかばんです。",
+          "meaning": "This is my bag.",
+          "options": [
+            "これ",
+            "この",
+            "あの"
+          ],
+          "answer": 0,
+          "explain": "No noun follows directly, so it is これ."
+        },
+        {
+          "id": "ja-a1-01.l3.e3",
+          "type": "tiles",
+          "prompt": "Build: \"Whose umbrella is it?\"",
+          "meaning": "Whose umbrella is it?",
+          "tiles": [
+            "だれ",
+            "の",
+            "{傘|かさ}",
+            "です",
+            "か",
+            "{は|wa}"
+          ],
+          "answer": "だれの{傘|かさ}ですか",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l3.e4",
+          "type": "mcq",
+          "prompt": "Which one means \"No, it's not mine\"?",
+          "options": [
+            "いいえ、わたしのじゃありません。",
+            "いいえ、わたしじゃありません。",
+            "いいえ、わたしのです。"
+          ],
+          "answer": 0,
+          "explain": "わたしの = mine. Without の it means \"it's not me\"."
+        },
+        {
+          "id": "ja-a1-01.l3.e5",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What is the question?",
+          "text": "あの{人|ひと}{は|wa}だれですか。",
+          "options": [
+            "Who is that person over there?",
+            "Whose is that?",
+            "Is that person a student?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l3.e6",
+          "type": "tiles",
+          "prompt": "Answer: \"It's that person's (over there).\"",
+          "context": "この{傘|かさ}{は|wa}だれのですか。",
+          "meaning": "It's that person's.",
+          "tiles": [
+            "あの",
+            "{人|ひと}",
+            "の",
+            "です",
+            "その",
+            "か"
+          ],
+          "answer": "あの{人|ひと}のです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l3.e7",
+          "type": "type",
+          "prompt": "The bag is next to Nakamura-san. Ask in Japanese: \"Is that bag yours, Nakamura-san?\"",
+          "answer": "そのかばん{は|wa}{中村|なかむら}さんのですか。",
+          "alt": [
+            "そのかばん{は|wa}{中村|なかむら}さんのかばんですか。",
+            "その{鞄|かばん}{は|wa}{中村|なかむら}さんのですか。",
+            "そのカバン{は|wa}{中村|なかむら}さんのですか。"
+          ],
+          "explain": "その because the bag is near the listener. Use the name + さん, not \"you\"."
+        },
+        {
+          "id": "ja-a1-01.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "この〜",
+              "this ~ (near me)"
+            ],
+            [
+              "その〜",
+              "that ~ (near you)"
+            ],
+            [
+              "あの〜",
+              "that ~ over there"
+            ],
+            [
+              "だれの",
+              "whose"
+            ],
+            [
+              "わたしの",
+              "my / mine"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Nobody:",
+        "bottom": "That one umbrella by the door: だれの？"
+      },
+      "newItems": [
+        "ja-a1-01.g-kono",
+        "ja-a1-01.g-no-mine",
+        "ja-a1-01.g-dareno",
+        "ja-a1-01.p-jaa"
+      ]
+    },
+    {
+      "id": "ja-a1-01.l4",
+      "title": "Where from? What job? Question words",
+      "canDo": "I can ask and say where someone is from and what they do.",
+      "intro": {
+        "art": "🌎💼☕",
+        "scene": "The conversation in the lounge continues.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "レオさん、お{国|くに}{は|wa}どこですか。",
+            "meaning": "Leo, where are you from?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "ブラジルです。サンパウロから{来|き}ました。",
+            "meaning": "Brazil. I'm from São Paulo.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "へえ、サンパウロですか。お{仕事|しごと}{は|wa}{何|なん}ですか。",
+            "meaning": "Oh, São Paulo. What do you do?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{会社員|かいしゃいん}です。{中村|なかむら}さん{は|wa}？",
+            "meaning": "I'm an office worker. And you, Nakamura-san?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "わたし{は|wa}{大学|だいがく}の{先生|せんせい}です。",
+            "meaning": "I'm a university teacher.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Question words stay put",
+            "body": "English moves the question word to the front. Japanese leaves it where the answer goes: お{国|くに}{は|wa}どこですか → お{国|くに}{は|wa}ブラジルです. Swap the word, keep the sentence."
+          },
+          {
+            "title": "お〜 is for the other person",
+            "body": "お{国|くに}, お{仕事|しごと}, お{名前|なまえ} show respect for what belongs to the listener. Talking about yourself, drop it: {仕事|しごと}{は|wa}{会社員|かいしゃいん}です."
+          },
+          {
+            "title": "〜さん{は|wa}？",
+            "body": "To return a question, say the name + {は|wa} with rising intonation. No need to repeat the whole question."
+          },
+          {
+            "title": "〜から{来|き}ました",
+            "body": "\"I came from ~\". Treat it as a ready-made phrase for now. Verbs like {来|き}ます get their own unit next."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-01.l4.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "お{国|くに}{は|wa}___ですか。",
+          "meaning": "Where are you from?",
+          "options": [
+            "どこ",
+            "だれ",
+            "{何|なん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l4.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "お{仕事|しごと}{は|wa}___ですか。",
+          "meaning": "What is your job?",
+          "options": [
+            "{何|なん}",
+            "どこ",
+            "だれ"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l4.e3",
+          "type": "mcq",
+          "prompt": "You answered Nakamura-san's question and want to ask the same thing back. What do you say?",
+          "options": [
+            "{中村|なかむら}さん{は|wa}？",
+            "{中村|なかむら}さんですか。",
+            "{中村|なかむら}さんも。"
+          ],
+          "answer": 0,
+          "explain": "Name + {は|wa}？ returns the question."
+        },
+        {
+          "id": "ja-a1-01.l4.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I came from São Paulo.\"",
+          "meaning": "I came from São Paulo.",
+          "tiles": [
+            "サンパウロ",
+            "から",
+            "{来|き}ました",
+            "の",
+            "{は|wa}",
+            "です"
+          ],
+          "answer": "サンパウロから{来|き}ました",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l4.e5",
+          "type": "mcq",
+          "prompt": "お〜 is for the other person's things. Which sentence sounds odd?",
+          "options": [
+            "わたしのお{国|くに}{は|wa}ブラジルです。",
+            "お{仕事|しごと}{は|wa}{何|なん}ですか。",
+            "{国|くに}{は|wa}ブラジルです。"
+          ],
+          "answer": 0,
+          "explain": "Don't honour your own country: say {国|くに}{は|wa}ブラジルです, or just ブラジルです."
+        },
+        {
+          "id": "ja-a1-01.l4.e6",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What are you being asked?",
+          "text": "お{名前|なまえ}{は|wa}{何|なん}ですか。",
+          "options": [
+            "What is your name?",
+            "What is your job?",
+            "Where are you from?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l4.e7",
+          "type": "type",
+          "prompt": "Ask someone you have just met, in Japanese: \"What do you do for work?\"",
+          "answer": "お{仕事|しごと}{は|wa}{何|なん}ですか。",
+          "alt": [
+            "{仕事|しごと}{は|wa}{何|なん}ですか。",
+            "お{仕事|しごと}{は|wa}{何|なに}ですか。"
+          ]
+        },
+        {
+          "id": "ja-a1-01.l4.e8",
+          "type": "tiles",
+          "prompt": "Answer: \"It's Brazil. And you, Nakamura-san?\"",
+          "context": "お{国|くに}{は|wa}どこですか。",
+          "meaning": "It's Brazil. And you, Nakamura-san?",
+          "tiles": [
+            "ブラジル",
+            "です。",
+            "{中村|なかむら}さん",
+            "{は|wa}？",
+            "どこ",
+            "か"
+          ],
+          "answer": "ブラジルです。{中村|なかむら}さん{は|wa}？",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l4.e9",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "どこ",
+              "where"
+            ],
+            [
+              "だれ",
+              "who"
+            ],
+            [
+              "{何|なん}",
+              "what"
+            ],
+            [
+              "お{国|くに}",
+              "your country"
+            ],
+            [
+              "お{仕事|しごと}",
+              "your job"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Question words in English: sprint to the front",
+        "bottom": "Question words in Japanese: I am fine right here"
+      },
+      "newItems": [
+        "ja-a1-01.g-qword",
+        "ja-a1-01.p-okuni",
+        "ja-a1-01.p-oshigoto",
+        "ja-a1-01.p-kara-kimashita",
+        "ja-a1-01.g-wa-bounce",
+        "ja-a1-01.g-o-prefix"
+      ]
+    },
+    {
+      "id": "ja-a1-01.l5",
+      "title": "Yes, that's right. Your self-introduction",
+      "canDo": "I can confirm or correct what someone asks about me and give a full self-introduction.",
+      "intro": {
+        "art": "👋🙋🎓",
+        "scene": "A newcomer walks into the lounge, looking for Leo.",
+        "lines": [
+          {
+            "who": "佐藤",
+            "text": "すみません、レオさんですか。",
+            "meaning": "Excuse me, are you Leo?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、そうです。",
+            "meaning": "Yes, I am.",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "{佐藤|さとう}です。{中村|なかむら}さんの{友|とも}だちです。",
+            "meaning": "I'm Sato. I'm a friend of Nakamura's.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{佐藤|さとう}さんも{先生|せんせい}ですか。",
+            "meaning": "Are you a teacher too, Sato-san?",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "いいえ、ちがいます。{学生|がくせい}です。",
+            "meaning": "No, I'm not. I'm a student.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "はい、そうです · いいえ、ちがいます",
+            "body": "The everyday short answers to \"is it X?\" questions. そうです = \"that's so\". ちがいます = \"that's different\", a gentler no than repeating じゃありません."
+          },
+          {
+            "title": "すみません",
+            "body": "\"Excuse me\" to start talking to a stranger, and also a light \"sorry\". You will use it constantly in Japan."
+          },
+          {
+            "title": "Your self-introduction",
+            "body": "The usual order: はじめまして。→ name + です。→ place + から{来|き}ました。→ job + です。→ よろしくお{願|ねが}いします。 Short sentences, no わたし{は|wa} needed."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-01.l5.e1",
+          "type": "mcq",
+          "prompt": "Sato is a student. How does Sato answer?",
+          "text": "{佐藤|さとう}さん{は|wa}{先生|せんせい}ですか。",
+          "options": [
+            "いいえ、ちがいます。",
+            "はい、そうです。",
+            "いいえ、そうです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l5.e2",
+          "type": "tiles",
+          "prompt": "Answer: \"Yes, that's right.\"",
+          "context": "レオさんですか。",
+          "meaning": "Yes, that's right.",
+          "tiles": [
+            "はい、",
+            "そうです",
+            "いいえ、",
+            "ちがいます",
+            "か"
+          ],
+          "answer": "はい、そうです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l5.e3",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{佐藤|さとう}さん___{先生|せんせい}ですか。",
+          "meaning": "Are you a teacher too, Sato-san?",
+          "options": [
+            "も",
+            "の",
+            "か"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l5.e4",
+          "type": "mcq",
+          "prompt": "Which line closes a self-introduction?",
+          "options": [
+            "よろしくお{願|ねが}いします。",
+            "はじめまして。",
+            "ブラジルから{来|き}ました。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l5.e5",
+          "type": "tiles",
+          "prompt": "Build: \"I'm a friend of Nakamura's.\"",
+          "meaning": "I'm a friend of Nakamura's.",
+          "tiles": [
+            "{中村|なかむら}さん",
+            "の",
+            "{友|とも}だち",
+            "です",
+            "{は|wa}",
+            "も"
+          ],
+          "answer": "{中村|なかむら}さんの{友|とも}だちです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l5.e6",
+          "type": "type",
+          "listen": true,
+          "prompt": "Type what you hear.",
+          "text": "はい、そうです。",
+          "answer": "はい、そうです。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-01.l5.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I came from Brazil.\"",
+          "answer": "ブラジルから{来|き}ました。",
+          "alt": [
+            "わたし{は|wa}ブラジルから{来|き}ました。",
+            "{私|わたし}{は|wa}ブラジルから{来|き}ました。"
+          ]
+        },
+        {
+          "id": "ja-a1-01.l5.e8",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What did the person say?",
+          "text": "いいえ、ちがいます。{学生|がくせい}です。",
+          "options": [
+            "No, that's not right. I'm a student.",
+            "Yes, that's right. I'm a student.",
+            "No, I'm not a student."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l5.e9",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "はい、そうです",
+              "Yes, that's right"
+            ],
+            [
+              "いいえ、ちがいます",
+              "No, that's not right"
+            ],
+            [
+              "すみません",
+              "Excuse me"
+            ],
+            [
+              "はじめまして",
+              "Nice to meet you"
+            ],
+            [
+              "よろしくお{願|ねが}いします",
+              "closing line of an introduction"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "いいえ、ちがいます",
+        "bottom": "The politest \"nope\" on Earth"
+      },
+      "newItems": [
+        "ja-a1-01.p-soudesu",
+        "ja-a1-01.p-chigaimasu",
+        "ja-a1-01.p-sumimasen",
+        "ja-a1-01.p-jikoshoukai"
+      ]
     }
+  ],
+  "factCheck": [
+    "Native-speaker review of all five lessons is still pending."
   ]
 }

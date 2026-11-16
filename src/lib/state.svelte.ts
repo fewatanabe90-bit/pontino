@@ -12,11 +12,15 @@ interface Settings {
   furigana: Furigana;
   /** Latin letters under kana, as a reading aid for the early units. */
   romaji: boolean;
+  /** Sound effects for right and wrong answers. */
+  sound: boolean;
+  /** Read dialogues and exercises aloud without tapping. */
+  autoplay: boolean;
   mode: Mode;
   rate: number;
 }
 
-const DEFAULTS: Settings = { lang: 'ja', furigana: 'always', romaji: true, mode: 'auto', rate: 1 };
+const DEFAULTS: Settings = { lang: 'ja', furigana: 'always', romaji: true, sound: true, autoplay: true, mode: 'auto', rate: 1 };
 
 export const app = $state({
   ready: false,
@@ -68,7 +72,7 @@ export async function boot() {
 export function setSetting<K extends keyof Settings>(key: K, value: Settings[K]) {
   app[key] = value as never;
   applyTheme();
-  void put('settings', { lang: app.lang, furigana: app.furigana, romaji: app.romaji, mode: app.mode, rate: app.rate });
+  void put('settings', { lang: app.lang, furigana: app.furigana, romaji: app.romaji, sound: app.sound, autoplay: app.autoplay, mode: app.mode, rate: app.rate });
 }
 
 export function addXp(n: number) {
@@ -107,7 +111,7 @@ export async function completeLesson(unit: Unit, lesson: Lesson, score: number):
   const items = unit.items.filter((i) => lesson.newItems.includes(i.id));
   const fresh = [];
   for (const i of items) {
-    const card = newCard({ itemId: i.id, lang: unit.lang, unitId: unit.id, front: i.front, back: i.back, note: i.note });
+    const card = newCard({ itemId: i.id, lang: unit.lang, unitId: unit.id, front: i.front, back: i.back, note: [i.note, i.pt && `🇧🇷 ${i.pt}`].filter(Boolean).join('\n') || undefined });
     if (!(await db.cards.get(card.id))) fresh.push(card);
   }
   await db.cards.bulkPut(fresh);

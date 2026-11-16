@@ -17,15 +17,42 @@ function pickVoice(lang: Lang): SpeechSynthesisVoice | undefined {
 /** Is there a voice for this language? Without one the browser stays silent or reads with the wrong accent. */
 export const hasVoice = (lang: Lang): boolean => ttsSupported() && pickVoice(lang) !== undefined;
 
-/** Speak target-language text. On iOS this must be called from a tap. Returns false if nothing can be spoken. */
-export function speak(text: string, lang: Lang, rate = 1): boolean {
-  if (!hasVoice(lang)) return false;
-  speechSynthesis.cancel();
+function utterance(text: string, lang: Lang, rate: number): SpeechSynthesisUtterance {
   const u = new SpeechSynthesisUtterance(stripRuby(text).replace(/___/g, ' '));
   u.lang = LOCALE[lang];
   u.rate = rate;
   const voice = pickVoice(lang);
   if (voice) u.voice = voice;
-  speechSynthesis.speak(u);
+  return u;
+}
+
+/** Speak target-language text. Returns false if nothing can be spoken. */
+export function speak(text: string, lang: Lang, rate = 1): boolean {
+  if (!hasVoice(lang)) return false;
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance(text, lang, rate));
   return true;
 }
+
+/**
+ * Speak several lines one after another. `onLine(i)` fires as each starts and `onLine(-1)` at the end.
+ * Returns a function that stops playback.
+ */
+export function speakAll(texts: string[], lang: Lang, rate: number, onLine: (i: number) => void): () => void {
+  if (!hasVoice(lang) || !texts.length) return () => {};
+  let stopped = false;
+  speechSynthesis.cancel();
+  texts.forEach((text, i) => {
+    const u = utterance(text, lang, rate);
+    u.onstart = () => !stopped && onLine(i);
+    if (i === texts.length - 1) u.onend = () => !stopped && onLine(-1);
+    speechSynthesis.speak(u);
+  });
+  return () => {
+    stopped = true;
+    speechSynthesis.cancel();
+    onLine(-1);
+  };
+}
+
+export const stopSpeaking = () => ttsSupported() && speechSynthesis.cancel();

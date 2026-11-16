@@ -46,6 +46,11 @@ export function unitProblems(unit: Unit): string[] {
       }
       if (ex.type === 'mcq' && ex.listen && !ex.text) problems.push(`${ex.id}: listening exercise without audio text`);
       if (ex.type === 'type' && ex.listen && !ex.text) problems.push(`${ex.id}: dictation without audio text`);
+      if (ex.type === 'match') {
+        for (const side of [0, 1] as const) {
+          if (new Set(ex.pairs.map((p) => p[side])).size !== ex.pairs.length) problems.push(`${ex.id}: repeated match item`);
+        }
+      }
       if (ex.type === 'tiles' && !canBuild(ex.answer, ex.tiles, unit.lang)) {
         problems.push(`${ex.id}: answer cannot be built from the tiles`);
       }
