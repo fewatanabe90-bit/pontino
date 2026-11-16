@@ -4,6 +4,7 @@
   import Pontino from '../design/Pontino.svelte';
   import { db } from '../lib/db';
   import { decks } from '../lib/decks';
+  import { forYouFirst, matches } from '../lib/interests';
   import { rate, Rating, type Grade, type SrsCard } from '../lib/srs';
   import { addXp, app, markPractice, refreshDue } from '../lib/state.svelte';
   import TopBar from './TopBar.svelte';
@@ -23,7 +24,7 @@
   const due = $derived(app.due[app.lang]);
   const card = $derived(cards[0]);
 
-  const myDecks = $derived(decks.filter((d) => d.lang === app.lang));
+  const myDecks = $derived(forYouFirst(decks.filter((d) => d.lang === app.lang), app.interests));
   let learned = $state<Record<string, number>>({});
   $effect(() => {
     for (const d of myDecks) {
@@ -113,7 +114,7 @@
         <a class="card deck" href="#/deck/{d.id}">
           <span class="ico" aria-hidden="true">{d.icon}</span>
           <span class="body">
-            <span class="h">{d.title}</span>
+            <span class="h">{d.title}{#if matches(d.tags, app.interests)} <span class="foryou">For you</span>{/if}</span>
             <span class="sub">{d.description}</span>
             <span class="bar"><i style="width:{(n / d.cards.length) * 100}%"></i></span>
             <span class="sub">{n} of {d.cards.length} cards learned</span>
@@ -215,6 +216,18 @@
   }
   .body .bar {
     height: 10px;
+  }
+  .foryou {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 2px 8px;
+    vertical-align: middle;
+    white-space: nowrap;
   }
   .big-ring {
     width: 84px;

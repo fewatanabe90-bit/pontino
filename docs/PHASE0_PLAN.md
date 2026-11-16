@@ -112,6 +112,8 @@ Not mocked yet: onboarding, placement/diagnostic, phrasebook, Atlas entry, impor
 | 2026-11-16 | **Imagery and humour:** only original art drawn in code (Pontino, character portraits, confetti, two-caption "Pontino memes" with our own captions) and emoji rendered by the device. No third-party images, so nothing to license. Real internet memes are not used because their images are copyrighted. |
 | 2026-11-16 | **Sound:** effects are synthesised in the browser (no audio files). Speech plays automatically; iOS allows this only after the first tap in a session. |
 | 2026-11-16 | **Published:** public repo fewatanabe90-bit/pontino, GitHub Pages via Actions. SPEC.md kept local only. |
+| 2026-11-16 | **Direction:** every sentence must be something you would really say (see CONTENT_GUIDE.md); units are built around situations; interests personalise decks and settings. "Real-life missions" were proposed and **declined**. |
+| 2026-11-16 | **Voices:** still the device's text-to-speech, now choosing the most natural voice, one per speaker, with turn-taking pauses and a 0.9 default speed. Pre-generated neural audio and licensed photos are proposals awaiting a decision. |
 
 ## 6. Next step once you answer
 

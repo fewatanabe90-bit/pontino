@@ -2,6 +2,9 @@
   "id": "it-deck-viaggio",
   "lang": "it",
   "icon": "🚆",
+  "tags": [
+    "travel"
+  ],
   "title": "In viaggio",
   "description": "Trains, hotels and restaurants: the words a trip through Italy runs on.",
   "cards": [

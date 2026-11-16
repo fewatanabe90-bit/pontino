@@ -51,7 +51,10 @@ Progress lives only in the browser you use (IndexedDB). Profile → Export saves
 - Original artwork only: character portraits, scene banners built from device emoji, confetti, Pontino one-liners and Pontino "memes". No third-party images.
 - Installable and offline: web app manifest, icons, service worker that caches code, lessons and fonts, an update prompt, and an Add to Home Screen guide on iPhone.
 - Romaji under kana as a reading aid (Profile → Romaji under kana), with furigana over kanji.
-- Flashcard decks: flip cards for vocabulary (97 cards in five decks), which join the review queue as you learn them.
+- Interests picker (travel, sports, history, geography, politics): matching decks and units are offered first.
+- Dialogues play as conversations in illustrated scenes: one voice per speaker, pauses between turns, the speaker lights up. Voice picker in Profile; robotic novelty voices are never auto-selected.
+- Japanese unit "Match day" (3 lessons on polite verbs and particles) and sports decks in both languages.
+- Flashcard decks: flip cards for vocabulary (130 cards in seven decks), which join the review queue as you learn them.
 - Deployed to GitHub Pages on every push to main.
 
 ## Not built yet

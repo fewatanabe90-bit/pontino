@@ -1,0 +1,100 @@
+{
+  "id": "ja-deck-sports",
+  "lang": "ja",
+  "icon": "⚾",
+  "tags": [
+    "sports"
+  ],
+  "title": "Sports talk",
+  "description": "Enough to follow a game and chat with the fan in the next seat.",
+  "cards": [
+    {
+      "id": "ja-deck-sports.01",
+      "front": "{試合|しあい}",
+      "back": "match, game"
+    },
+    {
+      "id": "ja-deck-sports.02",
+      "front": "{野球|やきゅう}",
+      "back": "baseball"
+    },
+    {
+      "id": "ja-deck-sports.03",
+      "front": "サッカー",
+      "back": "football (soccer)"
+    },
+    {
+      "id": "ja-deck-sports.04",
+      "front": "{相撲|すもう}",
+      "back": "sumo"
+    },
+    {
+      "id": "ja-deck-sports.05",
+      "front": "{選手|せんしゅ}",
+      "back": "player, athlete"
+    },
+    {
+      "id": "ja-deck-sports.06",
+      "front": "チーム",
+      "back": "team"
+    },
+    {
+      "id": "ja-deck-sports.07",
+      "front": "{勝|か}ちました",
+      "back": "won",
+      "note": "{東京|とうきょう}が{勝|か}ちました。"
+    },
+    {
+      "id": "ja-deck-sports.08",
+      "front": "{負|ま}けました",
+      "back": "lost"
+    },
+    {
+      "id": "ja-deck-sports.09",
+      "front": "{引|ひ}き{分|わ}け",
+      "back": "a draw"
+    },
+    {
+      "id": "ja-deck-sports.10",
+      "front": "{応援|おうえん}します",
+      "back": "to cheer for, to support",
+      "note": "どのチームを{応援|おうえん}していますか。 Which team do you support?"
+    },
+    {
+      "id": "ja-deck-sports.11",
+      "front": "ファン",
+      "back": "fan"
+    },
+    {
+      "id": "ja-deck-sports.12",
+      "front": "{席|せき}",
+      "back": "seat"
+    },
+    {
+      "id": "ja-deck-sports.13",
+      "front": "{球場|きゅうじょう}",
+      "back": "ballpark, baseball stadium"
+    },
+    {
+      "id": "ja-deck-sports.14",
+      "front": "スタジアム",
+      "back": "stadium"
+    },
+    {
+      "id": "ja-deck-sports.15",
+      "front": "{点|てん}",
+      "back": "point, goal, run"
+    },
+    {
+      "id": "ja-deck-sports.16",
+      "front": "すごい！",
+      "back": "Amazing!"
+    },
+    {
+      "id": "ja-deck-sports.17",
+      "front": "がんばれ！",
+      "back": "Come on! / Go for it!",
+      "note": "What the crowd shouts."
+    }
+  ]
+}

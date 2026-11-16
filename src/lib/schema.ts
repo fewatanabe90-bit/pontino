@@ -1,6 +1,8 @@
 import { z } from 'zod';
+import { INTEREST_IDS } from './interests';
 
 export const LangSchema = z.enum(['ja', 'it']);
+export const InterestSchema = z.enum(INTEREST_IDS);
 export const PolitenessSchema = z.enum(['plain', 'polite', 'keigo']);
 
 export const ItemSchema = z.object({
@@ -72,7 +74,9 @@ export const LessonSchema = z.object({
   title: z.string().min(1),
   canDo: z.string().min(1),
   intro: z.object({
-    /** A few emoji that set the scene; shown as a banner. */
+    /** Which illustrated scene the dialogue happens in. */
+    place: z.enum(['lounge', 'station', 'stadium', 'cafe', 'train']).optional(),
+    /** A few emoji that set the scene; shown as a banner when there is no `place`. */
     art: z.string().optional(),
     scene: z.string(),
     lines: z.array(
@@ -106,6 +110,8 @@ export const DeckSchema = z.object({
   id: z.string().min(1),
   lang: LangSchema,
   icon: z.string(),
+  /** Interests this deck speaks to; matching decks are offered first. */
+  tags: z.array(InterestSchema).optional(),
   title: z.string().min(1),
   description: z.string(),
   cards: z
@@ -129,6 +135,7 @@ export const CatalogSchema = z.array(
     sub: z.string(),
     track: z.enum(['core', 'trip']),
     icon: z.string(),
+    tags: z.array(InterestSchema).optional(),
     /** Path under /content, without extension, once the unit is written. */
     file: z.string().optional(),
   }),

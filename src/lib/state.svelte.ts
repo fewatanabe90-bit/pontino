@@ -1,8 +1,10 @@
 import { db, type LessonProgress } from './db';
+import { INTEREST_IDS, type Interest } from './interests';
 import type { Lang } from './normalise';
 import type { Lesson, Unit } from './schema';
 import { newCard } from './srs';
 import { emptyStreak, localDay, recordPractice, type Streak } from './streak';
+import { setPreferredVoice } from './tts';
 
 export type Furigana = 'always' | 'never';
 export type Mode = 'light' | 'dark' | 'auto';
@@ -12,6 +14,13 @@ interface Settings {
   furigana: Furigana;
   /** Latin letters under kana, as a reading aid for the early units. */
   romaji: boolean;
+  /** Topics the learner picked; matching decks and units are offered first. */
+  interests: Interest[];
+  /** The learner has confirmed their interests at least once. */
+  interestsSet: boolean;
+  /** Chosen voice per language (a voiceURI); empty picks the best one on the device. */
+  voiceJa: string;
+  voiceIt: string;
   /** Sound effects for right and wrong answers. */
   sound: boolean;
   /** Read dialogues and exercises aloud without tapping. */
@@ -20,7 +29,7 @@ interface Settings {
   rate: number;
 }
 
-const DEFAULTS: Settings = { lang: 'ja', furigana: 'always', romaji: true, sound: true, autoplay: true, mode: 'auto', rate: 1 };
+const DEFAULTS: Settings = { lang: 'ja', furigana: 'always', romaji: true, interests: [...INTEREST_IDS], interestsSet: false, voiceJa: '', voiceIt: '', sound: true, autoplay: true, mode: 'auto', rate: 0.9 };
 
 export const app = $state({
   ready: false,
@@ -39,6 +48,8 @@ const put = (key: string, value: unknown) => db.kv.put({ key, value: $state.snap
 
 function applyTheme() {
   const dark = app.mode === 'dark' || (app.mode === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+  setPreferredVoice('ja', app.voiceJa);
+  setPreferredVoice('it', app.voiceIt);
   const root = document.documentElement;
   root.dataset.lang = app.lang;
   root.dataset.mode = dark ? 'dark' : 'light';
@@ -56,6 +67,11 @@ export async function refreshDue() {
 export async function boot() {
   const kv = new Map((await db.kv.toArray()).map((r) => [r.key, r.value]));
   Object.assign(app, DEFAULTS, kv.get('settings') ?? {});
+  // One-time change: the first versions saved full speed as the default; the natural default is a little slower.
+  if (!kv.get('rateTuned')) {
+    app.rate = DEFAULTS.rate;
+    void put('rateTuned', true);
+  }
   app.xp = (kv.get('xp') as number | undefined) ?? 0;
   app.streak = (kv.get('streak') as Streak | undefined) ?? emptyStreak();
   const day = kv.get('xpDay') as { day: string; xp: number } | undefined;
@@ -72,7 +88,7 @@ export async function boot() {
 export function setSetting<K extends keyof Settings>(key: K, value: Settings[K]) {
   app[key] = value as never;
   applyTheme();
-  void put('settings', { lang: app.lang, furigana: app.furigana, romaji: app.romaji, sound: app.sound, autoplay: app.autoplay, mode: app.mode, rate: app.rate });
+  void put('settings', { lang: app.lang, furigana: app.furigana, romaji: app.romaji, interests: app.interests, interestsSet: app.interestsSet, voiceJa: app.voiceJa, voiceIt: app.voiceIt, sound: app.sound, autoplay: app.autoplay, mode: app.mode, rate: app.rate });
 }
 
 export function addXp(n: number) {

@@ -5,6 +5,7 @@
   import Confetti from '../design/Confetti.svelte';
   import MemeCard from '../design/MemeCard.svelte';
   import Pontino from '../design/Pontino.svelte';
+  import Scene from '../design/Scene.svelte';
   import Choice from '../exercises/Choice.svelte';
   import Match from '../exercises/Match.svelte';
   import Tiles from '../exercises/Tiles.svelte';
@@ -16,7 +17,7 @@
   import type { Exercise, Lesson, Unit } from '../lib/schema';
   import { sfx } from '../lib/sfx';
   import { addXp, app, completeLesson, saveLessonStep } from '../lib/state.svelte';
-  import { speak, speakAll, stopSpeaking } from '../lib/tts';
+  import { speak, speakDialogue, stopSpeaking } from '../lib/tts';
 
   let { unitId, lessonId }: { unitId: string; lessonId: string } = $props();
 
@@ -40,7 +41,10 @@
   let newCards = $state(0);
   /** Dialogue line being read aloud, or -1. */
   let playing = $state(-1);
+  /** Furthest line reached; later lines stay faded while the conversation is playing for the first time. */
+  let heard = $state(-1);
   let stopDialogue: () => void = () => {};
+  const cast = $derived([...new Set(lesson?.intro.lines.map((l) => l.who) ?? [])].slice(0, 3));
   const missed = new Set<number>();
 
   const total = $derived(lesson?.exercises.length ?? 1);
@@ -73,7 +77,13 @@
   function playDialogue() {
     if (!lesson || !unit) return;
     stopDialogue();
-    stopDialogue = speakAll(lesson.intro.lines.map((l) => l.text), unit.lang, app.rate, (i) => (playing = i));
+    stopDialogue = speakDialogue(lesson.intro.lines, unit.lang, app.rate, (i) => {
+      playing = i;
+      if (i >= 0) {
+        heard = Math.max(heard, i);
+        document.getElementById(`line-${i}`)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    });
   }
 
   /** The target-language sentence an exercise is about, when hearing it does not give the answer away. */
@@ -153,7 +163,15 @@
 {:else if phase === 'intro'}
   <div class="screen">
     <div class="row"><a class="x" href="#/learn" aria-label="Close lesson">✕</a><div class="eyebrow">{unit.title}</div></div>
-    {#if lesson.intro.art}
+    {#if lesson.intro.place}
+      <Scene place={lesson.intro.place}>
+        {#each cast as who}
+          <div class="actor" class:talking={playing >= 0 && lesson.intro.lines[playing]?.who === who}>
+            <Avatar name={who} size={64} speaking={playing >= 0 && lesson.intro.lines[playing]?.who === who} />
+          </div>
+        {/each}
+      </Scene>
+    {:else if lesson.intro.art}
       <div class="art" aria-hidden="true">
         {#each segments(lesson.intro.art) as g, i}<span style="--i:{i}">{g}</span>{/each}
       </div>
@@ -166,7 +184,7 @@
       </button>
     </div>
     {#each lesson.intro.lines as l, i}
-      <div class="row line">
+      <div class="row line" id="line-{i}" class:later={playing >= 0 && i > heard}>
         <Avatar name={l.who} speaking={playing === i} />
         <div class="bubble" class:on={playing === i}>
           <div class="row" style="gap:8px;align-items:flex-start">
@@ -304,6 +322,19 @@
   }
   .line {
     align-items: flex-start;
+    transition: opacity 0.35s;
+    scroll-margin: 190px 0 90px;
+  }
+  .line.later {
+    opacity: 0.28;
+  }
+  .actor {
+    transition: transform 0.25s cubic-bezier(0.3, 1.6, 0.5, 1);
+    transform-origin: bottom center;
+    filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
+  }
+  .actor.talking {
+    transform: scale(1.22);
   }
   .bubble.on,
   .bubble.on::before {

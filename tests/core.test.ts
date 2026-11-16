@@ -2,11 +2,13 @@ import { describe, expect, it } from 'vitest';
 import { canBuild, checkAnswer } from '../src/lib/check';
 import { parseBackup } from '../src/lib/db';
 import { grade } from '../src/lib/grade';
+import { forYouFirst, matches } from '../src/lib/interests';
 import { normaliseIt, normaliseJa } from '../src/lib/normalise';
 import { parseRuby, readingChunks, rubyReading, stripRuby } from '../src/lib/ruby';
 import type { Exercise } from '../src/lib/schema';
 import { isDue, newCard, rate, Rating } from '../src/lib/srs';
 import { emptyStreak, recordPractice, streakStatus, type Streak } from '../src/lib/streak';
+import { voiceScore } from '../src/lib/tts';
 
 describe('ruby markup', () => {
   it('parses, strips and reads', () => {
@@ -206,4 +208,28 @@ describe('backup', () => {
     expect(restored.fsrs.due.getTime()).toBe(card.due);
     expect(() => rate(restored, Rating.Good)).not.toThrow();
   });
+});
+
+describe('voice choice', () => {
+  const v = (name: string, localService = true) => ({ name, localService });
+  const best = (names: string[], lang: 'ja' | 'it') => [...names].sort((a, b) => voiceScore(v(b), lang) - voiceScore(v(a), lang))[0];
+
+  it('never prefers the robotic novelty voices iPhones list first', () => {
+    expect(best(['Eddy', 'Flo', 'Grandma', 'Kyoko', 'Rocko'], 'ja')).toBe('Kyoko');
+    expect(best(['Shelley', 'Sandy', 'Alice', 'Reed'], 'it')).toBe('Alice');
+    expect(voiceScore(v('Eddy'), 'ja')).toBeLessThan(0);
+  });
+  it('prefers premium, then enhanced, then the standard voice', () => {
+    expect(best(['Kyoko', 'Kyoko (Enhanced)', 'O-ren (Premium)'], 'ja')).toBe('O-ren (Premium)');
+    expect(best(['Alice', 'Alice (Enhanced)'], 'it')).toBe('Alice (Enhanced)');
+  });
+});
+
+describe('interests', () => {
+  const list = [{ id: 'a' }, { id: 'b', tags: ['sports'] }, { id: 'c', tags: ['history'] }, { id: 'd', tags: ['sports', 'travel'] }];
+  it('puts matching content first and keeps the original order otherwise', () => {
+    expect(forYouFirst(list, ['sports']).map((x) => x.id)).toEqual(['b', 'd', 'a', 'c']);
+    expect(forYouFirst(list, []).map((x) => x.id)).toEqual(['a', 'b', 'c', 'd']);
+  });
+  it('treats untagged content as neutral', () => expect(matches(undefined, ['sports'])).toBe(false));
 });

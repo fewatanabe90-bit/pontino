@@ -1,6 +1,7 @@
 <script lang="ts">
   import Pontino from '../design/Pontino.svelte';
   import { catalog } from '../lib/content';
+  import { interestIcons, matches } from '../lib/interests';
   import { lessonHref, nextLesson, writtenUnits } from '../lib/progress';
   import type { Unit } from '../lib/schema';
   import { app } from '../lib/state.svelte';
@@ -35,7 +36,7 @@
             {complete ? '✓' : unit ? entry.icon : '🔒'}
           </div>
           <div class="label">
-            <div class="name">{entry.title}</div>
+            <div class="name">{entry.title}{#if matches(entry.tags, app.interests)} <span class="tags" title="Matches your interests">{interestIcons(entry.tags?.filter((t) => app.interests.includes(t)))}</span>{/if}</div>
             <div class="sub jp">{entry.sub}</div>
             {#if !unit}<div class="soon">Coming soon</div>{/if}
           </div>
@@ -120,6 +121,9 @@
   .name {
     font-weight: 900;
     font-size: 17px;
+  }
+  .tags {
+    font-size: 13px;
   }
   .soon {
     font-size: 12px;

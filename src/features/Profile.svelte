@@ -1,10 +1,22 @@
 <script lang="ts">
+  import InterestChips from '../components/InterestChips.svelte';
   import { db, exportAll, importAll } from '../lib/db';
   import { isStandalone, pwa } from '../lib/pwa.svelte';
   import { app, reloadAfterImport, setSetting, type Furigana, type Mode } from '../lib/state.svelte';
   import { localDay } from '../lib/streak';
+  import { speak, voicesFor } from '../lib/tts';
+  import { voices } from '../lib/voices.svelte';
 
   let message = $state('');
+  const voiceKey = $derived(app.lang === 'ja' ? 'voiceJa' : 'voiceIt');
+  // Re-read the list when the device finishes loading its voices.
+  const voiceList = $derived((voices[app.lang], voicesFor(app.lang)));
+  const SAMPLE = { ja: 'こんにちは。よろしくお願いします。', it: 'Ciao! Come stai oggi?' };
+
+  function chooseVoice(e: Event) {
+    setSetting(voiceKey, (e.currentTarget as HTMLSelectElement).value);
+    speak(SAMPLE[app.lang], app.lang, app.rate);
+  }
   let cardCount = $state(0);
   $effect(() => {
     void db.cards.count().then((n) => (cardCount = n));
@@ -65,7 +77,28 @@
     {/if}
     {@render seg('Read aloud automatically', app.autoplay ? 'on' : 'off', [['on', 'On'], ['off', 'Off']], (v) => setSetting('autoplay', v === 'on'))}
     {@render seg('Sound effects', app.sound ? 'on' : 'off', [['on', 'On'], ['off', 'Off']], (v) => setSetting('sound', v === 'on'))}
-    {@render seg('Voice speed', app.rate, [[0.7, '0.7×'], [1, '1.0×']], (v) => setSetting('rate', v))}
+    {@render seg('Voice speed', app.rate, [[0.75, 'Slow'], [0.9, 'Natural'], [1, 'Fast']], (v) => setSetting('rate', v))}
+    <div class="set-row">
+      <label for="voice">Voice</label>
+      {#if voiceList.length}
+        <select id="voice" value={app[voiceKey]} onchange={chooseVoice}>
+          <option value="">Best available</option>
+          {#each voiceList as v (v.voiceURI)}<option value={v.voiceURI}>{v.name}</option>{/each}
+        </select>
+      {:else}
+        <span class="sub">None on this device</span>
+      {/if}
+    </div>
+    <p class="sub" style="margin-top:10px">
+      For a more human voice on iPhone: Settings → Accessibility → Spoken Content → Voices → {app.lang === 'ja' ? 'Japanese' : 'Italian'}, then download an
+      <b>Enhanced</b> or <b>Premium</b> voice (free, from Apple). Reopen Pontino and it is used automatically.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="eyebrow" style="margin-bottom:10px">Interests</div>
+    <InterestChips />
+    <p class="sub" style="margin-top:10px">Decks and units on these topics are offered first. Core lessons stay the same for everyone.</p>
   </div>
 
   <div class="card">
@@ -119,6 +152,18 @@
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     gap: 8px;
+  }
+  select {
+    font: inherit;
+    font-weight: 800;
+    font-size: 14px;
+    max-width: 190px;
+    min-height: 40px;
+    border-radius: 12px;
+    border: 2px solid var(--line);
+    background: var(--card);
+    color: var(--ink);
+    padding: 0 8px;
   }
   label.btn {
     cursor: pointer;

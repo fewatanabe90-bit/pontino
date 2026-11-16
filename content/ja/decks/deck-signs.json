@@ -2,6 +2,10 @@
   "id": "ja-deck-signs",
   "lang": "ja",
   "icon": "🪧",
+  "tags": [
+    "travel",
+    "geography"
+  ],
   "title": "Signs you will see",
   "description": "Kanji from stations, shops and streets. Recognise them; you rarely need to write them.",
   "cards": [

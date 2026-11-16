@@ -1,0 +1,708 @@
+{
+  "id": "ja-a1-02",
+  "lang": "ja",
+  "level": "A1",
+  "track": "core",
+  "title": "Match day",
+  "summary": "Planning a night at the stadium: what you will do, how you get there, and how it went. Along the way you get polite verbs and the particles that hold a sentence together.",
+  "canDo": [
+    "I can say what I do and what I will do.",
+    "I can say when, where and how I am going somewhere, and arrange to meet.",
+    "I can say what I did and who I did it with."
+  ],
+  "grammar": [
+    "〜ます・〜ません",
+    "を",
+    "に (time, destination)",
+    "へ",
+    "で (place, means)",
+    "〜ました・〜ませんでした",
+    "と",
+    "が"
+  ],
+  "items": [
+    {
+      "id": "ja-a1-02.g-masu",
+      "kind": "grammar",
+      "front": "〜ます",
+      "back": "Polite verb ending for habits and the future. Japanese has no separate future tense.",
+      "note": "サッカーを{見|み}ます。 I watch / will watch football."
+    },
+    {
+      "id": "ja-a1-02.g-masen",
+      "kind": "grammar",
+      "front": "〜ません",
+      "back": "Polite negative: don't / won't.",
+      "note": "ビールを{飲|の}みません。 I don't drink beer."
+    },
+    {
+      "id": "ja-a1-02.g-wo",
+      "kind": "grammar",
+      "front": "を",
+      "back": "Marks the thing the action is done to. Said \"o\". The verb always comes last.",
+      "note": "チケットを{買|か}います。 I'll buy a ticket."
+    },
+    {
+      "id": "ja-a1-02.p-nani-wo-shimasuka",
+      "kind": "phrase",
+      "front": "{何|なに}をしますか",
+      "back": "What will you do? / What do you do?"
+    },
+    {
+      "id": "ja-a1-02.g-masenka",
+      "kind": "grammar",
+      "front": "〜ませんか",
+      "back": "\"Won't you…?\" A polite invitation, softer than a plain question.",
+      "note": "{一緒|いっしょ}に{見|み}ませんか。 Shall we watch it together?"
+    },
+    {
+      "id": "ja-a1-02.p-iidesune",
+      "kind": "phrase",
+      "front": "いいですね",
+      "back": "Sounds good! / That's nice. The standard way to accept or approve."
+    },
+    {
+      "id": "ja-a1-02.g-ni-time",
+      "kind": "grammar",
+      "front": "{七時|しちじ}に",
+      "back": "に after a clock time or date = \"at / on\".",
+      "note": "{七時|しちじ}に{始|はじ}まります。 It starts at seven."
+    },
+    {
+      "id": "ja-a1-02.g-he",
+      "kind": "grammar",
+      "front": "スタジアム{へ|e}{行|い}きます",
+      "back": "へ (said \"e\") marks the direction you move in. With 行きます you can also use に.",
+      "note": "スタジアムに{行|い}きます means the same."
+    },
+    {
+      "id": "ja-a1-02.g-de-place",
+      "kind": "grammar",
+      "front": "{駅|えき}で{会|あ}います",
+      "back": "で marks the place where an action happens.",
+      "note": "スタジアムでチケットを{買|か}います。"
+    },
+    {
+      "id": "ja-a1-02.g-de-means",
+      "kind": "grammar",
+      "front": "{電車|でんしゃ}で",
+      "back": "で also marks the means: by train, by bus, with chopsticks.",
+      "note": "{何|なに}で{行|い}きますか。 How are you getting there?"
+    },
+    {
+      "id": "ja-a1-02.p-nanji-ni",
+      "kind": "phrase",
+      "front": "{何時|なんじ}に{始|はじ}まりますか",
+      "back": "What time does it start?"
+    },
+    {
+      "id": "ja-a1-02.g-mashita",
+      "kind": "grammar",
+      "front": "〜ました",
+      "back": "Polite past: did.",
+      "note": "サッカーを{見|み}ました。 I watched football."
+    },
+    {
+      "id": "ja-a1-02.g-masendeshita",
+      "kind": "grammar",
+      "front": "〜ませんでした",
+      "back": "Polite past negative: didn't.",
+      "note": "ビールを{飲|の}みませんでした。 I didn't drink beer."
+    },
+    {
+      "id": "ja-a1-02.g-to",
+      "kind": "grammar",
+      "front": "{友|とも}だちと",
+      "back": "と after a person = \"with\".",
+      "note": "{中村|なかむら}さんと{見|み}ました。 I watched it with Nakamura-san."
+    },
+    {
+      "id": "ja-a1-02.g-ga",
+      "kind": "grammar",
+      "front": "どのチームが{勝|か}ちましたか",
+      "back": "が marks who did it when that is the new information. A question word as the subject takes が, and so does the answer.",
+      "note": "{東京|とうきょう}が{勝|か}ちました。 Tokyo won."
+    },
+    {
+      "id": "ja-a1-02.p-doushite",
+      "kind": "phrase",
+      "front": "どうしてですか",
+      "back": "Why is that?"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-a1-02.l1",
+      "title": "What are you doing tomorrow?",
+      "canDo": "I can say what I will do, say what I won't, and invite someone along.",
+      "meme": {
+        "top": "English: I watch, I will watch, I am going to watch",
+        "bottom": "Japanese: ます. One form. Done."
+      },
+      "intro": {
+        "place": "lounge",
+        "art": "📅⚽🍺",
+        "scene": "Back in the hostel lounge. There is a match on tomorrow night.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "レオさん、{明日|あした}{何|なに}をしますか。",
+            "meaning": "Leo, what are you doing tomorrow?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "サッカーを{見|み}ます。{中村|なかむら}さん{は|wa}？",
+            "meaning": "I'm watching football. And you?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "わたし{は|wa}{何|なに}もしません。",
+            "meaning": "I'm not doing anything.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "じゃあ、{一緒|いっしょ}に{見|み}ませんか。",
+            "meaning": "Then shall we watch it together?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "いいですね！ビールも{飲|の}みます。",
+            "meaning": "Sounds good! I'll have a beer too.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜ます: now, usually, and tomorrow",
+            "body": "The polite verb ending. It covers habits and the future, so {見|み}ます is both \"I watch\" and \"I will watch\". Words like {明日|あした} tell you which. The negative is 〜ません."
+          },
+          {
+            "title": "を and the verb at the end",
+            "body": "を (said \"o\") marks the thing you act on, and the verb always closes the sentence: サッカーを{見|み}ます, literally \"football [o] watch\"."
+          },
+          {
+            "title": "〜ませんか = an invitation",
+            "body": "Turning the negative into a question makes a gentle invitation: {見|み}ませんか, \"won't you watch?\". Accept with いいですね. {何|なに}も + negative means \"nothing\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-02.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "サッカー___{見|み}ます。",
+          "meaning": "I watch football.",
+          "options": [
+            "を",
+            "の",
+            "か"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l1.e2",
+          "type": "mcq",
+          "prompt": "Which one means \"I don't drink beer\"?",
+          "options": [
+            "ビールを{飲|の}みません。",
+            "ビールを{飲|の}みます。",
+            "ビールじゃありません。"
+          ],
+          "answer": 0,
+          "explain": "Verbs use 〜ません. じゃありません is for nouns: \"it isn't beer\"."
+        },
+        {
+          "id": "ja-a1-02.l1.e3",
+          "type": "tiles",
+          "prompt": "Build: \"I'll buy a ticket.\"",
+          "meaning": "I'll buy a ticket.",
+          "tiles": [
+            "チケット",
+            "を",
+            "{買|か}います",
+            "{は|wa}",
+            "{買|か}いません",
+            "か"
+          ],
+          "answer": "チケットを{買|か}います",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-02.l1.e4",
+          "type": "mcq",
+          "prompt": "〜ます can talk about…",
+          "options": [
+            "habits and the future",
+            "only this exact moment",
+            "only the past"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l1.e5",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What are you being asked?",
+          "text": "{明日|あした}{何|なに}をしますか。",
+          "options": [
+            "What are you doing tomorrow?",
+            "What did you do yesterday?",
+            "Where are you going tomorrow?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l1.e6",
+          "type": "tiles",
+          "prompt": "Accept: \"Sounds good! I'll watch.\"",
+          "context": "{一緒|いっしょ}に{見|み}ませんか。",
+          "meaning": "Sounds good! I'll watch.",
+          "tiles": [
+            "いいですね！",
+            "{見|み}ます",
+            "{見|み}ません",
+            "を",
+            "か"
+          ],
+          "answer": "いいですね！{見|み}ます",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-02.l1.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I'm watching football tomorrow.\"",
+          "answer": "{明日|あした}サッカーを{見|み}ます。",
+          "alt": [
+            "わたし{は|wa}{明日|あした}サッカーを{見|み}ます。",
+            "{明日|あした}{は|wa}サッカーを{見|み}ます。",
+            "{私|わたし}{は|wa}{明日|あした}サッカーを{見|み}ます。"
+          ]
+        },
+        {
+          "id": "ja-a1-02.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{見|み}ます",
+              "watch, see"
+            ],
+            [
+              "{買|か}います",
+              "buy"
+            ],
+            [
+              "{飲|の}みます",
+              "drink"
+            ],
+            [
+              "{食|た}べます",
+              "eat"
+            ],
+            [
+              "します",
+              "do"
+            ]
+          ]
+        }
+      ],
+      "newItems": [
+        "ja-a1-02.g-masu",
+        "ja-a1-02.g-masen",
+        "ja-a1-02.g-wo",
+        "ja-a1-02.p-nani-wo-shimasuka",
+        "ja-a1-02.g-masenka",
+        "ja-a1-02.p-iidesune"
+      ]
+    },
+    {
+      "id": "ja-a1-02.l2",
+      "title": "Getting to the stadium",
+      "canDo": "I can say how and when I'm going somewhere and arrange where to meet.",
+      "meme": {
+        "top": "に, で, へ",
+        "bottom": "Three tiny syllables. One large headache. You've got this."
+      },
+      "intro": {
+        "place": "station",
+        "art": "🚃🏟️🕖",
+        "scene": "The next morning, sorting out the plan.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "スタジアム{へ|e}{何|なに}で{行|い}きますか。",
+            "meaning": "How are we getting to the stadium?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{電車|でんしゃ}で{行|い}きます。{六時|ろくじ}に{新宿駅|しんじゅくえき}で{会|あ}いませんか。",
+            "meaning": "By train. Shall we meet at Shinjuku station at six?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "いいですよ。{試合|しあい}{は|wa}{何時|なんじ}に{始|はじ}まりますか。",
+            "meaning": "Sure. What time does the match start?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{七時|しちじ}に{始|はじ}まります。スタジアムでチケットを{買|か}います。",
+            "meaning": "It starts at seven. I'll buy the tickets at the stadium.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "に: a point in time, a destination",
+            "body": "{六時|ろくじ}に = at six. スタジアムに{行|い}きます = I go to the stadium. Think of に as a pin on a clock or a map."
+          },
+          {
+            "title": "へ: the direction",
+            "body": "Written へ, said \"e\". With verbs of movement it means \"towards\", and for going somewhere it is interchangeable with に: スタジアム{へ|e}{行|い}きます."
+          },
+          {
+            "title": "で: where it happens, and how",
+            "body": "The place of an action: {駅|えき}で{会|あ}います, スタジアムで{買|か}います. And the means: {電車|でんしゃ}で{行|い}きます. So {何|なに}で{行|い}きますか asks \"by what?\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-02.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{電車|でんしゃ}___{行|い}きます。",
+          "meaning": "I'm going by train.",
+          "options": [
+            "で",
+            "に",
+            "を"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{七時|しちじ}___{始|はじ}まります。",
+          "meaning": "It starts at seven.",
+          "options": [
+            "に",
+            "で",
+            "を"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l2.e3",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{駅|えき}___{会|あ}います。",
+          "meaning": "We'll meet at the station.",
+          "options": [
+            "で",
+            "を",
+            "{へ|e}"
+          ],
+          "answer": 0,
+          "explain": "Meeting is an action that happens there, so it is で."
+        },
+        {
+          "id": "ja-a1-02.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I'm going to the stadium.\"",
+          "meaning": "I'm going to the stadium.",
+          "tiles": [
+            "スタジアム",
+            "{へ|e}",
+            "{行|い}きます",
+            "で",
+            "を",
+            "{見|み}ます"
+          ],
+          "answer": "スタジアム{へ|e}{行|い}きます",
+          "alt": [
+            "スタジアムに{行|い}きます"
+          ]
+        },
+        {
+          "id": "ja-a1-02.l2.e5",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What is the question?",
+          "text": "{何時|なんじ}に{始|はじ}まりますか。",
+          "options": [
+            "What time does it start?",
+            "Where does it start?",
+            "What time are you going?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l2.e6",
+          "type": "mcq",
+          "prompt": "Which one means \"I'll buy a ticket at the stadium\"?",
+          "options": [
+            "スタジアムでチケットを{買|か}います。",
+            "スタジアムにチケットを{買|か}います。",
+            "スタジアムをチケットで{買|か}います。"
+          ],
+          "answer": 0,
+          "explain": "Place of the action: で. Thing bought: を."
+        },
+        {
+          "id": "ja-a1-02.l2.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I'm going by train.\"",
+          "answer": "{電車|でんしゃ}で{行|い}きます。",
+          "alt": [
+            "わたし{は|wa}{電車|でんしゃ}で{行|い}きます。",
+            "{私|わたし}{は|wa}{電車|でんしゃ}で{行|い}きます。"
+          ]
+        },
+        {
+          "id": "ja-a1-02.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{六時|ろくじ}に",
+              "at six o'clock"
+            ],
+            [
+              "{電車|でんしゃ}で",
+              "by train"
+            ],
+            [
+              "{駅|えき}で",
+              "at the station (where it happens)"
+            ],
+            [
+              "スタジアム{へ|e}",
+              "to the stadium"
+            ],
+            [
+              "チケットを",
+              "the ticket (thing acted on)"
+            ]
+          ]
+        }
+      ],
+      "newItems": [
+        "ja-a1-02.g-ni-time",
+        "ja-a1-02.g-he",
+        "ja-a1-02.g-de-place",
+        "ja-a1-02.g-de-means",
+        "ja-a1-02.p-nanji-ni"
+      ]
+    },
+    {
+      "id": "ja-a1-02.l3",
+      "title": "So, how was the game?",
+      "canDo": "I can say what I did, what I didn't do, and who I was with.",
+      "meme": {
+        "top": "Me: I'll just have one beer",
+        "bottom": "Nakamura-san: 全部飲みました"
+      },
+      "intro": {
+        "place": "stadium",
+        "art": "🏆🍻😅",
+        "scene": "The day after. Sato wants the full report.",
+        "lines": [
+          {
+            "who": "佐藤",
+            "text": "レオさん、{昨日|きのう}{何|なに}をしましたか。",
+            "meaning": "Leo, what did you do yesterday?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{中村|なかむら}さんとサッカーを{見|み}ました。",
+            "meaning": "I watched football with Nakamura-san.",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "いいですね。どのチームが{勝|か}ちましたか。",
+            "meaning": "Nice. Which team won?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{東京|とうきょう}が{勝|か}ちました！でも、わたし{は|wa}ビールを{飲|の}みませんでした。",
+            "meaning": "Tokyo won! But I didn't drink any beer.",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "え、どうしてですか。",
+            "meaning": "Oh? Why not?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{中村|なかむら}さんが{全部|ぜんぶ}{飲|の}みました。",
+            "meaning": "Nakamura-san drank all of it.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "The four polite forms",
+            "body": "{見|み}ます watch · {見|み}ません don't watch · {見|み}ました watched · {見|み}ませんでした didn't watch. Every verb follows this pattern; only the part before ます changes from verb to verb."
+          },
+          {
+            "title": "と = with",
+            "body": "After a person, と means \"together with\": {中村|なかむら}さんと{見|み}ました. (After a noun in a list it means \"and\".)"
+          },
+          {
+            "title": "が: who did it",
+            "body": "When the doer is the news, mark it with が. A question word as subject always takes が, and the answer keeps it: どのチームが{勝|か}ちましたか → {東京|とうきょう}が{勝|か}ちました."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-02.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{昨日|きのう}サッカーを{見|み}___。",
+          "meaning": "Yesterday I watched football.",
+          "options": [
+            "ました",
+            "ます",
+            "ません"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l3.e2",
+          "type": "mcq",
+          "prompt": "Which one means \"I didn't drink beer\"?",
+          "options": [
+            "ビールを{飲|の}みませんでした。",
+            "ビールを{飲|の}みません。",
+            "ビールを{飲|の}みました。"
+          ],
+          "answer": 0,
+          "explain": "〜ません = don't / won't. 〜ませんでした = didn't."
+        },
+        {
+          "id": "ja-a1-02.l3.e3",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{友|とも}だち___{行|い}きました。",
+          "meaning": "I went with a friend.",
+          "options": [
+            "と",
+            "を",
+            "で"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"Tokyo won!\"",
+          "meaning": "Tokyo won!",
+          "tiles": [
+            "{東京|とうきょう}",
+            "が",
+            "{勝|か}ちました",
+            "を",
+            "{勝|か}ちます",
+            "と"
+          ],
+          "answer": "{東京|とうきょう}が{勝|か}ちました",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-02.l3.e5",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What are you being asked?",
+          "text": "{昨日|きのう}{何|なに}をしましたか。",
+          "options": [
+            "What did you do yesterday?",
+            "What are you doing tomorrow?",
+            "What are you doing now?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l3.e6",
+          "type": "tiles",
+          "prompt": "Answer: \"I watched football with Nakamura-san.\"",
+          "context": "{昨日|きのう}{何|なに}をしましたか。",
+          "meaning": "I watched football with Nakamura-san.",
+          "tiles": [
+            "{中村|なかむら}さん",
+            "と",
+            "サッカー",
+            "を",
+            "{見|み}ました",
+            "で",
+            "{見|み}ます"
+          ],
+          "answer": "{中村|なかむら}さんとサッカーを{見|み}ました",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-02.l3.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I bought a ticket.\"",
+          "answer": "チケットを{買|か}いました。",
+          "alt": [
+            "わたし{は|wa}チケットを{買|か}いました。",
+            "{切符|きっぷ}を{買|か}いました。",
+            "{私|わたし}{は|wa}チケットを{買|か}いました。"
+          ]
+        },
+        {
+          "id": "ja-a1-02.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{見|み}ます",
+              "watch (now or later)"
+            ],
+            [
+              "{見|み}ません",
+              "don't / won't watch"
+            ],
+            [
+              "{見|み}ました",
+              "watched"
+            ],
+            [
+              "{見|み}ませんでした",
+              "didn't watch"
+            ],
+            [
+              "{見|み}ませんか",
+              "won't you watch? (invitation)"
+            ]
+          ]
+        }
+      ],
+      "newItems": [
+        "ja-a1-02.g-mashita",
+        "ja-a1-02.g-masendeshita",
+        "ja-a1-02.g-to",
+        "ja-a1-02.g-ga",
+        "ja-a1-02.p-doushite"
+      ]
+    }
+  ],
+  "factCheck": [
+    "Native-speaker review of all three lessons is still pending."
+  ]
+}

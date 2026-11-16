@@ -3,7 +3,7 @@
   "lang": "ja",
   "level": "A1",
   "track": "core",
-  "title": "Sentence foundations",
+  "title": "Meeting people",
   "summary": "You already know plenty of words. This unit gives them a skeleton: how to say what something is, isn't, and whose it is.",
   "canDo": [
     "I can introduce myself and say where I'm from.",
@@ -190,6 +190,7 @@
       "title": "A is B: は and です",
       "canDo": "I can say who I am, say what I'm not, and ask a yes/no question.",
       "intro": {
+        "place": "lounge",
         "art": "🏨🛋️🍵",
         "scene": "A hostel lounge. Leo, a traveller from Brazil, meets Nakamura-san.",
         "lines": [
@@ -386,6 +387,7 @@
       "title": "Whose, which, and \"too\": の, も, これ・それ・あれ",
       "canDo": "I can ask what something is, link two nouns with の, and say \"me too\".",
       "intro": {
+        "place": "lounge",
         "art": "🎫⚽🗼",
         "scene": "Same lounge. Leo has something in his hand.",
         "lines": [
@@ -587,6 +589,7 @@
       "title": "This one, that one, whose?",
       "canDo": "I can point at things, say what is mine, and ask whose something is.",
       "intro": {
+        "place": "lounge",
         "art": "☂️🚪🤷",
         "scene": "By the lounge door there is an umbrella nobody has claimed.",
         "lines": [
@@ -779,6 +782,7 @@
       "title": "Where from? What job? Question words",
       "canDo": "I can ask and say where someone is from and what they do.",
       "intro": {
+        "place": "lounge",
         "art": "🌎💼☕",
         "scene": "The conversation in the lounge continues.",
         "lines": [
@@ -985,6 +989,7 @@
       "title": "Yes, that's right. Your self-introduction",
       "canDo": "I can confirm or correct what someone asks about me and give a full self-introduction.",
       "intro": {
+        "place": "lounge",
         "art": "👋🙋🎓",
         "scene": "A newcomer walks into the lounge, looking for Leo.",
         "lines": [

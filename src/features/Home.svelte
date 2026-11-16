@@ -1,8 +1,12 @@
 <script lang="ts">
+  import InterestChips from '../components/InterestChips.svelte';
   import Pontino from '../design/Pontino.svelte';
+  import { db } from '../lib/db';
+  import { decks } from '../lib/decks';
+  import { forYouFirst, matches } from '../lib/interests';
   import { lessonHref, nextLesson, writtenUnits } from '../lib/progress';
   import type { Unit } from '../lib/schema';
-  import { app, DAILY_XP_GOAL } from '../lib/state.svelte';
+  import { app, DAILY_XP_GOAL, setSetting } from '../lib/state.svelte';
   import { localDay, streakStatus } from '../lib/streak';
   import InstallGuide from './InstallGuide.svelte';
   import TopBar from './TopBar.svelte';
@@ -17,6 +21,22 @@
   });
 
   const next = $derived(units ? nextLesson(units, app.lessons) : null);
+
+  /** The first deck on a topic the learner likes that still has new cards. */
+  let suggestion = $state<{ id: string; icon: string; title: string; left: number } | null>(null);
+  $effect(() => {
+    const mine = forYouFirst(decks.filter((d) => d.lang === app.lang), app.interests).filter((d) => matches(d.tags, app.interests));
+    suggestion = null;
+    void (async () => {
+      for (const d of mine) {
+        const left = d.cards.length - (await db.cards.where('itemId').startsWith(`${d.id}.`).count());
+        if (left > 0) {
+          suggestion = { id: d.id, icon: d.icon, title: d.title, left };
+          return;
+        }
+      }
+    })();
+  });
   const status = $derived(streakStatus(app.streak, localDay()));
   const goal = $derived(Math.min(100, Math.round((app.xpToday / DAILY_XP_GOAL) * 100)));
   const due = $derived(app.due[app.lang]);
@@ -40,6 +60,15 @@
 
   <InstallGuide />
 
+  {#if !app.interestsSet}
+    <div class="card pick">
+      <div class="h">What are you into?</div>
+      <div class="sub">Pontino sets lessons in these worlds and offers matching vocabulary first. Change it any time in Profile.</div>
+      <InterestChips />
+      <button class="btn" type="button" onclick={() => setSetting('interestsSet', true)}>Save my interests</button>
+    </div>
+  {/if}
+
   {#if next}
     <div class="card">
       <div class="eyebrow">{next.unit.title} · Lesson {next.n} of {next.unit.lessons.length}</div>
@@ -61,6 +90,18 @@
     </a>
   </div>
 
+  {#if suggestion}
+    <a class="card mini link row" href="#/deck/{suggestion.id}">
+      <span class="sug" aria-hidden="true">{suggestion.icon}</span>
+      <span style="flex:1">
+        <span class="eyebrow">For you · flashcards</span>
+        <span class="h" style="display:block">{suggestion.title}</span>
+        <span class="sub">{suggestion.left} new card{suggestion.left === 1 ? '' : 's'} to learn</span>
+      </span>
+      <span class="chip">Open ›</span>
+    </a>
+  {/if}
+
   {#if app.streak.freezes > 0}
     <p class="sub" style="text-align:center">🧊 {app.streak.freezes} streak freeze{app.streak.freezes === 1 ? '' : 's'} saved for a busy day</p>
   {/if}
@@ -80,6 +121,25 @@
   }
   .mini .sub {
     font-size: 12px;
+  }
+  .pick {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-color: var(--brand);
+  }
+  .sug {
+    flex: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    background: var(--brand-soft);
+  }
+  .link.row {
+    display: flex;
   }
   .link {
     text-decoration: none;

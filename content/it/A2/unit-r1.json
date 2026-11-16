@@ -10,127 +10,689 @@
     "I can choose essere or avere without translating from Portuguese.",
     "I can make the past participle agree when the verb takes essere."
   ],
-  "grammar": ["passato prossimo", "essere vs avere", "participi irregolari", "accordo del participio con essere"],
+  "grammar": [
+    "passato prossimo",
+    "essere vs avere",
+    "participi irregolari",
+    "accordo del participio con essere"
+  ],
   "items": [
-    { "id": "it-r1.g-pp", "kind": "grammar", "front": "avere / essere + participio", "back": "The passato prossimo: the normal spoken past. \"Ho mangiato\" = I ate; \"sono andato\" = I went.", "pt": "It does the job of the Portuguese pretérito perfeito simples (comi, fui), not of \"tenho comido\"." },
-    { "id": "it-r1.g-essere-verbs", "kind": "grammar", "front": "Verbs with essere", "back": "Movement and change of state: andare, venire, tornare, arrivare, partire, uscire, entrare, restare, rimanere, nascere, morire, diventare. Also essere, stare and all reflexive verbs.", "pt": "Portuguese uses only \"ter\", so *ho andato is the classic Brazilian mistake." },
-    { "id": "it-r1.p-coshaifatto", "kind": "phrase", "front": "Cos'hai fatto?", "back": "What did you do?" },
-    { "id": "it-r1.v-rimanere", "kind": "vocab", "front": "rimanere → sono rimasto/a", "back": "to stay, to remain → I stayed" },
-    { "id": "it-r1.v-invece", "kind": "vocab", "front": "invece", "back": "instead, on the other hand. \"Io invece…\" = \"As for me, though…\"", "pt": "Not \"em vez\": on its own it contrasts two people or facts." },
-    { "id": "it-r1.v-tardi", "kind": "vocab", "front": "tardi", "back": "late", "pt": "PT \"tarde\". In Italian \"tarde\" does not exist as the adverb." },
-    { "id": "it-r1.v-fatto", "kind": "vocab", "front": "fare → fatto", "back": "to do, to make → done, made", "pt": "PT feito." },
-    { "id": "it-r1.v-visto", "kind": "vocab", "front": "vedere → visto", "back": "to see → seen", "pt": "Same as PT visto." },
-    { "id": "it-r1.v-letto", "kind": "vocab", "front": "leggere → letto", "back": "to read → read", "pt": "PT lido. \"Il letto\" is also \"the bed\"." },
-    { "id": "it-r1.v-scritto", "kind": "vocab", "front": "scrivere → scritto", "back": "to write → written", "pt": "PT escrito." },
-    { "id": "it-r1.v-perso", "kind": "vocab", "front": "perdere → perso", "back": "to lose → lost", "pt": "PT perdido. \"Perduto\" exists but sounds literary." },
-    { "id": "it-r1.v-vinto", "kind": "vocab", "front": "vincere → vinto", "back": "to win → won", "pt": "PT vencido / ganho." },
-    { "id": "it-r1.v-aperto", "kind": "vocab", "front": "aprire → aperto", "back": "to open → opened", "pt": "PT aberto." },
-    { "id": "it-r1.v-successo", "kind": "vocab", "front": "succedere → è successo", "back": "to happen → it happened (with essere)", "pt": "\"Cos'è successo?\" = \"O que aconteceu?\". \"Il successo\" as a noun means \"sucesso\"." },
-    { "id": "it-r1.g-accordo", "kind": "grammar", "front": "sono andato / andata / andati / andate", "back": "With essere the participle agrees with the subject, like an adjective. A mixed group is masculine plural.", "pt": "Think of the Portuguese passive: \"elas foram convidadas\". Same agreement, different tense." },
-    { "id": "it-r1.g-avere-fixed", "kind": "grammar", "front": "hanno mangiato", "back": "With avere the participle does not agree with the subject: \"Le ragazze hanno mangiato\"." },
-    { "id": "it-r1.p-in-orario", "kind": "phrase", "front": "in orario", "back": "on time" },
-    { "id": "it-r1.v-partire", "kind": "vocab", "front": "partire → sono partito/a", "back": "to leave, to depart → I left", "pt": "False friend: PT \"partir\" can also mean \"to break\"; Italian partire is only \"to leave\"." }
+    {
+      "id": "it-r1.g-pp",
+      "kind": "grammar",
+      "front": "avere / essere + participio",
+      "back": "The passato prossimo: the normal spoken past. \"Ho mangiato\" = I ate; \"sono andato\" = I went.",
+      "pt": "It does the job of the Portuguese pretérito perfeito simples (comi, fui), not of \"tenho comido\"."
+    },
+    {
+      "id": "it-r1.g-essere-verbs",
+      "kind": "grammar",
+      "front": "Verbs with essere",
+      "back": "Movement and change of state: andare, venire, tornare, arrivare, partire, uscire, entrare, restare, rimanere, nascere, morire, diventare. Also essere, stare and all reflexive verbs.",
+      "pt": "Portuguese uses only \"ter\", so *ho andato is the classic Brazilian mistake."
+    },
+    {
+      "id": "it-r1.p-coshaifatto",
+      "kind": "phrase",
+      "front": "Cos'hai fatto?",
+      "back": "What did you do?"
+    },
+    {
+      "id": "it-r1.v-rimanere",
+      "kind": "vocab",
+      "front": "rimanere → sono rimasto/a",
+      "back": "to stay, to remain → I stayed"
+    },
+    {
+      "id": "it-r1.v-invece",
+      "kind": "vocab",
+      "front": "invece",
+      "back": "instead, on the other hand. \"Io invece…\" = \"As for me, though…\"",
+      "pt": "Not \"em vez\": on its own it contrasts two people or facts."
+    },
+    {
+      "id": "it-r1.v-tardi",
+      "kind": "vocab",
+      "front": "tardi",
+      "back": "late",
+      "pt": "PT \"tarde\". In Italian \"tarde\" does not exist as the adverb."
+    },
+    {
+      "id": "it-r1.v-fatto",
+      "kind": "vocab",
+      "front": "fare → fatto",
+      "back": "to do, to make → done, made",
+      "pt": "PT feito."
+    },
+    {
+      "id": "it-r1.v-visto",
+      "kind": "vocab",
+      "front": "vedere → visto",
+      "back": "to see → seen",
+      "pt": "Same as PT visto."
+    },
+    {
+      "id": "it-r1.v-letto",
+      "kind": "vocab",
+      "front": "leggere → letto",
+      "back": "to read → read",
+      "pt": "PT lido. \"Il letto\" is also \"the bed\"."
+    },
+    {
+      "id": "it-r1.v-scritto",
+      "kind": "vocab",
+      "front": "scrivere → scritto",
+      "back": "to write → written",
+      "pt": "PT escrito."
+    },
+    {
+      "id": "it-r1.v-perso",
+      "kind": "vocab",
+      "front": "perdere → perso",
+      "back": "to lose → lost",
+      "pt": "PT perdido. \"Perduto\" exists but sounds literary."
+    },
+    {
+      "id": "it-r1.v-vinto",
+      "kind": "vocab",
+      "front": "vincere → vinto",
+      "back": "to win → won",
+      "pt": "PT vencido / ganho."
+    },
+    {
+      "id": "it-r1.v-aperto",
+      "kind": "vocab",
+      "front": "aprire → aperto",
+      "back": "to open → opened",
+      "pt": "PT aberto."
+    },
+    {
+      "id": "it-r1.v-successo",
+      "kind": "vocab",
+      "front": "succedere → è successo",
+      "back": "to happen → it happened (with essere)",
+      "pt": "\"Cos'è successo?\" = \"O que aconteceu?\". \"Il successo\" as a noun means \"sucesso\"."
+    },
+    {
+      "id": "it-r1.g-accordo",
+      "kind": "grammar",
+      "front": "sono andato / andata / andati / andate",
+      "back": "With essere the participle agrees with the subject, like an adjective. A mixed group is masculine plural.",
+      "pt": "Think of the Portuguese passive: \"elas foram convidadas\". Same agreement, different tense."
+    },
+    {
+      "id": "it-r1.g-avere-fixed",
+      "kind": "grammar",
+      "front": "hanno mangiato",
+      "back": "With avere the participle does not agree with the subject: \"Le ragazze hanno mangiato\"."
+    },
+    {
+      "id": "it-r1.p-in-orario",
+      "kind": "phrase",
+      "front": "in orario",
+      "back": "on time"
+    },
+    {
+      "id": "it-r1.v-partire",
+      "kind": "vocab",
+      "front": "partire → sono partito/a",
+      "back": "to leave, to depart → I left",
+      "pt": "False friend: PT \"partir\" can also mean \"to break\"; Italian partire is only \"to leave\"."
+    }
   ],
   "lessons": [
     {
       "id": "it-r1.l1",
       "title": "Essere o avere?",
       "canDo": "I can say what I did at the weekend with the right auxiliary.",
-      "meme": { "top": "Português: eu fui", "bottom": "Italiano: sono andato. Essere has entered the chat." },
+      "meme": {
+        "top": "Português: eu fui",
+        "bottom": "Italiano: sono andato. Essere has entered the chat."
+      },
       "intro": {
+        "place": "cafe",
         "art": "⚽🏟️🍕",
         "scene": "Monday morning at the bar. Giulia asks Leo about his weekend.",
         "lines": [
-          { "who": "Giulia", "text": "Ciao Leo! Cos'hai fatto sabato?", "meaning": "Hi Leo! What did you do on Saturday?" },
-          { "who": "Leo", "text": "Sono andato allo stadio. Ho visto Roma–Lazio!", "meaning": "I went to the stadium. I saw Roma–Lazio!" },
-          { "who": "Giulia", "text": "Che bello! E dopo la partita?", "meaning": "How nice! And after the match?" },
-          { "who": "Leo", "text": "Ho mangiato una pizza e sono tornato a casa tardi.", "meaning": "I ate a pizza and got home late." },
-          { "who": "Giulia", "text": "Io invece sono rimasta a casa e ho dormito tutto il giorno.", "meaning": "I, on the other hand, stayed at home and slept all day." }
+          {
+            "who": "Giulia",
+            "text": "Ciao Leo! Cos'hai fatto sabato?",
+            "meaning": "Hi Leo! What did you do on Saturday?"
+          },
+          {
+            "who": "Leo",
+            "text": "Sono andato allo stadio. Ho visto Roma–Lazio!",
+            "meaning": "I went to the stadium. I saw Roma–Lazio!"
+          },
+          {
+            "who": "Giulia",
+            "text": "Che bello! E dopo la partita?",
+            "meaning": "How nice! And after the match?"
+          },
+          {
+            "who": "Leo",
+            "text": "Ho mangiato una pizza e sono tornato a casa tardi.",
+            "meaning": "I ate a pizza and got home late."
+          },
+          {
+            "who": "Giulia",
+            "text": "Io invece sono rimasta a casa e ho dormito tutto il giorno.",
+            "meaning": "I, on the other hand, stayed at home and slept all day."
+          }
         ],
         "notes": [
-          { "title": "Two auxiliaries", "body": "Most verbs build the past with avere: ho mangiato, ho visto, ho dormito. Verbs of movement and change of state use essere: sono andato, sono tornato, sono rimasta. So do essere, stare and every reflexive verb." },
-          { "title": "🇧🇷 PT tip: forget \"ter\"", "body": "Portuguese has one auxiliary, so the Brazilian reflex is *ho andato. Before you speak, ask: is someone going, coming, staying or changing? Then it is essere. Also: \"sono andato\" translates \"fui\", not \"tenho ido\". The passato prossimo is the everyday past." },
-          { "title": "A quick list for essere", "body": "andare, venire, tornare, arrivare, partire, uscire, entrare, restare, rimanere, nascere, morire, diventare." }
+          {
+            "title": "Two auxiliaries",
+            "body": "Most verbs build the past with avere: ho mangiato, ho visto, ho dormito. Verbs of movement and change of state use essere: sono andato, sono tornato, sono rimasta. So do essere, stare and every reflexive verb."
+          },
+          {
+            "title": "🇧🇷 PT tip: forget \"ter\"",
+            "body": "Portuguese has one auxiliary, so the Brazilian reflex is *ho andato. Before you speak, ask: is someone going, coming, staying or changing? Then it is essere. Also: \"sono andato\" translates \"fui\", not \"tenho ido\". The passato prossimo is the everyday past."
+          },
+          {
+            "title": "A quick list for essere",
+            "body": "andare, venire, tornare, arrivare, partire, uscire, entrare, restare, rimanere, nascere, morire, diventare."
+          }
         ]
       },
       "exercises": [
-        { "id": "it-r1.l1.e1", "type": "gap", "prompt": "Leo is speaking. Fill the gap.", "text": "Ieri ___ andato al mare.", "meaning": "Yesterday I went to the seaside.", "options": ["sono", "ho", "è"], "answer": 0, "explain": "Andare is movement: essere." },
-        { "id": "it-r1.l1.e2", "type": "gap", "prompt": "Fill the gap.", "text": "___ mangiato una pizza.", "meaning": "I ate a pizza.", "options": ["Ho", "Sono", "Ha"], "answer": 0 },
-        { "id": "it-r1.l1.e3", "type": "mcq", "prompt": "Which sentence is correct?", "options": ["Sono tornato a casa tardi.", "Ho tornato a casa tardi.", "Sono tornato a casa tarde."], "answer": 0, "explain": "Tornare takes essere, and the adverb is \"tardi\": \"tarde\" is Portuguese." },
-        { "id": "it-r1.l1.e4", "type": "tiles", "prompt": "Build: \"I went to the stadium.\" (a man speaking)", "meaning": "I went to the stadium.", "tiles": ["Sono", "andato", "allo", "stadio", "Ho", "al"], "answer": "Sono andato allo stadio", "alt": [], "explain": "\"Allo\" before s + consonant: allo stadio." },
-        { "id": "it-r1.l1.e5", "type": "mcq", "prompt": "Which of these verbs takes essere?", "options": ["arrivare", "mangiare", "dormire"], "answer": 0 },
-        { "id": "it-r1.l1.e6", "type": "mcq", "listen": true, "prompt": "Listen. What is the question?", "text": "Cos'hai fatto sabato?", "options": ["What did you do on Saturday?", "What are you doing on Saturday?", "Where did you go on Saturday?"], "answer": 0 },
-        { "id": "it-r1.l1.e7", "type": "type", "prompt": "Translate from Portuguese (a man speaking): \"Eu fui ao estádio.\"", "answer": "Sono andato allo stadio.", "alt": ["Io sono andato allo stadio."] },
-        { "id": "it-r1.l1.e8", "type": "match", "prompt": "Match.", "pairs": [["sono andato", "I went"], ["ho mangiato", "I ate"], ["sono tornato", "I came back"], ["ho dormito", "I slept"], ["sono rimasto", "I stayed"]] }
+        {
+          "id": "it-r1.l1.e1",
+          "type": "gap",
+          "prompt": "Leo is speaking. Fill the gap.",
+          "text": "Ieri ___ andato al mare.",
+          "meaning": "Yesterday I went to the seaside.",
+          "options": [
+            "sono",
+            "ho",
+            "è"
+          ],
+          "answer": 0,
+          "explain": "Andare is movement: essere."
+        },
+        {
+          "id": "it-r1.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "___ mangiato una pizza.",
+          "meaning": "I ate a pizza.",
+          "options": [
+            "Ho",
+            "Sono",
+            "Ha"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l1.e3",
+          "type": "mcq",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Sono tornato a casa tardi.",
+            "Ho tornato a casa tardi.",
+            "Sono tornato a casa tarde."
+          ],
+          "answer": 0,
+          "explain": "Tornare takes essere, and the adverb is \"tardi\": \"tarde\" is Portuguese."
+        },
+        {
+          "id": "it-r1.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I went to the stadium.\" (a man speaking)",
+          "meaning": "I went to the stadium.",
+          "tiles": [
+            "Sono",
+            "andato",
+            "allo",
+            "stadio",
+            "Ho",
+            "al"
+          ],
+          "answer": "Sono andato allo stadio",
+          "alt": [],
+          "explain": "\"Allo\" before s + consonant: allo stadio."
+        },
+        {
+          "id": "it-r1.l1.e5",
+          "type": "mcq",
+          "prompt": "Which of these verbs takes essere?",
+          "options": [
+            "arrivare",
+            "mangiare",
+            "dormire"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l1.e6",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What is the question?",
+          "text": "Cos'hai fatto sabato?",
+          "options": [
+            "What did you do on Saturday?",
+            "What are you doing on Saturday?",
+            "Where did you go on Saturday?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l1.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese (a man speaking): \"Eu fui ao estádio.\"",
+          "answer": "Sono andato allo stadio.",
+          "alt": [
+            "Io sono andato allo stadio."
+          ]
+        },
+        {
+          "id": "it-r1.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "sono andato",
+              "I went"
+            ],
+            [
+              "ho mangiato",
+              "I ate"
+            ],
+            [
+              "sono tornato",
+              "I came back"
+            ],
+            [
+              "ho dormito",
+              "I slept"
+            ],
+            [
+              "sono rimasto",
+              "I stayed"
+            ]
+          ]
+        }
       ],
-      "newItems": ["it-r1.g-pp", "it-r1.g-essere-verbs", "it-r1.p-coshaifatto", "it-r1.v-rimanere", "it-r1.v-invece", "it-r1.v-tardi"]
+      "newItems": [
+        "it-r1.g-pp",
+        "it-r1.g-essere-verbs",
+        "it-r1.p-coshaifatto",
+        "it-r1.v-rimanere",
+        "it-r1.v-invece",
+        "it-r1.v-tardi"
+      ]
     },
     {
       "id": "it-r1.l2",
       "title": "Fatto, visto, letto: i participi irregolari",
       "canDo": "I can use the most common irregular past participles.",
-      "meme": { "top": "Regular participles: -ato, -uto, -ito", "bottom": "Fare, leggere, perdere: we don't do that here" },
+      "meme": {
+        "top": "Regular participles: -ato, -uto, -ito",
+        "bottom": "Fare, leggere, perdere: we don't do that here"
+      },
       "intro": {
+        "place": "stadium",
         "art": "📱🥅📰",
         "scene": "Marco cannot believe Leo missed last night's match.",
         "lines": [
-          { "who": "Marco", "text": "Hai visto la partita ieri sera?", "meaning": "Did you see the match last night?" },
-          { "who": "Leo", "text": "No, ho fatto tardi al lavoro. Cos'è successo?", "meaning": "No, I worked late. What happened?" },
-          { "who": "Marco", "text": "La Roma ha vinto due a uno. Ha segnato al novantesimo!", "meaning": "Roma won two–one. They scored in the ninetieth minute!" },
-          { "who": "Leo", "text": "Davvero? Io ho letto solo il risultato.", "meaning": "Really? I only read the result." },
-          { "who": "Marco", "text": "Ho scritto tutto nel gruppo. Non hai aperto i messaggi?", "meaning": "I wrote everything in the group chat. Didn't you open the messages?" },
-          { "who": "Leo", "text": "No, ho perso il telefono!", "meaning": "No, I lost my phone!" }
+          {
+            "who": "Marco",
+            "text": "Hai visto la partita ieri sera?",
+            "meaning": "Did you see the match last night?"
+          },
+          {
+            "who": "Leo",
+            "text": "No, ho fatto tardi al lavoro. Cos'è successo?",
+            "meaning": "No, I worked late. What happened?"
+          },
+          {
+            "who": "Marco",
+            "text": "La Roma ha vinto due a uno. Ha segnato al novantesimo!",
+            "meaning": "Roma won two–one. They scored in the ninetieth minute!"
+          },
+          {
+            "who": "Leo",
+            "text": "Davvero? Io ho letto solo il risultato.",
+            "meaning": "Really? I only read the result."
+          },
+          {
+            "who": "Marco",
+            "text": "Ho scritto tutto nel gruppo. Non hai aperto i messaggi?",
+            "meaning": "I wrote everything in the group chat. Didn't you open the messages?"
+          },
+          {
+            "who": "Leo",
+            "text": "No, ho perso il telefono!",
+            "meaning": "No, I lost my phone!"
+          }
         ],
         "notes": [
-          { "title": "The ones you need every day", "body": "fare → fatto · dire → detto · vedere → visto · leggere → letto · scrivere → scritto · prendere → preso · mettere → messo · aprire → aperto · chiudere → chiuso · perdere → perso · vincere → vinto · bere → bevuto · venire → venuto · essere → stato · rimanere → rimasto · succedere → successo." },
-          { "title": "🇧🇷 PT tip: friends and traps", "body": "Many look like Portuguese: fatto/feito, detto/dito, visto/visto, scritto/escrito, aperto/aberto. The traps are the ones Portuguese keeps regular: lido → letto, perdido → perso, vencido → vinto, bebido → bevuto. Guessing *leggiuto or *perdido will not work." },
-          { "title": "Fare tardi", "body": "\"Ho fatto tardi\" = I was late / I stayed late. A very common everyday phrase." }
+          {
+            "title": "The ones you need every day",
+            "body": "fare → fatto · dire → detto · vedere → visto · leggere → letto · scrivere → scritto · prendere → preso · mettere → messo · aprire → aperto · chiudere → chiuso · perdere → perso · vincere → vinto · bere → bevuto · venire → venuto · essere → stato · rimanere → rimasto · succedere → successo."
+          },
+          {
+            "title": "🇧🇷 PT tip: friends and traps",
+            "body": "Many look like Portuguese: fatto/feito, detto/dito, visto/visto, scritto/escrito, aperto/aberto. The traps are the ones Portuguese keeps regular: lido → letto, perdido → perso, vencido → vinto, bebido → bevuto. Guessing *leggiuto or *perdido will not work."
+          },
+          {
+            "title": "Fare tardi",
+            "body": "\"Ho fatto tardi\" = I was late / I stayed late. A very common everyday phrase."
+          }
         ]
       },
       "exercises": [
-        { "id": "it-r1.l2.e1", "type": "gap", "prompt": "Fill the gap.", "text": "Ho ___ un libro sulla storia di Roma.", "meaning": "I read a book about the history of Rome.", "options": ["letto", "leggiuto", "lido"], "answer": 0 },
-        { "id": "it-r1.l2.e2", "type": "gap", "prompt": "Fill the gap.", "text": "La Roma ha ___ due a uno.", "meaning": "Roma won two–one.", "options": ["vinto", "vinciuto", "vencido"], "answer": 0 },
-        { "id": "it-r1.l2.e3", "type": "mcq", "prompt": "What is the past participle of \"fare\"?", "options": ["fatto", "fato", "feito"], "answer": 0, "explain": "Double t: fatto. \"Il fato\" means fate." },
-        { "id": "it-r1.l2.e4", "type": "tiles", "prompt": "Build: \"I lost my phone.\"", "meaning": "I lost my phone.", "tiles": ["Ho", "perso", "il", "telefono", "perdido", "Sono"], "answer": "Ho perso il telefono", "alt": ["Ho perso il mio telefono"], "explain": "Italian often skips \"my\" when the owner is obvious: il telefono." },
-        { "id": "it-r1.l2.e5", "type": "mcq", "prompt": "Which question is correct?", "options": ["Cos'è successo?", "Cos'ha successo?", "Cos'è succedido?"], "answer": 0, "explain": "Succedere takes essere, and its participle is successo." },
-        { "id": "it-r1.l2.e6", "type": "mcq", "listen": true, "prompt": "Listen. What is Marco asking?", "text": "Non hai aperto i messaggi?", "options": ["Didn't you open the messages?", "Didn't you write the messages?", "Didn't you read the messages?"], "answer": 0 },
-        { "id": "it-r1.l2.e7", "type": "type", "prompt": "Translate from Portuguese: \"Eu escrevi tudo no grupo.\"", "answer": "Ho scritto tutto nel gruppo.", "alt": ["Io ho scritto tutto nel gruppo."] },
-        { "id": "it-r1.l2.e8", "type": "match", "prompt": "Match each verb with its participle.", "pairs": [["fare", "fatto"], ["dire", "detto"], ["vedere", "visto"], ["prendere", "preso"], ["mettere", "messo"]] }
+        {
+          "id": "it-r1.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Ho ___ un libro sulla storia di Roma.",
+          "meaning": "I read a book about the history of Rome.",
+          "options": [
+            "letto",
+            "leggiuto",
+            "lido"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "La Roma ha ___ due a uno.",
+          "meaning": "Roma won two–one.",
+          "options": [
+            "vinto",
+            "vinciuto",
+            "vencido"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l2.e3",
+          "type": "mcq",
+          "prompt": "What is the past participle of \"fare\"?",
+          "options": [
+            "fatto",
+            "fato",
+            "feito"
+          ],
+          "answer": 0,
+          "explain": "Double t: fatto. \"Il fato\" means fate."
+        },
+        {
+          "id": "it-r1.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I lost my phone.\"",
+          "meaning": "I lost my phone.",
+          "tiles": [
+            "Ho",
+            "perso",
+            "il",
+            "telefono",
+            "perdido",
+            "Sono"
+          ],
+          "answer": "Ho perso il telefono",
+          "alt": [
+            "Ho perso il mio telefono"
+          ],
+          "explain": "Italian often skips \"my\" when the owner is obvious: il telefono."
+        },
+        {
+          "id": "it-r1.l2.e5",
+          "type": "mcq",
+          "prompt": "Which question is correct?",
+          "options": [
+            "Cos'è successo?",
+            "Cos'ha successo?",
+            "Cos'è succedido?"
+          ],
+          "answer": 0,
+          "explain": "Succedere takes essere, and its participle is successo."
+        },
+        {
+          "id": "it-r1.l2.e6",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What is Marco asking?",
+          "text": "Non hai aperto i messaggi?",
+          "options": [
+            "Didn't you open the messages?",
+            "Didn't you write the messages?",
+            "Didn't you read the messages?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l2.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu escrevi tudo no grupo.\"",
+          "answer": "Ho scritto tutto nel gruppo.",
+          "alt": [
+            "Io ho scritto tutto nel gruppo."
+          ]
+        },
+        {
+          "id": "it-r1.l2.e8",
+          "type": "match",
+          "prompt": "Match each verb with its participle.",
+          "pairs": [
+            [
+              "fare",
+              "fatto"
+            ],
+            [
+              "dire",
+              "detto"
+            ],
+            [
+              "vedere",
+              "visto"
+            ],
+            [
+              "prendere",
+              "preso"
+            ],
+            [
+              "mettere",
+              "messo"
+            ]
+          ]
+        }
       ],
-      "newItems": ["it-r1.v-fatto", "it-r1.v-visto", "it-r1.v-letto", "it-r1.v-scritto", "it-r1.v-perso", "it-r1.v-vinto", "it-r1.v-aperto", "it-r1.v-successo"]
+      "newItems": [
+        "it-r1.v-fatto",
+        "it-r1.v-visto",
+        "it-r1.v-letto",
+        "it-r1.v-scritto",
+        "it-r1.v-perso",
+        "it-r1.v-vinto",
+        "it-r1.v-aperto",
+        "it-r1.v-successo"
+      ]
     },
     {
       "id": "it-r1.l3",
       "title": "Andato, andata, andati, andate",
       "canDo": "I can make the participle agree with the subject when the verb takes essere.",
-      "meme": { "top": "Giulia: sono andato a Firenze", "bottom": "The final -a: am I a joke to you?" },
+      "meme": {
+        "top": "Giulia: sono andato a Firenze",
+        "bottom": "The final -a: am I a joke to you?"
+      },
       "intro": {
+        "place": "train",
         "art": "🚆🌻🏛️",
         "scene": "Giulia is back from a day trip.",
         "lines": [
-          { "who": "Giulia", "text": "Ieri io e Sara siamo andate a Firenze.", "meaning": "Yesterday Sara and I went to Florence." },
-          { "who": "Leo", "text": "Che bello! Siete partite presto?", "meaning": "How nice! Did you leave early?" },
-          { "who": "Giulia", "text": "Sì, siamo partite alle sette. Il treno è arrivato in orario!", "meaning": "Yes, we left at seven. The train arrived on time!" },
-          { "who": "Leo", "text": "Incredibile. E i tuoi fratelli? Sono venuti anche loro?", "meaning": "Incredible. And your brothers? Did they come too?" },
-          { "who": "Giulia", "text": "No, sono rimasti a Roma. Hanno lavorato tutto il giorno.", "meaning": "No, they stayed in Rome. They worked all day." }
+          {
+            "who": "Giulia",
+            "text": "Ieri io e Sara siamo andate a Firenze.",
+            "meaning": "Yesterday Sara and I went to Florence."
+          },
+          {
+            "who": "Leo",
+            "text": "Che bello! Siete partite presto?",
+            "meaning": "How nice! Did you leave early?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Sì, siamo partite alle sette. Il treno è arrivato in orario!",
+            "meaning": "Yes, we left at seven. The train arrived on time!"
+          },
+          {
+            "who": "Leo",
+            "text": "Incredibile. E i tuoi fratelli? Sono venuti anche loro?",
+            "meaning": "Incredible. And your brothers? Did they come too?"
+          },
+          {
+            "who": "Giulia",
+            "text": "No, sono rimasti a Roma. Hanno lavorato tutto il giorno.",
+            "meaning": "No, they stayed in Rome. They worked all day."
+          }
         ],
         "notes": [
-          { "title": "With essere, the participle agrees", "body": "It behaves like an adjective: Leo è andato · Giulia è andata · i fratelli sono andati · Giulia e Sara sono andate. One man in the group is enough for the masculine plural." },
-          { "title": "With avere, it stays put", "body": "Hanno lavorato, abbiamo mangiato, ha dormito: the ending does not follow the subject." },
-          { "title": "🇧🇷 PT tip: borrow the passive", "body": "Portuguese never changes \"fui / foram\" for gender, so this feels new. But you already do it in the passive: \"elas foram convidadas\". Italian uses that same agreement for every essere verb: \"sono andate\"." }
+          {
+            "title": "With essere, the participle agrees",
+            "body": "It behaves like an adjective: Leo è andato · Giulia è andata · i fratelli sono andati · Giulia e Sara sono andate. One man in the group is enough for the masculine plural."
+          },
+          {
+            "title": "With avere, it stays put",
+            "body": "Hanno lavorato, abbiamo mangiato, ha dormito: the ending does not follow the subject."
+          },
+          {
+            "title": "🇧🇷 PT tip: borrow the passive",
+            "body": "Portuguese never changes \"fui / foram\" for gender, so this feels new. But you already do it in the passive: \"elas foram convidadas\". Italian uses that same agreement for every essere verb: \"sono andate\"."
+          }
         ]
       },
       "exercises": [
-        { "id": "it-r1.l3.e1", "type": "gap", "prompt": "Fill the gap.", "text": "Giulia è ___ a Firenze.", "meaning": "Giulia went to Florence.", "options": ["andata", "andato", "andate"], "answer": 0 },
-        { "id": "it-r1.l3.e2", "type": "gap", "prompt": "Fill the gap.", "text": "I miei fratelli sono ___ a Roma.", "meaning": "My brothers stayed in Rome.", "options": ["rimasti", "rimasto", "rimaste"], "answer": 0 },
-        { "id": "it-r1.l3.e3", "type": "mcq", "prompt": "Giulia and Sara say: \"We left at seven.\"", "options": ["Siamo partite alle sette.", "Siamo partiti alle sette.", "Abbiamo partito alle sette."], "answer": 0, "explain": "Two women: partite. And partire takes essere." },
-        { "id": "it-r1.l3.e4", "type": "tiles", "prompt": "Build: \"The train arrived on time.\"", "meaning": "The train arrived on time.", "tiles": ["Il", "treno", "è", "arrivato", "in", "orario", "arrivata", "ha"], "answer": "Il treno è arrivato in orario", "alt": [] },
-        { "id": "it-r1.l3.e5", "type": "mcq", "prompt": "Which sentence is correct?", "options": ["Le ragazze hanno mangiato una pizza.", "Le ragazze hanno mangiate una pizza.", "Le ragazze sono mangiate una pizza."], "answer": 0, "explain": "Mangiare takes avere, and with avere the participle does not agree with the subject." },
-        { "id": "it-r1.l3.e6", "type": "mcq", "listen": true, "prompt": "Listen. What is Leo asking?", "text": "Sono venuti anche loro?", "options": ["Did they come too?", "Are they coming too?", "Did she come too?"], "answer": 0 },
-        { "id": "it-r1.l3.e7", "type": "type", "prompt": "Translate from Portuguese (about two women): \"Elas ficaram em Roma.\"", "answer": "Sono rimaste a Roma.", "alt": ["Loro sono rimaste a Roma.", "Sono restate a Roma.", "Loro sono restate a Roma."] },
-        { "id": "it-r1.l3.e8", "type": "match", "prompt": "Match.", "pairs": [["è andato", "he went"], ["è andata", "she went"], ["sono andati", "they went (men or mixed)"], ["sono andate", "they went (women)"], ["siamo andati", "we went"]] }
+        {
+          "id": "it-r1.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Giulia è ___ a Firenze.",
+          "meaning": "Giulia went to Florence.",
+          "options": [
+            "andata",
+            "andato",
+            "andate"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "I miei fratelli sono ___ a Roma.",
+          "meaning": "My brothers stayed in Rome.",
+          "options": [
+            "rimasti",
+            "rimasto",
+            "rimaste"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l3.e3",
+          "type": "mcq",
+          "prompt": "Giulia and Sara say: \"We left at seven.\"",
+          "options": [
+            "Siamo partite alle sette.",
+            "Siamo partiti alle sette.",
+            "Abbiamo partito alle sette."
+          ],
+          "answer": 0,
+          "explain": "Two women: partite. And partire takes essere."
+        },
+        {
+          "id": "it-r1.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"The train arrived on time.\"",
+          "meaning": "The train arrived on time.",
+          "tiles": [
+            "Il",
+            "treno",
+            "è",
+            "arrivato",
+            "in",
+            "orario",
+            "arrivata",
+            "ha"
+          ],
+          "answer": "Il treno è arrivato in orario",
+          "alt": []
+        },
+        {
+          "id": "it-r1.l3.e5",
+          "type": "mcq",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Le ragazze hanno mangiato una pizza.",
+            "Le ragazze hanno mangiate una pizza.",
+            "Le ragazze sono mangiate una pizza."
+          ],
+          "answer": 0,
+          "explain": "Mangiare takes avere, and with avere the participle does not agree with the subject."
+        },
+        {
+          "id": "it-r1.l3.e6",
+          "type": "mcq",
+          "listen": true,
+          "prompt": "Listen. What is Leo asking?",
+          "text": "Sono venuti anche loro?",
+          "options": [
+            "Did they come too?",
+            "Are they coming too?",
+            "Did she come too?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese (about two women): \"Elas ficaram em Roma.\"",
+          "answer": "Sono rimaste a Roma.",
+          "alt": [
+            "Loro sono rimaste a Roma.",
+            "Sono restate a Roma.",
+            "Loro sono restate a Roma."
+          ]
+        },
+        {
+          "id": "it-r1.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "è andato",
+              "he went"
+            ],
+            [
+              "è andata",
+              "she went"
+            ],
+            [
+              "sono andati",
+              "they went (men or mixed)"
+            ],
+            [
+              "sono andate",
+              "they went (women)"
+            ],
+            [
+              "siamo andati",
+              "we went"
+            ]
+          ]
+        }
       ],
-      "newItems": ["it-r1.g-accordo", "it-r1.g-avere-fixed", "it-r1.p-in-orario", "it-r1.v-partire"]
+      "newItems": [
+        "it-r1.g-accordo",
+        "it-r1.g-avere-fixed",
+        "it-r1.p-in-orario",
+        "it-r1.v-partire"
+      ]
     }
   ],
   "factCheck": [

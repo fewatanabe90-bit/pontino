@@ -1,0 +1,109 @@
+{
+  "id": "it-deck-calcio",
+  "lang": "it",
+  "icon": "⚽",
+  "tags": [
+    "sports"
+  ],
+  "title": "Il calcio",
+  "description": "The vocabulary of Monday-morning bar arguments.",
+  "cards": [
+    {
+      "id": "it-deck-calcio.01",
+      "front": "la partita",
+      "back": "match",
+      "pt": "PT partida."
+    },
+    {
+      "id": "it-deck-calcio.02",
+      "front": "il tifoso / la tifosa",
+      "back": "fan, supporter",
+      "pt": "PT torcedor(a)."
+    },
+    {
+      "id": "it-deck-calcio.03",
+      "front": "tifare per",
+      "back": "to support (a team)",
+      "note": "Tifo per la Roma.",
+      "pt": "PT torcer para."
+    },
+    {
+      "id": "it-deck-calcio.04",
+      "front": "segnare",
+      "back": "to score",
+      "note": "Ha segnato al novantesimo.",
+      "pt": "PT marcar. Not \"assinar\" (= firmare)."
+    },
+    {
+      "id": "it-deck-calcio.05",
+      "front": "il pareggio",
+      "back": "draw",
+      "pt": "PT empate."
+    },
+    {
+      "id": "it-deck-calcio.06",
+      "front": "la vittoria",
+      "back": "win, victory"
+    },
+    {
+      "id": "it-deck-calcio.07",
+      "front": "la sconfitta",
+      "back": "defeat",
+      "pt": "PT derrota."
+    },
+    {
+      "id": "it-deck-calcio.08",
+      "front": "l'arbitro",
+      "back": "referee",
+      "pt": "PT árbitro, juiz."
+    },
+    {
+      "id": "it-deck-calcio.09",
+      "front": "il fuorigioco",
+      "back": "offside",
+      "pt": "PT impedimento."
+    },
+    {
+      "id": "it-deck-calcio.10",
+      "front": "il rigore",
+      "back": "penalty",
+      "pt": "PT pênalti."
+    },
+    {
+      "id": "it-deck-calcio.11",
+      "front": "il portiere",
+      "back": "goalkeeper",
+      "pt": "PT goleiro. Also the doorman of a building."
+    },
+    {
+      "id": "it-deck-calcio.12",
+      "front": "l'allenatore",
+      "back": "coach, manager",
+      "pt": "PT técnico, treinador."
+    },
+    {
+      "id": "it-deck-calcio.13",
+      "front": "la classifica",
+      "back": "league table",
+      "pt": "PT tabela, classificação."
+    },
+    {
+      "id": "it-deck-calcio.14",
+      "front": "lo scudetto",
+      "back": "the league title",
+      "note": "Named after the small shield on the champions’ shirt."
+    },
+    {
+      "id": "it-deck-calcio.15",
+      "front": "in trasferta",
+      "back": "away (from home)",
+      "note": "La Roma gioca in trasferta.",
+      "pt": "PT fora de casa."
+    },
+    {
+      "id": "it-deck-calcio.16",
+      "front": "il calciomercato",
+      "back": "transfer market"
+    }
+  ]
+}

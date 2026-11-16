@@ -2,6 +2,9 @@
   "id": "ja-deck-food",
   "lang": "ja",
   "icon": "🍜",
+  "tags": [
+    "travel"
+  ],
   "title": "Food and restaurants",
   "description": "What is on the menu and what to say at the table.",
   "cards": [
