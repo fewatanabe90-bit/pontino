@@ -54,6 +54,7 @@ Progress lives only in the browser you use (IndexedDB). Profile → Export saves
 - Interests picker (travel, sports, history, geography, politics): matching decks and units are offered first.
 - Dialogues play as conversations in illustrated scenes: one voice per speaker, pauses between turns, the speaker lights up. Voice picker in Profile; robotic novelty voices are never auto-selected.
 - Japanese unit "Match day" (3 lessons on polite verbs and particles) and sports decks in both languages.
+- Real photos of Japanese signs on the Signs deck (Wikimedia Commons, open licences, credited in the app and in docs/LICENSES.md).
 - Flashcard decks: flip cards for vocabulary (130 cards in seven decks), which join the review queue as you learn them.
 - Deployed to GitHub Pages on every push to main.
 

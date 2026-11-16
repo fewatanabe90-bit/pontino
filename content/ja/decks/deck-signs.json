@@ -12,7 +12,8 @@
     {
       "id": "ja-deck-signs.01",
       "front": "{入口|いりぐち}",
-      "back": "entrance"
+      "back": "entrance",
+      "image": "photos/ja-deck-signs.01.jpg"
     },
     {
       "id": "ja-deck-signs.02",
@@ -22,13 +23,15 @@
     {
       "id": "ja-deck-signs.03",
       "front": "{駅|えき}",
-      "back": "station"
+      "back": "station",
+      "image": "photos/ja-deck-signs.03.jpg"
     },
     {
       "id": "ja-deck-signs.04",
       "front": "お{手洗|てあら}い",
       "back": "toilet",
-      "note": "Also written トイレ."
+      "note": "Also written トイレ.",
+      "image": "photos/ja-deck-signs.04.jpg"
     },
     {
       "id": "ja-deck-signs.05",
@@ -45,13 +48,15 @@
     {
       "id": "ja-deck-signs.07",
       "front": "{営業中|えいぎょうちゅう}",
-      "back": "open for business"
+      "back": "open for business",
+      "image": "photos/ja-deck-signs.07.jpg"
     },
     {
       "id": "ja-deck-signs.08",
       "front": "{準備中|じゅんびちゅう}",
       "back": "closed for now (preparing)",
-      "note": "On restaurant doors between lunch and dinner."
+      "note": "On restaurant doors between lunch and dinner.",
+      "image": "photos/ja-deck-signs.08.jpg"
     },
     {
       "id": "ja-deck-signs.09",
@@ -66,17 +71,20 @@
     {
       "id": "ja-deck-signs.11",
       "front": "{改札|かいさつ}",
-      "back": "ticket gate"
+      "back": "ticket gate",
+      "image": "photos/ja-deck-signs.11.jpg"
     },
     {
       "id": "ja-deck-signs.12",
       "front": "{切符|きっぷ}",
-      "back": "ticket"
+      "back": "ticket",
+      "image": "photos/ja-deck-signs.12.jpg"
     },
     {
       "id": "ja-deck-signs.13",
       "front": "{両替|りょうがえ}",
-      "back": "currency exchange"
+      "back": "currency exchange",
+      "image": "photos/ja-deck-signs.13.jpg"
     },
     {
       "id": "ja-deck-signs.14",
@@ -91,12 +99,14 @@
     {
       "id": "ja-deck-signs.16",
       "front": "{立入禁止|たちいりきんし}",
-      "back": "no entry"
+      "back": "no entry",
+      "image": "photos/ja-deck-signs.16.jpg"
     },
     {
       "id": "ja-deck-signs.17",
       "front": "{受付|うけつけ}",
-      "back": "reception"
+      "back": "reception",
+      "image": "photos/ja-deck-signs.17.jpg"
     },
     {
       "id": "ja-deck-signs.18",

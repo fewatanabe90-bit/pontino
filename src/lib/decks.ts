@@ -1,4 +1,8 @@
-import type { Deck } from './schema';
+import creditsJson from '../../content/credits/photos.json';
+import type { Deck, PhotoCredit } from './schema';
+
+export const photoCredits = creditsJson as PhotoCredit[];
+export const creditFor = (file: string | undefined): PhotoCredit | undefined => photoCredits.find((c) => c.file === file);
 
 /** Vocabulary decks are small, so they ship with the app instead of loading on demand. */
 const files = import.meta.glob<{ default: Deck }>('../../content/*/decks/deck-*.json', { eager: true });

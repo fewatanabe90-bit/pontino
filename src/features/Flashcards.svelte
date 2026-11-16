@@ -4,7 +4,7 @@
   import Speak from '../components/Speak.svelte';
   import Pontino from '../design/Pontino.svelte';
   import { db } from '../lib/db';
-  import { deckById, SESSION_SIZE } from '../lib/decks';
+  import { creditFor, deckById, SESSION_SIZE } from '../lib/decks';
   import type { Deck } from '../lib/schema';
   import { sfx } from '../lib/sfx';
   import { newCard, rate, Rating } from '../lib/srs';
@@ -23,6 +23,7 @@
   let mode = $state<'new' | 'browse'>('new');
   let phase = $state<'loading' | 'study' | 'done'>('loading');
   const card = $derived(queue[0]);
+  const credit = $derived(creditFor(card?.image));
 
   async function begin() {
     if (!deck) return;
@@ -108,7 +109,8 @@
     {#key card.id}
       <div class="stage">
         <button class="flash" class:flipped type="button" onclick={flip} aria-label={flipped ? 'Show the front' : 'Flip the card to see the meaning'}>
-          <span class="face front">
+          <span class="face front" class:photo={!!card.image}>
+            {#if card.image}<img src="./{card.image}" alt="A real sign showing this word" loading="eager" />{/if}
             <span class="tl word"><Ruby text={card.front} /></span>
             <span class="hint">Tap to flip</span>
           </span>
@@ -116,6 +118,7 @@
             <span class="meaning">{card.back}</span>
             {#if card.note}<span class="tl extra"><Ruby text={card.note} /></span>{/if}
             {#if card.pt}<span class="pt">🇧🇷 {card.pt}</span>{/if}
+            {#if credit}<span class="credit">Photo: {credit.author} · {credit.licence} · Wikimedia Commons</span>{/if}
           </span>
         </button>
       </div>
@@ -197,6 +200,23 @@
     transform: rotateY(180deg);
     border-color: var(--brand);
     box-shadow: 0 8px 0 var(--brand-edge);
+  }
+  .face img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid var(--line);
+  }
+  .front.photo {
+    justify-content: flex-start;
+    padding: 14px;
+  }
+  .credit {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    line-height: 1.3;
   }
   .word {
     font-size: 34px;

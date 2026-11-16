@@ -116,6 +116,8 @@ Not mocked yet: onboarding, placement/diagnostic, phrasebook, Atlas entry, impor
 | 2026-11-16 | **Voices:** still the device's text-to-speech, now choosing the most natural voice, one per speaker, with turn-taking pauses and a 0.9 default speed. Pre-generated neural audio and licensed photos are proposals awaiting a decision. |
 | 2026-11-16 | **Mistakes:** a wrong answer no longer returns inside the lesson; it is stored and practised from Review → Mistakes. Storage gained a `mistakes` table (additive, no data migrated). |
 | 2026-11-16 | **Typing:** Japanese typed answers are hiragana-typable vocabulary only; names and katakana words go in tiles or multiple choice. Enforced by the validator. |
+| 2026-11-16 | **Photos approved:** Wikimedia Commons photos under CC0, public-domain, CC BY or CC BY-SA only, each credited (card, Credits screen, LICENSES.md). First ten are on the Signs deck. |
+| 2026-11-16 | **Human-like voices approved in principle:** not started. The candidate (Kokoro, Apache-2.0 weights) needs Python installed on this computer; decision pending. |
 
 ## 6. Next step once you answer
 

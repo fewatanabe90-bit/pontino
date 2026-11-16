@@ -7,7 +7,8 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { canBuild } from '../src/lib/check';
-import { CatalogSchema, DeckSchema, UnitSchema, type Unit } from '../src/lib/schema';
+import { existsSync } from 'node:fs';
+import { CatalogSchema, DeckSchema, PhotoCreditSchema, UnitSchema, type Unit } from '../src/lib/schema';
 
 const ROOT = join(__dirname, '..', 'content');
 
@@ -89,6 +90,23 @@ describe('decks', () => {
       expect(deck.cards.every((c) => c.id.startsWith(`${deck.id}.`)), `${deck.id}: card ids must start with the deck id`).toBe(true);
       expect(new Set(deck.cards.map((c) => c.front)).size, `${deck.id}: repeated front`).toBe(deck.cards.length);
     }
+  });
+});
+
+describe('photos', () => {
+  const credits = PhotoCreditSchema.array().parse(read(join(ROOT, 'credits', 'photos.json')));
+  const used = deckFiles(ROOT).flatMap((f) => DeckSchema.parse(read(f)).cards.flatMap((c) => (c.image ? [c.image] : [])));
+
+  it('every photo on a card exists and has a credit with an open licence', () => {
+    expect(used.length).toBeGreaterThan(0);
+    for (const file of used) {
+      expect(existsSync(join(ROOT, '..', 'public', file)), `missing file ${file}`).toBe(true);
+      expect(credits.some((c) => c.file === file), `no credit for ${file}`).toBe(true);
+    }
+  });
+
+  it('no credit is left without its photo', () => {
+    for (const c of credits) expect(used, `unused credit ${c.file}`).toContain(c.file);
   });
 });
 

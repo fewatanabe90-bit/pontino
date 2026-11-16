@@ -7,7 +7,7 @@ test('a wrong answer does not come back in the lesson; it waits in Review and le
   // Exercise 1 of 8: answer wrong on purpose.
   await page.getByRole('radio', { name: /It means "is"/ }).click();
   await page.getByRole('button', { name: 'Check' }).click();
-  await expect(page.getByText('Not quite')).toBeVisible();
+  await expect(page.locator('.sheet .h')).toHaveText('Not quite');
   await expect(page.getByText(/Review → Mistakes/)).toBeVisible();
   await page.getByRole('button', { name: 'Continue' }).click();
 
@@ -19,7 +19,7 @@ test('a wrong answer does not come back in the lesson; it waits in Review and le
   await page.getByRole('link', { name: /1 mistake to fix/ }).click();
   await page.getByRole('radio', { name: /It marks the topic/ }).click();
   await page.getByRole('button', { name: 'Check' }).click();
-  await expect(page.getByText('Correct')).toBeVisible();
+  await expect(page.locator('.sheet .h')).toContainText('Correct');
   await page.getByRole('button', { name: 'Continue' }).click();
   await expect(page.getByText('Mistakes cleared!')).toBeVisible();
 

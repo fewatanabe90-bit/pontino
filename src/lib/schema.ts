@@ -122,9 +122,23 @@ export const DeckSchema = z.object({
         back: z.string().min(1),
         note: z.string().optional(),
         pt: z.string().optional(),
+        /** A photo under /public, credited in content/credits/photos.json. */
+        image: z.string().optional(),
       }),
     )
     .min(5),
+});
+
+export const PhotoCreditSchema = z.object({
+  file: z.string(),
+  card: z.string(),
+  title: z.string(),
+  author: z.string().min(1),
+  /** Only licences that allow reuse with credit. */
+  licence: z.string().regex(/^(CC0|Public domain|CC BY(-SA)? \d\.\d)/),
+  licenceUrl: z.string(),
+  source: z.string().url(),
+  changes: z.string(),
 });
 
 export const CatalogSchema = z.array(
@@ -145,5 +159,6 @@ export type Item = z.infer<typeof ItemSchema>;
 export type Exercise = z.infer<typeof ExerciseSchema>;
 export type Lesson = z.infer<typeof LessonSchema>;
 export type Unit = z.infer<typeof UnitSchema>;
+export type PhotoCredit = z.infer<typeof PhotoCreditSchema>;
 export type Deck = z.infer<typeof DeckSchema>;
 export type Catalog = z.infer<typeof CatalogSchema>;
