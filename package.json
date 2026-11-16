@@ -1,0 +1,14 @@
+{
+  "name": "pontino",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate:content && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "validate:content": "vitest run tests/content.test.ts",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  }
+}

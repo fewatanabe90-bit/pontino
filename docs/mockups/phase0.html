@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en" data-pal="teal" data-lang="ja" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pontino — Phase 0 mockups</title>
+<!-- Mockup only: fonts fall back to system fonts. The real app bundles Nunito + M PLUS Rounded 1c locally. Icons are emoji placeholders. -->
+<style>
+:root{
+  --ok:#2E9E5B; --ok-soft:#DDF5E6; --bad:#D9534F; --bad-soft:#FBE3E1;
+  --streak:#FF8A3D; --xp:#F2B01E; --river:#BFE6F2;
+  --bg:#F3F5F7; --paper:#FFFFFF; --card:#FFFFFF; --ink:#1D2230; --muted:#667085; --line:#E4E7EC; --lock:#D5D9E0; --lock-edge:#B8BEC9;
+  --font: "Nunito","SF Pro Rounded",ui-rounded,"Hiragino Maru Gothic ProN","M PLUS Rounded 1c","Segoe UI",system-ui,sans-serif;
+}
+[data-pal=teal]{--brand:#0C8388;--brand-edge:#075E63;--brand-soft:#D9F1F1}
+[data-pal=coral]{--brand:#D9442F;--brand-edge:#A52E1D;--brand-soft:#FCE4DF}
+[data-pal=blue]{--brand:#4660E0;--brand-edge:#2F44AD;--brand-soft:#E3E8FD}
+[data-lang=ja]{--accent:#E8452C;--accent2:#2E4A8B;--paper:#FBF8F1;--pat:rgba(46,74,139,.10)}
+[data-lang=it]{--accent:#C8643C;--accent2:#6F7F2F;--paper:#FFF8EC;--pat:rgba(200,100,60,.10)}
+[data-mode=dark]{--bg:#0E1116;--paper:#161B22;--card:#1F2630;--ink:#F1F3F6;--muted:#9AA4B2;--line:#2C3541;--lock:#3A4350;--lock-edge:#2A313B;--river:#1E4A5A;--ok-soft:#173A27;--bad-soft:#44201F}
+[data-mode=dark][data-pal=teal]{--brand:#19A5AB;--brand-edge:#0C6E73;--brand-soft:#12383A}
+[data-mode=dark][data-pal=coral]{--brand:#EC5A45;--brand-edge:#A8331F;--brand-soft:#432019}
+[data-mode=dark][data-pal=blue]{--brand:#6C82F2;--brand-edge:#3B4FB8;--brand-soft:#1F274D}
+[data-lang=ja] .it{display:none!important} [data-lang=it] .ja{display:none!important}
+
+*{box-sizing:border-box;margin:0}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+.controls{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.controls h1{font-size:18px;font-weight:900;margin-right:auto}
+.seg{display:inline-flex;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:3px;gap:3px}
+.seg button{font:inherit;font-weight:800;font-size:13px;color:var(--muted);background:none;border:0;border-radius:10px;padding:8px 12px;min-height:36px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--brand);color:#fff}
+.sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.screens{display:flex;flex-wrap:wrap;gap:32px 28px;justify-content:center;padding:28px 16px 60px}
+figure{width:min(375px,100%)} figcaption{font-weight:800;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 10px 6px}
+.phone{position:relative;height:760px;border-radius:36px;overflow:hidden;background:var(--paper);border:1px solid var(--line);box-shadow:0 18px 40px rgba(16,24,40,.12);display:flex;flex-direction:column}
+.scroll{flex:1;overflow:hidden;padding:14px 16px 16px;display:flex;flex-direction:column;gap:14px}
+.pattern{position:absolute;inset:0 0 auto 0;height:150px;pointer-events:none;-webkit-mask-image:linear-gradient(#000,transparent);mask-image:linear-gradient(#000,transparent)}
+[data-lang=ja] .pattern{background:radial-gradient(circle at 50% 100%,transparent 9px,var(--pat) 10px,transparent 11px,transparent 15px,var(--pat) 16px,transparent 17px) 0 0/36px 18px,radial-gradient(circle at 50% 100%,transparent 9px,var(--pat) 10px,transparent 11px,transparent 15px,var(--pat) 16px,transparent 17px) 18px 9px/36px 18px}
+[data-lang=it] .pattern{background:linear-gradient(45deg,var(--pat) 25%,transparent 25% 75%,var(--pat) 75%) 0 0/28px 28px,linear-gradient(45deg,var(--pat) 25%,transparent 25% 75%,var(--pat) 75%) 14px 14px/28px 28px}
+
+/* top bar */
+.top{position:relative;display:flex;align-items:center;gap:8px;padding:16px 16px 0}
+.lang{display:flex;align-items:center;gap:6px;font-weight:900;font-size:14px;background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 12px;min-height:40px}
+.lang i{width:18px;height:18px;border-radius:50%;background:var(--accent);box-shadow:inset 0 0 0 5px #fff,inset 0 0 0 18px var(--accent)}
+[data-lang=it] .lang i{background:linear-gradient(90deg,#3E8E55 33%,#fff 33% 66%,#C8402F 66%);box-shadow:0 0 0 1px var(--line)}
+.stat{margin-left:auto;display:flex;gap:12px;font-weight:900;font-size:15px} .stat span{display:flex;align-items:center;gap:3px}
+.c-streak{color:var(--streak)} .c-xp{color:var(--xp)} .c-br{color:var(--brand)}
+
+/* components */
+.card{position:relative;background:var(--card);border:2px solid var(--line);border-radius:20px;padding:16px}
+.h{font-weight:900;font-size:20px;line-height:1.2} .sub{color:var(--muted);font-size:14px;font-weight:600;line-height:1.35}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.btn{display:block;width:100%;font:inherit;font-weight:900;font-size:17px;letter-spacing:.02em;color:#fff;background:var(--brand);border:0;border-radius:16px;padding:14px;min-height:52px;box-shadow:0 5px 0 var(--brand-edge);cursor:pointer;transition:transform .08s,box-shadow .08s}
+.btn:active{transform:translateY(5px);box-shadow:0 0 0 var(--brand-edge)}
+.btn.ghost{background:var(--card);color:var(--brand);border:2px solid var(--line);box-shadow:0 4px 0 var(--line)}
+.btn.ok{background:var(--ok);box-shadow:0 5px 0 #1F7742}
+.bar{height:14px;border-radius:999px;background:var(--line);overflow:hidden} .bar>i{display:block;height:100%;border-radius:999px;background:var(--brand)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:13px;border-radius:999px;padding:7px 12px;background:var(--brand-soft);color:var(--brand)}
+.chip.off{background:transparent;border:2px solid var(--line);color:var(--muted);padding:5px 10px}
+.row{display:flex;align-items:center;gap:12px}
+.bubble{position:relative;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:12px 14px;font-weight:700;font-size:15px;line-height:1.35;flex:1}
+.bubble:before{content:"";position:absolute;left:-9px;top:22px;width:14px;height:14px;background:var(--card);border-left:2px solid var(--line);border-bottom:2px solid var(--line);transform:rotate(45deg)}
+.pontino{flex:none;width:84px} .pontino svg{display:block;width:100%;overflow:visible}
+@media (prefers-reduced-motion:no-preference){.pontino.bounce svg{animation:bob 2.4s ease-in-out infinite}}
+@keyframes bob{50%{transform:translateY(-4px)}}
+.ring{--p:60;width:64px;height:64px;border-radius:50%;flex:none;display:grid;place-items:center;font-weight:900;font-size:15px;background:radial-gradient(closest-side,var(--card) 74%,transparent 76%),conic-gradient(var(--brand) calc(var(--p)*1%),var(--line) 0)}
+.tabs{display:flex;background:var(--card);border-top:2px solid var(--line);padding:6px 4px 18px}
+.tabs div{flex:1;text-align:center;font-size:11px;font-weight:800;color:var(--muted);min-height:44px;padding-top:4px} .tabs b{display:block;font-size:20px;line-height:1.2;filter:grayscale(1);opacity:.6}
+.tabs .on{color:var(--brand)} .tabs .on b{filter:none;opacity:1}
+ruby rt{font-size:.55em;font-weight:700;color:var(--muted)}
+.jp{font-family:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI","Noto Sans JP",sans-serif}
+
+/* home */
+.count{background:var(--accent2);border-color:transparent;color:#fff;overflow:hidden}
+.count .big{font-size:40px;font-weight:900;line-height:1} .count .sub{color:rgba(255,255,255,.82)}
+.count .sun{position:absolute;right:-26px;top:-26px;width:110px;height:110px;border-radius:50%;background:var(--accent);opacity:.95}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini{padding:12px} .mini .h{font-size:15px} .mini .sub{font-size:12px}
+
+/* path */
+.path{position:relative;flex:1;margin:0 -16px}
+.path svg.river{position:absolute;inset:0;width:100%;height:100%}
+.node{position:absolute;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:24px;font-weight:900;color:#fff;background:var(--brand);box-shadow:0 6px 0 var(--brand-edge)}
+.node.lock{background:var(--lock);box-shadow:0 6px 0 var(--lock-edge);color:var(--muted)}
+.node.now{width:76px;height:76px;outline:5px solid var(--brand-soft);outline-offset:4px}
+.node.str{background:var(--accent2);box-shadow:0 6px 0 rgba(0,0,0,.35)}
+.nl{position:absolute;font-size:13px;font-weight:800;line-height:1.25;width:130px} .nl small{display:block;color:var(--muted);font-weight:700}
+
+/* lesson */
+.lt{display:flex;align-items:center;gap:12px;padding:18px 16px 0} .lt .x{font-size:22px;color:var(--muted);font-weight:900;width:44px;height:44px;display:grid;place-items:center} .lt .bar{flex:1}
+.slot{min-height:64px;border-bottom:2px solid var(--line);border-top:2px solid var(--line);padding:10px 0;display:flex;gap:8px;flex-wrap:wrap;align-content:center}
+.tile{font:inherit;font-weight:800;font-size:18px;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:14px;padding:9px 14px;min-height:46px;box-shadow:0 4px 0 var(--line)}
+.tile.used{color:transparent;background:var(--line);box-shadow:none}
+.bank{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.sheet{margin-top:auto;background:var(--ok-soft);border-radius:24px 24px 0 0;padding:18px 16px 26px;display:flex;flex-direction:column;gap:12px}
+.sheet .h{color:var(--ok)} .sheet .sub{color:var(--ink)}
+.tip{background:var(--card);border-radius:14px;padding:10px 12px;font-size:13px;font-weight:700;line-height:1.35}
+.spk{flex:none;width:44px;height:44px;border-radius:14px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:18px;box-shadow:0 4px 0 var(--brand-edge)}
+
+/* review */
+.bars{display:flex;align-items:flex-end;gap:8px;height:84px} .bars div{flex:1;border-radius:8px 8px 4px 4px;background:var(--brand-soft);position:relative} .bars div.t{background:var(--brand)}
+.bars span{position:absolute;bottom:-20px;left:0;right:0;text-align:center;font-size:11px;font-weight:800;color:var(--muted)}
+.list>div{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:2px solid var(--line);font-weight:800;font-size:15px} .list>div:last-child{border:0} .list small{color:var(--muted);font-weight:700;font-size:13px}
+
+/* collections */
+.stamps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.stamp{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;font-weight:900;font-size:20px;line-height:1.1;color:var(--accent);border:3px double var(--accent);transform:rotate(-8deg)}
+.stamp:nth-child(2n){transform:rotate(6deg);color:var(--accent2);border-color:var(--accent2)} .stamp small{display:block;font-size:10px;letter-spacing:.06em}
+.stamp.no{border:3px dashed var(--lock);color:var(--lock-edge);transform:none;font-size:22px}
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.regions i{aspect-ratio:1;border-radius:10px;background:var(--line);display:grid;place-items:center;font-style:normal;font-size:10px;font-weight:900;color:var(--muted)}
+.regions i.a{background:var(--accent);color:#fff} .regions i.b{background:var(--accent2);color:#fff}
+.badge{flex:1;text-align:center;font-size:11px;font-weight:800;color:var(--muted)} .badge b{display:grid;place-items:center;margin:0 auto 6px;width:56px;height:56px;border-radius:18px;font-size:26px;background:var(--brand-soft)} .badge.no b{background:var(--line);filter:grayscale(1);opacity:.5}
+
+/* settings */
+.set>div{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;border-bottom:2px solid var(--line);font-weight:800;font-size:15px} .set>div:last-child{border:0}
+.tog{width:50px;height:30px;border-radius:999px;background:var(--brand);position:relative;flex:none} .tog:after{content:"";position:absolute;top:3px;right:3px;width:24px;height:24px;border-radius:50%;background:#fff} .tog.off{background:var(--lock)} .tog.off:after{right:auto;left:3px}
+.s3{display:flex;border:2px solid var(--line);border-radius:12px;overflow:hidden;font-size:12px} .s3 span{padding:7px 9px;color:var(--muted)} .s3 .on{background:var(--brand);color:#fff}
+</style>
+</head>
+<body>
+<div class="controls">
+  <h1>Pontino · Phase 0 mockups</h1>
+  <div class="seg" data-k="pal" role="group" aria-label="Brand palette">
+    <button data-v="teal" aria-pressed="true"><span class="sw" style="background:#0C8388"></span>A · Bridge Teal</button>
+    <button data-v="coral"><span class="sw" style="background:#D9442F"></span>B · Sunset Coral</button>
+    <button data-v="blue"><span class="sw" style="background:#4660E0"></span>C · Lagoon Blue</button>
+  </div>
+  <div class="seg" data-k="lang" role="group" aria-label="Language theme">
+    <button data-v="ja" aria-pressed="true">日本語</button><button data-v="it">Italiano</button>
+  </div>
+  <div class="seg" data-k="mode" role="group" aria-label="Colour mode">
+    <button data-v="light" aria-pressed="true">Light</button><button data-v="dark">Dark</button>
+  </div>
+</div>
+
+<div class="screens">
+
+<!-- 1 HOME -->
+<figure><figcaption>1 · Home</figcaption><div class="phone"><div class="pattern"></div>
+  <div class="top"><div class="lang"><i></i><span class="ja">Japanese ▾</span><span class="it">Italian ▾</span></div>
+    <div class="stat"><span class="c-streak">🔥 12</span><span class="c-xp">⚡ 340</span><span class="c-br">🌉 3</span></div></div>
+  <div class="scroll">
+    <div class="row"><div class="pontino bounce"></div>
+      <div class="bubble"><span class="ja">おはよう！ Two more lessons and we cross the Konbini bridge.</span><span class="it">Buongiorno! Today we finally tame the congiuntivo. Andiamo?</span></div></div>
+    <div class="card"><div class="eyebrow"><span class="ja">Trip Mode · Unit T02 · Lesson 3 of 5</span><span class="it">B1 · Unit 8 · Lesson 2 of 5</span></div>
+      <div class="h" style="margin:6px 0 4px"><span class="ja">Konbini: the clerk's questions</span><span class="it">Penso che sia… opinions on calcio</span></div>
+      <div class="sub" style="margin-bottom:12px">About 15 min · 9 cards to warm up</div>
+      <div class="bar" style="margin-bottom:14px"><i style="width:40%"></i></div>
+      <button class="btn">Continue</button></div>
+    <div class="card count ja"><div class="sun"></div><div class="eyebrow" style="color:#fff;opacity:.85">Japan trip · May 2027</div>
+      <div class="row" style="margin-top:6px;align-items:flex-end"><div class="big">166</div><div class="sub">days to go<br>Ready for Japan: <b style="color:#fff">12%</b></div></div></div>
+    <div class="card count it"><div class="sun"></div><div class="eyebrow" style="color:#fff;opacity:.85">Road to B2</div>
+      <div class="row" style="margin-top:6px;align-items:flex-end"><div class="big">B1</div><div class="sub">44% of the level<br>Regions coloured: <b style="color:#fff">4 / 20</b></div></div></div>
+    <div class="two">
+      <div class="card mini row"><div class="ring" style="--p:60">9/15</div><div><div class="h">Daily goal</div><div class="sub">minutes today</div></div></div>
+      <div class="card mini"><div class="h">Review</div><div class="sub">23 cards due</div><div class="chip" style="margin-top:8px">Start ›</div></div>
+    </div>
+  </div>
+  <div class="tabs"><div class="on"><b>🏠</b>Home</div><div><b>🧭</b>Learn</div><div><b>🔁</b>Review</div><div><b>📔</b>Collections</div><div><b>👤</b>Profile</div></div>
+</div></figure>
+
+<!-- 2 PATH -->
+<figure><figcaption>2 · Learn (path of bridges)</figcaption><div class="phone"><div class="pattern"></div>
+  <div class="top"><div class="lang"><i></i><span class="ja">Trip Mode + A1</span><span class="it">B1</span></div>
+    <div class="stat"><span class="c-streak">🔥 12</span><span class="c-br">🌉 3</span></div></div>
+  <div class="scroll"><div class="path">
+    <svg class="river" viewBox="0 0 375 600" preserveAspectRatio="none" aria-hidden="true"><path d="M110 -10 C110 80 270 90 270 170 S100 250 100 330 S270 410 270 490 S190 560 190 620" fill="none" stroke="var(--river)" stroke-width="46" stroke-linecap="round"/><path d="M110 -10 C110 80 270 90 270 170 S100 250 100 330 S270 410 270 490 S190 560 190 620" fill="none" stroke="var(--paper)" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round" opacity=".7"/></svg>
+    <div class="node str" style="left:118px;top:40px">✓</div><div class="nl" style="left:162px;top:22px"><span class="ja">A1-01 Sentence foundations</span><span class="it">B1-05 Vorrei, potrei</span><small>★★★★☆</small></div>
+    <div class="node str" style="left:262px;top:150px">✓</div><div class="nl" style="left:90px;top:132px;text-align:right"><span class="ja">A1-02 Verbs in motion</span><span class="it">B1-06 Che succederà?</span><small>★★★☆☆</small></div>
+    <div class="node" style="left:150px;top:250px">✓</div><div class="nl" style="left:196px;top:232px"><span class="ja">T01 Arrival</span><span class="it">B1-07 Il posto in cui…</span><small>★★☆☆☆</small></div>
+    <div class="pontino bounce" style="position:absolute;left:36px;top:268px;width:70px"></div>
+    <div class="node now" style="left:112px;top:356px"><span class="ja">🏪</span><span class="it">⚽</span></div><div class="nl" style="left:164px;top:334px"><span class="ja">T02 Konbini</span><span class="it">B1-08 Penso che sia…</span><small>Lesson 3 of 5 · you are here</small></div>
+    <div class="node lock" style="left:258px;top:462px">🔒</div><div class="nl" style="left:84px;top:446px;text-align:right"><span class="ja">T03 Trains 1</span><span class="it">B1-09 Bisogna che…</span><small><span class="ja">Suica, platforms</span><span class="it">wishes, necessity</span></small></div>
+    <div class="node lock" style="left:200px;top:556px">🔒</div>
+  </div></div>
+  <div class="tabs"><div><b>🏠</b>Home</div><div class="on"><b>🧭</b>Learn</div><div><b>🔁</b>Review</div><div><b>📔</b>Collections</div><div><b>👤</b>Profile</div></div>
+</div></figure>
+
+<!-- 3 LESSON -->
+<figure><figcaption>3 · Lesson player (answer checked)</figcaption><div class="phone">
+  <div class="lt"><div class="x">✕</div><div class="bar"><i style="width:62%"></i></div><span class="c-xp" style="font-weight:900">⚡ 35</span></div>
+  <div class="scroll" style="padding-bottom:0">
+    <div class="h"><span class="ja">Answer the clerk</span><span class="it">Complete the opinion</span></div>
+    <div class="row" style="align-items:flex-start"><div class="pontino" style="width:68px"></div>
+      <div class="bubble"><div class="row"><div class="spk">🔊</div>
+        <div class="ja jp" style="font-size:20px"><ruby>袋<rt>ふくろ</rt></ruby>はご<ruby>利用<rt>りよう</rt></ruby>ですか？</div>
+        <div class="it" style="font-size:18px">Penso che l'Inter ___ la favorita.</div></div></div></div>
+    <div class="slot"><span class="ja"><button class="tile jp">はい、</button> <button class="tile jp">お願いします</button></span><span class="it"><button class="tile">sia</button></span></div>
+    <div class="bank ja"><button class="tile jp used">はい、</button><button class="tile jp">です</button><button class="tile jp used">お願いします</button><button class="tile jp">いくら</button><button class="tile jp">どこ</button></div>
+    <div class="bank it"><button class="tile">è</button><button class="tile used">sia</button><button class="tile">sarà</button><button class="tile">era</button></div>
+    <div class="sheet" style="margin-left:-16px;margin-right:-16px">
+      <div class="h"><span class="ja">すごい！ Correct</span><span class="it">Ottimo! Correct</span></div>
+      <div class="sub ja">"Would you like a bag?" → "Yes, please."</div>
+      <div class="tip ja">👂 <b>ご利用ですか</b> is shop keigo for "will you use…?". You only need to recognise it.</div>
+      <div class="sub it">"I think Inter is the favourite."</div>
+      <div class="tip it">🇧🇷 <b>PT tip:</b> "Acho que a Inter <u>é</u>…" → in Italian <b>penso che</b> takes the congiuntivo: <b>sia</b>.</div>
+      <button class="btn ok">Continue</button></div>
+  </div>
+</div></figure>
+
+<!-- 4 REVIEW -->
+<figure><figcaption>4 · Review</figcaption><div class="phone"><div class="pattern"></div>
+  <div class="top"><div class="lang"><i></i><span class="ja">Japanese ▾</span><span class="it">Italian ▾</span></div><div class="stat"><span class="c-streak">🔥 12</span></div></div>
+  <div class="scroll">
+    <div class="card"><div class="row"><div class="ring" style="--p:35;width:84px;height:84px;font-size:24px">23</div>
+      <div><div class="h">cards due today</div><div class="sub">about 4 minutes · scheduled by FSRS</div></div></div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin:14px 0"><span class="chip">Words 12</span><span class="chip ja">Kanji 5</span><span class="chip it">False friends 5</span><span class="chip">Grammar 4</span><span class="chip">Phrases 2</span></div>
+      <button class="btn">Start review</button></div>
+    <div class="card"><div class="eyebrow">Next 7 days</div>
+      <div class="bars" style="margin:12px 0 22px"><div class="t" style="height:60%"><span>Today</span></div><div style="height:35%"><span>Tue</span></div><div style="height:80%"><span>Wed</span></div><div style="height:45%"><span>Thu</span></div><div style="height:25%"><span>Fri</span></div><div style="height:55%"><span>Sat</span></div><div style="height:40%"><span>Sun</span></div></div></div>
+    <div class="card"><div class="eyebrow">Weak spots</div><div class="list">
+      <div class="ja"><span>に vs で with places</span><small>4 slips</small></div><div class="ja"><span class="jp">方面 · ほうめん</span><small>2 slips</small></div><div class="ja"><span>Counter 〜つ (6–9)</span><small>2 slips</small></div>
+      <div class="it"><span>essere vs avere</span><small>4 slips</small></div><div class="it"><span>glielo / gliela</span><small>3 slips</small></div><div class="it"><span>salire ≠ sair</span><small>2 slips</small></div>
+    </div></div>
+  </div>
+  <div class="tabs"><div><b>🏠</b>Home</div><div><b>🧭</b>Learn</div><div class="on"><b>🔁</b>Review</div><div><b>📔</b>Collections</div><div><b>👤</b>Profile</div></div>
+</div></figure>
+
+<!-- 5 COLLECTIONS -->
+<figure><figcaption>5 · Collections (travel journal)</figcaption><div class="phone"><div class="pattern"></div>
+  <div class="top"><div class="h"><span class="ja">Stamp book · 駅スタンプ</span><span class="it">Le 20 regioni</span></div></div>
+  <div class="scroll">
+    <div class="card ja"><div class="sub" style="margin-bottom:14px">3 of 12 itinerary stamps · 1 of 47 prefectures</div>
+      <div class="stamps jp"><div class="stamp">新宿<small>SHINJUKU</small></div><div class="stamp">渋谷<small>SHIBUYA</small></div><div class="stamp">上野<small>UENO</small></div><div class="stamp no">?</div><div class="stamp no">?</div><div class="stamp no">?</div><div class="stamp no">?</div><div class="stamp no">?</div><div class="stamp no">?</div></div></div>
+    <div class="card it"><div class="sub" style="margin-bottom:14px">4 of 20 regions coloured. The real screen is a tappable map of Italy.</div>
+      <div class="regions"><i>VdA</i><i class="a">PIE</i><i class="b">LOM</i><i>TAA</i><i>VEN</i><i>FVG</i><i>LIG</i><i class="a">EMR</i><i>TOS</i><i>UMB</i><i>MAR</i><i class="b">LAZ</i><i>ABR</i><i>MOL</i><i>CAM</i><i>PUG</i><i>BAS</i><i>CAL</i><i>SIC</i><i>SAR</i></div></div>
+    <div class="card"><div class="eyebrow" style="margin-bottom:12px">Badges</div><div class="row" style="align-items:flex-start">
+      <div class="badge"><b>🎩</b>Hat-trick</div><div class="badge"><b>🌉</b>First bridge</div><div class="badge no"><b><span class="ja">🌸</span><span class="it">🚴</span></b><span class="ja">Hanami</span><span class="it">Maglia rosa</span></div><div class="badge no"><b>🧊</b>Streak freeze</div></div></div>
+    <div class="row"><div class="pontino" style="width:60px"></div><div class="bubble" style="font-size:14px"><span class="ja">Next stamp: 浅草. One Sunday deep dive away.</span><span class="it">Next region: Toscana. Finish unit 7 to colour it in.</span></div></div>
+  </div>
+  <div class="tabs"><div><b>🏠</b>Home</div><div><b>🧭</b>Learn</div><div><b>🔁</b>Review</div><div class="on"><b>📔</b>Collections</div><div><b>👤</b>Profile</div></div>
+</div></figure>
+
+<!-- 6 SETTINGS -->
+<figure><figcaption>6 · Profile &amp; settings</figcaption><div class="phone">
+  <div class="top"><div class="h">Settings</div></div>
+  <div class="scroll">
+    <div class="card"><div class="eyebrow">Learning</div><div class="set">
+      <div>Daily goal<div class="s3"><span>Casual</span><span class="on">Regular</span><span>Serious</span></div></div>
+      <div class="ja">Furigana<div class="s3"><span>Always</span><span class="on">New only</span><span>Never</span></div></div>
+      <div>Voice speed<div class="s3"><span>0.7×</span><span class="on">1.0×</span></div></div>
+      <div>Speech checking<small class="sub">Available in Safari</small></div></div></div>
+    <div class="card"><div class="eyebrow" style="margin-bottom:10px">Interests</div><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip">Travel</span><span class="chip">Sports</span><span class="chip">History</span><span class="chip">Geography</span><span class="chip off">Politics</span></div></div>
+    <div class="card"><div class="eyebrow">App</div><div class="set">
+      <div>Sound effects<div class="tog"></div></div><div>Dark mode<div class="tog off"></div></div>
+      <div>Back up progress<span class="chip">Export</span></div><div>Restore<span class="chip">Import</span></div>
+      <div>Import a daily lesson<span style="color:var(--muted)">›</span></div><div>Credits &amp; licences<span style="color:var(--muted)">›</span></div></div></div>
+  </div>
+  <div class="tabs"><div><b>🏠</b>Home</div><div><b>🧭</b>Learn</div><div><b>🔁</b>Review</div><div><b>📔</b>Collections</div><div class="on"><b>👤</b>Profile</div></div>
+</div></figure>
+
+</div>
+
+<script>
+const MASCOT = `<svg viewBox="0 -4 120 114" role="img" aria-label="Pontino the bridge mascot">
+<ellipse cx="60" cy="105" rx="42" ry="4" fill="#000" opacity=".08"/>
+<path d="M14 66 Q1 62 4 48" fill="none" stroke="var(--brand-edge)" stroke-width="7" stroke-linecap="round"/>
+<path d="M106 66 Q119 70 116 84" fill="none" stroke="var(--brand-edge)" stroke-width="7" stroke-linecap="round"/>
+<path d="M14 98V58C14 30 34 14 60 14s46 16 46 44v40H76V76c0-10-7-14-16-14s-16 4-16 14v22Z" fill="var(--brand)" stroke="var(--brand-edge)" stroke-width="3" stroke-linejoin="round"/>
+<path d="M24 46C28 31 42 23 60 23s32 8 36 23" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="4" stroke-linecap="round"/>
+<rect x="9" y="92" width="40" height="11" rx="5.5" fill="var(--brand-edge)"/><rect x="71" y="92" width="40" height="11" rx="5.5" fill="var(--brand-edge)"/>
+<path d="M15 49Q60 58 105 49v8Q60 66 15 57Z" fill="var(--accent)"/><path d="M90 55l11 16-8 3-8-17Z" fill="var(--accent)"/><path d="M90 55l11 16-8 3-8-17Z" fill="#000" opacity=".15"/>
+<circle cx="47" cy="37" r="4.6" fill="#1D2230"/><circle cx="73" cy="37" r="4.6" fill="#1D2230"/><circle cx="48.6" cy="35.4" r="1.5" fill="#fff"/><circle cx="74.6" cy="35.4" r="1.5" fill="#fff"/>
+<circle cx="38" cy="44" r="4" fill="#FF9B8A" opacity=".7"/><circle cx="82" cy="44" r="4" fill="#FF9B8A" opacity=".7"/>
+<path d="M54 42q6 6 12 0" fill="none" stroke="#1D2230" stroke-width="3" stroke-linecap="round"/>
+<g class="ja"><path d="M27 30Q60 15 93 30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="60" cy="22.5" r="3.2" fill="var(--accent)"/></g>
+<g class="it"><ellipse cx="60" cy="19" rx="33" ry="6.5" fill="#F2D48A" stroke="#C9A24E" stroke-width="2"/><path d="M43 19V9a6 6 0 0 1 6-6h22a6 6 0 0 1 6 6v10Z" fill="#F2D48A" stroke="#C9A24E" stroke-width="2"/><rect x="44" y="11" width="32" height="5.5" fill="var(--accent)"/></g>
+</svg>`;
+document.querySelectorAll('.pontino').forEach(el => el.innerHTML = MASCOT);
+document.querySelectorAll('.seg').forEach(seg => seg.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  document.documentElement.dataset[seg.dataset.k] = b.dataset.v;
+  seg.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
+}));
+</script>
+</body>
+</html>

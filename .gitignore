@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.*
+*.local
+.claude/
+test-results/
+playwright-report/
+coverage/
+*-export*.json
+.DS_Store
