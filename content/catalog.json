@@ -1,0 +1,12 @@
+[
+  { "id": "ja-a1-01", "lang": "ja", "track": "core", "icon": "🧱", "title": "Sentence foundations", "sub": "AはBです · の · も · か", "file": "ja/A1/unit-01" },
+  { "id": "ja-a1-02", "lang": "ja", "track": "core", "icon": "🏃", "title": "Verbs in motion", "sub": "ます · を · に · で · へ" },
+  { "id": "ja-t01", "lang": "ja", "track": "trip", "icon": "🛬", "title": "Arrival", "sub": "Airport, IC card, first questions" },
+  { "id": "ja-t02", "lang": "ja", "track": "trip", "icon": "🏪", "title": "Konbini", "sub": "The clerk's questions" },
+  { "id": "ja-t03", "lang": "ja", "track": "trip", "icon": "🚉", "title": "Trains 1", "sub": "Tickets, platforms, lines" },
+  { "id": "ja-a1-03", "lang": "ja", "track": "core", "icon": "📍", "title": "Existence & location", "sub": "あります · います · counters" },
+  { "id": "it-r1", "lang": "it", "track": "core", "icon": "🧳", "title": "Cos'hai fatto?", "sub": "Passato prossimo: essere vs avere" },
+  { "id": "it-r2", "lang": "it", "track": "core", "icon": "🏛️", "title": "Com'era?", "sub": "Imperfetto" },
+  { "id": "it-r3", "lang": "it", "track": "core", "icon": "🍝", "title": "Mi piace, mi è piaciuto", "sub": "Pronouns and piacere" },
+  { "id": "it-r4", "lang": "it", "track": "core", "icon": "🚆", "title": "Al mercato, in treno", "sub": "Preposizioni articolate · ci · ne" }
+]

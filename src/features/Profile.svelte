@@ -1,0 +1,112 @@
+<script lang="ts">
+  import { db, exportAll, importAll } from '../lib/db';
+  import { app, reloadAfterImport, setSetting, type Furigana, type Mode } from '../lib/state.svelte';
+  import { localDay } from '../lib/streak';
+
+  let message = $state('');
+  let cardCount = $state(0);
+  $effect(() => {
+    void db.cards.count().then((n) => (cardCount = n));
+  });
+
+  async function exportBackup() {
+    const blob = new Blob([JSON.stringify(await exportAll())], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `pontino-backup-${localDay()}.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+    message = 'Backup file saved. Keep it somewhere safe, such as Files or iCloud Drive.';
+  }
+
+  async function importBackup(e: Event) {
+    const input = e.currentTarget as HTMLInputElement;
+    const file = input.files?.[0];
+    input.value = '';
+    if (!file) return;
+    try {
+      const data: unknown = JSON.parse(await file.text());
+      if (!confirm('Restoring replaces ALL progress on this device with the backup. Continue?')) return;
+      await importAll(data);
+      await reloadAfterImport();
+    } catch (err) {
+      message = err instanceof Error ? err.message : 'Could not read that file.';
+    }
+  }
+</script>
+
+{#snippet seg<T extends string | number>(label: string, value: T, options: [T, string][], set: (v: T) => void)}
+  <div class="set-row">
+    <span>{label}</span>
+    <div class="seg" role="group" aria-label={label}>
+      {#each options as [v, text]}
+        <button type="button" aria-pressed={value === v} onclick={() => set(v)}>{text}</button>
+      {/each}
+    </div>
+  </div>
+{/snippet}
+
+<div class="screen">
+  <h1 class="h1">Profile</h1>
+
+  <div class="card stats">
+    <div><div class="h c-streak">🔥 {app.streak.count}</div><div class="sub">streak (best {app.streak.best})</div></div>
+    <div><div class="h c-xp">⚡ {app.xp}</div><div class="sub">XP</div></div>
+    <div><div class="h c-br">{cardCount}</div><div class="sub">review cards</div></div>
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">Learning</div>
+    {@render seg('Course', app.lang, [['ja', '日本語'], ['it', 'Italiano']], (v) => setSetting('lang', v))}
+    {@render seg<Furigana>('Furigana', app.furigana, [['always', 'Show'], ['never', 'Hide']], (v) => setSetting('furigana', v))}
+    {@render seg('Voice speed', app.rate, [[0.7, '0.7×'], [1, '1.0×']], (v) => setSetting('rate', v))}
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">App</div>
+    {@render seg<Mode>('Appearance', app.mode, [['auto', 'Auto'], ['light', 'Light'], ['dark', 'Dark']], (v) => setSetting('mode', v))}
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">Your progress</div>
+    <p class="sub" style="margin:8px 0 12px">Everything is stored only on this device. Export a backup now and then, and before changing phones.</p>
+    <div class="row">
+      <button class="btn ghost" type="button" onclick={exportBackup}>Export</button>
+      <label class="btn ghost">Restore<input class="sr" type="file" accept="application/json,.json" onchange={importBackup} /></label>
+    </div>
+    {#if message}<p class="sub" role="status" style="margin-top:12px">{message}</p>{/if}
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">Credits</div>
+    <p class="sub" style="margin-top:8px">
+      Spaced repetition by ts-fsrs (MIT). Font: Nunito (SIL Open Font License). Built with Svelte, Vite, Dexie and Zod (MIT / Apache-2.0).
+      Lesson content is original to Pontino. No ads, no trackers, no accounts.
+    </p>
+  </div>
+</div>
+
+<style>
+  .set-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 56px;
+    font-weight: 800;
+    font-size: 15px;
+    border-bottom: 2px solid var(--line);
+  }
+  .set-row:last-child {
+    border: 0;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 8px;
+  }
+  label.btn {
+    cursor: pointer;
+  }
+</style>

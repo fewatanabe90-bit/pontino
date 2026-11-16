@@ -7,5 +7,5 @@ dist/
 test-results/
 playwright-report/
 coverage/
-*-export*.json
+pontino-backup*.json
 .DS_Store
