@@ -14,9 +14,12 @@ function pickVoice(lang: Lang): SpeechSynthesisVoice | undefined {
   return voices.sort((a, b) => score(b) - score(a))[0];
 }
 
+/** Is there a voice for this language? Without one the browser stays silent or reads with the wrong accent. */
+export const hasVoice = (lang: Lang): boolean => ttsSupported() && pickVoice(lang) !== undefined;
+
 /** Speak target-language text. On iOS this must be called from a tap. Returns false if nothing can be spoken. */
 export function speak(text: string, lang: Lang, rate = 1): boolean {
-  if (!ttsSupported()) return false;
+  if (!hasVoice(lang)) return false;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(stripRuby(text).replace(/___/g, ' '));
   u.lang = LOCALE[lang];

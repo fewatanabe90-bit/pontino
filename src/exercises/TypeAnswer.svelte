@@ -5,6 +5,7 @@
   import type { Answer } from '../lib/grade';
   import type { Exercise } from '../lib/schema';
   import { app } from '../lib/state.svelte';
+  import { voices } from '../lib/voices.svelte';
 
   type Ex = Extract<Exercise, { type: 'type' }>;
   let { ex, answer = $bindable(), locked, onsubmit }: { ex: Ex; answer: Answer; locked: boolean; onsubmit: () => void } = $props();
@@ -24,7 +25,7 @@
 </script>
 
 {#if ex.text}
-  {#if ex.listen && !locked}
+  {#if ex.listen && !locked && voices[app.lang]}
     <div class="listen"><Speak text={ex.text} big /><span class="sub">Type what you hear.</span></div>
   {:else}
     <div class="row"><Speak text={ex.text} /><div class="tl"><Ruby text={ex.text} /></div></div>

@@ -6,6 +6,7 @@
   import Profile from './features/Profile.svelte';
   import Review from './features/Review.svelte';
   import { app } from './lib/state.svelte';
+  import { voices } from './lib/voices.svelte';
 
   const TABS = [
     ['home', '🏠', 'Home'],
@@ -28,6 +29,12 @@
   });
 </script>
 
+{#if voices.toast}
+  <div class="toast" role="status">
+    <span>{voices.toast}</span>
+    <button type="button" aria-label="Dismiss" onclick={() => (voices.toast = '')}>✕</button>
+  </div>
+{/if}
 {#if !app.ready}
   <div class="screen" style="align-items:center;justify-content:center"><Pontino bob /></div>
 {:else if page === 'lesson' && route[1] && route[2]}
@@ -56,3 +63,35 @@
     {/each}
   </nav>
 {/if}
+
+<style>
+  .toast {
+    position: absolute;
+    z-index: 20;
+    top: calc(10px + var(--safe-t));
+    left: 12px;
+    right: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: var(--ink);
+    color: var(--paper);
+    border: 0;
+    border-radius: 16px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+  .toast button {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    margin: -8px -10px -8px 0;
+    background: none;
+    border: 0;
+    color: inherit;
+    font-weight: 900;
+  }
+</style>

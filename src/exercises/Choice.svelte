@@ -5,12 +5,16 @@
   import type { Answer } from '../lib/grade';
   import type { Exercise } from '../lib/schema';
   import { shuffle } from '../lib/shuffle';
+  import { app } from '../lib/state.svelte';
+  import { voices } from '../lib/voices.svelte';
 
   type Ex = Extract<Exercise, { type: 'mcq' | 'gap' }>;
   let { ex, answer = $bindable(), locked }: { ex: Ex; answer: Answer; locked: boolean } = $props();
 
   const order = $derived(shuffle(ex.options.map((_, i) => i)));
-  const listen = $derived(ex.type === 'mcq' && !!ex.listen);
+  const wantsListen = $derived(ex.type === 'mcq' && !!ex.listen);
+  // Without a voice on this device a listening task would be impossible, so the text is shown.
+  const listen = $derived(wantsListen && voices[app.lang]);
   const chosen = $derived(typeof answer === 'number' ? ex.options[answer] : undefined);
   const shown = $derived(ex.type === 'gap' ? ex.text.replace('___', chosen ? `【${chosen}】` : '＿＿') : ex.text);
 </script>
@@ -25,6 +29,7 @@
     </div>
   {/if}
 {/if}
+{#if wantsListen && !listen && !locked}<p class="sub">🔇 No voice on this device, so the sentence is shown.</p>{/if}
 {#if ex.type === 'gap' && ex.meaning}<p class="sub">{ex.meaning}</p>{/if}
 
 <div class="opts" role="radiogroup" aria-label="Answers">
