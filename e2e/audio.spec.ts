@@ -32,3 +32,33 @@ test('the speaker button is available even without a device voice', async ({ pag
   await page.goto('./#/deck/it-deck-viaggio');
   await expect(page.getByRole('button', { name: /Play audio/ })).toBeVisible();
 });
+
+test('voices are saved in the background and play offline', async ({ page, context }) => {
+  await page.addInitScript(() => {
+    window.__playing = [];
+    const play = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function () {
+      this.addEventListener('playing', () => window.__playing.push(this.src), { once: true });
+      return play.call(this);
+    };
+  });
+  await page.goto('./#/profile');
+  await page.evaluate(() => navigator.serviceWorker.ready.then(() => undefined));
+  // Every clip gets saved without the learner doing anything.
+  await expect(page.getByText(/Voices saved for offline use: (\d+) of \1\./)).toBeVisible({ timeout: 60_000 });
+
+  await context.setOffline(true);
+  await page.reload();
+  await page.goto('./#/deck/ja-deck-survival');
+  await expect(page.getByRole('button', { name: 'Show meaning' })).toBeVisible();
+  await page.getByRole('button', { name: /Play audio/ }).click();
+  await expect.poll(() => page.evaluate(() => window.__playing.filter((s) => s.endsWith('.mp3')).length)).toBeGreaterThan(0);
+});
+
+test('Profile shows the version and can check for an update', async ({ page }) => {
+  await page.goto('./#/profile');
+  await expect(page.getByText(/^Built 20\d\d-/)).toBeVisible();
+  await page.evaluate(() => navigator.serviceWorker.ready.then(() => undefined));
+  await page.getByRole('button', { name: 'Check for update' }).click();
+  await expect(page.getByText('You have the latest version.')).toBeVisible();
+});

@@ -2,7 +2,7 @@
   import InterestChips from '../components/InterestChips.svelte';
   import { db, exportAll, importAll } from '../lib/db';
   import { photoCredits } from '../lib/decks';
-  import { isStandalone, pwa } from '../lib/pwa.svelte';
+  import { applyUpdate, BUILD, checkForUpdate, isStandalone, pwa } from '../lib/pwa.svelte';
   import { app, reloadAfterImport, setSetting, type Furigana, type Mode } from '../lib/state.svelte';
   import { localDay } from '../lib/streak';
   import { SAMPLE } from '../lib/clips';
@@ -13,6 +13,13 @@
   const voiceKey = $derived(app.lang === 'ja' ? 'voiceJa' : 'voiceIt');
   // Re-read the list when the device finishes loading its voices.
   const voiceList = $derived((voices[app.lang], voicesFor(app.lang)));
+
+  let checked = $state('');
+  async function check() {
+    checked = '';
+    const found = await checkForUpdate();
+    checked = found ? 'A new version is downloading. The update button appears here in a moment.' : navigator.onLine ? 'You have the latest version.' : 'You are offline. Try again with a connection.';
+  }
 
   function chooseVoice(e: Event) {
     setSetting(voiceKey, (e.currentTarget as HTMLSelectElement).value);
@@ -148,8 +155,22 @@
     <div class="eyebrow">Offline</div>
     <p class="sub" style="margin-top:8px">
       {pwa.offlineReady || isStandalone() ? 'Ready: lessons and reviews work without a connection.' : 'After the first full load, lessons and reviews work without a connection.'}
-      Lesson audio is recorded with the open-source Kokoro speech model (Apache 2.0); see the voice credits below. Lines without a recording use the voices on your device.
+      Lesson audio is recorded with the open-source Kokoro speech model (Apache 2.0); see the voice credits above. Lines without a recording use the voices on your device.
     </p>
+    <p class="sub" style="margin-top:8px">
+      Voices saved for offline use: <b>{pwa.audioSaved} of {pwa.audioTotal}</b>{pwa.audioSaved < pwa.audioTotal ? '. The rest are saved while the app is open and online.' : '.'}
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">Version</div>
+    <p class="sub" style="margin-top:8px">Built {BUILD}</p>
+    {#if pwa.updateReady}
+      <button class="btn" type="button" style="margin-top:10px" onclick={applyUpdate}>Update now</button>
+    {:else}
+      <button class="btn ghost" type="button" style="margin-top:10px" disabled={pwa.checking} onclick={check}>{pwa.checking ? 'Checking…' : 'Check for update'}</button>
+      {#if checked}<p class="sub" style="margin-top:8px" role="status">{checked}</p>{/if}
+    {/if}
   </div>
 
   <div class="card">

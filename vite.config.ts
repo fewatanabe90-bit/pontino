@@ -29,13 +29,29 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Everything the app needs is cached on first load: code, lessons, fonts, photos and voice clips.
-        globPatterns: ['**/*.{js,css,html,svg,png,jpg,woff2,mp3}'],
+        // The app itself is cached on first load: code, lessons, fonts and photos.
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,woff2}'],
+        // Voice clips are many small files. Installing a new version must not wait for all of them,
+        // so they are saved separately, in the background (see saveAudioOffline in src/lib/pwa.svelte.ts).
+        runtimeCaching: [
+          {
+            urlPattern: /\/audio\/[a-z0-9]+\.mp3$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'pontino-audio',
+              // Audio players ask for byte ranges; this answers them from the saved whole file.
+              rangeRequests: true,
+              cacheableResponse: { statuses: [200] },
+              matchOptions: { ignoreSearch: true, ignoreVary: true },
+            },
+          },
+        ],
         cleanupOutdatedCaches: true,
         navigateFallback: 'index.html',
       },
     }),
   ],
+  define: { __BUILD__: JSON.stringify(new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UTC') },
   build: { target: 'es2022' },
   test: { include: ['tests/**/*.test.ts'], environment: 'node' },
 });

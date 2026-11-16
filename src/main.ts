@@ -1,7 +1,7 @@
 import { mount } from 'svelte';
 import App from './App.svelte';
 import './design/app.css';
-import { startPwa } from './lib/pwa.svelte';
+import { saveAudioOffline, startPwa } from './lib/pwa.svelte';
 import { unlockAudio } from './lib/sfx';
 import { boot } from './lib/state.svelte';
 import { watchVoices } from './lib/voices.svelte';
@@ -12,3 +12,6 @@ watchVoices();
 addEventListener('pointerdown', unlockAudio, { once: true, capture: true });
 startPwa();
 void boot();
+// Once the app is up, save the voice clips for offline use without slowing the start.
+setTimeout(() => void saveAudioOffline(), 3000);
+addEventListener('online', () => void saveAudioOffline());
