@@ -10,3 +10,7 @@ coverage/
 pontino-backup*.json
 .DS_Store
 SPEC.md
+
+.venv/
+voice-samples/
+.voices/

@@ -16,8 +16,9 @@
     },
     {
       "id": "it-deck-calcio.02",
-      "front": "il tifoso / la tifosa",
+      "front": "il tifoso",
       "back": "fan, supporter",
+      "note": "A woman: la tifosa.",
       "pt": "PT torcedor(a)."
     },
     {

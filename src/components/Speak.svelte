@@ -1,15 +1,16 @@
 <script lang="ts">
   import { app } from '../lib/state.svelte';
-  import { speak } from '../lib/tts';
+  import { hasClip, speak } from '../lib/tts';
   import { explainNoVoice, voices } from '../lib/voices.svelte';
 
-  let { text, big = false }: { text: string; big?: boolean } = $props();
+  /** `who` picks that character's recorded voice. */
+  let { text, big = false, who }: { text: string; big?: boolean; who?: string } = $props();
   let slow = false;
-  const ok = $derived(voices[app.lang]);
+  const ok = $derived(voices[app.lang] || hasClip(text, app.lang, who));
 
   // A second tap in a row plays slowly, the next one at normal speed again.
   function play() {
-    if (!speak(text, app.lang, slow ? 0.7 : app.rate)) {
+    if (!speak(text, app.lang, slow ? 0.7 : app.rate, who)) {
       explainNoVoice(app.lang);
       return;
     }

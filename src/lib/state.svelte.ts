@@ -77,6 +77,8 @@ export async function boot() {
   const day = kv.get('xpDay') as { day: string; xp: number } | undefined;
   app.xpToday = day?.day === localDay() ? day.xp : 0;
   app.lessons = Object.fromEntries((await db.lessons.toArray()).map((l) => [l.id, l]));
+  // Earlier versions made flashcards out of grammar patterns ("AのB"); those are removed.
+  await db.cards.filter((c) => /\.g-/.test(c.itemId)).delete();
   await refreshDue();
   applyTheme();
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
@@ -124,7 +126,8 @@ export async function completeLesson(unit: Unit, lesson: Lesson, score: number):
   app.lessons[lesson.id] = p;
   await db.lessons.put(p);
 
-  const items = unit.items.filter((i) => lesson.newItems.includes(i.id));
+  // Flashcards are a word or phrase and its meaning. Grammar patterns are practised in the lessons instead.
+  const items = unit.items.filter((i) => i.kind !== 'grammar' && lesson.newItems.includes(i.id));
   const fresh = [];
   for (const i of items) {
     const card = newCard({ itemId: i.id, lang: unit.lang, unitId: unit.id, front: i.front, back: i.back, note: [i.note, i.pt && `🇧🇷 ${i.pt}`].filter(Boolean).join('\n') || undefined });

@@ -40,8 +40,9 @@
     {
       "id": "it-r1.v-rimanere",
       "kind": "vocab",
-      "front": "rimanere → sono rimasto/a",
-      "back": "to stay, to remain → I stayed"
+      "front": "rimanere",
+      "back": "to stay, to remain",
+      "note": "Past: sono rimasto (a man), sono rimasta (a woman)."
     },
     {
       "id": "it-r1.v-invece",
@@ -60,57 +61,57 @@
     {
       "id": "it-r1.v-fatto",
       "kind": "vocab",
-      "front": "fare → fatto",
-      "back": "to do, to make → done, made",
+      "front": "fatto",
+      "back": "done, made (from fare)",
       "pt": "PT feito."
     },
     {
       "id": "it-r1.v-visto",
       "kind": "vocab",
-      "front": "vedere → visto",
-      "back": "to see → seen",
+      "front": "visto",
+      "back": "seen (from vedere)",
       "pt": "Same as PT visto."
     },
     {
       "id": "it-r1.v-letto",
       "kind": "vocab",
-      "front": "leggere → letto",
-      "back": "to read → read",
+      "front": "letto",
+      "back": "read, in the past (from leggere)",
       "pt": "PT lido. \"Il letto\" is also \"the bed\"."
     },
     {
       "id": "it-r1.v-scritto",
       "kind": "vocab",
-      "front": "scrivere → scritto",
-      "back": "to write → written",
+      "front": "scritto",
+      "back": "written (from scrivere)",
       "pt": "PT escrito."
     },
     {
       "id": "it-r1.v-perso",
       "kind": "vocab",
-      "front": "perdere → perso",
-      "back": "to lose → lost",
+      "front": "perso",
+      "back": "lost (from perdere)",
       "pt": "PT perdido. \"Perduto\" exists but sounds literary."
     },
     {
       "id": "it-r1.v-vinto",
       "kind": "vocab",
-      "front": "vincere → vinto",
-      "back": "to win → won",
+      "front": "vinto",
+      "back": "won (from vincere)",
       "pt": "PT vencido / ganho."
     },
     {
       "id": "it-r1.v-aperto",
       "kind": "vocab",
-      "front": "aprire → aperto",
-      "back": "to open → opened",
+      "front": "aperto",
+      "back": "opened (from aprire)",
       "pt": "PT aberto."
     },
     {
       "id": "it-r1.v-successo",
       "kind": "vocab",
-      "front": "succedere → è successo",
-      "back": "to happen → it happened (with essere)",
+      "front": "è successo",
+      "back": "it happened (from succedere, with essere)",
       "pt": "\"Cos'è successo?\" = \"O que aconteceu?\". \"Il successo\" as a noun means \"sucesso\"."
     },
     {
@@ -135,8 +136,9 @@
     {
       "id": "it-r1.v-partire",
       "kind": "vocab",
-      "front": "partire → sono partito/a",
-      "back": "to leave, to depart → I left",
+      "front": "partire",
+      "back": "to leave, to depart",
+      "note": "Past: sono partito (a man), sono partita (a woman).",
       "pt": "False friend: PT \"partir\" can also mean \"to break\"; Italian partire is only \"to leave\"."
     }
   ],

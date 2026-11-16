@@ -1,0 +1,730 @@
+{
+  "id": "ja-t02",
+  "lang": "ja",
+  "level": "A1",
+  "track": "trip",
+  "title": "At the konbini",
+  "summary": "The convenience store runs on a script. Learn the clerk's three questions, how to ask for what you want, and how to pay.",
+  "canDo": [
+    "I can understand and answer the clerk's usual questions.",
+    "I can ask whether a shop has something and order a number of items.",
+    "I can ask to pay by card and close the exchange politely."
+  ],
+  "grammar": [
+    "〜はご利用ですか (recognition)",
+    "はい、お願いします・いいえ、大丈夫です",
+    "〜はありますか",
+    "Counters: 〜つ",
+    "〜ですね",
+    "〜は使えますか (set phrase)"
+  ],
+  "items": [
+    {
+      "id": "ja-t02.p-irasshaimase",
+      "kind": "phrase",
+      "front": "いらっしゃいませ",
+      "back": "Welcome (said by shop staff).",
+      "note": "No reply needed. A nod is fine."
+    },
+    {
+      "id": "ja-t02.v-fukuro",
+      "kind": "vocab",
+      "front": "{袋|ふくろ}",
+      "back": "bag"
+    },
+    {
+      "id": "ja-t02.v-ohashi",
+      "kind": "vocab",
+      "front": "お{箸|はし}",
+      "back": "chopsticks"
+    },
+    {
+      "id": "ja-t02.v-obentou",
+      "kind": "vocab",
+      "front": "お{弁当|べんとう}",
+      "back": "boxed meal"
+    },
+    {
+      "id": "ja-t02.p-daijoubu",
+      "kind": "phrase",
+      "front": "{大丈夫|だいじょうぶ}です",
+      "back": "I'm fine. / No, thank you.",
+      "note": "The gentle way to turn something down."
+    },
+    {
+      "id": "ja-t02.p-atatamemasuka",
+      "kind": "phrase",
+      "front": "{温|あたた}めますか",
+      "back": "Shall I heat it up?"
+    },
+    {
+      "id": "ja-t02.v-reshiito",
+      "kind": "vocab",
+      "front": "レシート",
+      "back": "receipt"
+    },
+    {
+      "id": "ja-t02.p-arimasuka",
+      "kind": "phrase",
+      "front": "{水|みず}{は|wa}ありますか",
+      "back": "Do you have water?",
+      "note": "Swap in anything you are looking for."
+    },
+    {
+      "id": "ja-t02.v-hitotsu",
+      "kind": "vocab",
+      "front": "{一|ひと}つ",
+      "back": "one (thing)"
+    },
+    {
+      "id": "ja-t02.v-futatsu",
+      "kind": "vocab",
+      "front": "{二|ふた}つ",
+      "back": "two (things)"
+    },
+    {
+      "id": "ja-t02.v-mittsu",
+      "kind": "vocab",
+      "front": "{三|みっ}つ",
+      "back": "three (things)"
+    },
+    {
+      "id": "ja-t02.v-yottsu",
+      "kind": "vocab",
+      "front": "{四|よっ}つ",
+      "back": "four (things)"
+    },
+    {
+      "id": "ja-t02.v-itsutsu",
+      "kind": "vocab",
+      "front": "{五|いつ}つ",
+      "back": "five (things)"
+    },
+    {
+      "id": "ja-t02.v-nikuman",
+      "kind": "vocab",
+      "front": "{肉|にく}まん",
+      "back": "steamed meat bun"
+    },
+    {
+      "id": "ja-t02.g-desune",
+      "kind": "grammar",
+      "front": "〜ですね",
+      "back": "Confirms what was just said: \"…, right?\""
+    },
+    {
+      "id": "ja-t02.v-pointo",
+      "kind": "vocab",
+      "front": "ポイントカード",
+      "back": "point card, loyalty card"
+    },
+    {
+      "id": "ja-t02.p-tsukaemasuka",
+      "kind": "phrase",
+      "front": "カード{は|wa}{使|つか}えますか",
+      "back": "Can I use a card?"
+    },
+    {
+      "id": "ja-t02.p-arimasen",
+      "kind": "phrase",
+      "front": "ありません",
+      "back": "I don't have one. / There isn't any."
+    },
+    {
+      "id": "ja-t02.v-kochira",
+      "kind": "vocab",
+      "front": "こちら",
+      "back": "here, this way (polite)"
+    },
+    {
+      "id": "ja-t02.p-arigatougozaimashita",
+      "kind": "phrase",
+      "front": "ありがとうございました",
+      "back": "Thank you (for what was just done).",
+      "note": "The past form closes an exchange."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-t02.l1",
+      "title": "The clerk's questions",
+      "canDo": "I can understand what the clerk is offering and say yes or no politely.",
+      "intro": {
+        "art": "🏪🍱🥢",
+        "scene": "A convenience store near the hotel. Leo puts a boxed meal on the counter.",
+        "lines": [
+          {
+            "who": "店員",
+            "text": "いらっしゃいませ。",
+            "meaning": "Welcome.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "{袋|ふくろ}{は|wa}ご{利用|りよう}ですか。",
+            "meaning": "Would you like a bag?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいえ、{大丈夫|だいじょうぶ}です。",
+            "meaning": "No, I'm fine.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "お{弁当|べんとう}{は|wa}{温|あたた}めますか。",
+            "meaning": "Shall I heat up the meal?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、お{願|ねが}いします。",
+            "meaning": "Yes, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "お{箸|はし}{は|wa}ご{利用|りよう}ですか。",
+            "meaning": "Would you like chopsticks?",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Catch the noun",
+            "body": "Clerks speak very politely: ご{利用|りよう}ですか means \"will you be using…?\". You do not need to produce it. Listen for the first word: {袋|ふくろ} bag, お{箸|はし} chopsticks, レシート receipt."
+          },
+          {
+            "title": "Two answers cover everything",
+            "body": "はい、お{願|ねが}いします for yes. いいえ、{大丈夫|だいじょうぶ}です for no. {大丈夫|だいじょうぶ} means \"all right\", so you are saying \"I'm fine without it\"."
+          },
+          {
+            "title": "{温|あたた}めますか",
+            "body": "A verb you know the shape of: 〜ますか. \"Shall I heat it?\" Answer the same two ways."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t02.l1.e1",
+          "type": "mcq",
+          "prompt": "Listen. What is the clerk offering?",
+          "text": "{袋|ふくろ}{は|wa}ご{利用|りよう}ですか。",
+          "listen": true,
+          "options": [
+            "A bag",
+            "Chopsticks",
+            "To heat your food"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l1.e2",
+          "type": "mcq",
+          "prompt": "You don't need a bag. The natural answer is:",
+          "options": [
+            "いいえ、{大丈夫|だいじょうぶ}です。",
+            "いいえ、ちがいます。",
+            "いいえ、{袋|ふくろ}じゃありません。"
+          ],
+          "answer": 0,
+          "explain": "ちがいます means \"that is incorrect\". To decline an offer, use {大丈夫|だいじょうぶ}です."
+        },
+        {
+          "id": "ja-t02.l1.e3",
+          "type": "tiles",
+          "prompt": "Answer: \"Yes, please.\"",
+          "context": "お{弁当|べんとう}{は|wa}{温|あたた}めますか。",
+          "meaning": "Yes, please.",
+          "tiles": [
+            "はい、",
+            "お{願|ねが}いします",
+            "いいえ、",
+            "{大丈夫|だいじょうぶ}です",
+            "ください"
+          ],
+          "answer": "はい、お{願|ねが}いします",
+          "alt": []
+        },
+        {
+          "id": "ja-t02.l1.e4",
+          "type": "mcq",
+          "prompt": "The clerk says いらっしゃいませ as you walk in. What should you do?",
+          "options": [
+            "Nothing: a nod is fine",
+            "Say いらっしゃいませ back",
+            "Say your name"
+          ],
+          "answer": 0,
+          "explain": "It is a greeting from staff to customers, not something customers say."
+        },
+        {
+          "id": "ja-t02.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is the clerk offering?",
+          "text": "お{箸|はし}{は|wa}ご{利用|りよう}ですか。",
+          "listen": true,
+          "options": [
+            "Chopsticks",
+            "A bag",
+            "A receipt"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l1.e6",
+          "type": "type",
+          "prompt": "Type in Japanese: \"No, I'm fine.\"",
+          "answer": "いいえ、{大丈夫|だいじょうぶ}です。",
+          "alt": [
+            "{大丈夫|だいじょうぶ}です。"
+          ]
+        },
+        {
+          "id": "ja-t02.l1.e7",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "レシート{は|wa}___です。",
+          "meaning": "I don't need the receipt, thanks.",
+          "options": [
+            "{大丈夫|だいじょうぶ}",
+            "どこ",
+            "いくら"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{袋|ふくろ}",
+              "bag"
+            ],
+            [
+              "お{箸|はし}",
+              "chopsticks"
+            ],
+            [
+              "お{弁当|べんとう}",
+              "boxed meal"
+            ],
+            [
+              "レシート",
+              "receipt"
+            ],
+            [
+              "{温|あたた}めますか",
+              "Shall I heat it?"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Clerk: twenty polite syllables",
+        "bottom": "Me, catching one word: はい、お願いします"
+      },
+      "newItems": [
+        "ja-t02.p-irasshaimase",
+        "ja-t02.v-fukuro",
+        "ja-t02.v-ohashi",
+        "ja-t02.v-obentou",
+        "ja-t02.p-daijoubu",
+        "ja-t02.p-atatamemasuka",
+        "ja-t02.v-reshiito"
+      ]
+    },
+    {
+      "id": "ja-t02.l2",
+      "title": "Do you have…? Two of these, please",
+      "canDo": "I can ask if a shop has something and order one, two or three of it.",
+      "intro": {
+        "art": "☕🥟🧾",
+        "scene": "Back at the same store the next morning, at the hot-food counter.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、コーヒー{は|wa}ありますか。",
+            "meaning": "Excuse me, do you have coffee?",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "はい、あります。",
+            "meaning": "Yes, we do.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "じゃあ、コーヒーを{一|ひと}つと、{肉|にく}まんを{二|ふた}つください。",
+            "meaning": "Then one coffee and two meat buns, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "コーヒーを{一|ひと}つ、{肉|にく}まんを{二|ふた}つですね。",
+            "meaning": "One coffee and two meat buns, right?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい。",
+            "meaning": "Yes.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "{全部|ぜんぶ}で{五百円|ごひゃくえん}です。",
+            "meaning": "That's 500 yen in total.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜{は|wa}ありますか",
+            "body": "\"Do you have…?\" Name the thing and add {は|wa}ありますか. The answers are あります (we do) and ありません (we don't)."
+          },
+          {
+            "title": "Counting things: 〜つ",
+            "body": "{一|ひと}つ, {二|ふた}つ, {三|みっ}つ, {四|よっ}つ, {五|いつ}つ. This all-purpose counter works for almost anything you can order."
+          },
+          {
+            "title": "Where the number goes",
+            "body": "Thing + を + number + ください: コーヒーを{二|ふた}つください. The number comes after を and takes no particle of its own."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t02.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{水|みず}{は|wa}___か。",
+          "meaning": "Do you have water?",
+          "options": [
+            "あります",
+            "です",
+            "ください"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l2.e2",
+          "type": "tiles",
+          "prompt": "Build: \"Two coffees, please.\"",
+          "meaning": "Two coffees, please.",
+          "tiles": [
+            "コーヒー",
+            "を",
+            "{二|ふた}つ",
+            "ください",
+            "{は|wa}",
+            "の"
+          ],
+          "answer": "コーヒーを{二|ふた}つください",
+          "alt": []
+        },
+        {
+          "id": "ja-t02.l2.e3",
+          "type": "mcq",
+          "prompt": "Which order is right?",
+          "options": [
+            "おにぎりを{三|みっ}つください。",
+            "{三|みっ}つをおにぎりください。",
+            "おにぎりの{三|みっ}つをください。"
+          ],
+          "answer": 0,
+          "explain": "Thing, を, number, ください."
+        },
+        {
+          "id": "ja-t02.l2.e4",
+          "type": "mcq",
+          "prompt": "Listen. What is the clerk confirming?",
+          "text": "{肉|にく}まんを{二|ふた}つですね。",
+          "listen": true,
+          "options": [
+            "Two meat buns, right?",
+            "One meat bun, right?",
+            "Do you have meat buns?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l2.e5",
+          "type": "mcq",
+          "prompt": "How do you say \"one (thing)\"?",
+          "options": [
+            "{一|ひと}つ",
+            "{一|いち}つ",
+            "{二|ふた}つ"
+          ],
+          "answer": 0,
+          "explain": "The 〜つ counter has its own readings: ひとつ, ふたつ, みっつ."
+        },
+        {
+          "id": "ja-t02.l2.e6",
+          "type": "type",
+          "prompt": "Type in Japanese: \"Three, please.\"",
+          "answer": "{三|みっ}つください。",
+          "alt": [
+            "{三|みっ}つお{願|ねが}いします。",
+            "{三|みっ}つをください。"
+          ]
+        },
+        {
+          "id": "ja-t02.l2.e7",
+          "type": "tiles",
+          "prompt": "Reply: \"Yes. Water too, please.\"",
+          "context": "コーヒーを{一|ひと}つですね。",
+          "meaning": "Yes. Water too, please.",
+          "tiles": [
+            "はい。",
+            "{水|みず}",
+            "も",
+            "ください",
+            "を",
+            "の"
+          ],
+          "answer": "はい。{水|みず}もください",
+          "alt": [],
+          "explain": "も takes the place of を, just as it replaces は."
+        },
+        {
+          "id": "ja-t02.l2.e8",
+          "type": "match",
+          "prompt": "Match the counter with the number.",
+          "pairs": [
+            [
+              "{一|ひと}つ",
+              "1"
+            ],
+            [
+              "{二|ふた}つ",
+              "2"
+            ],
+            [
+              "{三|みっ}つ",
+              "3"
+            ],
+            [
+              "{四|よっ}つ",
+              "4"
+            ],
+            [
+              "{五|いつ}つ",
+              "5"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "いち, に, さん",
+        "bottom": "Also Japanese: ひとつ, ふたつ, みっつ. Surprise!"
+      },
+      "newItems": [
+        "ja-t02.p-arimasuka",
+        "ja-t02.v-hitotsu",
+        "ja-t02.v-futatsu",
+        "ja-t02.v-mittsu",
+        "ja-t02.v-yottsu",
+        "ja-t02.v-itsutsu",
+        "ja-t02.v-nikuman",
+        "ja-t02.g-desune"
+      ]
+    },
+    {
+      "id": "ja-t02.l3",
+      "title": "Paying and leaving",
+      "canDo": "I can answer the point-card question, ask to pay by card, and say thank you as I leave.",
+      "intro": {
+        "art": "💳🧾👋",
+        "scene": "At the till. There is a queue, so everything goes quickly.",
+        "lines": [
+          {
+            "who": "店員",
+            "text": "ポイントカード{は|wa}お{持|も}ちですか。",
+            "meaning": "Do you have a point card?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいえ、ありません。",
+            "meaning": "No, I don't.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "{全部|ぜんぶ}で{八百円|はっぴゃくえん}です。",
+            "meaning": "That's 800 yen in total.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "カード{は|wa}{使|つか}えますか。",
+            "meaning": "Can I use a card?",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "はい、{使|つか}えます。こちらにタッチしてください。",
+            "meaning": "Yes, you can. Please tap here.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "ありがとうございました。",
+            "meaning": "Thank you very much.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "お{持|も}ちですか",
+            "body": "Another polite clerk phrase: \"do you have … with you?\". Again, catch the noun: ポイントカード. If you have none: いいえ、ありません."
+          },
+          {
+            "title": "カード{は|wa}{使|つか}えますか",
+            "body": "Learn it whole for now: \"can I use a card?\". Most konbini take cards and transport IC cards, but small restaurants and shrines are often cash only."
+          },
+          {
+            "title": "ありがとうございました",
+            "body": "The past form of ありがとうございます. Staff say it when the exchange is finished, and you can say it back as you leave."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t02.l3.e1",
+          "type": "mcq",
+          "prompt": "Listen. What is the clerk asking?",
+          "text": "ポイントカード{は|wa}お{持|も}ちですか。",
+          "listen": true,
+          "options": [
+            "Do you have a point card?",
+            "Will you pay by card?",
+            "Do you need a bag?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l3.e2",
+          "type": "mcq",
+          "prompt": "You have no point card. You answer:",
+          "options": [
+            "いいえ、ありません。",
+            "いいえ、ちがいます。",
+            "はい、お{願|ねが}いします。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l3.e3",
+          "type": "tiles",
+          "prompt": "Build: \"Can I use a card?\"",
+          "meaning": "Can I use a card?",
+          "tiles": [
+            "カード",
+            "{は|wa}",
+            "{使|つか}えます",
+            "か",
+            "を",
+            "ください"
+          ],
+          "answer": "カード{は|wa}{使|つか}えますか",
+          "alt": []
+        },
+        {
+          "id": "ja-t02.l3.e4",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{現金|げんきん}___お{願|ねが}いします。",
+          "meaning": "In cash, please.",
+          "options": [
+            "で",
+            "を",
+            "に"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l3.e5",
+          "type": "mcq",
+          "prompt": "The clerk says こちらにタッチしてください. What do you do?",
+          "options": [
+            "Tap your card on the reader",
+            "Sign the receipt",
+            "Hand over cash"
+          ],
+          "answer": 0,
+          "explain": "こちら = here (polite). タッチ = tap."
+        },
+        {
+          "id": "ja-t02.l3.e6",
+          "type": "type",
+          "prompt": "You have paid and are leaving. Type in Japanese: \"Thank you.\"",
+          "answer": "ありがとうございました。",
+          "alt": [
+            "ありがとうございます。",
+            "どうもありがとうございました。"
+          ]
+        },
+        {
+          "id": "ja-t02.l3.e7",
+          "type": "mcq",
+          "prompt": "Listen. What is the total?",
+          "text": "{全部|ぜんぶ}で{八百円|はっぴゃくえん}です。",
+          "listen": true,
+          "options": [
+            "800 yen",
+            "8,000 yen",
+            "300 yen"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "ポイントカード",
+              "point card"
+            ],
+            [
+              "こちら",
+              "here (polite)"
+            ],
+            [
+              "{使|つか}えます",
+              "can use"
+            ],
+            [
+              "ありません",
+              "I don't have one"
+            ],
+            [
+              "{全部|ぜんぶ}で",
+              "in total"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Konbini clerk: bag? chopsticks? heat it? point card?",
+        "bottom": "Final boss of beginner Japanese"
+      },
+      "newItems": [
+        "ja-t02.v-pointo",
+        "ja-t02.p-tsukaemasuka",
+        "ja-t02.p-arimasen",
+        "ja-t02.v-kochira",
+        "ja-t02.p-arigatougozaimashita"
+      ]
+    }
+  ],
+  "factCheck": [
+    "Clerk phrases vary by chain; these are the most common wordings."
+  ]
+}

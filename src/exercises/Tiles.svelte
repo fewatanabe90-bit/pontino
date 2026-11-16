@@ -28,10 +28,12 @@
 </script>
 
 {#if ex.context}
+  <div class="who">They say</div>
   <div class="row" style="align-items:flex-start">
     <Speak text={ex.context} />
     <div class="bubble tl"><Ruby text={ex.context} /></div>
   </div>
+  <div class="who">You reply</div>
 {/if}
 
 <div class="slot" aria-label="Your answer" aria-live="polite">
@@ -52,6 +54,13 @@
 </div>
 
 <style>
+  .who {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
   .slot {
     min-height: 124px;
     border-top: 2px solid var(--line);

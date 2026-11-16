@@ -29,8 +29,8 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Everything the app needs is cached on first load: code, lessons and fonts.
-        globPatterns: ['**/*.{js,css,html,svg,png,jpg,woff2}'],
+        // Everything the app needs is cached on first load: code, lessons, fonts, photos and voice clips.
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,woff2,mp3}'],
         cleanupOutdatedCaches: true,
         navigateFallback: 'index.html',
       },

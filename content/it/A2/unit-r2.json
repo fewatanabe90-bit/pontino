@@ -1,0 +1,773 @@
+{
+  "id": "it-r2",
+  "lang": "it",
+  "level": "A2",
+  "track": "core",
+  "title": "Com'era?",
+  "summary": "How things used to be: childhood habits, what was going on when something happened, and a city then and now. The imperfetto, and how it shares the past with the passato prossimo.",
+  "canDo": [
+    "I can describe what I used to do and what things were like.",
+    "I can set the scene of a story and say what happened in it.",
+    "I can compare a place in the past with how it is now."
+  ],
+  "grammar": [
+    "Imperfetto: forms",
+    "Imperfetto vs passato prossimo",
+    "c'era / c'erano",
+    "mentre",
+    "già / non ancora"
+  ],
+  "items": [
+    {
+      "id": "it-r2.g-imperfetto",
+      "kind": "grammar",
+      "front": "abitavo, abitavi, abitava…",
+      "back": "The imperfetto: habits, descriptions and ongoing situations in the past.",
+      "note": "essere: ero, eri, era, eravamo, eravate, erano.",
+      "pt": "Same job as the PT pretérito imperfeito: morava, era, fazia."
+    },
+    {
+      "id": "it-r2.p-dabambino",
+      "kind": "phrase",
+      "front": "da bambino",
+      "back": "as a child",
+      "note": "A woman says: da bambina.",
+      "pt": "PT quando criança."
+    },
+    {
+      "id": "it-r2.v-abitare",
+      "kind": "vocab",
+      "front": "abitare",
+      "back": "to live (in a place)",
+      "note": "Abito a Roma.",
+      "pt": "PT morar. \"Vivere\" also works; \"abitare\" is about your address."
+    },
+    {
+      "id": "it-r2.v-spesso",
+      "kind": "vocab",
+      "front": "spesso",
+      "back": "often",
+      "pt": "PT frequentemente, muitas vezes. Not \"espesso\", which is \"denso\"."
+    },
+    {
+      "id": "it-r2.p-ognigiorno",
+      "kind": "phrase",
+      "front": "ogni giorno",
+      "back": "every day",
+      "note": "\"Ogni\" never changes: ogni giorno, ogni mattina."
+    },
+    {
+      "id": "it-r2.p-fareilbagno",
+      "kind": "phrase",
+      "front": "fare il bagno",
+      "back": "to go for a swim; to have a bath",
+      "pt": "PT tomar banho (de mar). Italian uses \"fare\"."
+    },
+    {
+      "id": "it-r2.v-spiaggia",
+      "kind": "vocab",
+      "front": "la spiaggia",
+      "back": "beach",
+      "pt": "PT praia."
+    },
+    {
+      "id": "it-r2.p-perstrada",
+      "kind": "phrase",
+      "front": "per strada",
+      "back": "in the street",
+      "pt": "PT na rua."
+    },
+    {
+      "id": "it-r2.v-mentre",
+      "kind": "vocab",
+      "front": "mentre",
+      "back": "while",
+      "note": "Mentre dormivo, ha chiamato Giulia.",
+      "pt": "PT enquanto."
+    },
+    {
+      "id": "it-r2.p-facevafreddo",
+      "kind": "phrase",
+      "front": "faceva freddo",
+      "back": "it was cold",
+      "note": "Weather uses fare: fa freddo, fa caldo.",
+      "pt": "PT fazia frio."
+    },
+    {
+      "id": "it-r2.v-piovere",
+      "kind": "vocab",
+      "front": "piovere",
+      "back": "to rain",
+      "note": "Pioveva = it was raining. Ha piovuto = it rained.",
+      "pt": "PT chover."
+    },
+    {
+      "id": "it-r2.p-smetteredi",
+      "kind": "phrase",
+      "front": "smettere di",
+      "back": "to stop (doing something)",
+      "note": "Ha smesso di piovere.",
+      "pt": "PT parar de. \"Parare\" in Italian is what a goalkeeper does."
+    },
+    {
+      "id": "it-r2.v-contento",
+      "kind": "vocab",
+      "front": "contento",
+      "back": "happy, pleased"
+    },
+    {
+      "id": "it-r2.p-comeandata",
+      "kind": "phrase",
+      "front": "Com'è andata?",
+      "back": "How did it go?"
+    },
+    {
+      "id": "it-r2.v-allora",
+      "kind": "vocab",
+      "front": "allora",
+      "back": "so, then; back then",
+      "pt": "Close to PT \"então\". \"Allora?\" on its own is like \"E aí?\"."
+    },
+    {
+      "id": "it-r2.p-cera",
+      "kind": "phrase",
+      "front": "c'era",
+      "back": "there was",
+      "note": "Plural: c'erano.",
+      "pt": "PT havia / tinha. Italian must agree with what follows."
+    },
+    {
+      "id": "it-r2.p-unavolta",
+      "kind": "phrase",
+      "front": "una volta",
+      "back": "once; in the old days",
+      "pt": "PT antigamente, uma vez."
+    },
+    {
+      "id": "it-r2.v-adesso",
+      "kind": "vocab",
+      "front": "adesso",
+      "back": "now",
+      "note": "\"Ora\" means the same.",
+      "pt": "PT agora."
+    },
+    {
+      "id": "it-r2.p-nonancora",
+      "kind": "phrase",
+      "front": "non ancora",
+      "back": "not yet",
+      "note": "Non c'era ancora.",
+      "pt": "PT ainda não: the order is reversed."
+    },
+    {
+      "id": "it-r2.v-gia",
+      "kind": "vocab",
+      "front": "già",
+      "back": "already",
+      "pt": "PT já."
+    },
+    {
+      "id": "it-r2.v-lagente",
+      "kind": "vocab",
+      "front": "la gente",
+      "back": "people",
+      "note": "Singular: la gente prendeva il tram.",
+      "pt": "False friend: PT \"a gente\" often means \"nós\". Italian \"la gente\" is always \"as pessoas\"."
+    },
+    {
+      "id": "it-r2.p-chepeccato",
+      "kind": "phrase",
+      "front": "Che peccato!",
+      "back": "What a pity!",
+      "pt": "PT Que pena!"
+    },
+    {
+      "id": "it-r2.v-tranquillo",
+      "kind": "vocab",
+      "front": "tranquillo",
+      "back": "quiet, calm"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "it-r2.l1",
+      "title": "Da bambino…",
+      "canDo": "I can say what I used to do and describe how things were.",
+      "intro": {
+        "place": "cafe",
+        "scene": "At the bar, Giulia is showing Leo old photos on her phone.",
+        "lines": [
+          {
+            "who": "Giulia",
+            "text": "Guarda questa foto! Da bambina abitavo a Napoli.",
+            "meaning": "Look at this photo! As a child I lived in Naples."
+          },
+          {
+            "who": "Leo",
+            "text": "Davvero? E com'era la tua casa?",
+            "meaning": "Really? And what was your house like?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Era piccola, ma aveva un balcone sul mare.",
+            "meaning": "It was small, but it had a balcony over the sea."
+          },
+          {
+            "who": "Leo",
+            "text": "Che bello! Andavi spesso in spiaggia?",
+            "meaning": "How lovely! Did you often go to the beach?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Ogni giorno! D'estate facevamo il bagno fino a sera.",
+            "meaning": "Every day! In summer we swam until the evening."
+          },
+          {
+            "who": "Leo",
+            "text": "Io invece giocavo a calcio per strada tutti i giorni.",
+            "meaning": "I, on the other hand, played football in the street every day."
+          }
+        ],
+        "notes": [
+          {
+            "title": "The imperfetto",
+            "body": "Take off -re and add -vo, -vi, -va, -vamo, -vate, -vano: abitare → abitavo, avere → avevo, dormire → dormivo. It is the most regular tense in Italian. The main exceptions: essere (ero, eri, era, eravamo, eravate, erano), fare → facevo, dire → dicevo, bere → bevevo."
+          },
+          {
+            "title": "When to use it",
+            "body": "For habits (andavo in spiaggia ogni giorno), descriptions (la casa era piccola) and anything that was ongoing, with no clear beginning or end."
+          },
+          {
+            "title": "🇧🇷 PT tip: same idea, different stress",
+            "body": "It lines up with the PT imperfeito: morava = abitavo, era = era, fazia = facevo. The trap is the sound. Italian stresses noi and voi on the \"a\": abitavAmo, abitavAte. And loro keeps the stress early: abitAvano, not *abitavAno."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r2.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Da bambino ___ a calcio tutti i giorni.",
+          "meaning": "As a child I played football every day.",
+          "options": [
+            "giocavo",
+            "ho giocato",
+            "gioco"
+          ],
+          "answer": 0,
+          "explain": "A repeated habit in the past: imperfetto."
+        },
+        {
+          "id": "it-r2.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "La casa ___ piccola.",
+          "meaning": "The house was small.",
+          "options": [
+            "era",
+            "è stata",
+            "aveva"
+          ],
+          "answer": 0,
+          "explain": "A description: imperfetto of essere."
+        },
+        {
+          "id": "it-r2.l1.e3",
+          "type": "mcq",
+          "prompt": "What is the imperfetto of \"fare\" for io?",
+          "options": [
+            "facevo",
+            "favo",
+            "fazevo"
+          ],
+          "answer": 0,
+          "explain": "Fare keeps its old stem: facevo, facevi, faceva."
+        },
+        {
+          "id": "it-r2.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"We went to the beach every day.\"",
+          "meaning": "We went to the beach every day.",
+          "tiles": [
+            "Andavamo",
+            "in",
+            "spiaggia",
+            "ogni",
+            "giorno",
+            "Siamo",
+            "andavo"
+          ],
+          "answer": "Andavamo in spiaggia ogni giorno",
+          "alt": [
+            "Ogni giorno andavamo in spiaggia"
+          ]
+        },
+        {
+          "id": "it-r2.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Leo asking?",
+          "text": "Com'era la tua casa?",
+          "listen": true,
+          "options": [
+            "What was your house like?",
+            "Where was your house?",
+            "What is your house like?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l1.e6",
+          "type": "mcq",
+          "prompt": "Where is the stress in \"abitavano\"?",
+          "options": [
+            "abiTAvano",
+            "abitaVAno",
+            "abitavaNO"
+          ],
+          "answer": 0,
+          "explain": "Loro keeps the stress of the io form: abiTAvo, abiTAvano."
+        },
+        {
+          "id": "it-r2.l1.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese (a man speaking): \"Quando criança, eu morava em Nápoles.\"",
+          "answer": "Da bambino abitavo a Napoli.",
+          "alt": [
+            "Da piccolo abitavo a Napoli.",
+            "Quando ero bambino abitavo a Napoli.",
+            "Da bambino vivevo a Napoli.",
+            "Da bambino io abitavo a Napoli."
+          ]
+        },
+        {
+          "id": "it-r2.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "ero",
+              "I was"
+            ],
+            [
+              "avevo",
+              "I had"
+            ],
+            [
+              "facevo",
+              "I used to do"
+            ],
+            [
+              "andavo",
+              "I used to go"
+            ],
+            [
+              "abitavo",
+              "I used to live"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Passato prossimo: 40 irregular participles",
+        "bottom": "Imperfetto: add -vo and relax"
+      },
+      "newItems": [
+        "it-r2.g-imperfetto",
+        "it-r2.p-dabambino",
+        "it-r2.v-abitare",
+        "it-r2.v-spesso",
+        "it-r2.p-ognigiorno",
+        "it-r2.p-fareilbagno",
+        "it-r2.v-spiaggia",
+        "it-r2.p-perstrada"
+      ]
+    },
+    {
+      "id": "it-r2.l2",
+      "title": "Mentre guardavo il telefono…",
+      "canDo": "I can set the scene with the imperfetto and say what happened with the passato prossimo.",
+      "intro": {
+        "place": "stadium",
+        "scene": "Marco was at the stadium last night. Leo wants every detail.",
+        "lines": [
+          {
+            "who": "Marco",
+            "text": "Ieri sera ero allo stadio. Pioveva e faceva freddo.",
+            "meaning": "Last night I was at the stadium. It was raining and it was cold."
+          },
+          {
+            "who": "Leo",
+            "text": "E la partita? Com'è andata?",
+            "meaning": "And the match? How did it go?"
+          },
+          {
+            "who": "Marco",
+            "text": "Mentre guardavo il telefono, la Roma ha segnato!",
+            "meaning": "While I was looking at my phone, Roma scored!"
+          },
+          {
+            "who": "Leo",
+            "text": "No! Non hai visto il gol?",
+            "meaning": "No! You didn't see the goal?"
+          },
+          {
+            "who": "Marco",
+            "text": "No. Ma poi ha smesso di piovere e abbiamo vinto.",
+            "meaning": "No. But then it stopped raining and we won."
+          },
+          {
+            "who": "Leo",
+            "text": "Allora eri contento!",
+            "meaning": "So you were happy!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Background and event",
+            "body": "The imperfetto paints the background: pioveva, faceva freddo, ero allo stadio. The passato prossimo says what happened, once and completely: la Roma ha segnato, abbiamo vinto."
+          },
+          {
+            "title": "Mentre",
+            "body": "\"Mentre\" + imperfetto is the action in progress; the event that interrupts it is in the passato prossimo: mentre guardavo il telefono, la Roma ha segnato."
+          },
+          {
+            "title": "🇧🇷 PT tip: the split is the same",
+            "body": "Portuguese makes the same choice: \"enquanto eu olhava o celular, a Roma marcou\". So trust your instinct for which tense. Only the form is different: PT \"marcou\" is one word, Italian \"ha segnato\" is two. In conversation, never the one-word \"segnò\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r2.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Mentre ___ la partita, è arrivato Marco.",
+          "meaning": "While I was watching the match, Marco arrived.",
+          "options": [
+            "guardavo",
+            "ho guardato",
+            "guardo"
+          ],
+          "answer": 0,
+          "explain": "The action in progress: imperfetto."
+        },
+        {
+          "id": "it-r2.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Ieri la Roma ___ due a zero.",
+          "meaning": "Yesterday Roma won two–nil.",
+          "options": [
+            "ha vinto",
+            "vinceva",
+            "vince"
+          ],
+          "answer": 0,
+          "explain": "A completed event: passato prossimo."
+        },
+        {
+          "id": "it-r2.l2.e3",
+          "type": "mcq",
+          "prompt": "You are starting a story. Which sentence sets the scene?",
+          "options": [
+            "Pioveva e faceva freddo.",
+            "Ha segnato la Roma.",
+            "Abbiamo vinto."
+          ],
+          "answer": 0,
+          "explain": "Weather and atmosphere are background: imperfetto."
+        },
+        {
+          "id": "it-r2.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"While I was sleeping, Giulia called.\"",
+          "meaning": "While I was sleeping, Giulia called.",
+          "tiles": [
+            "Mentre",
+            "dormivo",
+            "Giulia",
+            "ha",
+            "chiamato",
+            "chiamava",
+            "dormito"
+          ],
+          "answer": "Mentre dormivo Giulia ha chiamato",
+          "alt": [
+            "Mentre dormivo ha chiamato Giulia"
+          ]
+        },
+        {
+          "id": "it-r2.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Leo asking?",
+          "text": "Com'è andata la partita?",
+          "listen": true,
+          "options": [
+            "How did the match go?",
+            "Where was the match?",
+            "How is the match going?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l2.e6",
+          "type": "mcq",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Ha smesso di piovere.",
+            "Ha smesso piovere.",
+            "Ha parato di piovere."
+          ],
+          "answer": 0,
+          "explain": "Smettere di + infinitive. \"Parare\" is to save a shot, not to stop."
+        },
+        {
+          "id": "it-r2.l2.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Fazia frio, mas nós ganhamos.\"",
+          "answer": "Faceva freddo, ma abbiamo vinto.",
+          "alt": [
+            "Faceva freddo, ma noi abbiamo vinto.",
+            "Faceva freddo, però abbiamo vinto."
+          ]
+        },
+        {
+          "id": "it-r2.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "pioveva",
+              "it was raining"
+            ],
+            [
+              "ha piovuto",
+              "it rained"
+            ],
+            [
+              "ero",
+              "I was (background)"
+            ],
+            [
+              "ha segnato",
+              "he scored"
+            ],
+            [
+              "mentre",
+              "while"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Mentre guardavo il telefono",
+        "bottom": "the only goal of the match happened"
+      },
+      "newItems": [
+        "it-r2.v-mentre",
+        "it-r2.p-facevafreddo",
+        "it-r2.v-piovere",
+        "it-r2.p-smetteredi",
+        "it-r2.v-contento",
+        "it-r2.p-comeandata",
+        "it-r2.v-allora"
+      ]
+    },
+    {
+      "id": "it-r2.l3",
+      "title": "Qui una volta c'era…",
+      "canDo": "I can say what a place used to have and how it has changed.",
+      "intro": {
+        "art": "🏛️🚋🍊",
+        "scene": "Sara is walking Leo through the neighbourhood where her grandmother grew up.",
+        "lines": [
+          {
+            "who": "Sara",
+            "text": "Vedi questa piazza? Una volta qui c'era un mercato.",
+            "meaning": "See this square? There used to be a market here."
+          },
+          {
+            "who": "Leo",
+            "text": "E adesso c'è solo un parcheggio. Che peccato!",
+            "meaning": "And now there's only a car park. What a pity!"
+          },
+          {
+            "who": "Sara",
+            "text": "Mia nonna veniva qui ogni mattina. C'erano tanti banchi di frutta.",
+            "meaning": "My grandmother came here every morning. There were lots of fruit stalls."
+          },
+          {
+            "who": "Leo",
+            "text": "E la metro? C'era già?",
+            "meaning": "And the metro? Was it already there?"
+          },
+          {
+            "who": "Sara",
+            "text": "No, non c'era ancora. La gente prendeva il tram.",
+            "meaning": "No, it wasn't there yet. People took the tram."
+          },
+          {
+            "who": "Leo",
+            "text": "Roma era più tranquilla, allora.",
+            "meaning": "Rome was quieter back then."
+          }
+        ],
+        "notes": [
+          {
+            "title": "C'era, c'erano",
+            "body": "The imperfetto of c'è and ci sono: c'era un mercato (one thing), c'erano tanti banchi (several). Perfect for describing how a place used to be."
+          },
+          {
+            "title": "Then and now",
+            "body": "\"Una volta\" and \"allora\" point to the past; \"adesso\" and \"ora\" to the present. \"Già\" is already, and \"non… ancora\" is not yet: non c'era ancora."
+          },
+          {
+            "title": "🇧🇷 PT tip: it has to agree",
+            "body": "Brazilian Portuguese says \"tinha um mercado\" and \"tinha muitas bancas\" with the same verb. Italian cannot: c'era for one, c'erano for many, and never \"aveva\". Also, \"la gente\" is singular and means \"as pessoas\", not \"nós\": la gente prendeva il tram."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r2.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Una volta qui ___ un mercato.",
+          "meaning": "There used to be a market here.",
+          "options": [
+            "c'era",
+            "c'erano",
+            "c'è"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "In piazza ___ tanti banchi di frutta.",
+          "meaning": "In the square there were lots of fruit stalls.",
+          "options": [
+            "c'erano",
+            "c'era",
+            "aveva"
+          ],
+          "answer": 0,
+          "explain": "Several things: c'erano. \"Aveva\" would need an owner."
+        },
+        {
+          "id": "it-r2.l3.e3",
+          "type": "mcq",
+          "prompt": "In Italian, \"la gente\" means:",
+          "options": [
+            "people in general",
+            "we (like PT \"a gente\")",
+            "the agent"
+          ],
+          "answer": 0,
+          "explain": "A classic false friend for Brazilians."
+        },
+        {
+          "id": "it-r2.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"The metro wasn't there yet.\"",
+          "meaning": "The metro wasn't there yet.",
+          "tiles": [
+            "La",
+            "metro",
+            "non",
+            "c'era",
+            "ancora",
+            "c'erano",
+            "già"
+          ],
+          "answer": "La metro non c'era ancora",
+          "alt": []
+        },
+        {
+          "id": "it-r2.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Leo asking?",
+          "text": "C'era già la metro?",
+          "listen": true,
+          "options": [
+            "Was the metro already there?",
+            "Is the metro already there?",
+            "Where was the metro?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l3.e6",
+          "type": "mcq",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "La gente prendeva il tram.",
+            "La gente prendevano il tram.",
+            "Le genti prendeva il tram."
+          ],
+          "answer": 0,
+          "explain": "\"La gente\" takes a singular verb."
+        },
+        {
+          "id": "it-r2.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Antigamente tinha um mercado aqui.\"",
+          "answer": "Una volta qui c'era un mercato.",
+          "alt": [
+            "Una volta c'era un mercato qui.",
+            "Una volta c'era qui un mercato.",
+            "Prima qui c'era un mercato.",
+            "Prima c'era un mercato qui.",
+            "Qui una volta c'era un mercato."
+          ]
+        },
+        {
+          "id": "it-r2.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "c'era",
+              "there was"
+            ],
+            [
+              "c'erano",
+              "there were"
+            ],
+            [
+              "una volta",
+              "in the old days"
+            ],
+            [
+              "adesso",
+              "now"
+            ],
+            [
+              "non ancora",
+              "not yet"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Una volta qui c'era un mercato",
+        "bottom": "Every Italian grandmother, about every car park"
+      },
+      "newItems": [
+        "it-r2.p-cera",
+        "it-r2.p-unavolta",
+        "it-r2.v-adesso",
+        "it-r2.p-nonancora",
+        "it-r2.v-gia",
+        "it-r2.v-lagente",
+        "it-r2.p-chepeccato",
+        "it-r2.v-tranquillo"
+      ]
+    }
+  ],
+  "factCheck": [
+    "The piazza and its market are invented for the scene."
+  ]
+}

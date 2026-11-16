@@ -93,8 +93,9 @@
     },
     {
       "id": "it-deck-viaggio.15",
-      "front": "a destra / a sinistra",
-      "back": "on the right / on the left"
+      "front": "a destra",
+      "back": "on the right",
+      "note": "On the left: a sinistra."
     },
     {
       "id": "it-deck-viaggio.16",

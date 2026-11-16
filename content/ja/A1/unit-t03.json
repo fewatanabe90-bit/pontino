@@ -1,0 +1,717 @@
+{
+  "id": "ja-t03",
+  "lang": "ja",
+  "level": "A1",
+  "track": "trip",
+  "title": "Catching the right train",
+  "summary": "Platforms, departure times and transfers: enough Japanese to get from Tokyo to Kyoto and on to Nara without boarding the wrong train.",
+  "canDo": [
+    "I can ask which platform a train leaves from and check where it is going.",
+    "I can ask and understand departure and arrival times.",
+    "I can ask about stops and transfers and buy a reserved or non-reserved seat."
+  ],
+  "grammar": [
+    "〜行き",
+    "何番線",
+    "〜時・〜分・半",
+    "〜から〜まで",
+    "時間 (duration)",
+    "〜で乗り換えます",
+    "〜に止まりますか",
+    "Counter: 〜枚",
+    "だけ"
+  ],
+  "items": [
+    {
+      "id": "ja-t03.p-nanbansen",
+      "kind": "phrase",
+      "front": "{何番線|なんばんせん}ですか",
+      "back": "Which platform is it?"
+    },
+    {
+      "id": "ja-t03.v-bansen",
+      "kind": "vocab",
+      "front": "{二番線|にばんせん}",
+      "back": "platform 2",
+      "note": "Number + {番線|ばんせん}."
+    },
+    {
+      "id": "ja-t03.v-tsugi",
+      "kind": "vocab",
+      "front": "{次|つぎ}",
+      "back": "next"
+    },
+    {
+      "id": "ja-t03.p-wakarimashita",
+      "kind": "phrase",
+      "front": "わかりました",
+      "back": "Understood. / Got it."
+    },
+    {
+      "id": "ja-t03.v-densha",
+      "kind": "vocab",
+      "front": "{電車|でんしゃ}",
+      "back": "train"
+    },
+    {
+      "id": "ja-t03.p-yuki",
+      "kind": "phrase",
+      "front": "{東京|とうきょう}{行|ゆ}き",
+      "back": "bound for Tokyo",
+      "note": "Place + {行|ゆ}き is what the front of the train and the departure board show."
+    },
+    {
+      "id": "ja-t03.p-nanji",
+      "kind": "phrase",
+      "front": "{何時|なんじ}ですか",
+      "back": "What time is it?"
+    },
+    {
+      "id": "ja-t03.v-han",
+      "kind": "vocab",
+      "front": "{九時半|くじはん}",
+      "back": "half past nine",
+      "note": "{半|はん} = half."
+    },
+    {
+      "id": "ja-t03.v-fun",
+      "kind": "vocab",
+      "front": "{五分|ごふん}",
+      "back": "five minutes",
+      "note": "{分|ふん} becomes ぷん after some numbers: {十分|じゅっぷん} ten minutes."
+    },
+    {
+      "id": "ja-t03.v-jikan",
+      "kind": "vocab",
+      "front": "{二時間|にじかん}",
+      "back": "two hours (how long)",
+      "note": "{二時|にじ} is two o'clock; {二時間|にじかん} is a length of time."
+    },
+    {
+      "id": "ja-t03.v-tsukimasu",
+      "kind": "vocab",
+      "front": "{着|つ}きます",
+      "back": "to arrive"
+    },
+    {
+      "id": "ja-t03.v-gurai",
+      "kind": "vocab",
+      "front": "ぐらい",
+      "back": "about, roughly"
+    },
+    {
+      "id": "ja-t03.v-shinkansen",
+      "kind": "vocab",
+      "front": "{新幹線|しんかんせん}",
+      "back": "bullet train"
+    },
+    {
+      "id": "ja-t03.v-norikaemasu",
+      "kind": "vocab",
+      "front": "{乗|の}り{換|か}えます",
+      "back": "to change trains"
+    },
+    {
+      "id": "ja-t03.v-tomarimasu",
+      "kind": "vocab",
+      "front": "{止|と}まります",
+      "back": "to stop"
+    },
+    {
+      "id": "ja-t03.v-shiteiseki",
+      "kind": "vocab",
+      "front": "{指定席|していせき}",
+      "back": "reserved seat"
+    },
+    {
+      "id": "ja-t03.v-jiyuuseki",
+      "kind": "vocab",
+      "front": "{自由席|じゆうせき}",
+      "back": "non-reserved seat"
+    },
+    {
+      "id": "ja-t03.v-dake",
+      "kind": "vocab",
+      "front": "だけ",
+      "back": "only"
+    },
+    {
+      "id": "ja-t03.v-ichimai",
+      "kind": "vocab",
+      "front": "{一枚|いちまい}",
+      "back": "one (ticket or other flat thing)",
+      "note": "{二枚|にまい} two, {三枚|さんまい} three."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-t03.l1",
+      "title": "Which platform?",
+      "canDo": "I can ask which platform my train leaves from and check that a train goes where I want.",
+      "intro": {
+        "place": "station",
+        "scene": "A big Tokyo station at rush hour. Leo wants to get to Shibuya.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、{渋谷|しぶや}{行|ゆ}き{は|wa}{何番線|なんばんせん}ですか。",
+            "meaning": "Excuse me, which platform is the train for Shibuya?",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "{二番線|にばんせん}です。",
+            "meaning": "Platform 2.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "この{電車|でんしゃ}{は|wa}{渋谷|しぶや}に{行|い}きますか。",
+            "meaning": "Does this train go to Shibuya?",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "いいえ、それ{は|wa}{新宿|しんじゅく}{行|ゆ}きです。{次|つぎ}の{電車|でんしゃ}です。",
+            "meaning": "No, that one is for Shinjuku. It's the next train.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "わかりました。ありがとうございます。",
+            "meaning": "Got it. Thank you.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜{行|ゆ}き",
+            "body": "Place + {行|ゆ}き = \"bound for\". It is the word on the front of every train and on every departure board. You will also hear it said いき."
+          },
+          {
+            "title": "{何番線|なんばんせん}",
+            "body": "{番線|ばんせん} is the platform number: {一番線|いちばんせん}, {二番線|にばんせん}. {何|なん} + {番線|ばんせん} asks \"which platform?\"."
+          },
+          {
+            "title": "Check before you board",
+            "body": "この{電車|でんしゃ}{は|wa}〜に{行|い}きますか is a yes/no question, so even a quick はい or いいえ tells you what you need."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t03.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{京都|きょうと}{行|ゆ}き{は|wa}___ですか。",
+          "meaning": "Which platform is the train for Kyoto?",
+          "options": [
+            "{何番線|なんばんせん}",
+            "いくら",
+            "だれ"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l1.e2",
+          "type": "mcq",
+          "prompt": "Listen. What are you told?",
+          "text": "{三番線|さんばんせん}です。",
+          "listen": true,
+          "options": [
+            "Platform 3",
+            "Three o'clock",
+            "300 yen"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l1.e3",
+          "type": "tiles",
+          "prompt": "Build: \"Does this train go to Shinjuku?\"",
+          "meaning": "Does this train go to Shinjuku?",
+          "tiles": [
+            "この",
+            "{電車|でんしゃ}",
+            "{は|wa}",
+            "{新宿|しんじゅく}",
+            "に",
+            "{行|い}きます",
+            "か",
+            "を"
+          ],
+          "answer": "この{電車|でんしゃ}{は|wa}{新宿|しんじゅく}に{行|い}きますか",
+          "alt": []
+        },
+        {
+          "id": "ja-t03.l1.e4",
+          "type": "mcq",
+          "prompt": "The board says 東京行き. This train…",
+          "options": [
+            "goes to Tokyo",
+            "comes from Tokyo",
+            "does not stop in Tokyo"
+          ],
+          "answer": 0,
+          "explain": "{東京|とうきょう}{行|ゆ}き: bound for Tokyo."
+        },
+        {
+          "id": "ja-t03.l1.e5",
+          "type": "mcq",
+          "prompt": "The staff member explains and you understand. You say:",
+          "options": [
+            "わかりました。",
+            "わかりません。",
+            "いいですね。"
+          ],
+          "answer": 0,
+          "explain": "わかりません is \"I don't understand\". いいですね is \"sounds good\"."
+        },
+        {
+          "id": "ja-t03.l1.e6",
+          "type": "type",
+          "prompt": "Ask in Japanese: \"Which platform is it?\"",
+          "answer": "{何番線|なんばんせん}ですか。",
+          "alt": [
+            "すみません、{何番線|なんばんせん}ですか。"
+          ]
+        },
+        {
+          "id": "ja-t03.l1.e7",
+          "type": "mcq",
+          "prompt": "Listen. Which train is it?",
+          "text": "{次|つぎ}の{電車|でんしゃ}です。",
+          "listen": true,
+          "options": [
+            "The next train",
+            "This train",
+            "The last train"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{電車|でんしゃ}",
+              "train"
+            ],
+            [
+              "{次|つぎ}",
+              "next"
+            ],
+            [
+              "{番線|ばんせん}",
+              "platform number"
+            ],
+            [
+              "{行|ゆ}き",
+              "bound for"
+            ],
+            [
+              "わかりました",
+              "Got it"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Tokyo station: 28 platforms",
+        "bottom": "Me: 何番線ですか, again, with feeling"
+      },
+      "newItems": [
+        "ja-t03.p-nanbansen",
+        "ja-t03.v-bansen",
+        "ja-t03.v-tsugi",
+        "ja-t03.p-wakarimashita",
+        "ja-t03.v-densha",
+        "ja-t03.p-yuki"
+      ]
+    },
+    {
+      "id": "ja-t03.l2",
+      "title": "What time does it leave?",
+      "canDo": "I can ask and understand train times and say how long a journey takes.",
+      "intro": {
+        "place": "train",
+        "scene": "The Shinkansen ticket office. Leo is planning the trip to Kyoto.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "{次|つぎ}の{新幹線|しんかんせん}{は|wa}{何時|なんじ}ですか。",
+            "meaning": "What time is the next bullet train?",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "{九時半|くじはん}です。",
+            "meaning": "Half past nine.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{京都|きょうと}に{何時|なんじ}に{着|つ}きますか。",
+            "meaning": "What time does it arrive in Kyoto?",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "{十一時四十五分|じゅういちじよんじゅうごふん}に{着|つ}きます。",
+            "meaning": "It arrives at 11:45.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{東京|とうきょう}から{京都|きょうと}まで{二時間|にじかん}ぐらいですね。",
+            "meaning": "So Tokyo to Kyoto is about two hours, isn't it?",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "はい、そうです。",
+            "meaning": "Yes, that's right.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "O'clock: 〜{時|じ}",
+            "body": "Number + {時|じ}. Three hours are irregular: {四時|よじ} 4:00, {七時|しちじ} 7:00, {九時|くじ} 9:00. {半|はん} after the hour means \"half past\": {九時半|くじはん}."
+          },
+          {
+            "title": "Minutes: 〜{分|ふん}",
+            "body": "{五分|ごふん} 5 minutes, {十分|じゅっぷん} 10, {十五分|じゅうごふん} 15, {三十分|さんじゅっぷん} 30. On timetables you mostly read digits, so recognising them by ear is what matters."
+          },
+          {
+            "title": "〜から〜まで, and {時間|じかん}",
+            "body": "から is the start and まで is the end, for places and for times. {二時|にじ} is two o'clock, but {二時間|にじかん} is two hours long. ぐらい after a number means \"about\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t03.l2.e1",
+          "type": "mcq",
+          "prompt": "How do you read 9時 (nine o'clock)?",
+          "options": [
+            "くじ",
+            "きゅうじ",
+            "ここのじ"
+          ],
+          "answer": 0,
+          "explain": "One of the three irregular hours: よじ, しちじ, くじ."
+        },
+        {
+          "id": "ja-t03.l2.e2",
+          "type": "mcq",
+          "prompt": "Listen. What time is it?",
+          "text": "{四時半|よじはん}です。",
+          "listen": true,
+          "options": [
+            "Half past four",
+            "Four o'clock",
+            "Half past seven"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l2.e3",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{東京|とうきょう}___{京都|きょうと}まで{行|い}きます。",
+          "meaning": "I'm going from Tokyo to Kyoto.",
+          "options": [
+            "から",
+            "に",
+            "を"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"What time does it arrive in Osaka?\"",
+          "meaning": "What time does it arrive in Osaka?",
+          "tiles": [
+            "{大阪|おおさか}",
+            "に",
+            "{何時|なんじ}",
+            "に",
+            "{着|つ}きます",
+            "か",
+            "で"
+          ],
+          "answer": "{大阪|おおさか}に{何時|なんじ}に{着|つ}きますか",
+          "alt": []
+        },
+        {
+          "id": "ja-t03.l2.e5",
+          "type": "mcq",
+          "prompt": "The journey takes two hours. Which one says how long?",
+          "options": [
+            "{二時間|にじかん}",
+            "{二時|にじ}",
+            "{二分|にふん}"
+          ],
+          "answer": 0,
+          "explain": "{二時|にじ} is a time on the clock. {二時間|にじかん} is a duration."
+        },
+        {
+          "id": "ja-t03.l2.e6",
+          "type": "type",
+          "prompt": "Ask in Japanese: \"What time is it?\"",
+          "answer": "{何時|なんじ}ですか。",
+          "alt": [
+            "いま{何時|なんじ}ですか。",
+            "{今|いま}{何時|なんじ}ですか。"
+          ]
+        },
+        {
+          "id": "ja-t03.l2.e7",
+          "type": "type",
+          "prompt": "Type what you hear.",
+          "text": "{七時|しちじ}に{着|つ}きます。",
+          "listen": true,
+          "answer": "{七時|しちじ}に{着|つ}きます。",
+          "alt": [
+            "{七時|ななじ}に{着|つ}きます。"
+          ]
+        },
+        {
+          "id": "ja-t03.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{九時|くじ}",
+              "nine o'clock"
+            ],
+            [
+              "{九時半|くじはん}",
+              "half past nine"
+            ],
+            [
+              "{五分|ごふん}",
+              "five minutes"
+            ],
+            [
+              "{二時間|にじかん}",
+              "two hours"
+            ],
+            [
+              "ぐらい",
+              "about"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "The train is 40 seconds late",
+        "bottom": "Station staff: a formal apology"
+      },
+      "newItems": [
+        "ja-t03.p-nanji",
+        "ja-t03.v-han",
+        "ja-t03.v-fun",
+        "ja-t03.v-jikan",
+        "ja-t03.v-tsukimasu",
+        "ja-t03.v-gurai",
+        "ja-t03.v-shinkansen"
+      ]
+    },
+    {
+      "id": "ja-t03.l3",
+      "title": "Stops, transfers and seats",
+      "canDo": "I can ask whether a train stops somewhere, where to change, and buy the right kind of seat.",
+      "intro": {
+        "place": "train",
+        "scene": "Leo wants to go on to Nara, and he would like a seat.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、この{電車|でんしゃ}{は|wa}{奈良|なら}に{止|と}まりますか。",
+            "meaning": "Excuse me, does this train stop at Nara?",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "いいえ、{止|と}まりません。{京都|きょうと}で{乗|の}り{換|か}えます。",
+            "meaning": "No, it doesn't. You change at Kyoto.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{京都|きょうと}で{乗|の}り{換|か}えですね。{指定席|していせき}{は|wa}ありますか。",
+            "meaning": "Change at Kyoto, right. Are there reserved seats?",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "すみません、{自由席|じゆうせき}だけです。",
+            "meaning": "I'm sorry, only non-reserved seats.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "わかりました。{自由席|じゆうせき}を{一枚|いちまい}ください。",
+            "meaning": "I see. One non-reserved ticket, please.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜に{止|と}まりますか",
+            "body": "{止|と}まります = to stop. The station takes に, the point where the train stops. The answer is {止|と}まります or {止|と}まりません."
+          },
+          {
+            "title": "〜で{乗|の}り{換|か}えます",
+            "body": "Changing trains is an action that happens at a place, so the station takes で: {京都|きょうと}で{乗|の}り{換|か}えます. On signs the noun is {乗|の}り{換|か}え."
+          },
+          {
+            "title": "Seats and tickets",
+            "body": "{指定席|していせき} is a reserved seat; {自由席|じゆうせき} is non-reserved, any free seat in those cars. Tickets are flat, so they are counted with 〜{枚|まい}: {一枚|いちまい}, {二枚|にまい}. だけ means \"only\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t03.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{京都|きょうと}___{乗|の}り{換|か}えます。",
+          "meaning": "I change at Kyoto.",
+          "options": [
+            "で",
+            "を",
+            "と"
+          ],
+          "answer": 0,
+          "explain": "The place where an action happens takes で."
+        },
+        {
+          "id": "ja-t03.l3.e2",
+          "type": "mcq",
+          "prompt": "Listen. What are you told?",
+          "text": "この{電車|でんしゃ}{は|wa}{奈良|なら}に{止|と}まりません。",
+          "listen": true,
+          "options": [
+            "This train doesn't stop at Nara.",
+            "This train stops at Nara.",
+            "This train is for Nara."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l3.e3",
+          "type": "tiles",
+          "prompt": "Build: \"Two reserved seats, please.\"",
+          "meaning": "Two reserved seats, please.",
+          "tiles": [
+            "{指定席|していせき}",
+            "を",
+            "{二枚|にまい}",
+            "ください",
+            "{自由席|じゆうせき}",
+            "で"
+          ],
+          "answer": "{指定席|していせき}を{二枚|にまい}ください",
+          "alt": []
+        },
+        {
+          "id": "ja-t03.l3.e4",
+          "type": "mcq",
+          "prompt": "You have a 自由席 ticket. Where can you sit?",
+          "options": [
+            "Any free seat in the non-reserved cars",
+            "Only the seat printed on the ticket",
+            "Anywhere on the train"
+          ],
+          "answer": 0,
+          "explain": "{自由席|じゆうせき}: \"free seating\", in the cars marked for it."
+        },
+        {
+          "id": "ja-t03.l3.e5",
+          "type": "mcq",
+          "prompt": "Which one means \"non-reserved seats only\"?",
+          "options": [
+            "{自由席|じゆうせき}だけです。",
+            "{指定席|していせき}だけです。",
+            "{自由席|じゆうせき}もあります。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l3.e6",
+          "type": "type",
+          "prompt": "Type in Japanese: \"Does it stop?\"",
+          "answer": "{止|と}まりますか。",
+          "alt": [
+            "ここに{止|と}まりますか。"
+          ]
+        },
+        {
+          "id": "ja-t03.l3.e7",
+          "type": "tiles",
+          "prompt": "Answer: \"No. You change at Kyoto.\"",
+          "context": "{奈良|なら}に{行|い}きますか。",
+          "meaning": "No. You change at Kyoto.",
+          "tiles": [
+            "いいえ。",
+            "{京都|きょうと}",
+            "で",
+            "{乗|の}り{換|か}えます",
+            "に",
+            "{止|と}まります"
+          ],
+          "answer": "いいえ。{京都|きょうと}で{乗|の}り{換|か}えます",
+          "alt": []
+        },
+        {
+          "id": "ja-t03.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{止|と}まります",
+              "to stop"
+            ],
+            [
+              "{乗|の}り{換|か}えます",
+              "to change trains"
+            ],
+            [
+              "{指定席|していせき}",
+              "reserved seat"
+            ],
+            [
+              "{自由席|じゆうせき}",
+              "non-reserved seat"
+            ],
+            [
+              "だけ",
+              "only"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Me: confidently boards a train",
+        "bottom": "The train: 新宿行き. I wanted Shibuya."
+      },
+      "newItems": [
+        "ja-t03.v-norikaemasu",
+        "ja-t03.v-tomarimasu",
+        "ja-t03.v-shiteiseki",
+        "ja-t03.v-jiyuuseki",
+        "ja-t03.v-dake",
+        "ja-t03.v-ichimai"
+      ]
+    }
+  ],
+  "factCheck": [
+    "Tokyo to Kyoto by the fastest Shinkansen takes about 2 h 15 min.",
+    "The Shinkansen does not stop at Nara; travellers change at Kyoto."
+  ]
+}

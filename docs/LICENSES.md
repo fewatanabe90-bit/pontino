@@ -2,7 +2,7 @@
 
 ## Pontino's own work
 
-All lesson text, vocabulary decks, jokes, the Pontino mascot, character portraits, scene illustrations and sound effects are original to this project.
+All lesson text, vocabulary decks, jokes, the Pontino mascot, character portraits, scene illustrations and sound effects are original to this project. Sound effects are synthesised in the browser.
 
 ## Photos
 
@@ -24,6 +24,22 @@ The CC BY-SA licences are share-alike: these photo files, including the cropped 
 | ja-deck-signs.17 | [薬局受付 (3137440565).jpg](https://commons.wikimedia.org/wiki/File:%E8%96%AC%E5%B1%80%E5%8F%97%E4%BB%98_(3137440565).jpg) | Osamu Iwasaki from Tokyo, Japan | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 
 To add photos: `node scripts/find-photos.mjs <folder>` searches Commons and keeps only CC0, public-domain, CC BY and CC BY-SA files; look at the contact sheet, then list the chosen ones in `scripts/add-photos.mjs`. `npm test` fails if a photo has no credit.
+
+## Voices
+
+The clips in `public/audio/` are generated with [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) by hexgrad, an open speech model whose weights are under the Apache 2.0 licence. Its model card states it was trained only on permissive or non-copyrighted audio. The clips are synthetic speech, not recordings of people.
+
+| Voice | Used for | Note from the model's voice list |
+|---|---|---|
+| jf_alpha | Japanese narrator, 中村 | |
+| jf_tebukuro | 佐藤 | CC BY source: [Koniwa, tebukurowokaini](https://github.com/koniwa/koniwa/blob/master/source/tnc/tnc__tebukurowokaini.txt) |
+| jm_kumo | レオ | CC BY source: [Koniwa, kumonoito](https://github.com/koniwa/koniwa/blob/master/source/tnc/tnc__kumonoito.txt) |
+| if_sara | Italian narrator, Giulia, Sara | |
+| im_nicola | Marco, Leo | |
+
+Generation tools, used on the author's computer only and not shipped: kokoro and misaki (Apache 2.0), PyTorch (BSD-3-Clause), espeak-ng (GPL-3.0, for Italian pronunciation), fugashi (MIT) with UniDic (BSD / LGPL / GPL, user's choice), libsndfile (LGPL).
+
+To record new lines after adding content: `node scripts/voice-jobs.mjs`, then `.venv/Scripts/python scripts/make-voices.py`, then `node scripts/voice-jobs.mjs --manifest`, then `.venv/Scripts/python scripts/audit-voices.py`, which fails if any Japanese clip would sound different from its written reading. `npm test` fails if a line has no clip.
 
 ## Software
 

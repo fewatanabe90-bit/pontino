@@ -1,8 +1,8 @@
 /**
- * Sound effects, synthesised in the browser. No audio files, so nothing to license or download.
+ * Sound effects, synthesised in the browser, so there is nothing to license or download for them.
  */
 import { app } from './state.svelte';
-import { ttsSupported } from './tts';
+import { ttsSupported, unlockClips } from './tts';
 
 type Ctor = typeof AudioContext;
 let ctx: AudioContext | undefined;
@@ -66,6 +66,7 @@ export const sfx = {
  */
 export function unlockAudio() {
   audio();
+  unlockClips();
   if (ttsSupported()) {
     const u = new SpeechSynthesisUtterance(' ');
     u.volume = 0;

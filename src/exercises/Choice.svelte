@@ -6,6 +6,7 @@
   import type { Exercise } from '../lib/schema';
   import { shuffle } from '../lib/shuffle';
   import { app } from '../lib/state.svelte';
+  import { hasClip } from '../lib/tts';
   import { voices } from '../lib/voices.svelte';
 
   type Ex = Extract<Exercise, { type: 'mcq' | 'gap' }>;
@@ -14,7 +15,7 @@
   const order = $derived(shuffle(ex.options.map((_, i) => i)));
   const wantsListen = $derived(ex.type === 'mcq' && !!ex.listen);
   // Without a voice on this device a listening task would be impossible, so the text is shown.
-  const listen = $derived(wantsListen && voices[app.lang]);
+  const listen = $derived(wantsListen && (voices[app.lang] || hasClip(ex.text ?? '', app.lang)));
   const chosen = $derived(typeof answer === 'number' ? ex.options[answer] : undefined);
   const shown = $derived(ex.type === 'gap' ? ex.text.replace('___', chosen ? `【${chosen}】` : '＿＿') : ex.text);
 </script>

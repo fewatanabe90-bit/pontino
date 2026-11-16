@@ -1,12 +1,12 @@
 [
   { "id": "ja-a1-01", "lang": "ja", "track": "core", "icon": "👋", "tags": ["travel"], "title": "Meeting people", "sub": "は · です · の · も · question words", "file": "ja/A1/unit-01" },
   { "id": "ja-a1-02", "lang": "ja", "track": "core", "icon": "🏟️", "tags": ["sports", "travel"], "title": "Match day", "sub": "ます · を · に · で · へ · と", "file": "ja/A1/unit-02" },
-  { "id": "ja-t01", "lang": "ja", "track": "trip", "icon": "🛬", "tags": ["travel"], "title": "Landing in Japan", "sub": "Airport, IC card, first questions" },
-  { "id": "ja-t02", "lang": "ja", "track": "trip", "icon": "🏪", "tags": ["travel"], "title": "At the konbini", "sub": "The clerk's questions" },
-  { "id": "ja-t03", "lang": "ja", "track": "trip", "icon": "🚉", "tags": ["travel", "geography"], "title": "Catching the right train", "sub": "Tickets, platforms, lines" },
+  { "id": "ja-t01", "lang": "ja", "track": "trip", "icon": "🛬", "tags": ["travel"], "title": "Landing in Japan", "sub": "Finding things · をください · prices in yen", "file": "ja/A1/unit-t01" },
+  { "id": "ja-t02", "lang": "ja", "track": "trip", "icon": "🏪", "tags": ["travel"], "title": "At the konbini", "sub": "The clerk's questions", "file": "ja/A1/unit-t02" },
+  { "id": "ja-t03", "lang": "ja", "track": "trip", "icon": "🚉", "tags": ["travel", "geography"], "title": "Catching the right train", "sub": "Tickets, platforms, lines", "file": "ja/A1/unit-t03" },
   { "id": "ja-a1-03", "lang": "ja", "track": "core", "icon": "📍", "tags": ["travel", "geography"], "title": "Finding things and people", "sub": "あります · います · counters" },
   { "id": "it-r1", "lang": "it", "track": "core", "icon": "🧳", "tags": ["sports", "travel"], "title": "Cos'hai fatto?", "sub": "Talking about your weekend · passato prossimo", "file": "it/A2/unit-r1" },
-  { "id": "it-r2", "lang": "it", "track": "core", "icon": "🏛️", "tags": ["history"], "title": "Com'era?", "sub": "How things used to be · imperfetto" },
-  { "id": "it-r3", "lang": "it", "track": "core", "icon": "🍝", "tags": ["travel"], "title": "Mi piace, mi è piaciuto", "sub": "At the restaurant · pronouns and piacere" },
+  { "id": "it-r2", "lang": "it", "track": "core", "icon": "🏛️", "tags": ["history"], "title": "Com'era?", "sub": "How things used to be · imperfetto", "file": "it/A2/unit-r2" },
+  { "id": "it-r3", "lang": "it", "track": "core", "icon": "🍝", "tags": ["travel"], "title": "Mi piace, mi è piaciuto", "sub": "At the restaurant · pronouns and piacere", "file": "it/A2/unit-r3" },
   { "id": "it-r4", "lang": "it", "track": "core", "icon": "🚆", "tags": ["travel", "geography"], "title": "Al mercato, in treno", "sub": "Shopping and train travel · ci · ne" }
 ]

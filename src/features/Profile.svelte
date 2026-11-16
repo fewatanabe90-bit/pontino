@@ -5,18 +5,18 @@
   import { isStandalone, pwa } from '../lib/pwa.svelte';
   import { app, reloadAfterImport, setSetting, type Furigana, type Mode } from '../lib/state.svelte';
   import { localDay } from '../lib/streak';
-  import { speak, voicesFor } from '../lib/tts';
+  import { SAMPLE } from '../lib/clips';
+  import { speakDevice, voicesFor } from '../lib/tts';
   import { voices } from '../lib/voices.svelte';
 
   let message = $state('');
   const voiceKey = $derived(app.lang === 'ja' ? 'voiceJa' : 'voiceIt');
   // Re-read the list when the device finishes loading its voices.
   const voiceList = $derived((voices[app.lang], voicesFor(app.lang)));
-  const SAMPLE = { ja: 'こんにちは。よろしくお願いします。', it: 'Ciao! Come stai oggi?' };
 
   function chooseVoice(e: Event) {
     setSetting(voiceKey, (e.currentTarget as HTMLSelectElement).value);
-    speak(SAMPLE[app.lang], app.lang, app.rate);
+    speakDevice(SAMPLE[app.lang], app.lang, app.rate);
   }
   let cardCount = $state(0);
   $effect(() => {
@@ -80,7 +80,7 @@
     {@render seg('Sound effects', app.sound ? 'on' : 'off', [['on', 'On'], ['off', 'Off']], (v) => setSetting('sound', v === 'on'))}
     {@render seg('Voice speed', app.rate, [[0.75, 'Slow'], [0.9, 'Natural'], [1, 'Fast']], (v) => setSetting('rate', v))}
     <div class="set-row">
-      <label for="voice">Voice</label>
+      <label for="voice">Backup voice</label>
       {#if voiceList.length}
         <select id="voice" value={app[voiceKey]} onchange={chooseVoice}>
           <option value="">Best available</option>
@@ -91,7 +91,7 @@
       {/if}
     </div>
     <p class="sub" style="margin-top:10px">
-      For a more human voice on iPhone: Settings → Accessibility → Spoken Content → Voices → {app.lang === 'ja' ? 'Japanese' : 'Italian'}, then download an
+      Lessons use recorded voices. This backup voice is only for lines without a recording. To improve it on iPhone: Settings → Accessibility → Spoken Content → Voices → {app.lang === 'ja' ? 'Japanese' : 'Italian'}, then download an
       <b>Enhanced</b> or <b>Premium</b> voice (free, from Apple). Reopen Pontino and it is used automatically.
     </p>
   </div>
@@ -129,11 +129,26 @@
     </ul>
   </details>
 
+  <details class="card">
+    <summary class="eyebrow">Voice credits</summary>
+    <ul class="credits">
+      <li>
+        Voices are generated with <a href="https://huggingface.co/hexgrad/Kokoro-82M" target="_blank" rel="noopener noreferrer">Kokoro-82M</a> by hexgrad,
+        an open speech model under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache 2.0</a> licence. They are
+        computer voices, not recordings of people.
+      </li>
+      <li>
+        Two of its Japanese voices were trained on CC BY recordings from the
+        <a href="https://github.com/koniwa/koniwa" target="_blank" rel="noopener noreferrer">Koniwa</a> project: "tebukuro" (佐藤) and "kumo" (レオ).
+      </li>
+    </ul>
+  </details>
+
   <div class="card">
     <div class="eyebrow">Offline</div>
     <p class="sub" style="margin-top:8px">
       {pwa.offlineReady || isStandalone() ? 'Ready: lessons and reviews work without a connection.' : 'After the first full load, lessons and reviews work without a connection.'}
-      Audio uses the voices on your device.
+      Lesson audio is recorded with the open-source Kokoro speech model (Apache 2.0); see the voice credits below. Lines without a recording use the voices on your device.
     </p>
   </div>
 

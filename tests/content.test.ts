@@ -110,6 +110,23 @@ describe('photos', () => {
   });
 });
 
+describe('flashcards', () => {
+  it('are a real word or phrase, never a pattern with placeholders', () => {
+    for (const f of unitFiles(ROOT)) {
+      const unit = UnitSchema.parse(read(f));
+      for (const i of unit.items) {
+        if (i.kind === 'grammar') {
+          expect(i.id, 'grammar item ids contain ".g-"').toContain('.g-');
+          continue;
+        }
+        expect(i.id).not.toContain('.g-');
+        const plain = i.front.replace(/\{[^}]*\}/g, '');
+        expect(plain, `${i.id} looks like a pattern`).not.toMatch(unit.lang === 'ja' ? /[〜~…+→/A-Za-z]/ : /[〜~+→/]/);
+      }
+    }
+  });
+});
+
 describe('content', () => {
   it('has at least one unit file', () => expect(files.length).toBeGreaterThan(0));
 

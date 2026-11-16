@@ -1,0 +1,740 @@
+{
+  "id": "ja-t01",
+  "lang": "ja",
+  "level": "A1",
+  "track": "trip",
+  "title": "Landing in Japan",
+  "summary": "Your first hour in Japan: finding the exit, the toilet and the train, buying a ticket, and understanding a price.",
+  "canDo": [
+    "I can ask where something is and understand the answer.",
+    "I can ask for a ticket or an item and say how I will pay.",
+    "I can ask a price and understand amounts in yen."
+  ],
+  "grammar": [
+    "〜はどこですか",
+    "ここ・そこ・あそこ",
+    "〜をください",
+    "〜でお願いします",
+    "〜まで",
+    "いくらですか",
+    "Numbers: 百・千・円"
+  ],
+  "items": [
+    {
+      "id": "ja-t01.v-eki",
+      "kind": "vocab",
+      "front": "{駅|えき}",
+      "back": "station"
+    },
+    {
+      "id": "ja-t01.v-toire",
+      "kind": "vocab",
+      "front": "トイレ",
+      "back": "toilet",
+      "note": "お{手洗|てあら}い is the politer word you will see on signs."
+    },
+    {
+      "id": "ja-t01.v-deguchi",
+      "kind": "vocab",
+      "front": "{出口|でぐち}",
+      "back": "exit",
+      "note": "{出|で} = go out, {口|ぐち} = opening."
+    },
+    {
+      "id": "ja-t01.v-iriguchi",
+      "kind": "vocab",
+      "front": "{入口|いりぐち}",
+      "back": "entrance",
+      "note": "{入|い}り = go in."
+    },
+    {
+      "id": "ja-t01.v-koko",
+      "kind": "vocab",
+      "front": "ここ",
+      "back": "here (where I am)"
+    },
+    {
+      "id": "ja-t01.v-soko",
+      "kind": "vocab",
+      "front": "そこ",
+      "back": "there (where you are)"
+    },
+    {
+      "id": "ja-t01.v-asoko",
+      "kind": "vocab",
+      "front": "あそこ",
+      "back": "over there (away from both of us)"
+    },
+    {
+      "id": "ja-t01.v-chika",
+      "kind": "vocab",
+      "front": "{地下|ちか}",
+      "back": "underground, basement level"
+    },
+    {
+      "id": "ja-t01.v-kippu",
+      "kind": "vocab",
+      "front": "{切符|きっぷ}",
+      "back": "ticket (train, bus)",
+      "note": "チケット is used for matches and concerts."
+    },
+    {
+      "id": "ja-t01.p-kore-kudasai",
+      "kind": "phrase",
+      "front": "これをください",
+      "back": "This one, please.",
+      "note": "Point and say it: it works in any shop."
+    },
+    {
+      "id": "ja-t01.p-onegai",
+      "kind": "phrase",
+      "front": "お{願|ねが}いします",
+      "back": "Please (when you ask for something).",
+      "note": "カードでお{願|ねが}いします。 By card, please."
+    },
+    {
+      "id": "ja-t01.v-genkin",
+      "kind": "vocab",
+      "front": "{現金|げんきん}",
+      "back": "cash"
+    },
+    {
+      "id": "ja-t01.v-douzo",
+      "kind": "vocab",
+      "front": "どうぞ",
+      "back": "Here you are. / Go ahead."
+    },
+    {
+      "id": "ja-t01.g-made",
+      "kind": "grammar",
+      "front": "{東京|とうきょう}まで",
+      "back": "まで = as far as, up to. A ticket \"to Tokyo\" is 東京までの切符."
+    },
+    {
+      "id": "ja-t01.p-ikura",
+      "kind": "phrase",
+      "front": "いくらですか",
+      "back": "How much is it?"
+    },
+    {
+      "id": "ja-t01.v-en",
+      "kind": "vocab",
+      "front": "{円|えん}",
+      "back": "yen"
+    },
+    {
+      "id": "ja-t01.v-hyaku",
+      "kind": "vocab",
+      "front": "{百|ひゃく}",
+      "back": "one hundred",
+      "note": "{三百|さんびゃく} 300, {六百|ろっぴゃく} 600, {八百|はっぴゃく} 800."
+    },
+    {
+      "id": "ja-t01.v-sen",
+      "kind": "vocab",
+      "front": "{千|せん}",
+      "back": "one thousand",
+      "note": "{三千|さんぜん} 3,000, {八千|はっせん} 8,000."
+    },
+    {
+      "id": "ja-t01.v-mizu",
+      "kind": "vocab",
+      "front": "{水|みず}",
+      "back": "water"
+    },
+    {
+      "id": "ja-t01.v-onigiri",
+      "kind": "vocab",
+      "front": "おにぎり",
+      "back": "rice ball"
+    },
+    {
+      "id": "ja-t01.p-zenbude",
+      "kind": "phrase",
+      "front": "{全部|ぜんぶ}で",
+      "back": "in total, altogether"
+    },
+    {
+      "id": "ja-t01.v-okaeshi",
+      "kind": "vocab",
+      "front": "お{返|かえ}し",
+      "back": "your change (said by the clerk)"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-t01.l1",
+      "title": "Where is it? どこですか",
+      "canDo": "I can ask where something is and follow \"here, there, over there\".",
+      "intro": {
+        "art": "🛬🧳🚻",
+        "scene": "Arrivals hall. Leo has his bag and needs two things: a toilet and the train.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、{電車|でんしゃ}の{駅|えき}{は|wa}どこですか。",
+            "meaning": "Excuse me, where is the train station?",
+            "politeness": "polite"
+          },
+          {
+            "who": "係員",
+            "text": "{駅|えき}{は|wa}{地下|ちか}です。あそこのエスカレーターです。",
+            "meaning": "The station is underground. It's that escalator over there.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "トイレ{は|wa}どこですか。",
+            "meaning": "Where is the toilet?",
+            "politeness": "polite"
+          },
+          {
+            "who": "係員",
+            "text": "トイレ{は|wa}そこです。",
+            "meaning": "The toilet is right there, next to you.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "ありがとうございます。",
+            "meaning": "Thank you.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜{は|wa}どこですか",
+            "body": "Name the thing, add {は|wa}どこですか. It is the single most useful question of the trip: {出口|でぐち}{は|wa}どこですか, トイレ{は|wa}どこですか."
+          },
+          {
+            "title": "ここ・そこ・あそこ",
+            "body": "The same three zones as これ・それ・あれ, but for places: ここ here by me, そこ there by you, あそこ over there, away from both of us. People usually point as they say it."
+          },
+          {
+            "title": "Reading the two key signs",
+            "body": "{出口|でぐち} is the exit and {入口|いりぐち} is the entrance. {口|くち} means \"mouth\": the mouth you go out of, the mouth you go into."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t01.l1.e1",
+          "type": "mcq",
+          "prompt": "Listen. What is Leo looking for?",
+          "text": "トイレ{は|wa}どこですか。",
+          "listen": true,
+          "options": [
+            "The toilet",
+            "The exit",
+            "The station"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{出口|でぐち}{は|wa}___ですか。",
+          "meaning": "Where is the exit?",
+          "options": [
+            "どこ",
+            "だれ",
+            "{何|なん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l1.e3",
+          "type": "tiles",
+          "prompt": "Build: \"Excuse me, where is the station?\"",
+          "meaning": "Excuse me, where is the station?",
+          "tiles": [
+            "すみません、",
+            "{駅|えき}",
+            "{は|wa}",
+            "どこ",
+            "ですか",
+            "の",
+            "を"
+          ],
+          "answer": "すみません、{駅|えき}{は|wa}どこですか",
+          "alt": []
+        },
+        {
+          "id": "ja-t01.l1.e4",
+          "type": "mcq",
+          "prompt": "The staff member points to a spot far from both of you. They say:",
+          "options": [
+            "あそこです。",
+            "ここです。",
+            "そこです。"
+          ],
+          "answer": 0,
+          "explain": "あそこ: away from the speaker and the listener."
+        },
+        {
+          "id": "ja-t01.l1.e5",
+          "type": "mcq",
+          "prompt": "You see this on a sign: 入口. It is the…",
+          "options": [
+            "entrance",
+            "exit",
+            "toilet"
+          ],
+          "answer": 0,
+          "explain": "{入口|いりぐち}: the way in. {出口|でぐち}: the way out."
+        },
+        {
+          "id": "ja-t01.l1.e6",
+          "type": "type",
+          "prompt": "Type in Japanese: \"Where is the exit?\"",
+          "answer": "{出口|でぐち}{は|wa}どこですか。",
+          "alt": [
+            "すみません、{出口|でぐち}{は|wa}どこですか。"
+          ]
+        },
+        {
+          "id": "ja-t01.l1.e7",
+          "type": "tiles",
+          "prompt": "Answer: \"The toilet is over there.\"",
+          "context": "トイレ{は|wa}どこですか。",
+          "meaning": "The toilet is over there.",
+          "tiles": [
+            "トイレ",
+            "{は|wa}",
+            "あそこ",
+            "です",
+            "どこ",
+            "か"
+          ],
+          "answer": "トイレ{は|wa}あそこです",
+          "alt": [
+            "あそこです"
+          ]
+        },
+        {
+          "id": "ja-t01.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "ここ",
+              "here"
+            ],
+            [
+              "そこ",
+              "there (near you)"
+            ],
+            [
+              "あそこ",
+              "over there"
+            ],
+            [
+              "{出口|でぐち}",
+              "exit"
+            ],
+            [
+              "{入口|いりぐち}",
+              "entrance"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Twelve hours on a plane",
+        "bottom": "First Japanese sentence: トイレはどこですか"
+      },
+      "newItems": [
+        "ja-t01.v-eki",
+        "ja-t01.v-toire",
+        "ja-t01.v-deguchi",
+        "ja-t01.v-iriguchi",
+        "ja-t01.v-koko",
+        "ja-t01.v-soko",
+        "ja-t01.v-asoko",
+        "ja-t01.v-chika"
+      ]
+    },
+    {
+      "id": "ja-t01.l2",
+      "title": "One ticket, please: 〜をください",
+      "canDo": "I can ask for a ticket or an item and say how I want to pay.",
+      "intro": {
+        "place": "station",
+        "scene": "The ticket counter at the airport station.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、{東京駅|とうきょうえき}までの{切符|きっぷ}をください。",
+            "meaning": "Excuse me, a ticket to Tokyo Station, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "はい。{三千円|さんぜんえん}です。",
+            "meaning": "Certainly. That's 3,000 yen.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "カードでお{願|ねが}いします。",
+            "meaning": "By card, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "駅員",
+            "text": "はい、どうぞ。",
+            "meaning": "Here you are.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "ありがとうございます。",
+            "meaning": "Thank you.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜をください",
+            "body": "Thing + をください = \"please give me…\". With no word for the thing, point and say これをください."
+          },
+          {
+            "title": "お{願|ねが}いします",
+            "body": "A softer, all-purpose \"please\". Use it with で for the way you pay: カードでお{願|ねが}いします, {現金|げんきん}でお{願|ねが}いします. It is the same で as {電車|でんしゃ}で, \"by means of\"."
+          },
+          {
+            "title": "〜まで",
+            "body": "まで marks where something ends: {東京駅|とうきょうえき}まで = as far as Tokyo Station. Add の to describe the ticket: {東京駅|とうきょうえき}までの{切符|きっぷ}."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t01.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{切符|きっぷ}___ください。",
+          "meaning": "A ticket, please.",
+          "options": [
+            "を",
+            "{は|wa}",
+            "で"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l2.e2",
+          "type": "mcq",
+          "prompt": "You want to pay by card. What do you say?",
+          "options": [
+            "カードでお{願|ねが}いします。",
+            "カードをください。",
+            "カードですか。"
+          ],
+          "answer": 0,
+          "explain": "カードをください would ask them to hand you a card."
+        },
+        {
+          "id": "ja-t01.l2.e3",
+          "type": "tiles",
+          "prompt": "Build: \"A ticket to Kyoto, please.\"",
+          "meaning": "A ticket to Kyoto, please.",
+          "tiles": [
+            "{京都|きょうと}",
+            "まで",
+            "の",
+            "{切符|きっぷ}",
+            "を",
+            "ください",
+            "で"
+          ],
+          "answer": "{京都|きょうと}までの{切符|きっぷ}をください",
+          "alt": []
+        },
+        {
+          "id": "ja-t01.l2.e4",
+          "type": "mcq",
+          "prompt": "Listen. What is the person asking for?",
+          "text": "これをください。",
+          "listen": true,
+          "options": [
+            "This one, please.",
+            "Where is this?",
+            "What is this?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l2.e5",
+          "type": "mcq",
+          "prompt": "The clerk hands you the ticket and says どうぞ. It means:",
+          "options": [
+            "Here you are.",
+            "Thank you.",
+            "Excuse me."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l2.e6",
+          "type": "type",
+          "prompt": "Type in Japanese: \"A ticket, please.\"",
+          "answer": "{切符|きっぷ}をください。",
+          "alt": [
+            "{切符|きっぷ}をお{願|ねが}いします。",
+            "{切符|きっぷ}ください。"
+          ]
+        },
+        {
+          "id": "ja-t01.l2.e7",
+          "type": "tiles",
+          "prompt": "Reply: \"In cash, please.\"",
+          "context": "{三千円|さんぜんえん}です。",
+          "meaning": "In cash, please.",
+          "tiles": [
+            "{現金|げんきん}",
+            "で",
+            "お{願|ねが}いします",
+            "を",
+            "ください"
+          ],
+          "answer": "{現金|げんきん}でお{願|ねが}いします",
+          "alt": []
+        },
+        {
+          "id": "ja-t01.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{切符|きっぷ}",
+              "ticket"
+            ],
+            [
+              "{現金|げんきん}",
+              "cash"
+            ],
+            [
+              "どうぞ",
+              "here you are"
+            ],
+            [
+              "ください",
+              "please give me"
+            ],
+            [
+              "まで",
+              "as far as"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Vocabulary I studied: 2,000 words",
+        "bottom": "Vocabulary I use: これをください"
+      },
+      "newItems": [
+        "ja-t01.v-kippu",
+        "ja-t01.p-kore-kudasai",
+        "ja-t01.p-onegai",
+        "ja-t01.v-genkin",
+        "ja-t01.v-douzo",
+        "ja-t01.g-made"
+      ]
+    },
+    {
+      "id": "ja-t01.l3",
+      "title": "How much? Numbers and yen",
+      "canDo": "I can ask a price and understand amounts in hundreds and thousands of yen.",
+      "intro": {
+        "art": "💴🍙💧",
+        "scene": "A kiosk on the platform. Leo is thirsty and a little hungry.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、この{水|みず}{は|wa}いくらですか。",
+            "meaning": "Excuse me, how much is this water?",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "{百五十円|ひゃくごじゅうえん}です。",
+            "meaning": "It's 150 yen.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "じゃあ、{水|みず}とおにぎりをください。",
+            "meaning": "Then water and a rice ball, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "{全部|ぜんぶ}で{三百円|さんびゃくえん}です。",
+            "meaning": "That's 300 yen in total.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{千円|せんえん}でお{願|ねが}いします。",
+            "meaning": "Here's 1,000 yen.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "{七百円|ななひゃくえん}のお{返|かえ}しです。ありがとうございます。",
+            "meaning": "700 yen is your change. Thank you.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "One to ten",
+            "body": "いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう. Tens stack up: {五十|ごじゅう} = 50. Then {百|ひゃく} = 100 and {千|せん} = 1,000, with {円|えん} at the end."
+          },
+          {
+            "title": "The numbers that change sound",
+            "body": "{三百|さんびゃく} 300, {六百|ろっぴゃく} 600, {八百|はっぴゃく} 800, {三千|さんぜん} 3,000, {八千|はっせん} 8,000. Everything else is regular. These five are worth learning by ear."
+          },
+          {
+            "title": "AとB",
+            "body": "Between two nouns, と means \"and\": {水|みず}とおにぎり. You met it after a person as \"with\"; the idea is the same, two things together."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t01.l3.e1",
+          "type": "mcq",
+          "prompt": "Listen. How much is it?",
+          "text": "{三百円|さんびゃくえん}です。",
+          "listen": true,
+          "options": [
+            "300 yen",
+            "3,000 yen",
+            "100 yen"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l3.e2",
+          "type": "mcq",
+          "prompt": "How do you read 600 (六百)?",
+          "options": [
+            "ろっぴゃく",
+            "ろくひゃく",
+            "ろくびゃく"
+          ],
+          "answer": 0,
+          "explain": "One of the five that change: ろっぴゃく."
+        },
+        {
+          "id": "ja-t01.l3.e3",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "この{水|みず}{は|wa}___ですか。",
+          "meaning": "How much is this water?",
+          "options": [
+            "いくら",
+            "どこ",
+            "だれ"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"Water and a rice ball, please.\"",
+          "meaning": "Water and a rice ball, please.",
+          "tiles": [
+            "{水|みず}",
+            "と",
+            "おにぎり",
+            "を",
+            "ください",
+            "で",
+            "{は|wa}"
+          ],
+          "answer": "{水|みず}とおにぎりをください",
+          "alt": [
+            "おにぎりと{水|みず}をください"
+          ]
+        },
+        {
+          "id": "ja-t01.l3.e5",
+          "type": "mcq",
+          "prompt": "The total is 850 yen. The clerk says:",
+          "options": [
+            "{八百五十円|はっぴゃくごじゅうえん}です。",
+            "{八千五百円|はっせんごひゃくえん}です。",
+            "{八十五円|はちじゅうごえん}です。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l3.e6",
+          "type": "type",
+          "prompt": "Ask in Japanese: \"How much is it?\"",
+          "answer": "いくらですか。",
+          "alt": [
+            "これ{は|wa}いくらですか。"
+          ]
+        },
+        {
+          "id": "ja-t01.l3.e7",
+          "type": "type",
+          "prompt": "Type what you hear.",
+          "text": "{千円|せんえん}です。",
+          "listen": true,
+          "answer": "{千円|せんえん}です。",
+          "alt": []
+        },
+        {
+          "id": "ja-t01.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{百|ひゃく}",
+              "100"
+            ],
+            [
+              "{千|せん}",
+              "1,000"
+            ],
+            [
+              "{三百|さんびゃく}",
+              "300"
+            ],
+            [
+              "{八百|はっぴゃく}",
+              "800"
+            ],
+            [
+              "{三千|さんぜん}",
+              "3,000"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "300: さんびゃく. 600: ろっぴゃく. 800: はっぴゃく.",
+        "bottom": "Japanese numbers: regular, except when you are paying"
+      },
+      "newItems": [
+        "ja-t01.p-ikura",
+        "ja-t01.v-en",
+        "ja-t01.v-hyaku",
+        "ja-t01.v-sen",
+        "ja-t01.v-mizu",
+        "ja-t01.v-onigiri",
+        "ja-t01.p-zenbude",
+        "ja-t01.v-okaeshi"
+      ]
+    }
+  ],
+  "factCheck": [
+    "Prices in the dialogues are invented but realistic for 2026."
+  ]
+}

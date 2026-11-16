@@ -1,0 +1,777 @@
+{
+  "id": "it-r3",
+  "lang": "it",
+  "level": "A2",
+  "track": "core",
+  "title": "Mi piace, mi è piaciuto",
+  "summary": "Dinner in a Roman trattoria: saying what you like, ordering without repeating every noun, and telling the waiter how it was.",
+  "canDo": [
+    "I can say what I like and do not like, about one thing or several.",
+    "I can order and refer back to dishes with lo, la, li, le.",
+    "I can say how I liked a meal and ask for the bill."
+  ],
+  "grammar": [
+    "piacere: mi piace / mi piacciono",
+    "Direct pronouns: lo, la, li, le",
+    "piacere in the passato prossimo (with essere)"
+  ],
+  "items": [
+    {
+      "id": "it-r3.g-piacere",
+      "kind": "grammar",
+      "front": "mi piace / mi piacciono",
+      "back": "Piacere agrees with the thing liked, not with the person.",
+      "pt": "Think \"me agrada / me agradam\", not \"eu gosto de\"."
+    },
+    {
+      "id": "it-r3.p-mipiace",
+      "kind": "phrase",
+      "front": "mi piace",
+      "back": "I like it (one thing, or an activity)",
+      "note": "Mi piace la pizza. Mi piace viaggiare.",
+      "pt": "No \"di\": never \"mi piace di\"."
+    },
+    {
+      "id": "it-r3.p-mipiacciono",
+      "kind": "phrase",
+      "front": "mi piacciono",
+      "back": "I like them (several things)",
+      "note": "Mi piacciono i carciofi."
+    },
+    {
+      "id": "it-r3.p-tipiace",
+      "kind": "phrase",
+      "front": "Ti piace?",
+      "back": "Do you like it?"
+    },
+    {
+      "id": "it-r3.v-soprattutto",
+      "kind": "vocab",
+      "front": "soprattutto",
+      "back": "above all, especially",
+      "pt": "PT sobretudo."
+    },
+    {
+      "id": "it-r3.v-carciofo",
+      "kind": "vocab",
+      "front": "il carciofo",
+      "back": "artichoke",
+      "pt": "PT alcachofra."
+    },
+    {
+      "id": "it-r3.v-pesante",
+      "kind": "vocab",
+      "front": "pesante",
+      "back": "heavy",
+      "pt": "PT pesado."
+    },
+    {
+      "id": "it-r3.v-piatto",
+      "kind": "vocab",
+      "front": "il piatto",
+      "back": "dish; plate",
+      "pt": "PT prato."
+    },
+    {
+      "id": "it-r3.v-certo",
+      "kind": "vocab",
+      "front": "certo",
+      "back": "of course",
+      "pt": "PT claro."
+    },
+    {
+      "id": "it-r3.g-diretti",
+      "kind": "grammar",
+      "front": "lo, la, li, le",
+      "back": "Direct pronouns replace a noun already mentioned and go before the verb: la prendo.",
+      "pt": "Spoken PT says \"eu pego ela\" or drops it. Italian needs the pronoun."
+    },
+    {
+      "id": "it-r3.v-ordinare",
+      "kind": "vocab",
+      "front": "ordinare",
+      "back": "to order",
+      "pt": "PT pedir. \"Chiedere\" is to ask."
+    },
+    {
+      "id": "it-r3.p-prendo",
+      "kind": "phrase",
+      "front": "Io prendo la carbonara",
+      "back": "I'll have the carbonara.",
+      "note": "Prendere is the normal verb for ordering."
+    },
+    {
+      "id": "it-r3.v-dividere",
+      "kind": "vocab",
+      "front": "dividere",
+      "back": "to share, to split",
+      "pt": "PT dividir."
+    },
+    {
+      "id": "it-r3.v-consigliare",
+      "kind": "vocab",
+      "front": "consigliare",
+      "back": "to recommend, to advise",
+      "note": "Cosa mi consiglia?",
+      "pt": "PT recomendar, aconselhar."
+    },
+    {
+      "id": "it-r3.p-vinodellacasa",
+      "kind": "phrase",
+      "front": "il vino della casa",
+      "back": "the house wine"
+    },
+    {
+      "id": "it-r3.v-scegliere",
+      "kind": "vocab",
+      "front": "scegliere",
+      "back": "to choose",
+      "note": "scelgo, scegli, sceglie.",
+      "pt": "PT escolher."
+    },
+    {
+      "id": "it-r3.v-conoscere",
+      "kind": "vocab",
+      "front": "conoscere",
+      "back": "to know (a person, a place, a thing)",
+      "note": "\"Sapere\" is for facts.",
+      "pt": "PT conhecer."
+    },
+    {
+      "id": "it-r3.p-anchio",
+      "kind": "phrase",
+      "front": "anch'io",
+      "back": "me too",
+      "pt": "PT eu também."
+    },
+    {
+      "id": "it-r3.p-mipiaciuto",
+      "kind": "phrase",
+      "front": "mi è piaciuto",
+      "back": "I liked it",
+      "note": "It agrees with the thing: piaciuta, piaciuti, piaciute.",
+      "pt": "PT gostei. Never \"ho piaciuto\"."
+    },
+    {
+      "id": "it-r3.v-dolce",
+      "kind": "vocab",
+      "front": "il dolce",
+      "back": "dessert",
+      "note": "\"Dolce\" is also the adjective \"sweet\".",
+      "pt": "PT sobremesa."
+    },
+    {
+      "id": "it-r3.p-sonopieno",
+      "kind": "phrase",
+      "front": "sono pieno",
+      "back": "I'm full",
+      "note": "A woman says: sono piena.",
+      "pt": "PT estou cheio, satisfeito."
+    },
+    {
+      "id": "it-r3.p-ilconto",
+      "kind": "phrase",
+      "front": "Ci porta il conto, per favore?",
+      "back": "Could you bring us the bill, please?"
+    },
+    {
+      "id": "it-r3.v-moltissimo",
+      "kind": "vocab",
+      "front": "moltissimo",
+      "back": "very much, a lot"
+    },
+    {
+      "id": "it-r3.p-tuttobene",
+      "kind": "phrase",
+      "front": "Tutto bene?",
+      "back": "Is everything all right?"
+    },
+    {
+      "id": "it-r3.v-buonissimo",
+      "kind": "vocab",
+      "front": "buonissimo",
+      "back": "really good, delicious"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "it-r3.l1",
+      "title": "Ti piace la carbonara?",
+      "canDo": "I can say what I like and do not like.",
+      "intro": {
+        "place": "cafe",
+        "scene": "Friday evening in a trattoria in Trastevere. Giulia and Leo are reading the menu.",
+        "lines": [
+          {
+            "who": "Giulia",
+            "text": "Ti piace la cucina romana?",
+            "meaning": "Do you like Roman food?"
+          },
+          {
+            "who": "Leo",
+            "text": "Sì, mi piace molto! Mi piacciono soprattutto i carciofi.",
+            "meaning": "Yes, I like it a lot! I especially like artichokes."
+          },
+          {
+            "who": "Giulia",
+            "text": "Allora prendiamo i carciofi alla giudia. E la carbonara, ti piace?",
+            "meaning": "Then let's have the fried artichokes. And carbonara, do you like it?"
+          },
+          {
+            "who": "Leo",
+            "text": "Certo! A te non piace?",
+            "meaning": "Of course! Don't you?"
+          },
+          {
+            "who": "Giulia",
+            "text": "A me piace, ma non mi piacciono i piatti troppo pesanti.",
+            "meaning": "I do, but I don't like dishes that are too heavy."
+          },
+          {
+            "who": "Leo",
+            "text": "Capito. Per me la carbonara, grazie!",
+            "meaning": "Got it. Carbonara for me, thanks!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Piacere works backwards",
+            "body": "The thing you like is the subject, and you are the one it pleases. One thing: mi piace la pizza. Several: mi piacciono i carciofi. An activity: mi piace viaggiare."
+          },
+          {
+            "title": "A me, a te",
+            "body": "Mi and ti are the normal forms. \"A me\" and \"a te\" add emphasis or contrast: a me piace, a te no?"
+          },
+          {
+            "title": "🇧🇷 PT tip: forget \"gostar de\"",
+            "body": "\"Eu gosto de pizza\" tempts you into *mi piace di pizza or *io piaccio la pizza. There is no \"di\", and \"io piaccio\" means \"people like me\". Think of \"me agrada / me agradam\": the verb follows the thing."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r3.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Mi ___ la pizza.",
+          "meaning": "I like pizza.",
+          "options": [
+            "piace",
+            "piacciono",
+            "piaccio"
+          ],
+          "answer": 0,
+          "explain": "One thing: piace."
+        },
+        {
+          "id": "it-r3.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Mi ___ gli spaghetti.",
+          "meaning": "I like spaghetti.",
+          "options": [
+            "piacciono",
+            "piace",
+            "piacere"
+          ],
+          "answer": 0,
+          "explain": "Gli spaghetti is plural: piacciono."
+        },
+        {
+          "id": "it-r3.l1.e3",
+          "type": "mcq",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Mi piace viaggiare.",
+            "Mi piace di viaggiare.",
+            "Io piaccio viaggiare."
+          ],
+          "answer": 0,
+          "explain": "Piacere + infinitive, with no \"di\"."
+        },
+        {
+          "id": "it-r3.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I don't like heavy dishes.\"",
+          "meaning": "I don't like heavy dishes.",
+          "tiles": [
+            "Non",
+            "mi",
+            "piacciono",
+            "i",
+            "piatti",
+            "pesanti",
+            "piace",
+            "di"
+          ],
+          "answer": "Non mi piacciono i piatti pesanti",
+          "alt": []
+        },
+        {
+          "id": "it-r3.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Giulia asking?",
+          "text": "Ti piace la cucina romana?",
+          "listen": true,
+          "options": [
+            "Do you like Roman food?",
+            "I like Roman food.",
+            "Does she like Roman food?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l1.e6",
+          "type": "mcq",
+          "prompt": "\"Io piaccio\" really means:",
+          "options": [
+            "People like me",
+            "I like",
+            "I would like"
+          ],
+          "answer": 0,
+          "explain": "The subject is the one who is liked."
+        },
+        {
+          "id": "it-r3.l1.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu gosto muito de carbonara.\"",
+          "answer": "Mi piace molto la carbonara.",
+          "alt": [
+            "La carbonara mi piace molto.",
+            "A me piace molto la carbonara.",
+            "Mi piace tanto la carbonara.",
+            "Mi piace moltissimo la carbonara."
+          ]
+        },
+        {
+          "id": "it-r3.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "mi piace",
+              "I like it"
+            ],
+            [
+              "ti piace",
+              "you like it"
+            ],
+            [
+              "mi piacciono",
+              "I like them"
+            ],
+            [
+              "non mi piace",
+              "I don't like it"
+            ],
+            [
+              "a me",
+              "to me (emphasis)"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "PT: eu gosto de pizza",
+        "bottom": "IT: the pizza pleases me. The pizza is in charge."
+      },
+      "newItems": [
+        "it-r3.g-piacere",
+        "it-r3.p-mipiace",
+        "it-r3.p-mipiacciono",
+        "it-r3.p-tipiace",
+        "it-r3.v-soprattutto",
+        "it-r3.v-carciofo",
+        "it-r3.v-pesante",
+        "it-r3.v-piatto",
+        "it-r3.v-certo"
+      ]
+    },
+    {
+      "id": "it-r3.l2",
+      "title": "La prendo anch'io",
+      "canDo": "I can order and refer back to food and drink with lo, la, li, le.",
+      "intro": {
+        "place": "cafe",
+        "scene": "The waiter arrives with his notepad.",
+        "lines": [
+          {
+            "who": "Cameriere",
+            "text": "Buonasera. Volete ordinare?",
+            "meaning": "Good evening. Would you like to order?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Sì. Io prendo la carbonara.",
+            "meaning": "Yes. I'll have the carbonara."
+          },
+          {
+            "who": "Leo",
+            "text": "Anch'io la prendo. E i carciofi, li dividiamo?",
+            "meaning": "I'll have it too. And the artichokes, shall we share them?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Sì, li prendiamo in due. E il vino?",
+            "meaning": "Yes, we'll have them between the two of us. And the wine?"
+          },
+          {
+            "who": "Leo",
+            "text": "Lo scegli tu. Io non lo conosco bene.",
+            "meaning": "You choose it. I don't know it well."
+          },
+          {
+            "who": "Cameriere",
+            "text": "Vi consiglio il rosso della casa. Lo porto subito.",
+            "meaning": "I recommend the house red. I'll bring it right away."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Lo, la, li, le",
+            "body": "They stand in for a noun you have just mentioned: lo (il vino), la (la carbonara), li (i carciofi), le (le lasagne). They go before the verb: la prendo, li dividiamo, non lo conosco."
+          },
+          {
+            "title": "Why Italians use them all the time",
+            "body": "Repeating the noun sounds heavy, and leaving the object out sounds unfinished. \"Prendo\" alone begs the question \"prendi cosa?\"."
+          },
+          {
+            "title": "🇧🇷 PT tip: no \"ela\", no gap",
+            "body": "Spoken Brazilian Portuguese says \"eu pego ela\" or just \"eu conheço\". Italian accepts neither: not *prendo lei for a dish, and not a bare \"conosco\". Use lo, la, li, le. Also remember \"subito\" is \"right away\", not PT \"súbito\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r3.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "La carbonara? ___ prendo anch'io.",
+          "meaning": "The carbonara? I'll have it too.",
+          "options": [
+            "La",
+            "Lo",
+            "Li"
+          ],
+          "answer": 0,
+          "explain": "La carbonara is feminine singular."
+        },
+        {
+          "id": "it-r3.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "I carciofi? ___ dividiamo.",
+          "meaning": "The artichokes? We'll share them.",
+          "options": [
+            "Li",
+            "Le",
+            "Lo"
+          ],
+          "answer": 0,
+          "explain": "I carciofi: masculine plural."
+        },
+        {
+          "id": "it-r3.l2.e3",
+          "type": "mcq",
+          "prompt": "Leo wants Giulia to choose the wine. He says:",
+          "options": [
+            "Lo scegli tu.",
+            "Scegli lui tu.",
+            "Tu scegli esso."
+          ],
+          "answer": 0,
+          "explain": "Il vino → lo, before the verb."
+        },
+        {
+          "id": "it-r3.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I don't know it well.\" (the wine)",
+          "meaning": "I don't know it well.",
+          "tiles": [
+            "Non",
+            "lo",
+            "conosco",
+            "bene",
+            "la",
+            "lui"
+          ],
+          "answer": "Non lo conosco bene",
+          "alt": []
+        },
+        {
+          "id": "it-r3.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is the waiter asking?",
+          "text": "Volete ordinare?",
+          "listen": true,
+          "options": [
+            "Would you like to order?",
+            "Have you ordered?",
+            "Would you like the bill?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l2.e6",
+          "type": "mcq",
+          "prompt": "\"Le lasagne?\" Which answer is right?",
+          "options": [
+            "Le prendo io.",
+            "Li prendo io.",
+            "La prendo io."
+          ],
+          "answer": 0,
+          "explain": "Le lasagne: feminine plural."
+        },
+        {
+          "id": "it-r3.l2.e7",
+          "type": "type",
+          "prompt": "The waiter is talking about the wine. Translate from Portuguese: \"Eu trago já.\"",
+          "answer": "Lo porto subito.",
+          "alt": [
+            "Io lo porto subito.",
+            "Lo porto subito io.",
+            "Lo porto adesso."
+          ]
+        },
+        {
+          "id": "it-r3.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "lo",
+              "it (il vino)"
+            ],
+            [
+              "la",
+              "it (la pizza)"
+            ],
+            [
+              "li",
+              "them (i carciofi)"
+            ],
+            [
+              "le",
+              "them (le lasagne)"
+            ],
+            [
+              "anch'io",
+              "me too"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"I carciofi, li dividiamo?\"",
+        "bottom": "Narrator: they did not divide them equally."
+      },
+      "newItems": [
+        "it-r3.g-diretti",
+        "it-r3.v-ordinare",
+        "it-r3.p-prendo",
+        "it-r3.v-dividere",
+        "it-r3.v-consigliare",
+        "it-r3.p-vinodellacasa",
+        "it-r3.v-scegliere",
+        "it-r3.v-conoscere",
+        "it-r3.p-anchio"
+      ]
+    },
+    {
+      "id": "it-r3.l3",
+      "title": "Mi è piaciuta moltissimo",
+      "canDo": "I can say how I liked the meal and ask for the bill.",
+      "intro": {
+        "place": "cafe",
+        "scene": "The plates are empty. The waiter comes back.",
+        "lines": [
+          {
+            "who": "Cameriere",
+            "text": "Tutto bene? Vi è piaciuta la carbonara?",
+            "meaning": "Everything all right? Did you like the carbonara?"
+          },
+          {
+            "who": "Leo",
+            "text": "Mi è piaciuta moltissimo! Era squisita.",
+            "meaning": "I liked it very much! It was delicious."
+          },
+          {
+            "who": "Giulia",
+            "text": "E i carciofi ci sono piaciuti tanto.",
+            "meaning": "And we liked the artichokes a lot."
+          },
+          {
+            "who": "Cameriere",
+            "text": "Grazie! Volete un dolce?",
+            "meaning": "Thank you! Would you like a dessert?"
+          },
+          {
+            "who": "Leo",
+            "text": "No, grazie, sono pieno. Ci porta il conto, per favore?",
+            "meaning": "No, thanks, I'm full. Could you bring us the bill, please?"
+          },
+          {
+            "who": "Cameriere",
+            "text": "Certo, lo porto subito.",
+            "meaning": "Of course, I'll bring it right away."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Piacere in the past",
+            "body": "It takes essere, and the participle agrees with the thing you liked: mi è piaciuto il vino, mi è piaciuta la carbonara, mi sono piaciuti i carciofi, mi sono piaciute le lasagne."
+          },
+          {
+            "title": "Era squisita",
+            "body": "Describing how the food was is background, so it is imperfetto: era buonissima, era squisita. Saying you liked it is the event: mi è piaciuta."
+          },
+          {
+            "title": "🇧🇷 PT tip: gostei",
+            "body": "\"Eu gostei da carbonara\" is not *ho piaciuto la carbonara. The carbonara is the subject: mi è piaciuta. And a warning you already know: \"squisito\" is delicious. PT \"esquisito\" is \"strano\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r3.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Mi è ___ la carbonara.",
+          "meaning": "I liked the carbonara.",
+          "options": [
+            "piaciuta",
+            "piaciuto",
+            "piaciuti"
+          ],
+          "answer": 0,
+          "explain": "La carbonara: feminine singular."
+        },
+        {
+          "id": "it-r3.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Mi ___ piaciuti i carciofi.",
+          "meaning": "I liked the artichokes.",
+          "options": [
+            "sono",
+            "è",
+            "ho"
+          ],
+          "answer": 0,
+          "explain": "Plural subject, and piacere takes essere."
+        },
+        {
+          "id": "it-r3.l3.e3",
+          "type": "mcq",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Mi è piaciuto il vino.",
+            "Ho piaciuto il vino.",
+            "Mi ha piaciuto il vino."
+          ],
+          "answer": 0,
+          "explain": "Piacere always takes essere."
+        },
+        {
+          "id": "it-r3.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"Could you bring us the bill, please?\"",
+          "meaning": "Could you bring us the bill, please?",
+          "tiles": [
+            "Ci",
+            "porta",
+            "il",
+            "conto",
+            "per favore",
+            "la",
+            "porto"
+          ],
+          "answer": "Ci porta il conto per favore",
+          "alt": []
+        },
+        {
+          "id": "it-r3.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is the waiter asking?",
+          "text": "Vi è piaciuta la carbonara?",
+          "listen": true,
+          "options": [
+            "Did you like the carbonara?",
+            "Do you like carbonara?",
+            "Would you like the carbonara?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l3.e6",
+          "type": "mcq",
+          "prompt": "Leo says the carbonara was \"squisita\". He means it was:",
+          "options": [
+            "delicious",
+            "strange",
+            "too salty"
+          ],
+          "answer": 0,
+          "explain": "Squisito = delicious. PT \"esquisito\" is \"strano\"."
+        },
+        {
+          "id": "it-r3.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu gostei muito das lasanhas.\"",
+          "answer": "Mi sono piaciute molto le lasagne.",
+          "alt": [
+            "Le lasagne mi sono piaciute molto.",
+            "Mi sono piaciute moltissimo le lasagne.",
+            "Mi sono piaciute tanto le lasagne.",
+            "A me sono piaciute molto le lasagne."
+          ]
+        },
+        {
+          "id": "it-r3.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "mi è piaciuto",
+              "I liked it (il vino)"
+            ],
+            [
+              "mi è piaciuta",
+              "I liked it (la pizza)"
+            ],
+            [
+              "mi sono piaciuti",
+              "I liked them (i carciofi)"
+            ],
+            [
+              "mi sono piaciute",
+              "I liked them (le lasagne)"
+            ],
+            [
+              "il conto",
+              "the bill"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Volete un dolce?\" \"No, sono pieno.\"",
+        "bottom": "Also me: \"…che dolci avete?\""
+      },
+      "newItems": [
+        "it-r3.p-mipiaciuto",
+        "it-r3.v-dolce",
+        "it-r3.p-sonopieno",
+        "it-r3.p-ilconto",
+        "it-r3.v-moltissimo",
+        "it-r3.p-tuttobene",
+        "it-r3.v-buonissimo"
+      ]
+    }
+  ],
+  "factCheck": [
+    "Carciofi alla giudia and carbonara are traditional Roman dishes."
+  ]
+}

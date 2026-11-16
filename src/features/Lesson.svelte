@@ -155,6 +155,8 @@
     phase = 'ex';
   }
 
+  let sayTimer: ReturnType<typeof setTimeout> | undefined;
+
   function feedback(ok: boolean, sayAfter?: string) {
     if (!unit) return;
     line = quip(unit.lang, ok);
@@ -162,7 +164,8 @@
     else sfx.wrong();
     const lang = unit.lang;
     // Let the sound effect finish before the model sentence is spoken.
-    if (sayAfter && app.autoplay) setTimeout(() => result && speak(sayAfter, lang, app.rate), 450);
+    clearTimeout(sayTimer);
+    if (sayAfter && app.autoplay) sayTimer = setTimeout(() => result && speak(sayAfter, lang, app.rate), 450);
   }
 
   function check() {
@@ -184,6 +187,8 @@
 
   async function next() {
     if (!result || !unit || !lesson) return;
+    // Never let the last answer's audio start over the next exercise.
+    clearTimeout(sayTimer);
     stopSpeaking();
     queue.shift();
     result = null;
@@ -243,7 +248,7 @@
               <div class="tl"><Ruby text={l.text} /></div>
               <div class="sub">{l.meaning}</div>
             </div>
-            <Speak text={l.text} />
+            <Speak text={l.text} who={l.who} />
           </div>
         </div>
       </div>
