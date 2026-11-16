@@ -102,6 +102,25 @@ export const UnitSchema = z.object({
   factCheck: z.array(z.string()).optional(),
 });
 
+export const DeckSchema = z.object({
+  id: z.string().min(1),
+  lang: LangSchema,
+  icon: z.string(),
+  title: z.string().min(1),
+  description: z.string(),
+  cards: z
+    .array(
+      z.object({
+        id: z.string().min(1),
+        front: z.string().min(1),
+        back: z.string().min(1),
+        note: z.string().optional(),
+        pt: z.string().optional(),
+      }),
+    )
+    .min(5),
+});
+
 export const CatalogSchema = z.array(
   z.object({
     id: z.string(),
@@ -119,4 +138,5 @@ export type Item = z.infer<typeof ItemSchema>;
 export type Exercise = z.infer<typeof ExerciseSchema>;
 export type Lesson = z.infer<typeof LessonSchema>;
 export type Unit = z.infer<typeof UnitSchema>;
+export type Deck = z.infer<typeof DeckSchema>;
 export type Catalog = z.infer<typeof CatalogSchema>;

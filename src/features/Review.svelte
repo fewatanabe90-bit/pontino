@@ -3,6 +3,7 @@
   import Speak from '../components/Speak.svelte';
   import Pontino from '../design/Pontino.svelte';
   import { db } from '../lib/db';
+  import { decks } from '../lib/decks';
   import { rate, Rating, type Grade, type SrsCard } from '../lib/srs';
   import { addXp, app, markPractice, refreshDue } from '../lib/state.svelte';
   import TopBar from './TopBar.svelte';
@@ -21,6 +22,14 @@
   let reviewed = $state(0);
   const due = $derived(app.due[app.lang]);
   const card = $derived(cards[0]);
+
+  const myDecks = $derived(decks.filter((d) => d.lang === app.lang));
+  let learned = $state<Record<string, number>>({});
+  $effect(() => {
+    for (const d of myDecks) {
+      void db.cards.where('itemId').startsWith(`${d.id}.`).count().then((n) => (learned[d.id] = n));
+    }
+  });
 
   async function start() {
     const lang = app.lang;
@@ -98,9 +107,19 @@
         </div>
         <button class="btn" style="margin-top:16px" type="button" disabled={!due} onclick={start}>Start review</button>
       </div>
-      {#if !due}
-        <div class="center"><Pontino mood="happy" bob /><p class="sub">All caught up.</p></div>
-      {/if}
+      <h2 class="h" style="margin-top:6px">Flashcard decks</h2>
+      {#each myDecks as d (d.id)}
+        {@const n = learned[d.id] ?? 0}
+        <a class="card deck" href="#/deck/{d.id}">
+          <span class="ico" aria-hidden="true">{d.icon}</span>
+          <span class="body">
+            <span class="h">{d.title}</span>
+            <span class="sub">{d.description}</span>
+            <span class="bar"><i style="width:{(n / d.cards.length) * 100}%"></i></span>
+            <span class="sub">{n} of {d.cards.length} cards learned</span>
+          </span>
+        </a>
+      {/each}
     {/if}
   </div>
 {/if}
@@ -162,6 +181,40 @@
     justify-content: center;
     gap: 12px;
     text-align: center;
+  }
+  .deck {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 0 var(--line);
+  }
+  .deck:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  .ico {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    background: var(--brand-soft);
+  }
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .body .h {
+    font-size: 17px;
+  }
+  .body .bar {
+    height: 10px;
   }
   .big-ring {
     width: 84px;

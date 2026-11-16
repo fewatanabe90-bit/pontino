@@ -1,5 +1,6 @@
 <script lang="ts">
   import Pontino from './design/Pontino.svelte';
+  import Flashcards from './features/Flashcards.svelte';
   import Home from './features/Home.svelte';
   import Learn from './features/Learn.svelte';
   import Lesson from './features/Lesson.svelte';
@@ -46,6 +47,8 @@
   <div class="screen" style="align-items:center;justify-content:center"><Pontino bob /></div>
 {:else if page === 'lesson' && route[1] && route[2]}
   {#key route[2]}<Lesson unitId={route[1]} lessonId={route[2]} />{/key}
+{:else if page === 'deck' && route[1]}
+  {#key route[1]}<Flashcards deckId={route[1]} />{/key}
 {:else}
   {#if page === 'learn'}
     <Learn />

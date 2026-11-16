@@ -34,7 +34,8 @@ Then open the address it prints (usually http://localhost:5173).
 - `src/lib/` — logic with no UI: answer checking, normalisation, streak, spaced repetition (FSRS), storage, schemas.
 - `src/exercises/` — one component per exercise family.
 - `src/features/` — screens.
-- `docs/` — plan, curriculum maps, mockups.
+- `content/<lang>/decks/` — vocabulary flashcard decks.
+- `docs/` — plan, curriculum maps, mockups, and the content guide (read it before writing lessons).
 
 ## Your progress
 
@@ -50,7 +51,8 @@ Progress lives only in the browser you use (IndexedDB). Profile → Export saves
 - Original artwork only: character portraits, scene banners built from device emoji, confetti, Pontino one-liners and Pontino "memes". No third-party images.
 - Installable and offline: web app manifest, icons, service worker that caches code, lessons and fonts, an update prompt, and an Add to Home Screen guide on iPhone.
 - Romaji under kana as a reading aid (Profile → Romaji under kana), with furigana over kanji.
-- A GitHub Pages deploy workflow, ready but not yet used.
+- Flashcard decks: flip cards for vocabulary (97 cards in five decks), which join the review queue as you learn them.
+- Deployed to GitHub Pages on every push to main.
 
 ## Not built yet
 

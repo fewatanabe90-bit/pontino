@@ -1,0 +1,102 @@
+{
+  "id": "ja-deck-survival",
+  "lang": "ja",
+  "icon": "🆘",
+  "title": "Survival phrases",
+  "description": "The sentences that get you through a day in Japan. All polite.",
+  "cards": [
+    {
+      "id": "ja-deck-survival.01",
+      "front": "すみません",
+      "back": "Excuse me / Sorry",
+      "note": "Opens almost every conversation with a stranger."
+    },
+    {
+      "id": "ja-deck-survival.02",
+      "front": "ありがとうございます",
+      "back": "Thank you (polite)"
+    },
+    {
+      "id": "ja-deck-survival.03",
+      "front": "お{願|ねが}いします",
+      "back": "Please (when asking for something)"
+    },
+    {
+      "id": "ja-deck-survival.04",
+      "front": "これをください",
+      "back": "This one, please",
+      "note": "Point and say it. Works in any shop."
+    },
+    {
+      "id": "ja-deck-survival.05",
+      "front": "いくらですか",
+      "back": "How much is it?"
+    },
+    {
+      "id": "ja-deck-survival.06",
+      "front": "トイレ{は|wa}どこですか",
+      "back": "Where is the toilet?"
+    },
+    {
+      "id": "ja-deck-survival.07",
+      "front": "{駅|えき}{は|wa}どこですか",
+      "back": "Where is the station?"
+    },
+    {
+      "id": "ja-deck-survival.08",
+      "front": "{英語|えいご}のメニュー{は|wa}ありますか",
+      "back": "Do you have an English menu?"
+    },
+    {
+      "id": "ja-deck-survival.09",
+      "front": "わかりません",
+      "back": "I don't understand"
+    },
+    {
+      "id": "ja-deck-survival.10",
+      "front": "もう{一度|いちど}お{願|ねが}いします",
+      "back": "Once more, please"
+    },
+    {
+      "id": "ja-deck-survival.11",
+      "front": "ゆっくりお{願|ねが}いします",
+      "back": "Slowly, please"
+    },
+    {
+      "id": "ja-deck-survival.12",
+      "front": "{大丈夫|だいじょうぶ}です",
+      "back": "I'm fine / No, thank you",
+      "note": "The polite way to decline a bag, a receipt or a refill."
+    },
+    {
+      "id": "ja-deck-survival.13",
+      "front": "はい、お{願|ねが}いします",
+      "back": "Yes, please"
+    },
+    {
+      "id": "ja-deck-survival.14",
+      "front": "お{会計|かいけい}お{願|ねが}いします",
+      "back": "The bill, please"
+    },
+    {
+      "id": "ja-deck-survival.15",
+      "front": "カード{は|wa}{使|つか}えますか",
+      "back": "Can I pay by card?"
+    },
+    {
+      "id": "ja-deck-survival.16",
+      "front": "{写真|しゃしん}を{撮|と}ってもいいですか",
+      "back": "May I take a photo?"
+    },
+    {
+      "id": "ja-deck-survival.17",
+      "front": "{助|たす}けてください",
+      "back": "Please help me"
+    },
+    {
+      "id": "ja-deck-survival.18",
+      "front": "{日本語|にほんご}が{少|すこ}しわかります",
+      "back": "I understand a little Japanese"
+    }
+  ]
+}

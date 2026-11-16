@@ -1,0 +1,107 @@
+{
+  "id": "ja-deck-food",
+  "lang": "ja",
+  "icon": "🍜",
+  "title": "Food and restaurants",
+  "description": "What is on the menu and what to say at the table.",
+  "cards": [
+    {
+      "id": "ja-deck-food.01",
+      "front": "{水|みず}",
+      "back": "water"
+    },
+    {
+      "id": "ja-deck-food.02",
+      "front": "お{茶|ちゃ}",
+      "back": "tea (green tea by default)"
+    },
+    {
+      "id": "ja-deck-food.03",
+      "front": "ビール",
+      "back": "beer"
+    },
+    {
+      "id": "ja-deck-food.04",
+      "front": "{肉|にく}",
+      "back": "meat"
+    },
+    {
+      "id": "ja-deck-food.05",
+      "front": "{魚|さかな}",
+      "back": "fish"
+    },
+    {
+      "id": "ja-deck-food.06",
+      "front": "{野菜|やさい}",
+      "back": "vegetables"
+    },
+    {
+      "id": "ja-deck-food.07",
+      "front": "ご{飯|はん}",
+      "back": "cooked rice; a meal"
+    },
+    {
+      "id": "ja-deck-food.08",
+      "front": "{卵|たまご}",
+      "back": "egg"
+    },
+    {
+      "id": "ja-deck-food.09",
+      "front": "{辛|から}い",
+      "back": "spicy"
+    },
+    {
+      "id": "ja-deck-food.10",
+      "front": "{甘|あま}い",
+      "back": "sweet"
+    },
+    {
+      "id": "ja-deck-food.11",
+      "front": "おいしい",
+      "back": "delicious"
+    },
+    {
+      "id": "ja-deck-food.12",
+      "front": "{定食|ていしょく}",
+      "back": "set meal",
+      "note": "A main dish with rice, soup and pickles."
+    },
+    {
+      "id": "ja-deck-food.13",
+      "front": "{大盛|おおも}り",
+      "back": "large portion"
+    },
+    {
+      "id": "ja-deck-food.14",
+      "front": "お{箸|はし}",
+      "back": "chopsticks"
+    },
+    {
+      "id": "ja-deck-food.15",
+      "front": "{持|も}ち{帰|かえ}り",
+      "back": "takeaway"
+    },
+    {
+      "id": "ja-deck-food.16",
+      "front": "おすすめ",
+      "back": "recommendation",
+      "note": "おすすめ{は|wa}{何|なん}ですか = What do you recommend?"
+    },
+    {
+      "id": "ja-deck-food.17",
+      "front": "{二人|ふたり}です",
+      "back": "There are two of us",
+      "note": "The answer to {何名様|なんめいさま}ですか at the door."
+    },
+    {
+      "id": "ja-deck-food.18",
+      "front": "いただきます",
+      "back": "Said before eating"
+    },
+    {
+      "id": "ja-deck-food.19",
+      "front": "ごちそうさまでした",
+      "back": "Said after eating; also a thank-you to the staff as you leave"
+    }
+  ]
+}

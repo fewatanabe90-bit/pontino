@@ -7,7 +7,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { canBuild } from '../src/lib/check';
-import { CatalogSchema, UnitSchema, type Unit } from '../src/lib/schema';
+import { CatalogSchema, DeckSchema, UnitSchema, type Unit } from '../src/lib/schema';
 
 const ROOT = join(__dirname, '..', 'content');
 
@@ -60,6 +60,34 @@ export function unitProblems(unit: Unit): string[] {
   for (const id of itemIds) if (!taught.has(id)) problems.push(`item never taught in a lesson: ${id}`);
   return problems;
 }
+
+function deckFiles(dir: string): string[] {
+  return readdirSync(dir).flatMap((name) => {
+    const p = join(dir, name);
+    if (statSync(p).isDirectory()) return deckFiles(p);
+    return /^deck-.*\.json$/.test(name) ? [p] : [];
+  });
+}
+
+describe('decks', () => {
+  const all = deckFiles(ROOT).map((f) => ({ rel: relative(ROOT, f).replace(/\\/g, '/'), deck: DeckSchema.parse(read(f)) }));
+
+  it('exist for both languages', () => {
+    expect(all.some((d) => d.deck.lang === 'ja')).toBe(true);
+    expect(all.some((d) => d.deck.lang === 'it')).toBe(true);
+  });
+
+  it('have unique ids, sit in their language folder, and never repeat a card', () => {
+    expect(new Set(all.map((d) => d.deck.id)).size).toBe(all.length);
+    const cardIds = all.flatMap((d) => d.deck.cards.map((c) => c.id));
+    expect(new Set(cardIds).size).toBe(cardIds.length);
+    for (const { rel, deck } of all) {
+      expect(rel.startsWith(`${deck.lang}/decks/`), rel).toBe(true);
+      expect(deck.cards.every((c) => c.id.startsWith(`${deck.id}.`)), `${deck.id}: card ids must start with the deck id`).toBe(true);
+      expect(new Set(deck.cards.map((c) => c.front)).size, `${deck.id}: repeated front`).toBe(deck.cards.length);
+    }
+  });
+});
 
 describe('content', () => {
   it('has at least one unit file', () => expect(files.length).toBeGreaterThan(0));

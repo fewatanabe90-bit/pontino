@@ -1,0 +1,123 @@
+{
+  "id": "it-deck-viaggio",
+  "lang": "it",
+  "icon": "🚆",
+  "title": "In viaggio",
+  "description": "Trains, hotels and restaurants: the words a trip through Italy runs on.",
+  "cards": [
+    {
+      "id": "it-deck-viaggio.01",
+      "front": "il binario",
+      "back": "platform (track)",
+      "note": "Il treno parte dal binario 3."
+    },
+    {
+      "id": "it-deck-viaggio.02",
+      "front": "il biglietto",
+      "back": "ticket"
+    },
+    {
+      "id": "it-deck-viaggio.03",
+      "front": "andata e ritorno",
+      "back": "return (round trip)",
+      "note": "Un biglietto di andata e ritorno.",
+      "pt": "PT ida e volta."
+    },
+    {
+      "id": "it-deck-viaggio.04",
+      "front": "la coincidenza",
+      "back": "connection (train, flight)",
+      "note": "Ho perso la coincidenza.",
+      "pt": "Not only PT \"coincidência\"."
+    },
+    {
+      "id": "it-deck-viaggio.05",
+      "front": "in ritardo",
+      "back": "late, delayed",
+      "note": "Il treno è in ritardo."
+    },
+    {
+      "id": "it-deck-viaggio.06",
+      "front": "la fermata",
+      "back": "stop (bus, metro)"
+    },
+    {
+      "id": "it-deck-viaggio.07",
+      "front": "lo sciopero",
+      "back": "strike",
+      "note": "A word every traveller in Italy learns."
+    },
+    {
+      "id": "it-deck-viaggio.08",
+      "front": "convalidare",
+      "back": "to validate (a ticket)",
+      "note": "Paper regional tickets are stamped before boarding."
+    },
+    {
+      "id": "it-deck-viaggio.09",
+      "front": "il conto",
+      "back": "the bill",
+      "note": "Il conto, per favore.",
+      "pt": "PT a conta."
+    },
+    {
+      "id": "it-deck-viaggio.10",
+      "front": "la prenotazione",
+      "back": "booking, reservation"
+    },
+    {
+      "id": "it-deck-viaggio.11",
+      "front": "la colazione",
+      "back": "breakfast",
+      "pt": "PT café da manhã."
+    },
+    {
+      "id": "it-deck-viaggio.12",
+      "front": "il coperto",
+      "back": "cover charge",
+      "note": "A per-person charge on many restaurant bills."
+    },
+    {
+      "id": "it-deck-viaggio.13",
+      "front": "l'uscita",
+      "back": "exit",
+      "pt": "PT saída."
+    },
+    {
+      "id": "it-deck-viaggio.14",
+      "front": "la camera doppia",
+      "back": "double room"
+    },
+    {
+      "id": "it-deck-viaggio.15",
+      "front": "a destra / a sinistra",
+      "back": "on the right / on the left"
+    },
+    {
+      "id": "it-deck-viaggio.16",
+      "front": "sempre dritto",
+      "back": "straight on"
+    },
+    {
+      "id": "it-deck-viaggio.17",
+      "front": "Quanto costa?",
+      "back": "How much does it cost?"
+    },
+    {
+      "id": "it-deck-viaggio.18",
+      "front": "Vorrei…",
+      "back": "I would like…",
+      "note": "Vorrei un caffè. Politer than \"voglio\"."
+    },
+    {
+      "id": "it-deck-viaggio.19",
+      "front": "Dov'è il bagno?",
+      "back": "Where is the toilet?"
+    },
+    {
+      "id": "it-deck-viaggio.20",
+      "front": "Posso pagare con la carta?",
+      "back": "Can I pay by card?"
+    }
+  ]
+}

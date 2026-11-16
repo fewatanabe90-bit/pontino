@@ -1,0 +1,150 @@
+{
+  "id": "it-deck-falsi-amici",
+  "lang": "it",
+  "icon": "🎭",
+  "title": "Falsi amici",
+  "description": "Italian words that look Portuguese and mean something else. The Brazilian speaker's minefield.",
+  "cards": [
+    {
+      "id": "it-deck-falsi-amici.01",
+      "front": "squisito",
+      "back": "delicious",
+      "pt": "PT \"esquisito\" = strano."
+    },
+    {
+      "id": "it-deck-falsi-amici.02",
+      "front": "burro",
+      "back": "butter",
+      "pt": "PT \"burro\" = asino."
+    },
+    {
+      "id": "it-deck-falsi-amici.03",
+      "front": "salire",
+      "back": "to go up, to get on",
+      "note": "Salgo sul treno.",
+      "pt": "PT \"sair\" = uscire."
+    },
+    {
+      "id": "it-deck-falsi-amici.04",
+      "front": "guardare",
+      "back": "to look at, to watch",
+      "note": "Guardo la partita.",
+      "pt": "PT \"guardar\" = conservare, mettere via."
+    },
+    {
+      "id": "it-deck-falsi-amici.05",
+      "front": "caldo",
+      "back": "hot",
+      "note": "Fa caldo oggi.",
+      "pt": "PT \"caldo\" = brodo."
+    },
+    {
+      "id": "it-deck-falsi-amici.06",
+      "front": "subito",
+      "back": "immediately, right away",
+      "note": "Arrivo subito!",
+      "pt": "PT \"súbito\" = improvviso."
+    },
+    {
+      "id": "it-deck-falsi-amici.07",
+      "front": "prendere",
+      "back": "to take; to have (food, drink)",
+      "note": "Prendo un caffè.",
+      "pt": "PT \"prender\" = arrestare, legare."
+    },
+    {
+      "id": "it-deck-falsi-amici.08",
+      "front": "morbido",
+      "back": "soft",
+      "pt": "PT \"mórbido\" = morboso."
+    },
+    {
+      "id": "it-deck-falsi-amici.09",
+      "front": "seta",
+      "back": "silk",
+      "pt": "PT \"seta\" = freccia."
+    },
+    {
+      "id": "it-deck-falsi-amici.10",
+      "front": "cena",
+      "back": "dinner",
+      "pt": "PT \"cena\" = scena."
+    },
+    {
+      "id": "it-deck-falsi-amici.11",
+      "front": "camera",
+      "back": "room, bedroom",
+      "note": "Una camera doppia.",
+      "pt": "PT \"câmera\" = macchina fotografica."
+    },
+    {
+      "id": "it-deck-falsi-amici.12",
+      "front": "aceto",
+      "back": "vinegar",
+      "pt": "PT \"aceito\" = accetto."
+    },
+    {
+      "id": "it-deck-falsi-amici.13",
+      "front": "esperto",
+      "back": "expert, experienced",
+      "pt": "PT \"esperto\" = furbo, sveglio."
+    },
+    {
+      "id": "it-deck-falsi-amici.14",
+      "front": "ufficio",
+      "back": "office",
+      "pt": "PT \"ofício\" = mestiere."
+    },
+    {
+      "id": "it-deck-falsi-amici.15",
+      "front": "palestra",
+      "back": "gym",
+      "note": "Vado in palestra.",
+      "pt": "PT \"palestra\" = conferenza."
+    },
+    {
+      "id": "it-deck-falsi-amici.16",
+      "front": "pasta",
+      "back": "pasta; dough",
+      "pt": "PT \"pasta\" is also a folder = cartella."
+    },
+    {
+      "id": "it-deck-falsi-amici.17",
+      "front": "primo",
+      "back": "first",
+      "note": "Il primo piatto.",
+      "pt": "PT \"primo\" = cugino."
+    },
+    {
+      "id": "it-deck-falsi-amici.18",
+      "front": "topo",
+      "back": "mouse",
+      "pt": "PT \"topo\" = cima."
+    },
+    {
+      "id": "it-deck-falsi-amici.19",
+      "front": "tovaglia",
+      "back": "tablecloth",
+      "pt": "PT \"toalha\" = asciugamano."
+    },
+    {
+      "id": "it-deck-falsi-amici.20",
+      "front": "mancia",
+      "back": "tip (for a waiter)",
+      "pt": "PT \"mancha\" = macchia."
+    },
+    {
+      "id": "it-deck-falsi-amici.21",
+      "front": "appena",
+      "back": "just; as soon as",
+      "note": "Sono appena arrivato.",
+      "pt": "PT \"apenas\" = soltanto."
+    },
+    {
+      "id": "it-deck-falsi-amici.22",
+      "front": "intanto",
+      "back": "meanwhile",
+      "pt": "PT \"no entanto\" = tuttavia."
+    }
+  ]
+}

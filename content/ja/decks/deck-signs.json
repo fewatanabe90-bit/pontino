@@ -1,0 +1,103 @@
+{
+  "id": "ja-deck-signs",
+  "lang": "ja",
+  "icon": "🪧",
+  "title": "Signs you will see",
+  "description": "Kanji from stations, shops and streets. Recognise them; you rarely need to write them.",
+  "cards": [
+    {
+      "id": "ja-deck-signs.01",
+      "front": "{入口|いりぐち}",
+      "back": "entrance"
+    },
+    {
+      "id": "ja-deck-signs.02",
+      "front": "{出口|でぐち}",
+      "back": "exit"
+    },
+    {
+      "id": "ja-deck-signs.03",
+      "front": "{駅|えき}",
+      "back": "station"
+    },
+    {
+      "id": "ja-deck-signs.04",
+      "front": "お{手洗|てあら}い",
+      "back": "toilet",
+      "note": "Also written トイレ."
+    },
+    {
+      "id": "ja-deck-signs.05",
+      "front": "{男|おとこ}",
+      "back": "men",
+      "note": "On toilets and baths."
+    },
+    {
+      "id": "ja-deck-signs.06",
+      "front": "{女|おんな}",
+      "back": "women",
+      "note": "On toilets and baths."
+    },
+    {
+      "id": "ja-deck-signs.07",
+      "front": "{営業中|えいぎょうちゅう}",
+      "back": "open for business"
+    },
+    {
+      "id": "ja-deck-signs.08",
+      "front": "{準備中|じゅんびちゅう}",
+      "back": "closed for now (preparing)",
+      "note": "On restaurant doors between lunch and dinner."
+    },
+    {
+      "id": "ja-deck-signs.09",
+      "front": "{禁煙|きんえん}",
+      "back": "no smoking"
+    },
+    {
+      "id": "ja-deck-signs.10",
+      "front": "{非常口|ひじょうぐち}",
+      "back": "emergency exit"
+    },
+    {
+      "id": "ja-deck-signs.11",
+      "front": "{改札|かいさつ}",
+      "back": "ticket gate"
+    },
+    {
+      "id": "ja-deck-signs.12",
+      "front": "{切符|きっぷ}",
+      "back": "ticket"
+    },
+    {
+      "id": "ja-deck-signs.13",
+      "front": "{両替|りょうがえ}",
+      "back": "currency exchange"
+    },
+    {
+      "id": "ja-deck-signs.14",
+      "front": "{免税|めんぜい}",
+      "back": "tax-free"
+    },
+    {
+      "id": "ja-deck-signs.15",
+      "front": "{無料|むりょう}",
+      "back": "free of charge"
+    },
+    {
+      "id": "ja-deck-signs.16",
+      "front": "{立入禁止|たちいりきんし}",
+      "back": "no entry"
+    },
+    {
+      "id": "ja-deck-signs.17",
+      "front": "{受付|うけつけ}",
+      "back": "reception"
+    },
+    {
+      "id": "ja-deck-signs.18",
+      "front": "{案内|あんない}",
+      "back": "information"
+    }
+  ]
+}
