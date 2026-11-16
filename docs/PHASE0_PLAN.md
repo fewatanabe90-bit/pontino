@@ -114,6 +114,8 @@ Not mocked yet: onboarding, placement/diagnostic, phrasebook, Atlas entry, impor
 | 2026-11-16 | **Published:** public repo fewatanabe90-bit/pontino, GitHub Pages via Actions. SPEC.md kept local only. |
 | 2026-11-16 | **Direction:** every sentence must be something you would really say (see CONTENT_GUIDE.md); units are built around situations; interests personalise decks and settings. "Real-life missions" were proposed and **declined**. |
 | 2026-11-16 | **Voices:** still the device's text-to-speech, now choosing the most natural voice, one per speaker, with turn-taking pauses and a 0.9 default speed. Pre-generated neural audio and licensed photos are proposals awaiting a decision. |
+| 2026-11-16 | **Mistakes:** a wrong answer no longer returns inside the lesson; it is stored and practised from Review → Mistakes. Storage gained a `mistakes` table (additive, no data migrated). |
+| 2026-11-16 | **Typing:** Japanese typed answers are hiragana-typable vocabulary only; names and katakana words go in tiles or multiple choice. Enforced by the validator. |
 
 ## 6. Next step once you answer
 

@@ -15,6 +15,17 @@ export interface LessonProgress {
   score?: number;
 }
 
+/** An exercise answered wrong, waiting to be fixed from the Review tab. */
+export interface Mistake {
+  /** Exercise id. */
+  id: string;
+  lang: Lang;
+  unitId: string;
+  lessonId: string;
+  count: number;
+  last: number;
+}
+
 export interface KV {
   key: string;
   value: unknown;
@@ -24,6 +35,7 @@ class PontinoDB extends Dexie {
   kv!: Table<KV, string>;
   cards!: Table<SrsCard, string>;
   lessons!: Table<LessonProgress, string>;
+  mistakes!: Table<Mistake, string>;
 
   constructor() {
     super('pontino');
@@ -32,6 +44,8 @@ class PontinoDB extends Dexie {
       cards: 'id, itemId, [lang+due]',
       lessons: 'id, unitId, lang',
     });
+    // v2 adds a table only; existing data is untouched.
+    this.version(2).stores({ mistakes: 'id, lang' });
   }
 }
 
@@ -46,11 +60,13 @@ export interface Backup {
   kv: KV[];
   cards: SrsCard[];
   lessons: LessonProgress[];
+  /** Absent in backups made before mistakes were tracked. */
+  mistakes?: Mistake[];
 }
 
 export async function exportAll(): Promise<Backup> {
-  const [kv, cards, lessons] = await Promise.all([db.kv.toArray(), db.cards.toArray(), db.lessons.toArray()]);
-  return { format: BACKUP_FORMAT, version: 1, exportedAt: new Date().toISOString(), kv, cards, lessons };
+  const [kv, cards, lessons, mistakes] = await Promise.all([db.kv.toArray(), db.cards.toArray(), db.lessons.toArray(), db.mistakes.toArray()]);
+  return { format: BACKUP_FORMAT, version: 1, exportedAt: new Date().toISOString(), kv, cards, lessons, mistakes };
 }
 
 /** Parse a backup, restoring the dates JSON turned into strings. Throws if it is not a Pontino backup. */
@@ -80,8 +96,8 @@ export function parseBackup(data: unknown): Backup {
 /** Replace everything with the backup. Nothing is touched if the file is invalid. */
 export async function importAll(data: unknown): Promise<void> {
   const b = parseBackup(data);
-  await db.transaction('rw', db.kv, db.cards, db.lessons, async () => {
-    await Promise.all([db.kv.clear(), db.cards.clear(), db.lessons.clear()]);
-    await Promise.all([db.kv.bulkPut(b.kv), db.cards.bulkPut(b.cards), db.lessons.bulkPut(b.lessons)]);
+  await db.transaction('rw', db.kv, db.cards, db.lessons, db.mistakes, async () => {
+    await Promise.all([db.kv.clear(), db.cards.clear(), db.lessons.clear(), db.mistakes.clear()]);
+    await Promise.all([db.kv.bulkPut(b.kv), db.cards.bulkPut(b.cards), db.lessons.bulkPut(b.lessons), db.mistakes.bulkPut(b.mistakes ?? [])]);
   });
 }

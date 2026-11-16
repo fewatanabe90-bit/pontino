@@ -26,6 +26,10 @@
 
   const myDecks = $derived(forYouFirst(decks.filter((d) => d.lang === app.lang), app.interests));
   let learned = $state<Record<string, number>>({});
+  let mistakeCount = $state(0);
+  $effect(() => {
+    void db.mistakes.where('lang').equals(app.lang).count().then((n) => (mistakeCount = n));
+  });
   $effect(() => {
     for (const d of myDecks) {
       void db.cards.where('itemId').startsWith(`${d.id}.`).count().then((n) => (learned[d.id] = n));
@@ -108,6 +112,15 @@
         </div>
         <button class="btn" style="margin-top:16px" type="button" disabled={!due} onclick={start}>Start review</button>
       </div>
+      {#if mistakeCount > 0}
+        <a class="card deck fix" href="#/mistakes">
+          <span class="ico" aria-hidden="true">🔧</span>
+          <span class="body">
+            <span class="h">{mistakeCount} mistake{mistakeCount === 1 ? '' : 's'} to fix</span>
+            <span class="sub">Exercises you got wrong in lessons. Get one right and it leaves this list.</span>
+          </span>
+        </a>
+      {/if}
       <h2 class="h" style="margin-top:6px">Flashcard decks</h2>
       {#each myDecks as d (d.id)}
         {@const n = learned[d.id] ?? 0}
@@ -216,6 +229,12 @@
   }
   .body .bar {
     height: 10px;
+  }
+  .fix {
+    border-color: var(--accent);
+  }
+  .fix .ico {
+    background: color-mix(in srgb, var(--accent) 16%, var(--card));
   }
   .foryou {
     font-size: 11px;

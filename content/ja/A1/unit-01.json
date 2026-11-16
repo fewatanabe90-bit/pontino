@@ -335,13 +335,13 @@
         {
           "id": "ja-a1-01.l1.e7",
           "type": "type",
-          "prompt": "Type in Japanese: \"Nice to meet you. I'm Leo.\"",
-          "answer": "はじめまして。レオです。",
+          "prompt": "Type in Japanese: \"Nice to meet you. I'm a student.\"",
+          "answer": "はじめまして。{学生|がくせい}です。",
           "alt": [
-            "はじめまして。わたし{は|wa}レオです。",
-            "{初|はじ}めまして。レオです。",
-            "{初|はじ}めまして。{私|わたし}{は|wa}レオです。",
-            "はじめまして。{私|わたし}{は|wa}レオです。"
+            "はじめまして。わたし{は|wa}{学生|がくせい}です。",
+            "{初|はじ}めまして。{学生|がくせい}です。",
+            "{初|はじ}めまして。{私|わたし}{は|wa}{学生|がくせい}です。",
+            "はじめまして。{私|わたし}{は|wa}{学生|がくせい}です。"
           ]
         },
         {
@@ -520,10 +520,11 @@
         {
           "id": "ja-a1-01.l2.e7",
           "type": "type",
-          "prompt": "Type in Japanese: \"This is a Japanese ticket.\"",
-          "answer": "これ{は|wa}{日本|にほん}のチケットです。",
+          "prompt": "Type in Japanese: \"This is Japanese tea.\"",
+          "answer": "これ{は|wa}{日本|にほん}のお{茶|ちゃ}です。",
           "alt": [
-            "これ{は|wa}{日本|にっぽん}のチケットです。"
+            "これ{は|wa}{日本|にっぽん}のお{茶|ちゃ}です。",
+            "これ{は|wa}{日本|にほん}の{茶|ちゃ}です。"
           ]
         },
         {
@@ -729,14 +730,16 @@
         {
           "id": "ja-a1-01.l3.e7",
           "type": "type",
-          "prompt": "The bag is next to Nakamura-san. Ask in Japanese: \"Is that bag yours, Nakamura-san?\"",
-          "answer": "そのかばん{は|wa}{中村|なかむら}さんのですか。",
+          "prompt": "The bag is next to the person you are talking to. Ask in Japanese: \"Whose bag is that?\"",
+          "answer": "そのかばん{は|wa}だれのですか。",
           "alt": [
-            "そのかばん{は|wa}{中村|なかむら}さんのかばんですか。",
-            "その{鞄|かばん}{は|wa}{中村|なかむら}さんのですか。",
-            "そのカバン{は|wa}{中村|なかむら}さんのですか。"
+            "そのかばん{は|wa}だれのかばんですか。",
+            "その{鞄|かばん}{は|wa}だれのですか。",
+            "その{鞄|かばん}{は|wa}{誰|だれ}のですか。",
+            "そのかばん{は|wa}{誰|だれ}のですか。",
+            "それ{は|wa}だれのかばんですか。"
           ],
-          "explain": "その because the bag is near the listener. Use the name + さん, not \"you\"."
+          "explain": "その because the bag is near the listener."
         },
         {
           "id": "ja-a1-01.l3.e8",
@@ -1120,11 +1123,12 @@
         {
           "id": "ja-a1-01.l5.e7",
           "type": "type",
-          "prompt": "Type in Japanese: \"I came from Brazil.\"",
-          "answer": "ブラジルから{来|き}ました。",
+          "prompt": "Type in Japanese: \"No, that's not right. I'm a student.\"",
+          "answer": "いいえ、ちがいます。{学生|がくせい}です。",
           "alt": [
-            "わたし{は|wa}ブラジルから{来|き}ました。",
-            "{私|わたし}{は|wa}ブラジルから{来|き}ました。"
+            "いいえ、{違|ちが}います。{学生|がくせい}です。",
+            "いいえ、ちがいます。わたし{は|wa}{学生|がくせい}です。",
+            "いいえ、{違|ちが}います。{私|わたし}{は|wa}{学生|がくせい}です。"
           ]
         },
         {

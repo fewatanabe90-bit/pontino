@@ -12,14 +12,18 @@
   import TypeAnswer from '../exercises/TypeAnswer.svelte';
   import type { CheckResult } from '../lib/check';
   import { loadUnit, unitEntry } from '../lib/content';
+  import { db } from '../lib/db';
+  import { writtenUnits } from '../lib/progress';
   import { grade, hasAnswer, type Answer } from '../lib/grade';
   import { quip } from '../lib/quips';
   import type { Exercise, Lesson, Unit } from '../lib/schema';
   import { sfx } from '../lib/sfx';
-  import { addXp, app, completeLesson, saveLessonStep } from '../lib/state.svelte';
+  import { addXp, app, completeLesson, markPractice, saveLessonStep } from '../lib/state.svelte';
   import { speak, speakDialogue, stopSpeaking } from '../lib/tts';
 
-  let { unitId, lessonId }: { unitId: string; lessonId: string } = $props();
+  /** With `mistakes` the screen replays exercises answered wrong earlier instead of a lesson. */
+  let { unitId = '', lessonId = '', mistakes = false }: { unitId?: string; lessonId?: string; mistakes?: boolean } = $props();
+  const home = $derived(mistakes ? '#/review' : '#/learn');
 
   const XP_FIRST = 10;
   const XP_RETRY = 5;
@@ -51,6 +55,12 @@
   const ex = $derived(lesson && queue.length ? lesson.exercises[queue[0]!] : undefined);
 
   $effect(() => {
+    if (mistakes) {
+      void loadMistakes();
+      return () => {
+        stopSpeaking();
+      };
+    }
     const entry = unitEntry(unitId);
     if (!entry?.file) {
       error = 'This unit is not written yet.';
@@ -73,6 +83,45 @@
       stopSpeaking();
     };
   });
+
+  const BATCH = 12;
+
+  async function loadMistakes() {
+    const rows = await db.mistakes.where('lang').equals(app.lang).toArray();
+    const units = await writtenUnits(app.lang);
+    const all = units.flatMap((u) => u.lessons.flatMap((l) => l.exercises));
+    const found = rows.map((r) => all.find((e) => e.id === r.id)).filter((e) => e !== undefined);
+    if (!found.length || !units[0]) {
+      error = 'No mistakes waiting. Nice work.';
+      return;
+    }
+    unit = units[0];
+    lesson = {
+      id: 'mistakes',
+      title: 'Fix your mistakes',
+      canDo: 'I went back and fixed what tripped me up.',
+      intro: { scene: '', lines: [], notes: [] },
+      exercises: found.slice(0, BATCH),
+      newItems: [],
+    };
+    queue = lesson.exercises.map((_, i) => i);
+    phase = 'ex';
+  }
+
+  /** A wrong answer is saved for the Review tab; a right one clears it. */
+  async function record(id: string, ok: boolean) {
+    if (!unit || !lesson) return;
+    if (ok) return void db.mistakes.delete(id);
+    const prev = await db.mistakes.get(id);
+    await db.mistakes.put({
+      id,
+      lang: unit.lang,
+      unitId: prev?.unitId ?? unit.id,
+      lessonId: prev?.lessonId ?? lesson.id,
+      count: (prev?.count ?? 0) + 1,
+      last: Date.now(),
+    });
+  }
 
   function playDialogue() {
     if (!lesson || !unit) return;
@@ -120,6 +169,7 @@
     if (!ex || !unit || result) return;
     stopSpeaking();
     result = grade(ex, answer, unit.lang);
+    void record(ex.id, result.ok);
     if (result.ok) xp += missed.has(queue[0]!) ? XP_RETRY : XP_FIRST;
     else missed.add(queue[0]!);
     feedback(result.ok, ex.type === 'mcq' ? undefined : result.expected);
@@ -135,18 +185,18 @@
   async function next() {
     if (!result || !unit || !lesson) return;
     stopSpeaking();
-    const i = queue.shift()!;
-    if (!result.ok) queue.push(i);
+    queue.shift();
     result = null;
     answer = null;
     attempt++;
     if (queue.length) {
-      saveLessonStep(unit, lesson, Math.min(...queue));
+      if (!mistakes) saveLessonStep(unit, lesson, Math.min(...queue));
       return;
     }
     xp += XP_BONUS;
     addXp(xp);
-    newCards = await completeLesson(unit, lesson, (total - missed.size) / total);
+    if (mistakes) markPractice();
+    else newCards = await completeLesson(unit, lesson, (total - missed.size) / total);
     phase = 'done';
     sfx.complete();
   }
@@ -156,7 +206,7 @@
   <div class="screen" style="justify-content:center;align-items:center;text-align:center">
     <Pontino mood="think" />
     <p class="h">{error}</p>
-    <a class="btn" href="#/learn">Back to the path</a>
+    <a class="btn" href={home}>Back</a>
   </div>
 {:else if !unit || !lesson}
   <div class="screen" style="justify-content:center;align-items:center"><Pontino bob /></div>
@@ -208,7 +258,7 @@
   <div class="foot"><button class="btn" type="button" onclick={startPractice}>Start practice</button></div>
 {:else if phase === 'ex' && ex}
   <div class="lt">
-    <a class="x" href="#/learn" aria-label="Close lesson. Your place is saved.">✕</a>
+    <a class="x" href={home} aria-label="Close. Your place is saved.">✕</a>
     <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax={total} aria-valuenow={total - queue.length}>
       <i style="width:{((total - queue.length) / total) * 100}%"></i>
     </div>
@@ -245,7 +295,7 @@
       {#if ex.type === 'tiles' && result.ok}<p class="sub">{ex.meaning}</p>{/if}
       {#if result.hint}<p class="tip">{result.hint}</p>{/if}
       {#if ex.explain}<p class="tip"><Ruby text={ex.explain} /></p>{/if}
-      {#if !result.ok}<p class="sub">It will come back at the end of the lesson.</p>{/if}
+      {#if !result.ok}<p class="sub">Saved under Review → Mistakes, so you can fix it later.</p>{/if}
       <button class="btn {result.ok ? 'ok' : 'bad'}" type="button" onclick={next}>Continue</button>
     </div>
   {:else if ex.type !== 'match'}
@@ -255,7 +305,11 @@
   <Confetti />
   <div class="screen done">
     <div class="pop"><Pontino size={130} mood="cheer" /></div>
-    <h1 class="h1">Bridge crossed!</h1>
+    <h1 class="h1">{mistakes ? (missed.size ? 'Good work' : 'Mistakes cleared!') : 'Bridge crossed!'}</h1>
+    <p class="sub">
+      {total - missed.size} of {total} right.
+      {#if missed.size}{missed.size} saved under Review → Mistakes for another go.{/if}
+    </p>
     <div class="row stats">
       <div class="card"><div class="h c-xp">⚡ {xp}</div><div class="sub">XP earned</div></div>
       <div class="card"><div class="h c-streak">🔥 {app.streak.count}</div><div class="sub">day streak</div></div>
@@ -264,7 +318,7 @@
     <div class="card" style="width:100%"><div class="eyebrow">Today I can…</div><p class="note">{lesson.canDo}</p></div>
     {#if lesson.meme}<MemeCard top={lesson.meme.top} bottom={lesson.meme.bottom} />{/if}
   </div>
-  <div class="foot"><a class="btn" href="#/home">Continue</a></div>
+  <div class="foot"><a class="btn" href={mistakes ? '#/review' : '#/home'}>Continue</a></div>
 {/if}
 
 <style>

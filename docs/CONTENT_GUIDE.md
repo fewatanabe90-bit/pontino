@@ -37,6 +37,7 @@ The learner's interests are travel, sports, politics, history and geography. Use
 - Stay inside what has been taught plus the new items; gloss anything else.
 - Furigana on every kanji: `{漢字|かんじ}`. Mark the particle は as `{は|wa}` and the particle へ as `{へ|e}` so the romaji matches the sound.
 - List every acceptable answer in `alt` for typed and tile exercises.
+- **Typing in Japanese is hiragana only.** A typed answer is ordinary vocabulary the learner can enter with the hiragana keyboard. Never ask the learner to type a person's name, a place name or a katakana word; use tiles or multiple choice for those. The validator rejects katakana in a typed answer.
 - Facts (history, geography, sport) must be true or clearly invented for the scene; record anything a human should verify in `factCheck`.
 
 ## Rights

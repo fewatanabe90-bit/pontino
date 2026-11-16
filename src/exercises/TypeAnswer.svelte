@@ -45,7 +45,7 @@
   autocapitalize="off"
   spellcheck="false"
   enterkeyhint="done"
-  placeholder={app.lang === 'ja' ? 'Type in Japanese (kana or kanji)' : 'Scrivi in italiano'}
+  placeholder={app.lang === 'ja' ? 'Type in hiragana (kanji is fine too)' : 'Scrivi in italiano'}
 ></textarea>
 
 <style>

@@ -44,7 +44,7 @@ Progress lives only in the browser you use (IndexedDB). Profile → Export saves
 ## What exists so far
 
 - App shell with Home, Learn, Review, Profile; light and dark themes; Japanese and Italian looks.
-- Lesson player with multiple choice, listen-and-choose, fill the gap, sentence tiles, typed answers and match pairs. Missed exercises come back at the end. A lesson resumes where you left it.
+- Lesson player with multiple choice, listen-and-choose, fill the gap, sentence tiles, typed answers and match pairs. A lesson always finishes: missed exercises are saved under Review → Mistakes and leave the list once answered right. A lesson resumes where you left it. Typed Japanese answers are hiragana-only vocabulary, never names.
 - Review queue scheduled by FSRS, XP, streak with freezes, backup export/restore.
 - Japanese unit A1-01 (5 lessons) and Italian unit R1 (3 lessons on the passato prossimo, with Portuguese tips).
 - Audio that plays by itself (dialogue at lesson start, each exercise, the model answer), plus synthesised sounds for right, wrong and lesson complete. Both can be switched off in Profile.

@@ -46,6 +46,9 @@ export function unitProblems(unit: Unit): string[] {
       }
       if (ex.type === 'mcq' && ex.listen && !ex.text) problems.push(`${ex.id}: listening exercise without audio text`);
       if (ex.type === 'type' && ex.listen && !ex.text) problems.push(`${ex.id}: dictation without audio text`);
+      if (unit.lang === 'ja' && ex.type === 'type' && /[\u30a1-\u30fa]/.test(ex.answer)) {
+        problems.push(`${ex.id}: typed answers must be typable in hiragana (no katakana words or names)`);
+      }
       if (ex.type === 'match') {
         for (const side of [0, 1] as const) {
           if (new Set(ex.pairs.map((p) => p[side])).size !== ex.pairs.length) problems.push(`${ex.id}: repeated match item`);
