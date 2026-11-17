@@ -2,6 +2,9 @@
   /** Every flashcard the learner has collected, to read again at any time without affecting the review schedule. */
   import Ruby from '../components/Ruby.svelte';
   import Speak from '../components/Speak.svelte';
+  import Pontino from '../design/Pontino.svelte';
+  import { sfx } from '../lib/sfx';
+  import { speak, stopSpeaking } from '../lib/tts';
   import { unitEntry } from '../lib/content';
   import { db } from '../lib/db';
   import { deckById } from '../lib/decks';
@@ -15,6 +18,44 @@
   /** Card whose meaning is showing, or ''. */
   let open = $state('');
   let showAll = $state(false);
+
+  /** Flip-card practice over cards already learned. It never changes when a card is next due. */
+  let queue = $state<SrsCard[] | null>(null);
+  let practiceTitle = $state('');
+  let total = $state(0);
+  let flipped = $state(false);
+  const current = $derived(queue?.[0]);
+
+  function practise(list: SrsCard[], title: string) {
+    const mixed = [...list];
+    for (let i = mixed.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [mixed[i], mixed[j]] = [mixed[j]!, mixed[i]!];
+    }
+    queue = mixed;
+    total = mixed.length;
+    practiceTitle = title;
+    flipped = false;
+  }
+  function flip() {
+    flipped = !flipped;
+    sfx.tick();
+  }
+  function answer(known: boolean) {
+    if (!queue) return;
+    const card = queue.shift();
+    flipped = false;
+    if (card && !known) queue.push(card);
+    if (!queue.length) sfx.complete();
+  }
+  function stop() {
+    stopSpeaking();
+    queue = null;
+  }
+  // Say each card as it comes up.
+  $effect(() => {
+    if (current && app.autoplay) speak(current.front, app.lang, app.rate);
+  });
 
   $effect(() => {
     const lang = app.lang;
@@ -52,6 +93,47 @@
   }
 </script>
 
+{#if queue && current}
+  <div class="screen">
+    <div class="row">
+      <button class="x" type="button" onclick={stop} aria-label="Stop practising">✕</button>
+      <div class="eyebrow" style="flex:1">🗂️ {practiceTitle}</div>
+      <div class="sub">{queue.length} left</div>
+    </div>
+    {#key current.id + queue.length}
+      <div class="stage">
+        <button class="flash" class:flipped type="button" onclick={flip} aria-label={flipped ? 'Show the front' : 'Flip the card to see the meaning'}>
+          <span class="face fr">
+            <span class="tl big"><Ruby text={current.front} /></span>
+            <span class="hint">Tap to flip</span>
+          </span>
+          <span class="face bk" aria-hidden={!flipped}>
+            <span class="meaning">{current.back}</span>
+            {#if current.note}{#each current.note.split('\n') as n}<span class="tl extra"><Ruby text={n} /></span>{/each}{/if}
+          </span>
+        </button>
+      </div>
+    {/key}
+    <div class="row" style="justify-content:center"><Speak text={current.front} /></div>
+  </div>
+  <div class="foot">
+    {#if flipped}
+      <div class="two">
+        <button class="btn ghost" type="button" onclick={() => answer(false)}>Again later</button>
+        <button class="btn ok" type="button" onclick={() => answer(true)}>Got it</button>
+      </div>
+    {:else}
+      <button class="btn" type="button" onclick={flip}>Show meaning</button>
+    {/if}
+  </div>
+{:else if queue}
+  <div class="screen center">
+    <div class="pop"><Pontino size={130} mood="cheer" /></div>
+    <h1 class="h1">{total} card{total === 1 ? '' : 's'} practised</h1>
+    <p class="sub">This was extra practice: your review dates have not changed.</p>
+    <button class="btn" type="button" onclick={stop}>Back to my flashcards</button>
+  </div>
+{:else}
 <div class="screen">
   <div class="row">
     <a class="x" href="#/review" aria-label="Back to review">‹</a>
@@ -64,14 +146,18 @@
       <p class="sub">No cards yet. Finish a lesson or study a deck, and every word you meet is kept here.</p>
     </div>
   {:else}
-    <p class="sub">{cards.length} card{cards.length === 1 ? '' : 's'} collected. Reading them here does not change when they come back for review.</p>
+    <p class="sub">{cards.length} card{cards.length === 1 ? '' : 's'} you have already learned. Practise them whenever you like: it does not change when they come back for review.</p>
+    <button class="btn" type="button" onclick={() => practise(cards, 'All my flashcards')}>Practise all {cards.length} as flashcards</button>
     <input class="search" type="search" placeholder="Search a word or a meaning" bind:value={query} aria-label="Search your flashcards" />
     <div class="row">
       <button class="chip" type="button" onclick={() => (showAll = !showAll)}>{showAll ? 'Hide meanings' : 'Show all meanings'}</button>
       {#if query}<span class="sub">{shown} found</span>{/if}
     </div>
     {#each groups as g (g.id)}
-      <h2 class="h group">{g.title} <span class="sub">· {g.list.length}</span></h2>
+      <div class="row">
+        <h2 class="h group" style="flex:1">{g.title} <span class="sub">· {g.list.length}</span></h2>
+        <button class="chip" type="button" onclick={() => practise(g.list, g.title)} aria-label="Practise {g.title} as flashcards">Practise ›</button>
+      </div>
       <div class="card list">
         {#each g.list as c (c.id)}
           <div class="item">
@@ -91,8 +177,98 @@
     {#if query && !shown}<p class="sub">Nothing matches "{query}".</p>{/if}
   {/if}
 </div>
+{/if}
 
 <style>
+  .center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  button.x {
+    background: none;
+    border: 0;
+    font-size: 22px;
+  }
+  .stage {
+    flex: 1;
+    min-height: 300px;
+    perspective: 1200px;
+    display: flex;
+  }
+  .flash {
+    position: relative;
+    flex: 1;
+    border: 0;
+    padding: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    transform-style: preserve-3d;
+    transition: transform 0.45s cubic-bezier(0.3, 1.3, 0.5, 1);
+  }
+  .flash.flipped {
+    transform: rotateY(180deg);
+  }
+  .face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px 18px;
+    border-radius: 28px;
+    border: 2px solid var(--line);
+    background: var(--card);
+    box-shadow: 0 8px 0 var(--line);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+  }
+  .fr {
+    background:
+      radial-gradient(circle at 15% 12%, var(--brand-soft), transparent 55%),
+      var(--card);
+  }
+  .bk {
+    transform: rotateY(180deg);
+    border-color: var(--brand);
+    box-shadow: 0 8px 0 var(--brand-edge);
+  }
+  .big {
+    font-size: 34px;
+    line-height: 1.6;
+  }
+  .hint {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--muted);
+  }
+  .meaning {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.3;
+  }
+  .extra {
+    font-size: 16px;
+    color: var(--muted);
+  }
+  .foot {
+    padding: 12px 16px calc(16px + var(--safe-b));
+    border-top: 2px solid var(--line);
+  }
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .flash {
+      transition: none;
+    }
+  }
   .x {
     font-size: 30px;
     color: var(--muted);

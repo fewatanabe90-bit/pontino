@@ -1,0 +1,1113 @@
+{
+  "id": "ja-a1-05",
+  "lang": "ja",
+  "level": "A1",
+  "track": "core",
+  "title": "Plans and wishes",
+  "summary": "Say what you want to do, suggest doing it together, and say how often you do things.",
+  "canDo": [
+    "I can say what I want and do not want to do.",
+    "I can suggest a plan, fix a time and say I am going somewhere to do something.",
+    "I can say how often I do things: often, sometimes, not much, never."
+  ],
+  "grammar": [
+    "〜たいです・〜たくないです",
+    "〜ましょう・〜ましょうか",
+    "〜に行きます (purpose)",
+    "よく・ときどき・あまり・ぜんぜん",
+    "毎日・週末・曜日"
+  ],
+  "items": [
+    {
+      "id": "ja-a1-05.g-tai",
+      "kind": "grammar",
+      "front": "〜たいです",
+      "back": "I want to ~. Take the ます form, drop ます and add たいです: {行|い}きます → {行|い}きたいです."
+    },
+    {
+      "id": "ja-a1-05.g-takunai",
+      "kind": "grammar",
+      "front": "〜たくないです",
+      "back": "I don't want to ~. たい changes like an い-adjective."
+    },
+    {
+      "id": "ja-a1-05.p-ikitai",
+      "kind": "phrase",
+      "front": "{行|い}きたいです",
+      "back": "I want to go."
+    },
+    {
+      "id": "ja-a1-05.p-tabetai",
+      "kind": "phrase",
+      "front": "{食|た}べたいです",
+      "back": "I want to eat."
+    },
+    {
+      "id": "ja-a1-05.p-mitai",
+      "kind": "phrase",
+      "front": "{見|み}たいです",
+      "back": "I want to see."
+    },
+    {
+      "id": "ja-a1-05.p-kaitai",
+      "kind": "phrase",
+      "front": "{買|か}いたいです",
+      "back": "I want to buy."
+    },
+    {
+      "id": "ja-a1-05.v-shuumatsu",
+      "kind": "vocab",
+      "front": "{週末|しゅうまつ}",
+      "back": "weekend"
+    },
+    {
+      "id": "ja-a1-05.v-shashin",
+      "kind": "vocab",
+      "front": "{写真|しゃしん}",
+      "back": "photo"
+    },
+    {
+      "id": "ja-a1-05.p-shashinwotoru",
+      "kind": "phrase",
+      "front": "{写真|しゃしん}を{撮|と}ります",
+      "back": "to take a photo"
+    },
+    {
+      "id": "ja-a1-05.v-fujisan",
+      "kind": "vocab",
+      "front": "{富士山|ふじさん}",
+      "back": "Mount Fuji"
+    },
+    {
+      "id": "ja-a1-05.v-noborimasu",
+      "kind": "vocab",
+      "front": "{登|のぼ}ります",
+      "back": "to climb"
+    },
+    {
+      "id": "ja-a1-05.v-sushi",
+      "kind": "vocab",
+      "front": "{寿司|すし}",
+      "back": "sushi"
+    },
+    {
+      "id": "ja-a1-05.g-mashou",
+      "kind": "grammar",
+      "front": "〜ましょう",
+      "back": "Let's ~. Replace ます with ましょう."
+    },
+    {
+      "id": "ja-a1-05.g-mashouka",
+      "kind": "grammar",
+      "front": "〜ましょうか",
+      "back": "Shall we ~? Used to settle the details of a plan."
+    },
+    {
+      "id": "ja-a1-05.g-niiku",
+      "kind": "grammar",
+      "front": "〜に{行|い}きます",
+      "back": "To go and do something: verb without ます, then に{行|い}きます. {見|み}に{行|い}きます = go to see."
+    },
+    {
+      "id": "ja-a1-05.p-ikimashou",
+      "kind": "phrase",
+      "front": "{行|い}きましょう",
+      "back": "Let's go."
+    },
+    {
+      "id": "ja-a1-05.p-tabeniiku",
+      "kind": "phrase",
+      "front": "{食|た}べに{行|い}きます",
+      "back": "to go and eat"
+    },
+    {
+      "id": "ja-a1-05.p-isshoni",
+      "kind": "phrase",
+      "front": "{一緒|いっしょ}に",
+      "back": "together (with someone)"
+    },
+    {
+      "id": "ja-a1-05.v-eiga",
+      "kind": "vocab",
+      "front": "{映画|えいが}",
+      "back": "film, movie"
+    },
+    {
+      "id": "ja-a1-05.v-doyoubi",
+      "kind": "vocab",
+      "front": "{土曜日|どようび}",
+      "back": "Saturday"
+    },
+    {
+      "id": "ja-a1-05.v-nichiyoubi",
+      "kind": "vocab",
+      "front": "{日曜日|にちようび}",
+      "back": "Sunday"
+    },
+    {
+      "id": "ja-a1-05.v-gohan",
+      "kind": "vocab",
+      "front": "ご{飯|はん}",
+      "back": "meal; cooked rice"
+    },
+    {
+      "id": "ja-a1-05.p-zehi",
+      "kind": "phrase",
+      "front": "ぜひ",
+      "back": "definitely, by all means"
+    },
+    {
+      "id": "ja-a1-05.g-hindo",
+      "kind": "grammar",
+      "front": "よく・ときどき・あまり・ぜんぜん",
+      "back": "How often. よく (often) and ときどき (sometimes) go with a positive verb; あまり (not much) and ぜんぜん (never) need a negative."
+    },
+    {
+      "id": "ja-a1-05.v-yoku",
+      "kind": "vocab",
+      "front": "よく",
+      "back": "often"
+    },
+    {
+      "id": "ja-a1-05.v-tokidoki",
+      "kind": "vocab",
+      "front": "ときどき",
+      "back": "sometimes"
+    },
+    {
+      "id": "ja-a1-05.v-zenzen",
+      "kind": "vocab",
+      "front": "ぜんぜん",
+      "back": "not at all, never (with a negative)"
+    },
+    {
+      "id": "ja-a1-05.v-mainichi",
+      "kind": "vocab",
+      "front": "{毎日|まいにち}",
+      "back": "every day"
+    },
+    {
+      "id": "ja-a1-05.v-hon",
+      "kind": "vocab",
+      "front": "{本|ほん}",
+      "back": "book"
+    },
+    {
+      "id": "ja-a1-05.v-yomimasu",
+      "kind": "vocab",
+      "front": "{読|よ}みます",
+      "back": "to read"
+    },
+    {
+      "id": "ja-a1-05.p-sugoi",
+      "kind": "phrase",
+      "front": "すごい",
+      "back": "amazing, impressive"
+    },
+    {
+      "id": "ja-a1-05.v-supootsu",
+      "kind": "vocab",
+      "front": "スポーツ",
+      "back": "sport"
+    },
+    {
+      "id": "ja-a1-05.v-tenisu",
+      "kind": "vocab",
+      "front": "テニス",
+      "back": "tennis"
+    },
+    {
+      "id": "ja-a1-05.v-sakkaa",
+      "kind": "vocab",
+      "front": "サッカー",
+      "back": "football, soccer"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-a1-05.l1",
+      "title": "I want to see Mount Fuji",
+      "canDo": "I can say what I want and do not want to do.",
+      "intro": {
+        "place": "lounge",
+        "scene": "Friday evening. Sato asks Leo what he would like to do with his free weekend.",
+        "lines": [
+          {
+            "who": "佐藤",
+            "text": "レオさん、{週末|しゅうまつ}{は|wa}{何|なに}がしたいですか。",
+            "meaning": "Leo, what do you want to do at the weekend?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{富士山|ふじさん}が{見|み}たいです。",
+            "meaning": "I want to see Mount Fuji.",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "いいですね。{登|のぼ}りたいですか。",
+            "meaning": "Nice. Do you want to climb it?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいえ、{登|のぼ}りたくないです。{写真|しゃしん}を{撮|と}りたいです。",
+            "meaning": "No, I don't want to climb it. I want to take photos.",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "{何|なに}が{食|た}べたいですか。",
+            "meaning": "What do you want to eat?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "おいしい{寿司|すし}が{食|た}べたいです！",
+            "meaning": "I want to eat good sushi!",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Making 〜たい",
+            "body": "Take any ます verb, remove ます and add たいです: {行|い}きます → {行|い}きたいです, {食|た}べます → {食|た}べたいです, します → したいです."
+          },
+          {
+            "title": "It behaves like an い-adjective",
+            "body": "So the negative is 〜たくないです ({登|のぼ}りたくないです) and the past is 〜たかったです ({行|い}きたかったです, \"I wanted to go\")."
+          },
+          {
+            "title": "が or を, and whose wish",
+            "body": "The thing you want can take が or を: {寿司|すし}が{食|た}べたいです. Use たい for your own wishes and for asking friends. To a customer or a superior it is too direct."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-05.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{京都|きょうと}{へ|e}___です。",
+          "meaning": "I want to go to Kyoto.",
+          "options": [
+            "{行|い}きたい",
+            "{行|い}きます",
+            "{行|い}きたく"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l1.e2",
+          "type": "mcq",
+          "prompt": "\"I don't want to climb.\"",
+          "options": [
+            "{登|のぼ}りたくないです。",
+            "{登|のぼ}りたいじゃありません。",
+            "{登|のぼ}りませんたいです。"
+          ],
+          "answer": 0,
+          "explain": "たい works like an い-adjective: たくないです."
+        },
+        {
+          "id": "ja-a1-05.l1.e3",
+          "type": "tiles",
+          "prompt": "Build: \"I want to take photos.\"",
+          "meaning": "I want to take photos.",
+          "tiles": [
+            "{写真|しゃしん}",
+            "を",
+            "{撮|と}りたい",
+            "です",
+            "{撮|と}ります",
+            "に"
+          ],
+          "answer": "{写真|しゃしん}を{撮|と}りたいです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-05.l1.e4",
+          "type": "mcq",
+          "prompt": "Listen. What does Leo want?",
+          "text": "おいしい{寿司|すし}が{食|た}べたいです。",
+          "listen": true,
+          "options": [
+            "To eat good sushi",
+            "To buy sushi",
+            "To make sushi"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l1.e5",
+          "type": "mcq",
+          "prompt": "How do you make the たい form of {見|み}ます?",
+          "options": [
+            "{見|み}たい",
+            "{見|み}ますたい",
+            "{見|み}るたい"
+          ],
+          "answer": 0,
+          "explain": "Remove ます, add たい."
+        },
+        {
+          "id": "ja-a1-05.l1.e6",
+          "type": "tiles",
+          "prompt": "Reply: \"I want to see Mount Fuji.\"",
+          "context": "{週末|しゅうまつ}{は|wa}{何|なに}がしたいですか。",
+          "meaning": "I want to see Mount Fuji.",
+          "tiles": [
+            "{富士山|ふじさん}",
+            "が",
+            "{見|み}たい",
+            "です",
+            "{見|み}ます",
+            "に"
+          ],
+          "answer": "{富士山|ふじさん}が{見|み}たいです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-05.l1.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I want to eat.\"",
+          "answer": "{食|た}べたいです。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-05.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{行|い}きたいです",
+              "I want to go"
+            ],
+            [
+              "{見|み}たいです",
+              "I want to see"
+            ],
+            [
+              "{買|か}いたいです",
+              "I want to buy"
+            ],
+            [
+              "{週末|しゅうまつ}",
+              "weekend"
+            ],
+            [
+              "{写真|しゃしん}",
+              "photo"
+            ],
+            [
+              "{登|のぼ}ります",
+              "to climb"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "{富士山|ふじさん}が{見|み}たいです",
+        "bottom": "Mount Fuji: hides behind a cloud for three days"
+      },
+      "newItems": [
+        "ja-a1-05.g-tai",
+        "ja-a1-05.g-takunai",
+        "ja-a1-05.p-ikitai",
+        "ja-a1-05.p-tabetai",
+        "ja-a1-05.p-mitai",
+        "ja-a1-05.p-kaitai",
+        "ja-a1-05.v-shuumatsu",
+        "ja-a1-05.v-shashin",
+        "ja-a1-05.p-shashinwotoru",
+        "ja-a1-05.v-fujisan",
+        "ja-a1-05.v-noborimasu",
+        "ja-a1-05.v-sushi"
+      ]
+    },
+    {
+      "id": "ja-a1-05.l2",
+      "title": "Let's go! Making a plan",
+      "canDo": "I can suggest a plan, fix a time, and say I am going somewhere to do something.",
+      "intro": {
+        "place": "station",
+        "scene": "Nakamura runs into Leo at the station and has an idea for Saturday.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "レオさん、{土曜日|どようび}に{一緒|いっしょ}に{映画|えいが}を{見|み}に{行|い}きませんか。",
+            "meaning": "Leo, won't you come and see a film with me on Saturday?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいですね。{行|い}きましょう！",
+            "meaning": "Sounds good. Let's go!",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "{何時|なんじ}に{会|あ}いましょうか。",
+            "meaning": "What time shall we meet?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{六時|ろくじ}{は|wa}どうですか。",
+            "meaning": "How about six?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "いいですよ。{映画|えいが}の{後|あと}で、ご{飯|はん}を{食|た}べに{行|い}きましょう。",
+            "meaning": "That's fine. After the film, let's go and eat.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、ぜひ！",
+            "meaning": "Yes, definitely!",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜ましょう and 〜ましょうか",
+            "body": "ましょう is \"let's\": {行|い}きましょう, {食|た}べましょう. With か it asks the other person to decide: {何時|なんじ}に{会|あ}いましょうか, \"what time shall we meet?\". To invite, 〜ませんか is the softest."
+          },
+          {
+            "title": "Going in order to do something",
+            "body": "Verb without ます, then に, then {行|い}きます: {見|み}に{行|い}きます (go to see), {食|た}べに{行|い}きます (go to eat), {買|か}いに{行|い}きます (go to buy)."
+          },
+          {
+            "title": "Days of the week",
+            "body": "They all end in {曜日|ようび}: {月曜日|げつようび}, {火曜日|かようび}, {水曜日|すいようび}, {木曜日|もくようび}, {金曜日|きんようび}, {土曜日|どようび}, {日曜日|にちようび}. Like clock times, they take に: {土曜日|どようび}に."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-05.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{一緒|いっしょ}に{行|い}き___。",
+          "meaning": "Let's go together.",
+          "options": [
+            "ましょう",
+            "ました",
+            "ません"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l2.e2",
+          "type": "mcq",
+          "prompt": "\"Shall we meet at six?\"",
+          "options": [
+            "{六時|ろくじ}に{会|あ}いましょうか。",
+            "{六時|ろくじ}に{会|あ}いましたか。",
+            "{六時|ろくじ}に{会|あ}いたくないです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l2.e3",
+          "type": "tiles",
+          "prompt": "Build: \"Let's go and see a film.\"",
+          "meaning": "Let's go and see a film.",
+          "tiles": [
+            "{映画|えいが}",
+            "を",
+            "{見|み}",
+            "に",
+            "{行|い}きましょう",
+            "で",
+            "{見|み}ます"
+          ],
+          "answer": "{映画|えいが}を{見|み}に{行|い}きましょう",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-05.l2.e4",
+          "type": "mcq",
+          "prompt": "Listen. What is Nakamura suggesting?",
+          "text": "ご{飯|はん}を{食|た}べに{行|い}きましょう。",
+          "listen": true,
+          "options": [
+            "Going out to eat",
+            "Going to see a film",
+            "Going home"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l2.e5",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{寿司|すし}を{食|た}べ___{行|い}きます。",
+          "meaning": "I'm going out to eat sushi.",
+          "options": [
+            "に",
+            "を",
+            "で"
+          ],
+          "answer": 0,
+          "explain": "Purpose: verb without ます, then に."
+        },
+        {
+          "id": "ja-a1-05.l2.e6",
+          "type": "mcq",
+          "prompt": "A friend says {一緒|いっしょ}に{行|い}きませんか. You are delighted. You answer:",
+          "options": [
+            "はい、ぜひ！",
+            "いいえ、ちがいます。",
+            "はい、そうです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l2.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"Let's go.\"",
+          "answer": "{行|い}きましょう。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-05.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{行|い}きましょう",
+              "Let's go"
+            ],
+            [
+              "{一緒|いっしょ}に",
+              "together"
+            ],
+            [
+              "{映画|えいが}",
+              "film"
+            ],
+            [
+              "{土曜日|どようび}",
+              "Saturday"
+            ],
+            [
+              "{日曜日|にちようび}",
+              "Sunday"
+            ],
+            [
+              "ご{飯|はん}",
+              "meal"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "{何時|なんじ}に{会|あ}いましょうか",
+        "bottom": "In Japan, 6:00 means 5:55"
+      },
+      "newItems": [
+        "ja-a1-05.g-mashou",
+        "ja-a1-05.g-mashouka",
+        "ja-a1-05.g-niiku",
+        "ja-a1-05.p-ikimashou",
+        "ja-a1-05.p-tabeniiku",
+        "ja-a1-05.p-isshoni",
+        "ja-a1-05.v-eiga",
+        "ja-a1-05.v-doyoubi",
+        "ja-a1-05.v-nichiyoubi",
+        "ja-a1-05.v-gohan",
+        "ja-a1-05.p-zehi"
+      ]
+    },
+    {
+      "id": "ja-a1-05.l3",
+      "title": "Often, sometimes, never",
+      "canDo": "I can say how often I do things.",
+      "intro": {
+        "place": "cafe",
+        "scene": "Leo and Sato compare their free time.",
+        "lines": [
+          {
+            "who": "佐藤",
+            "text": "レオさん{は|wa}よく{映画|えいが}を{見|み}ますか。",
+            "meaning": "Do you often watch films, Leo?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、よく{見|み}ます。{佐藤|さとう}さん{は|wa}？",
+            "meaning": "Yes, often. And you?",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "わたし{は|wa}あまり{見|み}ません。でも、{本|ほん}{は|wa}{毎日|まいにち}{読|よ}みます。",
+            "meaning": "I don't watch many. But I read books every day.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "すごいですね。スポーツ{は|wa}しますか。",
+            "meaning": "Impressive. Do you do any sport?",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "ときどきテニスをします。レオさん{は|wa}？",
+            "meaning": "I sometimes play tennis. And you?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "わたし{は|wa}ぜんぜんしません。でも、サッカー{は|wa}よく{見|み}ます！",
+            "meaning": "I never do. But I watch football a lot!",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Four steps",
+            "body": "{毎日|まいにち} every day · よく often · ときどき sometimes · あまり not much · ぜんぜん never. They go before the verb or before the object: よく{映画|えいが}を{見|み}ます."
+          },
+          {
+            "title": "The last two need a negative",
+            "body": "あまり{見|み}ません (I don't watch much), ぜんぜんしません (I never do it). With a positive verb they are wrong."
+          },
+          {
+            "title": "{は|wa} for contrast",
+            "body": "{本|ほん}{は|wa}{毎日|まいにち}{読|よ}みます: \"books, on the other hand, I read every day\". When you compare two things, を often turns into {は|wa}."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-05.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "わたし{は|wa}___{映画|えいが}を{見|み}ません。",
+          "meaning": "I never watch films.",
+          "options": [
+            "ぜんぜん",
+            "よく",
+            "ときどき"
+          ],
+          "answer": 0,
+          "explain": "Only ぜんぜん fits a negative verb here."
+        },
+        {
+          "id": "ja-a1-05.l3.e2",
+          "type": "mcq",
+          "prompt": "\"I sometimes play tennis.\"",
+          "options": [
+            "ときどきテニスをします。",
+            "ときどきテニスをしません。",
+            "ぜんぜんテニスをします。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l3.e3",
+          "type": "tiles",
+          "prompt": "Build: \"I read books every day.\"",
+          "meaning": "I read books every day.",
+          "tiles": [
+            "{毎日|まいにち}",
+            "{本|ほん}",
+            "を",
+            "{読|よ}みます",
+            "{読|よ}みません",
+            "に"
+          ],
+          "answer": "{毎日|まいにち}{本|ほん}を{読|よ}みます",
+          "alt": [
+            "{本|ほん}を{毎日|まいにち}{読|よ}みます"
+          ]
+        },
+        {
+          "id": "ja-a1-05.l3.e4",
+          "type": "mcq",
+          "prompt": "Listen. How often does Sato watch films?",
+          "text": "わたし{は|wa}あまり{見|み}ません。",
+          "listen": true,
+          "options": [
+            "Not much",
+            "Often",
+            "Every day"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l3.e5",
+          "type": "mcq",
+          "prompt": "Which word must go with a negative verb?",
+          "options": [
+            "ぜんぜん",
+            "よく",
+            "{毎日|まいにち}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l3.e6",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "レオさん{は|wa}サッカーを___{見|み}ます。",
+          "meaning": "Leo often watches football.",
+          "options": [
+            "よく",
+            "あまり",
+            "ぜんぜん"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l3.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I read every day.\"",
+          "answer": "{毎日|まいにち}{読|よ}みます。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-05.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "よく",
+              "often"
+            ],
+            [
+              "ときどき",
+              "sometimes"
+            ],
+            [
+              "ぜんぜん",
+              "never"
+            ],
+            [
+              "{毎日|まいにち}",
+              "every day"
+            ],
+            [
+              "{本|ほん}",
+              "book"
+            ],
+            [
+              "すごい",
+              "amazing"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "スポーツ{は|wa}しますか",
+        "bottom": "ぜんぜんしません. But I have opinions about every match."
+      },
+      "newItems": [
+        "ja-a1-05.g-hindo",
+        "ja-a1-05.v-yoku",
+        "ja-a1-05.v-tokidoki",
+        "ja-a1-05.v-zenzen",
+        "ja-a1-05.v-mainichi",
+        "ja-a1-05.v-hon",
+        "ja-a1-05.v-yomimasu",
+        "ja-a1-05.p-sugoi",
+        "ja-a1-05.v-supootsu",
+        "ja-a1-05.v-tenisu",
+        "ja-a1-05.v-sakkaa"
+      ]
+    },
+    {
+      "id": "ja-a1-05.l4",
+      "title": "Reading: Leo's weekend plan",
+      "canDo": "I can read a short text about plans and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🗻📷",
+        "scene": "Leo's plan for Saturday and Sunday. Read, listen, then answer.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "レオさん{は|wa}{今|いま}、{東京|とうきょう}にいます。",
+            "meaning": "Leo is in Tokyo now."
+          },
+          {
+            "text": "{土曜日|どようび}に{富士山|ふじさん}を{見|み}に{行|い}きます。",
+            "meaning": "On Saturday he is going to see Mount Fuji."
+          },
+          {
+            "text": "{佐藤|さとう}さんも{一緒|いっしょ}に{行|い}きます。",
+            "meaning": "Sato is going with him."
+          },
+          {
+            "text": "{二人|ふたり}{は|wa}{朝|あさ}{七時|しちじ}に{駅|えき}で{会|あ}います。",
+            "meaning": "The two of them will meet at the station at seven in the morning."
+          },
+          {
+            "text": "レオさん{は|wa}{富士山|ふじさん}の{写真|しゃしん}をたくさん{撮|と}りたいです。",
+            "meaning": "Leo wants to take lots of photos of Mount Fuji."
+          },
+          {
+            "text": "でも、{登|のぼ}りたくないです。",
+            "meaning": "But he doesn't want to climb it."
+          },
+          {
+            "text": "{佐藤|さとう}さん{は|wa}{湖|みずうみ}の{近|ちか}くでおいしいうどんが{食|た}べたいです。",
+            "meaning": "Sato wants to eat good udon near the lake."
+          },
+          {
+            "text": "{日曜日|にちようび}{は|wa}どこ{へ|e}も{行|い}きません。ホテルで{本|ほん}を{読|よ}みます。",
+            "meaning": "On Sunday he isn't going anywhere. He will read a book at the hotel."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{今|いま}",
+            "meaning": "now"
+          },
+          {
+            "word": "{湖|みずうみ}",
+            "meaning": "lake"
+          },
+          {
+            "word": "うどん",
+            "meaning": "udon (thick wheat noodles)"
+          },
+          {
+            "word": "どこ{へ|e}も",
+            "meaning": "nowhere (with a negative)"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-05.l4.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{今|いま}どこにいますか。",
+          "options": [
+            "{東京|とうきょう}",
+            "{京都|きょうと}",
+            "ブラジル"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l4.e2",
+          "type": "mcq",
+          "prompt": "{土曜日|どようび}に{何|なに}を{見|み}に{行|い}きますか。",
+          "options": [
+            "{富士山|ふじさん}",
+            "{映画|えいが}",
+            "お{寺|てら}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l4.e3",
+          "type": "mcq",
+          "prompt": "{二人|ふたり}{は|wa}{何時|なんじ}に{会|あ}いますか。",
+          "options": [
+            "{七時|しちじ}",
+            "{六時|ろくじ}",
+            "{十時|じゅうじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l4.e4",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{富士山|ふじさん}に{登|のぼ}りたいですか。",
+          "options": [
+            "いいえ、{登|のぼ}りたくないです。",
+            "はい、{登|のぼ}りたいです。",
+            "はい、{佐藤|さとう}さんと{登|のぼ}ります。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l4.e5",
+          "type": "mcq",
+          "prompt": "{佐藤|さとう}さん{は|wa}{何|なに}が{食|た}べたいですか。",
+          "options": [
+            "うどん",
+            "{寿司|すし}",
+            "ラーメン"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l4.e6",
+          "type": "mcq",
+          "prompt": "{日曜日|にちようび}にレオさん{は|wa}{何|なに}をしますか。",
+          "options": [
+            "{本|ほん}を{読|よ}みます。",
+            "{映画|えいが}を{見|み}ます。",
+            "{富士山|ふじさん}に{登|のぼ}ります。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Saturday: mountain, lake, udon, 400 photos",
+        "bottom": "Sunday: horizontal, with a book"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-a1-05.l5",
+      "title": "Story: An invitation",
+      "canDo": "I can follow a short phone call about a plan and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧📞⚽",
+        "scene": "Nakamura phones Leo with an idea for Sunday. Listen for the times and for who pays for what.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "もしもし、レオさん。{日曜日|にちようび}{は|wa}{何|なに}をしますか。",
+            "meaning": "Hello, Leo. What are you doing on Sunday?",
+            "who": "中村"
+          },
+          {
+            "text": "まだわかりません。どうしてですか。",
+            "meaning": "I don't know yet. Why?",
+            "who": "レオ"
+          },
+          {
+            "text": "サッカーの{試合|しあい}を{見|み}に{行|い}きませんか。",
+            "meaning": "Won't you come and watch a football match?",
+            "who": "中村"
+          },
+          {
+            "text": "ぜひ{行|い}きたいです！{試合|しあい}{は|wa}{何時|なんじ}からですか。",
+            "meaning": "I'd love to go! What time does the match start?",
+            "who": "レオ"
+          },
+          {
+            "text": "{三時|さんじ}からです。{二時|にじ}に{駅|えき}で{会|あ}いましょう。",
+            "meaning": "From three. Let's meet at the station at two.",
+            "who": "中村"
+          },
+          {
+            "text": "わかりました。{切符|きっぷ}{は|wa}いくらですか。",
+            "meaning": "Got it. How much are the tickets?",
+            "who": "レオ"
+          },
+          {
+            "text": "{三千円|さんぜんえん}です。でも、わたしが{二枚|にまい}{買|か}いました。",
+            "meaning": "They are 3,000 yen. But I have bought two.",
+            "who": "中村"
+          },
+          {
+            "text": "ありがとうございます！じゃあ、{試合|しあい}の{後|あと}で、ご{飯|はん}を{食|た}べに{行|い}きましょう。わたしが{払|はら}います。",
+            "meaning": "Thank you! Then after the match, let's go and eat. I'll pay.",
+            "who": "レオ"
+          },
+          {
+            "text": "いいですね。{焼|や}き{鳥|とり}が{食|た}べたいです。",
+            "meaning": "Sounds good. I want to eat yakitori.",
+            "who": "中村"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "まだ",
+            "meaning": "not yet; still"
+          },
+          {
+            "word": "{試合|しあい}",
+            "meaning": "match, game"
+          },
+          {
+            "word": "{焼|や}き{鳥|とり}",
+            "meaning": "grilled chicken skewers"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-05.l5.e1",
+          "type": "mcq",
+          "prompt": "{二人|ふたり}{は|wa}{日曜日|にちようび}に{何|なに}を{見|み}に{行|い}きますか。",
+          "options": [
+            "サッカーの{試合|しあい}",
+            "{映画|えいが}",
+            "{富士山|ふじさん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l5.e2",
+          "type": "mcq",
+          "prompt": "{試合|しあい}{は|wa}{何時|なんじ}からですか。",
+          "options": [
+            "{三時|さんじ}",
+            "{二時|にじ}",
+            "{六時|ろくじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l5.e3",
+          "type": "mcq",
+          "prompt": "{二人|ふたり}{は|wa}どこで{会|あ}いますか。",
+          "options": [
+            "{駅|えき}",
+            "スタジアム",
+            "ホテル"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l5.e4",
+          "type": "mcq",
+          "prompt": "{切符|きっぷ}{は|wa}だれが{買|か}いましたか。",
+          "options": [
+            "{中村|なかむら}さん",
+            "レオさん",
+            "{佐藤|さとう}さん"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l5.e5",
+          "type": "mcq",
+          "prompt": "{試合|しあい}の{後|あと}で、{何|なに}をしますか。",
+          "options": [
+            "ご{飯|はん}を{食|た}べに{行|い}きます。",
+            "{映画|えいが}を{見|み}に{行|い}きます。",
+            "{本|ほん}を{読|よ}みます。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-05.l5.e6",
+          "type": "mcq",
+          "prompt": "{中村|なかむら}さん{は|wa}{何|なに}が{食|た}べたいですか。",
+          "options": [
+            "{焼|や}き{鳥|とり}",
+            "{寿司|すし}",
+            "うどん"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Free ticket to the match",
+        "bottom": "Paid for in yakitori. A fair trade."
+      },
+      "newItems": []
+    }
+  ]
+}

@@ -1,0 +1,1126 @@
+{
+  "id": "it-b1-03",
+  "lang": "it",
+  "level": "B1",
+  "track": "core",
+  "title": "Me lo presti?",
+  "summary": "Two pronouns in a row, the way Italians really speak: me lo, te la, glielo. Then asking a friend to do something: dammi, dimmi, non dirglielo.",
+  "canDo": [
+    "I can ask to borrow things and promise to bring them, with me lo, te la, ce li.",
+    "I can talk about giving and telling things to someone else with glielo.",
+    "I can tell a friend to do or not to do something: dammi, dimmi, non dirlo."
+  ],
+  "grammar": [
+    "Pronomi combinati: me lo, te lo, ce lo, ve lo",
+    "glielo, gliela, glieli, gliele",
+    "Combined pronouns in the passato prossimo: gliel'ho detto",
+    "Imperativo informale (tu)",
+    "Imperative with pronouns: dammi, dimmelo, non dirglielo"
+  ],
+  "items": [
+    {
+      "id": "it-b1-03.g-combinati",
+      "kind": "grammar",
+      "front": "me lo, te lo, ce lo, ve lo",
+      "back": "Two pronouns together: the person first, the thing second. Mi, ti, ci, vi become me, te, ce, ve: me lo presti, te la porto.",
+      "pt": "Brazilian PT avoids this (\"você me empresta ele?\"). In Italian it is ordinary, everyday speech."
+    },
+    {
+      "id": "it-b1-03.p-melopresti",
+      "kind": "phrase",
+      "front": "Me lo presti?",
+      "back": "Will you lend it to me?"
+    },
+    {
+      "id": "it-b1-03.p-teloporto",
+      "kind": "phrase",
+      "front": "te lo porto",
+      "back": "I'll bring it to you"
+    },
+    {
+      "id": "it-b1-03.v-prestare",
+      "kind": "vocab",
+      "front": "prestare",
+      "back": "to lend",
+      "pt": "PT emprestar."
+    },
+    {
+      "id": "it-b1-03.v-mandare",
+      "kind": "vocab",
+      "front": "mandare",
+      "back": "to send"
+    },
+    {
+      "id": "it-b1-03.v-bici",
+      "kind": "vocab",
+      "front": "la bici",
+      "back": "bike",
+      "note": "Short for bicicletta."
+    },
+    {
+      "id": "it-b1-03.v-appunti",
+      "kind": "vocab",
+      "front": "gli appunti",
+      "back": "notes (from a class or a meeting)",
+      "pt": "PT anotações."
+    },
+    {
+      "id": "it-b1-03.p-midispiace",
+      "kind": "phrase",
+      "front": "mi dispiace",
+      "back": "I'm sorry",
+      "pt": "PT sinto muito. For \"excuse me\" use scusa or scusi."
+    },
+    {
+      "id": "it-b1-03.p-incambio",
+      "kind": "phrase",
+      "front": "in cambio",
+      "back": "in return",
+      "pt": "PT em troca."
+    },
+    {
+      "id": "it-b1-03.v-chiedere",
+      "kind": "vocab",
+      "front": "chiedere",
+      "back": "to ask; to ask for",
+      "note": "Past participle: chiesto.",
+      "pt": "One verb for PT pedir and perguntar."
+    },
+    {
+      "id": "it-b1-03.g-glielo",
+      "kind": "grammar",
+      "front": "glielo, gliela, glieli, gliele",
+      "back": "To him, to her and to them all become glie-, written as one word with the thing: glielo do = I give it to him, to her or to them.",
+      "pt": "One form for PT \"para ele\", \"para ela\" and \"para eles\"."
+    },
+    {
+      "id": "it-b1-03.p-glielodo",
+      "kind": "phrase",
+      "front": "glielo do",
+      "back": "I give it to him / to her"
+    },
+    {
+      "id": "it-b1-03.p-glielhodetto",
+      "kind": "phrase",
+      "front": "gliel'ho detto",
+      "back": "I told him / her"
+    },
+    {
+      "id": "it-b1-03.v-regalo",
+      "kind": "vocab",
+      "front": "il regalo",
+      "back": "present, gift",
+      "note": "Regalare = to give as a present.",
+      "pt": "PT presente."
+    },
+    {
+      "id": "it-b1-03.v-sciarpa",
+      "kind": "vocab",
+      "front": "la sciarpa",
+      "back": "scarf",
+      "pt": "PT cachecol."
+    },
+    {
+      "id": "it-b1-03.v-fiore",
+      "kind": "vocab",
+      "front": "il fiore",
+      "back": "flower",
+      "pt": "Masculine in Italian: il fiore, i fiori. PT a flor."
+    },
+    {
+      "id": "it-b1-03.v-pranzo",
+      "kind": "vocab",
+      "front": "il pranzo",
+      "back": "lunch",
+      "pt": "PT almoço."
+    },
+    {
+      "id": "it-b1-03.v-sorpresa",
+      "kind": "vocab",
+      "front": "la sorpresa",
+      "back": "surprise"
+    },
+    {
+      "id": "it-b1-03.v-dire",
+      "kind": "vocab",
+      "front": "dire",
+      "back": "to say, to tell",
+      "note": "Past participle: detto."
+    },
+    {
+      "id": "it-b1-03.g-imperativo",
+      "kind": "grammar",
+      "front": "dammi, dimmi, fammi",
+      "back": "With the tu imperative, pronouns attach to the end. After the short forms da', di', fa', sta', va' the consonant doubles: dammi, dimmi, fallo, dammelo."
+    },
+    {
+      "id": "it-b1-03.p-dammi",
+      "kind": "phrase",
+      "front": "dammi",
+      "back": "give me"
+    },
+    {
+      "id": "it-b1-03.p-dimmi",
+      "kind": "phrase",
+      "front": "dimmi",
+      "back": "tell me"
+    },
+    {
+      "id": "it-b1-03.p-fammisapere",
+      "kind": "phrase",
+      "front": "fammi sapere",
+      "back": "let me know",
+      "pt": "PT me avisa."
+    },
+    {
+      "id": "it-b1-03.p-eccolo",
+      "kind": "phrase",
+      "front": "Eccolo",
+      "back": "Here it is.",
+      "note": "Eccola, eccoli, eccole for other genders and numbers."
+    },
+    {
+      "id": "it-b1-03.p-nondirlo",
+      "kind": "phrase",
+      "front": "non dirlo",
+      "back": "don't say it",
+      "note": "Negative tu imperative: non + infinitive.",
+      "pt": "PT não fala isso. Italian uses the infinitive here."
+    },
+    {
+      "id": "it-b1-03.p-portaglielo",
+      "kind": "phrase",
+      "front": "portaglielo",
+      "back": "take it to him / to her"
+    },
+    {
+      "id": "it-b1-03.p-aspetta",
+      "kind": "phrase",
+      "front": "aspetta",
+      "back": "wait"
+    },
+    {
+      "id": "it-b1-03.p-averebisogno",
+      "kind": "phrase",
+      "front": "avere bisogno di",
+      "back": "to need",
+      "note": "Ho bisogno di te.",
+      "pt": "PT precisar de."
+    },
+    {
+      "id": "it-b1-03.v-chiave",
+      "kind": "vocab",
+      "front": "la chiave",
+      "back": "key"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "it-b1-03.l1",
+      "title": "Me lo presti?",
+      "canDo": "I can ask to borrow things and promise to bring them, with two pronouns together.",
+      "intro": {
+        "place": "cafe",
+        "scene": "Leo needs a few things from Giulia. Quite a few things.",
+        "lines": [
+          {
+            "who": "Leo",
+            "text": "Giulia, hai ancora il libro di Sara? Me lo presti?",
+            "meaning": "Giulia, do you still have Sara's book? Will you lend it to me?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Certo, te lo porto domani. Ti piacerà.",
+            "meaning": "Sure, I'll bring it to you tomorrow. You'll like it."
+          },
+          {
+            "who": "Leo",
+            "text": "Grazie! E la tua bici? Me la presti per il fine settimana?",
+            "meaning": "Thanks! And your bike? Will you lend it to me for the weekend?"
+          },
+          {
+            "who": "Giulia",
+            "text": "La bici no, mi dispiace. Me l'ha chiesta anche Marco.",
+            "meaning": "Not the bike, sorry. Marco asked me for it too."
+          },
+          {
+            "who": "Leo",
+            "text": "Peccato. E gli appunti di giapponese? Me li mandi?",
+            "meaning": "Pity. And the Japanese notes? Will you send them to me?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Va bene, te li mando stasera. Ma tu che cosa mi dai in cambio?",
+            "meaning": "All right, I'll send them to you tonight. But what do you give me in return?"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Person first, thing second",
+            "body": "mi + lo → me lo · ti + la → te la · ci + li → ce li · vi + le → ve le. The first pronoun changes its i to e, and both go before the verb: me lo presti, te li mando."
+          },
+          {
+            "title": "In the past",
+            "body": "Lo and la shorten to l' before avere, and the participle agrees with the thing: me l'ha chiesta (la bici), te li ho mandati (gli appunti)."
+          },
+          {
+            "title": "🇧🇷 PT tip: say both",
+            "body": "Spoken Brazilian Portuguese drops one of them or uses \"ele/ela\": \"você me empresta?\", \"te mando eles hoje\". Italian wants both little words, every time: me lo presti?, te li mando."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-03.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Il libro? ___ presti?",
+          "meaning": "The book? Will you lend it to me?",
+          "options": [
+            "Me lo",
+            "Mi lo",
+            "Lo mi"
+          ],
+          "answer": 0,
+          "explain": "Mi becomes me before lo."
+        },
+        {
+          "id": "it-b1-03.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "La bici? ___ porto domani.",
+          "meaning": "The bike? I'll bring it to you tomorrow.",
+          "options": [
+            "Te la",
+            "Ti la",
+            "Te lo"
+          ],
+          "answer": 0,
+          "explain": "La bici is feminine: te la."
+        },
+        {
+          "id": "it-b1-03.l1.e3",
+          "type": "mcq",
+          "prompt": "\"Gli appunti? Will you send them to me?\"",
+          "options": [
+            "Me li mandi?",
+            "Mi li mandi?",
+            "Me le mandi?"
+          ],
+          "answer": 0,
+          "explain": "Gli appunti: masculine plural, li."
+        },
+        {
+          "id": "it-b1-03.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I'll send them to you tonight.\" (gli appunti)",
+          "meaning": "I'll send them to you tonight.",
+          "tiles": [
+            "Te",
+            "li",
+            "mando",
+            "stasera",
+            "ti",
+            "le",
+            "lo"
+          ],
+          "answer": "Te li mando stasera",
+          "alt": []
+        },
+        {
+          "id": "it-b1-03.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Leo asking for?",
+          "text": "Me la presti per il fine settimana?",
+          "listen": true,
+          "options": [
+            "To borrow something for the weekend",
+            "To buy something this weekend",
+            "To give something back at the weekend"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l1.e6",
+          "type": "mcq",
+          "prompt": "\"Ci\" + \"lo\" becomes:",
+          "options": [
+            "ce lo",
+            "ci lo",
+            "lo ci"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l1.e7",
+          "type": "type",
+          "prompt": "The book, il libro. Translate from Portuguese: \"Você me empresta?\"",
+          "answer": "Me lo presti?",
+          "alt": [
+            "Me lo puoi prestare?",
+            "Puoi prestarmelo?",
+            "Me lo presti"
+          ]
+        },
+        {
+          "id": "it-b1-03.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "prestare",
+              "to lend"
+            ],
+            [
+              "mandare",
+              "to send"
+            ],
+            [
+              "chiedere",
+              "to ask"
+            ],
+            [
+              "gli appunti",
+              "notes"
+            ],
+            [
+              "mi dispiace",
+              "I'm sorry"
+            ],
+            [
+              "in cambio",
+              "in return"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Che cosa mi dai in cambio?\"",
+        "bottom": "Leo: \"La mia amicizia?\""
+      },
+      "newItems": [
+        "it-b1-03.g-combinati",
+        "it-b1-03.p-melopresti",
+        "it-b1-03.p-teloporto",
+        "it-b1-03.v-prestare",
+        "it-b1-03.v-mandare",
+        "it-b1-03.v-bici",
+        "it-b1-03.v-appunti",
+        "it-b1-03.p-midispiace",
+        "it-b1-03.p-incambio",
+        "it-b1-03.v-chiedere"
+      ]
+    },
+    {
+      "id": "it-b1-03.l2",
+      "title": "Glielo diamo domenica",
+      "canDo": "I can talk about giving and telling things to someone else with glielo.",
+      "intro": {
+        "art": "🎁🧣💐",
+        "scene": "Grandma's birthday is on Sunday. Sara checks that Marco has done his part.",
+        "lines": [
+          {
+            "who": "Sara",
+            "text": "Hai comprato il regalo per la nonna?",
+            "meaning": "Have you bought the present for grandma?"
+          },
+          {
+            "who": "Marco",
+            "text": "Sì, gliel'ho comprato ieri. Una sciarpa rossa.",
+            "meaning": "Yes, I bought it for her yesterday. A red scarf."
+          },
+          {
+            "who": "Sara",
+            "text": "Bene. Glielo diamo domenica a pranzo?",
+            "meaning": "Good. Shall we give it to her on Sunday at lunch?"
+          },
+          {
+            "who": "Marco",
+            "text": "Sì. E i fiori? Glieli porti tu?",
+            "meaning": "Yes. And the flowers? Will you bring them for her?"
+          },
+          {
+            "who": "Sara",
+            "text": "Glieli porto io. Ma non dirle niente, è una sorpresa.",
+            "meaning": "I'll bring them. But don't tell her anything, it's a surprise."
+          },
+          {
+            "who": "Marco",
+            "text": "Tranquilla. Non gliel'ho detto e non glielo dico.",
+            "meaning": "Relax. I haven't told her and I won't tell her."
+          }
+        ],
+        "notes": [
+          {
+            "title": "One form for him, her and them",
+            "body": "Gli (to him), le (to her) and gli (to them) all turn into glie-, joined to the thing in one word: glielo, gliela, glieli, gliele. Glielo do can mean \"I give it to him\", \"to her\" or \"to them\": the context tells you."
+          },
+          {
+            "title": "Gliel'ho detto",
+            "body": "Before avere, glielo and gliela shorten to gliel': gliel'ho comprato, gliel'ho detto. Glieli and gliele stay whole: glieli ho portati."
+          },
+          {
+            "title": "🇧🇷 PT tip: il fiore",
+            "body": "A classic gender trap: il fiore, i fiori are masculine in Italian, so \"the flowers, I'll bring them\" is glieli porto, not *gliele. Same family: il mare, il latte, il sangue, il ponte."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-03.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Il regalo per la nonna? ___ diamo domenica.",
+          "meaning": "The present for grandma? We'll give it to her on Sunday.",
+          "options": [
+            "Glielo",
+            "Le lo",
+            "Gliela"
+          ],
+          "answer": 0,
+          "explain": "Le + lo → glielo, one word."
+        },
+        {
+          "id": "it-b1-03.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "I fiori? ___ porto io.",
+          "meaning": "The flowers? I'll bring them to her.",
+          "options": [
+            "Glieli",
+            "Gliele",
+            "Glielo"
+          ],
+          "answer": 0,
+          "explain": "I fiori are masculine plural."
+        },
+        {
+          "id": "it-b1-03.l2.e3",
+          "type": "mcq",
+          "prompt": "\"I told him.\"",
+          "options": [
+            "Gliel'ho detto.",
+            "Lo gli ho detto.",
+            "Gli l'ho detto."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I bought it for her yesterday.\" (il regalo)",
+          "meaning": "I bought it for her yesterday.",
+          "tiles": [
+            "Gliel'ho",
+            "comprato",
+            "ieri",
+            "Glielo",
+            "comprata",
+            "le"
+          ],
+          "answer": "Gliel'ho comprato ieri",
+          "alt": []
+        },
+        {
+          "id": "it-b1-03.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. What does Sara say about the flowers?",
+          "text": "Glieli porto io.",
+          "listen": true,
+          "options": [
+            "She will bring them herself",
+            "Marco should bring them",
+            "Nobody needs to bring them"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l2.e6",
+          "type": "mcq",
+          "prompt": "\"Glielo do\" can mean:",
+          "options": [
+            "I give it to him, to her or to them.",
+            "Only \"I give it to him\".",
+            "Only \"I give it to you\"."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l2.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu contei para ela.\"",
+          "answer": "Gliel'ho detto.",
+          "alt": [
+            "Glielo ho detto.",
+            "Io gliel'ho detto.",
+            "Gliel'ho raccontato."
+          ]
+        },
+        {
+          "id": "it-b1-03.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "glielo do",
+              "I give it to him / her"
+            ],
+            [
+              "il regalo",
+              "present"
+            ],
+            [
+              "la sciarpa",
+              "scarf"
+            ],
+            [
+              "il fiore",
+              "flower"
+            ],
+            [
+              "il pranzo",
+              "lunch"
+            ],
+            [
+              "la sorpresa",
+              "surprise"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Non glielo dico\"",
+        "bottom": "Nonna has known since Tuesday"
+      },
+      "newItems": [
+        "it-b1-03.g-glielo",
+        "it-b1-03.p-glielodo",
+        "it-b1-03.p-glielhodetto",
+        "it-b1-03.v-regalo",
+        "it-b1-03.v-sciarpa",
+        "it-b1-03.v-fiore",
+        "it-b1-03.v-pranzo",
+        "it-b1-03.v-sorpresa",
+        "it-b1-03.v-dire"
+      ]
+    },
+    {
+      "id": "it-b1-03.l3",
+      "title": "Dammi, dimmi, non dirlo",
+      "canDo": "I can tell a friend to do or not to do something.",
+      "intro": {
+        "art": "📱🔑🏃",
+        "scene": "Giulia rushes in. Something has happened to Sara.",
+        "lines": [
+          {
+            "who": "Giulia",
+            "text": "Marco, dammi il telefono, per favore. Devo chiamare Sara.",
+            "meaning": "Marco, give me the phone, please. I have to call Sara."
+          },
+          {
+            "who": "Marco",
+            "text": "Eccolo. Ma dimmi: che cosa è successo?",
+            "meaning": "Here it is. But tell me: what has happened?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Ha perso le chiavi di casa. Ha bisogno delle mie.",
+            "meaning": "She has lost her house keys. She needs mine."
+          },
+          {
+            "who": "Marco",
+            "text": "Allora portagliele subito! Aspetta, ti accompagno.",
+            "meaning": "Then take them to her right away! Wait, I'll come with you."
+          },
+          {
+            "who": "Giulia",
+            "text": "Grazie. E non dirlo a Leo: ride sempre di queste cose.",
+            "meaning": "Thanks. And don't tell Leo: he always laughs at these things."
+          },
+          {
+            "who": "Marco",
+            "text": "Va bene, non glielo dico. Andiamo!",
+            "meaning": "All right, I won't tell him. Let's go!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "The tu imperative",
+            "body": "Verbs in -are end in -a: aspetta!, porta!, guarda! Verbs in -ere and -ire end in -i: prendi!, senti!, vieni! Five short ones: da' (dare), di' (dire), fa' (fare), sta' (stare), va' (andare)."
+          },
+          {
+            "title": "Pronouns go on the end",
+            "body": "Portalo, prendila, aspettami, portagliele. After the five short forms the consonant doubles: dammi, dimmi, fammi, dammelo, dimmelo, fallo, vacci. Only gli does not double: dagli, digli."
+          },
+          {
+            "title": "Saying \"don't\"",
+            "body": "For tu, the negative is non + infinitive: non parlare!, non dirlo!, non aspettare! The pronoun can go before or after: non dirlo = non lo dire."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-03.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "___ il telefono, per favore.",
+          "meaning": "Give me the phone, please.",
+          "options": [
+            "Dammi",
+            "Dami",
+            "Dai mi"
+          ],
+          "answer": 0,
+          "explain": "Da' + mi doubles the m: dammi."
+        },
+        {
+          "id": "it-b1-03.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Non ___ a Leo!",
+          "meaning": "Don't tell Leo!",
+          "options": [
+            "dirlo",
+            "dillo",
+            "dici lo"
+          ],
+          "answer": 0,
+          "explain": "Negative for tu: non + infinitive."
+        },
+        {
+          "id": "it-b1-03.l3.e3",
+          "type": "mcq",
+          "prompt": "\"Tell me!\" (to a friend)",
+          "options": [
+            "Dimmi!",
+            "Mi di'!",
+            "Dicimi!"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"Take them to her right away!\" (le chiavi)",
+          "meaning": "Take them to her right away!",
+          "tiles": [
+            "Portagliele",
+            "subito",
+            "Portaglielo",
+            "le",
+            "porta"
+          ],
+          "answer": "Portagliele subito",
+          "alt": []
+        },
+        {
+          "id": "it-b1-03.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. What does Marco want?",
+          "text": "Fammi sapere quando arrivi.",
+          "listen": true,
+          "options": [
+            "To be told when you arrive",
+            "To know why you are late",
+            "To arrive with you"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l3.e6",
+          "type": "mcq",
+          "prompt": "To a friend, the negative of \"Aspetta!\" is:",
+          "options": [
+            "Non aspettare!",
+            "Non aspetta!",
+            "No aspetta!"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese, speaking to a friend: \"Me dá a chave.\"",
+          "answer": "Dammi la chiave.",
+          "alt": [
+            "Dammi la chiave!",
+            "Dammi la chiave, per favore."
+          ]
+        },
+        {
+          "id": "it-b1-03.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "dammi",
+              "give me"
+            ],
+            [
+              "dimmi",
+              "tell me"
+            ],
+            [
+              "fammi sapere",
+              "let me know"
+            ],
+            [
+              "Eccolo",
+              "Here it is"
+            ],
+            [
+              "aspetta",
+              "wait"
+            ],
+            [
+              "la chiave",
+              "key"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Non dirlo a Leo\"",
+        "bottom": "Leo, in the group chat, ten minutes later: 😂🔑"
+      },
+      "newItems": [
+        "it-b1-03.g-imperativo",
+        "it-b1-03.p-dammi",
+        "it-b1-03.p-dimmi",
+        "it-b1-03.p-fammisapere",
+        "it-b1-03.p-eccolo",
+        "it-b1-03.p-nondirlo",
+        "it-b1-03.p-portaglielo",
+        "it-b1-03.p-aspetta",
+        "it-b1-03.p-averebisogno",
+        "it-b1-03.v-chiave"
+      ]
+    },
+    {
+      "id": "it-b1-03.l4",
+      "title": "Lettura: Il signor Bruno",
+      "canDo": "I can read a short text about helping a neighbour and answer questions about it in Italian.",
+      "intro": {
+        "art": "📖🍅📱",
+        "scene": "Sara racconta del suo vicino di casa. Leggi, ascolta e poi rispondi.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "Il mio vicino, il signor Bruno, ha ottant'anni e vive da solo.",
+            "meaning": "My neighbour, Mr Bruno, is eighty and lives alone.",
+            "who": "Sara"
+          },
+          {
+            "text": "Ogni sabato gli faccio la spesa: lui mi dà la lista e io gliela riporto con le borse.",
+            "meaning": "Every Saturday I do his shopping: he gives me the list and I bring it back to him with the bags.",
+            "who": "Sara"
+          },
+          {
+            "text": "Il giornale glielo compro ogni mattina prima di andare al lavoro.",
+            "meaning": "The newspaper I buy for him every morning before going to work.",
+            "who": "Sara"
+          },
+          {
+            "text": "Lui in cambio mi regala i pomodori del suo orto. Me li lascia davanti alla porta.",
+            "meaning": "In return he gives me tomatoes from his vegetable garden. He leaves them for me in front of the door.",
+            "who": "Sara"
+          },
+          {
+            "text": "Ieri mi ha chiesto un favore diverso.",
+            "meaning": "Yesterday he asked me a different favour.",
+            "who": "Sara"
+          },
+          {
+            "text": "Voleva scrivere un messaggio a sua nipote, ma non sapeva usare il telefono nuovo.",
+            "meaning": "He wanted to write a message to his granddaughter, but he didn't know how to use his new phone.",
+            "who": "Sara"
+          },
+          {
+            "text": "Gliel'ho spiegato tre volte, con pazienza.",
+            "meaning": "I explained it to him three times, patiently.",
+            "who": "Sara"
+          },
+          {
+            "text": "Alla fine il messaggio gliel'ha mandato da solo.",
+            "meaning": "In the end he sent her the message by himself.",
+            "who": "Sara"
+          },
+          {
+            "text": "Era così contento che me l'ha fatto leggere. Diceva: cara Anna, adesso ti scrivo ogni giorno!",
+            "meaning": "He was so pleased that he had me read it. It said: dear Anna, now I will write to you every day!",
+            "who": "Sara"
+          }
+        ],
+        "glossary": [
+          {
+            "word": "il vicino",
+            "meaning": "neighbour"
+          },
+          {
+            "word": "fare la spesa",
+            "meaning": "to do the food shopping"
+          },
+          {
+            "word": "l'orto",
+            "meaning": "vegetable garden"
+          },
+          {
+            "word": "la nipote",
+            "meaning": "granddaughter; niece"
+          },
+          {
+            "word": "spiegare",
+            "meaning": "to explain"
+          },
+          {
+            "word": "da solo",
+            "meaning": "alone, by himself"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-03.l4.e1",
+          "type": "mcq",
+          "prompt": "Quanti anni ha il signor Bruno?",
+          "options": [
+            "Ottanta.",
+            "Sessanta.",
+            "Novanta."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l4.e2",
+          "type": "mcq",
+          "prompt": "Che cosa fa Sara per lui ogni sabato?",
+          "options": [
+            "Gli fa la spesa.",
+            "Gli pulisce la casa.",
+            "Gli cucina il pranzo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l4.e3",
+          "type": "mcq",
+          "prompt": "Che cosa gli compra ogni mattina?",
+          "options": [
+            "Il giornale.",
+            "Il pane.",
+            "I pomodori."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l4.e4",
+          "type": "mcq",
+          "prompt": "Che cosa le regala lui in cambio?",
+          "options": [
+            "I pomodori del suo orto.",
+            "I fiori del giardino.",
+            "Un libro."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l4.e5",
+          "type": "mcq",
+          "prompt": "Che cosa voleva fare ieri il signor Bruno?",
+          "options": [
+            "Scrivere un messaggio a sua nipote.",
+            "Comprare un telefono nuovo.",
+            "Chiamare suo figlio."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l4.e6",
+          "type": "mcq",
+          "prompt": "Chi ha mandato il messaggio, alla fine?",
+          "options": [
+            "Il signor Bruno, da solo.",
+            "Sara.",
+            "La nipote."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "\"Adesso ti scrivo ogni giorno!\"",
+        "bottom": "Anna: 47 unread messages by Thursday"
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-b1-03.l5",
+      "title": "Racconto: Il regalo sbagliato",
+      "canDo": "I can follow a short spoken story about a present and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧🎁📚",
+        "scene": "Marco racconta il compleanno di Giulia. Ascolta bene: chi ha regalato che cosa a chi?",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "La settimana scorsa era il compleanno di Giulia.",
+            "meaning": "Last week it was Giulia's birthday.",
+            "who": "Marco"
+          },
+          {
+            "text": "Le ho comprato un libro di cucina giapponese e gliel'ho dato a cena.",
+            "meaning": "I bought her a Japanese cookbook and gave it to her at dinner.",
+            "who": "Marco"
+          },
+          {
+            "text": "Lei mi ha detto grazie, ma aveva una faccia strana.",
+            "meaning": "She said thank you, but she had a strange look on her face.",
+            "who": "Marco"
+          },
+          {
+            "text": "Dopo cena Leo mi ha chiamato da parte.",
+            "meaning": "After dinner Leo took me aside.",
+            "who": "Marco"
+          },
+          {
+            "text": "Mi ha detto: quel libro gliel'ho regalato io, a Natale!",
+            "meaning": "He told me: I gave her that book, at Christmas!",
+            "who": "Marco"
+          },
+          {
+            "text": "Io non lo sapevo. Nessuno me l'aveva detto!",
+            "meaning": "I didn't know. Nobody had told me!",
+            "who": "Marco"
+          },
+          {
+            "text": "Il giorno dopo sono tornato in libreria con lo scontrino.",
+            "meaning": "The next day I went back to the bookshop with the receipt.",
+            "who": "Marco"
+          },
+          {
+            "text": "Ho chiesto alla commessa: me lo può cambiare?",
+            "meaning": "I asked the shop assistant: can you exchange it for me?",
+            "who": "Marco"
+          },
+          {
+            "text": "Lei me l'ha cambiato con un libro di cucina brasiliana.",
+            "meaning": "She exchanged it for a Brazilian cookbook.",
+            "who": "Marco"
+          },
+          {
+            "text": "Quando gliel'ho portato, Giulia ha riso: perfetto, adesso Leo deve cucinare tutti e due!",
+            "meaning": "When I took it to her, Giulia laughed: perfect, now Leo has to cook both!",
+            "who": "Marco"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "la cucina",
+            "meaning": "cooking; kitchen"
+          },
+          {
+            "word": "strano",
+            "meaning": "strange"
+          },
+          {
+            "word": "Natale",
+            "meaning": "Christmas"
+          },
+          {
+            "word": "lo scontrino",
+            "meaning": "receipt"
+          },
+          {
+            "word": "la commessa",
+            "meaning": "shop assistant"
+          },
+          {
+            "word": "tutti e due",
+            "meaning": "both"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-03.l5.e1",
+          "type": "mcq",
+          "prompt": "Che cosa ha regalato Marco a Giulia?",
+          "options": [
+            "Un libro di cucina giapponese.",
+            "Una sciarpa.",
+            "Un libro di cucina italiana."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l5.e2",
+          "type": "mcq",
+          "prompt": "Perché Giulia aveva una faccia strana?",
+          "options": [
+            "Perché aveva già quel libro.",
+            "Perché non le piace cucinare.",
+            "Perché era stanca."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l5.e3",
+          "type": "mcq",
+          "prompt": "Chi le aveva regalato lo stesso libro?",
+          "options": [
+            "Leo.",
+            "Sara.",
+            "La nonna."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l5.e4",
+          "type": "mcq",
+          "prompt": "Dove è tornato Marco il giorno dopo?",
+          "options": [
+            "In libreria.",
+            "Al ristorante.",
+            "A casa di Giulia."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l5.e5",
+          "type": "mcq",
+          "prompt": "Che cosa ha chiesto alla commessa?",
+          "options": [
+            "Di cambiargli il libro.",
+            "Di dargli i soldi.",
+            "Di consigliargli un regalo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-03.l5.e6",
+          "type": "mcq",
+          "prompt": "Che libro ha portato alla fine a Giulia?",
+          "options": [
+            "Un libro di cucina brasiliana.",
+            "Un libro di giapponese.",
+            "Un libro di viaggi."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Two cookbooks, zero cooks",
+        "bottom": "Leo has been volunteered"
+      },
+      "newItems": []
+    }
+  ]
+}

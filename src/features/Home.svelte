@@ -47,9 +47,20 @@
   const line = $derived.by(() => {
     if (units && !units.length) return 'Lessons are on their way.';
     if (units && !next) return 'You finished everything written so far. More bridges are being built!';
-    if (status.atRisk) return 'One short lesson keeps the streak alive. No pressure.';
-    if (status.doneToday) return app.lang === 'ja' ? 'おつかれさま！ Done for today. Extra practice is always welcome.' : 'Bravo! Done for today.';
-    return app.lang === 'ja' ? 'おはよう！ Ready to cross the next bridge?' : 'Buongiorno! Andiamo?';
+    const ja = app.lang === 'ja';
+    // "Done" only once the daily minutes for this language are really in.
+    if (minutes >= DAILY_MINUTES) {
+      return ja ? `おつかれさま！ ${DAILY_MINUTES} minutes done for today. Extra practice is always welcome.` : `Bravo! ${DAILY_MINUTES} minutes done for today. Extra practice is always welcome.`;
+    }
+    if (minutes > 0) {
+      const left = DAILY_MINUTES - minutes;
+      const so = `${minutes} of ${DAILY_MINUTES} minutes so far, ${left} to go.`;
+      return ja ? `いいですね！ ${so}` : `Bene! ${so}`;
+    }
+    if (status.atRisk) return `One short lesson keeps the streak alive. ${DAILY_MINUTES} minutes is the goal, no pressure.`;
+    const hour = new Date().getHours();
+    const hello = ja ? (hour < 11 ? 'おはよう！' : hour < 18 ? 'こんにちは！' : 'こんばんは！') : hour < 13 ? 'Buongiorno!' : hour < 18 ? 'Buon pomeriggio!' : 'Buonasera!';
+    return `${hello} ${DAILY_MINUTES} minutes today: ready to cross the next bridge?`;
   });
 </script>
 

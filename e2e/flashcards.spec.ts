@@ -36,7 +36,7 @@ test('learned cards can be read again under My flashcards', async ({ page }) => 
   }
   await page.getByRole('link', { name: 'Back to decks' }).click();
   await page.getByRole('link', { name: /My flashcards/ }).click();
-  await expect(page.getByText('10 cards collected')).toBeVisible();
+  await expect(page.getByText('10 cards you have already learned')).toBeVisible();
 
   // Meanings stay hidden until a card is tapped.
   await expect(page.getByText('platform (track)', { exact: true })).toHaveCount(0);
@@ -45,6 +45,29 @@ test('learned cards can be read again under My flashcards', async ({ page }) => 
 
   await page.getByRole('searchbox').fill('biglietto');
   await expect(page.locator('.item')).toHaveCount(1);
+});
+
+test('learned cards can be practised again as flip cards', async ({ page }) => {
+  await page.goto('./#/deck/it-deck-viaggio');
+  for (let i = 0; i < 10; i++) {
+    await page.getByRole('button', { name: 'Show meaning' }).click();
+    await page.getByRole('button', { name: 'Got it' }).click();
+  }
+  await page.goto('./#/cards');
+  await page.getByRole('button', { name: 'Practise all 10 as flashcards' }).click();
+  await expect(page.getByText('10 left')).toBeVisible();
+
+  // A card put off comes back before the end.
+  await page.getByRole('button', { name: 'Show meaning' }).click();
+  await page.getByRole('button', { name: 'Again later' }).click();
+  await expect(page.getByText('10 left')).toBeVisible();
+  for (let i = 0; i < 10; i++) {
+    await page.getByRole('button', { name: 'Show meaning' }).click();
+    await page.getByRole('button', { name: 'Got it' }).click();
+  }
+  await expect(page.getByText('10 cards practised')).toBeVisible();
+  await page.getByRole('button', { name: 'Back to my flashcards' }).click();
+  await expect(page.getByText('10 cards you have already learned')).toBeVisible();
 });
 
 test('the words of a story become flashcards when it is finished', async ({ page }) => {
@@ -59,6 +82,6 @@ test('the words of a story become flashcards when it is finished', async ({ page
   }
   await expect(page.getByText('Bridge crossed!')).toBeVisible();
   await page.goto('./#/cards');
-  await expect(page.getByText('5 cards collected')).toBeVisible();
+  await expect(page.getByText('5 cards you have already learned')).toBeVisible();
   await expect(page.locator('.word').filter({ hasText: "l'asciugamano" })).toBeVisible();
 });

@@ -8,11 +8,13 @@
   { "id": "ja-t04", "lang": "ja", "track": "trip", "icon": "🍜", "tags": ["travel"], "title": "Eating out", "sub": "Tables, ordering, the bill", "file": "ja/A1/unit-t04" },
   { "id": "ja-a1-04", "lang": "ja", "track": "core", "icon": "⛩️", "tags": ["travel", "history"], "title": "What's it like?", "sub": "い and な adjectives · が好きです · past", "file": "ja/A1/unit-04" },
   { "id": "ja-t05", "lang": "ja", "track": "trip", "icon": "🏨", "tags": ["travel"], "title": "At the hotel", "sub": "Check-in · requests · problems", "file": "ja/A1/unit-t05" },
+  { "id": "ja-a1-05", "lang": "ja", "track": "core", "icon": "🗻", "tags": ["travel", "sports"], "title": "Plans and wishes", "sub": "たいです · ましょう · how often", "file": "ja/A1/unit-05" },
   { "id": "it-r1", "lang": "it", "track": "core", "icon": "🧳", "tags": ["sports", "travel"], "title": "Cos'hai fatto?", "sub": "Talking about your weekend · passato prossimo", "file": "it/A2/unit-r1" },
   { "id": "it-r2", "lang": "it", "track": "core", "icon": "🏛️", "tags": ["history"], "title": "Com'era?", "sub": "How things used to be · imperfetto", "file": "it/A2/unit-r2" },
   { "id": "it-r3", "lang": "it", "track": "core", "icon": "🍝", "tags": ["travel"], "title": "Mi piace, mi è piaciuto", "sub": "At the restaurant · pronouns and piacere", "file": "it/A2/unit-r3" },
   { "id": "it-r4", "lang": "it", "track": "core", "icon": "🚆", "tags": ["travel", "geography"], "title": "Al mercato, in treno", "sub": "Shopping and train travel · ci · ne", "file": "it/A2/unit-r4" },
   { "id": "it-r5", "lang": "it", "track": "core", "icon": "🔮", "tags": ["travel", "sports"], "title": "Che cosa farai?", "sub": "Plans and predictions · futuro semplice", "file": "it/A2/unit-r5" },
   { "id": "it-b1-01", "lang": "it", "track": "core", "icon": "💭", "tags": ["travel"], "title": "Vorrei, potresti, dovresti", "sub": "Wishes, requests, advice · condizionale", "file": "it/B1/unit-01" },
-  { "id": "it-b1-02", "lang": "it", "track": "core", "icon": "🗣️", "tags": ["politics"], "title": "Penso che…", "sub": "Opinions, hopes, doubts · congiuntivo", "file": "it/B1/unit-02" }
+  { "id": "it-b1-02", "lang": "it", "track": "core", "icon": "🗣️", "tags": ["politics"], "title": "Penso che…", "sub": "Opinions, hopes, doubts · congiuntivo", "file": "it/B1/unit-02" },
+  { "id": "it-b1-03", "lang": "it", "track": "core", "icon": "🎁", "tags": ["travel"], "title": "Me lo presti?", "sub": "Double pronouns · imperative", "file": "it/B1/unit-03" }
 ]
