@@ -1,0 +1,1192 @@
+{
+  "id": "it-b1-02",
+  "lang": "it",
+  "level": "B1",
+  "track": "core",
+  "title": "Penso che…",
+  "summary": "Opinions, hopes, fears and doubts: the congiuntivo presente, when Italian needs it, and when it does not.",
+  "canDo": [
+    "I can give my opinion and agree or disagree with penso che, credo che, mi sembra che.",
+    "I can say what I hope, fear or want someone else to do.",
+    "I can choose between the congiuntivo, the indicative and di + infinitive."
+  ],
+  "grammar": [
+    "Congiuntivo presente: essere, avere",
+    "Congiuntivo presente: regular and common irregular verbs",
+    "Verbs of opinion, hope, fear, will",
+    "di + infinito with the same subject",
+    "Indicative after certainty"
+  ],
+  "items": [
+    {
+      "id": "it-b1-02.g-congiuntivo",
+      "kind": "grammar",
+      "front": "che io sia, che io abbia",
+      "back": "The congiuntivo presente follows verbs of opinion: penso che sia, credo che abbia. The three singular forms are identical: sia, sia, sia.",
+      "pt": "PT says \"acho que é\" (indicative) but \"não acho que seja\". Italian wants the congiuntivo in both: penso che sia."
+    },
+    {
+      "id": "it-b1-02.p-pensoche",
+      "kind": "phrase",
+      "front": "penso che",
+      "back": "I think that"
+    },
+    {
+      "id": "it-b1-02.p-credoche",
+      "kind": "phrase",
+      "front": "credo che",
+      "back": "I believe that"
+    },
+    {
+      "id": "it-b1-02.p-misembrache",
+      "kind": "phrase",
+      "front": "mi sembra che",
+      "back": "it seems to me that",
+      "pt": "PT parece-me que, acho que."
+    },
+    {
+      "id": "it-b1-02.p-puodarsi",
+      "kind": "phrase",
+      "front": "può darsi",
+      "back": "maybe, it could be",
+      "pt": "PT pode ser."
+    },
+    {
+      "id": "it-b1-02.p-sonodaccordo",
+      "kind": "phrase",
+      "front": "sono d'accordo",
+      "back": "I agree",
+      "pt": "With essere, as in PT \"estou de acordo\". Never *ho d'accordo."
+    },
+    {
+      "id": "it-b1-02.v-pero",
+      "kind": "vocab",
+      "front": "però",
+      "back": "but, however"
+    },
+    {
+      "id": "it-b1-02.v-attore",
+      "kind": "vocab",
+      "front": "l'attore",
+      "back": "actor",
+      "note": "Feminine: l'attrice."
+    },
+    {
+      "id": "it-b1-02.v-lungo",
+      "kind": "vocab",
+      "front": "lungo",
+      "back": "long",
+      "pt": "PT comprido, longo. Not \"longe\", which is lontano."
+    },
+    {
+      "id": "it-b1-02.v-fine",
+      "kind": "vocab",
+      "front": "la fine",
+      "back": "the end",
+      "pt": "Feminine in Italian: la fine del film. PT o fim."
+    },
+    {
+      "id": "it-b1-02.v-bravo",
+      "kind": "vocab",
+      "front": "bravo",
+      "back": "good at something, skilled",
+      "pt": "False friend: PT \"bravo\" means angry. IT bravo = bom, competente."
+    },
+    {
+      "id": "it-b1-02.g-congreg",
+      "kind": "grammar",
+      "front": "che io parli, prenda, parta",
+      "back": "Regular congiuntivo: -are verbs take -i (parli), -ere and -ire verbs take -a (prenda, parta). Noi always ends in -iamo.",
+      "pt": "The vowels swap, exactly as in PT: fale, coma, parta."
+    },
+    {
+      "id": "it-b1-02.p-speroche",
+      "kind": "phrase",
+      "front": "spero che",
+      "back": "I hope that"
+    },
+    {
+      "id": "it-b1-02.p-hopaura",
+      "kind": "phrase",
+      "front": "ho paura che",
+      "back": "I'm afraid that",
+      "pt": "PT tenho medo que."
+    },
+    {
+      "id": "it-b1-02.p-voglioche",
+      "kind": "phrase",
+      "front": "voglio che",
+      "back": "I want (someone) to",
+      "note": "Voglio che tu venga.",
+      "pt": "PT quero que você venha: same structure."
+    },
+    {
+      "id": "it-b1-02.p-eimportante",
+      "kind": "phrase",
+      "front": "è importante che",
+      "back": "it is important that"
+    },
+    {
+      "id": "it-b1-02.p-bisognache",
+      "kind": "phrase",
+      "front": "bisogna che",
+      "back": "it is necessary that",
+      "pt": "PT é preciso que."
+    },
+    {
+      "id": "it-b1-02.v-vada",
+      "kind": "vocab",
+      "front": "vada",
+      "back": "(that) I, he or she go",
+      "note": "From andare."
+    },
+    {
+      "id": "it-b1-02.v-faccia",
+      "kind": "vocab",
+      "front": "faccia",
+      "back": "(that) I, he or she do",
+      "note": "From fare. La faccia is also \"the face\"."
+    },
+    {
+      "id": "it-b1-02.v-possa",
+      "kind": "vocab",
+      "front": "possa",
+      "back": "(that) I, he or she can",
+      "note": "From potere."
+    },
+    {
+      "id": "it-b1-02.v-venga",
+      "kind": "vocab",
+      "front": "venga",
+      "back": "(that) I, he or she come",
+      "note": "From venire."
+    },
+    {
+      "id": "it-b1-02.v-volo",
+      "kind": "vocab",
+      "front": "il volo",
+      "back": "flight",
+      "pt": "PT voo."
+    },
+    {
+      "id": "it-b1-02.v-valigia",
+      "kind": "vocab",
+      "front": "la valigia",
+      "back": "suitcase",
+      "note": "Fare la valigia = to pack.",
+      "pt": "PT mala."
+    },
+    {
+      "id": "it-b1-02.v-accompagnare",
+      "kind": "vocab",
+      "front": "accompagnare",
+      "back": "to go with, to take (someone somewhere)"
+    },
+    {
+      "id": "it-b1-02.v-svegliare",
+      "kind": "vocab",
+      "front": "svegliare",
+      "back": "to wake (someone) up",
+      "note": "Svegliarsi = to wake up.",
+      "pt": "PT acordar."
+    },
+    {
+      "id": "it-b1-02.g-dipiu",
+      "kind": "grammar",
+      "front": "penso di + infinito",
+      "back": "When the same person is on both sides, use di + infinitive, not che: penso di partire. With two different people: penso che lui parta.",
+      "pt": "PT can say \"acho que vou\" for both. Italian separates them."
+    },
+    {
+      "id": "it-b1-02.g-certezza",
+      "kind": "grammar",
+      "front": "sono sicuro che + indicativo",
+      "back": "Certainty takes the normal indicative: so che è vero, sono sicuro che viene. Opinion and doubt take the congiuntivo."
+    },
+    {
+      "id": "it-b1-02.p-pensodi",
+      "kind": "phrase",
+      "front": "penso di andare",
+      "back": "I'm thinking of going"
+    },
+    {
+      "id": "it-b1-02.p-sonosicuro",
+      "kind": "phrase",
+      "front": "sono sicuro che",
+      "back": "I'm sure that",
+      "pt": "PT tenho certeza que."
+    },
+    {
+      "id": "it-b1-02.p-dubitoche",
+      "kind": "phrase",
+      "front": "dubito che",
+      "back": "I doubt that"
+    },
+    {
+      "id": "it-b1-02.p-soche",
+      "kind": "phrase",
+      "front": "so che",
+      "back": "I know that"
+    },
+    {
+      "id": "it-b1-02.p-emeglio",
+      "kind": "phrase",
+      "front": "è meglio che",
+      "back": "it's better that"
+    },
+    {
+      "id": "it-b1-02.p-dai",
+      "kind": "phrase",
+      "front": "Dai!",
+      "back": "Come on!",
+      "pt": "PT Vai! Vamos lá!"
+    },
+    {
+      "id": "it-b1-02.v-squadra",
+      "kind": "vocab",
+      "front": "la squadra",
+      "back": "team",
+      "pt": "PT time, equipe."
+    },
+    {
+      "id": "it-b1-02.v-ultimo",
+      "kind": "vocab",
+      "front": "ultimo",
+      "back": "last, latest"
+    },
+    {
+      "id": "it-b1-02.v-giocare",
+      "kind": "vocab",
+      "front": "giocare",
+      "back": "to play (a game, a sport)",
+      "note": "An instrument is suonare.",
+      "pt": "PT jogar (um jogo). \"Jogar fora\" is buttare via."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "it-b1-02.l1",
+      "title": "Penso che sia…",
+      "canDo": "I can give my opinion and agree or disagree.",
+      "intro": {
+        "place": "cafe",
+        "scene": "Marco and Giulia watched the same film last night. They did not see the same film.",
+        "lines": [
+          {
+            "who": "Giulia",
+            "text": "Allora, ti è piaciuto il film di ieri sera?",
+            "meaning": "So, did you like the film last night?"
+          },
+          {
+            "who": "Marco",
+            "text": "Sì. Penso che sia un film molto bello.",
+            "meaning": "Yes. I think it's a very good film."
+          },
+          {
+            "who": "Giulia",
+            "text": "Davvero? Io credo che sia troppo lungo.",
+            "meaning": "Really? I think it's too long."
+          },
+          {
+            "who": "Marco",
+            "text": "Può darsi. Ma mi sembra che gli attori siano bravissimi.",
+            "meaning": "Maybe. But it seems to me the actors are excellent."
+          },
+          {
+            "who": "Giulia",
+            "text": "Su questo sono d'accordo. Però non credo che abbia una bella fine.",
+            "meaning": "I agree on that. But I don't think it has a good ending."
+          },
+          {
+            "who": "Marco",
+            "text": "Secondo me la fine è perfetta!",
+            "meaning": "In my opinion the ending is perfect!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Essere and avere",
+            "body": "che io sia, tu sia, lui sia, noi siamo, voi siate, loro siano. Che io abbia, tu abbia, lui abbia, noi abbiamo, voi abbiate, loro abbiano. Because io, tu and lui look the same, Italians often add the pronoun: penso che tu sia stanco."
+          },
+          {
+            "title": "When it appears",
+            "body": "After verbs that give an opinion and not a fact: penso che, credo che, mi sembra che, non credo che. What follows che is your view of things, so it goes in the congiuntivo."
+          },
+          {
+            "title": "🇧🇷 PT tip: secondo me",
+            "body": "Secondo me and per me are followed by the normal indicative: secondo me è bello. So if the congiuntivo escapes you mid-sentence, start with secondo me. But do learn it: \"penso che è\" is what Italians notice first in a foreigner."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-02.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Penso che il film ___ bello.",
+          "meaning": "I think the film is good.",
+          "options": [
+            "sia",
+            "è",
+            "era"
+          ],
+          "answer": 0,
+          "explain": "Penso che → congiuntivo."
+        },
+        {
+          "id": "it-b1-02.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Credo che Marco ___ ragione.",
+          "meaning": "I think Marco is right.",
+          "options": [
+            "abbia",
+            "ha",
+            "avrà"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l1.e3",
+          "type": "mcq",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Secondo me il film è lungo.",
+            "Secondo me il film sia lungo.",
+            "Secondo me che il film è lungo."
+          ],
+          "answer": 0,
+          "explain": "Secondo me takes the indicative, and no che."
+        },
+        {
+          "id": "it-b1-02.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I think the actors are excellent.\"",
+          "meaning": "I think the actors are excellent.",
+          "tiles": [
+            "Penso",
+            "che",
+            "gli",
+            "attori",
+            "siano",
+            "bravissimi",
+            "sono",
+            "è"
+          ],
+          "answer": "Penso che gli attori siano bravissimi",
+          "alt": []
+        },
+        {
+          "id": "it-b1-02.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What does Giulia think?",
+          "text": "Credo che sia troppo lungo.",
+          "listen": true,
+          "options": [
+            "That it is too long",
+            "That it is too short",
+            "That it is very good"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l1.e6",
+          "type": "mcq",
+          "prompt": "You agree with your friend. You say:",
+          "options": [
+            "Sono d'accordo.",
+            "Ho d'accordo.",
+            "Faccio d'accordo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l1.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu acho que é verdade.\"",
+          "answer": "Penso che sia vero.",
+          "alt": [
+            "Credo che sia vero.",
+            "Io penso che sia vero.",
+            "Mi sembra che sia vero.",
+            "Io credo che sia vero."
+          ]
+        },
+        {
+          "id": "it-b1-02.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "penso che",
+              "I think that"
+            ],
+            [
+              "mi sembra che",
+              "it seems to me that"
+            ],
+            [
+              "può darsi",
+              "maybe"
+            ],
+            [
+              "sono d'accordo",
+              "I agree"
+            ],
+            [
+              "la fine",
+              "the end"
+            ],
+            [
+              "bravo",
+              "good at something"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Penso che è…\"",
+        "bottom": "Every Italian within ten metres: *flinches*"
+      },
+      "newItems": [
+        "it-b1-02.g-congiuntivo",
+        "it-b1-02.p-pensoche",
+        "it-b1-02.p-credoche",
+        "it-b1-02.p-misembrache",
+        "it-b1-02.p-puodarsi",
+        "it-b1-02.p-sonodaccordo",
+        "it-b1-02.v-pero",
+        "it-b1-02.v-attore",
+        "it-b1-02.v-lungo",
+        "it-b1-02.v-fine",
+        "it-b1-02.v-bravo"
+      ]
+    },
+    {
+      "id": "it-b1-02.l2",
+      "title": "Spero che tutto vada bene",
+      "canDo": "I can say what I hope, what I fear, and what I want someone else to do.",
+      "intro": {
+        "art": "🧳⏰✈️",
+        "scene": "Leo flies to Tokyo tomorrow morning. Sara has come round to help.",
+        "lines": [
+          {
+            "who": "Sara",
+            "text": "Domani parti per Tokyo! Spero che tutto vada bene.",
+            "meaning": "Tomorrow you leave for Tokyo! I hope everything goes well."
+          },
+          {
+            "who": "Leo",
+            "text": "Grazie. Ho paura che il volo sia in ritardo.",
+            "meaning": "Thanks. I'm afraid the flight will be late."
+          },
+          {
+            "who": "Sara",
+            "text": "Non credo. Vuoi che ti accompagni all'aeroporto?",
+            "meaning": "I don't think so. Do you want me to take you to the airport?"
+          },
+          {
+            "who": "Leo",
+            "text": "Sì, grazie! È importante che io arrivi due ore prima.",
+            "meaning": "Yes, thanks! It's important that I get there two hours early."
+          },
+          {
+            "who": "Sara",
+            "text": "Allora bisogna che tu faccia la valigia stasera.",
+            "meaning": "Then you need to pack your suitcase tonight."
+          },
+          {
+            "who": "Leo",
+            "text": "Hai ragione. Spero che tu possa svegliarmi alle cinque!",
+            "meaning": "You're right. I hope you can wake me at five!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Regular forms",
+            "body": "-are → -i: che io parli, arrivi, accompagni. -ere and -ire → -a: che io prenda, parta, dorma. Noi: -iamo for all. Voi: -iate. Loro: add -no to the singular: parlino, prendano."
+          },
+          {
+            "title": "Irregulars worth knowing",
+            "body": "andare → vada · fare → faccia · potere → possa · venire → venga · dovere → debba · volere → voglia · sapere → sappia · dire → dica · stare → stia · dare → dia."
+          },
+          {
+            "title": "More triggers",
+            "body": "Hope: spero che. Fear: ho paura che. Will: voglio che, preferisco che. Necessity: bisogna che, è importante che, è meglio che. In all of them, someone wants or feels something about what another person does."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-02.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Spero che tutto ___ bene.",
+          "meaning": "I hope everything goes well.",
+          "options": [
+            "vada",
+            "va",
+            "andrà"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "È importante che Leo ___ presto.",
+          "meaning": "It's important that Leo arrives early.",
+          "options": [
+            "arrivi",
+            "arriva",
+            "arrivare"
+          ],
+          "answer": 0,
+          "explain": "Arrivare is an -are verb: che lui arrivi."
+        },
+        {
+          "id": "it-b1-02.l2.e3",
+          "type": "mcq",
+          "prompt": "\"I want you to come.\"",
+          "options": [
+            "Voglio che tu venga.",
+            "Voglio che tu vieni.",
+            "Voglio tu venire."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"You need to pack your suitcase tonight.\"",
+          "meaning": "You need to pack your suitcase tonight.",
+          "tiles": [
+            "Bisogna",
+            "che",
+            "tu",
+            "faccia",
+            "la",
+            "valigia",
+            "stasera",
+            "fai",
+            "fare"
+          ],
+          "answer": "Bisogna che tu faccia la valigia stasera",
+          "alt": []
+        },
+        {
+          "id": "it-b1-02.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Leo afraid of?",
+          "text": "Ho paura che il volo sia in ritardo.",
+          "listen": true,
+          "options": [
+            "That the flight will be late",
+            "That he will miss the flight",
+            "That the flight will be cancelled"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l2.e6",
+          "type": "mcq",
+          "prompt": "The congiuntivo of \"potere\" for tu is:",
+          "options": [
+            "che tu possa",
+            "che tu puoi",
+            "che tu poti"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l2.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese, speaking to a friend: \"Espero que você venha.\"",
+          "answer": "Spero che tu venga.",
+          "alt": [
+            "Spero che venga.",
+            "Io spero che tu venga."
+          ]
+        },
+        {
+          "id": "it-b1-02.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "spero che",
+              "I hope that"
+            ],
+            [
+              "ho paura che",
+              "I'm afraid that"
+            ],
+            [
+              "bisogna che",
+              "it is necessary that"
+            ],
+            [
+              "il volo",
+              "flight"
+            ],
+            [
+              "la valigia",
+              "suitcase"
+            ],
+            [
+              "svegliare",
+              "to wake up"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Bisogna che tu faccia la valigia stasera\"",
+        "bottom": "Leo, 4:45 the next morning: packing"
+      },
+      "newItems": [
+        "it-b1-02.g-congreg",
+        "it-b1-02.p-speroche",
+        "it-b1-02.p-hopaura",
+        "it-b1-02.p-voglioche",
+        "it-b1-02.p-eimportante",
+        "it-b1-02.p-bisognache",
+        "it-b1-02.v-vada",
+        "it-b1-02.v-faccia",
+        "it-b1-02.v-possa",
+        "it-b1-02.v-venga",
+        "it-b1-02.v-volo",
+        "it-b1-02.v-valigia",
+        "it-b1-02.v-accompagnare",
+        "it-b1-02.v-svegliare"
+      ]
+    },
+    {
+      "id": "it-b1-02.l3",
+      "title": "Penso di andare, so che viene",
+      "canDo": "I can choose between the congiuntivo, the indicative and di + infinitive.",
+      "intro": {
+        "place": "stadium",
+        "scene": "Marco is trying to talk Giulia into coming to the match on Sunday.",
+        "lines": [
+          {
+            "who": "Marco",
+            "text": "Penso di andare allo stadio domenica. Vieni?",
+            "meaning": "I'm thinking of going to the stadium on Sunday. Are you coming?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Non so. Credo di avere troppo lavoro.",
+            "meaning": "I don't know. I think I have too much work."
+          },
+          {
+            "who": "Marco",
+            "text": "Dai! Sono sicuro che vinciamo.",
+            "meaning": "Come on! I'm sure we'll win."
+          },
+          {
+            "who": "Giulia",
+            "text": "Tu sei sempre sicuro. Io invece dubito che la squadra giochi bene.",
+            "meaning": "You're always sure. I, on the other hand, doubt the team will play well."
+          },
+          {
+            "who": "Marco",
+            "text": "So che l'ultima partita è andata male, ma penso che adesso i ragazzi stiano meglio.",
+            "meaning": "I know the last match went badly, but I think the lads are in better shape now."
+          },
+          {
+            "who": "Giulia",
+            "text": "Va bene, vengo. Ma è meglio che tu non parli troppo presto!",
+            "meaning": "All right, I'll come. But you'd better not speak too soon!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Same person: di + infinitive",
+            "body": "If the person who thinks and the person who acts are the same, there is no che and no congiuntivo: penso di andare, credo di avere tempo, spero di vincere. With two different people: penso che tu vada, spero che vincano."
+          },
+          {
+            "title": "Certainty: indicative",
+            "body": "When you present something as a fact, use the normal tenses: so che, sono sicuro che, è vero che, è chiaro che. Sono sicuro che vinciamo. Doubt goes the other way: dubito che, non sono sicuro che, plus congiuntivo."
+          },
+          {
+            "title": "🇧🇷 PT tip: your instinct mostly works",
+            "body": "After querer que, esperar que, duvidar que, é importante que, PT also uses the subjuntivo, so trust it there. The two places where Italian differs: after penso che and credo che (PT indicative, IT congiuntivo), and after se and quando about the future (PT subjuntivo, IT future)."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-02.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Penso ___ andare allo stadio.",
+          "meaning": "I'm thinking of going to the stadium.",
+          "options": [
+            "di",
+            "che",
+            "a"
+          ],
+          "answer": 0,
+          "explain": "Same person: di + infinitive."
+        },
+        {
+          "id": "it-b1-02.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Sono sicuro che Marco ___ ragione.",
+          "meaning": "I'm sure Marco is right.",
+          "options": [
+            "ha",
+            "abbia",
+            "avere"
+          ],
+          "answer": 0,
+          "explain": "Certainty takes the indicative."
+        },
+        {
+          "id": "it-b1-02.l3.e3",
+          "type": "mcq",
+          "prompt": "\"I think I have too much work.\"",
+          "options": [
+            "Credo di avere troppo lavoro.",
+            "Credo che io abbia troppo lavoro.",
+            "Credo avere troppo lavoro."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I doubt the team plays well.\"",
+          "meaning": "I doubt the team plays well.",
+          "tiles": [
+            "Dubito",
+            "che",
+            "la",
+            "squadra",
+            "giochi",
+            "bene",
+            "gioca",
+            "di"
+          ],
+          "answer": "Dubito che la squadra giochi bene",
+          "alt": []
+        },
+        {
+          "id": "it-b1-02.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. How sure is Marco?",
+          "text": "Sono sicuro che vinciamo.",
+          "listen": true,
+          "options": [
+            "He is sure they will win",
+            "He doubts they will win",
+            "He hopes they will win"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l3.e6",
+          "type": "mcq",
+          "prompt": "Which sentence needs the congiuntivo?",
+          "options": [
+            "Penso che lui (essere) stanco.",
+            "So che lui (essere) stanco.",
+            "Sono sicuro che lui (essere) stanco."
+          ],
+          "answer": 0,
+          "explain": "Penso che lui sia stanco. The other two state a fact: è stanco."
+        },
+        {
+          "id": "it-b1-02.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu sei que é verdade.\"",
+          "answer": "So che è vero.",
+          "alt": [
+            "Io so che è vero.",
+            "Lo so che è vero."
+          ]
+        },
+        {
+          "id": "it-b1-02.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "penso di andare",
+              "I'm thinking of going"
+            ],
+            [
+              "sono sicuro che",
+              "I'm sure that"
+            ],
+            [
+              "dubito che",
+              "I doubt that"
+            ],
+            [
+              "so che",
+              "I know that"
+            ],
+            [
+              "la squadra",
+              "team"
+            ],
+            [
+              "Dai!",
+              "Come on!"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Sono sicuro che vinciamo\"",
+        "bottom": "Indicative. Marco does not deal in doubt."
+      },
+      "newItems": [
+        "it-b1-02.g-dipiu",
+        "it-b1-02.g-certezza",
+        "it-b1-02.p-pensodi",
+        "it-b1-02.p-sonosicuro",
+        "it-b1-02.p-dubitoche",
+        "it-b1-02.p-soche",
+        "it-b1-02.p-emeglio",
+        "it-b1-02.p-dai",
+        "it-b1-02.v-squadra",
+        "it-b1-02.v-ultimo",
+        "it-b1-02.v-giocare"
+      ]
+    },
+    {
+      "id": "it-b1-02.l4",
+      "title": "Lettura: Il centro senza macchine",
+      "canDo": "I can read a short opinion piece and answer questions about it in Italian.",
+      "intro": {
+        "art": "📖🚗🚫",
+        "scene": "Sara scrive al giornale della sua città. Leggi, ascolta e poi rispondi.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "Il sindaco vuole chiudere il centro alle macchine.",
+            "meaning": "The mayor wants to close the town centre to cars.",
+            "who": "Sara"
+          },
+          {
+            "text": "Io penso che sia una buona idea.",
+            "meaning": "I think it's a good idea.",
+            "who": "Sara"
+          },
+          {
+            "text": "Credo che l'aria diventi più pulita e che le strade siano più tranquille.",
+            "meaning": "I believe the air will get cleaner and the streets will be quieter.",
+            "who": "Sara"
+          },
+          {
+            "text": "Molti negozianti invece hanno paura che i clienti non vengano più.",
+            "meaning": "Many shopkeepers, on the other hand, are afraid customers will stop coming.",
+            "who": "Sara"
+          },
+          {
+            "text": "Secondo loro, senza parcheggi la gente andrà al centro commerciale.",
+            "meaning": "According to them, without parking people will go to the shopping centre.",
+            "who": "Sara"
+          },
+          {
+            "text": "Non sono d'accordo: in altre città i negozi del centro adesso lavorano di più.",
+            "meaning": "I don't agree: in other cities the shops in the centre now do more business.",
+            "who": "Sara"
+          },
+          {
+            "text": "È importante però che il comune migliori gli autobus.",
+            "meaning": "It is important, however, that the council improves the buses.",
+            "who": "Sara"
+          },
+          {
+            "text": "Spero che i cittadini possano votare su questa proposta.",
+            "meaning": "I hope citizens can vote on this proposal.",
+            "who": "Sara"
+          },
+          {
+            "text": "E voi, che cosa ne pensate?",
+            "meaning": "And you, what do you think about it?",
+            "who": "Sara"
+          }
+        ],
+        "glossary": [
+          {
+            "word": "il sindaco",
+            "meaning": "mayor"
+          },
+          {
+            "word": "il negoziante",
+            "meaning": "shopkeeper"
+          },
+          {
+            "word": "il parcheggio",
+            "meaning": "car park, parking space"
+          },
+          {
+            "word": "il comune",
+            "meaning": "town council"
+          },
+          {
+            "word": "il cittadino",
+            "meaning": "citizen"
+          },
+          {
+            "word": "la proposta",
+            "meaning": "proposal"
+          },
+          {
+            "word": "migliorare",
+            "meaning": "to improve"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-02.l4.e1",
+          "type": "mcq",
+          "prompt": "Che cosa vuole fare il sindaco?",
+          "options": [
+            "Chiudere il centro alle macchine.",
+            "Aprire un centro commerciale.",
+            "Chiudere i negozi del centro."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l4.e2",
+          "type": "mcq",
+          "prompt": "Che cosa pensa Sara dell'idea?",
+          "options": [
+            "Pensa che sia buona.",
+            "Pensa che sia sbagliata.",
+            "Dubita che sia possibile."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l4.e3",
+          "type": "mcq",
+          "prompt": "Di che cosa hanno paura i negozianti?",
+          "options": [
+            "Che i clienti non vengano più.",
+            "Che l'aria sia meno pulita.",
+            "Che gli autobus costino troppo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l4.e4",
+          "type": "mcq",
+          "prompt": "Secondo i negozianti, dove andrà la gente?",
+          "options": [
+            "Al centro commerciale.",
+            "In altre città.",
+            "Al mercato."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l4.e5",
+          "type": "mcq",
+          "prompt": "Che cosa deve migliorare il comune?",
+          "options": [
+            "Gli autobus.",
+            "I parcheggi.",
+            "I negozi."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l4.e6",
+          "type": "mcq",
+          "prompt": "Che cosa spera Sara?",
+          "options": [
+            "Che i cittadini possano votare.",
+            "Che il sindaco cambi idea.",
+            "Che i negozi chiudano."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Everyone: wants fewer cars in the centre",
+        "bottom": "Also everyone: wants to park in front of the door"
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-b1-02.l5",
+      "title": "Racconto: La festa a sorpresa",
+      "canDo": "I can follow a short spoken story full of hopes and doubts and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧🎂🤫",
+        "scene": "Giulia organizza una festa per Leo. Ascolta bene: Leo sa qualcosa o no?",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "Sabato è il compleanno di Leo e vogliamo fargli una festa a sorpresa.",
+            "meaning": "Saturday is Leo's birthday and we want to throw him a surprise party.",
+            "who": "Giulia"
+          },
+          {
+            "text": "È importante che lui non sappia niente.",
+            "meaning": "It's important that he knows nothing.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Marco pensa che Leo abbia già capito tutto.",
+            "meaning": "Marco thinks Leo has already worked it all out.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Io invece credo che non sospetti niente.",
+            "meaning": "I, on the other hand, believe he doesn't suspect a thing.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Sara porterà la torta. Spero che non la dimentichi come l'anno scorso!",
+            "meaning": "Sara will bring the cake. I hope she doesn't forget it like last year!",
+            "who": "Giulia"
+          },
+          {
+            "text": "Bisogna che tutti arrivino prima delle otto.",
+            "meaning": "Everyone needs to arrive before eight.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Ho paura che Marco sia in ritardo, come sempre.",
+            "meaning": "I'm afraid Marco will be late, as always.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Ho detto a Leo che sabato andiamo al cinema.",
+            "meaning": "I told Leo that on Saturday we're going to the cinema.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Mi ha risposto: va bene, ma dubito che il film sia più bello della mia festa.",
+            "meaning": "He answered: fine, but I doubt the film will be better than my party.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Penso proprio che Marco abbia ragione.",
+            "meaning": "I really do think Marco is right.",
+            "who": "Giulia"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "il compleanno",
+            "meaning": "birthday"
+          },
+          {
+            "word": "la festa a sorpresa",
+            "meaning": "surprise party"
+          },
+          {
+            "word": "sospettare",
+            "meaning": "to suspect"
+          },
+          {
+            "word": "la torta",
+            "meaning": "cake"
+          },
+          {
+            "word": "l'anno scorso",
+            "meaning": "last year"
+          },
+          {
+            "word": "proprio",
+            "meaning": "really, indeed"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-02.l5.e1",
+          "type": "mcq",
+          "prompt": "Che cosa organizzano gli amici?",
+          "options": [
+            "Una festa a sorpresa per Leo.",
+            "Una cena al ristorante.",
+            "Una serata al cinema."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l5.e2",
+          "type": "mcq",
+          "prompt": "Che cosa è importante?",
+          "options": [
+            "Che Leo non sappia niente.",
+            "Che Leo porti la torta.",
+            "Che Leo arrivi alle otto."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l5.e3",
+          "type": "mcq",
+          "prompt": "Chi porterà la torta?",
+          "options": [
+            "Sara.",
+            "Marco.",
+            "Giulia."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l5.e4",
+          "type": "mcq",
+          "prompt": "Di che cosa ha paura Giulia?",
+          "options": [
+            "Che Marco sia in ritardo.",
+            "Che Sara non venga.",
+            "Che il film sia brutto."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l5.e5",
+          "type": "mcq",
+          "prompt": "Che cosa ha detto Giulia a Leo?",
+          "options": [
+            "Che sabato vanno al cinema.",
+            "Che sabato c'è una festa.",
+            "Che sabato deve lavorare."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-02.l5.e6",
+          "type": "mcq",
+          "prompt": "Alla fine, Leo sa della festa?",
+          "options": [
+            "Sì, ha capito tutto.",
+            "No, non sospetta niente.",
+            "No, pensa di andare al cinema."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Surprise party: top secret",
+        "bottom": "Leo: already chose his outfit"
+      },
+      "newItems": []
+    }
+  ]
+}

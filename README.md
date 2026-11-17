@@ -60,4 +60,4 @@ Progress lives only in the browser you use (IndexedDB). Profile → Export saves
 
 ## Not built yet
 
-Speaking exercises, diagnostic and placement tests, unit reviews, all other units, collections, trip countdown, daily-lesson import, deployment.
+Speaking exercises, diagnostic and placement tests, unit reviews, all other units, trip countdown, daily-lesson import, deployment.

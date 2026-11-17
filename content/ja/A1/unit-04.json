@@ -1,0 +1,1118 @@
+{
+  "id": "ja-a1-04",
+  "lang": "ja",
+  "level": "A1",
+  "track": "core",
+  "title": "What's it like?",
+  "summary": "Describe things and say what you like: hot, cheap, beautiful, quiet. Then say how something was.",
+  "canDo": [
+    "I can describe things with い-adjectives and say what they are not.",
+    "I can describe places with な-adjectives and say what I like.",
+    "I can say how a trip, a meal or the weather was."
+  ],
+  "grammar": [
+    "い-adjectives: 〜いです・〜くないです",
+    "な-adjectives: 〜です・〜じゃありません・〜な + noun",
+    "〜が好きです",
+    "Past: 〜かったです・〜くなかったです",
+    "Past: 〜でした・〜じゃありませんでした",
+    "どうですか・どうでしたか",
+    "とても・あまり・ちょっと"
+  ],
+  "items": [
+    {
+      "id": "ja-a1-04.g-iadj",
+      "kind": "grammar",
+      "front": "〜いです・〜くないです",
+      "back": "い-adjectives: add です to be polite. For the negative, drop the last い and add くないです."
+    },
+    {
+      "id": "ja-a1-04.v-atsui",
+      "kind": "vocab",
+      "front": "{暑|あつ}い",
+      "back": "hot (weather)"
+    },
+    {
+      "id": "ja-a1-04.v-samui",
+      "kind": "vocab",
+      "front": "{寒|さむ}い",
+      "back": "cold (weather)"
+    },
+    {
+      "id": "ja-a1-04.v-takai",
+      "kind": "vocab",
+      "front": "{高|たか}い",
+      "back": "expensive; tall, high"
+    },
+    {
+      "id": "ja-a1-04.v-yasui",
+      "kind": "vocab",
+      "front": "{安|やす}い",
+      "back": "cheap"
+    },
+    {
+      "id": "ja-a1-04.v-ookii",
+      "kind": "vocab",
+      "front": "{大|おお}きい",
+      "back": "big"
+    },
+    {
+      "id": "ja-a1-04.v-chiisai",
+      "kind": "vocab",
+      "front": "{小|ちい}さい",
+      "back": "small"
+    },
+    {
+      "id": "ja-a1-04.v-tanoshii",
+      "kind": "vocab",
+      "front": "{楽|たの}しい",
+      "back": "fun, enjoyable"
+    },
+    {
+      "id": "ja-a1-04.v-ii",
+      "kind": "vocab",
+      "front": "いい",
+      "back": "good",
+      "note": "Irregular: the negative is よくない and the past is よかった."
+    },
+    {
+      "id": "ja-a1-04.v-demo",
+      "kind": "vocab",
+      "front": "でも",
+      "back": "but"
+    },
+    {
+      "id": "ja-a1-04.v-amari",
+      "kind": "vocab",
+      "front": "あまり",
+      "back": "not very (always with a negative)"
+    },
+    {
+      "id": "ja-a1-04.v-machi",
+      "kind": "vocab",
+      "front": "{町|まち}",
+      "back": "town"
+    },
+    {
+      "id": "ja-a1-04.g-naadj",
+      "kind": "grammar",
+      "front": "〜な + noun",
+      "back": "な-adjectives take な before a noun: きれいな{町|まち}. Their negative is like a noun: きれいじゃありません."
+    },
+    {
+      "id": "ja-a1-04.v-kirei",
+      "kind": "vocab",
+      "front": "きれい",
+      "back": "beautiful; clean"
+    },
+    {
+      "id": "ja-a1-04.v-shizuka",
+      "kind": "vocab",
+      "front": "{静|しず}か",
+      "back": "quiet"
+    },
+    {
+      "id": "ja-a1-04.v-nigiyaka",
+      "kind": "vocab",
+      "front": "にぎやか",
+      "back": "lively, busy"
+    },
+    {
+      "id": "ja-a1-04.v-yuumei",
+      "kind": "vocab",
+      "front": "{有名|ゆうめい}",
+      "back": "famous"
+    },
+    {
+      "id": "ja-a1-04.v-benri",
+      "kind": "vocab",
+      "front": "{便利|べんり}",
+      "back": "convenient, handy"
+    },
+    {
+      "id": "ja-a1-04.v-furui",
+      "kind": "vocab",
+      "front": "{古|ふる}い",
+      "back": "old (things, not people)"
+    },
+    {
+      "id": "ja-a1-04.v-atarashii",
+      "kind": "vocab",
+      "front": "{新|あたら}しい",
+      "back": "new"
+    },
+    {
+      "id": "ja-a1-04.v-otera",
+      "kind": "vocab",
+      "front": "お{寺|てら}",
+      "back": "temple"
+    },
+    {
+      "id": "ja-a1-04.g-gasuki",
+      "kind": "grammar",
+      "front": "〜が{好|す}きです",
+      "back": "I like ~. The thing you like takes が."
+    },
+    {
+      "id": "ja-a1-04.p-suki",
+      "kind": "phrase",
+      "front": "{好|す}きです",
+      "back": "I like it."
+    },
+    {
+      "id": "ja-a1-04.p-daisuki",
+      "kind": "phrase",
+      "front": "{大好|だいす}きです",
+      "back": "I love it."
+    },
+    {
+      "id": "ja-a1-04.g-katta",
+      "kind": "grammar",
+      "front": "〜かったです・〜くなかったです",
+      "back": "Past of い-adjectives: drop い and add かったです. Negative: くなかったです."
+    },
+    {
+      "id": "ja-a1-04.g-deshita",
+      "kind": "grammar",
+      "front": "〜でした・〜じゃありませんでした",
+      "back": "Past of な-adjectives and nouns: was / was not."
+    },
+    {
+      "id": "ja-a1-04.p-doudeshitaka",
+      "kind": "phrase",
+      "front": "どうでしたか",
+      "back": "How was it?"
+    },
+    {
+      "id": "ja-a1-04.p-yokatta",
+      "kind": "phrase",
+      "front": "よかったです",
+      "back": "It was good. / I'm glad."
+    },
+    {
+      "id": "ja-a1-04.v-ooi",
+      "kind": "vocab",
+      "front": "{多|おお}い",
+      "back": "many, numerous"
+    },
+    {
+      "id": "ja-a1-04.v-tabemono",
+      "kind": "vocab",
+      "front": "{食|た}べ{物|もの}",
+      "back": "food"
+    },
+    {
+      "id": "ja-a1-04.v-ryokou",
+      "kind": "vocab",
+      "front": "{旅行|りょこう}",
+      "back": "trip, travel"
+    },
+    {
+      "id": "ja-a1-04.v-tenki",
+      "kind": "vocab",
+      "front": "{天気|てんき}",
+      "back": "weather"
+    },
+    {
+      "id": "ja-a1-04.v-muzukashii",
+      "kind": "vocab",
+      "front": "{難|むずか}しい",
+      "back": "difficult"
+    },
+    {
+      "id": "ja-a1-04.v-omoshiroi",
+      "kind": "vocab",
+      "front": "{面白|おもしろ}い",
+      "back": "interesting; funny"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-a1-04.l1",
+      "title": "Hot, cheap, big: い-adjectives",
+      "canDo": "I can describe things with い-adjectives and say what they are not.",
+      "intro": {
+        "place": "cafe",
+        "scene": "A café in Tokyo in July. Nakamura asks Leo how he is finding the city.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "レオさん、{東京|とうきょう}{は|wa}どうですか。",
+            "meaning": "Leo, how do you find Tokyo?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "とても{楽|たの}しいです。でも、{暑|あつ}いですね。",
+            "meaning": "It's a lot of fun. But it's hot, isn't it?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "そうですね。ブラジルも{暑|あつ}いですか。",
+            "meaning": "It is. Is Brazil hot too?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい。でも、わたしの{町|まち}{は|wa}あまり{暑|あつ}くないです。",
+            "meaning": "Yes. But my town isn't very hot.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "このコーヒー、おいしいですね。",
+            "meaning": "This coffee is good, isn’t it?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい。でも、ちょっと{高|たか}いです。",
+            "meaning": "Yes. But it's a bit expensive.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "い-adjectives",
+            "body": "They end in い and go straight before です: {暑|あつ}いです, {高|たか}いです. Before a noun they need nothing: {高|たか}いコーヒー."
+          },
+          {
+            "title": "The negative: 〜くないです",
+            "body": "Drop the last い and add くないです: {暑|あつ}い → {暑|あつ}くないです, {高|たか}い → {高|たか}くないです. One is irregular: いい → よくないです. Never use じゃありません with these."
+          },
+          {
+            "title": "とても, ちょっと, あまり",
+            "body": "とても = very. ちょっと = a bit. あまり only goes with a negative: あまり{暑|あつ}くないです, \"not very hot\". でも starts a sentence that says \"but\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-04.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{今日|きょう}{は|wa}___ですね。",
+          "meaning": "It's hot today, isn't it?",
+          "options": [
+            "{暑|あつ}い",
+            "{寒|さむ}い",
+            "{安|やす}い"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l1.e2",
+          "type": "mcq",
+          "prompt": "\"It isn't expensive.\"",
+          "options": [
+            "{高|たか}くないです。",
+            "{高|たか}いじゃありません。",
+            "{高|たか}いくないです。"
+          ],
+          "answer": 0,
+          "explain": "Drop い, add くないです."
+        },
+        {
+          "id": "ja-a1-04.l1.e3",
+          "type": "tiles",
+          "prompt": "Build: \"My town isn't very hot.\"",
+          "meaning": "My town isn't very hot.",
+          "tiles": [
+            "わたしの",
+            "{町|まち}",
+            "{は|wa}",
+            "あまり",
+            "{暑|あつ}くない",
+            "です",
+            "{暑|あつ}い",
+            "とても"
+          ],
+          "answer": "わたしの{町|まち}{は|wa}あまり{暑|あつ}くないです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-04.l1.e4",
+          "type": "mcq",
+          "prompt": "Listen. What does Leo think of the coffee?",
+          "text": "おいしいです。でも、ちょっと{高|たか}いです。",
+          "listen": true,
+          "options": [
+            "Good, but a bit expensive",
+            "Cheap, but not good",
+            "Hot and cheap"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l1.e5",
+          "type": "mcq",
+          "prompt": "The negative of いいです is:",
+          "options": [
+            "よくないです。",
+            "いくないです。",
+            "いいくないです。"
+          ],
+          "answer": 0,
+          "explain": "いい is the one irregular adjective: its other forms are built on よ."
+        },
+        {
+          "id": "ja-a1-04.l1.e6",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "このかばん{は|wa}とても___です。",
+          "meaning": "This bag is very small.",
+          "options": [
+            "{小|ちい}さい",
+            "{大|おお}きい",
+            "{高|たか}い"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l1.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"It's cold, isn't it?\"",
+          "answer": "{寒|さむ}いですね。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-04.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{暑|あつ}い",
+              "hot"
+            ],
+            [
+              "{寒|さむ}い",
+              "cold"
+            ],
+            [
+              "{高|たか}い",
+              "expensive"
+            ],
+            [
+              "{安|やす}い",
+              "cheap"
+            ],
+            [
+              "{大|おお}きい",
+              "big"
+            ],
+            [
+              "{小|ちい}さい",
+              "small"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Tokyo in July",
+        "bottom": "{暑|あつ}いですね: the only small talk you need"
+      },
+      "newItems": [
+        "ja-a1-04.g-iadj",
+        "ja-a1-04.v-atsui",
+        "ja-a1-04.v-samui",
+        "ja-a1-04.v-takai",
+        "ja-a1-04.v-yasui",
+        "ja-a1-04.v-ookii",
+        "ja-a1-04.v-chiisai",
+        "ja-a1-04.v-tanoshii",
+        "ja-a1-04.v-ii",
+        "ja-a1-04.v-demo",
+        "ja-a1-04.v-amari",
+        "ja-a1-04.v-machi"
+      ]
+    },
+    {
+      "id": "ja-a1-04.l2",
+      "title": "Beautiful, quiet, and things you like",
+      "canDo": "I can describe places with な-adjectives and say what I like.",
+      "intro": {
+        "place": "lounge",
+        "scene": "Sato shows Leo her photos of Kyoto.",
+        "lines": [
+          {
+            "who": "佐藤",
+            "text": "{京都|きょうと}{は|wa}きれいな{町|まち}ですよ。",
+            "meaning": "Kyoto is a beautiful town, you know.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{有名|ゆうめい}ですね。{静|しず}かですか。",
+            "meaning": "It's famous, isn't it? Is it quiet?",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "いいえ、あまり{静|しず}かじゃありません。とてもにぎやかです。",
+            "meaning": "No, it's not very quiet. It's very lively.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{佐藤|さとう}さん{は|wa}{京都|きょうと}が{好|す}きですか。",
+            "meaning": "Do you like Kyoto?",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "はい、{大好|だいす}きです。お{寺|てら}が{好|す}きです。",
+            "meaning": "Yes, I love it. I like the temples.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "わたしも{古|ふる}い{町|まち}が{好|す}きです。",
+            "meaning": "I like old towns too.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "な-adjectives",
+            "body": "The second family: きれい, {静|しず}か, にぎやか, {有名|ゆうめい}, {便利|べんり}. With です they behave like nouns: {静|しず}かです, {静|しず}かじゃありません. Before a noun they need な: きれいな{町|まち}, {有名|ゆうめい}なお{寺|てら}."
+          },
+          {
+            "title": "Careful: きれい and {有名|ゆうめい}",
+            "body": "They end in an \"i\" sound but are な-adjectives: きれいじゃありません, never きれくないです. Real い-adjectives go straight before a noun: {古|ふる}い{町|まち}, {新|あたら}しいホテル."
+          },
+          {
+            "title": "〜が{好|す}きです",
+            "body": "{好|す}き is a な-adjective meaning \"liked\", so the thing you like takes が: {猫|ねこ}が{好|す}きです. Stronger: {大好|だいす}きです. Not so much: あまり{好|す}きじゃありません."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-04.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{京都|きょうと}{は|wa}きれい___{町|まち}です。",
+          "meaning": "Kyoto is a beautiful town.",
+          "options": [
+            "な",
+            "い",
+            "の"
+          ],
+          "answer": 0,
+          "explain": "な-adjectives take な before a noun."
+        },
+        {
+          "id": "ja-a1-04.l2.e2",
+          "type": "mcq",
+          "prompt": "\"an old temple\"",
+          "options": [
+            "{古|ふる}いお{寺|てら}",
+            "{古|ふる}いなお{寺|てら}",
+            "{古|ふる}いのお{寺|てら}"
+          ],
+          "answer": 0,
+          "explain": "{古|ふる}い is an い-adjective: it goes straight before the noun."
+        },
+        {
+          "id": "ja-a1-04.l2.e3",
+          "type": "mcq",
+          "prompt": "\"It isn't quiet.\"",
+          "options": [
+            "{静|しず}かじゃありません。",
+            "{静|しず}かくないです。",
+            "{静|しず}くないです。"
+          ],
+          "answer": 0,
+          "explain": "な-adjectives make their negative like nouns."
+        },
+        {
+          "id": "ja-a1-04.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I like old towns.\"",
+          "meaning": "I like old towns.",
+          "tiles": [
+            "{古|ふる}い",
+            "{町|まち}",
+            "が",
+            "{好|す}き",
+            "です",
+            "を",
+            "な"
+          ],
+          "answer": "{古|ふる}い{町|まち}が{好|す}きです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-04.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Kyoto like?",
+          "text": "{京都|きょうと}{は|wa}とてもにぎやかです。",
+          "listen": true,
+          "options": [
+            "Very lively",
+            "Very quiet",
+            "Not famous"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l2.e6",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{電車|でんしゃ}{は|wa}とても___です。",
+          "meaning": "The train is very convenient.",
+          "options": [
+            "{便利|べんり}",
+            "{有名|ゆうめい}",
+            "{静|しず}か"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l2.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I like cats.\"",
+          "answer": "{猫|ねこ}が{好|す}きです。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-04.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "きれい",
+              "beautiful, clean"
+            ],
+            [
+              "{静|しず}か",
+              "quiet"
+            ],
+            [
+              "にぎやか",
+              "lively"
+            ],
+            [
+              "{有名|ゆうめい}",
+              "famous"
+            ],
+            [
+              "{便利|べんり}",
+              "convenient"
+            ],
+            [
+              "{古|ふる}い",
+              "old"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "きれい ends in い",
+        "bottom": "きれい is not an い-adjective. Trust no one."
+      },
+      "newItems": [
+        "ja-a1-04.g-naadj",
+        "ja-a1-04.v-kirei",
+        "ja-a1-04.v-shizuka",
+        "ja-a1-04.v-nigiyaka",
+        "ja-a1-04.v-yuumei",
+        "ja-a1-04.v-benri",
+        "ja-a1-04.v-furui",
+        "ja-a1-04.v-atarashii",
+        "ja-a1-04.v-otera",
+        "ja-a1-04.g-gasuki",
+        "ja-a1-04.p-suki",
+        "ja-a1-04.p-daisuki"
+      ]
+    },
+    {
+      "id": "ja-a1-04.l3",
+      "title": "How was it? Adjectives in the past",
+      "canDo": "I can say how a trip, a meal or the weather was.",
+      "intro": {
+        "place": "cafe",
+        "scene": "Monday. Leo is back from a weekend in Kyoto and Nakamura wants to hear about it.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "{京都|きょうと}{は|wa}どうでしたか。",
+            "meaning": "How was Kyoto?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "とてもよかったです。お{寺|てら}がきれいでした。",
+            "meaning": "It was great. The temples were beautiful.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "{人|ひと}{は|wa}{多|おお}かったですか。",
+            "meaning": "Were there a lot of people?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、{多|おお}かったです。{静|しず}かじゃありませんでした。",
+            "meaning": "Yes, there were. It wasn't quiet.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "{食|た}べ{物|もの}{は|wa}？",
+            "meaning": "And the food?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "おいしかったです。でも、{安|やす}くなかったです。",
+            "meaning": "It was delicious. But it wasn't cheap.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "い-adjectives in the past",
+            "body": "Drop い and add かったです: {楽|たの}しい → {楽|たの}しかったです, おいしい → おいしかったです. Negative: {安|やす}くなかったです. And いい → よかったです. Never 〜いでした."
+          },
+          {
+            "title": "な-adjectives in the past",
+            "body": "Just like nouns: きれいでした, {静|しず}かじゃありませんでした."
+          },
+          {
+            "title": "どうでしたか",
+            "body": "The past of どうですか: \"how was it?\". The everyday answer when something went well is よかったです, which also means \"I'm glad\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-04.l3.e1",
+          "type": "mcq",
+          "prompt": "\"It was fun.\"",
+          "options": [
+            "{楽|たの}しかったです。",
+            "{楽|たの}しいでした。",
+            "{楽|たの}しいかったです。"
+          ],
+          "answer": 0,
+          "explain": "Drop い, add かったです."
+        },
+        {
+          "id": "ja-a1-04.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "お{寺|てら}{は|wa}きれい___。",
+          "meaning": "The temple was beautiful.",
+          "options": [
+            "でした",
+            "かったです",
+            "くないです"
+          ],
+          "answer": 0,
+          "explain": "きれい is a な-adjective, so its past is でした."
+        },
+        {
+          "id": "ja-a1-04.l3.e3",
+          "type": "mcq",
+          "prompt": "The past of いいです is:",
+          "options": [
+            "よかったです。",
+            "いかったです。",
+            "いいでした。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"It wasn't cheap.\"",
+          "meaning": "It wasn't cheap.",
+          "tiles": [
+            "{安|やす}く",
+            "なかった",
+            "です",
+            "でした",
+            "{安|やす}い",
+            "じゃ"
+          ],
+          "answer": "{安|やす}くなかったです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-04.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. How was the weather?",
+          "text": "{天気|てんき}{は|wa}よくなかったです。{寒|さむ}かったです。",
+          "listen": true,
+          "options": [
+            "Not good: it was cold",
+            "Good, but hot",
+            "Good and warm"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l3.e6",
+          "type": "tiles",
+          "prompt": "Reply: \"It was very interesting.\"",
+          "context": "{旅行|りょこう}{は|wa}どうでしたか。",
+          "meaning": "It was very interesting.",
+          "tiles": [
+            "とても",
+            "{面白|おもしろ}かった",
+            "です",
+            "でした",
+            "{面白|おもしろ}い"
+          ],
+          "answer": "とても{面白|おもしろ}かったです",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-04.l3.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"It was difficult.\"",
+          "answer": "{難|むずか}しかったです。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-04.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "どうでしたか",
+              "How was it?"
+            ],
+            [
+              "よかったです",
+              "It was good"
+            ],
+            [
+              "{多|おお}い",
+              "many"
+            ],
+            [
+              "{食|た}べ{物|もの}",
+              "food"
+            ],
+            [
+              "{旅行|りょこう}",
+              "trip"
+            ],
+            [
+              "{天気|てんき}",
+              "weather"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "{楽|たの}しいでした",
+        "bottom": "Every learner, exactly once"
+      },
+      "newItems": [
+        "ja-a1-04.g-katta",
+        "ja-a1-04.g-deshita",
+        "ja-a1-04.p-doudeshitaka",
+        "ja-a1-04.p-yokatta",
+        "ja-a1-04.v-ooi",
+        "ja-a1-04.v-tabemono",
+        "ja-a1-04.v-ryokou",
+        "ja-a1-04.v-tenki",
+        "ja-a1-04.v-muzukashii",
+        "ja-a1-04.v-omoshiroi"
+      ]
+    },
+    {
+      "id": "ja-a1-04.l4",
+      "title": "Reading: Leo's weekend in Kyoto",
+      "canDo": "I can read a short text about a trip and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖⛩️🍁",
+        "scene": "Leo writes about his weekend in Kyoto. Read, listen, then answer.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "{先週|せんしゅう}、レオさん{は|wa}{京都|きょうと}{へ|e}{行|い}きました。",
+            "meaning": "Last week, Leo went to Kyoto."
+          },
+          {
+            "text": "{京都|きょうと}{は|wa}{古|ふる}い{町|まち}です。お{寺|てら}がたくさんあります。",
+            "meaning": "Kyoto is an old town. There are lots of temples."
+          },
+          {
+            "text": "{天気|てんき}{は|wa}よかったです。でも、とても{暑|あつ}かったです。",
+            "meaning": "The weather was good. But it was very hot."
+          },
+          {
+            "text": "{有名|ゆうめい}なお{寺|てら}{は|wa}{人|ひと}が{多|おお}かったです。",
+            "meaning": "The famous temples were crowded."
+          },
+          {
+            "text": "{小|ちい}さいお{寺|てら}{は|wa}{静|しず}かでした。",
+            "meaning": "The small temples were quiet."
+          },
+          {
+            "text": "レオさん{は|wa}{静|しず}かなお{寺|てら}が{好|す}きです。",
+            "meaning": "Leo likes quiet temples."
+          },
+          {
+            "text": "ホテル{は|wa}{新|あたら}しかったです。そして、きれいでした。",
+            "meaning": "The hotel was new. And it was clean."
+          },
+          {
+            "text": "でも、あまり{安|やす}くなかったです。",
+            "meaning": "But it wasn't very cheap."
+          },
+          {
+            "text": "{旅行|りょこう}{は|wa}とても{楽|たの}しかったです。",
+            "meaning": "The trip was a lot of fun."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{先週|せんしゅう}",
+            "meaning": "last week"
+          },
+          {
+            "word": "そして",
+            "meaning": "and, and also"
+          },
+          {
+            "word": "どんな",
+            "meaning": "what kind of"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-04.l4.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{先週|せんしゅう}どこ{へ|e}{行|い}きましたか。",
+          "options": [
+            "{京都|きょうと}",
+            "{東京|とうきょう}",
+            "{奈良|なら}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l4.e2",
+          "type": "mcq",
+          "prompt": "{京都|きょうと}{は|wa}{新|あたら}しい{町|まち}ですか。",
+          "options": [
+            "いいえ、{古|ふる}い{町|まち}です。",
+            "はい、{新|あたら}しい{町|まち}です。",
+            "いいえ、{小|ちい}さい{町|まち}です。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l4.e3",
+          "type": "mcq",
+          "prompt": "{天気|てんき}{は|wa}どうでしたか。",
+          "options": [
+            "よかったです。でも、{暑|あつ}かったです。",
+            "よくなかったです。{寒|さむ}かったです。",
+            "よかったです。でも、{寒|さむ}かったです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l4.e4",
+          "type": "mcq",
+          "prompt": "{有名|ゆうめい}なお{寺|てら}{は|wa}{静|しず}かでしたか。",
+          "options": [
+            "いいえ、{人|ひと}が{多|おお}かったです。",
+            "はい、{静|しず}かでした。",
+            "はい、{人|ひと}がいませんでした。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l4.e5",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}どんなお{寺|てら}が{好|す}きですか。",
+          "options": [
+            "{静|しず}かなお{寺|てら}",
+            "{有名|ゆうめい}なお{寺|てら}",
+            "{新|あたら}しいお{寺|てら}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l4.e6",
+          "type": "mcq",
+          "prompt": "ホテル{は|wa}{安|やす}かったですか。",
+          "options": [
+            "いいえ、あまり{安|やす}くなかったです。",
+            "はい、とても{安|やす}かったです。",
+            "いいえ、{古|ふる}かったです。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Famous temple: 4,000 people",
+        "bottom": "Small temple next door: me and a cat"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-a1-04.l5",
+      "title": "Story: Which bag?",
+      "canDo": "I can follow a short shopping scene and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧👜💴",
+        "scene": "Leo needs a bigger bag for his souvenirs. Listen for the prices and for the one he chooses.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "すみません、このかばん{は|wa}いくらですか。",
+            "meaning": "Excuse me, how much is this bag?",
+            "who": "レオ"
+          },
+          {
+            "text": "{八千円|はっせんえん}です。",
+            "meaning": "It is 8,000 yen.",
+            "who": "店員"
+          },
+          {
+            "text": "ちょっと{高|たか}いですね。もっと{安|やす}いの{は|wa}ありますか。",
+            "meaning": "That's a bit expensive. Do you have a cheaper one?",
+            "who": "レオ"
+          },
+          {
+            "text": "はい。こちら{は|wa}{三千円|さんぜんえん}です。",
+            "meaning": "Yes. This one is 3,000 yen.",
+            "who": "店員"
+          },
+          {
+            "text": "{安|やす}いですね。でも、ちょっと{小|ちい}さいです。",
+            "meaning": "That's cheap. But it's a bit small.",
+            "who": "レオ"
+          },
+          {
+            "text": "じゃあ、こちら{は|wa}どうですか。{五千円|ごせんえん}です。",
+            "meaning": "Then how about this one? It is 5,000 yen.",
+            "who": "店員"
+          },
+          {
+            "text": "{大|おお}きいです。そして、とても{便利|べんり}ですよ。",
+            "meaning": "It's big. And it's very handy.",
+            "who": "店員"
+          },
+          {
+            "text": "いいですね。{色|いろ}もきれいです。これにします。",
+            "meaning": "That's nice. The colour is pretty too. I'll take this one.",
+            "who": "レオ"
+          },
+          {
+            "text": "ありがとうございます。",
+            "meaning": "Thank you.",
+            "who": "店員"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "もっと",
+            "meaning": "more"
+          },
+          {
+            "word": "{色|いろ}",
+            "meaning": "colour"
+          },
+          {
+            "word": "{安|やす}いの",
+            "meaning": "a cheap one"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-04.l5.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何|なに}を{買|か}いますか。",
+          "options": [
+            "かばん",
+            "{切符|きっぷ}",
+            "お{弁当|べんとう}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l5.e2",
+          "type": "mcq",
+          "prompt": "{八千円|はっせんえん}のかばん{は|wa}どうですか。",
+          "options": [
+            "ちょっと{高|たか}いです。",
+            "とても{安|やす}いです。",
+            "ちょっと{小|ちい}さいです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l5.e3",
+          "type": "mcq",
+          "prompt": "{三千円|さんぜんえん}のかばん{は|wa}{大|おお}きいですか。",
+          "options": [
+            "いいえ、{小|ちい}さいです。",
+            "はい、{大|おお}きいです。",
+            "はい、とても{大|おお}きいです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l5.e4",
+          "type": "mcq",
+          "prompt": "{五千円|ごせんえん}のかばん{は|wa}どうですか。",
+          "options": [
+            "{大|おお}きいです。そして、{便利|べんり}です。",
+            "{小|ちい}さいです。でも、{安|やす}いです。",
+            "{高|たか}いです。そして、{古|ふる}いです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l5.e5",
+          "type": "mcq",
+          "prompt": "{五千円|ごせんえん}のかばんの{色|いろ}{は|wa}どうですか。",
+          "options": [
+            "きれいです。",
+            "きれいじゃありません。",
+            "{有名|ゆうめい}です。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-04.l5.e6",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}どのかばんにしましたか。",
+          "options": [
+            "{五千円|ごせんえん}のかばん",
+            "{三千円|さんぜんえん}のかばん",
+            "{八千円|はっせんえん}のかばん"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Came for a small souvenir",
+        "bottom": "Left with a bigger bag for the souvenirs"
+      },
+      "newItems": []
+    }
+  ]
+}

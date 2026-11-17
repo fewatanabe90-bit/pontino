@@ -1,0 +1,1102 @@
+{
+  "id": "ja-t05",
+  "lang": "ja",
+  "level": "A1",
+  "track": "trip",
+  "title": "At the hotel",
+  "summary": "Checking in, asking the front desk for things, and saying what is wrong with the room.",
+  "canDo": [
+    "I can check in, hand over my passport and ask about breakfast.",
+    "I can ask for the Wi-Fi password, a taxi, and somewhere to leave my luggage.",
+    "I can report a problem in my room and ask to change rooms."
+  ],
+  "grammar": [
+    "〜をお願いします",
+    "〜様 (recognition)",
+    "〜から〜まで",
+    "〜てもらえますか (set phrases)",
+    "〜てください (set phrases)",
+    "〜がつきません・〜が出ません"
+  ],
+  "items": [
+    {
+      "id": "ja-t05.p-checkin",
+      "kind": "phrase",
+      "front": "チェックインをお{願|ねが}いします",
+      "back": "Check-in, please."
+    },
+    {
+      "id": "ja-t05.v-yoyaku",
+      "kind": "vocab",
+      "front": "{予約|よやく}",
+      "back": "reservation, booking"
+    },
+    {
+      "id": "ja-t05.v-pasupooto",
+      "kind": "vocab",
+      "front": "パスポート",
+      "back": "passport"
+    },
+    {
+      "id": "ja-t05.v-heya",
+      "kind": "vocab",
+      "front": "お{部屋|へや}",
+      "back": "room (said politely)",
+      "note": "Your own room is just {部屋|へや}."
+    },
+    {
+      "id": "ja-t05.v-gokai",
+      "kind": "vocab",
+      "front": "{五階|ごかい}",
+      "back": "fifth floor"
+    },
+    {
+      "id": "ja-t05.v-sanpaku",
+      "kind": "vocab",
+      "front": "{三泊|さんぱく}",
+      "back": "three nights"
+    },
+    {
+      "id": "ja-t05.v-choushoku",
+      "kind": "vocab",
+      "front": "{朝食|ちょうしょく}",
+      "back": "breakfast"
+    },
+    {
+      "id": "ja-t05.p-nanjikara",
+      "kind": "phrase",
+      "front": "{何時|なんじ}からですか",
+      "back": "From what time?"
+    },
+    {
+      "id": "ja-t05.g-sama",
+      "kind": "grammar",
+      "front": "〜{様|さま}",
+      "back": "A very polite さん that staff use for customers. Never use it for yourself."
+    },
+    {
+      "id": "ja-t05.v-waifai",
+      "kind": "vocab",
+      "front": "ワイファイ",
+      "back": "Wi-Fi"
+    },
+    {
+      "id": "ja-t05.v-pasuwaado",
+      "kind": "vocab",
+      "front": "パスワード",
+      "back": "password"
+    },
+    {
+      "id": "ja-t05.v-checkout",
+      "kind": "vocab",
+      "front": "チェックアウト",
+      "back": "check-out"
+    },
+    {
+      "id": "ja-t05.v-nimotsu",
+      "kind": "vocab",
+      "front": "{荷物|にもつ}",
+      "back": "luggage, bags"
+    },
+    {
+      "id": "ja-t05.g-moraemasuka",
+      "kind": "grammar",
+      "front": "〜てもらえますか",
+      "back": "\"Could you ~ for me?\" A polite request. Learn the phrases whole for now."
+    },
+    {
+      "id": "ja-t05.p-azukatte",
+      "kind": "phrase",
+      "front": "{荷物|にもつ}を{預|あず}かってもらえますか",
+      "back": "Could you keep my luggage?"
+    },
+    {
+      "id": "ja-t05.p-takushii",
+      "kind": "phrase",
+      "front": "タクシーを{呼|よ}んでください",
+      "back": "Please call a taxi."
+    },
+    {
+      "id": "ja-t05.p-kashikomarimashita",
+      "kind": "phrase",
+      "front": "かしこまりました",
+      "back": "Certainly. (said by staff)"
+    },
+    {
+      "id": "ja-t05.v-ashita",
+      "kind": "vocab",
+      "front": "{明日|あした}",
+      "back": "tomorrow"
+    },
+    {
+      "id": "ja-t05.v-asa",
+      "kind": "vocab",
+      "front": "{朝|あさ}",
+      "back": "morning"
+    },
+    {
+      "id": "ja-t05.p-moshimoshi",
+      "kind": "phrase",
+      "front": "もしもし",
+      "back": "Hello (on the phone only)"
+    },
+    {
+      "id": "ja-t05.v-eakon",
+      "kind": "vocab",
+      "front": "エアコン",
+      "back": "air conditioner"
+    },
+    {
+      "id": "ja-t05.p-tsukimasen",
+      "kind": "phrase",
+      "front": "エアコンがつきません",
+      "back": "The air conditioner won't turn on."
+    },
+    {
+      "id": "ja-t05.v-taoru",
+      "kind": "vocab",
+      "front": "タオル",
+      "back": "towel"
+    },
+    {
+      "id": "ja-t05.p-oyu",
+      "kind": "phrase",
+      "front": "お{湯|ゆ}が{出|で}ません",
+      "back": "There is no hot water."
+    },
+    {
+      "id": "ja-t05.p-moushiwake",
+      "kind": "phrase",
+      "front": "{申|もう}し{訳|わけ}ございません",
+      "back": "I am terribly sorry. (said by staff)"
+    },
+    {
+      "id": "ja-t05.v-sugu",
+      "kind": "vocab",
+      "front": "すぐ",
+      "back": "right away"
+    },
+    {
+      "id": "ja-t05.v-urusai",
+      "kind": "vocab",
+      "front": "うるさい",
+      "back": "noisy"
+    },
+    {
+      "id": "ja-t05.p-kaete",
+      "kind": "phrase",
+      "front": "{部屋|へや}を{変|か}えてもらえますか",
+      "back": "Could you change my room?"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-t05.l1",
+      "title": "Checking in",
+      "canDo": "I can check in, hand over my passport and ask about breakfast.",
+      "intro": {
+        "art": "🏨🛎️🛂",
+        "scene": "Leo arrives at his hotel in Tokyo after a long flight.",
+        "lines": [
+          {
+            "who": "フロント",
+            "text": "いらっしゃいませ。",
+            "meaning": "Welcome.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "チェックインをお{願|ねが}いします。{予約|よやく}があります。シルバです。",
+            "meaning": "Check-in, please. I have a reservation. The name is Silva.",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "シルバ{様|さま}ですね。パスポートをお{願|ねが}いします。",
+            "meaning": "Mr Silva, yes. Your passport, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、どうぞ。",
+            "meaning": "Here you are.",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "{三泊|さんぱく}ですね。お{部屋|へや}{は|wa}{五階|ごかい}です。こちらが{鍵|かぎ}です。",
+            "meaning": "Three nights, right? Your room is on the fifth floor. Here is the key.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{朝食|ちょうしょく}{は|wa}{何時|なんじ}からですか。",
+            "meaning": "From what time is breakfast?",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "{七時|しちじ}から{十時|じゅうじ}までです。",
+            "meaning": "From seven to ten.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "〜をお{願|ねが}いします",
+            "body": "The all-purpose request. Name the thing and add をお{願|ねが}いします: チェックインをお{願|ねが}いします. The staff use it too: パスポートをお{願|ねが}いします. Hotels must copy the passport of foreign visitors, so expect this."
+          },
+          {
+            "title": "〜{様|さま}",
+            "body": "Hotel staff call you by your family name plus {様|さま}. When you give your own name, add nothing: シルバです."
+          },
+          {
+            "title": "Nights and floors",
+            "body": "Nights are counted with {泊|はく}: {一泊|いっぱく}, {二泊|にはく}, {三泊|さんぱく}. Floors with {階|かい}: {一階|いっかい}, {二階|にかい}, {三階|さんがい}, {五階|ごかい}. Japan counts the ground floor as {一階|いっかい}."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t05.l1.e1",
+          "type": "tiles",
+          "prompt": "Build: \"I have a reservation.\"",
+          "meaning": "I have a reservation.",
+          "tiles": [
+            "{予約|よやく}",
+            "が",
+            "あります",
+            "います",
+            "を",
+            "です"
+          ],
+          "answer": "{予約|よやく}があります",
+          "alt": []
+        },
+        {
+          "id": "ja-t05.l1.e2",
+          "type": "mcq",
+          "prompt": "Listen. What does the receptionist ask for?",
+          "text": "パスポートをお{願|ねが}いします。",
+          "listen": true,
+          "options": [
+            "Your passport",
+            "Your key",
+            "Your card"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l1.e3",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{朝食|ちょうしょく}{は|wa}{何時|なんじ}___ですか。",
+          "meaning": "From what time is breakfast?",
+          "options": [
+            "から",
+            "まで",
+            "に"
+          ],
+          "answer": 0,
+          "explain": "から = from. まで = until."
+        },
+        {
+          "id": "ja-t05.l1.e4",
+          "type": "mcq",
+          "prompt": "Listen. Which floor is the room on?",
+          "text": "お{部屋|へや}{は|wa}{五階|ごかい}です。",
+          "listen": true,
+          "options": [
+            "The fifth",
+            "The third",
+            "The ninth"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l1.e5",
+          "type": "mcq",
+          "prompt": "The receptionist calls you シルバ{様|さま}. When you say your own name, you:",
+          "options": [
+            "Say just the name",
+            "Add {様|さま}",
+            "Add さん"
+          ],
+          "answer": 0,
+          "explain": "さん and {様|さま} are only for other people."
+        },
+        {
+          "id": "ja-t05.l1.e6",
+          "type": "mcq",
+          "prompt": "\"Three nights\" is:",
+          "options": [
+            "{三泊|さんぱく}",
+            "{三枚|さんまい}",
+            "{三人|さんにん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l1.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I have a reservation.\"",
+          "answer": "{予約|よやく}があります。",
+          "alt": []
+        },
+        {
+          "id": "ja-t05.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{予約|よやく}",
+              "reservation"
+            ],
+            [
+              "パスポート",
+              "passport"
+            ],
+            [
+              "お{部屋|へや}",
+              "room"
+            ],
+            [
+              "{朝食|ちょうしょく}",
+              "breakfast"
+            ],
+            [
+              "{五階|ごかい}",
+              "fifth floor"
+            ],
+            [
+              "{三泊|さんぱく}",
+              "three nights"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "After a 30-hour trip from Brazil",
+        "bottom": "チェックインをお{願|ねが}いします. And a bed. Any bed."
+      },
+      "newItems": [
+        "ja-t05.p-checkin",
+        "ja-t05.v-yoyaku",
+        "ja-t05.v-pasupooto",
+        "ja-t05.v-heya",
+        "ja-t05.v-gokai",
+        "ja-t05.v-sanpaku",
+        "ja-t05.v-choushoku",
+        "ja-t05.p-nanjikara",
+        "ja-t05.g-sama"
+      ]
+    },
+    {
+      "id": "ja-t05.l2",
+      "title": "Could you…? Asking the front desk",
+      "canDo": "I can ask for the Wi-Fi password, a taxi, and somewhere to leave my luggage.",
+      "intro": {
+        "art": "📶🧳🚕",
+        "scene": "The next morning Leo stops at the front desk with a few questions.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、ワイファイのパスワード{は|wa}{何|なん}ですか。",
+            "meaning": "Excuse me, what is the Wi-Fi password?",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "こちらのカードにあります。",
+            "meaning": "It is on this card.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "チェックアウト{は|wa}{何時|なんじ}ですか。",
+            "meaning": "What time is check-out?",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "{十一時|じゅういちじ}です。",
+            "meaning": "Eleven o'clock.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "チェックアウトの{後|あと}で、{荷物|にもつ}を{預|あず}かってもらえますか。",
+            "meaning": "After check-out, could you keep my luggage?",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "はい、{大丈夫|だいじょうぶ}です。",
+            "meaning": "Yes, that is fine.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "それから、{明日|あした}の{朝|あさ}、タクシーを{呼|よ}んでください。",
+            "meaning": "Also, please call a taxi tomorrow morning.",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "かしこまりました。",
+            "meaning": "Certainly.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Two ways to ask",
+            "body": "〜てください is a direct \"please do\": タクシーを{呼|よ}んでください. 〜てもらえますか is softer, \"could you do it for me?\": {荷物|にもつ}を{預|あず}かってもらえますか. Learn these as whole phrases; how the verb changes comes later."
+          },
+          {
+            "title": "Leaving your bags",
+            "body": "Almost every hotel will keep your luggage before check-in and after check-out, free of charge. It is the phrase that frees up your last day."
+          },
+          {
+            "title": "かしこまりました",
+            "body": "What staff say instead of わかりました: \"certainly, I will do that\". You only need to recognise it. 〜の{後|あと}で means \"after ~\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t05.l2.e1",
+          "type": "tiles",
+          "prompt": "Build: \"What is the Wi-Fi password?\"",
+          "meaning": "What is the Wi-Fi password?",
+          "tiles": [
+            "ワイファイ",
+            "の",
+            "パスワード",
+            "{は|wa}",
+            "{何|なん}",
+            "ですか",
+            "を",
+            "どこ"
+          ],
+          "answer": "ワイファイのパスワード{は|wa}{何|なん}ですか",
+          "alt": []
+        },
+        {
+          "id": "ja-t05.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "チェックアウト{は|wa}___ですか。",
+          "meaning": "What time is check-out?",
+          "options": [
+            "{何時|なんじ}",
+            "どこ",
+            "いくら"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l2.e3",
+          "type": "mcq",
+          "prompt": "You want the hotel to look after your suitcase.",
+          "options": [
+            "{荷物|にもつ}を{預|あず}かってもらえますか。",
+            "{荷物|にもつ}をください。",
+            "{荷物|にもつ}{は|wa}どこですか。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l2.e4",
+          "type": "mcq",
+          "prompt": "Listen. What time is check-out?",
+          "text": "チェックアウト{は|wa}{十一時|じゅういちじ}です。",
+          "listen": true,
+          "options": [
+            "11:00",
+            "10:00",
+            "12:00"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l2.e5",
+          "type": "mcq",
+          "prompt": "The receptionist says かしこまりました. It means:",
+          "options": [
+            "Certainly, I will do that.",
+            "I am sorry, we cannot.",
+            "Please wait a moment."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l2.e6",
+          "type": "tiles",
+          "prompt": "Build: \"Please call a taxi.\"",
+          "meaning": "Please call a taxi.",
+          "tiles": [
+            "タクシー",
+            "を",
+            "{呼|よ}んで",
+            "ください",
+            "に",
+            "あります"
+          ],
+          "answer": "タクシーを{呼|よ}んでください",
+          "alt": []
+        },
+        {
+          "id": "ja-t05.l2.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"tomorrow morning\"",
+          "answer": "{明日|あした}の{朝|あさ}",
+          "alt": []
+        },
+        {
+          "id": "ja-t05.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "ワイファイ",
+              "Wi-Fi"
+            ],
+            [
+              "パスワード",
+              "password"
+            ],
+            [
+              "チェックアウト",
+              "check-out"
+            ],
+            [
+              "{荷物|にもつ}",
+              "luggage"
+            ],
+            [
+              "{明日|あした}",
+              "tomorrow"
+            ],
+            [
+              "かしこまりました",
+              "Certainly"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Check-out: 11:00. Flight: 23:00.",
+        "bottom": "{荷物|にもつ}を{預|あず}かってもらえますか: twelve free hours unlocked"
+      },
+      "newItems": [
+        "ja-t05.v-waifai",
+        "ja-t05.v-pasuwaado",
+        "ja-t05.v-checkout",
+        "ja-t05.v-nimotsu",
+        "ja-t05.g-moraemasuka",
+        "ja-t05.p-azukatte",
+        "ja-t05.p-takushii",
+        "ja-t05.p-kashikomarimashita",
+        "ja-t05.v-ashita",
+        "ja-t05.v-asa"
+      ]
+    },
+    {
+      "id": "ja-t05.l3",
+      "title": "Something is wrong with the room",
+      "canDo": "I can report a problem in my room and ask to change rooms.",
+      "intro": {
+        "art": "📞🥵🔧",
+        "scene": "Leo is back in his room. It is hot, and something is missing. He picks up the phone.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "もしもし、{五階|ごかい}のシルバです。",
+            "meaning": "Hello, this is Silva on the fifth floor.",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "はい、シルバ{様|さま}。",
+            "meaning": "Yes, Mr Silva.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "エアコンがつきません。それから、タオルがありません。",
+            "meaning": "The air conditioner won't turn on. Also, there are no towels.",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "{申|もう}し{訳|わけ}ございません。すぐ{行|い}きます。",
+            "meaning": "I am terribly sorry. We'll come right away.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "となりの{部屋|へや}もうるさいです。{部屋|へや}を{変|か}えてもらえますか。",
+            "meaning": "The room next door is noisy too. Could you change my room?",
+            "politeness": "polite"
+          },
+          {
+            "who": "フロント",
+            "text": "かしこまりました。{六階|ろっかい}のお{部屋|へや}{は|wa}どうですか。",
+            "meaning": "Certainly. How about a room on the sixth floor?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "はい、お{願|ねが}いします。",
+            "meaning": "Yes, please.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Saying what is wrong",
+            "body": "Thing, が, and a negative: エアコンがつきません (does not turn on), お{湯|ゆ}が{出|で}ません (no hot water comes out), タオルがありません (there are none). The same pattern works for テレビ, ワイファイ, and the light, {電気|でんき}."
+          },
+          {
+            "title": "{申|もう}し{訳|わけ}ございません",
+            "body": "The most formal apology, used by staff. You only need to recognise it. すぐ{行|い}きます: \"I will come right away\"."
+          },
+          {
+            "title": "もしもし",
+            "body": "Only for the phone. Face to face, start with すみません."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t05.l3.e1",
+          "type": "mcq",
+          "prompt": "Your air conditioner doesn't turn on. You say:",
+          "options": [
+            "エアコンがつきません。",
+            "エアコンがありません。",
+            "エアコンをください。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "タオル___ありません。",
+          "meaning": "There are no towels.",
+          "options": [
+            "が",
+            "を",
+            "で"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l3.e3",
+          "type": "mcq",
+          "prompt": "Listen. What is the problem?",
+          "text": "お{湯|ゆ}が{出|で}ません。",
+          "listen": true,
+          "options": [
+            "No hot water",
+            "No towels",
+            "A noisy room"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"Could you change my room?\"",
+          "meaning": "Could you change my room?",
+          "tiles": [
+            "{部屋|へや}",
+            "を",
+            "{変|か}えて",
+            "もらえますか",
+            "あります",
+            "が"
+          ],
+          "answer": "{部屋|へや}を{変|か}えてもらえますか",
+          "alt": []
+        },
+        {
+          "id": "ja-t05.l3.e5",
+          "type": "mcq",
+          "prompt": "The front desk says {申|もう}し{訳|わけ}ございません. They are:",
+          "options": [
+            "Apologising",
+            "Asking for your room number",
+            "Saying goodbye"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l3.e6",
+          "type": "mcq",
+          "prompt": "Listen. What will the staff do?",
+          "text": "すぐ{行|い}きます。",
+          "listen": true,
+          "options": [
+            "Come right away",
+            "Come tomorrow",
+            "Call a taxi"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l3.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"It's noisy.\"",
+          "answer": "うるさいです。",
+          "alt": []
+        },
+        {
+          "id": "ja-t05.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "もしもし",
+              "Hello (phone)"
+            ],
+            [
+              "エアコン",
+              "air conditioner"
+            ],
+            [
+              "タオル",
+              "towel"
+            ],
+            [
+              "すぐ",
+              "right away"
+            ],
+            [
+              "うるさい",
+              "noisy"
+            ],
+            [
+              "お{湯|ゆ}が{出|で}ません",
+              "no hot water"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Rehearsed the phone call for ten minutes",
+        "bottom": "Front desk: すぐ{行|い}きます. That was it."
+      },
+      "newItems": [
+        "ja-t05.p-moshimoshi",
+        "ja-t05.v-eakon",
+        "ja-t05.p-tsukimasen",
+        "ja-t05.v-taoru",
+        "ja-t05.p-oyu",
+        "ja-t05.p-moushiwake",
+        "ja-t05.v-sugu",
+        "ja-t05.v-urusai",
+        "ja-t05.p-kaete"
+      ]
+    },
+    {
+      "id": "ja-t05.l4",
+      "title": "Reading: Leo's hotel",
+      "canDo": "I can read a short text about a hotel stay and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🏨❄️",
+        "scene": "Leo's hotel, and what happened yesterday. Read, listen, then answer.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "レオさんのホテル{は|wa}{駅|えき}の{前|まえ}にあります。",
+            "meaning": "Leo's hotel is in front of the station."
+          },
+          {
+            "text": "{部屋|へや}{は|wa}{五階|ごかい}です。{小|ちい}さいです。でも、きれいです。",
+            "meaning": "His room is on the fifth floor. It is small. But it is clean."
+          },
+          {
+            "text": "{朝食|ちょうしょく}{は|wa}{七時|しちじ}から{十時|じゅうじ}までです。",
+            "meaning": "Breakfast is from seven to ten."
+          },
+          {
+            "text": "{一階|いっかい}にコンビニがあります。とても{便利|べんり}です。",
+            "meaning": "There is a convenience store on the ground floor. It is very handy."
+          },
+          {
+            "text": "{昨日|きのう}、エアコンがつきませんでした。",
+            "meaning": "Yesterday the air conditioner wouldn't turn on."
+          },
+          {
+            "text": "レオさん{は|wa}フロントに{電話|でんわ}しました。",
+            "meaning": "Leo phoned the front desk."
+          },
+          {
+            "text": "ホテルの{人|ひと}がすぐ{来|き}ました。",
+            "meaning": "Someone from the hotel came right away."
+          },
+          {
+            "text": "{今日|きょう}{は|wa}エアコンがつきます。{部屋|へや}{は|wa}{涼|すず}しいです。",
+            "meaning": "Today the air conditioner works. The room is cool."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{一階|いっかい}",
+            "meaning": "ground floor (first floor in Japan)"
+          },
+          {
+            "word": "{昨日|きのう}",
+            "meaning": "yesterday"
+          },
+          {
+            "word": "{電話|でんわ}しました",
+            "meaning": "phoned"
+          },
+          {
+            "word": "{涼|すず}しい",
+            "meaning": "cool"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t05.l4.e1",
+          "type": "mcq",
+          "prompt": "ホテル{は|wa}どこにありますか。",
+          "options": [
+            "{駅|えき}の{前|まえ}",
+            "{駅|えき}の{後|うし}ろ",
+            "{公園|こうえん}のとなり"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l4.e2",
+          "type": "mcq",
+          "prompt": "レオさんの{部屋|へや}{は|wa}{何階|なんがい}ですか。",
+          "options": [
+            "{五階|ごかい}",
+            "{一階|いっかい}",
+            "{六階|ろっかい}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l4.e3",
+          "type": "mcq",
+          "prompt": "{朝食|ちょうしょく}{は|wa}{何時|なんじ}までですか。",
+          "options": [
+            "{十時|じゅうじ}",
+            "{七時|しちじ}",
+            "{十一時|じゅういちじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l4.e4",
+          "type": "mcq",
+          "prompt": "コンビニ{は|wa}どこにありますか。",
+          "options": [
+            "{一階|いっかい}",
+            "{五階|ごかい}",
+            "ホテルのとなり"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l4.e5",
+          "type": "mcq",
+          "prompt": "{昨日|きのう}、{何|なに}がつきませんでしたか。",
+          "options": [
+            "エアコン",
+            "テレビ",
+            "ワイファイ"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l4.e6",
+          "type": "mcq",
+          "prompt": "{今日|きょう}、{部屋|へや}{は|wa}{暑|あつ}いですか。",
+          "options": [
+            "いいえ、{涼|すず}しいです。",
+            "はい、{暑|あつ}いです。",
+            "はい、とても{暑|あつ}いです。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Room: small",
+        "bottom": "Konbini downstairs: the only amenity that matters"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-t05.l5",
+      "title": "Story: Check-out day",
+      "canDo": "I can follow a short scene at the front desk and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧🧳👋",
+        "scene": "Leo's last morning at the hotel. Listen for the price, the train time and what happens to his bags.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "おはようございます。チェックアウトをお{願|ねが}いします。",
+            "meaning": "Good morning. Check-out, please.",
+            "who": "レオ"
+          },
+          {
+            "text": "はい。お{部屋|へや}の{鍵|かぎ}をお{願|ねが}いします。",
+            "meaning": "Certainly. Your room key, please.",
+            "who": "フロント"
+          },
+          {
+            "text": "どうぞ。カード{は|wa}{使|つか}えますか。",
+            "meaning": "Here you are. Can I use a card?",
+            "who": "レオ"
+          },
+          {
+            "text": "はい、{使|つか}えます。{三泊|さんぱく}で{三万円|さんまんえん}です。",
+            "meaning": "Yes, you can. That is 30,000 yen for three nights.",
+            "who": "フロント"
+          },
+          {
+            "text": "{電車|でんしゃ}{は|wa}{四時|よじ}です。{荷物|にもつ}を{預|あず}かってもらえますか。",
+            "meaning": "My train is at four. Could you keep my luggage?",
+            "who": "レオ"
+          },
+          {
+            "text": "はい。{荷物|にもつ}{は|wa}いくつですか。",
+            "meaning": "Yes. How many bags?",
+            "who": "フロント"
+          },
+          {
+            "text": "{二|ふた}つです。{大|おお}きいかばんと{小|ちい}さいかばんです。",
+            "meaning": "Two. A big bag and a small bag.",
+            "who": "レオ"
+          },
+          {
+            "text": "かしこまりました。{三時|さんじ}にタクシーを{呼|よ}びますか。",
+            "meaning": "Certainly. Shall I call a taxi for three o'clock?",
+            "who": "フロント"
+          },
+          {
+            "text": "いいえ、{大丈夫|だいじょうぶ}です。{駅|えき}まで{歩|ある}きます。",
+            "meaning": "No, thank you. I'll walk to the station.",
+            "who": "レオ"
+          },
+          {
+            "text": "ありがとうございました。",
+            "meaning": "Thank you very much.",
+            "who": "フロント"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "おはようございます",
+            "meaning": "Good morning."
+          },
+          {
+            "word": "{三万円|さんまんえん}",
+            "meaning": "30,000 yen"
+          },
+          {
+            "word": "{歩|ある}きます",
+            "meaning": "to walk"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t05.l5.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何泊|なんぱく}しましたか。",
+          "options": [
+            "{三泊|さんぱく}",
+            "{二泊|にはく}",
+            "{五泊|ごはく}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l5.e2",
+          "type": "mcq",
+          "prompt": "ホテル{は|wa}{全部|ぜんぶ}でいくらですか。",
+          "options": [
+            "{三万円|さんまんえん}",
+            "{三千円|さんぜんえん}",
+            "{一万円|いちまんえん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l5.e3",
+          "type": "mcq",
+          "prompt": "ホテルでカード{は|wa}{使|つか}えますか。",
+          "options": [
+            "はい、{使|つか}えます。",
+            "いいえ、{現金|げんきん}だけです。",
+            "いいえ、{使|つか}えません。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l5.e4",
+          "type": "mcq",
+          "prompt": "{電車|でんしゃ}{は|wa}{何時|なんじ}ですか。",
+          "options": [
+            "{四時|よじ}",
+            "{三時|さんじ}",
+            "{十時|じゅうじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l5.e5",
+          "type": "mcq",
+          "prompt": "{荷物|にもつ}{は|wa}いくつですか。",
+          "options": [
+            "{二|ふた}つ",
+            "{一|ひと}つ",
+            "{三|みっ}つ"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t05.l5.e6",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}タクシーで{駅|えき}{へ|e}{行|い}きますか。",
+          "options": [
+            "いいえ、{歩|ある}きます。",
+            "はい、タクシーで{行|い}きます。",
+            "いいえ、バスで{行|い}きます。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Arrived with one bag",
+        "bottom": "Leaving with two. Souvenirs happened."
+      },
+      "newItems": []
+    }
+  ],
+  "factCheck": [
+    "Hotels in Japan are required to copy the passports of foreign visitors without a Japanese address.",
+    "Counter readings: 三階 さんがい, 何階 なんがい, 六階 ろっかい, 一泊 いっぱく."
+  ]
+}

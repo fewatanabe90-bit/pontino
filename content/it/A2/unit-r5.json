@@ -1,0 +1,1137 @@
+{
+  "id": "it-r5",
+  "lang": "it",
+  "level": "A2",
+  "track": "core",
+  "title": "Che cosa farai?",
+  "summary": "The future: summer plans, predictions about the match, what happens if it rains, and guessing where someone is right now.",
+  "canDo": [
+    "I can talk about plans and predictions with the futuro semplice.",
+    "I can use the common irregular futures: sarò, avrò, andrò, farò, verrò.",
+    "I can say what will happen if or when something else happens, and make a guess about the present."
+  ],
+  "grammar": [
+    "Futuro semplice: regular forms",
+    "Irregular futures",
+    "se / quando / appena + futuro",
+    "Futuro di supposizione"
+  ],
+  "items": [
+    {
+      "id": "it-r5.g-futuro",
+      "kind": "grammar",
+      "front": "parlerò, prenderò, partirò",
+      "back": "The futuro semplice. Endings: -ò, -ai, -à, -emo, -ete, -anno. In -are verbs the a turns into e: parlare → parlerò.",
+      "pt": "Like PT falarei, comerei, partirei. Unlike in Brazil, Italians really use it in everyday speech."
+    },
+    {
+      "id": "it-r5.v-estate",
+      "kind": "vocab",
+      "front": "l'estate",
+      "back": "summer",
+      "note": "Quest'estate = this summer.",
+      "pt": "Feminine in Italian: la bella estate. PT o verão."
+    },
+    {
+      "id": "it-r5.v-settimana",
+      "kind": "vocab",
+      "front": "la settimana",
+      "back": "week"
+    },
+    {
+      "id": "it-r5.v-mare",
+      "kind": "vocab",
+      "front": "il mare",
+      "back": "sea",
+      "note": "Andare al mare = to go to the seaside."
+    },
+    {
+      "id": "it-r5.v-vicinoa",
+      "kind": "vocab",
+      "front": "vicino a",
+      "back": "near, close to",
+      "pt": "PT perto de. Il vicino is also \"the neighbour\"."
+    },
+    {
+      "id": "it-r5.p-chebello",
+      "kind": "phrase",
+      "front": "Che bello!",
+      "back": "How lovely! / Great!"
+    },
+    {
+      "id": "it-r5.p-fra",
+      "kind": "phrase",
+      "front": "fra due settimane",
+      "back": "in two weeks' time",
+      "note": "Tra and fra mean the same.",
+      "pt": "PT daqui a duas semanas."
+    },
+    {
+      "id": "it-r5.v-restare",
+      "kind": "vocab",
+      "front": "restare",
+      "back": "to stay"
+    },
+    {
+      "id": "it-r5.p-annoprossimo",
+      "kind": "phrase",
+      "front": "l'anno prossimo",
+      "back": "next year"
+    },
+    {
+      "id": "it-r5.g-irregolari",
+      "kind": "grammar",
+      "front": "sarò, avrò, andrò, farò",
+      "back": "Irregular futures put the same endings on a short stem: essere → sar-, avere → avr-, andare → andr-, fare → far-, venire → verr-."
+    },
+    {
+      "id": "it-r5.v-saro",
+      "kind": "vocab",
+      "front": "sarò",
+      "back": "I will be"
+    },
+    {
+      "id": "it-r5.v-avro",
+      "kind": "vocab",
+      "front": "avrò",
+      "back": "I will have"
+    },
+    {
+      "id": "it-r5.v-andro",
+      "kind": "vocab",
+      "front": "andrò",
+      "back": "I will go"
+    },
+    {
+      "id": "it-r5.v-faro",
+      "kind": "vocab",
+      "front": "farò",
+      "back": "I will do, I will make"
+    },
+    {
+      "id": "it-r5.v-verro",
+      "kind": "vocab",
+      "front": "verrò",
+      "back": "I will come"
+    },
+    {
+      "id": "it-r5.v-dovro",
+      "kind": "vocab",
+      "front": "dovrò",
+      "back": "I will have to"
+    },
+    {
+      "id": "it-r5.v-potro",
+      "kind": "vocab",
+      "front": "potrò",
+      "back": "I will be able to"
+    },
+    {
+      "id": "it-r5.p-vedremo",
+      "kind": "phrase",
+      "front": "Vedremo!",
+      "back": "We'll see!"
+    },
+    {
+      "id": "it-r5.p-nonloso",
+      "kind": "phrase",
+      "front": "Non lo so",
+      "back": "I don't know."
+    },
+    {
+      "id": "it-r5.p-secondote",
+      "kind": "phrase",
+      "front": "secondo te",
+      "back": "in your opinion",
+      "note": "Secondo me = in my opinion.",
+      "pt": "PT na sua opinião, pra você."
+    },
+    {
+      "id": "it-r5.v-finoa",
+      "kind": "vocab",
+      "front": "fino a",
+      "back": "until, as far as",
+      "pt": "PT até."
+    },
+    {
+      "id": "it-r5.g-sefuturo",
+      "kind": "grammar",
+      "front": "se / quando + futuro",
+      "back": "After se, quando and appena, Italian uses the future in both halves when both things are still to come: quando arriverà, decideremo.",
+      "pt": "PT uses the future subjunctive: \"quando ele chegar\", \"se chover\". Italian has no such tense. Use the plain future (or the present)."
+    },
+    {
+      "id": "it-r5.g-supposizione",
+      "kind": "grammar",
+      "front": "sarà, avrà (supposizione)",
+      "back": "The future also makes a guess about now: sarà a casa = he is probably at home.",
+      "pt": "Same idea as PT \"Onde será que ele está?\" / \"Estará em casa\"."
+    },
+    {
+      "id": "it-r5.p-beltempo",
+      "kind": "phrase",
+      "front": "fa bel tempo",
+      "back": "the weather is nice",
+      "note": "Fa brutto tempo = the weather is bad."
+    },
+    {
+      "id": "it-r5.v-appena",
+      "kind": "vocab",
+      "front": "appena",
+      "back": "as soon as; just",
+      "pt": "PT assim que. Not PT \"apenas\" (= soltanto)."
+    },
+    {
+      "id": "it-r5.v-decidere",
+      "kind": "vocab",
+      "front": "decidere",
+      "back": "to decide"
+    },
+    {
+      "id": "it-r5.v-rispondere",
+      "kind": "vocab",
+      "front": "rispondere",
+      "back": "to answer"
+    },
+    {
+      "id": "it-r5.v-spento",
+      "kind": "vocab",
+      "front": "spento",
+      "back": "switched off",
+      "note": "From spegnere, to switch off.",
+      "pt": "PT desligado."
+    },
+    {
+      "id": "it-r5.v-qualcosa",
+      "kind": "vocab",
+      "front": "qualcosa",
+      "back": "something",
+      "pt": "PT alguma coisa."
+    },
+    {
+      "id": "it-r5.v-ancora",
+      "kind": "vocab",
+      "front": "ancora",
+      "back": "still; again",
+      "pt": "PT ainda. \"Ancora una volta\" = mais uma vez."
+    },
+    {
+      "id": "it-r5.v-chiamare",
+      "kind": "vocab",
+      "front": "chiamare",
+      "back": "to call, to phone"
+    },
+    {
+      "id": "it-r5.v-sapro",
+      "kind": "vocab",
+      "front": "saprò",
+      "back": "I will know"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "it-r5.l1",
+      "title": "Quest'estate partirò",
+      "canDo": "I can talk about my plans using regular verbs in the future.",
+      "intro": {
+        "place": "cafe",
+        "scene": "June. Sara asks Leo about his summer.",
+        "lines": [
+          {
+            "who": "Sara",
+            "text": "Che cosa farai quest'estate?",
+            "meaning": "What will you do this summer?"
+          },
+          {
+            "who": "Leo",
+            "text": "Partirò per la Sicilia fra due settimane. Resterò lì fino a luglio.",
+            "meaning": "I'll leave for Sicily in two weeks. I'll stay there until July."
+          },
+          {
+            "who": "Sara",
+            "text": "Che bello! E dove dormirai?",
+            "meaning": "How lovely! And where will you sleep?"
+          },
+          {
+            "who": "Leo",
+            "text": "Prenderò una casa vicino al mare con Marco.",
+            "meaning": "I'll take a house near the sea with Marco."
+          },
+          {
+            "who": "Sara",
+            "text": "E Giulia? Partirà con voi?",
+            "meaning": "And Giulia? Will she leave with you?"
+          },
+          {
+            "who": "Leo",
+            "text": "No, lei lavorerà tutta l'estate. Poverina!",
+            "meaning": "No, she'll work all summer. Poor thing!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "One set of endings",
+            "body": "Take the infinitive, drop the final e, add -ò, -ai, -à, -emo, -ete, -anno: prender-ò, partir-ai, dormir-à. The stress falls on the ending, and io and lui carry a written accent: partirò, partirà."
+          },
+          {
+            "title": "-are becomes -er-",
+            "body": "Verbs in -are change the a to e: lavorare → lavorerò, restare → resterò, parlare → parlerò. Not *lavorarò."
+          },
+          {
+            "title": "🇧🇷 PT tip: use it",
+            "body": "In Brazil the simple future (\"partirei\", \"viajarei\") sounds bookish and people say \"vou partir\". In Italy \"partirò\" is normal speech. Italian has no \"vado a partire\" for the future. The present also works for fixed plans: domani parto."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r5.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Quest'estate io ___ per la Sicilia.",
+          "meaning": "This summer I will leave for Sicily.",
+          "options": [
+            "partirò",
+            "partirà",
+            "partivo"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Giulia ___ tutta l'estate.",
+          "meaning": "Giulia will work all summer.",
+          "options": [
+            "lavorerà",
+            "lavorarà",
+            "lavorerò"
+          ],
+          "answer": 0,
+          "explain": "Verbs in -are: the a becomes e. And lei takes -à."
+        },
+        {
+          "id": "it-r5.l1.e3",
+          "type": "mcq",
+          "prompt": "\"We will take a house near the sea.\"",
+          "options": [
+            "Prenderemo una casa vicino al mare.",
+            "Prenderanno una casa vicino al mare.",
+            "Prenderete una casa vicino al mare."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"Where will you sleep?\"",
+          "meaning": "Where will you sleep?",
+          "tiles": [
+            "Dove",
+            "dormirai",
+            "dormirà",
+            "dormi",
+            "quando"
+          ],
+          "answer": "Dove dormirai",
+          "alt": []
+        },
+        {
+          "id": "it-r5.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. When will Leo leave?",
+          "text": "Partirò fra due settimane.",
+          "listen": true,
+          "options": [
+            "In two weeks",
+            "Two weeks ago",
+            "For two weeks"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l1.e6",
+          "type": "mcq",
+          "prompt": "Which form goes with \"loro\"?",
+          "options": [
+            "resteranno",
+            "resteremo",
+            "resterete"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l1.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu trabalharei amanhã.\"",
+          "answer": "Lavorerò domani.",
+          "alt": [
+            "Domani lavorerò.",
+            "Io lavorerò domani.",
+            "Domani io lavorerò."
+          ]
+        },
+        {
+          "id": "it-r5.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "l'estate",
+              "summer"
+            ],
+            [
+              "la settimana",
+              "week"
+            ],
+            [
+              "il mare",
+              "sea"
+            ],
+            [
+              "vicino a",
+              "near"
+            ],
+            [
+              "Che bello!",
+              "How lovely!"
+            ],
+            [
+              "restare",
+              "to stay"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Lei lavorerà tutta l'estate",
+        "bottom": "Leo, sending beach photos: \"Poverina!\""
+      },
+      "newItems": [
+        "it-r5.g-futuro",
+        "it-r5.v-estate",
+        "it-r5.v-settimana",
+        "it-r5.v-mare",
+        "it-r5.v-vicinoa",
+        "it-r5.p-chebello",
+        "it-r5.p-fra",
+        "it-r5.v-restare",
+        "it-r5.p-annoprossimo"
+      ]
+    },
+    {
+      "id": "it-r5.l2",
+      "title": "Sarò, avrò, andrò",
+      "canDo": "I can use the most common irregular futures.",
+      "intro": {
+        "place": "stadium",
+        "scene": "Marco is already thinking about Sunday. Giulia is not so sure.",
+        "lines": [
+          {
+            "who": "Marco",
+            "text": "Domenica ci sarà la partita. Verrai allo stadio?",
+            "meaning": "On Sunday there is the match. Will you come to the stadium?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Non lo so. Dovrò lavorare fino alle sei.",
+            "meaning": "I don't know. I'll have to work until six."
+          },
+          {
+            "who": "Marco",
+            "text": "La partita comincerà alle otto. Avrai tempo!",
+            "meaning": "The match will start at eight. You'll have time!"
+          },
+          {
+            "who": "Giulia",
+            "text": "Va bene, allora verrò. Chi vincerà, secondo te?",
+            "meaning": "All right, then I'll come. Who will win, in your opinion?"
+          },
+          {
+            "who": "Marco",
+            "text": "Vinceremo noi, naturalmente. Sarà una bella serata.",
+            "meaning": "We'll win, of course. It'll be a great evening."
+          },
+          {
+            "who": "Giulia",
+            "text": "Vedremo! Se perdiamo, farai tu la cena.",
+            "meaning": "We'll see! If we lose, you'll make dinner."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Short stems, same endings",
+            "body": "essere → sarò · avere → avrò · andare → andrò · fare → farò · potere → potrò · dovere → dovrò · vedere → vedrò · sapere → saprò. The endings never change."
+          },
+          {
+            "title": "Double r",
+            "body": "venire → verrò · volere → vorrò · rimanere → rimarrò · bere → berrò. Say the double r clearly."
+          },
+          {
+            "title": "🇧🇷 PT tip: l'anno prossimo",
+            "body": "Time words for the future: domani, dopodomani, fra due giorni, la settimana prossima, l'anno prossimo. \"Prossimo\" goes after the noun more often than in PT: l'anno prossimo, sabato prossimo."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r5.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Domani io ___ a Milano.",
+          "meaning": "Tomorrow I will go to Milan.",
+          "options": [
+            "andrò",
+            "anderò",
+            "andarò"
+          ],
+          "answer": 0,
+          "explain": "Andare loses its vowel: andr-."
+        },
+        {
+          "id": "it-r5.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Domenica ci ___ la partita.",
+          "meaning": "On Sunday there will be the match.",
+          "options": [
+            "sarà",
+            "sarò",
+            "avrà"
+          ],
+          "answer": 0,
+          "explain": "C'è → ci sarà."
+        },
+        {
+          "id": "it-r5.l2.e3",
+          "type": "mcq",
+          "prompt": "\"Will you come to the stadium?\" (to a friend)",
+          "options": [
+            "Verrai allo stadio?",
+            "Venirai allo stadio?",
+            "Verrà allo stadio?"
+          ],
+          "answer": 0,
+          "explain": "Venire → verr-. Verrà is for lui, lei or formal Lei."
+        },
+        {
+          "id": "it-r5.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I will have to work until six.\"",
+          "meaning": "I will have to work until six.",
+          "tiles": [
+            "Dovrò",
+            "lavorare",
+            "fino",
+            "alle",
+            "sei",
+            "Devo",
+            "a"
+          ],
+          "answer": "Dovrò lavorare fino alle sei",
+          "alt": []
+        },
+        {
+          "id": "it-r5.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. What does Marco think?",
+          "text": "Secondo me vinceremo noi.",
+          "listen": true,
+          "options": [
+            "That his team will win",
+            "That his team will lose",
+            "That he does not know"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l2.e6",
+          "type": "mcq",
+          "prompt": "The future of \"potere\" for io is:",
+          "options": [
+            "potrò",
+            "poterò",
+            "possò"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l2.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu não sei.\"",
+          "answer": "Non lo so.",
+          "alt": [
+            "Non so.",
+            "Io non lo so."
+          ]
+        },
+        {
+          "id": "it-r5.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "sarò",
+              "I will be"
+            ],
+            [
+              "avrò",
+              "I will have"
+            ],
+            [
+              "andrò",
+              "I will go"
+            ],
+            [
+              "farò",
+              "I will do"
+            ],
+            [
+              "verrò",
+              "I will come"
+            ],
+            [
+              "Vedremo!",
+              "We'll see!"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Marco: \"Vinceremo noi, naturalmente\"",
+        "bottom": "Marco, Sunday night: making dinner"
+      },
+      "newItems": [
+        "it-r5.g-irregolari",
+        "it-r5.v-saro",
+        "it-r5.v-avro",
+        "it-r5.v-andro",
+        "it-r5.v-faro",
+        "it-r5.v-verro",
+        "it-r5.v-dovro",
+        "it-r5.v-potro",
+        "it-r5.p-vedremo",
+        "it-r5.p-nonloso",
+        "it-r5.p-secondote",
+        "it-r5.v-finoa"
+      ]
+    },
+    {
+      "id": "it-r5.l3",
+      "title": "Se pioverà, resteremo a casa",
+      "canDo": "I can say what will happen if or when something happens, and make a guess about now.",
+      "intro": {
+        "art": "🌧️📱🤔",
+        "scene": "Friday evening. Leo and Sara are planning the weekend, and Marco is not answering his phone.",
+        "lines": [
+          {
+            "who": "Leo",
+            "text": "Domani andiamo al mare?",
+            "meaning": "Shall we go to the sea tomorrow?"
+          },
+          {
+            "who": "Sara",
+            "text": "Se farà bel tempo, sì. Ma se pioverà, resteremo a casa.",
+            "meaning": "If the weather is nice, yes. But if it rains, we'll stay home."
+          },
+          {
+            "who": "Leo",
+            "text": "Quando arriverà Marco, decideremo. Ma dov'è? Non risponde.",
+            "meaning": "When Marco gets here, we'll decide. But where is he? He isn't answering."
+          },
+          {
+            "who": "Sara",
+            "text": "Sarà ancora al lavoro.",
+            "meaning": "He's probably still at work."
+          },
+          {
+            "who": "Leo",
+            "text": "Sono le nove di sera! Avrà il telefono spento.",
+            "meaning": "It's nine in the evening! His phone must be off."
+          },
+          {
+            "who": "Sara",
+            "text": "Appena saprò qualcosa, ti chiamerò.",
+            "meaning": "As soon as I know something, I'll call you."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Future on both sides",
+            "body": "When both things are still to come, Italian likes the future in both halves: se pioverà, resteremo a casa; quando arriverà, decideremo; appena saprò qualcosa, ti chiamerò. In relaxed speech the present is fine too: se piove, restiamo a casa."
+          },
+          {
+            "title": "A guess about now",
+            "body": "The future can also mean \"probably\": sarà al lavoro (he must be at work), avrà il telefono spento (his phone must be off), saranno le nove (it must be about nine)."
+          },
+          {
+            "title": "🇧🇷 PT tip: no \"se chover\"",
+            "body": "Portuguese has a special tense here: \"se chover\", \"quando ele chegar\", \"assim que eu souber\". Italian does not. Never invent one: after se and quando use the normal future or the present. And never the congiuntivo: *se piova is wrong."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r5.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Se ___, resteremo a casa.",
+          "meaning": "If it rains, we'll stay home.",
+          "options": [
+            "pioverà",
+            "piovere",
+            "piova"
+          ],
+          "answer": 0,
+          "explain": "After se, the plain future (or the present). Never the infinitive or the congiuntivo."
+        },
+        {
+          "id": "it-r5.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Quando Marco ___, decideremo.",
+          "meaning": "When Marco arrives, we'll decide.",
+          "options": [
+            "arriverà",
+            "arrivare",
+            "arrivava"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l3.e3",
+          "type": "mcq",
+          "prompt": "Marco is not answering the phone. \"Sarà al lavoro\" means:",
+          "options": [
+            "He's probably at work.",
+            "He will go to work.",
+            "He was at work."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"As soon as I know something, I'll call you.\"",
+          "meaning": "As soon as I know something, I'll call you.",
+          "tiles": [
+            "Appena",
+            "saprò",
+            "qualcosa",
+            "ti",
+            "chiamerò",
+            "se",
+            "mi",
+            "sapere"
+          ],
+          "answer": "Appena saprò qualcosa ti chiamerò",
+          "alt": []
+        },
+        {
+          "id": "it-r5.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. What will they do if the weather is nice?",
+          "text": "Se farà bel tempo, andremo al mare.",
+          "listen": true,
+          "options": [
+            "Go to the sea",
+            "Stay at home",
+            "Go to work"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l3.e6",
+          "type": "mcq",
+          "prompt": "It is late and Giulia is not here. Make a guess: \"She must have a lot of work.\"",
+          "options": [
+            "Avrà molto lavoro.",
+            "Aveva molto lavoro.",
+            "Abbia molto lavoro."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese, using the future: \"Quando eu chegar, eu te ligo.\"",
+          "answer": "Quando arriverò, ti chiamerò.",
+          "alt": [
+            "Quando arrivo, ti chiamo.",
+            "Ti chiamerò quando arriverò.",
+            "Quando arriverò ti chiamo.",
+            "Appena arriverò, ti chiamerò.",
+            "Quando arriverò, ti telefonerò."
+          ]
+        },
+        {
+          "id": "it-r5.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "appena",
+              "as soon as"
+            ],
+            [
+              "spento",
+              "switched off"
+            ],
+            [
+              "qualcosa",
+              "something"
+            ],
+            [
+              "decidere",
+              "to decide"
+            ],
+            [
+              "rispondere",
+              "to answer"
+            ],
+            [
+              "fa bel tempo",
+              "the weather is nice"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Avrà il telefono spento\"",
+        "bottom": "Marco: asleep on the sofa since seven"
+      },
+      "newItems": [
+        "it-r5.g-sefuturo",
+        "it-r5.g-supposizione",
+        "it-r5.p-beltempo",
+        "it-r5.v-appena",
+        "it-r5.v-decidere",
+        "it-r5.v-rispondere",
+        "it-r5.v-spento",
+        "it-r5.v-qualcosa",
+        "it-r5.v-ancora",
+        "it-r5.v-chiamare",
+        "it-r5.v-sapro"
+      ]
+    },
+    {
+      "id": "it-r5.l4",
+      "title": "Lettura: I progetti di Marco",
+      "canDo": "I can read a short text about plans for the future and answer questions about it in Italian.",
+      "intro": {
+        "art": "📖🍝🌊",
+        "scene": "Marco ha deciso di cambiare vita. Leggi, ascolta e poi rispondi.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "L'anno prossimo cambierò vita.",
+            "meaning": "Next year I'll change my life.",
+            "who": "Marco"
+          },
+          {
+            "text": "A gennaio lascerò il mio lavoro in banca.",
+            "meaning": "In January I'll leave my job at the bank.",
+            "who": "Marco"
+          },
+          {
+            "text": "Con mio fratello aprirò un piccolo ristorante vicino al mare.",
+            "meaning": "With my brother I'll open a small restaurant near the sea.",
+            "who": "Marco"
+          },
+          {
+            "text": "Lui cucinerà e io starò in sala con i clienti.",
+            "meaning": "He'll cook and I'll be in the dining room with the customers.",
+            "who": "Marco"
+          },
+          {
+            "text": "All'inizio non guadagneremo molto, lo so.",
+            "meaning": "At the beginning we won't earn much, I know.",
+            "who": "Marco"
+          },
+          {
+            "text": "Dovremo lavorare anche la domenica.",
+            "meaning": "We'll have to work on Sundays too.",
+            "who": "Marco"
+          },
+          {
+            "text": "Ma saremo liberi e faremo quello che ci piace.",
+            "meaning": "But we'll be free and we'll do what we like.",
+            "who": "Marco"
+          },
+          {
+            "text": "Se tutto andrà bene, fra due anni apriremo un secondo ristorante.",
+            "meaning": "If all goes well, in two years we'll open a second restaurant.",
+            "who": "Marco"
+          },
+          {
+            "text": "Verrete a trovarci, vero?",
+            "meaning": "You'll come and visit us, won't you?",
+            "who": "Marco"
+          }
+        ],
+        "glossary": [
+          {
+            "word": "lasciare",
+            "meaning": "to leave (a job, a thing)"
+          },
+          {
+            "word": "il cliente",
+            "meaning": "customer"
+          },
+          {
+            "word": "guadagnare",
+            "meaning": "to earn"
+          },
+          {
+            "word": "libero",
+            "meaning": "free"
+          },
+          {
+            "word": "venire a trovare",
+            "meaning": "to come and visit"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r5.l4.e1",
+          "type": "mcq",
+          "prompt": "Quando cambierà vita Marco?",
+          "options": [
+            "L'anno prossimo.",
+            "Fra due anni.",
+            "Quest'estate."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l4.e2",
+          "type": "mcq",
+          "prompt": "Dove lavora adesso?",
+          "options": [
+            "In banca.",
+            "In un ristorante.",
+            "Al mercato."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l4.e3",
+          "type": "mcq",
+          "prompt": "Con chi aprirà il ristorante?",
+          "options": [
+            "Con suo fratello.",
+            "Con Giulia.",
+            "Con un cliente."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l4.e4",
+          "type": "mcq",
+          "prompt": "Chi cucinerà?",
+          "options": [
+            "Suo fratello.",
+            "Marco.",
+            "Tutti e due."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l4.e5",
+          "type": "mcq",
+          "prompt": "Guadagneranno molto all'inizio?",
+          "options": [
+            "No, non molto.",
+            "Sì, moltissimo.",
+            "Sì, ma solo la domenica."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l4.e6",
+          "type": "mcq",
+          "prompt": "Che cosa faranno fra due anni, se tutto andrà bene?",
+          "options": [
+            "Apriranno un secondo ristorante.",
+            "Torneranno in banca.",
+            "Andranno in vacanza."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "\"Saremo liberi\"",
+        "bottom": "Also Marco: \"Dovremo lavorare anche la domenica\""
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-r5.l5",
+      "title": "Racconto: Il ginocchio della nonna",
+      "canDo": "I can follow a short spoken story with predictions and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧👵⛈️",
+        "scene": "Giulia racconta una domenica al mare. Ascolta: chi aveva ragione sul tempo?",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "Mia nonna Rosa non guarda mai le previsioni del tempo.",
+            "meaning": "My grandmother Rosa never looks at the weather forecast.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Dice che il suo ginocchio sa tutto.",
+            "meaning": "She says her knee knows everything.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Sabato mattina mi ha detto: domani pioverà, non andare al mare.",
+            "meaning": "On Saturday morning she told me: it will rain tomorrow, don't go to the sea.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Io ho riso e ho risposto: nonna, domani ci sarà il sole!",
+            "meaning": "I laughed and answered: grandma, it will be sunny tomorrow!",
+            "who": "Giulia"
+          },
+          {
+            "text": "Anche il telefono diceva: domenica farà caldo e non pioverà.",
+            "meaning": "My phone said so too: Sunday will be hot and it won't rain.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Così domenica siamo partiti presto per la spiaggia.",
+            "meaning": "So on Sunday we left early for the beach.",
+            "who": "Giulia"
+          },
+          {
+            "text": "A mezzogiorno il cielo è diventato nero.",
+            "meaning": "At noon the sky turned black.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Ha cominciato a piovere e siamo tornati a casa tutti bagnati.",
+            "meaning": "It started to rain and we went home soaking wet.",
+            "who": "Giulia"
+          },
+          {
+            "text": "La nonna ci aspettava alla porta con un asciugamano.",
+            "meaning": "Grandma was waiting for us at the door with a towel.",
+            "who": "Giulia"
+          },
+          {
+            "text": "La prossima volta chiederò al suo ginocchio.",
+            "meaning": "Next time I'll ask her knee.",
+            "who": "Giulia"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "le previsioni del tempo",
+            "meaning": "weather forecast"
+          },
+          {
+            "word": "il ginocchio",
+            "meaning": "knee"
+          },
+          {
+            "word": "il cielo",
+            "meaning": "sky"
+          },
+          {
+            "word": "bagnato",
+            "meaning": "wet"
+          },
+          {
+            "word": "l'asciugamano",
+            "meaning": "towel"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r5.l5.e1",
+          "type": "mcq",
+          "prompt": "Come sa la nonna che tempo farà?",
+          "options": [
+            "Lo sente nel ginocchio.",
+            "Guarda le previsioni.",
+            "Lo legge sul telefono."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l5.e2",
+          "type": "mcq",
+          "prompt": "Che cosa ha detto la nonna sabato?",
+          "options": [
+            "Che domenica pioverà.",
+            "Che domenica ci sarà il sole.",
+            "Che domenica farà freddo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l5.e3",
+          "type": "mcq",
+          "prompt": "Che cosa diceva il telefono?",
+          "options": [
+            "Che non pioverà.",
+            "Che pioverà tutto il giorno.",
+            "Che farà freddo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l5.e4",
+          "type": "mcq",
+          "prompt": "Dove sono andati domenica?",
+          "options": [
+            "In spiaggia.",
+            "In montagna.",
+            "Dalla nonna."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l5.e5",
+          "type": "mcq",
+          "prompt": "Che cosa è successo a mezzogiorno?",
+          "options": [
+            "Ha cominciato a piovere.",
+            "È uscito il sole.",
+            "Sono tornati al lavoro."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r5.l5.e6",
+          "type": "mcq",
+          "prompt": "Che cosa farà Giulia la prossima volta?",
+          "options": [
+            "Chiederà al ginocchio della nonna.",
+            "Guarderà il telefono.",
+            "Resterà a casa."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Weather app: 0% rain",
+        "bottom": "Nonna's knee: undefeated since 1962"
+      },
+      "newItems": []
+    }
+  ]
+}

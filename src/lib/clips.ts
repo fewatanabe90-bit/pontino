@@ -9,8 +9,8 @@ export type ClipLang = 'ja' | 'it';
 
 /** Kokoro voice per language: a default narrator and one per recurring character. */
 export const VOICES: Record<ClipLang, { narrator: string; cast: Record<string, string> }> = {
-  ja: { narrator: 'jf_alpha', cast: { 中村: 'jf_alpha', 佐藤: 'jf_tebukuro', レオ: 'jm_kumo', 店員: 'jf_tebukuro', 駅員: 'jf_alpha', 係員: 'jf_alpha' } },
-  it: { narrator: 'if_sara', cast: { Giulia: 'if_sara', Sara: 'if_sara', Marco: 'im_nicola', Leo: 'im_nicola', Cameriere: 'im_nicola' } },
+  ja: { narrator: 'jf_alpha', cast: { 中村: 'jf_alpha', 佐藤: 'jf_tebukuro', レオ: 'jm_kumo', 店員: 'jf_tebukuro', 駅員: 'jf_alpha', 係員: 'jf_alpha', フロント: 'jf_alpha' } },
+  it: { narrator: 'if_sara', cast: { Giulia: 'if_sara', Sara: 'if_sara', Marco: 'im_nicola', Leo: 'im_nicola', Cameriere: 'im_nicola', Venditore: 'im_nicola', Impiegata: 'if_sara' } },
 };
 
 export const voiceFor = (lang: ClipLang, who?: string): string => (who && VOICES[lang].cast[who]) || VOICES[lang].narrator;

@@ -15,7 +15,6 @@
     ['home', '🏠', 'Home'],
     ['learn', '🧭', 'Learn'],
     ['review', '🔁', 'Review'],
-    ['collections', '📔', 'Collections'],
     ['profile', '👤', 'Profile'],
   ] as const;
 
@@ -80,14 +79,6 @@
     <Review />
   {:else if page === 'profile'}
     <Profile />
-  {:else if page === 'collections'}
-    <div class="screen" style="align-items:center;justify-content:center;text-align:center">
-      <Pontino size={120} mood="think" />
-      <h1 class="h1">Travel journal</h1>
-      <p class="sub">
-        {app.lang === 'ja' ? 'The stamp book of prefectures and neighbourhoods' : 'The map of the 20 regions'} opens in the next phase.
-      </p>
-    </div>
   {:else}
     <Home />
   {/if}

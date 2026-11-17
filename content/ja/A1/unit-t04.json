@@ -1,0 +1,1105 @@
+{
+  "id": "ja-t04",
+  "lang": "ja",
+  "level": "A1",
+  "track": "trip",
+  "title": "Eating out",
+  "summary": "From the door to the bill: getting a table, ordering what you want, leaving out what you cannot eat, and paying.",
+  "canDo": [
+    "I can say how many we are and ask for an English menu.",
+    "I can ask for a recommendation, order, and ask for a dish without an ingredient.",
+    "I can say the meal was good, ask for the bill and pay together or separately."
+  ],
+  "grammar": [
+    "何名様ですか (recognition)",
+    "〜にします",
+    "〜抜きでお願いします",
+    "〜は食べません",
+    "ご一緒ですか・別々ですか (recognition)",
+    "いただきます・ごちそうさまでした"
+  ],
+  "items": [
+    {
+      "id": "ja-t04.p-nanmeisama",
+      "kind": "phrase",
+      "front": "{何名様|なんめいさま}ですか",
+      "back": "How many in your party? (said by staff)",
+      "note": "Answer with a people count: {一人|ひとり}です, {二人|ふたり}です."
+    },
+    {
+      "id": "ja-t04.p-hitoridesu",
+      "kind": "phrase",
+      "front": "{一人|ひとり}です",
+      "back": "Just me. / I'm on my own."
+    },
+    {
+      "id": "ja-t04.p-futaridesu",
+      "kind": "phrase",
+      "front": "{二人|ふたり}です",
+      "back": "There are two of us."
+    },
+    {
+      "id": "ja-t04.p-kochira",
+      "kind": "phrase",
+      "front": "こちら{へ|e}どうぞ",
+      "back": "This way, please."
+    },
+    {
+      "id": "ja-t04.v-menyuu",
+      "kind": "vocab",
+      "front": "メニュー",
+      "back": "menu"
+    },
+    {
+      "id": "ja-t04.v-eigo",
+      "kind": "vocab",
+      "front": "{英語|えいご}",
+      "back": "English (language)"
+    },
+    {
+      "id": "ja-t04.v-chuumon",
+      "kind": "vocab",
+      "front": "ご{注文|ちゅうもん}",
+      "back": "your order"
+    },
+    {
+      "id": "ja-t04.p-chotto",
+      "kind": "phrase",
+      "front": "ちょっと{待|ま}ってください",
+      "back": "Just a moment, please."
+    },
+    {
+      "id": "ja-t04.v-osusume",
+      "kind": "vocab",
+      "front": "おすすめ",
+      "back": "recommendation"
+    },
+    {
+      "id": "ja-t04.g-nishimasu",
+      "kind": "grammar",
+      "front": "〜にします",
+      "back": "\"I'll have ~\" / \"I'll go with ~\". The thing you choose takes に."
+    },
+    {
+      "id": "ja-t04.p-nishimasu",
+      "kind": "phrase",
+      "front": "ラーメンにします",
+      "back": "I'll have the ramen."
+    },
+    {
+      "id": "ja-t04.v-sorekara",
+      "kind": "vocab",
+      "front": "それから",
+      "back": "and then, also"
+    },
+    {
+      "id": "ja-t04.v-nomimono",
+      "kind": "vocab",
+      "front": "お{飲|の}み{物|もの}",
+      "back": "drink, drinks"
+    },
+    {
+      "id": "ja-t04.v-niku",
+      "kind": "vocab",
+      "front": "{肉|にく}",
+      "back": "meat"
+    },
+    {
+      "id": "ja-t04.v-sakana",
+      "kind": "vocab",
+      "front": "{魚|さかな}",
+      "back": "fish"
+    },
+    {
+      "id": "ja-t04.v-yasai",
+      "kind": "vocab",
+      "front": "{野菜|やさい}",
+      "back": "vegetables"
+    },
+    {
+      "id": "ja-t04.v-tamago",
+      "kind": "vocab",
+      "front": "{卵|たまご}",
+      "back": "egg"
+    },
+    {
+      "id": "ja-t04.p-nuki",
+      "kind": "phrase",
+      "front": "{卵|たまご}{抜|ぬ}きでお{願|ねが}いします",
+      "back": "Without egg, please.",
+      "note": "Swap in any ingredient before {抜|ぬ}き."
+    },
+    {
+      "id": "ja-t04.p-tabemasen",
+      "kind": "phrase",
+      "front": "{肉|にく}{は|wa}{食|た}べません",
+      "back": "I don't eat meat."
+    },
+    {
+      "id": "ja-t04.p-itadakimasu",
+      "kind": "phrase",
+      "front": "いただきます",
+      "back": "Said before eating."
+    },
+    {
+      "id": "ja-t04.p-gochisousama",
+      "kind": "phrase",
+      "front": "ごちそうさまでした",
+      "back": "Thank you for the meal (said after eating)."
+    },
+    {
+      "id": "ja-t04.v-oishii",
+      "kind": "vocab",
+      "front": "おいしい",
+      "back": "delicious, tasty"
+    },
+    {
+      "id": "ja-t04.v-totemo",
+      "kind": "vocab",
+      "front": "とても",
+      "back": "very"
+    },
+    {
+      "id": "ja-t04.p-doudesuka",
+      "kind": "phrase",
+      "front": "どうですか",
+      "back": "How is it?"
+    },
+    {
+      "id": "ja-t04.p-okaikei",
+      "kind": "phrase",
+      "front": "お{会計|かいけい}をお{願|ねが}いします",
+      "back": "The bill, please."
+    },
+    {
+      "id": "ja-t04.v-issho",
+      "kind": "vocab",
+      "front": "{一緒|いっしょ}",
+      "back": "together"
+    },
+    {
+      "id": "ja-t04.v-betsubetsu",
+      "kind": "vocab",
+      "front": "{別々|べつべつ}",
+      "back": "separately"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-t04.l1",
+      "title": "A table for two",
+      "canDo": "I can say how many we are and ask for an English menu.",
+      "intro": {
+        "art": "🏮🚪🍜",
+        "scene": "Leo and Sato walk into a small restaurant near the station.",
+        "lines": [
+          {
+            "who": "店員",
+            "text": "いらっしゃいませ。{何名様|なんめいさま}ですか。",
+            "meaning": "Welcome. How many in your party?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{二人|ふたり}です。",
+            "meaning": "Two.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "こちら{へ|e}どうぞ。",
+            "meaning": "This way, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "すみません、{英語|えいご}のメニュー{は|wa}ありますか。",
+            "meaning": "Excuse me, do you have an English menu?",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "はい、あります。どうぞ。",
+            "meaning": "Yes, we do. Here you are.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "ご{注文|ちゅうもん}{は|wa}お{決|き}まりですか。",
+            "meaning": "Have you decided on your order?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "ちょっと{待|ま}ってください。",
+            "meaning": "Just a moment, please.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "{何名様|なんめいさま}ですか",
+            "body": "The first thing you hear in most restaurants. {名|めい} counts customers politely and {様|さま} is an honorific, so never use it for yourself: answer {一人|ひとり}です or {二人|ふたり}です. Holding up fingers works too."
+          },
+          {
+            "title": "{英語|えいご}のメニュー",
+            "body": "の links two nouns: an \"English menu\". Many places have one, or a menu with photos. If not, you will hear ありません or すみません."
+          },
+          {
+            "title": "ご{注文|ちゅうもん}{は|wa}お{決|き}まりですか",
+            "body": "Staff language for \"are you ready to order?\". Catch ご{注文|ちゅうもん} (order). If you need time: ちょっと{待|ま}ってください."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t04.l1.e1",
+          "type": "mcq",
+          "prompt": "Listen. What is the staff asking?",
+          "text": "{何名様|なんめいさま}ですか。",
+          "listen": true,
+          "options": [
+            "How many people you are",
+            "What you would like",
+            "Whether you have a booking"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l1.e2",
+          "type": "mcq",
+          "prompt": "You are on your own. You answer:",
+          "options": [
+            "{一人|ひとり}です。",
+            "{一|ひと}つです。",
+            "{一枚|いちまい}です。"
+          ],
+          "answer": 0,
+          "explain": "{一|ひと}つ counts things and {一枚|いちまい} counts flat things. People are {一人|ひとり}, {二人|ふたり}."
+        },
+        {
+          "id": "ja-t04.l1.e3",
+          "type": "tiles",
+          "prompt": "Build: \"Do you have an English menu?\"",
+          "meaning": "Do you have an English menu?",
+          "tiles": [
+            "{英語|えいご}",
+            "の",
+            "メニュー",
+            "{は|wa}",
+            "ありますか",
+            "いますか",
+            "を"
+          ],
+          "answer": "{英語|えいご}のメニュー{は|wa}ありますか",
+          "alt": []
+        },
+        {
+          "id": "ja-t04.l1.e4",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "こちら___どうぞ。",
+          "meaning": "This way, please.",
+          "options": [
+            "{へ|e}",
+            "を",
+            "が"
+          ],
+          "answer": 0,
+          "explain": "へ (said \"e\") marks a direction."
+        },
+        {
+          "id": "ja-t04.l1.e5",
+          "type": "mcq",
+          "prompt": "The waiter asks ご{注文|ちゅうもん}{は|wa}お{決|き}まりですか, but you need more time.",
+          "options": [
+            "ちょっと{待|ま}ってください。",
+            "はい、お{願|ねが}いします。",
+            "いいえ、ちがいます。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l1.e6",
+          "type": "mcq",
+          "prompt": "Listen. What does the waiter want to know?",
+          "text": "ご{注文|ちゅうもん}{は|wa}お{決|き}まりですか。",
+          "listen": true,
+          "options": [
+            "Whether you are ready to order",
+            "How many people you are",
+            "Whether you want water"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l1.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"There are two of us.\"",
+          "answer": "{二人|ふたり}です。",
+          "alt": []
+        },
+        {
+          "id": "ja-t04.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "メニュー",
+              "menu"
+            ],
+            [
+              "{英語|えいご}",
+              "English"
+            ],
+            [
+              "ご{注文|ちゅうもん}",
+              "your order"
+            ],
+            [
+              "こちら{へ|e}どうぞ",
+              "This way, please"
+            ],
+            [
+              "{何名様|なんめいさま}ですか",
+              "How many people?"
+            ],
+            [
+              "{一人|ひとり}です",
+              "Just me"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "{何名様|なんめいさま}ですか",
+        "bottom": "Me: holds up two fingers with total confidence"
+      },
+      "newItems": [
+        "ja-t04.p-nanmeisama",
+        "ja-t04.p-hitoridesu",
+        "ja-t04.p-futaridesu",
+        "ja-t04.p-kochira",
+        "ja-t04.v-menyuu",
+        "ja-t04.v-eigo",
+        "ja-t04.v-chuumon",
+        "ja-t04.p-chotto"
+      ]
+    },
+    {
+      "id": "ja-t04.l2",
+      "title": "I'll have the ramen",
+      "canDo": "I can ask what is good, order, and ask for a dish without an ingredient.",
+      "intro": {
+        "art": "🍜🥟🍺",
+        "scene": "Leo is ready. He raises his hand and calls the waiter.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません！",
+            "meaning": "Excuse me!",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "はい。",
+            "meaning": "Yes?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "おすすめ{は|wa}{何|なん}ですか。",
+            "meaning": "What do you recommend?",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "ラーメンがおすすめです。",
+            "meaning": "The ramen is our recommendation.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "じゃあ、ラーメンにします。それから、{餃子|ぎょうざ}を{一|ひと}つください。",
+            "meaning": "Then I'll have the ramen. And one plate of gyoza, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "お{飲|の}み{物|もの}{は|wa}？",
+            "meaning": "And to drink?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "ビールをお{願|ねが}いします。",
+            "meaning": "A beer, please.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "すみません！",
+            "body": "In Japan you call the waiter. Raise a hand and say すみません clearly: it is normal, not rude. Some tables have a call button instead."
+          },
+          {
+            "title": "〜にします",
+            "body": "\"I'll go with ~\". The thing you decide on takes に: ラーメンにします, これにします. You can also order with 〜をください or 〜をお{願|ねが}いします."
+          },
+          {
+            "title": "Leaving something out",
+            "body": "Ingredient plus {抜|ぬ}きで: {卵|たまご}{抜|ぬ}きでお{願|ねが}いします (without egg, please). To say what you do not eat: {肉|にく}{は|wa}{食|た}べません. Useful words: {肉|にく} meat, {魚|さかな} fish, {野菜|やさい} vegetables, {卵|たまご} egg."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t04.l2.e1",
+          "type": "tiles",
+          "prompt": "Build: \"What do you recommend?\"",
+          "meaning": "What do you recommend?",
+          "tiles": [
+            "おすすめ",
+            "{は|wa}",
+            "{何|なん}",
+            "ですか",
+            "を",
+            "ください"
+          ],
+          "answer": "おすすめ{は|wa}{何|なん}ですか",
+          "alt": []
+        },
+        {
+          "id": "ja-t04.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "ラーメン___します。",
+          "meaning": "I'll have the ramen.",
+          "options": [
+            "に",
+            "を",
+            "で"
+          ],
+          "answer": 0,
+          "explain": "The thing you choose takes に with します."
+        },
+        {
+          "id": "ja-t04.l2.e3",
+          "type": "mcq",
+          "prompt": "You don't eat meat. You say:",
+          "options": [
+            "{肉|にく}{は|wa}{食|た}べません。",
+            "{肉|にく}をください。",
+            "{肉|にく}にします。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l2.e4",
+          "type": "mcq",
+          "prompt": "Listen. What is the waiter asking about?",
+          "text": "お{飲|の}み{物|もの}{は|wa}？",
+          "listen": true,
+          "options": [
+            "Drinks",
+            "Dessert",
+            "The bill"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l2.e5",
+          "type": "tiles",
+          "prompt": "Build: \"Without egg, please.\"",
+          "meaning": "Without egg, please.",
+          "tiles": [
+            "{卵|たまご}",
+            "{抜|ぬ}き",
+            "で",
+            "お{願|ねが}いします",
+            "を",
+            "に"
+          ],
+          "answer": "{卵|たまご}{抜|ぬ}きでお{願|ねが}いします",
+          "alt": []
+        },
+        {
+          "id": "ja-t04.l2.e6",
+          "type": "mcq",
+          "prompt": "Which is the natural way to add one more thing to your order?",
+          "options": [
+            "それから、{餃子|ぎょうざ}をください。",
+            "じゃあ、{餃子|ぎょうざ}です。",
+            "{餃子|ぎょうざ}{は|wa}どこですか。"
+          ],
+          "answer": 0,
+          "explain": "それから: \"and also\"."
+        },
+        {
+          "id": "ja-t04.l2.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I'll have the fish.\"",
+          "answer": "{魚|さかな}にします。",
+          "alt": []
+        },
+        {
+          "id": "ja-t04.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{肉|にく}",
+              "meat"
+            ],
+            [
+              "{魚|さかな}",
+              "fish"
+            ],
+            [
+              "{野菜|やさい}",
+              "vegetables"
+            ],
+            [
+              "{卵|たまご}",
+              "egg"
+            ],
+            [
+              "お{飲|の}み{物|もの}",
+              "drink"
+            ],
+            [
+              "おすすめ",
+              "recommendation"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Menu: 40 dishes, no photos",
+        "bottom": "おすすめ{は|wa}{何|なん}ですか: the one phrase that saves dinner"
+      },
+      "newItems": [
+        "ja-t04.v-osusume",
+        "ja-t04.g-nishimasu",
+        "ja-t04.p-nishimasu",
+        "ja-t04.v-sorekara",
+        "ja-t04.v-nomimono",
+        "ja-t04.v-niku",
+        "ja-t04.v-sakana",
+        "ja-t04.v-yasai",
+        "ja-t04.v-tamago",
+        "ja-t04.p-nuki",
+        "ja-t04.p-tabemasen"
+      ]
+    },
+    {
+      "id": "ja-t04.l3",
+      "title": "The bill, and thank you",
+      "canDo": "I can say the food is good, ask for the bill, and pay together or separately.",
+      "intro": {
+        "art": "🥢😋🧾",
+        "scene": "The food arrives. Later, Leo asks for the bill.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "いただきます。",
+            "meaning": "(Said before eating.)",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "どうですか。おいしいですか。",
+            "meaning": "How is it? Is it good?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "とてもおいしいです！",
+            "meaning": "It's very good!",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "すみません、お{会計|かいけい}をお{願|ねが}いします。",
+            "meaning": "Excuse me, the bill, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "店員",
+            "text": "はい。ご{一緒|いっしょ}ですか。{別々|べつべつ}ですか。",
+            "meaning": "Certainly. Together, or separately?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{一緒|いっしょ}でお{願|ねが}いします。",
+            "meaning": "Together, please.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "ごちそうさまでした。",
+            "meaning": "Thank you for the meal.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "いただきます and ごちそうさまでした",
+            "body": "One before the meal, one after. ごちそうさまでした is also what you say to the staff as you leave: it thanks them for the food."
+          },
+          {
+            "title": "Paying",
+            "body": "Ask with お{会計|かいけい}をお{願|ねが}いします. In many places you then pay at the till by the door, not at the table. There is no tipping in Japan."
+          },
+          {
+            "title": "{一緒|いっしょ} or {別々|べつべつ}?",
+            "body": "The staff add ご to be polite: ご{一緒|いっしょ}ですか. You answer without it and with で: {一緒|いっしょ}でお{願|ねが}いします or {別々|べつべつ}でお{願|ねが}いします."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t04.l3.e1",
+          "type": "mcq",
+          "prompt": "The food is in front of you. Before you start, you say:",
+          "options": [
+            "いただきます。",
+            "ごちそうさまでした。",
+            "いらっしゃいませ。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l3.e2",
+          "type": "mcq",
+          "prompt": "You have paid and are walking out. You say to the staff:",
+          "options": [
+            "ごちそうさまでした。",
+            "いただきます。",
+            "どうぞ。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l3.e3",
+          "type": "tiles",
+          "prompt": "Build: \"The bill, please.\"",
+          "meaning": "The bill, please.",
+          "tiles": [
+            "お{会計|かいけい}",
+            "を",
+            "お{願|ねが}いします",
+            "に",
+            "ですか",
+            "{は|wa}"
+          ],
+          "answer": "お{会計|かいけい}をお{願|ねが}いします",
+          "alt": []
+        },
+        {
+          "id": "ja-t04.l3.e4",
+          "type": "mcq",
+          "prompt": "Listen. What is the staff asking?",
+          "text": "ご{一緒|いっしょ}ですか。{別々|べつべつ}ですか。",
+          "listen": true,
+          "options": [
+            "Paying together or separately",
+            "Eating in or taking away",
+            "Cash or card"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l3.e5",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{別々|べつべつ}___お{願|ねが}いします。",
+          "meaning": "Separately, please.",
+          "options": [
+            "で",
+            "を",
+            "が"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l3.e6",
+          "type": "tiles",
+          "prompt": "Reply: \"It's very good!\"",
+          "context": "どうですか。",
+          "meaning": "It's very good!",
+          "tiles": [
+            "とても",
+            "おいしい",
+            "です",
+            "ください",
+            "{一緒|いっしょ}"
+          ],
+          "answer": "とてもおいしいです",
+          "alt": []
+        },
+        {
+          "id": "ja-t04.l3.e7",
+          "type": "type",
+          "prompt": "Type in Japanese what you say after eating: \"Thank you for the meal.\"",
+          "answer": "ごちそうさまでした。",
+          "alt": [
+            "ごちそうさま。"
+          ]
+        },
+        {
+          "id": "ja-t04.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "いただきます",
+              "before eating"
+            ],
+            [
+              "ごちそうさまでした",
+              "after eating"
+            ],
+            [
+              "おいしい",
+              "delicious"
+            ],
+            [
+              "とても",
+              "very"
+            ],
+            [
+              "{一緒|いっしょ}",
+              "together"
+            ],
+            [
+              "{別々|べつべつ}",
+              "separately"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Tried to leave a tip",
+        "bottom": "Waiter ran after me to give it back"
+      },
+      "newItems": [
+        "ja-t04.p-itadakimasu",
+        "ja-t04.p-gochisousama",
+        "ja-t04.v-oishii",
+        "ja-t04.v-totemo",
+        "ja-t04.p-doudesuka",
+        "ja-t04.p-okaikei",
+        "ja-t04.v-issho",
+        "ja-t04.v-betsubetsu"
+      ]
+    },
+    {
+      "id": "ja-t04.l4",
+      "title": "Reading: A ramen shop in Tokyo",
+      "canDo": "I can read a short text about a meal and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🍜🏮",
+        "scene": "Leo and Sato go out for ramen. Read, listen, then answer.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "レオさんと{佐藤|さとう}さん{は|wa}ラーメン{屋|や}{へ|e}{行|い}きました。",
+            "meaning": "Leo and Sato went to a ramen shop."
+          },
+          {
+            "text": "{店|みせ}{は|wa}{小|ちい}さいです。{席|せき}{は|wa}{八|やっ}つだけです。",
+            "meaning": "The shop is small. There are only eight seats."
+          },
+          {
+            "text": "{英語|えいご}のメニュー{は|wa}ありませんでした。",
+            "meaning": "There was no English menu."
+          },
+          {
+            "text": "{佐藤|さとう}さんのおすすめ{は|wa}みそラーメンです。",
+            "meaning": "Sato's recommendation is the miso ramen."
+          },
+          {
+            "text": "レオさん{は|wa}みそラーメンにしました。",
+            "meaning": "Leo went for the miso ramen."
+          },
+          {
+            "text": "{佐藤|さとう}さん{は|wa}{肉|にく}を{食|た}べません。{野菜|やさい}ラーメンにしました。",
+            "meaning": "Sato doesn't eat meat. She chose the vegetable ramen."
+          },
+          {
+            "text": "ラーメン{は|wa}とてもおいしかったです。",
+            "meaning": "The ramen was very good."
+          },
+          {
+            "text": "お{会計|かいけい}{は|wa}{別々|べつべつ}でした。{一人|ひとり}{千円|せんえん}でした。",
+            "meaning": "They paid separately. It was 1,000 yen each."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "ラーメン{屋|や}",
+            "meaning": "ramen shop"
+          },
+          {
+            "word": "{店|みせ}",
+            "meaning": "shop, restaurant"
+          },
+          {
+            "word": "{席|せき}",
+            "meaning": "seat"
+          },
+          {
+            "word": "おいしかったです",
+            "meaning": "It was delicious."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t04.l4.e1",
+          "type": "mcq",
+          "prompt": "{二人|ふたり}{は|wa}どこ{へ|e}{行|い}きましたか。",
+          "options": [
+            "ラーメン{屋|や}",
+            "コンビニ",
+            "{駅|えき}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l4.e2",
+          "type": "mcq",
+          "prompt": "{席|せき}{は|wa}いくつありますか。",
+          "options": [
+            "{八|やっ}つ",
+            "{六|むっ}つ",
+            "{二|ふた}つ"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l4.e3",
+          "type": "mcq",
+          "prompt": "{英語|えいご}のメニュー{は|wa}ありましたか。",
+          "options": [
+            "いいえ、ありませんでした。",
+            "はい、ありました。",
+            "はい、{二|ふた}つありました。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l4.e4",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何|なに}にしましたか。",
+          "options": [
+            "みそラーメン",
+            "{野菜|やさい}ラーメン",
+            "{餃子|ぎょうざ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l4.e5",
+          "type": "mcq",
+          "prompt": "{佐藤|さとう}さん{は|wa}{肉|にく}を{食|た}べますか。",
+          "options": [
+            "いいえ、{食|た}べません。",
+            "はい、{食|た}べます。",
+            "はい、{毎日|まいにち}{食|た}べます。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l4.e6",
+          "type": "mcq",
+          "prompt": "お{会計|かいけい}{は|wa}{一緒|いっしょ}でしたか。",
+          "options": [
+            "いいえ、{別々|べつべつ}でした。",
+            "はい、{一緒|いっしょ}でした。",
+            "いいえ、レオさんが{払|はら}いました。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Eight seats, no English menu",
+        "bottom": "Best ramen of the trip"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-t04.l5",
+      "title": "Story: Curry udon for one",
+      "canDo": "I can follow a short restaurant scene and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧🍛🍵",
+        "scene": "Leo eats alone today. Listen for what he orders, what he leaves out, and what he pays.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "いらっしゃいませ。{何名様|なんめいさま}ですか。",
+            "meaning": "Welcome. How many in your party?",
+            "who": "店員"
+          },
+          {
+            "text": "{一人|ひとり}です。",
+            "meaning": "Just me.",
+            "who": "レオ"
+          },
+          {
+            "text": "カウンターの{席|せき}{へ|e}どうぞ。",
+            "meaning": "Please take a seat at the counter.",
+            "who": "店員"
+          },
+          {
+            "text": "すみません、おすすめ{は|wa}{何|なん}ですか。",
+            "meaning": "Excuse me, what do you recommend?",
+            "who": "レオ"
+          },
+          {
+            "text": "カレーうどんがおすすめです。",
+            "meaning": "The curry udon is our recommendation.",
+            "who": "店員"
+          },
+          {
+            "text": "じゃあ、カレーうどんにします。{卵|たまご}{抜|ぬ}きでお{願|ねが}いします。",
+            "meaning": "Then I'll have the curry udon. Without egg, please.",
+            "who": "レオ"
+          },
+          {
+            "text": "{卵|たまご}{抜|ぬ}きですね。お{飲|の}み{物|もの}{は|wa}？",
+            "meaning": "Without egg, right? And to drink?",
+            "who": "店員"
+          },
+          {
+            "text": "お{茶|ちゃ}をください。",
+            "meaning": "Tea, please.",
+            "who": "レオ"
+          },
+          {
+            "text": "お{茶|ちゃ}{は|wa}{無料|むりょう}です。どうぞ。",
+            "meaning": "Tea is free. Here you are.",
+            "who": "店員"
+          },
+          {
+            "text": "ごちそうさまでした。お{会計|かいけい}をお{願|ねが}いします。",
+            "meaning": "Thank you for the meal. The bill, please.",
+            "who": "レオ"
+          },
+          {
+            "text": "{九百円|きゅうひゃくえん}です。",
+            "meaning": "That is 900 yen.",
+            "who": "店員"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "カウンター",
+            "meaning": "counter"
+          },
+          {
+            "word": "カレーうどん",
+            "meaning": "curry udon (thick noodles in curry soup)"
+          },
+          {
+            "word": "お{茶|ちゃ}",
+            "meaning": "tea"
+          },
+          {
+            "word": "{無料|むりょう}",
+            "meaning": "free of charge"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t04.l5.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何人|なんにん}で{来|き}ましたか。",
+          "options": [
+            "{一人|ひとり}",
+            "{二人|ふたり}",
+            "{三人|さんにん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l5.e2",
+          "type": "mcq",
+          "prompt": "おすすめ{は|wa}{何|なん}ですか。",
+          "options": [
+            "カレーうどん",
+            "ラーメン",
+            "{餃子|ぎょうざ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l5.e3",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{卵|たまご}を{食|た}べますか。",
+          "options": [
+            "いいえ、{卵|たまご}{抜|ぬ}きです。",
+            "はい、{食|た}べます。",
+            "はい、{二|ふた}つ{食|た}べます。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l5.e4",
+          "type": "mcq",
+          "prompt": "レオさんのお{飲|の}み{物|もの}{は|wa}{何|なん}ですか。",
+          "options": [
+            "お{茶|ちゃ}",
+            "ビール",
+            "{水|みず}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l5.e5",
+          "type": "mcq",
+          "prompt": "お{茶|ちゃ}{は|wa}いくらですか。",
+          "options": [
+            "{無料|むりょう}です。",
+            "{百円|ひゃくえん}です。",
+            "{九百円|きゅうひゃくえん}です。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t04.l5.e6",
+          "type": "mcq",
+          "prompt": "お{会計|かいけい}{は|wa}いくらですか。",
+          "options": [
+            "{九百円|きゅうひゃくえん}",
+            "{八百円|はっぴゃくえん}",
+            "{千円|せんえん}"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Free tea, no tipping, food in five minutes",
+        "bottom": "I am never leaving this counter"
+      },
+      "newItems": []
+    }
+  ],
+  "factCheck": [
+    "Tipping is not customary in Japan.",
+    "Paying at the till by the door is common but not universal."
+  ]
+}

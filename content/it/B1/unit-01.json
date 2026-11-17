@@ -1,0 +1,1136 @@
+{
+  "id": "it-b1-01",
+  "lang": "it",
+  "level": "B1",
+  "track": "core",
+  "title": "Vorrei, potresti, dovresti",
+  "summary": "The conditional: what you would like, polite requests, advice, and softer opinions. The first step into B1.",
+  "canDo": [
+    "I can say what I would like to do and what I would do.",
+    "I can ask politely and give advice with potresti and dovresti.",
+    "I can make a suggestion or disagree gently: sarebbe meglio, non saprei."
+  ],
+  "grammar": [
+    "Condizionale presente: regular forms",
+    "Irregular conditionals",
+    "Polite requests: potresti, potrebbe",
+    "Advice: dovresti, al posto tuo",
+    "Softening: sarebbe meglio, non saprei"
+  ],
+  "items": [
+    {
+      "id": "it-b1-01.g-condizionale",
+      "kind": "grammar",
+      "front": "parlerei, prenderei, partirei",
+      "back": "The condizionale: what you would do. Same stem as the future, with the endings -ei, -esti, -ebbe, -emmo, -este, -ebbero.",
+      "pt": "Trap: IT parlerei = PT falaria. PT \"falarei\" is IT parlerò."
+    },
+    {
+      "id": "it-b1-01.p-vorrei",
+      "kind": "phrase",
+      "front": "vorrei",
+      "back": "I would like"
+    },
+    {
+      "id": "it-b1-01.p-mipiacerebbe",
+      "kind": "phrase",
+      "front": "mi piacerebbe",
+      "back": "I would like (to)",
+      "note": "Mi piacerebbe vivere in Giappone.",
+      "pt": "PT eu gostaria de. No \"di\" in Italian."
+    },
+    {
+      "id": "it-b1-01.v-sarei",
+      "kind": "vocab",
+      "front": "sarei",
+      "back": "I would be"
+    },
+    {
+      "id": "it-b1-01.v-avrei",
+      "kind": "vocab",
+      "front": "avrei",
+      "back": "I would have"
+    },
+    {
+      "id": "it-b1-01.v-libreria",
+      "kind": "vocab",
+      "front": "la libreria",
+      "back": "bookshop",
+      "pt": "PT livraria. The place where you borrow books is la biblioteca, as in PT."
+    },
+    {
+      "id": "it-b1-01.v-soldi",
+      "kind": "vocab",
+      "front": "i soldi",
+      "back": "money",
+      "note": "Always plural: non ho soldi.",
+      "pt": "PT dinheiro."
+    },
+    {
+      "id": "it-b1-01.v-davvero",
+      "kind": "vocab",
+      "front": "davvero",
+      "back": "really",
+      "pt": "PT de verdade, mesmo."
+    },
+    {
+      "id": "it-b1-01.v-servire",
+      "kind": "vocab",
+      "front": "servire",
+      "back": "to be needed; to serve",
+      "note": "Mi serve una penna = I need a pen.",
+      "pt": "PT \"preciso de uma caneta\": in Italian the thing needed is the subject."
+    },
+    {
+      "id": "it-b1-01.v-vivere",
+      "kind": "vocab",
+      "front": "vivere",
+      "back": "to live"
+    },
+    {
+      "id": "it-b1-01.g-consigli",
+      "kind": "grammar",
+      "front": "dovresti + infinito",
+      "back": "Advice and polite requests use the conditional of dovere and potere: dovresti riposare, potresti aiutarmi?"
+    },
+    {
+      "id": "it-b1-01.p-potresti",
+      "kind": "phrase",
+      "front": "potresti",
+      "back": "could you (informal)",
+      "note": "Formal: potrebbe."
+    },
+    {
+      "id": "it-b1-01.p-dovresti",
+      "kind": "phrase",
+      "front": "dovresti",
+      "back": "you should (informal)"
+    },
+    {
+      "id": "it-b1-01.p-alpostotuo",
+      "kind": "phrase",
+      "front": "al posto tuo",
+      "back": "if I were you",
+      "pt": "PT no seu lugar."
+    },
+    {
+      "id": "it-b1-01.p-hairagione",
+      "kind": "phrase",
+      "front": "hai ragione",
+      "back": "you're right",
+      "pt": "PT você tem razão."
+    },
+    {
+      "id": "it-b1-01.p-maldigola",
+      "kind": "phrase",
+      "front": "il mal di gola",
+      "back": "sore throat",
+      "note": "Also: mal di testa, mal di pancia.",
+      "pt": "PT dor de garganta."
+    },
+    {
+      "id": "it-b1-01.v-medico",
+      "kind": "vocab",
+      "front": "il medico",
+      "back": "doctor"
+    },
+    {
+      "id": "it-b1-01.v-finestra",
+      "kind": "vocab",
+      "front": "la finestra",
+      "back": "window",
+      "pt": "PT janela."
+    },
+    {
+      "id": "it-b1-01.v-chiudere",
+      "kind": "vocab",
+      "front": "chiudere",
+      "back": "to close",
+      "note": "Past participle: chiuso.",
+      "pt": "PT fechar."
+    },
+    {
+      "id": "it-b1-01.p-staremale",
+      "kind": "phrase",
+      "front": "stare male",
+      "back": "to be unwell",
+      "pt": "Health uses stare: sto bene, sto male."
+    },
+    {
+      "id": "it-b1-01.v-brutto",
+      "kind": "vocab",
+      "front": "brutto",
+      "back": "ugly; bad, nasty",
+      "note": "Una brutta giornata = a bad day.",
+      "pt": "False friend: PT \"bruto\" means rough. IT brutto = feio, ruim."
+    },
+    {
+      "id": "it-b1-01.g-condirr",
+      "kind": "grammar",
+      "front": "andrei, farei, saprei",
+      "back": "Irregular conditionals use the same short stems as the future: andr-, far-, sapr-, vorr-, potr-, dovr-, verr-, sar-, avr-."
+    },
+    {
+      "id": "it-b1-01.p-sarebbemeglio",
+      "kind": "phrase",
+      "front": "sarebbe meglio",
+      "back": "it would be better"
+    },
+    {
+      "id": "it-b1-01.p-chenedici",
+      "kind": "phrase",
+      "front": "Che ne dici?",
+      "back": "What do you say? / What do you think?",
+      "pt": "PT o que você acha?"
+    },
+    {
+      "id": "it-b1-01.p-nonsaprei",
+      "kind": "phrase",
+      "front": "non saprei",
+      "back": "I'm not sure, I wouldn't know",
+      "note": "A softer \"non lo so\"."
+    },
+    {
+      "id": "it-b1-01.v-andrei",
+      "kind": "vocab",
+      "front": "andrei",
+      "back": "I would go"
+    },
+    {
+      "id": "it-b1-01.v-farei",
+      "kind": "vocab",
+      "front": "farei",
+      "back": "I would do, I would make"
+    },
+    {
+      "id": "it-b1-01.v-potremmo",
+      "kind": "vocab",
+      "front": "potremmo",
+      "back": "we could"
+    },
+    {
+      "id": "it-b1-01.v-fermarsi",
+      "kind": "vocab",
+      "front": "fermarsi",
+      "back": "to stop (somewhere)"
+    },
+    {
+      "id": "it-b1-01.v-macchina",
+      "kind": "vocab",
+      "front": "la macchina",
+      "back": "car; machine",
+      "pt": "PT carro. In macchina = de carro."
+    },
+    {
+      "id": "it-b1-01.v-ritorno",
+      "kind": "vocab",
+      "front": "il ritorno",
+      "back": "the way back, the return"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "it-b1-01.l1",
+      "title": "Mi piacerebbe…",
+      "canDo": "I can say what I would like to do and what I would do.",
+      "intro": {
+        "place": "cafe",
+        "scene": "A slow afternoon. Giulia and Leo are daydreaming over coffee.",
+        "lines": [
+          {
+            "who": "Giulia",
+            "text": "Che cosa ti piacerebbe fare nella vita?",
+            "meaning": "What would you like to do in life?"
+          },
+          {
+            "who": "Leo",
+            "text": "Mi piacerebbe vivere un anno in Giappone. E tu?",
+            "meaning": "I'd like to live in Japan for a year. And you?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Io vorrei aprire una libreria. Ma servirebbero troppi soldi.",
+            "meaning": "I'd like to open a bookshop. But it would take too much money."
+          },
+          {
+            "who": "Leo",
+            "text": "Io comprerei tutti i tuoi libri!",
+            "meaning": "I'd buy all your books!"
+          },
+          {
+            "who": "Giulia",
+            "text": "Davvero? Allora saresti il mio primo cliente.",
+            "meaning": "Really? Then you'd be my first customer."
+          },
+          {
+            "who": "Leo",
+            "text": "Volentieri. Ma prima prenderei un altro caffè.",
+            "meaning": "Gladly. But first I'd have another coffee."
+          }
+        ],
+        "notes": [
+          {
+            "title": "How to build it",
+            "body": "Take the future stem and change the endings: -ei, -esti, -ebbe, -emmo, -este, -ebbero. Comprerò → comprerei. Prenderò → prenderei. Sarò → sarei. Avrò → avrei. As in the future, -are verbs have e: comprerei, not *comprarei."
+          },
+          {
+            "title": "Vorrei and mi piacerebbe",
+            "body": "Both mean \"I would like\". Vorrei is the everyday polite form for asking for things: vorrei un caffè. Mi piacerebbe is for wishes and dreams, and behaves like piacere: mi piacerebbe viaggiare, ti piacerebbe venire?"
+          },
+          {
+            "title": "🇧🇷 PT tip: two traps",
+            "body": "IT parlerei looks like PT \"falarei\" but means \"falaria\". And noi parleremo (one m) is future, while noi parleremmo (double m) is conditional: say the mm long."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-01.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Mi ___ vivere in Giappone.",
+          "meaning": "I'd like to live in Japan.",
+          "options": [
+            "piacerebbe",
+            "piacerei",
+            "piacerà"
+          ],
+          "answer": 0,
+          "explain": "Like mi piace: the verb agrees with the thing liked, so the lui form."
+        },
+        {
+          "id": "it-b1-01.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Io ___ tutti i tuoi libri.",
+          "meaning": "I would buy all your books.",
+          "options": [
+            "comprerei",
+            "comprerò",
+            "compravo"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l1.e3",
+          "type": "mcq",
+          "prompt": "Which one is the conditional, \"we would speak\"?",
+          "options": [
+            "parleremmo",
+            "parleremo",
+            "parlavamo"
+          ],
+          "answer": 0,
+          "explain": "Double m: parleremmo. With one m it is the future."
+        },
+        {
+          "id": "it-b1-01.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I would like to open a bookshop.\"",
+          "meaning": "I would like to open a bookshop.",
+          "tiles": [
+            "Vorrei",
+            "aprire",
+            "una",
+            "libreria",
+            "voglio",
+            "aprirei",
+            "biblioteca"
+          ],
+          "answer": "Vorrei aprire una libreria",
+          "alt": []
+        },
+        {
+          "id": "it-b1-01.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What would Leo like?",
+          "text": "Mi piacerebbe vivere un anno in Giappone.",
+          "listen": true,
+          "options": [
+            "To live in Japan for a year",
+            "To visit Japan next year",
+            "To work in Japan"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l1.e6",
+          "type": "mcq",
+          "prompt": "\"You would be my first customer.\"",
+          "options": [
+            "Saresti il mio primo cliente.",
+            "Sarai il mio primo cliente.",
+            "Eri il mio primo cliente."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l1.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu gostaria de um café.\"",
+          "answer": "Vorrei un caffè.",
+          "alt": [
+            "Mi piacerebbe un caffè.",
+            "Io vorrei un caffè."
+          ]
+        },
+        {
+          "id": "it-b1-01.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "vorrei",
+              "I would like"
+            ],
+            [
+              "sarei",
+              "I would be"
+            ],
+            [
+              "avrei",
+              "I would have"
+            ],
+            [
+              "i soldi",
+              "money"
+            ],
+            [
+              "la libreria",
+              "bookshop"
+            ],
+            [
+              "davvero",
+              "really"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Io comprerei tutti i tuoi libri!\"",
+        "bottom": "Leo has not finished a book since 2019"
+      },
+      "newItems": [
+        "it-b1-01.g-condizionale",
+        "it-b1-01.p-vorrei",
+        "it-b1-01.p-mipiacerebbe",
+        "it-b1-01.v-sarei",
+        "it-b1-01.v-avrei",
+        "it-b1-01.v-libreria",
+        "it-b1-01.v-soldi",
+        "it-b1-01.v-davvero",
+        "it-b1-01.v-servire",
+        "it-b1-01.v-vivere"
+      ]
+    },
+    {
+      "id": "it-b1-01.l2",
+      "title": "Potresti…? Dovresti…",
+      "canDo": "I can ask for something politely and give advice.",
+      "intro": {
+        "art": "🤧🍵🛋️",
+        "scene": "Marco has turned up at Sara's place with a scarf and a terrible voice.",
+        "lines": [
+          {
+            "who": "Marco",
+            "text": "Scusa, potresti chiudere la finestra? Ho freddo.",
+            "meaning": "Sorry, could you close the window? I'm cold."
+          },
+          {
+            "who": "Sara",
+            "text": "Certo. Ma hai una brutta voce. Stai male?",
+            "meaning": "Sure. But your voice sounds bad. Are you unwell?"
+          },
+          {
+            "who": "Marco",
+            "text": "Ho mal di gola da tre giorni.",
+            "meaning": "I've had a sore throat for three days."
+          },
+          {
+            "who": "Sara",
+            "text": "Dovresti andare dal medico. E non dovresti lavorare oggi.",
+            "meaning": "You should go to the doctor. And you shouldn't work today."
+          },
+          {
+            "who": "Marco",
+            "text": "Hai ragione. Mi faresti un tè caldo?",
+            "meaning": "You're right. Would you make me a hot tea?"
+          },
+          {
+            "who": "Sara",
+            "text": "Subito. Al posto tuo, andrei a letto.",
+            "meaning": "Right away. If I were you, I'd go to bed."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Polite requests",
+            "body": "The conditional turns an order into a request: potresti chiudere la finestra?, mi faresti un tè?, mi daresti una mano? With someone you address as Lei: potrebbe aiutarmi?"
+          },
+          {
+            "title": "Advice",
+            "body": "Dovresti + infinitive = you should: dovresti riposare. Non dovresti = you shouldn't. And the classic opener al posto tuo (\"in your place\") is followed by what you would do: al posto tuo, andrei a letto."
+          },
+          {
+            "title": "🇧🇷 PT tip: da tre giorni",
+            "body": "Ho mal di gola da tre giorni: present tense plus da, where PT says \"estou com dor de garganta há três dias\". And you go dal medico (to the doctor's), not *al medico."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-01.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Scusa, ___ chiudere la finestra?",
+          "meaning": "Sorry, could you close the window?",
+          "options": [
+            "potresti",
+            "potrai",
+            "potevi"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Hai mal di gola? ___ andare dal medico.",
+          "meaning": "You have a sore throat? You should go to the doctor.",
+          "options": [
+            "Dovresti",
+            "Dovrai",
+            "Dovevi"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l2.e3",
+          "type": "mcq",
+          "prompt": "The polite way to ask a stranger (Lei):",
+          "options": [
+            "Potrebbe aiutarmi, per favore?",
+            "Potresti aiutarmi, per favore?",
+            "Aiutami, per favore!"
+          ],
+          "answer": 0,
+          "explain": "Lei takes the third person: potrebbe."
+        },
+        {
+          "id": "it-b1-01.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"If I were you, I'd go to bed.\"",
+          "meaning": "If I were you, I'd go to bed.",
+          "tiles": [
+            "Al",
+            "posto",
+            "tuo",
+            "andrei",
+            "a",
+            "letto",
+            "andrò",
+            "mio"
+          ],
+          "answer": "Al posto tuo andrei a letto",
+          "alt": []
+        },
+        {
+          "id": "it-b1-01.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is Sara's advice?",
+          "text": "Non dovresti lavorare oggi.",
+          "listen": true,
+          "options": [
+            "Not to work today",
+            "To work from home",
+            "To work less tomorrow"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l2.e6",
+          "type": "mcq",
+          "prompt": "Marco wants Sara to make him a hot tea. The friendly, polite way:",
+          "options": [
+            "Mi faresti un tè caldo?",
+            "Fammi un tè caldo.",
+            "Mi farai un tè caldo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l2.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese, speaking to a friend: \"Você tem razão.\"",
+          "answer": "Hai ragione.",
+          "alt": [
+            "Tu hai ragione."
+          ]
+        },
+        {
+          "id": "it-b1-01.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "potresti",
+              "could you"
+            ],
+            [
+              "dovresti",
+              "you should"
+            ],
+            [
+              "al posto tuo",
+              "if I were you"
+            ],
+            [
+              "hai ragione",
+              "you're right"
+            ],
+            [
+              "il mal di gola",
+              "sore throat"
+            ],
+            [
+              "la finestra",
+              "window"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Dovresti andare dal medico\"",
+        "bottom": "Marco: googles symptoms for two hours instead"
+      },
+      "newItems": [
+        "it-b1-01.g-consigli",
+        "it-b1-01.p-potresti",
+        "it-b1-01.p-dovresti",
+        "it-b1-01.p-alpostotuo",
+        "it-b1-01.p-hairagione",
+        "it-b1-01.p-maldigola",
+        "it-b1-01.v-medico",
+        "it-b1-01.v-finestra",
+        "it-b1-01.v-chiudere",
+        "it-b1-01.p-staremale",
+        "it-b1-01.v-brutto"
+      ]
+    },
+    {
+      "id": "it-b1-01.l3",
+      "title": "Sarebbe meglio…",
+      "canDo": "I can make a suggestion and disagree gently.",
+      "intro": {
+        "place": "train",
+        "scene": "Giulia and Leo are planning a weekend in Venice and cannot agree on how to get there.",
+        "lines": [
+          {
+            "who": "Giulia",
+            "text": "Andiamo a Venezia in macchina o in treno?",
+            "meaning": "Shall we go to Venice by car or by train?"
+          },
+          {
+            "who": "Leo",
+            "text": "Io andrei in treno. In macchina ci vorrebbero cinque ore.",
+            "meaning": "I'd go by train. By car it would take five hours."
+          },
+          {
+            "who": "Giulia",
+            "text": "Sì, ma in treno non potremmo fermarci a Bologna.",
+            "meaning": "Yes, but by train we couldn't stop in Bologna."
+          },
+          {
+            "who": "Leo",
+            "text": "Sarebbe meglio fermarci al ritorno. Che ne dici?",
+            "meaning": "It would be better to stop on the way back. What do you say?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Non saprei. Tu che cosa faresti a Bologna?",
+            "meaning": "I'm not sure. What would you do in Bologna?"
+          },
+          {
+            "who": "Leo",
+            "text": "Mangerei i tortellini, naturalmente!",
+            "meaning": "I'd eat tortellini, of course!"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Irregular stems",
+            "body": "The same short stems as the future: andare → andrei · fare → farei · sapere → saprei · potere → potrei · dovere → dovrei · volere → vorrei · venire → verrei · essere → sarei · avere → avrei."
+          },
+          {
+            "title": "Softening what you say",
+            "body": "Italians use the conditional to sound less blunt. Io andrei in treno (my suggestion) instead of andiamo in treno. Sarebbe meglio… instead of è meglio. Non saprei instead of a flat non lo so."
+          },
+          {
+            "title": "Che ne dici?",
+            "body": "Literally \"what do you say about it?\": the ne is the one you met at the market, here meaning \"about it\". Use it to ask for an opinion on a plan."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-01.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Io ___ in treno.",
+          "meaning": "I would go by train.",
+          "options": [
+            "andrei",
+            "anderei",
+            "andrò"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "In macchina ci ___ cinque ore.",
+          "meaning": "By car it would take five hours.",
+          "options": [
+            "vorrebbero",
+            "vorrebbe",
+            "vogliono"
+          ],
+          "answer": 0,
+          "explain": "Cinque ore is plural: ci vorrebbero."
+        },
+        {
+          "id": "it-b1-01.l3.e3",
+          "type": "mcq",
+          "prompt": "A softer way to say \"Non lo so\":",
+          "options": [
+            "Non saprei.",
+            "Non sapevo.",
+            "Non saprò."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"It would be better to stop on the way back.\"",
+          "meaning": "It would be better to stop on the way back.",
+          "tiles": [
+            "Sarebbe",
+            "meglio",
+            "fermarci",
+            "al",
+            "ritorno",
+            "Sarà",
+            "bene",
+            "andata"
+          ],
+          "answer": "Sarebbe meglio fermarci al ritorno",
+          "alt": []
+        },
+        {
+          "id": "it-b1-01.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. What does Leo suggest?",
+          "text": "Sarebbe meglio andare in treno. Che ne dici?",
+          "listen": true,
+          "options": [
+            "Going by train",
+            "Going by car",
+            "Staying at home"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l3.e6",
+          "type": "mcq",
+          "prompt": "\"What would you do in Bologna?\" (to a friend)",
+          "options": [
+            "Che cosa faresti a Bologna?",
+            "Che cosa farai a Bologna?",
+            "Che cosa facevi a Bologna?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Nós poderíamos ir de carro.\"",
+          "answer": "Potremmo andare in macchina.",
+          "alt": [
+            "Noi potremmo andare in macchina."
+          ]
+        },
+        {
+          "id": "it-b1-01.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "sarebbe meglio",
+              "it would be better"
+            ],
+            [
+              "Che ne dici?",
+              "What do you say?"
+            ],
+            [
+              "non saprei",
+              "I'm not sure"
+            ],
+            [
+              "la macchina",
+              "car"
+            ],
+            [
+              "il ritorno",
+              "the way back"
+            ],
+            [
+              "fermarsi",
+              "to stop"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Tu che cosa faresti a Bologna?\"",
+        "bottom": "The itinerary: tortellini, tagliatelle, more tortellini"
+      },
+      "newItems": [
+        "it-b1-01.g-condirr",
+        "it-b1-01.p-sarebbemeglio",
+        "it-b1-01.p-chenedici",
+        "it-b1-01.p-nonsaprei",
+        "it-b1-01.v-andrei",
+        "it-b1-01.v-farei",
+        "it-b1-01.v-potremmo",
+        "it-b1-01.v-fermarsi",
+        "it-b1-01.v-macchina",
+        "it-b1-01.v-ritorno"
+      ]
+    },
+    {
+      "id": "it-b1-01.l4",
+      "title": "Lettura: Il coinquilino",
+      "canDo": "I can read a letter asking for advice and the reply, and answer questions about them in Italian.",
+      "intro": {
+        "art": "📖🧽✉️",
+        "scene": "Marco scrive a Sara per chiedere un consiglio, e Sara risponde. Leggi, ascolta e poi rispondi.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "Cara Sara, ho un problema con il mio coinquilino.",
+            "meaning": "Dear Sara, I have a problem with my flatmate.",
+            "who": "Marco"
+          },
+          {
+            "text": "È simpatico, ma non pulisce mai la cucina.",
+            "meaning": "He's nice, but he never cleans the kitchen.",
+            "who": "Marco"
+          },
+          {
+            "text": "Vorrei parlare con lui, ma non vorrei litigare.",
+            "meaning": "I'd like to talk to him, but I wouldn't want to argue.",
+            "who": "Marco"
+          },
+          {
+            "text": "Tu che cosa faresti al posto mio?",
+            "meaning": "What would you do in my place?",
+            "who": "Marco"
+          },
+          {
+            "text": "Caro Marco, prima di tutto dovresti parlare con lui con calma.",
+            "meaning": "Dear Marco, first of all you should talk to him calmly.",
+            "who": "Sara"
+          },
+          {
+            "text": "Potresti proporre dei turni: una settimana pulisci tu, una settimana pulisce lui.",
+            "meaning": "You could suggest a rota: one week you clean, one week he cleans.",
+            "who": "Sara"
+          },
+          {
+            "text": "Io scriverei i turni su un foglio e lo metterei sul frigorifero.",
+            "meaning": "I'd write the rota on a sheet of paper and put it on the fridge.",
+            "who": "Sara"
+          },
+          {
+            "text": "Non dovresti aspettare troppo: sarebbe peggio.",
+            "meaning": "You shouldn't wait too long: it would be worse.",
+            "who": "Sara"
+          },
+          {
+            "text": "E se non cambia niente, potresti cercare un'altra casa.",
+            "meaning": "And if nothing changes, you could look for another place.",
+            "who": "Sara"
+          }
+        ],
+        "glossary": [
+          {
+            "word": "il coinquilino",
+            "meaning": "flatmate"
+          },
+          {
+            "word": "pulire",
+            "meaning": "to clean"
+          },
+          {
+            "word": "litigare",
+            "meaning": "to argue"
+          },
+          {
+            "word": "il turno",
+            "meaning": "turn, shift"
+          },
+          {
+            "word": "il foglio",
+            "meaning": "sheet of paper"
+          },
+          {
+            "word": "peggio",
+            "meaning": "worse"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-01.l4.e1",
+          "type": "mcq",
+          "prompt": "Con chi ha un problema Marco?",
+          "options": [
+            "Con il suo coinquilino.",
+            "Con suo fratello.",
+            "Con Sara."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l4.e2",
+          "type": "mcq",
+          "prompt": "Qual è il problema?",
+          "options": [
+            "Il coinquilino non pulisce la cucina.",
+            "Il coinquilino è antipatico.",
+            "Il coinquilino non paga."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l4.e3",
+          "type": "mcq",
+          "prompt": "Che cosa non vorrebbe fare Marco?",
+          "options": [
+            "Litigare.",
+            "Parlare.",
+            "Pulire."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l4.e4",
+          "type": "mcq",
+          "prompt": "Che cosa dovrebbe fare prima di tutto, secondo Sara?",
+          "options": [
+            "Parlare con lui con calma.",
+            "Cercare un'altra casa.",
+            "Pulire tutto da solo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l4.e5",
+          "type": "mcq",
+          "prompt": "Dove metterebbe i turni Sara?",
+          "options": [
+            "Sul frigorifero.",
+            "Sulla porta.",
+            "Sul telefono."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l4.e6",
+          "type": "mcq",
+          "prompt": "Perché Marco non dovrebbe aspettare troppo?",
+          "options": [
+            "Perché sarebbe peggio.",
+            "Perché il coinquilino partirà.",
+            "Perché la casa costa troppo."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "The rota on the fridge",
+        "bottom": "Week one: Marco. Week two: also Marco."
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-b1-01.l5",
+      "title": "Racconto: Un milione di euro",
+      "canDo": "I can follow a short spoken story about what people would do and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧💶💭",
+        "scene": "Leo racconta una cena tra amici. Ascolta: che cosa farebbe ognuno con un milione di euro?",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "Ieri sera a cena Marco ha fatto una domanda a tutti.",
+            "meaning": "Last night at dinner Marco asked everyone a question.",
+            "who": "Leo"
+          },
+          {
+            "text": "Che cosa fareste con un milione di euro?",
+            "meaning": "What would you do with a million euros?",
+            "who": "Leo"
+          },
+          {
+            "text": "Giulia ha risposto subito: comprerei una casa al mare e aprirei una libreria.",
+            "meaning": "Giulia answered straight away: I'd buy a house by the sea and open a bookshop.",
+            "who": "Leo"
+          },
+          {
+            "text": "Sara invece viaggerebbe per un anno intero.",
+            "meaning": "Sara, on the other hand, would travel for a whole year.",
+            "who": "Leo"
+          },
+          {
+            "text": "Andrebbe prima in Giappone e poi in Brasile.",
+            "meaning": "She would go first to Japan and then to Brazil.",
+            "who": "Leo"
+          },
+          {
+            "text": "Marco darebbe metà dei soldi alla sua famiglia.",
+            "meaning": "Marco would give half of the money to his family.",
+            "who": "Leo"
+          },
+          {
+            "text": "Con l'altra metà comprerebbe la sua squadra di calcio.",
+            "meaning": "With the other half he would buy his football team.",
+            "who": "Leo"
+          },
+          {
+            "text": "E io? Io non cambierei quasi niente.",
+            "meaning": "And me? I'd change almost nothing.",
+            "who": "Leo"
+          },
+          {
+            "text": "Continuerei a lavorare, ma solo tre giorni alla settimana.",
+            "meaning": "I'd keep working, but only three days a week.",
+            "who": "Leo"
+          },
+          {
+            "text": "Poi abbiamo guardato il conto del ristorante e siamo tornati alla realtà.",
+            "meaning": "Then we looked at the restaurant bill and came back to reality.",
+            "who": "Leo"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "la domanda",
+            "meaning": "question"
+          },
+          {
+            "word": "intero",
+            "meaning": "whole"
+          },
+          {
+            "word": "la metà",
+            "meaning": "half"
+          },
+          {
+            "word": "quasi",
+            "meaning": "almost"
+          },
+          {
+            "word": "la realtà",
+            "meaning": "reality"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-b1-01.l5.e1",
+          "type": "mcq",
+          "prompt": "Chi ha fatto la domanda?",
+          "options": [
+            "Marco.",
+            "Leo.",
+            "Giulia."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l5.e2",
+          "type": "mcq",
+          "prompt": "Che cosa comprerebbe Giulia?",
+          "options": [
+            "Una casa al mare.",
+            "Una squadra di calcio.",
+            "Una macchina."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l5.e3",
+          "type": "mcq",
+          "prompt": "Per quanto tempo viaggerebbe Sara?",
+          "options": [
+            "Per un anno intero.",
+            "Per tre giorni.",
+            "Per un mese."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l5.e4",
+          "type": "mcq",
+          "prompt": "A chi darebbe metà dei soldi Marco?",
+          "options": [
+            "Alla sua famiglia.",
+            "Ai suoi amici.",
+            "A Giulia."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l5.e5",
+          "type": "mcq",
+          "prompt": "Leo smetterebbe di lavorare?",
+          "options": [
+            "No, lavorerebbe tre giorni alla settimana.",
+            "Sì, subito.",
+            "Sì, dopo un anno."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-b1-01.l5.e6",
+          "type": "mcq",
+          "prompt": "Che cosa hanno guardato alla fine?",
+          "options": [
+            "Il conto del ristorante.",
+            "La partita.",
+            "Le previsioni del tempo."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Un milione di euro",
+        "bottom": "Il conto: 87 euro. Silence at the table."
+      },
+      "newItems": []
+    }
+  ]
+}

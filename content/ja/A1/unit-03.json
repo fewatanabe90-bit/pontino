@@ -1,0 +1,1089 @@
+{
+  "id": "ja-a1-03",
+  "lang": "ja",
+  "level": "A1",
+  "track": "core",
+  "title": "Finding things and people",
+  "summary": "Say what there is and where it is: shops near the hotel, a lost key, the people in your family.",
+  "canDo": [
+    "I can ask whether a place has something and say what is there.",
+    "I can say where a thing or a person is: on, under, inside, in front, behind, next to.",
+    "I can count people and say who is in my family."
+  ],
+  "grammar": [
+    "あります・います",
+    "場所に〜があります",
+    "〜は場所にあります",
+    "Position words: 上・下・中・前・後ろ・となり",
+    "Counting people: 〜人",
+    "いくつ・何人"
+  ],
+  "items": [
+    {
+      "id": "ja-a1-03.g-aruiru",
+      "kind": "grammar",
+      "front": "あります・います",
+      "back": "There is / I have. あります for things and places, います for people and animals."
+    },
+    {
+      "id": "ja-a1-03.g-niga",
+      "kind": "grammar",
+      "front": "〜に〜があります",
+      "back": "In (place) there is (thing). に marks where it is; が marks what is there."
+    },
+    {
+      "id": "ja-a1-03.p-imasu",
+      "kind": "phrase",
+      "front": "います",
+      "back": "there is (a person or an animal); to be somewhere"
+    },
+    {
+      "id": "ja-a1-03.v-neko",
+      "kind": "vocab",
+      "front": "{猫|ねこ}",
+      "back": "cat"
+    },
+    {
+      "id": "ja-a1-03.v-inu",
+      "kind": "vocab",
+      "front": "{犬|いぬ}",
+      "back": "dog"
+    },
+    {
+      "id": "ja-a1-03.v-kouen",
+      "kind": "vocab",
+      "front": "{公園|こうえん}",
+      "back": "park"
+    },
+    {
+      "id": "ja-a1-03.v-ginkou",
+      "kind": "vocab",
+      "front": "{銀行|ぎんこう}",
+      "back": "bank"
+    },
+    {
+      "id": "ja-a1-03.v-yuubinkyoku",
+      "kind": "vocab",
+      "front": "{郵便局|ゆうびんきょく}",
+      "back": "post office"
+    },
+    {
+      "id": "ja-a1-03.v-chikaku",
+      "kind": "vocab",
+      "front": "{近|ちか}く",
+      "back": "nearby, near",
+      "note": "この{近|ちか}くに = near here"
+    },
+    {
+      "id": "ja-a1-03.v-takusan",
+      "kind": "vocab",
+      "front": "たくさん",
+      "back": "many, a lot"
+    },
+    {
+      "id": "ja-a1-03.g-noue",
+      "kind": "grammar",
+      "front": "〜の{上|うえ}に",
+      "back": "On top of ~. Thing, の, position word, に: {机|つくえ}の{上|うえ}に."
+    },
+    {
+      "id": "ja-a1-03.v-ue",
+      "kind": "vocab",
+      "front": "{上|うえ}",
+      "back": "on, above"
+    },
+    {
+      "id": "ja-a1-03.v-shita",
+      "kind": "vocab",
+      "front": "{下|した}",
+      "back": "under, below"
+    },
+    {
+      "id": "ja-a1-03.v-naka",
+      "kind": "vocab",
+      "front": "{中|なか}",
+      "back": "inside"
+    },
+    {
+      "id": "ja-a1-03.v-mae",
+      "kind": "vocab",
+      "front": "{前|まえ}",
+      "back": "in front"
+    },
+    {
+      "id": "ja-a1-03.v-ushiro",
+      "kind": "vocab",
+      "front": "{後|うし}ろ",
+      "back": "behind"
+    },
+    {
+      "id": "ja-a1-03.v-tonari",
+      "kind": "vocab",
+      "front": "となり",
+      "back": "next to"
+    },
+    {
+      "id": "ja-a1-03.v-tsukue",
+      "kind": "vocab",
+      "front": "{机|つくえ}",
+      "back": "desk"
+    },
+    {
+      "id": "ja-a1-03.v-kaban",
+      "kind": "vocab",
+      "front": "かばん",
+      "back": "bag"
+    },
+    {
+      "id": "ja-a1-03.v-kagi",
+      "kind": "vocab",
+      "front": "{鍵|かぎ}",
+      "back": "key"
+    },
+    {
+      "id": "ja-a1-03.v-hito",
+      "kind": "vocab",
+      "front": "{人|ひと}",
+      "back": "person, people"
+    },
+    {
+      "id": "ja-a1-03.v-hitori",
+      "kind": "vocab",
+      "front": "{一人|ひとり}",
+      "back": "one person; alone"
+    },
+    {
+      "id": "ja-a1-03.v-futari",
+      "kind": "vocab",
+      "front": "{二人|ふたり}",
+      "back": "two people"
+    },
+    {
+      "id": "ja-a1-03.v-sannin",
+      "kind": "vocab",
+      "front": "{三人|さんにん}",
+      "back": "three people"
+    },
+    {
+      "id": "ja-a1-03.v-nannin",
+      "kind": "vocab",
+      "front": "{何人|なんにん}",
+      "back": "how many people"
+    },
+    {
+      "id": "ja-a1-03.v-ikutsu",
+      "kind": "vocab",
+      "front": "いくつ",
+      "back": "how many (things)"
+    },
+    {
+      "id": "ja-a1-03.v-kazoku",
+      "kind": "vocab",
+      "front": "{家族|かぞく}",
+      "back": "family"
+    },
+    {
+      "id": "ja-a1-03.v-kodomo",
+      "kind": "vocab",
+      "front": "{子|こ}ども",
+      "back": "child, children"
+    },
+    {
+      "id": "ja-a1-03.v-kyoudai",
+      "kind": "vocab",
+      "front": "{兄弟|きょうだい}",
+      "back": "brothers and sisters"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ja-a1-03.l1",
+      "title": "Is there a bank? あります and います",
+      "canDo": "I can ask whether a place has something, and say what is there.",
+      "intro": {
+        "place": "lounge",
+        "scene": "Leo has just moved into a hotel in a new neighbourhood. He asks Nakamura what is around.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "この{近|ちか}くに{銀行|ぎんこう}{は|wa}ありますか。",
+            "meaning": "Is there a bank near here?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "はい、あります。{駅|えき}にあります。",
+            "meaning": "Yes, there is. There is one at the station.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{公園|こうえん}もありますか。",
+            "meaning": "Is there a park too?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "はい。{公園|こうえん}に{猫|ねこ}がたくさんいます。",
+            "meaning": "Yes. There are lots of cats in the park.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{猫|ねこ}ですか。いいですね。{犬|いぬ}もいますか。",
+            "meaning": "Cats? Nice. Are there dogs too?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "いいえ、{犬|いぬ}{は|wa}いません。",
+            "meaning": "No, there are no dogs.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "あります or います?",
+            "body": "Both mean \"there is\". Use あります for things and places ({銀行|ぎんこう}, {公園|こうえん}, {水|みず}) and います for people and animals ({猫|ねこ}, {子|こ}ども, {駅員|えきいん}さん)."
+          },
+          {
+            "title": "Place に, thing が",
+            "body": "{公園|こうえん}に{猫|ねこ}がいます: \"in the park there are cats\". に marks where something exists. Remember で is for where an action happens: {公園|こうえん}で{食|た}べます."
+          },
+          {
+            "title": "Questions and \"no\"",
+            "body": "In questions and negatives the thing usually takes {は|wa}: {銀行|ぎんこう}{は|wa}ありますか。 {犬|いぬ}{は|wa}いません。 The negatives are ありません and いません."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-03.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{公園|こうえん}に{猫|ねこ}が___。",
+          "meaning": "There is a cat in the park.",
+          "options": [
+            "います",
+            "あります",
+            "です"
+          ],
+          "answer": 0,
+          "explain": "A cat is alive, so います."
+        },
+        {
+          "id": "ja-a1-03.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{駅|えき}に{銀行|ぎんこう}が___。",
+          "meaning": "There is a bank at the station.",
+          "options": [
+            "あります",
+            "います",
+            "{行|い}きます"
+          ],
+          "answer": 0,
+          "explain": "A bank is a thing, so あります."
+        },
+        {
+          "id": "ja-a1-03.l1.e3",
+          "type": "mcq",
+          "prompt": "Which sentence is right?",
+          "options": [
+            "{公園|こうえん}に{犬|いぬ}がいます。",
+            "{公園|こうえん}に{犬|いぬ}があります。",
+            "{公園|こうえん}で{犬|いぬ}がいます。"
+          ],
+          "answer": 0,
+          "explain": "Animals take います, and the place where something exists takes に."
+        },
+        {
+          "id": "ja-a1-03.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"Is there a post office near here?\"",
+          "meaning": "Is there a post office near here?",
+          "tiles": [
+            "この",
+            "{近|ちか}く",
+            "に",
+            "{郵便局|ゆうびんきょく}",
+            "{は|wa}",
+            "ありますか",
+            "いますか",
+            "で"
+          ],
+          "answer": "この{近|ちか}くに{郵便局|ゆうびんきょく}{は|wa}ありますか",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-03.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is in the park?",
+          "text": "{公園|こうえん}に{猫|ねこ}がたくさんいます。",
+          "listen": true,
+          "options": [
+            "Lots of cats",
+            "Lots of dogs",
+            "A bank"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l1.e6",
+          "type": "mcq",
+          "prompt": "Someone asks {犬|いぬ}もいますか. There are none. You answer:",
+          "options": [
+            "いいえ、いません。",
+            "いいえ、ありません。",
+            "いいえ、ちがいます。"
+          ],
+          "answer": 0,
+          "explain": "Answer with the same verb as the question: います → いません."
+        },
+        {
+          "id": "ja-a1-03.l1.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"There is a cat.\"",
+          "answer": "{猫|ねこ}がいます。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-03.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{猫|ねこ}",
+              "cat"
+            ],
+            [
+              "{犬|いぬ}",
+              "dog"
+            ],
+            [
+              "{公園|こうえん}",
+              "park"
+            ],
+            [
+              "{銀行|ぎんこう}",
+              "bank"
+            ],
+            [
+              "{郵便局|ゆうびんきょく}",
+              "post office"
+            ],
+            [
+              "たくさん",
+              "many"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Guidebook: famous temples",
+        "bottom": "Me: the park has cats. Lots of cats."
+      },
+      "newItems": [
+        "ja-a1-03.g-aruiru",
+        "ja-a1-03.g-niga",
+        "ja-a1-03.p-imasu",
+        "ja-a1-03.v-neko",
+        "ja-a1-03.v-inu",
+        "ja-a1-03.v-kouen",
+        "ja-a1-03.v-ginkou",
+        "ja-a1-03.v-yuubinkyoku",
+        "ja-a1-03.v-chikaku",
+        "ja-a1-03.v-takusan"
+      ]
+    },
+    {
+      "id": "ja-a1-03.l2",
+      "title": "Where exactly? On, under, inside",
+      "canDo": "I can say where a thing or a person is using position words.",
+      "intro": {
+        "place": "lounge",
+        "scene": "Leo is about to go out and cannot find his key. Sato helps him look.",
+        "lines": [
+          {
+            "who": "レオ",
+            "text": "すみません、わたしの{鍵|かぎ}{は|wa}どこにありますか。",
+            "meaning": "Excuse me, where is my key?",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "{机|つくえ}の{上|うえ}にありませんか。",
+            "meaning": "Isn't it on the desk?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいえ、ありません。{机|つくえ}の{下|した}にもありません。",
+            "meaning": "No, it isn't. It's not under the desk either.",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "かばんの{中|なか}{は|wa}？",
+            "meaning": "What about inside your bag?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "あ、ありました！かばんの{中|なか}にありました。",
+            "meaning": "Ah, found it! It was inside my bag.",
+            "politeness": "polite"
+          },
+          {
+            "who": "佐藤",
+            "text": "よかったですね。",
+            "meaning": "That's a relief.",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Thing の position に",
+            "body": "Name the reference point first, then の and the position word: {机|つくえ}の{上|うえ} (on the desk), かばんの{中|なか} (inside the bag), {駅|えき}の{前|まえ} (in front of the station)."
+          },
+          {
+            "title": "Two word orders",
+            "body": "To say where a known thing is: {鍵|かぎ}{は|wa}かばんの{中|なか}にあります. To say what is in a place: かばんの{中|なか}に{鍵|かぎ}があります."
+          },
+          {
+            "title": "ありました！",
+            "body": "The past of あります is what you say when you find something: \"there it is!\". よかったです means \"I'm glad\" or \"what a relief\"."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-03.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{鍵|かぎ}{は|wa}{机|つくえ}の___にあります。",
+          "meaning": "The key is on the desk.",
+          "options": [
+            "{上|うえ}",
+            "{下|した}",
+            "{中|なか}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{猫|ねこ}{は|wa}かばんの___にいます。",
+          "meaning": "The cat is inside the bag.",
+          "options": [
+            "{中|なか}",
+            "{上|うえ}",
+            "{前|まえ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l2.e3",
+          "type": "mcq",
+          "prompt": "\"The bank is in front of the station.\"",
+          "options": [
+            "{銀行|ぎんこう}{は|wa}{駅|えき}の{前|まえ}にあります。",
+            "{駅|えき}{は|wa}{銀行|ぎんこう}の{前|まえ}にあります。",
+            "{銀行|ぎんこう}の{前|まえ}{は|wa}{駅|えき}にあります。"
+          ],
+          "answer": 0,
+          "explain": "The reference point comes first: {駅|えき}の{前|まえ}."
+        },
+        {
+          "id": "ja-a1-03.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"The post office is next to the bank.\"",
+          "meaning": "The post office is next to the bank.",
+          "tiles": [
+            "{郵便局|ゆうびんきょく}",
+            "{は|wa}",
+            "{銀行|ぎんこう}",
+            "の",
+            "となり",
+            "に",
+            "あります",
+            "います",
+            "{上|うえ}"
+          ],
+          "answer": "{郵便局|ゆうびんきょく}{は|wa}{銀行|ぎんこう}のとなりにあります",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-03.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. Where is Sato?",
+          "text": "{佐藤|さとう}さん{は|wa}レオさんの{後|うし}ろにいます。",
+          "listen": true,
+          "options": [
+            "Behind Leo",
+            "In front of Leo",
+            "Next to Leo"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l2.e6",
+          "type": "mcq",
+          "prompt": "You find the thing you were looking for. You say:",
+          "options": [
+            "あ、ありました！",
+            "あ、ありません！",
+            "あ、ちがいます！"
+          ],
+          "answer": 0,
+          "explain": "ありました: \"there it was\", so \"found it!\"."
+        },
+        {
+          "id": "ja-a1-03.l2.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"It is inside the bag.\"",
+          "answer": "かばんの{中|なか}にあります。",
+          "alt": [
+            "かばんの{中|なか}です。"
+          ]
+        },
+        {
+          "id": "ja-a1-03.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{上|うえ}",
+              "on, above"
+            ],
+            [
+              "{下|した}",
+              "under"
+            ],
+            [
+              "{中|なか}",
+              "inside"
+            ],
+            [
+              "{前|まえ}",
+              "in front"
+            ],
+            [
+              "{後|うし}ろ",
+              "behind"
+            ],
+            [
+              "となり",
+              "next to"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Looked on the desk. Looked under the desk.",
+        "bottom": "It was in the bag. It is always in the bag."
+      },
+      "newItems": [
+        "ja-a1-03.g-noue",
+        "ja-a1-03.v-ue",
+        "ja-a1-03.v-shita",
+        "ja-a1-03.v-naka",
+        "ja-a1-03.v-mae",
+        "ja-a1-03.v-ushiro",
+        "ja-a1-03.v-tonari",
+        "ja-a1-03.v-tsukue",
+        "ja-a1-03.v-kaban",
+        "ja-a1-03.v-kagi"
+      ]
+    },
+    {
+      "id": "ja-a1-03.l3",
+      "title": "How many? Counting people",
+      "canDo": "I can count people and talk about who is in my family.",
+      "intro": {
+        "place": "lounge",
+        "scene": "Over tea, Nakamura asks Leo about his family back in Brazil.",
+        "lines": [
+          {
+            "who": "中村",
+            "text": "レオさんの{家族|かぞく}{は|wa}{何人|なんにん}ですか。",
+            "meaning": "How many people are in your family?",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{五人|ごにん}です。{兄弟|きょうだい}が{二人|ふたり}います。",
+            "meaning": "Five. I have two siblings.",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "そうですか。わたし{は|wa}{兄弟|きょうだい}がいません。",
+            "meaning": "I see. I have no brothers or sisters.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "{子|こ}ども{は|wa}いますか。",
+            "meaning": "Do you have children?",
+            "politeness": "polite"
+          },
+          {
+            "who": "中村",
+            "text": "はい、{三人|さんにん}います。{猫|ねこ}もいます。",
+            "meaning": "Yes, three. And a cat.",
+            "politeness": "polite"
+          },
+          {
+            "who": "レオ",
+            "text": "いいですね！",
+            "meaning": "How nice!",
+            "politeness": "polite"
+          }
+        ],
+        "notes": [
+          {
+            "title": "います also means \"have\"",
+            "body": "For family and friends, \"I have\" is います: {兄弟|きょうだい}がいます (I have siblings), {子|こ}どもがいません (I have no children). For things, use あります."
+          },
+          {
+            "title": "Counting people",
+            "body": "{一人|ひとり} and {二人|ふたり} are special. After that it is the number plus にん: {三人|さんにん}, {四人|よにん} (not よんにん), {五人|ごにん}. To ask: {何人|なんにん}."
+          },
+          {
+            "title": "Where the number goes",
+            "body": "After が, with no particle of its own: {兄弟|きょうだい}が{二人|ふたり}います. It works the same for things: おにぎりが{三|みっ}つあります. For things, ask with いくつ."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-03.l3.e1",
+          "type": "mcq",
+          "prompt": "How do you say \"two people\"?",
+          "options": [
+            "{二人|ふたり}",
+            "{二人|ににん}",
+            "{二|ふた}つ"
+          ],
+          "answer": 0,
+          "explain": "{一人|ひとり} and {二人|ふたり} have their own readings."
+        },
+        {
+          "id": "ja-a1-03.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{兄弟|きょうだい}が{三人|さんにん}___。",
+          "meaning": "I have three siblings.",
+          "options": [
+            "います",
+            "あります",
+            "です"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l3.e3",
+          "type": "tiles",
+          "prompt": "Build: \"I have two children.\"",
+          "meaning": "I have two children.",
+          "tiles": [
+            "{子|こ}ども",
+            "が",
+            "{二人|ふたり}",
+            "います",
+            "あります",
+            "を",
+            "{二|ふた}つ"
+          ],
+          "answer": "{子|こ}どもが{二人|ふたり}います",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-03.l3.e4",
+          "type": "mcq",
+          "prompt": "Listen. How many people are in the family?",
+          "text": "{家族|かぞく}{は|wa}{四人|よにん}です。",
+          "listen": true,
+          "options": [
+            "Four",
+            "Three",
+            "Seven"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l3.e5",
+          "type": "mcq",
+          "prompt": "You want to ask how many rice balls there are.",
+          "options": [
+            "おにぎり{は|wa}いくつありますか。",
+            "おにぎり{は|wa}{何人|なんにん}いますか。",
+            "おにぎり{は|wa}いくらですか。"
+          ],
+          "answer": 0,
+          "explain": "いくつ = how many things. いくら = how much money."
+        },
+        {
+          "id": "ja-a1-03.l3.e6",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "{公園|こうえん}に{人|ひと}が___います。",
+          "meaning": "There are many people in the park.",
+          "options": [
+            "たくさん",
+            "いくつ",
+            "いくら"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l3.e7",
+          "type": "type",
+          "prompt": "Type in Japanese: \"I have no siblings.\"",
+          "answer": "{兄弟|きょうだい}がいません。",
+          "alt": []
+        },
+        {
+          "id": "ja-a1-03.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "{一人|ひとり}",
+              "one person"
+            ],
+            [
+              "{二人|ふたり}",
+              "two people"
+            ],
+            [
+              "{三人|さんにん}",
+              "three people"
+            ],
+            [
+              "{何人|なんにん}",
+              "how many people"
+            ],
+            [
+              "いくつ",
+              "how many things"
+            ],
+            [
+              "{家族|かぞく}",
+              "family"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "いち, に, さん",
+        "bottom": "People: ひとり, ふたり… and then さんにん, as if nothing happened"
+      },
+      "newItems": [
+        "ja-a1-03.v-hito",
+        "ja-a1-03.v-hitori",
+        "ja-a1-03.v-futari",
+        "ja-a1-03.v-sannin",
+        "ja-a1-03.v-nannin",
+        "ja-a1-03.v-ikutsu",
+        "ja-a1-03.v-kazoku",
+        "ja-a1-03.v-kodomo",
+        "ja-a1-03.v-kyoudai"
+      ]
+    },
+    {
+      "id": "ja-a1-03.l4",
+      "title": "Reading: Leo's neighbourhood",
+      "canDo": "I can read a short description of a place and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🏨🌳",
+        "scene": "What is around Leo's hotel? Read, listen, then answer.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "レオさんのホテル{は|wa}{駅|えき}の{近|ちか}くにあります。",
+            "meaning": "Leo's hotel is near the station."
+          },
+          {
+            "text": "ホテルの{前|まえ}に{小|ちい}さい{公園|こうえん}があります。",
+            "meaning": "In front of the hotel there is a small park."
+          },
+          {
+            "text": "{公園|こうえん}に{猫|ねこ}が{三匹|さんびき}います。",
+            "meaning": "There are three cats in the park."
+          },
+          {
+            "text": "{子|こ}どももたくさんいます。",
+            "meaning": "There are lots of children too."
+          },
+          {
+            "text": "ホテルのとなりにコンビニがあります。",
+            "meaning": "Next to the hotel there is a convenience store."
+          },
+          {
+            "text": "{銀行|ぎんこう}{は|wa}コンビニの{後|うし}ろにあります。",
+            "meaning": "The bank is behind the convenience store."
+          },
+          {
+            "text": "{郵便局|ゆうびんきょく}{は|wa}この{近|ちか}くにありません。",
+            "meaning": "There is no post office near here."
+          },
+          {
+            "text": "レオさん{は|wa}{毎朝|まいあさ}{公園|こうえん}でコーヒーを{飲|の}みます。",
+            "meaning": "Leo drinks coffee in the park every morning."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{小|ちい}さい",
+            "meaning": "small"
+          },
+          {
+            "word": "{三匹|さんびき}",
+            "meaning": "three (small animals)"
+          },
+          {
+            "word": "{飲|の}みます",
+            "meaning": "to drink"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-03.l4.e1",
+          "type": "mcq",
+          "prompt": "ホテル{は|wa}どこにありますか。",
+          "options": [
+            "{駅|えき}の{近|ちか}く",
+            "{公園|こうえん}の{中|なか}",
+            "{銀行|ぎんこう}のとなり"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l4.e2",
+          "type": "mcq",
+          "prompt": "ホテルの{前|まえ}に{何|なに}がありますか。",
+          "options": [
+            "{公園|こうえん}",
+            "コンビニ",
+            "{銀行|ぎんこう}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l4.e3",
+          "type": "mcq",
+          "prompt": "{公園|こうえん}に{猫|ねこ}が{何匹|なんびき}いますか。",
+          "options": [
+            "{三匹|さんびき}",
+            "{二匹|にひき}",
+            "{五匹|ごひき}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l4.e4",
+          "type": "mcq",
+          "prompt": "コンビニ{は|wa}どこにありますか。",
+          "options": [
+            "ホテルのとなり",
+            "ホテルの{後|うし}ろ",
+            "{駅|えき}の{中|なか}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l4.e5",
+          "type": "mcq",
+          "prompt": "この{近|ちか}くに{郵便局|ゆうびんきょく}{は|wa}ありますか。",
+          "options": [
+            "いいえ、ありません。",
+            "はい、あります。",
+            "はい、います。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l4.e6",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{公園|こうえん}で{何|なに}を{飲|の}みますか。",
+          "options": [
+            "コーヒー",
+            "{水|みず}",
+            "お{茶|ちゃ}"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Hotel review: 5 stars",
+        "bottom": "Reason: three cats in the park"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-a1-03.l5",
+      "title": "Story: The missing bag",
+      "canDo": "I can follow a short spoken scene and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧🎒🚉",
+        "scene": "Leo arrives at the station office without his bag. Listen for what is in it and where it turns up.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "すみません、わたしのかばんがありません。",
+            "meaning": "Excuse me, my bag is gone.",
+            "who": "レオ"
+          },
+          {
+            "text": "かばんですか。かばんの{中|なか}に{何|なに}がありますか。",
+            "meaning": "A bag? What is inside the bag?",
+            "who": "駅員"
+          },
+          {
+            "text": "{鍵|かぎ}と{切符|きっぷ}があります。お{金|かね}{は|wa}ありません。",
+            "meaning": "A key and a ticket. There is no money.",
+            "who": "レオ"
+          },
+          {
+            "text": "{何番線|なんばんせん}にいましたか。",
+            "meaning": "Which platform were you on?",
+            "who": "駅員"
+          },
+          {
+            "text": "{三番線|さんばんせん}にいました。",
+            "meaning": "I was on platform three.",
+            "who": "レオ"
+          },
+          {
+            "text": "ちょっと{待|ま}ってください。",
+            "meaning": "Just a moment, please.",
+            "who": "駅員"
+          },
+          {
+            "text": "あ、ありました。これですか。",
+            "meaning": "Ah, here it is. Is it this one?",
+            "who": "駅員"
+          },
+          {
+            "text": "はい、それです！どこにありましたか。",
+            "meaning": "Yes, that's it! Where was it?",
+            "who": "レオ"
+          },
+          {
+            "text": "{三番線|さんばんせん}のベンチの{下|した}にありました。",
+            "meaning": "It was under the bench on platform three.",
+            "who": "駅員"
+          },
+          {
+            "text": "ありがとうございます！",
+            "meaning": "Thank you!",
+            "who": "レオ"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "お{金|かね}",
+            "meaning": "money"
+          },
+          {
+            "word": "ちょっと{待|ま}ってください",
+            "meaning": "Just a moment, please."
+          },
+          {
+            "word": "ベンチ",
+            "meaning": "bench"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-03.l5.e1",
+          "type": "mcq",
+          "prompt": "{何|なに}がありませんか。",
+          "options": [
+            "かばん",
+            "{鍵|かぎ}",
+            "{切符|きっぷ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l5.e2",
+          "type": "mcq",
+          "prompt": "かばんの{中|なか}に{何|なに}がありますか。",
+          "options": [
+            "{鍵|かぎ}と{切符|きっぷ}",
+            "{鍵|かぎ}とお{金|かね}",
+            "{切符|きっぷ}と{水|みず}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l5.e3",
+          "type": "mcq",
+          "prompt": "かばんの{中|なか}にお{金|かね}{は|wa}ありますか。",
+          "options": [
+            "いいえ、ありません。",
+            "はい、あります。",
+            "はい、たくさんあります。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l5.e4",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何番線|なんばんせん}にいましたか。",
+          "options": [
+            "{三番線|さんばんせん}",
+            "{二番線|にばんせん}",
+            "{一番線|いちばんせん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l5.e5",
+          "type": "mcq",
+          "prompt": "かばん{は|wa}ベンチの{上|うえ}にありましたか。",
+          "options": [
+            "いいえ、ベンチの{下|した}にありました。",
+            "はい、ベンチの{上|うえ}にありました。",
+            "いいえ、ベンチの{後|うし}ろにありました。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-03.l5.e6",
+          "type": "mcq",
+          "prompt": "かばん{は|wa}だれのですか。",
+          "options": [
+            "レオさんのです。",
+            "{駅員|えきいん}さんのです。",
+            "{佐藤|さとう}さんのです。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Lost a bag in Japan",
+        "bottom": "Found it exactly where it was left. Of course."
+      },
+      "newItems": []
+    }
+  ],
+  "factCheck": [
+    "Counter 匹 readings: さんびき, にひき, ごひき, なんびき."
+  ]
+}

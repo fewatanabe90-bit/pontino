@@ -45,7 +45,7 @@ test('voices are saved in the background and play offline', async ({ page, conte
   await page.goto('./#/profile');
   await page.evaluate(() => navigator.serviceWorker.ready.then(() => undefined));
   // Every clip gets saved without the learner doing anything.
-  await expect(page.getByText(/Voices saved for offline use: (\d+) of \1\./)).toBeVisible({ timeout: 60_000 });
+  await expect(page.getByText(/Voices saved for offline use: (\d+) of \1\./)).toBeVisible({ timeout: 180_000 });
 
   await context.setOffline(true);
   await page.reload();

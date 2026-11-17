@@ -1,0 +1,1130 @@
+{
+  "id": "it-r4",
+  "lang": "it",
+  "level": "A2",
+  "track": "core",
+  "title": "Al mercato, in treno",
+  "summary": "Two small words Portuguese does not have: ne for quantities at the market, ci for places and travel times. Then buying a train ticket.",
+  "canDo": [
+    "I can buy food at a market and say how much of it I want, using ne.",
+    "I can talk about places I go to with ci and say how long something takes.",
+    "I can buy a train ticket and understand platform, delay and changes."
+  ],
+  "grammar": [
+    "ne + quantity",
+    "ci (place)",
+    "ci vuole / ci vogliono",
+    "metterci",
+    "Partitive: del, dei, delle"
+  ],
+  "items": [
+    {
+      "id": "it-r4.g-ne",
+      "kind": "grammar",
+      "front": "ne + quantità",
+      "back": "Ne = \"of it / of them\". It stands in for a noun when you give a quantity: ne prendo due.",
+      "note": "Quanti ne vuole? Ne prendo un chilo.",
+      "pt": "Portuguese just drops the noun (\"quero dois\"). Italian cannot: it needs ne."
+    },
+    {
+      "id": "it-r4.p-midica",
+      "kind": "phrase",
+      "front": "Mi dica",
+      "back": "What can I get you? (literally \"tell me\", formal)"
+    },
+    {
+      "id": "it-r4.v-pomodoro",
+      "kind": "vocab",
+      "front": "il pomodoro",
+      "back": "tomato"
+    },
+    {
+      "id": "it-r4.v-pesca",
+      "kind": "vocab",
+      "front": "la pesca",
+      "back": "peach",
+      "pt": "PT pêssego. La pesca also means \"fishing\", as in Portuguese."
+    },
+    {
+      "id": "it-r4.p-quantine",
+      "kind": "phrase",
+      "front": "Quanti ne vuole?",
+      "back": "How many would you like?"
+    },
+    {
+      "id": "it-r4.p-neprendo",
+      "kind": "phrase",
+      "front": "Ne prendo un chilo",
+      "back": "I'll take a kilo (of them)."
+    },
+    {
+      "id": "it-r4.v-chilo",
+      "kind": "vocab",
+      "front": "un chilo",
+      "back": "a kilo"
+    },
+    {
+      "id": "it-r4.v-etto",
+      "kind": "vocab",
+      "front": "un etto",
+      "back": "100 grams",
+      "note": "Un etto di prosciutto. Due etti = 200 grams.",
+      "pt": "No everyday PT equivalent: Italians order cold cuts and cheese by the etto."
+    },
+    {
+      "id": "it-r4.p-bastacosi",
+      "kind": "phrase",
+      "front": "Basta così",
+      "back": "That's all, that's enough."
+    },
+    {
+      "id": "it-r4.p-quantocosta",
+      "kind": "phrase",
+      "front": "Quanto costa?",
+      "back": "How much is it?",
+      "note": "Several things: Quanto costano?"
+    },
+    {
+      "id": "it-r4.g-ci",
+      "kind": "grammar",
+      "front": "ci + verbo",
+      "back": "Ci = \"there\". It stands in for a place already mentioned: ci vado, ci sono stato.",
+      "pt": "PT says \"eu vou\" or \"vou lá\". In Italian a bare \"vado\" sounds unfinished: say ci vado."
+    },
+    {
+      "id": "it-r4.p-civado",
+      "kind": "phrase",
+      "front": "ci vado",
+      "back": "I go there"
+    },
+    {
+      "id": "it-r4.p-cisonostato",
+      "kind": "phrase",
+      "front": "non ci sono mai stato",
+      "back": "I've never been there"
+    },
+    {
+      "id": "it-r4.p-civuole",
+      "kind": "phrase",
+      "front": "ci vuole",
+      "back": "it takes (one thing)",
+      "note": "Ci vuole un'ora."
+    },
+    {
+      "id": "it-r4.p-civogliono",
+      "kind": "phrase",
+      "front": "ci vogliono",
+      "back": "it takes (several things)",
+      "note": "Ci vogliono venti minuti."
+    },
+    {
+      "id": "it-r4.p-civediamo",
+      "kind": "phrase",
+      "front": "Ci vediamo",
+      "back": "See you."
+    },
+    {
+      "id": "it-r4.v-volentieri",
+      "kind": "vocab",
+      "front": "volentieri",
+      "back": "gladly, with pleasure"
+    },
+    {
+      "id": "it-r4.v-apiedi",
+      "kind": "vocab",
+      "front": "a piedi",
+      "back": "on foot",
+      "pt": "PT a pé."
+    },
+    {
+      "id": "it-r4.v-mai",
+      "kind": "vocab",
+      "front": "mai",
+      "back": "ever; never",
+      "note": "Sei mai stato a Roma? Non ci sono mai stato.",
+      "pt": "Not PT \"mais\" (that is più). Mai = nunca / alguma vez."
+    },
+    {
+      "id": "it-r4.v-mercato",
+      "kind": "vocab",
+      "front": "il mercato",
+      "back": "market"
+    },
+    {
+      "id": "it-r4.v-biglietto",
+      "kind": "vocab",
+      "front": "il biglietto",
+      "back": "ticket",
+      "pt": "PT bilhete, passagem."
+    },
+    {
+      "id": "it-r4.p-andataeritorno",
+      "kind": "phrase",
+      "front": "andata e ritorno",
+      "back": "return, round trip",
+      "pt": "PT ida e volta."
+    },
+    {
+      "id": "it-r4.v-soloandata",
+      "kind": "vocab",
+      "front": "solo andata",
+      "back": "one way"
+    },
+    {
+      "id": "it-r4.v-binario",
+      "kind": "vocab",
+      "front": "il binario",
+      "back": "platform, track",
+      "pt": "PT plataforma. Italian stations number the tracks: binario 6."
+    },
+    {
+      "id": "it-r4.p-inritardo",
+      "kind": "phrase",
+      "front": "in ritardo",
+      "back": "late, delayed",
+      "note": "Il treno è in ritardo di dieci minuti.",
+      "pt": "PT atrasado."
+    },
+    {
+      "id": "it-r4.v-cambiare",
+      "kind": "vocab",
+      "front": "cambiare",
+      "back": "to change"
+    },
+    {
+      "id": "it-r4.v-diretto",
+      "kind": "vocab",
+      "front": "diretto",
+      "back": "direct"
+    },
+    {
+      "id": "it-r4.p-cimette",
+      "kind": "phrase",
+      "front": "ci mette",
+      "back": "it takes (said of a train, a person)",
+      "note": "Il treno ci mette un'ora."
+    },
+    {
+      "id": "it-r4.v-convalidare",
+      "kind": "vocab",
+      "front": "convalidare",
+      "back": "to validate, to stamp (a ticket)"
+    },
+    {
+      "id": "it-r4.v-prossimo",
+      "kind": "vocab",
+      "front": "prossimo",
+      "back": "next"
+    },
+    {
+      "id": "it-r4.p-acheora",
+      "kind": "phrase",
+      "front": "A che ora parte?",
+      "back": "What time does it leave?"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "it-r4.l1",
+      "title": "Quanti ne vuole?",
+      "canDo": "I can buy fruit and vegetables and say how much I want with ne.",
+      "intro": {
+        "art": "🍅🧺🍑",
+        "scene": "Saturday morning at the market. Giulia stops at her usual fruit and vegetable stall.",
+        "lines": [
+          {
+            "who": "Venditore",
+            "text": "Buongiorno! Mi dica.",
+            "meaning": "Good morning! What can I get you?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Buongiorno. Vorrei dei pomodori.",
+            "meaning": "Good morning. I'd like some tomatoes."
+          },
+          {
+            "who": "Venditore",
+            "text": "Quanti ne vuole?",
+            "meaning": "How many would you like?"
+          },
+          {
+            "who": "Giulia",
+            "text": "Ne prendo un chilo. E le pesche, quanto costano?",
+            "meaning": "I'll take a kilo. And the peaches, how much are they?"
+          },
+          {
+            "who": "Venditore",
+            "text": "Tre euro al chilo. Sono dolcissime.",
+            "meaning": "Three euros a kilo. They are really sweet."
+          },
+          {
+            "who": "Giulia",
+            "text": "Allora ne prendo quattro. Basta così, grazie.",
+            "meaning": "Then I'll take four. That's all, thanks."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Ne: \"of them\"",
+            "body": "When you give a quantity without repeating the noun, Italian puts ne before the verb: ne prendo un chilo, ne vorrei due, non ne voglio. The quantity can be a number, a weight, or a word like molti, pochi, un po'."
+          },
+          {
+            "title": "Ne or lo, la, li, le?",
+            "body": "Le prendo = I'll take them (all of them). Ne prendo quattro = I'll take four of them. If there is a quantity, it is ne."
+          },
+          {
+            "title": "🇧🇷 PT tip: do not leave the gap",
+            "body": "Portuguese says \"quero dois\" and \"não tenho\". Italian needs the little word: ne voglio due, non ne ho. Also: dei pomodori, delle pesche, del pane = \"some\", where PT usually says nothing."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r4.l1.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Le pesche? ___ prendo quattro.",
+          "meaning": "The peaches? I'll take four.",
+          "options": [
+            "Ne",
+            "Le",
+            "Li"
+          ],
+          "answer": 0,
+          "explain": "With a number, use ne. \"Le prendo\" would mean all of them."
+        },
+        {
+          "id": "it-r4.l1.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Quanti ___ vuole?",
+          "meaning": "How many would you like?",
+          "options": [
+            "ne",
+            "li",
+            "ci"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l1.e3",
+          "type": "mcq",
+          "prompt": "\"Vuole del pane?\" You want half a kilo. You answer:",
+          "options": [
+            "Sì, ne prendo mezzo chilo.",
+            "Sì, lo prendo mezzo chilo.",
+            "Sì, ci prendo mezzo chilo."
+          ],
+          "answer": 0,
+          "explain": "Quantity → ne."
+        },
+        {
+          "id": "it-r4.l1.e4",
+          "type": "tiles",
+          "prompt": "Build: \"I'll take two (of them).\"",
+          "meaning": "I'll take two.",
+          "tiles": [
+            "Ne",
+            "prendo",
+            "due",
+            "li",
+            "di",
+            "loro"
+          ],
+          "answer": "Ne prendo due",
+          "alt": []
+        },
+        {
+          "id": "it-r4.l1.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is the seller asking?",
+          "text": "Quanti ne vuole?",
+          "listen": true,
+          "options": [
+            "How many you would like",
+            "How much it costs",
+            "Whether you want anything else"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l1.e6",
+          "type": "mcq",
+          "prompt": "You have everything you need. You say:",
+          "options": [
+            "Basta così, grazie.",
+            "Ne prendo ancora.",
+            "Mi dica."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l1.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Quanto custa?\"",
+          "answer": "Quanto costa?",
+          "alt": [
+            "Quant'è?",
+            "Quanto viene?"
+          ]
+        },
+        {
+          "id": "it-r4.l1.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "il pomodoro",
+              "tomato"
+            ],
+            [
+              "la pesca",
+              "peach"
+            ],
+            [
+              "un chilo",
+              "a kilo"
+            ],
+            [
+              "un etto",
+              "100 grams"
+            ],
+            [
+              "Mi dica",
+              "What can I get you?"
+            ],
+            [
+              "Basta così",
+              "That's all"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Basta così, grazie\"",
+        "bottom": "Seller: adds two more peaches anyway"
+      },
+      "newItems": [
+        "it-r4.g-ne",
+        "it-r4.p-midica",
+        "it-r4.v-pomodoro",
+        "it-r4.v-pesca",
+        "it-r4.p-quantine",
+        "it-r4.p-neprendo",
+        "it-r4.v-chilo",
+        "it-r4.v-etto",
+        "it-r4.p-bastacosi",
+        "it-r4.p-quantocosta"
+      ]
+    },
+    {
+      "id": "it-r4.l2",
+      "title": "Ci vado ogni sabato",
+      "canDo": "I can talk about places I go to with ci and say how long it takes to get there.",
+      "intro": {
+        "place": "cafe",
+        "scene": "Marco and Leo are having coffee. Marco has a plan for tomorrow.",
+        "lines": [
+          {
+            "who": "Marco",
+            "text": "Sei mai stato al mercato di Testaccio?",
+            "meaning": "Have you ever been to the Testaccio market?"
+          },
+          {
+            "who": "Leo",
+            "text": "No, non ci sono mai stato. E tu?",
+            "meaning": "No, I've never been there. And you?"
+          },
+          {
+            "who": "Marco",
+            "text": "Io ci vado ogni sabato. Ci vieni con me domani?",
+            "meaning": "I go there every Saturday. Will you come with me tomorrow?"
+          },
+          {
+            "who": "Leo",
+            "text": "Volentieri! Quanto ci vuole da qui?",
+            "meaning": "Gladly! How long does it take from here?"
+          },
+          {
+            "who": "Marco",
+            "text": "Ci vogliono venti minuti a piedi.",
+            "meaning": "It takes twenty minutes on foot."
+          },
+          {
+            "who": "Leo",
+            "text": "Perfetto. Ci vediamo alle nove.",
+            "meaning": "Perfect. See you at nine."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Ci: \"there\"",
+            "body": "Ci replaces a place you have already mentioned, and goes before the verb: ci vado, ci vieni?, non ci sono mai stato. Without it the sentence feels unfinished."
+          },
+          {
+            "title": "Ci vuole, ci vogliono",
+            "body": "How long or how much something takes. The verb agrees with what follows: ci vuole un'ora, ci vogliono venti minuti, ci vogliono due uova."
+          },
+          {
+            "title": "🇧🇷 PT tip: three different ci",
+            "body": "Ci vado (there), ci vuole (it takes), ci vediamo (each other / us). Portuguese uses lá, leva and nos. In Italian it is always the same little word, so read the verb to know which one you have."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r4.l2.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Al mercato? ___ vado ogni sabato.",
+          "meaning": "To the market? I go there every Saturday.",
+          "options": [
+            "Ci",
+            "Ne",
+            "Lo"
+          ],
+          "answer": 0,
+          "explain": "A place → ci."
+        },
+        {
+          "id": "it-r4.l2.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Da qui ci ___ venti minuti.",
+          "meaning": "It takes twenty minutes from here.",
+          "options": [
+            "vogliono",
+            "vuole",
+            "vanno"
+          ],
+          "answer": 0,
+          "explain": "Venti minuti is plural, so vogliono."
+        },
+        {
+          "id": "it-r4.l2.e3",
+          "type": "mcq",
+          "prompt": "\"Sei mai stata a Napoli?\" Sara has never been. She says:",
+          "options": [
+            "No, non ci sono mai stata.",
+            "No, non ne sono mai stata.",
+            "No, non la sono mai stata."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l2.e4",
+          "type": "tiles",
+          "prompt": "Build: \"How long does it take?\"",
+          "meaning": "How long does it take?",
+          "tiles": [
+            "Quanto",
+            "ci",
+            "vuole",
+            "ne",
+            "vogliono",
+            "mette"
+          ],
+          "answer": "Quanto ci vuole",
+          "alt": [
+            "Quanto ci mette"
+          ]
+        },
+        {
+          "id": "it-r4.l2.e5",
+          "type": "mcq",
+          "prompt": "Listen. How long does it take?",
+          "text": "Ci vuole un'ora in treno.",
+          "listen": true,
+          "options": [
+            "An hour by train",
+            "An hour on foot",
+            "Twenty minutes by train"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l2.e6",
+          "type": "mcq",
+          "prompt": "\"Ci vediamo alle nove\" means:",
+          "options": [
+            "See you at nine.",
+            "We are going there at nine.",
+            "We saw each other at nine."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l2.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"Eu vou lá a pé.\"",
+          "answer": "Ci vado a piedi.",
+          "alt": [
+            "Io ci vado a piedi."
+          ]
+        },
+        {
+          "id": "it-r4.l2.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "ci vado",
+              "I go there"
+            ],
+            [
+              "ci vuole",
+              "it takes (singular)"
+            ],
+            [
+              "ci vogliono",
+              "it takes (plural)"
+            ],
+            [
+              "Ci vediamo",
+              "See you"
+            ],
+            [
+              "volentieri",
+              "gladly"
+            ],
+            [
+              "a piedi",
+              "on foot"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "\"Ci vogliono venti minuti a piedi\"",
+        "bottom": "Roman minutes. Budget forty."
+      },
+      "newItems": [
+        "it-r4.g-ci",
+        "it-r4.p-civado",
+        "it-r4.p-cisonostato",
+        "it-r4.p-civuole",
+        "it-r4.p-civogliono",
+        "it-r4.p-civediamo",
+        "it-r4.v-volentieri",
+        "it-r4.v-apiedi",
+        "it-r4.v-mai",
+        "it-r4.v-mercato"
+      ]
+    },
+    {
+      "id": "it-r4.l3",
+      "title": "Un biglietto per Firenze",
+      "canDo": "I can buy a train ticket and understand platform, delay and changes.",
+      "intro": {
+        "place": "station",
+        "scene": "Roma Termini, the ticket office. Leo wants to spend Sunday in Florence.",
+        "lines": [
+          {
+            "who": "Leo",
+            "text": "Buongiorno. Un biglietto per Firenze, per favore.",
+            "meaning": "Good morning. A ticket to Florence, please."
+          },
+          {
+            "who": "Impiegata",
+            "text": "Solo andata o andata e ritorno?",
+            "meaning": "One way or return?"
+          },
+          {
+            "who": "Leo",
+            "text": "Andata e ritorno. A che ora parte il prossimo treno?",
+            "meaning": "Return. What time does the next train leave?"
+          },
+          {
+            "who": "Impiegata",
+            "text": "Parte alle dieci e venti dal binario sei. Ma oggi è in ritardo di dieci minuti.",
+            "meaning": "It leaves at 10:20 from platform six. But today it is ten minutes late."
+          },
+          {
+            "who": "Leo",
+            "text": "Devo cambiare?",
+            "meaning": "Do I have to change?"
+          },
+          {
+            "who": "Impiegata",
+            "text": "No, è diretto. Ci mette un'ora e mezza. Si ricordi di convalidare il biglietto.",
+            "meaning": "No, it is direct. It takes an hour and a half. Remember to validate your ticket."
+          }
+        ],
+        "notes": [
+          {
+            "title": "Ci mette or ci vuole?",
+            "body": "Both say how long something takes. With metterci there is a subject doing the taking: il treno ci mette un'ora, io ci metto dieci minuti. With volerci there is not: ci vuole un'ora."
+          },
+          {
+            "title": "At the station",
+            "body": "Dal binario sei = from platform six. In ritardo di dieci minuti = ten minutes late. In orario = on time. Diretto = no change; otherwise you hear \"deve cambiare a Bologna\"."
+          },
+          {
+            "title": "Convalidare",
+            "body": "Paper tickets for regional trains have to be stamped in the small machines on the platform before you get on. Tickets bought for a specific train, and digital tickets, usually do not."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r4.l3.e1",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Il treno ci ___ un'ora e mezza.",
+          "meaning": "The train takes an hour and a half.",
+          "options": [
+            "mette",
+            "vuole",
+            "vogliono"
+          ],
+          "answer": 0,
+          "explain": "The train is the subject, so metterci: il treno ci mette."
+        },
+        {
+          "id": "it-r4.l3.e2",
+          "type": "gap",
+          "prompt": "Fill the gap.",
+          "text": "Il treno parte ___ binario sei.",
+          "meaning": "The train leaves from platform six.",
+          "options": [
+            "dal",
+            "al",
+            "nel"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l3.e3",
+          "type": "mcq",
+          "prompt": "You want to go and come back. You ask for:",
+          "options": [
+            "Un biglietto di andata e ritorno.",
+            "Un biglietto di solo andata.",
+            "Un biglietto diretto."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l3.e4",
+          "type": "tiles",
+          "prompt": "Build: \"What time does the next train leave?\"",
+          "meaning": "What time does the next train leave?",
+          "tiles": [
+            "A",
+            "che",
+            "ora",
+            "parte",
+            "il",
+            "prossimo",
+            "treno",
+            "binario",
+            "quando"
+          ],
+          "answer": "A che ora parte il prossimo treno",
+          "alt": []
+        },
+        {
+          "id": "it-r4.l3.e5",
+          "type": "mcq",
+          "prompt": "Listen. What is the problem?",
+          "text": "Il treno per Firenze è in ritardo di venti minuti.",
+          "listen": true,
+          "options": [
+            "The train is twenty minutes late",
+            "The train leaves from platform twenty",
+            "The train takes twenty minutes"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l3.e6",
+          "type": "mcq",
+          "prompt": "\"Devo cambiare?\" \"No, è diretto.\" So:",
+          "options": [
+            "You stay on the same train.",
+            "You change at the next station.",
+            "The train does not stop at your station."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l3.e7",
+          "type": "type",
+          "prompt": "Translate from Portuguese: \"O trem está atrasado.\"",
+          "answer": "Il treno è in ritardo.",
+          "alt": []
+        },
+        {
+          "id": "it-r4.l3.e8",
+          "type": "match",
+          "prompt": "Match.",
+          "pairs": [
+            [
+              "il biglietto",
+              "ticket"
+            ],
+            [
+              "andata e ritorno",
+              "return"
+            ],
+            [
+              "solo andata",
+              "one way"
+            ],
+            [
+              "il binario",
+              "platform"
+            ],
+            [
+              "in ritardo",
+              "late"
+            ],
+            [
+              "convalidare",
+              "to validate"
+            ]
+          ]
+        }
+      ],
+      "meme": {
+        "top": "Il treno è in ritardo di dieci minuti",
+        "bottom": "The board, ten minutes later: venti minuti"
+      },
+      "newItems": [
+        "it-r4.v-biglietto",
+        "it-r4.p-andataeritorno",
+        "it-r4.v-soloandata",
+        "it-r4.v-binario",
+        "it-r4.p-inritardo",
+        "it-r4.v-cambiare",
+        "it-r4.v-diretto",
+        "it-r4.p-cimette",
+        "it-r4.v-convalidare",
+        "it-r4.v-prossimo",
+        "it-r4.p-acheora"
+      ]
+    },
+    {
+      "id": "it-r4.l4",
+      "title": "Lettura: Il sabato al mercato",
+      "canDo": "I can read a short text about a routine and answer questions about it in Italian.",
+      "intro": {
+        "art": "📖🧀🍅",
+        "scene": "Giulia racconta il suo sabato mattina. Leggi, ascolta e poi rispondi.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "Ogni sabato mattina vado al mercato del mio quartiere.",
+            "meaning": "Every Saturday morning I go to the market in my neighbourhood.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Ci vado presto, perché dopo le dieci c'è troppa gente.",
+            "meaning": "I go there early, because after ten there are too many people.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Compro sempre la frutta: adesso ci sono le pesche e ne prendo un chilo.",
+            "meaning": "I always buy fruit: now there are peaches and I get a kilo.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Il mio venditore preferito si chiama Franco e lo conosco da dieci anni.",
+            "meaning": "My favourite seller is called Franco and I have known him for ten years.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Franco mi consiglia sempre i pomodori migliori.",
+            "meaning": "Franco always recommends the best tomatoes to me.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Ieri ne ho comprati due chili per fare il sugo.",
+            "meaning": "Yesterday I bought two kilos of them to make sauce.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Il formaggio invece non lo compro al mercato: costa troppo.",
+            "meaning": "Cheese, on the other hand, I don't buy at the market: it costs too much.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Dal mercato a casa mia ci vogliono solo cinque minuti a piedi.",
+            "meaning": "From the market to my place it takes only five minutes on foot.",
+            "who": "Giulia"
+          },
+          {
+            "text": "Torno a casa con le borse piene e sono contenta.",
+            "meaning": "I go home with full bags and I am happy.",
+            "who": "Giulia"
+          }
+        ],
+        "glossary": [
+          {
+            "word": "il quartiere",
+            "meaning": "neighbourhood"
+          },
+          {
+            "word": "il sugo",
+            "meaning": "sauce (for pasta)"
+          },
+          {
+            "word": "il formaggio",
+            "meaning": "cheese"
+          },
+          {
+            "word": "la borsa",
+            "meaning": "bag"
+          },
+          {
+            "word": "migliore",
+            "meaning": "better, best"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r4.l4.e1",
+          "type": "mcq",
+          "prompt": "Quando va al mercato Giulia?",
+          "options": [
+            "Ogni sabato mattina.",
+            "Ogni domenica mattina.",
+            "Ogni sabato sera."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l4.e2",
+          "type": "mcq",
+          "prompt": "Perché ci va presto?",
+          "options": [
+            "Perché dopo c'è troppa gente.",
+            "Perché il mercato chiude alle dieci.",
+            "Perché il pomeriggio lavora."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l4.e3",
+          "type": "mcq",
+          "prompt": "Quante pesche prende?",
+          "options": [
+            "Ne prende un chilo.",
+            "Ne prende due chili.",
+            "Non ne prende."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l4.e4",
+          "type": "mcq",
+          "prompt": "Da quanto tempo conosce Franco?",
+          "options": [
+            "Da dieci anni.",
+            "Da due anni.",
+            "Da ieri."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l4.e5",
+          "type": "mcq",
+          "prompt": "Perché non compra il formaggio al mercato?",
+          "options": [
+            "Perché costa troppo.",
+            "Perché non le piace.",
+            "Perché non c'è."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l4.e6",
+          "type": "mcq",
+          "prompt": "Quanto ci vuole dal mercato a casa sua?",
+          "options": [
+            "Cinque minuti a piedi.",
+            "Venti minuti a piedi.",
+            "Cinque minuti in treno."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Went for peaches",
+        "bottom": "Came back with peaches, tomatoes and the full story of Franco's nephew"
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-r4.l5",
+      "title": "Racconto: Il treno sbagliato",
+      "canDo": "I can follow a short spoken story about a journey and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧🚆😅",
+        "scene": "Leo racconta la sua domenica. Ascolta bene i numeri: binari, minuti, ore.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "Domenica volevo andare a Firenze con Giulia.",
+            "meaning": "On Sunday I wanted to go to Florence with Giulia.",
+            "who": "Leo"
+          },
+          {
+            "text": "Ho comprato due biglietti di andata e ritorno.",
+            "meaning": "I bought two return tickets.",
+            "who": "Leo"
+          },
+          {
+            "text": "Il nostro treno partiva dal binario sei alle dieci e venti.",
+            "meaning": "Our train was leaving from platform six at 10:20.",
+            "who": "Leo"
+          },
+          {
+            "text": "Ma io ho letto male e sono andato al binario sedici.",
+            "meaning": "But I misread it and went to platform sixteen.",
+            "who": "Leo"
+          },
+          {
+            "text": "Sono salito sul treno e mi sono seduto. Giulia non c'era.",
+            "meaning": "I got on the train and sat down. Giulia wasn't there.",
+            "who": "Leo"
+          },
+          {
+            "text": "Dopo dieci minuti è arrivato il controllore e ha guardato il mio biglietto.",
+            "meaning": "After ten minutes the ticket inspector came and looked at my ticket.",
+            "who": "Leo"
+          },
+          {
+            "text": "Mi ha detto che quel treno andava a Napoli, non a Firenze.",
+            "meaning": "He told me that train was going to Naples, not Florence.",
+            "who": "Leo"
+          },
+          {
+            "text": "Sono sceso alla prima stazione e ho aspettato un'ora.",
+            "meaning": "I got off at the first station and waited an hour.",
+            "who": "Leo"
+          },
+          {
+            "text": "Sono arrivato a Firenze con due ore di ritardo.",
+            "meaning": "I got to Florence two hours late.",
+            "who": "Leo"
+          },
+          {
+            "text": "Giulia mi aspettava in stazione. Rideva, ma non troppo.",
+            "meaning": "Giulia was waiting for me at the station. She was laughing, but not too much.",
+            "who": "Leo"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "salire",
+            "meaning": "to get on; to go up"
+          },
+          {
+            "word": "scendere",
+            "meaning": "to get off; to go down"
+          },
+          {
+            "word": "il controllore",
+            "meaning": "ticket inspector"
+          },
+          {
+            "word": "sbagliato",
+            "meaning": "wrong"
+          },
+          {
+            "word": "ridere",
+            "meaning": "to laugh"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r4.l5.e1",
+          "type": "mcq",
+          "prompt": "Dove voleva andare Leo?",
+          "options": [
+            "A Firenze.",
+            "A Napoli.",
+            "A Bologna."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l5.e2",
+          "type": "mcq",
+          "prompt": "Da quale binario partiva il suo treno?",
+          "options": [
+            "Dal binario sei.",
+            "Dal binario sedici.",
+            "Dal binario dieci."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l5.e3",
+          "type": "mcq",
+          "prompt": "Perché Leo ha preso il treno sbagliato?",
+          "options": [
+            "Perché ha letto male il binario.",
+            "Perché era in ritardo.",
+            "Perché non aveva il biglietto."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l5.e4",
+          "type": "mcq",
+          "prompt": "Chi gli ha detto che il treno andava a Napoli?",
+          "options": [
+            "Il controllore.",
+            "Giulia.",
+            "Un amico."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l5.e5",
+          "type": "mcq",
+          "prompt": "Che cosa ha fatto Leo dopo?",
+          "options": [
+            "È sceso alla prima stazione.",
+            "È andato a Napoli.",
+            "Ha comprato un altro biglietto."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r4.l5.e6",
+          "type": "mcq",
+          "prompt": "Con quanto ritardo è arrivato a Firenze?",
+          "options": [
+            "Con due ore di ritardo.",
+            "Con un'ora di ritardo.",
+            "Con dieci minuti di ritardo."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Binario sei. Binario sedici.",
+        "bottom": "One syllable. Two hours."
+      },
+      "newItems": []
+    }
+  ],
+  "factCheck": [
+    "Validation rules for Italian train tickets vary by ticket type and operator.",
+    "Testaccio market is a real market in Rome."
+  ]
+}
