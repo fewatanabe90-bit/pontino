@@ -34,6 +34,8 @@ test('the speaker button is available even without a device voice', async ({ pag
 });
 
 test('voices are saved in the background and play offline', async ({ page, context }) => {
+  // Saving every clip over a real connection takes a couple of minutes.
+  test.setTimeout(300_000);
   await page.addInitScript(() => {
     window.__playing = [];
     const play = HTMLMediaElement.prototype.play;

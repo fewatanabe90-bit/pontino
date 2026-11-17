@@ -76,21 +76,27 @@ export async function saveAudioOffline() {
       else void cache.delete(req);
     }
     pwa.audioSaved = have.size;
-    const todo = [...want.keys()].filter((u) => !have.has(u));
-    const worker = async () => {
-      for (let url = todo.pop(); url; url = todo.pop()) {
-        try {
-          const res = await fetch(url, { cache: 'no-cache' });
-          if (res.status === 200) {
-            await cache.put(url, res);
-            pwa.audioSaved++;
+    let todo = [...want.keys()].filter((u) => !have.has(u));
+    // The host sometimes answers "busy" when many clips are asked for at once: those are tried again.
+    for (let pass = 0; pass < 4 && todo.length; pass++) {
+      if (pass) await new Promise((r) => setTimeout(r, 3000 * pass));
+      const busy: string[] = [];
+      const worker = async () => {
+        for (let url = todo.pop(); url; url = todo.pop()) {
+          try {
+            const res = await fetch(url, { cache: 'no-cache' });
+            if (res.status === 200) {
+              await cache.put(url, res);
+              pwa.audioSaved++;
+            } else if (res.status >= 500 || res.status === 429) busy.push(url);
+          } catch {
+            return; // offline or out of space: try again next time the app opens
           }
-        } catch {
-          return; // offline or out of space: try again next time the app opens
         }
-      }
-    };
-    await Promise.all([worker(), worker(), worker(), worker()]);
+      };
+      await Promise.all([worker(), worker(), worker(), worker()]);
+      todo = busy;
+    }
   } catch {
     // Storage unavailable (private browsing): audio simply needs a connection.
   } finally {
