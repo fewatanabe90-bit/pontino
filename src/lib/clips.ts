@@ -92,6 +92,6 @@ export function clipJobs(units: Unit[], decks: Deck[]): ClipJob[] {
       if (l.passage) for (const e of l.exercises) add(u.lang, e.prompt);
     }
   }
-  for (const d of decks) for (const c of d.cards) add(d.lang, c.front);
+  for (const d of decks) for (const c of d.cards) add(d.lang, c.say ?? c.front);
   return [...jobs.values()];
 }

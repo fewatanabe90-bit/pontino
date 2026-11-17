@@ -1,4 +1,5 @@
 import creditsJson from '../../content/credits/photos.json';
+import catalogJson from '../../content/catalog.json';
 import type { Deck, PhotoCredit } from './schema';
 
 export const photoCredits = creditsJson as PhotoCredit[];
@@ -7,9 +8,12 @@ export const creditFor = (file: string | undefined): PhotoCredit | undefined => 
 /** Vocabulary decks are small, so they ship with the app instead of loading on demand. */
 const files = import.meta.glob<{ default: Deck }>('../../content/*/decks/deck-*.json', { eager: true });
 
+const unitOrder = (d: Deck) => (catalogJson as { id: string }[]).findIndex((u) => u.id === d.unit);
+
+/** Topic decks by id, then the kanji decks in the order of the units they belong to. */
 export const decks: Deck[] = Object.values(files)
   .map((m) => m.default)
-  .sort((a, b) => a.id.localeCompare(b.id));
+  .sort((a, b) => unitOrder(a) - unitOrder(b) || a.id.localeCompare(b.id));
 
 export const deckById = (id: string): Deck | undefined => decks.find((d) => d.id === id);
 

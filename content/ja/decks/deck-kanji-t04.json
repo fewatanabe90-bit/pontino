@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-t04",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-t04",
+  "title": "Kanji · Eating out",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-t04.01",
+      "front": "語",
+      "back": "language, word",
+      "note": "ご\n{英語|えいご} English",
+      "say": "{英語|えいご}"
+    },
+    {
+      "id": "ja-kanji-t04.02",
+      "front": "魚",
+      "back": "fish",
+      "note": "さかな\n{魚|さかな} fish",
+      "say": "{魚|さかな}"
+    },
+    {
+      "id": "ja-kanji-t04.03",
+      "front": "野",
+      "back": "field",
+      "note": "や\n{野菜|やさい} vegetables",
+      "say": "{野菜|やさい}"
+    },
+    {
+      "id": "ja-kanji-t04.04",
+      "front": "菜",
+      "back": "vegetable, greens",
+      "note": "さい\n{野菜|やさい} vegetables",
+      "say": "{野菜|やさい}"
+    },
+    {
+      "id": "ja-kanji-t04.05",
+      "front": "卵",
+      "back": "egg",
+      "note": "たまご\n{卵|たまご} egg",
+      "say": "{卵|たまご}"
+    },
+    {
+      "id": "ja-kanji-t04.06",
+      "front": "物",
+      "back": "thing",
+      "note": "もの\n{飲|の}み{物|もの} a drink",
+      "say": "{飲|の}み{物|もの}"
+    },
+    {
+      "id": "ja-kanji-t04.07",
+      "front": "無",
+      "back": "without, none",
+      "note": "む\n{無料|むりょう} free of charge",
+      "say": "{無料|むりょう}"
+    },
+    {
+      "id": "ja-kanji-t04.08",
+      "front": "料",
+      "back": "fee, charge",
+      "note": "りょう\n{無料|むりょう} free of charge",
+      "say": "{無料|むりょう}"
+    },
+    {
+      "id": "ja-kanji-t04.09",
+      "front": "別",
+      "back": "separate",
+      "note": "べつ\n{別々|べつべつ} separately",
+      "say": "{別々|べつべつ}"
+    },
+    {
+      "id": "ja-kanji-t04.10",
+      "front": "計",
+      "back": "measure, total",
+      "note": "けい\nお{会計|かいけい} the bill",
+      "say": "お{会計|かいけい}"
+    }
+  ]
+}

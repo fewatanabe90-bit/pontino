@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-t05",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-t05",
+  "title": "Kanji · At the hotel",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-t05.01",
+      "front": "予",
+      "back": "beforehand",
+      "note": "よ\n{予約|よやく} reservation",
+      "say": "{予約|よやく}"
+    },
+    {
+      "id": "ja-kanji-t05.02",
+      "front": "約",
+      "back": "promise",
+      "note": "やく\n{予約|よやく} reservation",
+      "say": "{予約|よやく}"
+    },
+    {
+      "id": "ja-kanji-t05.03",
+      "front": "階",
+      "back": "floor, storey",
+      "note": "かい\n{五階|ごかい} fifth floor · {一階|いっかい} ground floor (first floor)",
+      "say": "{五階|ごかい}、{一階|いっかい}"
+    },
+    {
+      "id": "ja-kanji-t05.04",
+      "front": "泊",
+      "back": "stay overnight",
+      "note": "はく · ぱく\n{二泊|にはく} two nights · {三泊|さんぱく} three nights",
+      "say": "{二泊|にはく}、{三泊|さんぱく}"
+    },
+    {
+      "id": "ja-kanji-t05.05",
+      "front": "荷",
+      "back": "load, luggage",
+      "note": "に\n{荷物|にもつ} luggage",
+      "say": "{荷物|にもつ}"
+    },
+    {
+      "id": "ja-kanji-t05.06",
+      "front": "呼",
+      "back": "call",
+      "note": "よ\n{呼|よ}んでください please call",
+      "say": "{呼|よ}んでください"
+    },
+    {
+      "id": "ja-kanji-t05.07",
+      "front": "湯",
+      "back": "hot water",
+      "note": "ゆ\nお{湯|ゆ} hot water",
+      "say": "お{湯|ゆ}"
+    },
+    {
+      "id": "ja-kanji-t05.08",
+      "front": "話",
+      "back": "talk",
+      "note": "わ\n{電話|でんわ} telephone",
+      "say": "{電話|でんわ}"
+    },
+    {
+      "id": "ja-kanji-t05.09",
+      "front": "万",
+      "back": "ten thousand",
+      "note": "まん\n{三万円|さんまんえん} 30,000 yen",
+      "say": "{三万円|さんまんえん}"
+    },
+    {
+      "id": "ja-kanji-t05.10",
+      "front": "歩",
+      "back": "walk",
+      "note": "ある\n{歩|ある}きます to walk",
+      "say": "{歩|ある}きます"
+    }
+  ]
+}

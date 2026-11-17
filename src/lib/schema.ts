@@ -125,6 +125,10 @@ export const DeckSchema = z.object({
   id: z.string().min(1),
   lang: LangSchema,
   icon: z.string(),
+  /** `kanji` decks teach single characters; every other deck teaches words and phrases. */
+  kind: z.enum(['kanji']).optional(),
+  /** The unit this deck belongs to. It opens once every lesson of that unit is finished. */
+  unit: z.string().optional(),
   /** Interests this deck speaks to; matching decks are offered first. */
   tags: z.array(InterestSchema).optional(),
   title: z.string().min(1),
@@ -137,6 +141,8 @@ export const DeckSchema = z.object({
         back: z.string().min(1),
         note: z.string().optional(),
         pt: z.string().optional(),
+        /** What the audio says when it is not the front itself: for a kanji, the words it appears in. Played with the answer. */
+        say: z.string().optional(),
         /** A photo under /public, credited in content/credits/photos.json. */
         image: z.string().optional(),
       }),

@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-t03",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-t03",
+  "title": "Kanji · Catching the right train",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-t03.01",
+      "front": "線",
+      "back": "line",
+      "note": "せん\n{二番線|にばんせん} platform 2 · {新幹線|しんかんせん} Shinkansen, bullet train",
+      "say": "{二番線|にばんせん}、{新幹線|しんかんせん}"
+    },
+    {
+      "id": "ja-kanji-t03.02",
+      "front": "番",
+      "back": "number",
+      "note": "ばん\n{何番線|なんばんせん} which platform",
+      "say": "{何番線|なんばんせん}"
+    },
+    {
+      "id": "ja-kanji-t03.03",
+      "front": "新",
+      "back": "new",
+      "note": "しん\n{新幹線|しんかんせん} Shinkansen, bullet train",
+      "say": "{新幹線|しんかんせん}"
+    },
+    {
+      "id": "ja-kanji-t03.04",
+      "front": "次",
+      "back": "next",
+      "note": "つぎ\n{次|つぎ} next",
+      "say": "{次|つぎ}"
+    },
+    {
+      "id": "ja-kanji-t03.05",
+      "front": "分",
+      "back": "minute",
+      "note": "ふん · ぷん\n{五分|ごふん} five minutes · {十分|じゅっぷん} ten minutes",
+      "say": "{五分|ごふん}、{十分|じゅっぷん}"
+    },
+    {
+      "id": "ja-kanji-t03.06",
+      "front": "半",
+      "back": "half",
+      "note": "はん\n{九時半|くじはん} half past nine",
+      "say": "{九時半|くじはん}"
+    },
+    {
+      "id": "ja-kanji-t03.07",
+      "front": "間",
+      "back": "interval, between",
+      "note": "かん\n{二時間|にじかん} two hours",
+      "say": "{二時間|にじかん}"
+    },
+    {
+      "id": "ja-kanji-t03.08",
+      "front": "乗",
+      "back": "ride, board",
+      "note": "の\n{乗|の}り{換|か}えます to change trains",
+      "say": "{乗|の}り{換|か}えます"
+    },
+    {
+      "id": "ja-kanji-t03.09",
+      "front": "止",
+      "back": "stop",
+      "note": "と\n{止|と}まります to stop",
+      "say": "{止|と}まります"
+    },
+    {
+      "id": "ja-kanji-t03.10",
+      "front": "席",
+      "back": "seat",
+      "note": "せき\n{自由席|じゆうせき} unreserved seat · {指定席|していせき} reserved seat",
+      "say": "{自由席|じゆうせき}、{指定席|していせき}"
+    }
+  ]
+}

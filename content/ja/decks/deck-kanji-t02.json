@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-t02",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-t02",
+  "title": "Kanji · At the konbini",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-t02.01",
+      "front": "袋",
+      "back": "bag",
+      "note": "ふくろ\n{袋|ふくろ} bag",
+      "say": "{袋|ふくろ}"
+    },
+    {
+      "id": "ja-kanji-t02.02",
+      "front": "肉",
+      "back": "meat",
+      "note": "にく\n{肉|にく} meat",
+      "say": "{肉|にく}"
+    },
+    {
+      "id": "ja-kanji-t02.03",
+      "front": "使",
+      "back": "use",
+      "note": "つか\n{使|つか}えますか can I use it?",
+      "say": "{使|つか}えますか"
+    },
+    {
+      "id": "ja-kanji-t02.04",
+      "front": "用",
+      "back": "use, purpose",
+      "note": "よう\n{利用|りよう} use",
+      "say": "{利用|りよう}"
+    },
+    {
+      "id": "ja-kanji-t02.05",
+      "front": "温",
+      "back": "warm",
+      "note": "あたた\n{温|あたた}めますか shall I warm it up?",
+      "say": "{温|あたた}めますか"
+    },
+    {
+      "id": "ja-kanji-t02.06",
+      "front": "払",
+      "back": "pay",
+      "note": "はら\n{払|はら}います to pay",
+      "say": "{払|はら}います"
+    },
+    {
+      "id": "ja-kanji-t02.07",
+      "front": "持",
+      "back": "hold, carry",
+      "note": "も\nお{持|も}ちですか do you have…? (polite)",
+      "say": "お{持|も}ちですか"
+    },
+    {
+      "id": "ja-kanji-t02.08",
+      "front": "毎",
+      "back": "every",
+      "note": "まい\n{毎朝|まいあさ} every morning",
+      "say": "{毎朝|まいあさ}"
+    },
+    {
+      "id": "ja-kanji-t02.09",
+      "front": "朝",
+      "back": "morning",
+      "note": "あさ\n{毎朝|まいあさ} every morning",
+      "say": "{毎朝|まいあさ}"
+    },
+    {
+      "id": "ja-kanji-t02.10",
+      "front": "四",
+      "back": "four",
+      "note": "よん · よっ\n{四百円|よんひゃくえん} 400 yen · {四|よっ}つ four things",
+      "say": "{四百円|よんひゃくえん}、{四|よっ}つ"
+    }
+  ]
+}

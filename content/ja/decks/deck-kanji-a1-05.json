@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-a1-05",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-a1-05",
+  "title": "Kanji · Plans and wishes",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-a1-05.01",
+      "front": "山",
+      "back": "mountain",
+      "note": "さん\n{富士山|ふじさん} Mount Fuji",
+      "say": "{富士山|ふじさん}"
+    },
+    {
+      "id": "ja-kanji-a1-05.02",
+      "front": "登",
+      "back": "climb",
+      "note": "のぼ\n{登|のぼ}ります to climb",
+      "say": "{登|のぼ}ります"
+    },
+    {
+      "id": "ja-kanji-a1-05.03",
+      "front": "写",
+      "back": "copy",
+      "note": "しゃ\n{写真|しゃしん} photo",
+      "say": "{写真|しゃしん}"
+    },
+    {
+      "id": "ja-kanji-a1-05.04",
+      "front": "真",
+      "back": "true",
+      "note": "しん\n{写真|しゃしん} photo",
+      "say": "{写真|しゃしん}"
+    },
+    {
+      "id": "ja-kanji-a1-05.05",
+      "front": "読",
+      "back": "read",
+      "note": "よ\n{読|よ}みます to read",
+      "say": "{読|よ}みます"
+    },
+    {
+      "id": "ja-kanji-a1-05.06",
+      "front": "飯",
+      "back": "cooked rice, meal",
+      "note": "はん\nご{飯|はん} rice, a meal",
+      "say": "ご{飯|はん}"
+    },
+    {
+      "id": "ja-kanji-a1-05.07",
+      "front": "週",
+      "back": "week",
+      "note": "しゅう\n{週末|しゅうまつ} weekend",
+      "say": "{週末|しゅうまつ}"
+    },
+    {
+      "id": "ja-kanji-a1-05.08",
+      "front": "月",
+      "back": "moon, month",
+      "note": "げつ\n{月曜日|げつようび} Monday",
+      "say": "{月曜日|げつようび}"
+    },
+    {
+      "id": "ja-kanji-a1-05.09",
+      "front": "火",
+      "back": "fire",
+      "note": "か\n{火曜日|かようび} Tuesday",
+      "say": "{火曜日|かようび}"
+    },
+    {
+      "id": "ja-kanji-a1-05.10",
+      "front": "木",
+      "back": "tree, wood",
+      "note": "もく\n{木曜日|もくようび} Thursday",
+      "say": "{木曜日|もくようび}"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-a1-01",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-a1-01",
+  "title": "Kanji · Meeting people",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-a1-01.01",
+      "front": "人",
+      "back": "person",
+      "note": "ひと · じん\n{人|ひと} person · {日本人|にほんじん} Japanese person",
+      "say": "{人|ひと}、{日本人|にほんじん}"
+    },
+    {
+      "id": "ja-kanji-a1-01.02",
+      "front": "日",
+      "back": "sun, day",
+      "note": "に\n{日本|にほん} Japan",
+      "say": "{日本|にほん}"
+    },
+    {
+      "id": "ja-kanji-a1-01.03",
+      "front": "本",
+      "back": "origin, book",
+      "note": "ほん\n{日本|にほん} Japan",
+      "say": "{日本|にほん}"
+    },
+    {
+      "id": "ja-kanji-a1-01.04",
+      "front": "学",
+      "back": "learning",
+      "note": "がく\n{学生|がくせい} student · {大学|だいがく} university",
+      "say": "{学生|がくせい}、{大学|だいがく}"
+    },
+    {
+      "id": "ja-kanji-a1-01.05",
+      "front": "生",
+      "back": "life, birth",
+      "note": "せい\n{学生|がくせい} student · {先生|せんせい} teacher",
+      "say": "{学生|がくせい}、{先生|せんせい}"
+    },
+    {
+      "id": "ja-kanji-a1-01.06",
+      "front": "大",
+      "back": "big",
+      "note": "だい\n{大学|だいがく} university",
+      "say": "{大学|だいがく}"
+    },
+    {
+      "id": "ja-kanji-a1-01.07",
+      "front": "国",
+      "back": "country",
+      "note": "くに\n{国|くに} country",
+      "say": "{国|くに}"
+    },
+    {
+      "id": "ja-kanji-a1-01.08",
+      "front": "何",
+      "back": "what",
+      "note": "なん · なに\n{何|なん}ですか what is it?",
+      "say": "{何|なん}ですか"
+    },
+    {
+      "id": "ja-kanji-a1-01.09",
+      "front": "私",
+      "back": "I, me",
+      "note": "わたし\n{私|わたし} I",
+      "say": "{私|わたし}"
+    },
+    {
+      "id": "ja-kanji-a1-01.10",
+      "front": "中",
+      "back": "inside, middle",
+      "note": "なか\n{中|なか} inside · {中村|なかむら} Nakamura (a family name)",
+      "say": "{中|なか}、{中村|なかむら}"
+    }
+  ]
+}

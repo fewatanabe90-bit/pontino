@@ -4,7 +4,9 @@
   import Pontino from '../design/Pontino.svelte';
   import { db } from '../lib/db';
   import { decks } from '../lib/decks';
+  import { unitEntry } from '../lib/content';
   import { forYouFirst, matches } from '../lib/interests';
+  import { unitFinished, writtenUnits } from '../lib/progress';
   import { rate, Rating, type Grade, type SrsCard } from '../lib/srs';
   import { addXp, app, markPractice, refreshDue } from '../lib/state.svelte';
   import TopBar from './TopBar.svelte';
@@ -24,7 +26,16 @@
   const due = $derived(app.due[app.lang]);
   const card = $derived(cards[0]);
 
-  const myDecks = $derived(forYouFirst(decks.filter((d) => d.lang === app.lang), app.interests));
+  const myDecks = $derived(forYouFirst(decks.filter((d) => d.lang === app.lang && !d.unit), app.interests));
+  /** Kanji decks, one per unit, each open once its unit is finished. */
+  const kanjiDecks = $derived(decks.filter((d) => d.lang === app.lang && d.unit));
+  let finished = $state<Set<string>>(new Set());
+  $effect(() => {
+    const done = app.lessons;
+    void writtenUnits(app.lang).then((units) => (finished = new Set(units.filter((u) => unitFinished(u, done)).map((u) => u.id))));
+  });
+  const openKanji = $derived(kanjiDecks.filter((d) => finished.has(d.unit!)));
+  const lockedKanji = $derived(kanjiDecks.filter((d) => !finished.has(d.unit!)));
   let learned = $state<Record<string, number>>({});
   let mistakeCount = $state(0);
   let collected = $state(0);
@@ -35,7 +46,7 @@
     void db.mistakes.where('lang').equals(app.lang).count().then((n) => (mistakeCount = n));
   });
   $effect(() => {
-    for (const d of myDecks) {
+    for (const d of [...myDecks, ...kanjiDecks]) {
       void db.cards.where('itemId').startsWith(`${d.id}.`).count().then((n) => (learned[d.id] = n));
     }
   });
@@ -74,8 +85,9 @@
       <div class="sub" style="margin-left:auto">{cards.length} left</div>
     </div>
     <div class="card face">
-      <div class="tl big"><Ruby text={card.front} /></div>
-      <Speak text={card.front} />
+      <div class="tl big" class:kanji={!!card.say}><Ruby text={card.front} /></div>
+      <!-- A kanji's audio says the words it appears in, so it belongs to the answer. -->
+      {#if !card.say || shown}<Speak text={card.say ?? card.front} />{/if}
       {#if shown}
         <hr />
         <p class="back">{card.back}</p>
@@ -145,6 +157,32 @@
           </span>
         </a>
       {/each}
+      {#if kanjiDecks.length}
+        <h2 class="h" style="margin-top:6px">Kanji decks</h2>
+        <p class="sub">One per unit, with the kanji you met there. Each opens when you finish its unit.</p>
+        {#each openKanji as d (d.id)}
+          {@const n = learned[d.id] ?? 0}
+          <a class="card deck" href="#/deck/{d.id}">
+            <span class="ico kj" aria-hidden="true">{d.icon}</span>
+            <span class="body">
+              <span class="h">{d.title}</span>
+              <span class="kanji-row tl">{d.cards.map((c) => c.front).join(' ')}</span>
+              <span class="bar"><i style="width:{(n / d.cards.length) * 100}%"></i></span>
+              <span class="sub">{n} of {d.cards.length} kanji learned</span>
+            </span>
+          </a>
+        {/each}
+        {#if lockedKanji[0]}
+          {@const d = lockedKanji[0]}
+          <div class="card deck locked">
+            <span class="ico" aria-hidden="true">🔒</span>
+            <span class="body">
+              <span class="h">{d.title}</span>
+              <span class="sub">Finish "{unitEntry(d.unit!)?.title}" to open it{lockedKanji.length > 1 ? `. ${lockedKanji.length - 1} more deck${lockedKanji.length === 2 ? '' : 's'} follow${lockedKanji.length === 2 ? 's' : ''} with the later units.` : '.'}</span>
+            </span>
+          </div>
+        {/if}
+      {/if}
     {/if}
   </div>
 {/if}
@@ -172,8 +210,26 @@
   .big {
     font-size: 30px;
   }
+  .big.kanji {
+    font-size: 88px;
+    line-height: 1.2;
+  }
   .small {
     font-size: 16px;
+  }
+  .ico.kj {
+    font-weight: 900;
+    font-size: 26px;
+    color: var(--brand);
+  }
+  .kanji-row {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .locked {
+    box-shadow: none;
+    opacity: 0.7;
   }
   .back {
     font-size: 18px;

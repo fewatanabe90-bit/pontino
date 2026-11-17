@@ -93,6 +93,32 @@ describe('decks', () => {
   });
 });
 
+describe('kanji decks', () => {
+  const kanji = deckFiles(ROOT)
+    .map((f) => DeckSchema.parse(read(f)))
+    .filter((d) => d.kind === 'kanji');
+  const unitText = (id: string) => readFileSync(join(ROOT, `${catalog.find((u) => u.id === id)!.file}.json`), 'utf8');
+
+  it('exist for every written Japanese unit', () => {
+    const want = catalog.filter((u) => u.lang === 'ja' && u.file).map((u) => u.id);
+    expect(kanji.map((d) => d.unit).sort()).toEqual(want.sort());
+  });
+
+  it('teach one kanji per card, only with words from their own unit, and never the same kanji twice', () => {
+    const fronts = kanji.flatMap((d) => d.cards.map((c) => c.front));
+    expect(new Set(fronts).size).toBe(fronts.length);
+    for (const d of kanji) {
+      const text = unitText(d.unit!);
+      for (const c of d.cards) {
+        expect(c.front, c.id).toMatch(/^\p{Script=Han}$/u);
+        expect(c.say, `${c.id}: needs the words to say`).toBeTruthy();
+        expect(c.say, `${c.id}: the words must contain the kanji`).toContain(c.front);
+        for (const word of c.say!.match(/\{[^}]+\}/g) ?? []) expect(text.includes(word), `${c.id}: ${word} is not in ${d.unit}`).toBe(true);
+      }
+    }
+  });
+});
+
 describe('photos', () => {
   const credits = PhotoCreditSchema.array().parse(read(join(ROOT, 'credits', 'photos.json')));
   const used = deckFiles(ROOT).flatMap((f) => DeckSchema.parse(read(f)).cards.flatMap((c) => (c.image ? [c.image] : [])));

@@ -3,8 +3,10 @@
   import Ruby from '../components/Ruby.svelte';
   import Speak from '../components/Speak.svelte';
   import Pontino from '../design/Pontino.svelte';
+  import { loadUnit, unitEntry } from '../lib/content';
   import { db } from '../lib/db';
   import { creditFor, deckById, SESSION_SIZE } from '../lib/decks';
+  import { unitFinished } from '../lib/progress';
   import type { Deck } from '../lib/schema';
   import { sfx } from '../lib/sfx';
   import { newCard, rate, Rating } from '../lib/srs';
@@ -21,13 +23,19 @@
   let remaining = $state(0);
   /** `new` adds cards to the review queue; `browse` just flips through a finished deck. */
   let mode = $state<'new' | 'browse'>('new');
-  let phase = $state<'loading' | 'study' | 'done'>('loading');
+  let phase = $state<'loading' | 'locked' | 'study' | 'done'>('loading');
+  /** The unit that has to be finished before this deck opens. */
+  const gate = $derived(deck?.unit ? unitEntry(deck.unit) : undefined);
   const card = $derived(queue[0]);
   const credit = $derived(creditFor(card?.image));
 
   async function begin() {
     if (!deck) return;
     if (app.lang !== deck.lang) setSetting('lang', deck.lang);
+    if (gate?.file && !unitFinished(await loadUnit(gate.file), app.lessons)) {
+      phase = 'locked';
+      return;
+    }
     const have = new Set(await db.cards.where('itemId').startsWith(`${deck.id}.`).primaryKeys());
     const fresh = deck.cards.filter((c) => !have.has(`${c.id}:recognise`));
     mode = fresh.length ? 'new' : 'browse';
@@ -45,14 +53,15 @@
     };
   });
 
-  // Say each card as it comes up.
+  // Say each card as it comes up. A kanji's words would give the answer away, so they wait for the flip.
   $effect(() => {
-    if (phase === 'study' && card && deck && app.autoplay) speak(card.front, deck.lang, app.rate);
+    if (phase === 'study' && card && deck && app.autoplay && !card.say) speak(card.front, deck.lang, app.rate);
   });
 
   function flip() {
     flipped = !flipped;
     sfx.tick();
+    if (flipped && card?.say && deck && app.autoplay) speak(card.say, deck.lang, app.rate);
   }
 
   async function answer(known: boolean) {
@@ -61,7 +70,7 @@
     flipped = false;
     if (mode === 'new') {
       const note = [current.note, current.pt && `🇧🇷 ${current.pt}`].filter(Boolean).join('\n') || undefined;
-      const fresh = newCard({ itemId: current.id, lang: deck.lang, unitId: deck.id, front: current.front, back: current.back, note });
+      const fresh = newCard({ itemId: current.id, lang: deck.lang, unitId: deck.id, front: current.front, back: current.back, note, ...(current.say ? { say: current.say } : {}) });
       await db.cards.put(rate(fresh, known ? Rating.Good : Rating.Again));
     }
     if (known) {
@@ -85,6 +94,14 @@
     <Pontino mood="think" />
     <p class="h">That deck does not exist.</p>
     <a class="btn" href="#/review">Back</a>
+  </div>
+{:else if phase === 'locked'}
+  <div class="screen center">
+    <Pontino mood="think" />
+    <h1 class="h1">🔒 {deck.title}</h1>
+    <p class="sub">Finish every lesson of "{gate?.title}" first. Then each kanji here is one you have already seen in a sentence.</p>
+    <a class="btn" href="#/learn">Go to the lessons</a>
+    <a class="btn ghost" href="#/review">Back to decks</a>
   </div>
 {:else if phase === 'done'}
   <div class="screen center">
@@ -111,19 +128,19 @@
         <button class="flash" class:flipped type="button" onclick={flip} aria-label={flipped ? 'Show the front' : 'Flip the card to see the meaning'}>
           <span class="face front" class:photo={!!card.image}>
             {#if card.image}<img src="./{card.image}" alt="A real sign showing this word" loading="eager" />{/if}
-            <span class="tl word"><Ruby text={card.front} /></span>
+            <span class="tl word" class:kanji={!!card.say}><Ruby text={card.front} /></span>
             <span class="hint">Tap to flip</span>
           </span>
           <span class="face back" aria-hidden={!flipped}>
             <span class="meaning">{card.back}</span>
-            {#if card.note}<span class="tl extra"><Ruby text={card.note} /></span>{/if}
+            {#if card.note}{#each card.note.split('\n') as n}<span class="tl extra"><Ruby text={n} /></span>{/each}{/if}
             {#if card.pt}<span class="pt">🇧🇷 {card.pt}</span>{/if}
             {#if credit}<span class="credit">Photo: {credit.author} · {credit.licence} · Wikimedia Commons</span>{/if}
           </span>
         </button>
       </div>
     {/key}
-    <div class="row" style="justify-content:center"><Speak text={card.front} /></div>
+    <div class="row speak" style="justify-content:center">{#if !card.say || flipped}<Speak text={card.say ?? card.front} />{/if}</div>
   </div>
   <div class="foot">
     {#if flipped}
@@ -221,6 +238,13 @@
   .word {
     font-size: 34px;
     line-height: 1.6;
+  }
+  .word.kanji {
+    font-size: 96px;
+    line-height: 1.2;
+  }
+  .speak {
+    min-height: 48px;
   }
   .hint {
     font-size: 13px;

@@ -13,6 +13,8 @@ export interface SrsCard {
   front: string;
   back: string;
   note?: string;
+  /** What the audio says when it is not the front itself (kanji cards). It belongs to the answer, so it plays after the flip. */
+  say?: string;
   /** Milliseconds, duplicated from `fsrs.due` so it can be indexed. */
   due: number;
   fsrs: Card;
@@ -21,7 +23,7 @@ export interface SrsCard {
 const scheduler = fsrs(generatorParameters({ enable_fuzz: true }));
 
 export function newCard(
-  base: Pick<SrsCard, 'itemId' | 'lang' | 'unitId' | 'front' | 'back' | 'note'>,
+  base: Pick<SrsCard, 'itemId' | 'lang' | 'unitId' | 'front' | 'back' | 'note' | 'say'>,
   now: Date = new Date(),
 ): SrsCard {
   const card = createEmptyCard(now);

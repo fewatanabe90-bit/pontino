@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-t01",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-t01",
+  "title": "Kanji · Landing in Japan",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-t01.01",
+      "front": "出",
+      "back": "go out, exit",
+      "note": "で\n{出口|でぐち} exit",
+      "say": "{出口|でぐち}"
+    },
+    {
+      "id": "ja-kanji-t01.02",
+      "front": "入",
+      "back": "enter",
+      "note": "いり\n{入口|いりぐち} entrance",
+      "say": "{入口|いりぐち}"
+    },
+    {
+      "id": "ja-kanji-t01.03",
+      "front": "口",
+      "back": "mouth, opening",
+      "note": "ぐち\n{出口|でぐち} exit · {入口|いりぐち} entrance",
+      "say": "{出口|でぐち}、{入口|いりぐち}"
+    },
+    {
+      "id": "ja-kanji-t01.04",
+      "front": "円",
+      "back": "yen",
+      "note": "えん\n{千円|せんえん} 1,000 yen",
+      "say": "{千円|せんえん}"
+    },
+    {
+      "id": "ja-kanji-t01.05",
+      "front": "百",
+      "back": "hundred",
+      "note": "ひゃく · びゃく · ぴゃく\n{百|ひゃく} 100 · {三百|さんびゃく} 300 · {八百|はっぴゃく} 800",
+      "say": "{百|ひゃく}、{三百|さんびゃく}、{八百|はっぴゃく}"
+    },
+    {
+      "id": "ja-kanji-t01.06",
+      "front": "千",
+      "back": "thousand",
+      "note": "せん · ぜん\n{千|せん} 1,000 · {三千|さんぜん} 3,000",
+      "say": "{千|せん}、{三千|さんぜん}"
+    },
+    {
+      "id": "ja-kanji-t01.07",
+      "front": "水",
+      "back": "water",
+      "note": "みず\n{水|みず} water",
+      "say": "{水|みず}"
+    },
+    {
+      "id": "ja-kanji-t01.08",
+      "front": "金",
+      "back": "money, gold",
+      "note": "きん\n{現金|げんきん} cash",
+      "say": "{現金|げんきん}"
+    },
+    {
+      "id": "ja-kanji-t01.09",
+      "front": "店",
+      "back": "shop",
+      "note": "みせ\n{店|みせ} shop",
+      "say": "{店|みせ}"
+    },
+    {
+      "id": "ja-kanji-t01.10",
+      "front": "下",
+      "back": "below, under",
+      "note": "か\n{地下|ちか} underground, basement",
+      "say": "{地下|ちか}"
+    }
+  ]
+}

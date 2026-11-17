@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-a1-04",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-a1-04",
+  "title": "Kanji · What's it like?",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-a1-04.01",
+      "front": "暑",
+      "back": "hot (weather)",
+      "note": "あつ\n{暑|あつ}い hot",
+      "say": "{暑|あつ}い"
+    },
+    {
+      "id": "ja-kanji-a1-04.02",
+      "front": "寒",
+      "back": "cold (weather)",
+      "note": "さむ\n{寒|さむ}い cold",
+      "say": "{寒|さむ}い"
+    },
+    {
+      "id": "ja-kanji-a1-04.03",
+      "front": "高",
+      "back": "tall, expensive",
+      "note": "たか\n{高|たか}い expensive, tall",
+      "say": "{高|たか}い"
+    },
+    {
+      "id": "ja-kanji-a1-04.04",
+      "front": "安",
+      "back": "cheap, safe",
+      "note": "やす\n{安|やす}い cheap",
+      "say": "{安|やす}い"
+    },
+    {
+      "id": "ja-kanji-a1-04.05",
+      "front": "古",
+      "back": "old",
+      "note": "ふる\n{古|ふる}い old",
+      "say": "{古|ふる}い"
+    },
+    {
+      "id": "ja-kanji-a1-04.06",
+      "front": "町",
+      "back": "town",
+      "note": "まち\n{町|まち} town",
+      "say": "{町|まち}"
+    },
+    {
+      "id": "ja-kanji-a1-04.07",
+      "front": "寺",
+      "back": "temple",
+      "note": "てら\nお{寺|てら} temple",
+      "say": "お{寺|てら}"
+    },
+    {
+      "id": "ja-kanji-a1-04.08",
+      "front": "好",
+      "back": "like",
+      "note": "す\n{好|す}きです I like it",
+      "say": "{好|す}きです"
+    },
+    {
+      "id": "ja-kanji-a1-04.09",
+      "front": "天",
+      "back": "sky, heaven",
+      "note": "てん\n{天気|てんき} weather",
+      "say": "{天気|てんき}"
+    },
+    {
+      "id": "ja-kanji-a1-04.10",
+      "front": "気",
+      "back": "spirit, air",
+      "note": "き\n{天気|てんき} weather",
+      "say": "{天気|てんき}"
+    }
+  ]
+}

@@ -40,6 +40,7 @@
   function flip() {
     flipped = !flipped;
     sfx.tick();
+    if (flipped && current?.say && app.autoplay) speak(current.say, app.lang, app.rate);
   }
   function answer(known: boolean) {
     if (!queue) return;
@@ -52,9 +53,9 @@
     stopSpeaking();
     queue = null;
   }
-  // Say each card as it comes up.
+  // Say each card as it comes up. A kanji's words would give the answer away, so they wait for the flip.
   $effect(() => {
-    if (current && app.autoplay) speak(current.front, app.lang, app.rate);
+    if (current && app.autoplay && !current.say) speak(current.front, app.lang, app.rate);
   });
 
   $effect(() => {
@@ -104,7 +105,7 @@
       <div class="stage">
         <button class="flash" class:flipped type="button" onclick={flip} aria-label={flipped ? 'Show the front' : 'Flip the card to see the meaning'}>
           <span class="face fr">
-            <span class="tl big"><Ruby text={current.front} /></span>
+            <span class="tl big" class:kanji={!!current.say}><Ruby text={current.front} /></span>
             <span class="hint">Tap to flip</span>
           </span>
           <span class="face bk" aria-hidden={!flipped}>
@@ -114,7 +115,7 @@
         </button>
       </div>
     {/key}
-    <div class="row" style="justify-content:center"><Speak text={current.front} /></div>
+    <div class="row speak" style="justify-content:center">{#if !current.say || flipped}<Speak text={current.say ?? current.front} />{/if}</div>
   </div>
   <div class="foot">
     {#if flipped}
@@ -169,7 +170,7 @@
                 <span class="sub when">{when(c)}</span>
               {/if}
             </button>
-            <Speak text={c.front} />
+            <Speak text={c.say ?? c.front} />
           </div>
         {/each}
       </div>
@@ -240,6 +241,13 @@
   .big {
     font-size: 34px;
     line-height: 1.6;
+  }
+  .big.kanji {
+    font-size: 96px;
+    line-height: 1.2;
+  }
+  .speak {
+    min-height: 48px;
   }
   .hint {
     font-size: 13px;

@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-a1-03",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-a1-03",
+  "title": "Kanji · Finding things and people",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-a1-03.01",
+      "front": "猫",
+      "back": "cat",
+      "note": "ねこ\n{猫|ねこ} cat",
+      "say": "{猫|ねこ}"
+    },
+    {
+      "id": "ja-kanji-a1-03.02",
+      "front": "犬",
+      "back": "dog",
+      "note": "いぬ\n{犬|いぬ} dog",
+      "say": "{犬|いぬ}"
+    },
+    {
+      "id": "ja-kanji-a1-03.03",
+      "front": "上",
+      "back": "above, on top",
+      "note": "うえ\n{上|うえ} on, above",
+      "say": "{上|うえ}"
+    },
+    {
+      "id": "ja-kanji-a1-03.04",
+      "front": "近",
+      "back": "near",
+      "note": "ちか\n{近|ちか}く nearby",
+      "say": "{近|ちか}く"
+    },
+    {
+      "id": "ja-kanji-a1-03.05",
+      "front": "園",
+      "back": "garden, park",
+      "note": "えん\n{公園|こうえん} park",
+      "say": "{公園|こうえん}"
+    },
+    {
+      "id": "ja-kanji-a1-03.06",
+      "front": "銀",
+      "back": "silver",
+      "note": "ぎん\n{銀行|ぎんこう} bank",
+      "say": "{銀行|ぎんこう}"
+    },
+    {
+      "id": "ja-kanji-a1-03.07",
+      "front": "家",
+      "back": "house, family",
+      "note": "か\n{家族|かぞく} family",
+      "say": "{家族|かぞく}"
+    },
+    {
+      "id": "ja-kanji-a1-03.08",
+      "front": "子",
+      "back": "child",
+      "note": "こ\n{子|こ}ども child",
+      "say": "{子|こ}ども"
+    },
+    {
+      "id": "ja-kanji-a1-03.09",
+      "front": "小",
+      "back": "small",
+      "note": "ちい\n{小|ちい}さい small",
+      "say": "{小|ちい}さい"
+    },
+    {
+      "id": "ja-kanji-a1-03.10",
+      "front": "局",
+      "back": "office, bureau",
+      "note": "きょく\n{郵便局|ゆうびんきょく} post office",
+      "say": "{郵便局|ゆうびんきょく}"
+    }
+  ]
+}

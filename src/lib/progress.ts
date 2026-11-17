@@ -28,4 +28,8 @@ export function nextLesson(units: Unit[], done: Record<string, LessonProgress>):
   return null;
 }
 
+/** Has every lesson of this unit been finished? */
+export const unitFinished = (unit: Unit, done: Record<string, LessonProgress>): boolean =>
+  unit.lessons.every((l) => done[l.id]?.status === 'done');
+
 export const lessonHref = (unitId: string, lessonId: string) => `#/lesson/${unitId}/${lessonId}`;

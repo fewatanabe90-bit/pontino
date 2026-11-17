@@ -1,0 +1,81 @@
+{
+  "id": "ja-kanji-a1-02",
+  "lang": "ja",
+  "icon": "漢",
+  "kind": "kanji",
+  "unit": "ja-a1-02",
+  "title": "Kanji · Match day",
+  "description": "10 kanji from this unit, to recognise. Each one comes with the reading and the word you met it in.",
+  "cards": [
+    {
+      "id": "ja-kanji-a1-02.01",
+      "front": "見",
+      "back": "see, watch",
+      "note": "み\n{見|み}ます to watch, to see",
+      "say": "{見|み}ます"
+    },
+    {
+      "id": "ja-kanji-a1-02.02",
+      "front": "飲",
+      "back": "drink",
+      "note": "の\n{飲|の}みます to drink",
+      "say": "{飲|の}みます"
+    },
+    {
+      "id": "ja-kanji-a1-02.03",
+      "front": "買",
+      "back": "buy",
+      "note": "か\n{買|か}います to buy",
+      "say": "{買|か}います"
+    },
+    {
+      "id": "ja-kanji-a1-02.04",
+      "front": "食",
+      "back": "eat",
+      "note": "た\n{食|た}べます to eat",
+      "say": "{食|た}べます"
+    },
+    {
+      "id": "ja-kanji-a1-02.05",
+      "front": "行",
+      "back": "go",
+      "note": "い\n{行|い}きます to go",
+      "say": "{行|い}きます"
+    },
+    {
+      "id": "ja-kanji-a1-02.06",
+      "front": "帰",
+      "back": "return home",
+      "note": "かえ\n{帰|かえ}りました went home",
+      "say": "{帰|かえ}りました"
+    },
+    {
+      "id": "ja-kanji-a1-02.07",
+      "front": "時",
+      "back": "time, o'clock",
+      "note": "じ\n{七時|しちじ} seven o'clock · {何時|なんじ} what time",
+      "say": "{七時|しちじ}、{何時|なんじ}"
+    },
+    {
+      "id": "ja-kanji-a1-02.08",
+      "front": "駅",
+      "back": "station",
+      "note": "えき\n{駅|えき} station",
+      "say": "{駅|えき}"
+    },
+    {
+      "id": "ja-kanji-a1-02.09",
+      "front": "電",
+      "back": "electricity",
+      "note": "でん\n{電車|でんしゃ} train",
+      "say": "{電車|でんしゃ}"
+    },
+    {
+      "id": "ja-kanji-a1-02.10",
+      "front": "車",
+      "back": "vehicle, car",
+      "note": "しゃ\n{電車|でんしゃ} train",
+      "say": "{電車|でんしゃ}"
+    }
+  ]
+}
