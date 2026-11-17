@@ -97,7 +97,8 @@
       <div class="ring" style="--p:{goal}">{goal}%</div>
       <div>
         <div class="h">Daily goal</div>
-        <div class="sub">{minutes} / {DAILY_MINUTES} min today</div>
+        <!-- Both lines carry their language's name, the selected course first, so neither can be read as the other. -->
+        <div class="sub now">{app.lang === 'ja' ? '日本語' : 'Italiano'}: {minutes} / {DAILY_MINUTES} min</div>
         <div class="sub">{other === 'ja' ? '日本語' : 'Italiano'}: {otherMinutes} / {DAILY_MINUTES} min</div>
       </div>
     </div>
@@ -126,6 +127,10 @@
 </div>
 
 <style>
+  .now {
+    color: var(--ink);
+    font-weight: 800;
+  }
   .two {
     display: grid;
     grid-template-columns: 1fr 1fr;
