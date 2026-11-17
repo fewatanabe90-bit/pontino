@@ -769,6 +769,315 @@
         "it-r3.p-tuttobene",
         "it-r3.v-buonissimo"
       ]
+    },
+    {
+      "id": "it-r3.l4",
+      "title": "Lettura: Una trattoria a Trastevere",
+      "canDo": "I can read a short text and answer questions about it in Italian.",
+      "intro": {
+        "art": "📖🍷🧆",
+        "scene": "Leo scrive una recensione della cena di ieri. Leggi, ascolta e poi rispondi.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "Ieri sera siamo andati in una trattoria a Trastevere.",
+            "meaning": "Last night we went to a trattoria in Trastevere.",
+            "who": "Leo"
+          },
+          {
+            "text": "Il posto è piccolo e mi piace molto, perché è tranquillo.",
+            "meaning": "The place is small and I like it a lot, because it's quiet.",
+            "who": "Leo"
+          },
+          {
+            "text": "Come antipasto abbiamo preso i carciofi e li abbiamo divisi.",
+            "meaning": "As a starter we had the artichokes and shared them.",
+            "who": "Leo"
+          },
+          {
+            "text": "La carbonara è piaciuta moltissimo a Giulia.",
+            "meaning": "Giulia liked the carbonara very much.",
+            "who": "Leo"
+          },
+          {
+            "text": "Io ho scelto le polpette, ma non mi sono piaciute: erano troppo salate.",
+            "meaning": "I chose the meatballs, but I didn't like them: they were too salty.",
+            "who": "Leo"
+          },
+          {
+            "text": "Il vino della casa era buono e lo consiglio a tutti.",
+            "meaning": "The house wine was good and I recommend it to everyone.",
+            "who": "Leo"
+          },
+          {
+            "text": "Alla fine abbiamo preso un dolce e l'abbiamo diviso.",
+            "meaning": "At the end we had a dessert and shared it.",
+            "who": "Leo"
+          },
+          {
+            "text": "Il conto era giusto: quaranta euro in due.",
+            "meaning": "The bill was fair: forty euros for two.",
+            "who": "Leo"
+          },
+          {
+            "text": "Voglio tornare presto!",
+            "meaning": "I want to go back soon!",
+            "who": "Leo"
+          }
+        ],
+        "glossary": [
+          {
+            "word": "l'antipasto",
+            "meaning": "starter"
+          },
+          {
+            "word": "le polpette",
+            "meaning": "meatballs"
+          },
+          {
+            "word": "salato",
+            "meaning": "salty"
+          },
+          {
+            "word": "giusto",
+            "meaning": "fair, right"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r3.l4.e1",
+          "type": "mcq",
+          "prompt": "Perché a Leo piace il posto?",
+          "options": [
+            "Perché è piccolo e tranquillo.",
+            "Perché è grande e moderno.",
+            "Perché costa poco."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l4.e2",
+          "type": "mcq",
+          "prompt": "Che cosa hanno preso come antipasto?",
+          "options": [
+            "I carciofi.",
+            "Le polpette.",
+            "La carbonara."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l4.e3",
+          "type": "mcq",
+          "prompt": "A chi è piaciuta la carbonara?",
+          "options": [
+            "A Giulia.",
+            "A Leo.",
+            "Al cameriere."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l4.e4",
+          "type": "mcq",
+          "prompt": "Perché a Leo non sono piaciute le polpette?",
+          "options": [
+            "Perché erano troppo salate.",
+            "Perché erano fredde.",
+            "Perché erano troppo pesanti."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l4.e5",
+          "type": "mcq",
+          "prompt": "Che cosa consiglia Leo a tutti?",
+          "options": [
+            "Il vino della casa.",
+            "Le polpette.",
+            "Il dolce."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l4.e6",
+          "type": "mcq",
+          "prompt": "Quanto hanno pagato?",
+          "options": [
+            "Quaranta euro in due.",
+            "Quaranta euro a testa.",
+            "Quattordici euro in due."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Le polpette: non mi sono piaciute",
+        "bottom": "Also Leo: finished all of them"
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-r3.l5",
+      "title": "Racconto: Un invito a cena",
+      "canDo": "I can follow a short spoken story and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧🍽️🔥",
+        "scene": "Sara racconta la sua cena di sabato. Ascolta bene: che cosa è piaciuto, e che cosa è andato storto?",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "Sabato ho invitato a cena i miei amici Leo e Giulia.",
+            "meaning": "On Saturday I invited my friends Leo and Giulia to dinner.",
+            "who": "Sara"
+          },
+          {
+            "text": "A Leo piace la carne, ma a Giulia non piace: è vegetariana.",
+            "meaning": "Leo likes meat, but Giulia doesn't: she is vegetarian.",
+            "who": "Sara"
+          },
+          {
+            "text": "Allora ho preparato due piatti: le lasagne con la carne e le lasagne con le verdure.",
+            "meaning": "So I made two dishes: lasagne with meat and lasagne with vegetables.",
+            "who": "Sara"
+          },
+          {
+            "text": "Le ho messe in forno alle sette.",
+            "meaning": "I put them in the oven at seven.",
+            "who": "Sara"
+          },
+          {
+            "text": "Poi ho ricevuto un messaggio e l'ho letto: Leo era in ritardo.",
+            "meaning": "Then I got a message and read it: Leo was running late.",
+            "who": "Sara"
+          },
+          {
+            "text": "Mentre aspettavo, ho dimenticato le lasagne nel forno.",
+            "meaning": "While I was waiting, I forgot the lasagne in the oven.",
+            "who": "Sara"
+          },
+          {
+            "text": "Quelle con la carne erano bruciate!",
+            "meaning": "The ones with meat were burnt!",
+            "who": "Sara"
+          },
+          {
+            "text": "Per fortuna quelle con le verdure erano perfette.",
+            "meaning": "Luckily the ones with vegetables were perfect.",
+            "who": "Sara"
+          },
+          {
+            "text": "Sono piaciute a tutti, anche a Leo.",
+            "meaning": "Everyone liked them, even Leo.",
+            "who": "Sara"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "il forno",
+            "meaning": "oven"
+          },
+          {
+            "word": "le verdure",
+            "meaning": "vegetables"
+          },
+          {
+            "word": "dimenticare",
+            "meaning": "to forget"
+          },
+          {
+            "word": "bruciato",
+            "meaning": "burnt"
+          },
+          {
+            "word": "per fortuna",
+            "meaning": "luckily"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r3.l5.e1",
+          "type": "mcq",
+          "prompt": "Chi ha invitato Sara a cena?",
+          "options": [
+            "Leo e Giulia.",
+            "Marco e Giulia.",
+            "La sua famiglia."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l5.e2",
+          "type": "mcq",
+          "prompt": "Perché Sara ha preparato due piatti?",
+          "options": [
+            "Perché Giulia è vegetariana.",
+            "Perché Leo non mangia le verdure.",
+            "Perché aveva molta fame."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l5.e3",
+          "type": "mcq",
+          "prompt": "A che ora ha messo le lasagne in forno?",
+          "options": [
+            "Alle sette.",
+            "Alle otto.",
+            "Alle sei."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l5.e4",
+          "type": "mcq",
+          "prompt": "Che cosa diceva il messaggio?",
+          "options": [
+            "Leo era in ritardo.",
+            "Giulia non poteva venire.",
+            "Il forno non funzionava."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l5.e5",
+          "type": "mcq",
+          "prompt": "Che cosa è successo alle lasagne con la carne?",
+          "options": [
+            "Erano bruciate.",
+            "Sono piaciute a tutti.",
+            "Sono rimaste in frigo."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r3.l5.e6",
+          "type": "mcq",
+          "prompt": "Che cosa è piaciuto a tutti?",
+          "options": [
+            "Le lasagne con le verdure.",
+            "Le lasagne con la carne.",
+            "Il dolce."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Leo era in ritardo",
+        "bottom": "Official cause of the burnt lasagne, according to Sara"
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

@@ -6,7 +6,7 @@
   import { forYouFirst, matches } from '../lib/interests';
   import { lessonHref, nextLesson, writtenUnits } from '../lib/progress';
   import type { Unit } from '../lib/schema';
-  import { app, DAILY_XP_GOAL, setSetting } from '../lib/state.svelte';
+  import { app, DAILY_MINUTES, setSetting } from '../lib/state.svelte';
   import { localDay, streakStatus } from '../lib/streak';
   import InstallGuide from './InstallGuide.svelte';
   import TopBar from './TopBar.svelte';
@@ -38,7 +38,10 @@
     })();
   });
   const status = $derived(streakStatus(app.streak, localDay()));
-  const goal = $derived(Math.min(100, Math.round((app.xpToday / DAILY_XP_GOAL) * 100)));
+  const minutes = $derived(Math.floor(app.secondsToday[app.lang] / 60));
+  const goal = $derived(Math.min(100, Math.round((app.secondsToday[app.lang] / (DAILY_MINUTES * 60)) * 100)));
+  const other = $derived(app.lang === 'ja' ? ('it' as const) : ('ja' as const));
+  const otherMinutes = $derived(Math.floor(app.secondsToday[other] / 60));
   const due = $derived(app.due[app.lang]);
 
   const line = $derived.by(() => {
@@ -81,7 +84,11 @@
   <div class="two">
     <div class="card row mini">
       <div class="ring" style="--p:{goal}">{goal}%</div>
-      <div><div class="h">Daily goal</div><div class="sub">{app.xpToday} / {DAILY_XP_GOAL} XP</div></div>
+      <div>
+        <div class="h">Daily goal</div>
+        <div class="sub">{minutes} / {DAILY_MINUTES} min today</div>
+        <div class="sub">{other === 'ja' ? '日本語' : 'Italiano'}: {otherMinutes} / {DAILY_MINUTES} min</div>
+      </div>
     </div>
     <a class="card mini link" href="#/review">
       <div class="h">Review</div>

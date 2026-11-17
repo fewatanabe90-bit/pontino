@@ -722,6 +722,299 @@
         "ja-t02.v-kochira",
         "ja-t02.p-arigatougozaimashita"
       ]
+    },
+    {
+      "id": "ja-t02.l4",
+      "title": "Reading: Leo's morning konbini",
+      "canDo": "I can read a short text and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🏪☕",
+        "scene": "What Leo does at the convenience store every morning, and what was different today.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "レオさん{は|wa}{毎朝|まいあさ}コンビニ{へ|e}{行|い}きます。",
+            "meaning": "Leo goes to the convenience store every morning."
+          },
+          {
+            "text": "コーヒーを{一|ひと}つと、おにぎりを{二|ふた}つ{買|か}います。",
+            "meaning": "He buys one coffee and two rice balls."
+          },
+          {
+            "text": "{全部|ぜんぶ}で{五百円|ごひゃくえん}です。",
+            "meaning": "That is 500 yen in total."
+          },
+          {
+            "text": "{袋|ふくろ}{は|wa}{使|つか}いません。",
+            "meaning": "He doesn't use a bag."
+          },
+          {
+            "text": "ポイントカード{は|wa}ありません。",
+            "meaning": "He doesn't have a point card."
+          },
+          {
+            "text": "{今日|きょう}{は|wa}お{弁当|べんとう}も{買|か}いました。",
+            "meaning": "Today he also bought a boxed meal."
+          },
+          {
+            "text": "{店員|てんいん}さん{は|wa}お{弁当|べんとう}を{温|あたた}めました。",
+            "meaning": "The clerk heated up the meal."
+          },
+          {
+            "text": "レオさん{は|wa}カードで{払|はら}いました。",
+            "meaning": "Leo paid by card."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{毎朝|まいあさ}",
+            "meaning": "every morning"
+          },
+          {
+            "word": "{使|つか}いません",
+            "meaning": "doesn't use"
+          },
+          {
+            "word": "{店員|てんいん}さん",
+            "meaning": "the shop clerk"
+          },
+          {
+            "word": "{払|はら}いました",
+            "meaning": "paid"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t02.l4.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{毎朝|まいあさ}どこ{へ|e}{行|い}きますか。",
+          "options": [
+            "コンビニ",
+            "{駅|えき}",
+            "スタジアム"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l4.e2",
+          "type": "mcq",
+          "prompt": "おにぎりを{三|みっ}つ{買|か}いますか。",
+          "options": [
+            "いいえ、{二|ふた}つです。",
+            "はい、{三|みっ}つです。",
+            "いいえ、{一|ひと}つです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l4.e3",
+          "type": "mcq",
+          "prompt": "コーヒーとおにぎり{は|wa}{全部|ぜんぶ}でいくらですか。",
+          "options": [
+            "{五百円|ごひゃくえん}",
+            "{八百円|はっぴゃくえん}",
+            "{三百円|さんびゃくえん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l4.e4",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{袋|ふくろ}を{使|つか}いますか。",
+          "options": [
+            "いいえ、{使|つか}いません。",
+            "はい、{使|つか}います。",
+            "はい、お{願|ねが}いします。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l4.e5",
+          "type": "mcq",
+          "prompt": "{今日|きょう}、{店員|てんいん}さん{は|wa}{何|なに}を{温|あたた}めましたか。",
+          "options": [
+            "お{弁当|べんとう}",
+            "コーヒー",
+            "おにぎり"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l4.e6",
+          "type": "mcq",
+          "prompt": "{今日|きょう}{は|wa}{現金|げんきん}で{払|はら}いましたか。",
+          "options": [
+            "いいえ、カードで{払|はら}いました。",
+            "はい、{現金|げんきん}で{払|はら}いました。",
+            "いいえ、{払|はら}いませんでした。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Day 1: terrified of the konbini",
+        "bottom": "Day 10: has a usual order"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-t02.l5",
+      "title": "Story: At the till",
+      "canDo": "I can follow a short spoken scene and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧🥟💳",
+        "scene": "Leo wants a meat bun. Listen for what he ends up buying and how he pays.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "いらっしゃいませ。",
+            "meaning": "Welcome.",
+            "who": "店員"
+          },
+          {
+            "text": "すみません、{肉|にく}まん{は|wa}ありますか。",
+            "meaning": "Excuse me, do you have meat buns?",
+            "who": "レオ"
+          },
+          {
+            "text": "すみません、{肉|にく}まん{は|wa}ありません。ピザまん{は|wa}あります。",
+            "meaning": "I'm sorry, we have no meat buns. We do have pizza buns.",
+            "who": "店員"
+          },
+          {
+            "text": "じゃあ、ピザまんを{二|ふた}つください。",
+            "meaning": "Then two pizza buns, please.",
+            "who": "レオ"
+          },
+          {
+            "text": "ピザまんを{二|ふた}つですね。{袋|ふくろ}{は|wa}ご{利用|りよう}ですか。",
+            "meaning": "Two pizza buns, right? Would you like a bag?",
+            "who": "店員"
+          },
+          {
+            "text": "はい、お{願|ねが}いします。",
+            "meaning": "Yes, please.",
+            "who": "レオ"
+          },
+          {
+            "text": "{全部|ぜんぶ}で{四百円|よんひゃくえん}です。",
+            "meaning": "That's 400 yen in total.",
+            "who": "店員"
+          },
+          {
+            "text": "カード{は|wa}{使|つか}えますか。",
+            "meaning": "Can I use a card?",
+            "who": "レオ"
+          },
+          {
+            "text": "すみません、{現金|げんきん}だけです。",
+            "meaning": "I'm sorry, cash only.",
+            "who": "店員"
+          },
+          {
+            "text": "わかりました。{千円|せんえん}でお{願|ねが}いします。",
+            "meaning": "I see. Here's 1,000 yen.",
+            "who": "レオ"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "ピザまん",
+            "meaning": "pizza bun"
+          },
+          {
+            "word": "だけ",
+            "meaning": "only"
+          },
+          {
+            "word": "わかりました",
+            "meaning": "I see, understood"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t02.l5.e1",
+          "type": "mcq",
+          "prompt": "{肉|にく}まん{は|wa}ありますか。",
+          "options": [
+            "いいえ、ありません。",
+            "はい、あります。",
+            "はい、{二|ふた}つあります。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l5.e2",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何|なに}を{買|か}いましたか。",
+          "options": [
+            "ピザまん",
+            "{肉|にく}まん",
+            "おにぎり"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l5.e3",
+          "type": "mcq",
+          "prompt": "ピザまんを{三|みっ}つ{買|か}いましたか。",
+          "options": [
+            "いいえ、{二|ふた}つです。",
+            "はい、{三|みっ}つです。",
+            "いいえ、{一|ひと}つです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l5.e4",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{袋|ふくろ}を{使|つか}いますか。",
+          "options": [
+            "はい、{使|つか}います。",
+            "いいえ、{使|つか}いません。",
+            "いいえ、{袋|ふくろ}{は|wa}ありません。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l5.e5",
+          "type": "mcq",
+          "prompt": "{全部|ぜんぶ}でいくらですか。",
+          "options": [
+            "{四百円|よんひゃくえん}",
+            "{千円|せんえん}",
+            "{八百円|はっぴゃくえん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t02.l5.e6",
+          "type": "mcq",
+          "prompt": "カード{は|wa}{使|つか}えますか。",
+          "options": [
+            "いいえ、{現金|げんきん}だけです。",
+            "はい、{使|つか}えます。",
+            "はい、カードだけです。"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Wanted: meat bun",
+        "bottom": "Got: pizza bun and a life lesson about cash"
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

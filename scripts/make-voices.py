@@ -99,6 +99,17 @@ def choose_text(marked):
 if __name__ == '__main__':
     import numpy as np
     import soundfile as sf
+
+    # Kokoro loads its English text module (spaCy) on import, although only Japanese and Italian
+    # are recorded here. A small stand-in keeps that unused component from being loaded at all.
+    import types
+    import misaki
+    from misaki.token import MToken
+    _en = types.ModuleType('misaki.en')
+    _en.MToken = MToken
+    _en.G2P = None
+    sys.modules['misaki.en'] = _en
+    misaki.en = _en
     from kokoro import KPipeline
 
     OUT = 'public/audio'

@@ -35,14 +35,19 @@ export const app = $state({
   ready: false,
   ...DEFAULTS,
   xp: 0,
-  /** XP earned per local day, for the daily goal. */
+  /** XP earned per local day. */
   xpToday: 0,
+  /** Seconds practised today in each language, for the daily goal. */
+  secondsToday: { ja: 0, it: 0 } as Record<Lang, number>,
   streak: emptyStreak() as Streak,
   lessons: {} as Record<string, LessonProgress>,
   due: { ja: 0, it: 0 } as Record<Lang, number>,
 });
 
 export const DAILY_XP_GOAL = 100;
+/** The daily target for each language. */
+export const DAILY_MINUTES = 15;
+let timeDay = '';
 
 const put = (key: string, value: unknown) => db.kv.put({ key, value: $state.snapshot(value) });
 
@@ -76,6 +81,9 @@ export async function boot() {
   app.streak = (kv.get('streak') as Streak | undefined) ?? emptyStreak();
   const day = kv.get('xpDay') as { day: string; xp: number } | undefined;
   app.xpToday = day?.day === localDay() ? day.xp : 0;
+  const time = kv.get('timeDay') as { day: string; ja: number; it: number } | undefined;
+  timeDay = localDay();
+  app.secondsToday = time?.day === timeDay ? { ja: time.ja, it: time.it } : { ja: 0, it: 0 };
   app.lessons = Object.fromEntries((await db.lessons.toArray()).map((l) => [l.id, l]));
   // Earlier versions made flashcards out of grammar patterns ("AのB"); those are removed.
   await db.cards.filter((c) => /\.g-/.test(c.itemId)).delete();
@@ -98,6 +106,17 @@ export function addXp(n: number) {
   app.xpToday += n;
   void put('xp', app.xp);
   void put('xpDay', { day: localDay(), xp: app.xpToday });
+}
+
+/** Count time spent studying towards today's goal for that language. */
+export function addPracticeTime(lang: Lang, seconds: number) {
+  const today = localDay();
+  if (today !== timeDay) {
+    timeDay = today;
+    app.secondsToday = { ja: 0, it: 0 };
+  }
+  app.secondsToday[lang] += seconds;
+  void put('timeDay', { day: today, ja: app.secondsToday.ja, it: app.secondsToday.it });
 }
 
 export function markPractice() {
@@ -131,6 +150,11 @@ export async function completeLesson(unit: Unit, lesson: Lesson, score: number):
   const fresh = [];
   for (const i of items) {
     const card = newCard({ itemId: i.id, lang: unit.lang, unitId: unit.id, front: i.front, back: i.back, note: [i.note, i.pt && `🇧🇷 ${i.pt}`].filter(Boolean).join('\n') || undefined });
+    if (!(await db.cards.get(card.id))) fresh.push(card);
+  }
+  // The "words to know" of a text or story become flashcards too.
+  for (const [n, g] of (lesson.passage?.glossary ?? []).entries()) {
+    const card = newCard({ itemId: `${lesson.id}.w${n + 1}`, lang: unit.lang, unitId: unit.id, front: g.word, back: g.meaning });
     if (!(await db.cards.get(card.id))) fresh.push(card);
   }
   await db.cards.bulkPut(fresh);

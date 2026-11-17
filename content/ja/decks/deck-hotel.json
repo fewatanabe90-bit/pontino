@@ -1,0 +1,89 @@
+{
+  "id": "ja-deck-hotel",
+  "lang": "ja",
+  "icon": "🛏️",
+  "tags": [
+    "travel"
+  ],
+  "title": "Hotel and ryokan",
+  "description": "Checking in, your room, and what to ask for.",
+  "cards": [
+    {
+      "id": "ja-deck-hotel.01",
+      "front": "{予約|よやく}",
+      "back": "reservation, booking"
+    },
+    {
+      "id": "ja-deck-hotel.02",
+      "front": "{予約|よやく}があります",
+      "back": "I have a reservation."
+    },
+    {
+      "id": "ja-deck-hotel.03",
+      "front": "{部屋|へや}",
+      "back": "room"
+    },
+    {
+      "id": "ja-deck-hotel.04",
+      "front": "{鍵|かぎ}",
+      "back": "key"
+    },
+    {
+      "id": "ja-deck-hotel.05",
+      "front": "{受付|うけつけ}",
+      "back": "reception desk"
+    },
+    {
+      "id": "ja-deck-hotel.06",
+      "front": "チェックイン",
+      "back": "check-in"
+    },
+    {
+      "id": "ja-deck-hotel.07",
+      "front": "チェックアウト",
+      "back": "check-out"
+    },
+    {
+      "id": "ja-deck-hotel.08",
+      "front": "{一泊|いっぱく}",
+      "back": "one night (stay)",
+      "note": "{二泊|にはく} two nights, {三泊|さんぱく} three nights."
+    },
+    {
+      "id": "ja-deck-hotel.09",
+      "front": "{朝食|ちょうしょく}",
+      "back": "breakfast"
+    },
+    {
+      "id": "ja-deck-hotel.10",
+      "front": "お{風呂|ふろ}",
+      "back": "bath"
+    },
+    {
+      "id": "ja-deck-hotel.11",
+      "front": "{温泉|おんせん}",
+      "back": "hot spring"
+    },
+    {
+      "id": "ja-deck-hotel.12",
+      "front": "{荷物|にもつ}",
+      "back": "luggage"
+    },
+    {
+      "id": "ja-deck-hotel.13",
+      "front": "タオル",
+      "back": "towel"
+    },
+    {
+      "id": "ja-deck-hotel.14",
+      "front": "{三階|さんがい}",
+      "back": "third floor",
+      "note": "Floors count from the ground: {一階|いっかい} is the ground floor."
+    },
+    {
+      "id": "ja-deck-hotel.15",
+      "front": "{旅館|りょかん}",
+      "back": "traditional Japanese inn"
+    }
+  ]
+}

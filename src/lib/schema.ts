@@ -84,6 +84,21 @@ export const LessonSchema = z.object({
     ),
     notes: z.array(z.object({ title: z.string(), body: z.string() })),
   }),
+  /**
+   * A book-style lesson: a short text to read, or a story to listen to, followed by
+   * comprehension questions written in the target language.
+   */
+  passage: z
+    .object({
+      kind: z.enum(['reading', 'listening']),
+      /** One entry per sentence. `who` gives a line of speech to that character's voice. */
+      sentences: z.array(z.object({ text: z.string().min(1), meaning: z.string().min(1), who: z.string().optional() })).min(4),
+      /** Listening only: `hint` lets the learner open the text before answering; `after` shows it only at the end. */
+      transcript: z.enum(['hint', 'after']).optional(),
+      /** Words worth knowing before starting. */
+      glossary: z.array(z.object({ word: z.string().min(1), meaning: z.string().min(1) })).optional(),
+    })
+    .optional(),
   exercises: z.array(ExerciseSchema).min(6),
   /** An original two-caption joke shown when the lesson is finished. */
   meme: z.object({ top: z.string(), bottom: z.string() }).optional(),

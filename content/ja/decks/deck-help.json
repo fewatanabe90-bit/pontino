@@ -1,0 +1,95 @@
+{
+  "id": "ja-deck-help",
+  "lang": "ja",
+  "icon": "⛑️",
+  "tags": [
+    "travel"
+  ],
+  "title": "Help and health",
+  "description": "For the day something goes wrong: feeling ill, losing things, asking for help.",
+  "cards": [
+    {
+      "id": "ja-deck-help.01",
+      "front": "{助|たす}けてください",
+      "back": "Please help me."
+    },
+    {
+      "id": "ja-deck-help.02",
+      "front": "{大丈夫|だいじょうぶ}ですか",
+      "back": "Are you all right?"
+    },
+    {
+      "id": "ja-deck-help.03",
+      "front": "{病院|びょういん}",
+      "back": "hospital"
+    },
+    {
+      "id": "ja-deck-help.04",
+      "front": "{薬|くすり}",
+      "back": "medicine"
+    },
+    {
+      "id": "ja-deck-help.05",
+      "front": "{薬局|やっきょく}",
+      "back": "pharmacy"
+    },
+    {
+      "id": "ja-deck-help.06",
+      "front": "{頭|あたま}",
+      "back": "head"
+    },
+    {
+      "id": "ja-deck-help.07",
+      "front": "お{腹|なか}",
+      "back": "stomach, belly"
+    },
+    {
+      "id": "ja-deck-help.08",
+      "front": "{痛|いた}い",
+      "back": "painful, it hurts",
+      "note": "{頭|あたま}が{痛|いた}いです。 I have a headache."
+    },
+    {
+      "id": "ja-deck-help.09",
+      "front": "{熱|ねつ}",
+      "back": "fever"
+    },
+    {
+      "id": "ja-deck-help.10",
+      "front": "アレルギー",
+      "back": "allergy"
+    },
+    {
+      "id": "ja-deck-help.11",
+      "front": "{警察|けいさつ}",
+      "back": "police"
+    },
+    {
+      "id": "ja-deck-help.12",
+      "front": "{交番|こうばん}",
+      "back": "police box (small neighbourhood station)",
+      "note": "The place to ask for directions or report something lost."
+    },
+    {
+      "id": "ja-deck-help.13",
+      "front": "{救急車|きゅうきゅうしゃ}",
+      "back": "ambulance"
+    },
+    {
+      "id": "ja-deck-help.14",
+      "front": "なくしました",
+      "back": "I lost it.",
+      "note": "パスポートをなくしました。 I lost my passport."
+    },
+    {
+      "id": "ja-deck-help.15",
+      "front": "パスポート",
+      "back": "passport"
+    },
+    {
+      "id": "ja-deck-help.16",
+      "front": "{財布|さいふ}",
+      "back": "wallet"
+    }
+  ]
+}

@@ -732,6 +732,285 @@
         "ja-t01.p-zenbude",
         "ja-t01.v-okaeshi"
       ]
+    },
+    {
+      "id": "ja-t01.l4",
+      "title": "Reading: The first hour",
+      "canDo": "I can read a short text and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🛬💴",
+        "scene": "Leo's first hour in Japan.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "レオさん{は|wa}{今日|きょう}、{日本|にほん}に{来|き}ました。",
+            "meaning": "Leo came to Japan today."
+          },
+          {
+            "text": "{空港|くうこう}の{駅|えき}{は|wa}{地下|ちか}です。",
+            "meaning": "The airport station is underground."
+          },
+          {
+            "text": "{駅|えき}で{東京駅|とうきょうえき}までの{切符|きっぷ}を{買|か}いました。",
+            "meaning": "At the station he bought a ticket to Tokyo Station."
+          },
+          {
+            "text": "{切符|きっぷ}{は|wa}{三千円|さんぜんえん}です。カードで{買|か}いました。",
+            "meaning": "The ticket is 3,000 yen. He bought it by card."
+          },
+          {
+            "text": "{駅|えき}の{店|みせ}で{水|みず}とおにぎりも{買|か}いました。",
+            "meaning": "At the station shop he also bought water and a rice ball."
+          },
+          {
+            "text": "{全部|ぜんぶ}で{三百円|さんびゃくえん}です。",
+            "meaning": "That is 300 yen in total."
+          },
+          {
+            "text": "レオさん{は|wa}{電車|でんしゃ}で{東京|とうきょう}{へ|e}{行|い}きます。",
+            "meaning": "Leo is going to Tokyo by train."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{今日|きょう}",
+            "meaning": "today"
+          },
+          {
+            "word": "{空港|くうこう}",
+            "meaning": "airport"
+          },
+          {
+            "word": "{店|みせ}",
+            "meaning": "shop"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t01.l4.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{今日|きょう}どこに{来|き}ましたか。",
+          "options": [
+            "{日本|にほん}",
+            "ブラジル",
+            "{京都|きょうと}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l4.e2",
+          "type": "mcq",
+          "prompt": "{空港|くうこう}の{駅|えき}{は|wa}どこですか。",
+          "options": [
+            "{地下|ちか}です。",
+            "あそこです。",
+            "{出口|でぐち}です。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l4.e3",
+          "type": "mcq",
+          "prompt": "{切符|きっぷ}{は|wa}いくらですか。",
+          "options": [
+            "{三千円|さんぜんえん}",
+            "{三百円|さんびゃくえん}",
+            "{千円|せんえん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l4.e4",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{現金|げんきん}で{切符|きっぷ}を{買|か}いましたか。",
+          "options": [
+            "いいえ、カードで{買|か}いました。",
+            "はい、{現金|げんきん}で{買|か}いました。",
+            "いいえ、{買|か}いませんでした。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l4.e5",
+          "type": "mcq",
+          "prompt": "{店|みせ}で{何|なに}を{買|か}いましたか。",
+          "options": [
+            "{水|みず}とおにぎり",
+            "{水|みず}と{切符|きっぷ}",
+            "おにぎりとお{茶|ちゃ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l4.e6",
+          "type": "mcq",
+          "prompt": "{水|みず}とおにぎり{は|wa}{全部|ぜんぶ}でいくらですか。",
+          "options": [
+            "{三百円|さんびゃくえん}",
+            "{百五十円|ひゃくごじゅうえん}",
+            "{三千円|さんぜんえん}"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Hour one in Japan",
+        "bottom": "Achievements: one ticket, one rice ball, zero wrong trains (so far)"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-t01.l5",
+      "title": "Story: At the airport desk",
+      "canDo": "I can follow a short spoken scene and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧🛄🚌",
+        "scene": "Leo asks at the information desk. Listen for where things are and the price.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "すみません、{両替|りょうがえ}{は|wa}どこですか。",
+            "meaning": "Excuse me, where is the money exchange?",
+            "who": "レオ"
+          },
+          {
+            "text": "{両替|りょうがえ}{は|wa}あそこです。トイレの{隣|となり}です。",
+            "meaning": "The exchange is over there. It's next to the toilets.",
+            "who": "係員"
+          },
+          {
+            "text": "ありがとうございます。バスの{切符|きっぷ}{は|wa}どこですか。",
+            "meaning": "Thank you. Where are the bus tickets?",
+            "who": "レオ"
+          },
+          {
+            "text": "バスの{切符|きっぷ}{は|wa}ここです。どこまでですか。",
+            "meaning": "Bus tickets are here. Where to?",
+            "who": "係員"
+          },
+          {
+            "text": "{新宿|しんじゅく}までお{願|ねが}いします。いくらですか。",
+            "meaning": "To Shinjuku, please. How much is it?",
+            "who": "レオ"
+          },
+          {
+            "text": "{千三百円|せんさんびゃくえん}です。",
+            "meaning": "It's 1,300 yen.",
+            "who": "係員"
+          },
+          {
+            "text": "{現金|げんきん}でお{願|ねが}いします。",
+            "meaning": "In cash, please.",
+            "who": "レオ"
+          },
+          {
+            "text": "はい、どうぞ。バス{は|wa}{出口|でぐち}の{前|まえ}です。",
+            "meaning": "Here you are. The bus is in front of the exit.",
+            "who": "係員"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "{両替|りょうがえ}",
+            "meaning": "money exchange"
+          },
+          {
+            "word": "{隣|となり}",
+            "meaning": "next to"
+          },
+          {
+            "word": "{前|まえ}",
+            "meaning": "in front of"
+          },
+          {
+            "word": "バス",
+            "meaning": "bus"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t01.l5.e1",
+          "type": "mcq",
+          "prompt": "{両替|りょうがえ}{は|wa}どこですか。",
+          "options": [
+            "トイレの{隣|となり}",
+            "{出口|でぐち}の{前|まえ}",
+            "{地下|ちか}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l5.e2",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何|なん}の{切符|きっぷ}を{買|か}いましたか。",
+          "options": [
+            "バスの{切符|きっぷ}",
+            "{電車|でんしゃ}の{切符|きっぷ}",
+            "サッカーのチケット"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l5.e3",
+          "type": "mcq",
+          "prompt": "どこまで{行|い}きますか。",
+          "options": [
+            "{新宿|しんじゅく}まで",
+            "{東京駅|とうきょうえき}まで",
+            "{渋谷|しぶや}まで"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l5.e4",
+          "type": "mcq",
+          "prompt": "{切符|きっぷ}{は|wa}いくらですか。",
+          "options": [
+            "{千三百円|せんさんびゃくえん}",
+            "{三千円|さんぜんえん}",
+            "{千円|せんえん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l5.e5",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}カードで{買|か}いましたか。",
+          "options": [
+            "いいえ、{現金|げんきん}で{買|か}いました。",
+            "はい、カードで{買|か}いました。",
+            "いいえ、{買|か}いませんでした。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t01.l5.e6",
+          "type": "mcq",
+          "prompt": "バス{は|wa}どこですか。",
+          "options": [
+            "{出口|でぐち}の{前|まえ}",
+            "トイレの{隣|となり}",
+            "{入口|いりぐち}"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "せんさんびゃくえん",
+        "bottom": "Seven syllables to say \"about nine dollars\""
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

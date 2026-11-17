@@ -765,6 +765,308 @@
         "it-r2.p-chepeccato",
         "it-r2.v-tranquillo"
       ]
+    },
+    {
+      "id": "it-r2.l4",
+      "title": "Lettura: Il quartiere di mia nonna",
+      "canDo": "I can read a short text about the past and answer questions about it in Italian.",
+      "intro": {
+        "art": "📖🏘️🐕",
+        "scene": "Un testo breve. Leggi, ascolta e poi rispondi alle domande.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "Mia nonna Rosa è nata a Roma, nel quartiere di Testaccio.",
+            "meaning": "My grandmother Rosa was born in Rome, in the Testaccio neighbourhood."
+          },
+          {
+            "text": "Da bambina abitava in una casa piccola, vicino al mercato.",
+            "meaning": "As a child she lived in a small house near the market."
+          },
+          {
+            "text": "Ogni mattina andava a scuola a piedi con suo fratello.",
+            "meaning": "Every morning she walked to school with her brother."
+          },
+          {
+            "text": "Nel quartiere non c'erano molte macchine e i bambini giocavano per strada.",
+            "meaning": "There weren't many cars in the neighbourhood and the children played in the street."
+          },
+          {
+            "text": "La domenica tutta la famiglia mangiava insieme e poi ascoltava la partita alla radio.",
+            "meaning": "On Sundays the whole family ate together and then listened to the match on the radio."
+          },
+          {
+            "text": "Un giorno, mentre tornava da scuola, Rosa ha trovato un cane.",
+            "meaning": "One day, while she was coming home from school, Rosa found a dog."
+          },
+          {
+            "text": "Ha portato il cane a casa. Si chiamava Pippo.",
+            "meaning": "She took the dog home. His name was Pippo."
+          },
+          {
+            "text": "Pippo è rimasto con la famiglia per quindici anni.",
+            "meaning": "Pippo stayed with the family for fifteen years."
+          },
+          {
+            "text": "Oggi il mercato c'è ancora, ma mia nonna dice che allora il quartiere era più tranquillo.",
+            "meaning": "Today the market is still there, but my grandmother says the neighbourhood was quieter back then."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "il quartiere",
+            "meaning": "neighbourhood"
+          },
+          {
+            "word": "a piedi",
+            "meaning": "on foot"
+          },
+          {
+            "word": "insieme",
+            "meaning": "together"
+          },
+          {
+            "word": "trovare",
+            "meaning": "to find"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r2.l4.e1",
+          "type": "mcq",
+          "prompt": "Dove è nata la nonna?",
+          "options": [
+            "A Roma, nel quartiere di Testaccio.",
+            "A Napoli, vicino al mare.",
+            "In una piccola città."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l4.e2",
+          "type": "mcq",
+          "prompt": "Come andava a scuola?",
+          "options": [
+            "A piedi, con suo fratello.",
+            "In tram, da sola.",
+            "In macchina, con suo padre."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l4.e3",
+          "type": "mcq",
+          "prompt": "Perché i bambini giocavano per strada?",
+          "options": [
+            "Perché non c'erano molte macchine.",
+            "Perché non c'era la scuola.",
+            "Perché le case erano troppo piccole."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l4.e4",
+          "type": "mcq",
+          "prompt": "Che cosa faceva la famiglia la domenica?",
+          "options": [
+            "Mangiava insieme e ascoltava la partita alla radio.",
+            "Andava allo stadio.",
+            "Andava al mercato."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l4.e5",
+          "type": "mcq",
+          "prompt": "Che cosa è successo un giorno, mentre Rosa tornava da scuola?",
+          "options": [
+            "Ha trovato un cane.",
+            "Ha perso il cane.",
+            "Ha incontrato suo fratello."
+          ],
+          "answer": 0,
+          "explain": "The background is in the imperfetto (tornava); the event is in the passato prossimo (ha trovato)."
+        },
+        {
+          "id": "it-r2.l4.e6",
+          "type": "mcq",
+          "prompt": "Vero o falso? Oggi il mercato non c'è più.",
+          "options": [
+            "Falso: il mercato c'è ancora.",
+            "Vero: adesso c'è un parcheggio.",
+            "Vero: adesso c'è la metro."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Every Italian family story",
+        "bottom": "starts with \"mia nonna\" and ends with food or a dog"
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-r2.l5",
+      "title": "Racconto: La partita che non ho visto",
+      "canDo": "I can follow a short spoken story in the past and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧🌧️🍕",
+        "scene": "Marco racconta la sua domenica. Ascolta bene: che cosa è successo, e in che ordine?",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "Domenica scorsa volevo guardare la partita a casa di Leo.",
+            "meaning": "Last Sunday I wanted to watch the match at Leo's place.",
+            "who": "Marco"
+          },
+          {
+            "text": "Pioveva forte e l'autobus non arrivava.",
+            "meaning": "It was raining hard and the bus wasn't coming.",
+            "who": "Marco"
+          },
+          {
+            "text": "Ho aspettato venti minuti, poi ho deciso di andare a piedi.",
+            "meaning": "I waited twenty minutes, then I decided to walk.",
+            "who": "Marco"
+          },
+          {
+            "text": "Mentre camminavo, ho sentito un urlo dalle finestre: gol della Roma!",
+            "meaning": "While I was walking, I heard a shout from the windows: a goal for Roma!",
+            "who": "Marco"
+          },
+          {
+            "text": "Quando sono arrivato, ero tutto bagnato e la partita era quasi finita.",
+            "meaning": "When I arrived, I was soaking wet and the match was almost over.",
+            "who": "Marco"
+          },
+          {
+            "text": "Leo mi ha dato un asciugamano e una fetta di pizza.",
+            "meaning": "Leo gave me a towel and a slice of pizza.",
+            "who": "Marco"
+          },
+          {
+            "text": "Negli ultimi minuti la Lazio ha pareggiato.",
+            "meaning": "In the last few minutes Lazio equalised.",
+            "who": "Marco"
+          },
+          {
+            "text": "Alla fine ho visto solo cinque minuti di partita, e nemmeno un gol della Roma.",
+            "meaning": "In the end I saw only five minutes of the match, and not even one Roma goal.",
+            "who": "Marco"
+          },
+          {
+            "text": "Però la pizza era buonissima.",
+            "meaning": "But the pizza was delicious.",
+            "who": "Marco"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "l'urlo",
+            "meaning": "shout"
+          },
+          {
+            "word": "bagnato",
+            "meaning": "wet"
+          },
+          {
+            "word": "l'asciugamano",
+            "meaning": "towel"
+          },
+          {
+            "word": "pareggiare",
+            "meaning": "to draw, to equalise"
+          },
+          {
+            "word": "nemmeno",
+            "meaning": "not even"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r2.l5.e1",
+          "type": "mcq",
+          "prompt": "Dove voleva guardare la partita Marco?",
+          "options": [
+            "A casa di Leo.",
+            "Allo stadio.",
+            "Al bar."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l5.e2",
+          "type": "mcq",
+          "prompt": "Com'era il tempo?",
+          "options": [
+            "Pioveva forte.",
+            "Faceva caldo.",
+            "C'era il sole."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l5.e3",
+          "type": "mcq",
+          "prompt": "Perché Marco è andato a piedi?",
+          "options": [
+            "Perché l'autobus non arrivava.",
+            "Perché non aveva il biglietto.",
+            "Perché la casa di Leo era vicina."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l5.e4",
+          "type": "mcq",
+          "prompt": "Che cosa è successo mentre camminava?",
+          "options": [
+            "La Roma ha segnato.",
+            "La Lazio ha segnato.",
+            "Ha smesso di piovere."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r2.l5.e5",
+          "type": "mcq",
+          "prompt": "Com'è finita la partita?",
+          "options": [
+            "In pareggio.",
+            "Ha vinto la Roma.",
+            "Ha vinto la Lazio."
+          ],
+          "answer": 0,
+          "explain": "La Lazio ha pareggiato: the match ended in a draw."
+        },
+        {
+          "id": "it-r2.l5.e6",
+          "type": "mcq",
+          "prompt": "Alla fine, che cosa è piaciuto a Marco?",
+          "options": [
+            "La pizza.",
+            "La partita.",
+            "La pioggia."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Minutes of football watched: 5",
+        "bottom": "Slices of pizza eaten: undisclosed"
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

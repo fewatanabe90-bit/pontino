@@ -1,0 +1,116 @@
+{
+  "id": "it-deck-ristorante",
+  "lang": "it",
+  "icon": "🍽️",
+  "tags": [
+    "travel"
+  ],
+  "title": "Al ristorante",
+  "description": "The table, the menu and what to ask the waiter.",
+  "cards": [
+    {
+      "id": "it-deck-ristorante.01",
+      "front": "il menù",
+      "back": "menu",
+      "pt": "PT cardápio."
+    },
+    {
+      "id": "it-deck-ristorante.02",
+      "front": "il tavolo",
+      "back": "table",
+      "note": "Un tavolo per due, per favore.",
+      "pt": "PT mesa."
+    },
+    {
+      "id": "it-deck-ristorante.03",
+      "front": "prenotare",
+      "back": "to book",
+      "note": "Vorrei prenotare un tavolo.",
+      "pt": "PT reservar."
+    },
+    {
+      "id": "it-deck-ristorante.04",
+      "front": "il cameriere",
+      "back": "waiter",
+      "note": "A woman: la cameriera.",
+      "pt": "PT garçom."
+    },
+    {
+      "id": "it-deck-ristorante.05",
+      "front": "il secondo",
+      "back": "main course (meat or fish)",
+      "note": "It comes after \"il primo\", the pasta or rice course."
+    },
+    {
+      "id": "it-deck-ristorante.06",
+      "front": "il contorno",
+      "back": "side dish",
+      "pt": "PT acompanhamento."
+    },
+    {
+      "id": "it-deck-ristorante.07",
+      "front": "l'acqua naturale",
+      "back": "still water"
+    },
+    {
+      "id": "it-deck-ristorante.08",
+      "front": "l'acqua frizzante",
+      "back": "sparkling water",
+      "pt": "PT água com gás."
+    },
+    {
+      "id": "it-deck-ristorante.09",
+      "front": "la forchetta",
+      "back": "fork",
+      "pt": "PT garfo."
+    },
+    {
+      "id": "it-deck-ristorante.10",
+      "front": "il coltello",
+      "back": "knife",
+      "pt": "PT faca."
+    },
+    {
+      "id": "it-deck-ristorante.11",
+      "front": "il cucchiaio",
+      "back": "spoon",
+      "pt": "PT colher."
+    },
+    {
+      "id": "it-deck-ristorante.12",
+      "front": "il bicchiere",
+      "back": "glass",
+      "pt": "PT copo."
+    },
+    {
+      "id": "it-deck-ristorante.13",
+      "front": "il tovagliolo",
+      "back": "napkin",
+      "pt": "PT guardanapo."
+    },
+    {
+      "id": "it-deck-ristorante.14",
+      "front": "cotto",
+      "back": "cooked",
+      "pt": "PT cozido, assado."
+    },
+    {
+      "id": "it-deck-ristorante.15",
+      "front": "crudo",
+      "back": "raw",
+      "note": "Prosciutto crudo.",
+      "pt": "PT cru."
+    },
+    {
+      "id": "it-deck-ristorante.16",
+      "front": "piccante",
+      "back": "spicy, hot",
+      "pt": "PT picante, apimentado."
+    },
+    {
+      "id": "it-deck-ristorante.17",
+      "front": "Il conto, per favore",
+      "back": "The bill, please."
+    }
+  ]
+}

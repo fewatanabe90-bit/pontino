@@ -27,6 +27,10 @@
   const myDecks = $derived(forYouFirst(decks.filter((d) => d.lang === app.lang), app.interests));
   let learned = $state<Record<string, number>>({});
   let mistakeCount = $state(0);
+  let collected = $state(0);
+  $effect(() => {
+    void db.cards.where('[lang+due]').between([app.lang, 0], [app.lang, Infinity]).count().then((n) => (collected = n));
+  });
   $effect(() => {
     void db.mistakes.where('lang').equals(app.lang).count().then((n) => (mistakeCount = n));
   });
@@ -121,6 +125,13 @@
           </span>
         </a>
       {/if}
+      <a class="card deck" href="#/cards">
+        <span class="ico" aria-hidden="true">🗂️</span>
+        <span class="body">
+          <span class="h">My flashcards</span>
+          <span class="sub">{collected ? `${collected} card${collected === 1 ? '' : 's'} collected. Read any of them again, whenever you like.` : 'Every word you learn is kept here to read again.'}</span>
+        </span>
+      </a>
       <h2 class="h" style="margin-top:6px">Flashcard decks</h2>
       {#each myDecks as d (d.id)}
         {@const n = learned[d.id] ?? 0}

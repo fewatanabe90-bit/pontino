@@ -50,7 +50,7 @@ for (const unit of units)
     await page.goto(`./#/profile`);
     await page.getByRole('group', { name: 'Course' }).getByRole('button', { name: unit.lang === 'ja' ? '日本語' : 'Italiano' }).click();
     await page.goto(`./#/lesson/${unit.id}/${lesson.id}`);
-    await page.getByRole('button', { name: 'Start practice' }).click();
+    await page.getByRole('button', { name: /Start practice|Answer the questions/ }).click();
     for (const ex of lesson.exercises) {
       await answer(page, ex, unit.lang);
       if (ex.type !== 'match') await page.getByRole('button', { name: 'Check' }).click();

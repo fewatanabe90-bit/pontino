@@ -1,0 +1,105 @@
+{
+  "id": "ja-deck-directions",
+  "lang": "ja",
+  "icon": "🧭",
+  "tags": [
+    "travel",
+    "geography"
+  ],
+  "title": "Finding your way",
+  "description": "Left, right, straight on, and the words on a city map.",
+  "cards": [
+    {
+      "id": "ja-deck-directions.01",
+      "front": "{右|みぎ}",
+      "back": "right"
+    },
+    {
+      "id": "ja-deck-directions.02",
+      "front": "{左|ひだり}",
+      "back": "left"
+    },
+    {
+      "id": "ja-deck-directions.03",
+      "front": "まっすぐ",
+      "back": "straight ahead"
+    },
+    {
+      "id": "ja-deck-directions.04",
+      "front": "{近|ちか}い",
+      "back": "near"
+    },
+    {
+      "id": "ja-deck-directions.05",
+      "front": "{遠|とお}い",
+      "back": "far"
+    },
+    {
+      "id": "ja-deck-directions.06",
+      "front": "{地図|ちず}",
+      "back": "map"
+    },
+    {
+      "id": "ja-deck-directions.07",
+      "front": "{道|みち}",
+      "back": "road, way"
+    },
+    {
+      "id": "ja-deck-directions.08",
+      "front": "{信号|しんごう}",
+      "back": "traffic light"
+    },
+    {
+      "id": "ja-deck-directions.09",
+      "front": "{交差点|こうさてん}",
+      "back": "intersection, crossing"
+    },
+    {
+      "id": "ja-deck-directions.10",
+      "front": "{橋|はし}",
+      "back": "bridge",
+      "note": "Same sound as お{箸|はし}, chopsticks; the pitch differs."
+    },
+    {
+      "id": "ja-deck-directions.11",
+      "front": "{北|きた}",
+      "back": "north",
+      "note": "Station exits are named this way: {北口|きたぐち}, north exit."
+    },
+    {
+      "id": "ja-deck-directions.12",
+      "front": "{南|みなみ}",
+      "back": "south"
+    },
+    {
+      "id": "ja-deck-directions.13",
+      "front": "{東|ひがし}",
+      "back": "east"
+    },
+    {
+      "id": "ja-deck-directions.14",
+      "front": "{西|にし}",
+      "back": "west"
+    },
+    {
+      "id": "ja-deck-directions.15",
+      "front": "{地下鉄|ちかてつ}",
+      "back": "subway, underground"
+    },
+    {
+      "id": "ja-deck-directions.16",
+      "front": "タクシー",
+      "back": "taxi"
+    },
+    {
+      "id": "ja-deck-directions.17",
+      "front": "バス{停|てい}",
+      "back": "bus stop"
+    },
+    {
+      "id": "ja-deck-directions.18",
+      "front": "{歩|ある}いて{五分|ごふん}です",
+      "back": "It's five minutes on foot."
+    }
+  ]
+}

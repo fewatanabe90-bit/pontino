@@ -1182,6 +1182,300 @@
         "ja-a1-01.p-sumimasen",
         "ja-a1-01.p-jikoshoukai"
       ]
+    },
+    {
+      "id": "ja-a1-01.l6",
+      "title": "Reading: Leo introduces everyone",
+      "canDo": "I can read a short text and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖👋🇧🇷",
+        "scene": "Leo writes a few lines about himself and his new friends.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "はじめまして。レオです。",
+            "meaning": "Nice to meet you. I'm Leo.",
+            "who": "レオ"
+          },
+          {
+            "text": "ブラジル{人|じん}です。サンパウロから{来|き}ました。",
+            "meaning": "I'm Brazilian. I come from São Paulo.",
+            "who": "レオ"
+          },
+          {
+            "text": "{会社員|かいしゃいん}です。{学生|がくせい}じゃありません。",
+            "meaning": "I'm an office worker. I'm not a student.",
+            "who": "レオ"
+          },
+          {
+            "text": "{中村|なかむら}さん{は|wa}{日本人|にほんじん}です。{大学|だいがく}の{先生|せんせい}です。",
+            "meaning": "Nakamura-san is Japanese. A university teacher.",
+            "who": "レオ"
+          },
+          {
+            "text": "{佐藤|さとう}さん{は|wa}{中村|なかむら}さんの{友|とも}だちです。",
+            "meaning": "Sato-san is Nakamura-san's friend.",
+            "who": "レオ"
+          },
+          {
+            "text": "{佐藤|さとう}さん{は|wa}{学生|がくせい}です。",
+            "meaning": "Sato-san is a student.",
+            "who": "レオ"
+          },
+          {
+            "text": "{中村|なかむら}さん{は|wa}サッカーファンです。わたしもサッカーファンです。",
+            "meaning": "Nakamura-san is a football fan. I'm a football fan too.",
+            "who": "レオ"
+          },
+          {
+            "text": "よろしくお{願|ねが}いします。",
+            "meaning": "Pleased to meet you.",
+            "who": "レオ"
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{日本人|にほんじん}",
+            "meaning": "Japanese (person)"
+          },
+          {
+            "word": "サッカーファン",
+            "meaning": "football fan"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-01.l6.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{学生|がくせい}ですか。",
+          "options": [
+            "いいえ、{会社員|かいしゃいん}です。",
+            "はい、{学生|がくせい}です。",
+            "いいえ、{先生|せんせい}です。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l6.e2",
+          "type": "mcq",
+          "prompt": "レオさんのお{国|くに}{は|wa}どこですか。",
+          "options": [
+            "ブラジル",
+            "{日本|にほん}",
+            "イタリア"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l6.e3",
+          "type": "mcq",
+          "prompt": "{中村|なかむら}さんのお{仕事|しごと}{は|wa}{何|なん}ですか。",
+          "options": [
+            "{大学|だいがく}の{先生|せんせい}",
+            "{会社員|かいしゃいん}",
+            "{学生|がくせい}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l6.e4",
+          "type": "mcq",
+          "prompt": "{佐藤|さとう}さん{は|wa}だれの{友|とも}だちですか。",
+          "options": [
+            "{中村|なかむら}さんの{友|とも}だち",
+            "レオさんの{先生|せんせい}",
+            "{中村|なかむら}さんの{学生|がくせい}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l6.e5",
+          "type": "mcq",
+          "prompt": "{佐藤|さとう}さんも{先生|せんせい}ですか。",
+          "options": [
+            "いいえ、ちがいます。{学生|がくせい}です。",
+            "はい、そうです。",
+            "いいえ、{会社員|かいしゃいん}です。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l6.e6",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}サッカーファンですか。",
+          "options": [
+            "はい、そうです。",
+            "いいえ、ちがいます。",
+            "いいえ、{学生|がくせい}です。"
+          ],
+          "answer": 0,
+          "explain": "わたしも: \"me too\"."
+        }
+      ],
+      "meme": {
+        "top": "Leo: writes eight sentences in Japanese",
+        "bottom": "Also Leo: frames it"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-a1-01.l7",
+      "title": "Story: Whose umbrella?",
+      "canDo": "I can follow a short spoken scene and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧☂️🎟️",
+        "scene": "In the hostel lounge. Listen for who owns what.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "すみません、この{傘|かさ}{は|wa}レオさんのですか。",
+            "meaning": "Excuse me, is this umbrella yours, Leo?",
+            "who": "佐藤"
+          },
+          {
+            "text": "いいえ、わたしのじゃありません。{中村|なかむら}さんのですか。",
+            "meaning": "No, it isn't mine. Is it Nakamura-san's?",
+            "who": "レオ"
+          },
+          {
+            "text": "いいえ、ちがいます。わたしの{傘|かさ}{は|wa}これです。",
+            "meaning": "No, it is not. My umbrella is this one.",
+            "who": "中村"
+          },
+          {
+            "text": "じゃあ、あのかばん{は|wa}だれのですか。",
+            "meaning": "Well then, whose is that bag over there?",
+            "who": "佐藤"
+          },
+          {
+            "text": "あ、それ{は|wa}わたしのです。ありがとうございます。",
+            "meaning": "Oh, that's mine. Thank you.",
+            "who": "レオ"
+          },
+          {
+            "text": "レオさん、そのかばんの{中|なか}{は|wa}{何|なん}ですか。",
+            "meaning": "Leo, what is inside that bag?",
+            "who": "中村"
+          },
+          {
+            "text": "サッカーのチケットです。これ{は|wa}{中村|なかむら}さんのチケットです。",
+            "meaning": "Football tickets. This one is your ticket, Nakamura-san.",
+            "who": "レオ"
+          },
+          {
+            "text": "え、わたしのですか。ありがとうございます！",
+            "meaning": "Oh, mine? Thank you!",
+            "who": "中村"
+          },
+          {
+            "text": "じゃあ、この{傘|かさ}{は|wa}だれのですか。",
+            "meaning": "So then, whose umbrella is this?",
+            "who": "佐藤"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "{傘|かさ}",
+            "meaning": "umbrella"
+          },
+          {
+            "word": "かばん",
+            "meaning": "bag"
+          },
+          {
+            "word": "{中|なか}",
+            "meaning": "inside"
+          },
+          {
+            "word": "じゃあ",
+            "meaning": "well then"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-01.l7.e1",
+          "type": "mcq",
+          "prompt": "{傘|かさ}{は|wa}レオさんのですか。",
+          "options": [
+            "いいえ、レオさんのじゃありません。",
+            "はい、レオさんのです。",
+            "いいえ、レオさんのかばんです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l7.e2",
+          "type": "mcq",
+          "prompt": "{傘|かさ}{は|wa}{中村|なかむら}さんのですか。",
+          "options": [
+            "いいえ、ちがいます。",
+            "はい、そうです。",
+            "はい、{中村|なかむら}さんのです。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l7.e3",
+          "type": "mcq",
+          "prompt": "かばん{は|wa}だれのですか。",
+          "options": [
+            "レオさんの",
+            "{中村|なかむら}さんの",
+            "{佐藤|さとう}さんの"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l7.e4",
+          "type": "mcq",
+          "prompt": "かばんの{中|なか}{は|wa}{何|なん}ですか。",
+          "options": [
+            "サッカーのチケット",
+            "{傘|かさ}",
+            "お{茶|ちゃ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l7.e5",
+          "type": "mcq",
+          "prompt": "チケット{は|wa}だれのですか。",
+          "options": [
+            "{中村|なかむら}さんの",
+            "{佐藤|さとう}さんの",
+            "あの{人|ひと}の"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-01.l7.e6",
+          "type": "mcq",
+          "prompt": "{佐藤|さとう}さんの{傘|かさ}ですか。",
+          "options": [
+            "いいえ、ちがいます。",
+            "はい、そうです。",
+            "はい、{佐藤|さとう}さんのかばんです。"
+          ],
+          "answer": 0,
+          "explain": "Sato is the one asking whose it is, so it is not hers. Nobody claims the umbrella."
+        }
+      ],
+      "meme": {
+        "top": "Three people, one umbrella",
+        "bottom": "Owner: still unknown"
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

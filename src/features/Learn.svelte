@@ -48,7 +48,7 @@
               {@const open = done || next?.lesson.id === lesson.id}
               <a class="lesson" class:locked={!open} href={open ? lessonHref(unit.id, lesson.id) : undefined} aria-disabled={!open}>
                 <span class="dot" class:done>{done ? '✓' : n + 1}</span>
-                <span class="lt">{lesson.title}</span>
+                <span class="lt">{lesson.passage ? (lesson.passage.kind === 'reading' ? '📖 ' : '🎧 ') : ''}{lesson.title}</span>
                 <span class="go">{done ? 'Redo' : open ? 'Start ›' : ''}</span>
               </a>
             {/each}

@@ -1,0 +1,115 @@
+{
+  "id": "it-deck-politica",
+  "lang": "it",
+  "icon": "🏛️",
+  "tags": [
+    "politics",
+    "history"
+  ],
+  "title": "Politica e istituzioni",
+  "description": "How Italy is run: the words you need to follow the news.",
+  "cards": [
+    {
+      "id": "it-deck-politica.01",
+      "front": "lo Stato",
+      "back": "the State"
+    },
+    {
+      "id": "it-deck-politica.02",
+      "front": "la Repubblica",
+      "back": "the Republic",
+      "note": "Italy has been a republic since 1946."
+    },
+    {
+      "id": "it-deck-politica.03",
+      "front": "la Costituzione",
+      "back": "the Constitution",
+      "note": "In force since 1948."
+    },
+    {
+      "id": "it-deck-politica.04",
+      "front": "il governo",
+      "back": "the government",
+      "pt": "PT governo."
+    },
+    {
+      "id": "it-deck-politica.05",
+      "front": "il parlamento",
+      "back": "parliament",
+      "note": "Two chambers: la Camera and il Senato."
+    },
+    {
+      "id": "it-deck-politica.06",
+      "front": "la Camera dei deputati",
+      "back": "the Chamber of Deputies (lower house)"
+    },
+    {
+      "id": "it-deck-politica.07",
+      "front": "il Senato",
+      "back": "the Senate (upper house)"
+    },
+    {
+      "id": "it-deck-politica.08",
+      "front": "il Presidente della Repubblica",
+      "back": "the President of the Republic (head of state)"
+    },
+    {
+      "id": "it-deck-politica.09",
+      "front": "il Presidente del Consiglio",
+      "back": "the Prime Minister (head of government)",
+      "note": "Often called \"il premier\" in the press."
+    },
+    {
+      "id": "it-deck-politica.10",
+      "front": "le elezioni",
+      "back": "elections",
+      "pt": "PT eleições."
+    },
+    {
+      "id": "it-deck-politica.11",
+      "front": "votare",
+      "back": "to vote"
+    },
+    {
+      "id": "it-deck-politica.12",
+      "front": "il partito",
+      "back": "political party",
+      "pt": "PT partido."
+    },
+    {
+      "id": "it-deck-politica.13",
+      "front": "la legge",
+      "back": "law",
+      "pt": "PT lei."
+    },
+    {
+      "id": "it-deck-politica.14",
+      "front": "il referendum",
+      "back": "referendum"
+    },
+    {
+      "id": "it-deck-politica.15",
+      "front": "la regione",
+      "back": "region",
+      "note": "Italy has 20 regions."
+    },
+    {
+      "id": "it-deck-politica.16",
+      "front": "il comune",
+      "back": "municipality, town council",
+      "pt": "PT município. Not \"comum\", which is \"comune\" only as an adjective."
+    },
+    {
+      "id": "it-deck-politica.17",
+      "front": "il sindaco",
+      "back": "mayor",
+      "pt": "False friend: PT prefeito. PT \"síndico\" is \"amministratore di condominio\"."
+    },
+    {
+      "id": "it-deck-politica.18",
+      "front": "il cittadino",
+      "back": "citizen",
+      "pt": "PT cidadão."
+    }
+  ]
+}

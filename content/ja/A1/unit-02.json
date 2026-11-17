@@ -699,6 +699,293 @@
         "ja-a1-02.g-ga",
         "ja-a1-02.p-doushite"
       ]
+    },
+    {
+      "id": "ja-a1-02.l4",
+      "title": "Reading: Leo's Saturday",
+      "canDo": "I can read a short text and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🏟️🍺",
+        "scene": "What Leo did yesterday, in order.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "{昨日|きのう}{は|wa}{土曜日|どようび}でした。",
+            "meaning": "Yesterday was Saturday."
+          },
+          {
+            "text": "レオさん{は|wa}{六時|ろくじ}に{新宿駅|しんじゅくえき}で{中村|なかむら}さんと{会|あ}いました。",
+            "meaning": "Leo met Nakamura-san at Shinjuku station at six."
+          },
+          {
+            "text": "{電車|でんしゃ}でスタジアム{へ|e}{行|い}きました。",
+            "meaning": "They went to the stadium by train."
+          },
+          {
+            "text": "スタジアムでチケットを{買|か}いました。",
+            "meaning": "They bought tickets at the stadium."
+          },
+          {
+            "text": "{試合|しあい}{は|wa}{七時|しちじ}に{始|はじ}まりました。",
+            "meaning": "The match started at seven."
+          },
+          {
+            "text": "{中村|なかむら}さん{は|wa}ビールを{飲|の}みました。レオさん{は|wa}{飲|の}みませんでした。",
+            "meaning": "Nakamura-san drank beer. Leo didn't."
+          },
+          {
+            "text": "{東京|とうきょう}が{勝|か}ちました。",
+            "meaning": "Tokyo won."
+          },
+          {
+            "text": "レオさん{は|wa}{十一時|じゅういちじ}にホステル{へ|e}{帰|かえ}りました。",
+            "meaning": "Leo went back to the hostel at eleven."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{土曜日|どようび}",
+            "meaning": "Saturday"
+          },
+          {
+            "word": "でした",
+            "meaning": "was (the past of です)"
+          },
+          {
+            "word": "{帰|かえ}りました",
+            "meaning": "went back, went home"
+          },
+          {
+            "word": "ホステル",
+            "meaning": "hostel"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-02.l4.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}どこで{中村|なかむら}さんと{会|あ}いましたか。",
+          "options": [
+            "{新宿駅|しんじゅくえき}で",
+            "スタジアムで",
+            "ホステルで"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l4.e2",
+          "type": "mcq",
+          "prompt": "{何|なに}でスタジアム{へ|e}{行|い}きましたか。",
+          "options": [
+            "{電車|でんしゃ}で",
+            "バスで",
+            "タクシーで"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l4.e3",
+          "type": "mcq",
+          "prompt": "{試合|しあい}{は|wa}{何時|なんじ}に{始|はじ}まりましたか。",
+          "options": [
+            "{七時|しちじ}",
+            "{六時|ろくじ}",
+            "{十一時|じゅういちじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l4.e4",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}ビールを{飲|の}みましたか。",
+          "options": [
+            "いいえ、{飲|の}みませんでした。",
+            "はい、{飲|の}みました。",
+            "いいえ、{買|か}いませんでした。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l4.e5",
+          "type": "mcq",
+          "prompt": "どのチームが{勝|か}ちましたか。",
+          "options": [
+            "{東京|とうきょう}",
+            "{大阪|おおさか}",
+            "{京都|きょうと}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l4.e6",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何時|なんじ}に{帰|かえ}りましたか。",
+          "options": [
+            "{十一時|じゅういちじ}",
+            "{七時|しちじ}",
+            "{六時|ろくじ}"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Six o'clock, seven o'clock, eleven o'clock",
+        "bottom": "Japanese stories: mostly train times"
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-a1-02.l5",
+      "title": "Story: A message from Sato",
+      "canDo": "I can follow a short spoken scene and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧📱🎬",
+        "scene": "Sato leaves Leo a voice message about tomorrow. Listen for the times and places.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "レオさん、{佐藤|さとう}です。",
+            "meaning": "Leo, this is Sato.",
+            "who": "佐藤"
+          },
+          {
+            "text": "{明日|あした}、{中村|なかむら}さんと{映画|えいが}を{見|み}ます。",
+            "meaning": "Tomorrow I'm watching a film with Nakamura-san.",
+            "who": "佐藤"
+          },
+          {
+            "text": "レオさんも{一緒|いっしょ}に{見|み}ませんか。",
+            "meaning": "Won't you watch it with us?",
+            "who": "佐藤"
+          },
+          {
+            "text": "{映画|えいが}{は|wa}{三時|さんじ}に{始|はじ}まります。",
+            "meaning": "The film starts at three.",
+            "who": "佐藤"
+          },
+          {
+            "text": "{二時|にじ}に{渋谷駅|しぶやえき}で{会|あ}いませんか。",
+            "meaning": "Shall we meet at Shibuya station at two?",
+            "who": "佐藤"
+          },
+          {
+            "text": "わたし{は|wa}バスで{行|い}きます。",
+            "meaning": "I'm going by bus.",
+            "who": "佐藤"
+          },
+          {
+            "text": "{映画|えいが}の{後|あと}で、ラーメンを{食|た}べませんか。",
+            "meaning": "After the film, shall we eat ramen?",
+            "who": "佐藤"
+          },
+          {
+            "text": "チケット{は|wa}わたしが{買|か}います。",
+            "meaning": "I'll buy the tickets.",
+            "who": "佐藤"
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "{映画|えいが}",
+            "meaning": "film"
+          },
+          {
+            "word": "バス",
+            "meaning": "bus"
+          },
+          {
+            "word": "{後|あと}で",
+            "meaning": "after"
+          },
+          {
+            "word": "ラーメン",
+            "meaning": "ramen"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-a1-02.l5.e1",
+          "type": "mcq",
+          "prompt": "{佐藤|さとう}さん{は|wa}{明日|あした}{何|なに}をしますか。",
+          "options": [
+            "{映画|えいが}を{見|み}ます。",
+            "サッカーを{見|み}ます。",
+            "{何|なに}もしません。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l5.e2",
+          "type": "mcq",
+          "prompt": "だれと{見|み}ますか。",
+          "options": [
+            "{中村|なかむら}さんと",
+            "レオさんの{友|とも}だちと",
+            "あの{人|ひと}と"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l5.e3",
+          "type": "mcq",
+          "prompt": "{映画|えいが}{は|wa}{何時|なんじ}に{始|はじ}まりますか。",
+          "options": [
+            "{三時|さんじ}",
+            "{二時|にじ}",
+            "{七時|しちじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l5.e4",
+          "type": "mcq",
+          "prompt": "どこで{会|あ}いますか。",
+          "options": [
+            "{渋谷駅|しぶやえき}で",
+            "{新宿駅|しんじゅくえき}で",
+            "スタジアムで"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l5.e5",
+          "type": "mcq",
+          "prompt": "{佐藤|さとう}さん{は|wa}{何|なに}で{行|い}きますか。",
+          "options": [
+            "バスで",
+            "{電車|でんしゃ}で",
+            "タクシーで"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-a1-02.l5.e6",
+          "type": "mcq",
+          "prompt": "だれがチケットを{買|か}いますか。",
+          "options": [
+            "{佐藤|さとう}さん",
+            "レオさん",
+            "{中村|なかむら}さん"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Voice message: 40 seconds",
+        "bottom": "Me: replays it four times for one time and one station"
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

@@ -708,6 +708,289 @@
         "ja-t03.v-dake",
         "ja-t03.v-ichimai"
       ]
+    },
+    {
+      "id": "ja-t03.l4",
+      "title": "Reading: Leo goes to Nara",
+      "canDo": "I can read a short text about a train journey and answer questions about it in Japanese.",
+      "intro": {
+        "art": "📖🚄🦌",
+        "scene": "A short text. Read it, listen to it, then answer in Japanese.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "レオさん{は|wa}ブラジル{人|じん}です。",
+            "meaning": "Leo is Brazilian."
+          },
+          {
+            "text": "{今日|きょう}、{東京|とうきょう}から{京都|きょうと}に{行|い}きます。",
+            "meaning": "Today he is going from Tokyo to Kyoto."
+          },
+          {
+            "text": "{九時半|くじはん}の{新幹線|しんかんせん}です。",
+            "meaning": "It's the 9:30 bullet train."
+          },
+          {
+            "text": "{東京駅|とうきょうえき}で{切符|きっぷ}を{買|か}いました。{指定席|していせき}です。",
+            "meaning": "He bought a ticket at Tokyo Station. It is a reserved seat."
+          },
+          {
+            "text": "{新幹線|しんかんせん}{は|wa}{十一時|じゅういちじ}{四十五分|よんじゅうごふん}に{京都|きょうと}に{着|つ}きます。",
+            "meaning": "The bullet train arrives in Kyoto at 11:45."
+          },
+          {
+            "text": "{京都|きょうと}で{乗|の}り{換|か}えます。",
+            "meaning": "He changes trains in Kyoto."
+          },
+          {
+            "text": "{奈良|なら}{行|ゆ}きの{電車|でんしゃ}{は|wa}{三番線|さんばんせん}です。",
+            "meaning": "The train for Nara is on platform 3."
+          },
+          {
+            "text": "{奈良|なら}で{友|とも}だちと{会|あ}います。",
+            "meaning": "In Nara he is meeting a friend."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "{今日|きょう}",
+            "meaning": "today"
+          },
+          {
+            "word": "{買|か}いました",
+            "meaning": "bought"
+          },
+          {
+            "word": "{友|とも}だち",
+            "meaning": "friend"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t03.l4.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{新幹線|しんかんせん}でどこに{行|い}きますか。",
+          "options": [
+            "{京都|きょうと}",
+            "{奈良|なら}",
+            "{大阪|おおさか}"
+          ],
+          "answer": 0,
+          "explain": "The bullet train takes him to Kyoto; Nara comes after the change."
+        },
+        {
+          "id": "ja-t03.l4.e2",
+          "type": "mcq",
+          "prompt": "{新幹線|しんかんせん}{は|wa}{何時|なんじ}ですか。",
+          "options": [
+            "{九時半|くじはん}",
+            "{九時|くじ}",
+            "{十一時|じゅういちじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l4.e3",
+          "type": "mcq",
+          "prompt": "レオさんの{切符|きっぷ}{は|wa}{自由席|じゆうせき}ですか。",
+          "options": [
+            "いいえ、{指定席|していせき}です。",
+            "はい、{自由席|じゆうせき}です。",
+            "いいえ、{切符|きっぷ}{は|wa}ありません。"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l4.e4",
+          "type": "mcq",
+          "prompt": "どこで{乗|の}り{換|か}えますか。",
+          "options": [
+            "{京都|きょうと}で",
+            "{東京|とうきょう}で",
+            "{奈良|なら}で"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l4.e5",
+          "type": "mcq",
+          "prompt": "{奈良|なら}{行|ゆ}きの{電車|でんしゃ}{は|wa}{何番線|なんばんせん}ですか。",
+          "options": [
+            "{三番線|さんばんせん}",
+            "{二番線|にばんせん}",
+            "{九番線|きゅうばんせん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l4.e6",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{奈良|なら}でだれと{会|あ}いますか。",
+          "options": [
+            "{友|とも}だち",
+            "{先生|せんせい}",
+            "{中村|なかむら}さん"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Read a whole paragraph in Japanese",
+        "bottom": "Six weeks ago: \"what is は?\""
+      },
+      "newItems": []
+    },
+    {
+      "id": "ja-t03.l5",
+      "title": "Story: The wrong platform",
+      "canDo": "I can follow a short spoken story about a journey and answer questions about it in Japanese.",
+      "intro": {
+        "art": "🎧🚉😅",
+        "scene": "A short story. Listen for the platform numbers and the times.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "{昨日|きのう}、レオさん{は|wa}{京都|きょうと}から{大阪|おおさか}に{行|い}きました。",
+            "meaning": "Yesterday Leo went from Kyoto to Osaka."
+          },
+          {
+            "text": "{八時|はちじ}に{駅|えき}に{着|つ}きました。",
+            "meaning": "He got to the station at eight o'clock."
+          },
+          {
+            "text": "すみません、{大阪|おおさか}{行|ゆ}き{は|wa}{何番線|なんばんせん}ですか。",
+            "meaning": "Excuse me, which platform is the train for Osaka?",
+            "who": "レオ"
+          },
+          {
+            "text": "{二番線|にばんせん}です。",
+            "meaning": "Platform 2.",
+            "who": "駅員"
+          },
+          {
+            "text": "でも、レオさん{は|wa}{三番線|さんばんせん}の{電車|でんしゃ}に{乗|の}りました。",
+            "meaning": "But Leo got on the train at platform 3."
+          },
+          {
+            "text": "その{電車|でんしゃ}{は|wa}{奈良|なら}{行|ゆ}きでした。",
+            "meaning": "That train was bound for Nara."
+          },
+          {
+            "text": "レオさん{は|wa}{奈良|なら}で{乗|の}り{換|か}えました。",
+            "meaning": "Leo changed trains in Nara."
+          },
+          {
+            "text": "{十一時|じゅういちじ}に{大阪|おおさか}に{着|つ}きました。",
+            "meaning": "He arrived in Osaka at eleven o'clock."
+          },
+          {
+            "text": "{友|とも}だち{は|wa}{二時間|にじかん}{待|ま}ちました。",
+            "meaning": "His friend waited for two hours."
+          }
+        ],
+        "transcript": "hint",
+        "glossary": [
+          {
+            "word": "でも",
+            "meaning": "but"
+          },
+          {
+            "word": "{乗|の}りました",
+            "meaning": "got on (a train)"
+          },
+          {
+            "word": "でした",
+            "meaning": "was (the past of です)"
+          },
+          {
+            "word": "{待|ま}ちました",
+            "meaning": "waited"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "ja-t03.l5.e1",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}どこに{行|い}きましたか。",
+          "options": [
+            "{大阪|おおさか}",
+            "{東京|とうきょう}",
+            "{京都|きょうと}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l5.e2",
+          "type": "mcq",
+          "prompt": "{大阪|おおさか}{行|ゆ}き{は|wa}{何番線|なんばんせん}ですか。",
+          "options": [
+            "{二番線|にばんせん}",
+            "{三番線|さんばんせん}",
+            "{八番線|はちばんせん}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l5.e3",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何番線|なんばんせん}の{電車|でんしゃ}に{乗|の}りましたか。",
+          "options": [
+            "{三番線|さんばんせん}",
+            "{二番線|にばんせん}",
+            "{十一番線|じゅういちばんせん}"
+          ],
+          "answer": 0,
+          "explain": "That is the mistake: he was told platform 2."
+        },
+        {
+          "id": "ja-t03.l5.e4",
+          "type": "mcq",
+          "prompt": "その{電車|でんしゃ}{は|wa}どこ{行|ゆ}きでしたか。",
+          "options": [
+            "{奈良|なら}{行|ゆ}き",
+            "{大阪|おおさか}{行|ゆ}き",
+            "{京都|きょうと}{行|ゆ}き"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l5.e5",
+          "type": "mcq",
+          "prompt": "レオさん{は|wa}{何時|なんじ}に{大阪|おおさか}に{着|つ}きましたか。",
+          "options": [
+            "{十一時|じゅういちじ}",
+            "{八時|はちじ}",
+            "{二時|にじ}"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ja-t03.l5.e6",
+          "type": "mcq",
+          "prompt": "{友|とも}だち{は|wa}{何時間|なんじかん}{待|ま}ちましたか。",
+          "options": [
+            "{二時間|にじかん}",
+            "{三時間|さんじかん}",
+            "{八時間|はちじかん}"
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "駅員: 二番線です",
+        "bottom": "Leo, already on platform 3: はい!"
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

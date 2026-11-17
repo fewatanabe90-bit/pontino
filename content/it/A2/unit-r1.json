@@ -695,6 +695,297 @@
         "it-r1.p-in-orario",
         "it-r1.v-partire"
       ]
+    },
+    {
+      "id": "it-r1.l4",
+      "title": "Lettura: Il fine settimana di Giulia",
+      "canDo": "I can read a short text and answer questions about it in Italian.",
+      "intro": {
+        "art": "📖🏖️🚆",
+        "scene": "Un testo breve. Leggi, ascolta e poi rispondi alle domande.",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "reading",
+        "sentences": [
+          {
+            "text": "Sabato Giulia è andata al mare con due amiche.",
+            "meaning": "On Saturday Giulia went to the seaside with two friends."
+          },
+          {
+            "text": "Sono partite presto, alle sette, e hanno preso il treno.",
+            "meaning": "They left early, at seven, and took the train."
+          },
+          {
+            "text": "In spiaggia hanno fatto una passeggiata e hanno mangiato un panino.",
+            "meaning": "On the beach they went for a walk and ate a sandwich."
+          },
+          {
+            "text": "Nel pomeriggio Giulia ha letto un libro e ha dormito un po'.",
+            "meaning": "In the afternoon Giulia read a book and slept a little."
+          },
+          {
+            "text": "La sera sono tornate a Roma, ma il treno è arrivato in ritardo.",
+            "meaning": "In the evening they went back to Rome, but the train arrived late."
+          },
+          {
+            "text": "Giulia è rimasta in stazione per un'ora.",
+            "meaning": "Giulia stayed at the station for an hour."
+          },
+          {
+            "text": "Domenica non è uscita: ha scritto ai suoi amici e ha visto un film.",
+            "meaning": "On Sunday she didn't go out: she wrote to her friends and watched a film."
+          },
+          {
+            "text": "È stato un fine settimana tranquillo.",
+            "meaning": "It was a quiet weekend."
+          }
+        ],
+        "glossary": [
+          {
+            "word": "il fine settimana",
+            "meaning": "weekend"
+          },
+          {
+            "word": "il panino",
+            "meaning": "sandwich"
+          },
+          {
+            "word": "in ritardo",
+            "meaning": "late"
+          },
+          {
+            "word": "uscire",
+            "meaning": "to go out"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r1.l4.e1",
+          "type": "mcq",
+          "prompt": "Dove è andata Giulia sabato?",
+          "options": [
+            "Al mare, con due amiche.",
+            "Allo stadio, con Leo.",
+            "A Firenze, con Sara."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l4.e2",
+          "type": "mcq",
+          "prompt": "A che ora sono partite?",
+          "options": [
+            "Alle sette.",
+            "Alle nove.",
+            "Nel pomeriggio."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l4.e3",
+          "type": "mcq",
+          "prompt": "Che cosa ha fatto Giulia nel pomeriggio?",
+          "options": [
+            "Ha letto un libro e ha dormito un po'.",
+            "Ha preso il treno.",
+            "Ha scritto ai suoi amici."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l4.e4",
+          "type": "mcq",
+          "prompt": "Perché è rimasta in stazione per un'ora?",
+          "options": [
+            "Perché il treno è arrivato in ritardo.",
+            "Perché ha perso il biglietto.",
+            "Perché ha incontrato un'amica."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l4.e5",
+          "type": "mcq",
+          "prompt": "Che cosa ha fatto domenica?",
+          "options": [
+            "Ha scritto ai suoi amici e ha visto un film.",
+            "È tornata al mare.",
+            "È andata allo stadio."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l4.e6",
+          "type": "mcq",
+          "prompt": "Vero o falso? Giulia e le amiche sono andate al mare in macchina.",
+          "options": [
+            "Falso: hanno preso il treno.",
+            "Vero: sono andate in macchina.",
+            "Falso: sono andate a piedi."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Il treno è arrivato in ritardo",
+        "bottom": "The most realistic sentence in this course"
+      },
+      "newItems": []
+    },
+    {
+      "id": "it-r1.l5",
+      "title": "Racconto: Il telefono perso",
+      "canDo": "I can follow a short spoken story and answer questions about it in Italian.",
+      "intro": {
+        "art": "🎧📱🚌",
+        "scene": "Leo racconta che cosa è successo ieri sera. Ascolta bene: chi ha trovato il telefono, e dove?",
+        "lines": [],
+        "notes": []
+      },
+      "passage": {
+        "kind": "listening",
+        "sentences": [
+          {
+            "text": "Ieri sera ho fatto tardi al lavoro.",
+            "meaning": "Last night I worked late.",
+            "who": "Leo"
+          },
+          {
+            "text": "Sono uscito alle nove e ho preso l'autobus.",
+            "meaning": "I left at nine and took the bus.",
+            "who": "Leo"
+          },
+          {
+            "text": "Sono arrivato a casa e ho cercato il telefono.",
+            "meaning": "I got home and looked for my phone.",
+            "who": "Leo"
+          },
+          {
+            "text": "Ma non ho trovato niente!",
+            "meaning": "But I didn't find anything!",
+            "who": "Leo"
+          },
+          {
+            "text": "Allora ho chiamato il mio numero dal telefono di Giulia.",
+            "meaning": "So I called my number from Giulia's phone.",
+            "who": "Leo"
+          },
+          {
+            "text": "Ha risposto l'autista dell'autobus: ha trovato il telefono sotto un sedile.",
+            "meaning": "The bus driver answered: he found the phone under a seat.",
+            "who": "Leo"
+          },
+          {
+            "text": "Stamattina sono andato al deposito e ho ripreso il telefono.",
+            "meaning": "This morning I went to the depot and got the phone back.",
+            "who": "Leo"
+          },
+          {
+            "text": "Ho comprato una scatola di cioccolatini per l'autista.",
+            "meaning": "I bought a box of chocolates for the driver.",
+            "who": "Leo"
+          }
+        ],
+        "transcript": "after",
+        "glossary": [
+          {
+            "word": "cercare",
+            "meaning": "to look for"
+          },
+          {
+            "word": "l'autista",
+            "meaning": "driver"
+          },
+          {
+            "word": "il sedile",
+            "meaning": "seat"
+          },
+          {
+            "word": "il deposito",
+            "meaning": "depot"
+          },
+          {
+            "word": "i cioccolatini",
+            "meaning": "chocolates"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "it-r1.l5.e1",
+          "type": "mcq",
+          "prompt": "A che ora è uscito Leo dal lavoro?",
+          "options": [
+            "Alle nove.",
+            "Alle sette.",
+            "Alle sei."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l5.e2",
+          "type": "mcq",
+          "prompt": "Come è tornato a casa?",
+          "options": [
+            "In autobus.",
+            "In treno.",
+            "A piedi."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l5.e3",
+          "type": "mcq",
+          "prompt": "Che cosa ha perso?",
+          "options": [
+            "Il telefono.",
+            "Il biglietto.",
+            "Le chiavi."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l5.e4",
+          "type": "mcq",
+          "prompt": "Chi ha risposto alla chiamata?",
+          "options": [
+            "L'autista dell'autobus.",
+            "Giulia.",
+            "Un collega."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l5.e5",
+          "type": "mcq",
+          "prompt": "Dov'era il telefono?",
+          "options": [
+            "Sotto un sedile dell'autobus.",
+            "In ufficio.",
+            "A casa di Giulia."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "it-r1.l5.e6",
+          "type": "mcq",
+          "prompt": "Che cosa ha comprato Leo per l'autista?",
+          "options": [
+            "Una scatola di cioccolatini.",
+            "Un biglietto dell'autobus.",
+            "Un telefono nuovo."
+          ],
+          "answer": 0
+        }
+      ],
+      "meme": {
+        "top": "Ho perso il telefono",
+        "bottom": "Passato prossimo: learned the hard way"
+      },
+      "newItems": []
     }
   ],
   "factCheck": [

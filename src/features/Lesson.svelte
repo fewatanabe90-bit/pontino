@@ -49,6 +49,15 @@
   let heard = $state(-1);
   let stopDialogue: () => void = () => {};
   const cast = $derived([...new Set(lesson?.intro.lines.map((l) => l.who) ?? [])].slice(0, 3));
+  /** Book-style lessons: a text to read or a story to listen to. */
+  const passage = $derived(lesson?.passage);
+  const story = $derived((passage?.sentences ?? []).map((s) => ({ who: s.who ?? '', text: s.text })));
+  /** The learner may look at the text: always for a reading, and for a story only when it allows a hint. */
+  const canSeeText = $derived(!!passage && (passage.kind === 'reading' || passage.transcript === 'hint'));
+  let listens = $state(0);
+  let showText = $state(false);
+  /** Sentence whose translation is open, or -1. */
+  let openLine = $state(-1);
   const missed = new Set<number>();
 
   const total = $derived(lesson?.exercises.length ?? 1);
@@ -111,6 +120,8 @@
   /** A wrong answer is saved for the Review tab; a right one clears it. */
   async function record(id: string, ok: boolean) {
     if (!unit || !lesson) return;
+    // A question about a text makes no sense without the text, so it is not replayed under Review.
+    if (lesson.passage) return;
     if (ok) return void db.mistakes.delete(id);
     const prev = await db.mistakes.get(id);
     await db.mistakes.put({
@@ -126,7 +137,8 @@
   function playDialogue() {
     if (!lesson || !unit) return;
     stopDialogue();
-    stopDialogue = speakDialogue(lesson.intro.lines, unit.lang, app.rate, (i) => {
+    if (passage) listens++;
+    stopDialogue = speakDialogue(passage ? story : lesson.intro.lines, unit.lang, app.rate, (i) => {
       playing = i;
       if (i >= 0) {
         heard = Math.max(heard, i);
@@ -135,8 +147,18 @@
     });
   }
 
+  function tapSentence(i: number) {
+    const s = passage?.sentences[i];
+    if (!s || !unit) return;
+    stopDialogue();
+    openLine = openLine === i ? -1 : i;
+    speak(s.text, unit.lang, app.rate, s.who);
+  }
+
   /** The target-language sentence an exercise is about, when hearing it does not give the answer away. */
   function stimulus(e: Exercise): string | undefined {
+    // Questions about a text are asked aloud, in the language being learned.
+    if (lesson?.passage && e.type === 'mcq' && !e.text) return e.prompt;
     if (e.type === 'tiles') return e.context;
     if (e.type === 'mcq' || e.type === 'type') return e.text;
     return undefined;
@@ -152,6 +174,8 @@
 
   function startPractice() {
     stopDialogue();
+    showText = false;
+    openLine = -1;
     phase = 'ex';
   }
 
@@ -170,6 +194,7 @@
 
   function check() {
     if (!ex || !unit || result) return;
+    stopDialogue();
     stopSpeaking();
     result = grade(ex, answer, unit.lang);
     void record(ex.id, result.ok);
@@ -207,6 +232,21 @@
   }
 </script>
 
+{#snippet textCard()}
+  {#if passage}
+    <div class="card text">
+      {#each passage.sentences as s, i}
+        <button type="button" class="sent" class:on={playing === i} id="line-{i}" onclick={() => tapSentence(i)}>
+          {#if s.who && s.who !== passage.sentences[i - 1]?.who}<span class="who jp">{s.who}</span>{/if}
+          <span class="tl"><Ruby text={s.text} /></span>
+          {#if openLine === i}<span class="sub gloss">{s.meaning}</span>{/if}
+        </button>
+      {/each}
+    </div>
+    <p class="sub">Tap a sentence to hear it and see what it means.</p>
+  {/if}
+{/snippet}
+
 {#if error}
   <div class="screen" style="justify-content:center;align-items:center;text-align:center">
     <Pontino mood="think" />
@@ -235,24 +275,54 @@
     <div class="row">
       <p class="sub" style="flex:1">{lesson.intro.scene}</p>
       <button class="chip" type="button" onclick={() => (playing >= 0 ? stopDialogue() : playDialogue())}>
-        {playing >= 0 ? '⏸ Stop' : '▶ Play all'}
+        {playing >= 0 ? '⏸ Stop' : passage ? (passage.kind === 'reading' ? '▶ Read aloud' : '▶ Listen') : '▶ Play all'}
       </button>
     </div>
+    {#if passage}
+      {#if passage.glossary?.length}
+        <div class="card">
+          <div class="eyebrow">Words to know</div>
+          <ul class="words">
+            {#each passage.glossary as g}<li><span class="tl"><Ruby text={g.word} /></span><span class="sub">{g.meaning}</span></li>{/each}
+          </ul>
+        </div>
+      {/if}
+      {#if passage.kind === 'reading'}
+        {@render textCard()}
+      {:else}
+        <div class="card row">
+          <button class="bigplay" type="button" onclick={() => (playing >= 0 ? stopDialogue() : playDialogue())} aria-label={playing >= 0 ? 'Stop the story' : 'Play the story'}>
+            {playing >= 0 ? '⏸' : '▶'}
+          </button>
+          <div>
+            <div class="h">{listens ? `Listened ${listens} time${listens === 1 ? '' : 's'}` : 'Listen to the story'}</div>
+            <div class="sub">Listen once or twice, then answer the questions.</div>
+          </div>
+        </div>
+        {#if passage.transcript === 'hint'}
+          <button class="chip" type="button" style="align-self:flex-start" onclick={() => (showText = !showText)}>{showText ? 'Hide the text' : 'Need a hint? Show the text'}</button>
+          {#if showText}{@render textCard()}{/if}
+        {:else}
+          <p class="sub">No text this time: it appears after the questions.</p>
+        {/if}
+      {/if}
+    {/if}
     {#each lesson.intro.lines as l, i}
       <div class="row line" id="line-{i}" class:later={playing >= 0 && i > heard}>
         <Avatar name={l.who} speaking={playing === i} />
         <div class="bubble" class:on={playing === i}>
           <div class="row" style="gap:8px;align-items:flex-start">
-            <div style="flex:1">
-              <div class="who jp">{l.who}</div>
-              <div class="tl"><Ruby text={l.text} /></div>
-              <div class="sub">{l.meaning}</div>
-            </div>
+            <button type="button" class="say" onclick={() => (openLine = openLine === i ? -1 : i)} aria-expanded={openLine === i}>
+              <span class="who jp">{l.who}</span>
+              <span class="tl"><Ruby text={l.text} /></span>
+              {#if openLine === i}<span class="sub">{l.meaning}</span>{/if}
+            </button>
             <Speak text={l.text} who={l.who} />
           </div>
         </div>
       </div>
     {/each}
+    {#if lesson.intro.lines.length}<p class="sub">Read it in {unit.lang === 'ja' ? 'Japanese' : 'Italian'} first. Tap a line to see what it means.</p>{/if}
     {#each lesson.intro.notes as note}
       <div class="card" class:pt={note.title.startsWith('🇧🇷')}>
         <div class="h note-h"><Ruby text={note.title} /></div>
@@ -260,7 +330,7 @@
       </div>
     {/each}
   </div>
-  <div class="foot"><button class="btn" type="button" onclick={startPractice}>Start practice</button></div>
+  <div class="foot"><button class="btn" type="button" onclick={startPractice}>{passage ? 'Answer the questions' : 'Start practice'}</button></div>
 {:else if phase === 'ex' && ex}
   <div class="lt">
     <a class="x" href={home} aria-label="Close. Your place is saved.">✕</a>
@@ -270,7 +340,14 @@
     <span class="c-xp" style="font-weight:900">⚡ {xp}</span>
   </div>
   <div class="screen" style="padding-top:8px">
-    <h1 class="h"><Ruby text={ex.prompt} /></h1>
+{#if passage}
+      <div class="row" style="flex-wrap:wrap">
+        <button class="chip" type="button" onclick={() => (playing >= 0 ? stopDialogue() : playDialogue())}>{playing >= 0 ? '⏸ Stop' : '▶ Listen again'}</button>
+        {#if canSeeText}<button class="chip" type="button" onclick={() => (showText = !showText)}>{showText ? 'Hide the text' : '📖 Show the text'}</button>{/if}
+      </div>
+      {#if showText && canSeeText}{@render textCard()}{/if}
+    {/if}
+    <h1 class="h" class:tl={!!passage}><Ruby text={ex.prompt} /></h1>
     {#key `${ex.id}:${attempt}`}
       {#if ex.type === 'mcq' || ex.type === 'gap'}
         <Choice {ex} bind:answer locked={!!result} />
@@ -321,12 +398,82 @@
       <div class="card"><div class="h c-br">+{newCards}</div><div class="sub">review cards</div></div>
     </div>
     <div class="card" style="width:100%"><div class="eyebrow">Today I can…</div><p class="note">{lesson.canDo}</p></div>
+    {#if passage}
+      <div style="width:100%;text-align:left;display:flex;flex-direction:column;gap:10px">
+        <div class="eyebrow">{passage.kind === 'reading' ? 'The text' : 'The story'}</div>
+        {@render textCard()}
+      </div>
+    {/if}
     {#if lesson.meme}<MemeCard top={lesson.meme.top} bottom={lesson.meme.bottom} />{/if}
   </div>
   <div class="foot"><a class="btn" href={mistakes ? '#/review' : '#/home'}>Continue</a></div>
 {/if}
 
 <style>
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px;
+  }
+  .sent {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: 0;
+    border-radius: 12px;
+    padding: 6px 8px;
+    font: inherit;
+    color: inherit;
+    line-height: 1.6;
+    scroll-margin: 190px 0 90px;
+  }
+  .say {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+  }
+  .sent.on {
+    background: var(--brand-soft);
+  }
+  .gloss {
+    padding-bottom: 4px;
+  }
+  .words {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .words li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .bigplay {
+    flex: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+    background: var(--brand);
+    box-shadow: 0 4px 0 var(--brand-edge);
+  }
   .x {
     font-size: 22px;
     color: var(--muted);

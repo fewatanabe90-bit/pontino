@@ -1,0 +1,102 @@
+{
+  "id": "ja-deck-time",
+  "lang": "ja",
+  "icon": "🗓️",
+  "tags": [
+    "travel"
+  ],
+  "title": "Days and time",
+  "description": "Today, tomorrow, the days of the week and the parts of the day.",
+  "cards": [
+    {
+      "id": "ja-deck-time.01",
+      "front": "{今日|きょう}",
+      "back": "today"
+    },
+    {
+      "id": "ja-deck-time.02",
+      "front": "{明日|あした}",
+      "back": "tomorrow"
+    },
+    {
+      "id": "ja-deck-time.03",
+      "front": "{昨日|きのう}",
+      "back": "yesterday"
+    },
+    {
+      "id": "ja-deck-time.04",
+      "front": "{今|いま}",
+      "back": "now"
+    },
+    {
+      "id": "ja-deck-time.05",
+      "front": "{朝|あさ}",
+      "back": "morning"
+    },
+    {
+      "id": "ja-deck-time.06",
+      "front": "{昼|ひる}",
+      "back": "midday, daytime"
+    },
+    {
+      "id": "ja-deck-time.07",
+      "front": "{夜|よる}",
+      "back": "night, evening"
+    },
+    {
+      "id": "ja-deck-time.08",
+      "front": "{午前|ごぜん}",
+      "back": "a.m., the morning hours"
+    },
+    {
+      "id": "ja-deck-time.09",
+      "front": "{午後|ごご}",
+      "back": "p.m., the afternoon hours"
+    },
+    {
+      "id": "ja-deck-time.10",
+      "front": "{月曜日|げつようび}",
+      "back": "Monday"
+    },
+    {
+      "id": "ja-deck-time.11",
+      "front": "{火曜日|かようび}",
+      "back": "Tuesday"
+    },
+    {
+      "id": "ja-deck-time.12",
+      "front": "{水曜日|すいようび}",
+      "back": "Wednesday"
+    },
+    {
+      "id": "ja-deck-time.13",
+      "front": "{木曜日|もくようび}",
+      "back": "Thursday"
+    },
+    {
+      "id": "ja-deck-time.14",
+      "front": "{金曜日|きんようび}",
+      "back": "Friday"
+    },
+    {
+      "id": "ja-deck-time.15",
+      "front": "{土曜日|どようび}",
+      "back": "Saturday"
+    },
+    {
+      "id": "ja-deck-time.16",
+      "front": "{日曜日|にちようび}",
+      "back": "Sunday"
+    },
+    {
+      "id": "ja-deck-time.17",
+      "front": "{毎日|まいにち}",
+      "back": "every day"
+    },
+    {
+      "id": "ja-deck-time.18",
+      "front": "{週末|しゅうまつ}",
+      "back": "weekend"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 <script lang="ts">
   import Pontino from './design/Pontino.svelte';
+  import Cards from './features/Cards.svelte';
   import Flashcards from './features/Flashcards.svelte';
   import Home from './features/Home.svelte';
   import Learn from './features/Learn.svelte';
@@ -7,7 +8,7 @@
   import Profile from './features/Profile.svelte';
   import Review from './features/Review.svelte';
   import { applyUpdate, pwa } from './lib/pwa.svelte';
-  import { app } from './lib/state.svelte';
+  import { addPracticeTime, app } from './lib/state.svelte';
   import { voices } from './lib/voices.svelte';
 
   const TABS = [
@@ -21,6 +22,25 @@
   const parse = () => location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(decodeURIComponent);
   let route = $state(parse());
   const page = $derived(route[0] ?? 'home');
+
+  // Study time counts towards the daily goal while a lesson, deck or review is open and in use.
+  const STUDY = ['lesson', 'deck', 'review', 'mistakes'];
+  const TICK = 5;
+  $effect(() => {
+    let lastTouch = Date.now();
+    const touch = () => (lastTouch = Date.now());
+    addEventListener('pointerdown', touch, true);
+    addEventListener('keydown', touch, true);
+    const timer = setInterval(() => {
+      const active = document.visibilityState === 'visible' && Date.now() - lastTouch < 120_000;
+      if (app.ready && active && STUDY.includes(page)) addPracticeTime(app.lang, TICK);
+    }, TICK * 1000);
+    return () => {
+      clearInterval(timer);
+      removeEventListener('pointerdown', touch, true);
+      removeEventListener('keydown', touch, true);
+    };
+  });
 
   $effect(() => {
     const on = () => {
@@ -49,6 +69,8 @@
   {#key route[2]}<Lesson unitId={route[1]} lessonId={route[2]} />{/key}
 {:else if page === 'mistakes'}
   {#key app.lang}<Lesson mistakes />{/key}
+{:else if page === 'cards'}
+  {#key app.lang}<Cards />{/key}
 {:else if page === 'deck' && route[1]}
   {#key route[1]}<Flashcards deckId={route[1]} />{/key}
 {:else}

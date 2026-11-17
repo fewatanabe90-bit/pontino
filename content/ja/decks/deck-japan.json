@@ -1,0 +1,115 @@
+{
+  "id": "ja-deck-japan",
+  "lang": "ja",
+  "icon": "🗾",
+  "tags": [
+    "history",
+    "geography",
+    "politics"
+  ],
+  "title": "Japan: places and history",
+  "description": "The islands, the landmarks, and a few words from history and public life.",
+  "cards": [
+    {
+      "id": "ja-deck-japan.01",
+      "front": "{富士山|ふじさん}",
+      "back": "Mount Fuji"
+    },
+    {
+      "id": "ja-deck-japan.02",
+      "front": "{島|しま}",
+      "back": "island"
+    },
+    {
+      "id": "ja-deck-japan.03",
+      "front": "{山|やま}",
+      "back": "mountain"
+    },
+    {
+      "id": "ja-deck-japan.04",
+      "front": "{海|うみ}",
+      "back": "sea"
+    },
+    {
+      "id": "ja-deck-japan.05",
+      "front": "{首都|しゅと}",
+      "back": "capital city"
+    },
+    {
+      "id": "ja-deck-japan.06",
+      "front": "{県|けん}",
+      "back": "prefecture",
+      "note": "Japan has 47 prefectures."
+    },
+    {
+      "id": "ja-deck-japan.07",
+      "front": "{北海道|ほっかいどう}",
+      "back": "Hokkaido, the northern main island"
+    },
+    {
+      "id": "ja-deck-japan.08",
+      "front": "{本州|ほんしゅう}",
+      "back": "Honshu, the largest main island"
+    },
+    {
+      "id": "ja-deck-japan.09",
+      "front": "{四国|しこく}",
+      "back": "Shikoku, the smallest main island"
+    },
+    {
+      "id": "ja-deck-japan.10",
+      "front": "{九州|きゅうしゅう}",
+      "back": "Kyushu, the south-western main island"
+    },
+    {
+      "id": "ja-deck-japan.11",
+      "front": "お{寺|てら}",
+      "back": "Buddhist temple"
+    },
+    {
+      "id": "ja-deck-japan.12",
+      "front": "{神社|じんじゃ}",
+      "back": "Shinto shrine"
+    },
+    {
+      "id": "ja-deck-japan.13",
+      "front": "お{城|しろ}",
+      "back": "castle"
+    },
+    {
+      "id": "ja-deck-japan.14",
+      "front": "{歴史|れきし}",
+      "back": "history"
+    },
+    {
+      "id": "ja-deck-japan.15",
+      "front": "{侍|さむらい}",
+      "back": "samurai"
+    },
+    {
+      "id": "ja-deck-japan.16",
+      "front": "{江戸時代|えどじだい}",
+      "back": "the Edo period (1603–1868)"
+    },
+    {
+      "id": "ja-deck-japan.17",
+      "front": "{天皇|てんのう}",
+      "back": "the Emperor"
+    },
+    {
+      "id": "ja-deck-japan.18",
+      "front": "{首相|しゅしょう}",
+      "back": "prime minister"
+    },
+    {
+      "id": "ja-deck-japan.19",
+      "front": "{国会|こっかい}",
+      "back": "the Diet, Japan's parliament"
+    },
+    {
+      "id": "ja-deck-japan.20",
+      "front": "{選挙|せんきょ}",
+      "back": "election"
+    }
+  ]
+}

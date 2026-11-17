@@ -1,0 +1,116 @@
+{
+  "id": "it-deck-citta",
+  "lang": "it",
+  "icon": "🏙️",
+  "tags": [
+    "travel",
+    "geography"
+  ],
+  "title": "In città",
+  "description": "Streets, buildings and how to get across town.",
+  "cards": [
+    {
+      "id": "it-deck-citta.01",
+      "front": "la piazza",
+      "back": "square",
+      "pt": "PT praça."
+    },
+    {
+      "id": "it-deck-citta.02",
+      "front": "la via",
+      "back": "street",
+      "note": "In addresses: Via Roma 10.",
+      "pt": "PT rua."
+    },
+    {
+      "id": "it-deck-citta.03",
+      "front": "il ponte",
+      "back": "bridge",
+      "pt": "PT ponte (feminine in PT, masculine in Italian)."
+    },
+    {
+      "id": "it-deck-citta.04",
+      "front": "la chiesa",
+      "back": "church",
+      "pt": "PT igreja."
+    },
+    {
+      "id": "it-deck-citta.05",
+      "front": "il duomo",
+      "back": "cathedral",
+      "note": "A city's main church."
+    },
+    {
+      "id": "it-deck-citta.06",
+      "front": "il municipio",
+      "back": "town hall",
+      "pt": "PT prefeitura."
+    },
+    {
+      "id": "it-deck-citta.07",
+      "front": "il centro storico",
+      "back": "old town, historic centre"
+    },
+    {
+      "id": "it-deck-citta.08",
+      "front": "la periferia",
+      "back": "outskirts, suburbs"
+    },
+    {
+      "id": "it-deck-citta.09",
+      "front": "il semaforo",
+      "back": "traffic light",
+      "pt": "PT semáforo, farol."
+    },
+    {
+      "id": "it-deck-citta.10",
+      "front": "l'incrocio",
+      "back": "crossroads",
+      "pt": "PT cruzamento."
+    },
+    {
+      "id": "it-deck-citta.11",
+      "front": "il marciapiede",
+      "back": "pavement, sidewalk",
+      "pt": "PT calçada."
+    },
+    {
+      "id": "it-deck-citta.12",
+      "front": "attraversare",
+      "back": "to cross",
+      "note": "Attraversa la strada.",
+      "pt": "PT atravessar."
+    },
+    {
+      "id": "it-deck-citta.13",
+      "front": "girare",
+      "back": "to turn",
+      "note": "Gira a destra.",
+      "pt": "PT virar. \"Girar\" in PT is \"ruotare\"."
+    },
+    {
+      "id": "it-deck-citta.14",
+      "front": "vicino",
+      "back": "near",
+      "note": "Vicino alla stazione.",
+      "pt": "PT perto."
+    },
+    {
+      "id": "it-deck-citta.15",
+      "front": "lontano",
+      "back": "far",
+      "pt": "PT longe."
+    },
+    {
+      "id": "it-deck-citta.16",
+      "front": "la farmacia",
+      "back": "pharmacy"
+    },
+    {
+      "id": "it-deck-citta.17",
+      "front": "l'edicola",
+      "back": "newsstand",
+      "pt": "PT banca de jornal."
+    }
+  ]
+}

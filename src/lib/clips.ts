@@ -85,6 +85,11 @@ export function clipJobs(units: Unit[], decks: Deck[]): ClipJob[] {
     for (const l of u.lessons) {
       for (const line of l.intro.lines) add(u.lang, line.text, line.who);
       for (const e of l.exercises) for (const t of exerciseLines(e)) add(u.lang, t);
+      // A text or story is read sentence by sentence, and its questions are asked aloud.
+      for (const s of l.passage?.sentences ?? []) add(u.lang, s.text, s.who);
+      // Its "words to know" become flashcards, so each needs a clip of its own.
+      for (const g of l.passage?.glossary ?? []) add(u.lang, g.word);
+      if (l.passage) for (const e of l.exercises) add(u.lang, e.prompt);
     }
   }
   for (const d of decks) for (const c of d.cards) add(d.lang, c.front);

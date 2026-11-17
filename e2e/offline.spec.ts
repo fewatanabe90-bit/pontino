@@ -24,6 +24,9 @@ test('works offline after the first load, including a lesson', async ({ page, co
   // The lesson content is a separate file; it must come from the cache too.
   await page.getByRole('link', { name: 'Start lesson' }).click();
   await expect(page.getByRole('button', { name: 'Start practice' })).toBeVisible();
+  // Translations stay hidden until a line is tapped.
+  await expect(page.getByText('Nice to meet you. I\'m Nakamura.')).toHaveCount(0);
+  await page.locator('.say').first().click();
   await expect(page.getByText('Nice to meet you. I\'m Nakamura.')).toBeVisible();
 });
 

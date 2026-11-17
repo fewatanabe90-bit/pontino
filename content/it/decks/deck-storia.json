@@ -1,0 +1,117 @@
+{
+  "id": "it-deck-storia",
+  "lang": "it",
+  "icon": "📜",
+  "tags": [
+    "history"
+  ],
+  "title": "Storia d'Italia",
+  "description": "Periods and words for reading about the past.",
+  "cards": [
+    {
+      "id": "it-deck-storia.01",
+      "front": "la storia",
+      "back": "history; story",
+      "pt": "PT história."
+    },
+    {
+      "id": "it-deck-storia.02",
+      "front": "il secolo",
+      "back": "century",
+      "note": "Il Novecento = the twentieth century.",
+      "pt": "PT século."
+    },
+    {
+      "id": "it-deck-storia.03",
+      "front": "antico",
+      "back": "ancient",
+      "note": "Roma antica.",
+      "pt": "PT antigo."
+    },
+    {
+      "id": "it-deck-storia.04",
+      "front": "l'Impero romano",
+      "back": "the Roman Empire"
+    },
+    {
+      "id": "it-deck-storia.05",
+      "front": "l'imperatore",
+      "back": "emperor"
+    },
+    {
+      "id": "it-deck-storia.06",
+      "front": "il Medioevo",
+      "back": "the Middle Ages",
+      "pt": "PT Idade Média."
+    },
+    {
+      "id": "it-deck-storia.07",
+      "front": "il Rinascimento",
+      "back": "the Renaissance",
+      "pt": "PT Renascimento."
+    },
+    {
+      "id": "it-deck-storia.08",
+      "front": "il Risorgimento",
+      "back": "the 19th-century movement that unified Italy"
+    },
+    {
+      "id": "it-deck-storia.09",
+      "front": "l'unità d'Italia",
+      "back": "the unification of Italy (1861)"
+    },
+    {
+      "id": "it-deck-storia.10",
+      "front": "il re",
+      "back": "king",
+      "note": "Italy was a kingdom from 1861 to 1946.",
+      "pt": "PT rei."
+    },
+    {
+      "id": "it-deck-storia.11",
+      "front": "la regina",
+      "back": "queen",
+      "pt": "PT rainha."
+    },
+    {
+      "id": "it-deck-storia.12",
+      "front": "il papa",
+      "back": "the pope",
+      "note": "Il papà, with an accent, is \"dad\"."
+    },
+    {
+      "id": "it-deck-storia.13",
+      "front": "la guerra",
+      "back": "war"
+    },
+    {
+      "id": "it-deck-storia.14",
+      "front": "la pace",
+      "back": "peace",
+      "pt": "PT paz."
+    },
+    {
+      "id": "it-deck-storia.15",
+      "front": "la battaglia",
+      "back": "battle",
+      "pt": "PT batalha."
+    },
+    {
+      "id": "it-deck-storia.16",
+      "front": "le rovine",
+      "back": "ruins",
+      "pt": "PT ruínas."
+    },
+    {
+      "id": "it-deck-storia.17",
+      "front": "il castello",
+      "back": "castle",
+      "pt": "PT castelo."
+    },
+    {
+      "id": "it-deck-storia.18",
+      "front": "la Resistenza",
+      "back": "the Resistance (1943–1945)"
+    }
+  ]
+}
